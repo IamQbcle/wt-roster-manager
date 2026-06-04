@@ -46,6 +46,7 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 ## Feedback / Обратная связь
 
 Questions, ideas and bug reports / Вопросы, идеи и багрепорты:
+
 [GitHub Discussions](https://github.com/IamQbcle/wt-roster-manager/discussions)
 ---
 

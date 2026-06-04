@@ -10,20 +10,19 @@ War Thunder has a limited number of in-game presets, and crews are trained for s
 
 ## Documentation / документация
 
-- English documentation: [README_EN.txt](README_EN.txt)
-- Русская документация: [README_RU.txt](README_RU.txt)
+- [English documentation](README_EN.txt)
+- [Русская документация](README_RU.txt)
 
 ## Download / Скачать
 
 The repository also contains the full working project files, but the release ZIP is the easiest way to download the app. /
 В репозитории также лежат рабочие файлы проекта, но ZIP из Releases — самый простой способ скачать программу.
 
-Use the latest ZIP from the **Releases** section / Используйте свежий ZIP из раздела **Releases**:
-[Download latest release](https://github.com/IamQbcle/wt-roster-manager/releases)
+Use the latest ZIP from the **Releases** section / Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases)
 
 ## Quickstart
 
-1. Download the latest ZIP from the **Releases** section.
+1. Download the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases) section.
 2. Extract the whole archive to a normal folder.
 3. Run `Launch App.bat`.
 4. Open the roster and mark your owned vehicles.
@@ -34,7 +33,7 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 ## Быстрый старт
 
-1. Скачайте свежий ZIP из раздела **Releases**.
+1. Скачайте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases).
 2. Полностью распакуйте архив в обычную папку.
 3. Запустите `Launch App.bat`.
 4. Откройте ростер и отметьте свою купленную технику.

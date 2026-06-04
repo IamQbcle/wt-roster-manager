@@ -22,23 +22,25 @@ Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster
 
 ## Quickstart
 
-1. Download the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases) section.
-2. Extract the whole archive to a normal folder.
-3. Run `Launch App.bat`.
-4. Open the roster and mark your owned vehicles.
-5. Recreate your current in-game lineups in the app.
-6. Now you can plan new lineups, research goals, squad play and lineup roulette without losing your saved plans.
+1. Install Python 3 from python.org if it is not installed yet. During installation, enable **Add python.exe to PATH**.
+2. Download the latest ZIP from the **Releases** section.
+3. Extract the whole archive to a normal folder.
+4. Run `Launch App.bat`.
+5. Open the roster and mark your owned vehicles.
+6. Recreate your current in-game lineups in the app.
+7. Now you can plan new lineups, research goals, squad play and lineup roulette without losing your saved plans.
 
 Detailed instructions are available in [README_EN.txt](README_EN.txt) and [README_RU.txt](README_RU.txt).
 
-## Быстрый старт
+### Русский
 
-1. Скачайте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases).
-2. Полностью распакуйте архив в обычную папку.
-3. Запустите `Launch App.bat`.
-4. Откройте ростер и отметьте свою купленную технику.
-5. Создайте в программе ваши текущие игровые наборы.
-6. Теперь можно планировать новые наборы, порядок исследования, игру отрядом и рулетку наборов, не теряя сохранённые планы.
+1. Установите Python 3 с python.org, если он ещё не установлен. При установке включите галочку **Add python.exe to PATH**.
+2. Скачайте свежий ZIP из раздела **Releases**.
+3. Полностью распакуйте архив в обычную папку.
+4. Запустите `Launch App.bat`.
+5. Откройте ростер и отметьте свою купленную технику.
+6. Создайте в программе ваши текущие игровые наборы.
+7. Теперь можно планировать новые наборы, порядок исследования, игру отрядом и рулетку наборов, не теряя сохранённые планы.
 
 Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
 

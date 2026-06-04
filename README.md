@@ -44,11 +44,8 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
 
-## Feedback / Обратная связь
+[## Feedback / Обратная связь]((https://github.com/IamQbcle/wt-roster-manager/discussions))
 
-Questions, ideas and bug reports / Вопросы, идеи и багрепорты:
-
-[GitHub Discussions](https://github.com/IamQbcle/wt-roster-manager/discussions)
 ---
 
 ## Data source / Источник данных

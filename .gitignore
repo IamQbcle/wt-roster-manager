@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.DS_Store
+Thumbs.db
+user_data/wt_roster_user_data.json
+data/wiki_tree_raw/
+data/wiki_unit_raw/
+data/api_cache/
+data/snapshots/
+tmp/
+
+README_NEW_CHAT_CONTEXT.txt
+GITHUB_AND_FORUM_PUBLISHING_RU*.txt

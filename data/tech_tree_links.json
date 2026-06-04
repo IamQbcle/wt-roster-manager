@@ -1,0 +1,8383 @@
+{
+  "logic_version": "v2.62-status-tree-unit-supplements",
+  "links": {
+    "a6m2_mod11": [
+      "a6m2_n_zero",
+      "a6m2_zero",
+      "a6m3_zero"
+    ],
+    "a5m4": [
+      "f1m2",
+      "a6m2_n_zero"
+    ],
+    "a6m3_zero": [
+      "a6m2_mod11",
+      "a6m3_mod22_zero",
+      "a6m5_zero"
+    ],
+    "a-26b": [
+      "a-26b_10"
+    ],
+    "a6m3_mod22ko_zero": [
+      "a6m3_mod22_zero"
+    ],
+    "a6m5_zero": [
+      "a6m3_zero",
+      "a6m5otsu"
+    ],
+    "a-35b": [
+      "mb_175t"
+    ],
+    "a-20g": [
+      "p-51_a-36",
+      "sb2c_1c"
+    ],
+    "a6m2_zero": [
+      "a6m2_mod11"
+    ],
+    "a-26b_10": [
+      "p-61c_1",
+      "a-26b",
+      "douglas_ad_2"
+    ],
+    "a6m3_mod22_zero": [
+      "a6m3_zero",
+      "a6m3_mod22ko_zero"
+    ],
+    "a6m2_n_zero": [
+      "a5m4",
+      "n1k1_kyuofu",
+      "a6m2_mod11"
+    ],
+    "a6m5hei": [
+      "a6m5otsu"
+    ],
+    "a6m5otsu": [
+      "a6m5_zero",
+      "a6m5hei",
+      "a7m2"
+    ],
+    "a_109_eoa2": [
+      "mi_24d_hungary",
+      "mi_24v_hungary"
+    ],
+    "a7m2": [
+      "a6m5otsu",
+      "n1k1_ja"
+    ],
+    "a_10a_late": [
+      "av_8c",
+      "a_7d"
+    ],
+    "a_129_cbt": [
+      "mi_24v_hungary",
+      "a_129_d"
+    ],
+    "a_129_d": [
+      "a_129_cbt"
+    ],
+    "a_29_hudson": [
+      "mosquito_fb_mk26_china"
+    ],
+    "a_4b": [
+      "f-84f",
+      "fj_4b",
+      "av_8c"
+    ],
+    "a_4n": [
+      "a_4h",
+      "f-4e_iaf"
+    ],
+    "a_4e_early_iaf": [
+      "a_4h"
+    ],
+    "a_10c": [
+      "a_7d",
+      "av_8b_plus"
+    ],
+    "a_7e": [
+      "a_7d"
+    ],
+    "a_7d": [
+      "a_10a_late",
+      "a_7e",
+      "a_10c"
+    ],
+    "a_7e_thailand": [
+      "f1",
+      "av_8s_late_thailand"
+    ],
+    "ab_205a_1": [
+      "mi_24d_hungary"
+    ],
+    "a_4h": [
+      "md_450b_ouragan_iaf",
+      "a_4e_early_iaf",
+      "a_4n"
+    ],
+    "ah_1f": [
+      "uh_1c",
+      "ah_1w",
+      "ah_64a"
+    ],
+    "ah_1s_early": [
+      "uh_1b_japan",
+      "ah_1s_late",
+      "mi_35p_indonesia"
+    ],
+    "ah_1g": [
+      "uh_1b"
+    ],
+    "ah_1f_iaf": [
+      "ah_1q_iaf",
+      "ah_64a_iaf"
+    ],
+    "ah_1s_late": [
+      "ah_1s_early",
+      "ah_64d_japan"
+    ],
+    "ah_1q_iaf": [
+      "ah_1g_iaf",
+      "ah_1f_iaf"
+    ],
+    "ah_1w_china": [
+      "oh_58d_china",
+      "ah_64e_china"
+    ],
+    "ah_1z": [
+      "ah_1w"
+    ],
+    "ah_64a": [
+      "ah_1f",
+      "ah_64d"
+    ],
+    "ah_1w": [
+      "ah_1f",
+      "ah_1z"
+    ],
+    "ah_60_iaf": [
+      "md_500_tow_late"
+    ],
+    "ah_1g_iaf": [
+      "ah_1q_iaf",
+      "md_500_tow_late"
+    ],
+    "ah_64a_iaf": [
+      "ah_1f_iaf",
+      "ah_64d_i_saraph"
+    ],
+    "ah_64d_i_saraph": [
+      "ah_64a_iaf"
+    ],
+    "ah_1f_event": [
+      "uh_1c",
+      "ah_1w",
+      "ah_64a"
+    ],
+    "ah_64d_japan": [
+      "ah_1s_late",
+      "ah_64e_indonesia"
+    ],
+    "ah_64d": [
+      "ah_64a",
+      "ah_64e"
+    ],
+    "ah_64e_china": [
+      "ah_1w_china"
+    ],
+    "ah_64e": [
+      "ah_64d"
+    ],
+    "ah_64e_indonesia": [
+      "ah_64d_japan"
+    ],
+    "ah_6m": [
+      "uh_1b",
+      "oh_58d"
+    ],
+    "ah_64e_netherlands": [
+      "tiger_had_france"
+    ],
+    "ah_64e_britain": [
+      "ah_mk1"
+    ],
+    "ahs": [
+      "hkp9a_cb3_fc"
+    ],
+    "alpha_jet_a": [
+      "fiat_g91_r3",
+      "tornado_ids_de_assta1"
+    ],
+    "alpha_jet_e": [
+      "f-86k_late",
+      "f-8e_fn"
+    ],
+    "alpha_jet_a_thailand": [
+      "f-84g_thailand",
+      "alpha_jet_th_phase_1"
+    ],
+    "alpha_jet_th_phase_1": [
+      "alpha_jet_a_thailand",
+      "f-5a_thailand"
+    ],
+    "am_1_mauler": [
+      "douglas_ad_4"
+    ],
+    "ah_mk1": [
+      "lynx_ah_mk1",
+      "ah_64e_britain"
+    ],
+    "amx": [
+      "fiat_g91_y",
+      "tornado_adv"
+    ],
+    "arado-234": [
+      "he-177a-5",
+      "arado-234c-3",
+      "il_28_german"
+    ],
+    "ar_2": [
+      "yak-4",
+      "sb_2m_103u_mv3",
+      "db_3b"
+    ],
+    "arado-234c-3": [
+      "arado-234"
+    ],
+    "attaker_fb1": [
+      "sea_fury_fb11",
+      "sea_hawk_fga6"
+    ],
+    "av_8b_plus": [
+      "a_10c"
+    ],
+    "av_8b_plus_italy": [
+      "tornado_ids_it_mod95"
+    ],
+    "av_8c": [
+      "a_4b",
+      "a_10a_late"
+    ],
+    "av_8s_late_thailand": [
+      "a_7e_thailand",
+      "f_16aj"
+    ],
+    "b-17e_late": [
+      "b-17e"
+    ],
+    "b-17e": [
+      "b_26b_c",
+      "b-17e_late",
+      "pb4y-2"
+    ],
+    "b-17g_iaf": [
+      "so_4050_vautour_2a_israel_iaf"
+    ],
+    "b-57": [
+      "b-29",
+      "b-57b",
+      "b_66b"
+    ],
+    "b-17g": [
+      "pb4y-2",
+      "b_24d",
+      "b-29"
+    ],
+    "b-29": [
+      "b-17g",
+      "b-57"
+    ],
+    "b5n2": [
+      "d3a1"
+    ],
+    "b-57b": [
+      "b-57"
+    ],
+    "b6n2": [
+      "b6n1",
+      "b6n2a",
+      "d4y1"
+    ],
+    "b6n1": [
+      "d3a1",
+      "b6n2"
+    ],
+    "b7a2": [
+      "p1y1_mod11",
+      "r2y2_v1"
+    ],
+    "b_239_finland": [
+      "hurricane_mk1_late_finland"
+    ],
+    "b_24d": [
+      "b-17g"
+    ],
+    "b_25j_20": [
+      "b_25j_1",
+      "b_26b_c"
+    ],
+    "b_26b_c": [
+      "b_25j_20",
+      "b-17e"
+    ],
+    "b_25j_1": [
+      "b_34",
+      "b_25j_20"
+    ],
+    "b6n2a": [
+      "b6n2"
+    ],
+    "b_26c_france": [
+      "leo_451_early",
+      "mb_162"
+    ],
+    "b_66b": [
+      "b-57",
+      "f-105d"
+    ],
+    "b_34": [
+      "b_25j_1"
+    ],
+    "b_25j_30_china": [
+      "p1y1_mod11_china",
+      "pb4y-2_china"
+    ],
+    "ba_65_k14_l": [
+      "ju-87r-2_italy",
+      "breda_88"
+    ],
+    "b_18a": [
+      "tbd-1_1938"
+    ],
+    "bb-1": [
+      "su-2_mv5",
+      "pe-3_early"
+    ],
+    "beaufighter_mk6c": [
+      "hurricane_mk4",
+      "beaufighter_mkx",
+      "tempest_mkv_vikkers"
+    ],
+    "beaufighter_mk21": [
+      "beaufighter_mkx"
+    ],
+    "beaufort_mkviii": [
+      "blenheim_mkiv"
+    ],
+    "bf-109b_2": [
+      "bf-109c_1"
+    ],
+    "beaufighter_mkx": [
+      "beaufighter_mk6c",
+      "beaufighter_mk21"
+    ],
+    "bf-109e-3": [
+      "bf-109e-1",
+      "bf-109e-4",
+      "bf-109f-1"
+    ],
+    "bf-109e-4": [
+      "bf-109e-3"
+    ],
+    "bf-109f-2": [
+      "bf-109f-1"
+    ],
+    "bf-109e-1": [
+      "bf-109e-3"
+    ],
+    "bf-109f-1": [
+      "bf-109e-3",
+      "bf-109f-2",
+      "bf-109f-4"
+    ],
+    "bf-109f-4": [
+      "bf-109f-1",
+      "bf-109f-4_trop",
+      "bf-109g-2"
+    ],
+    "bf-109f-4_trop": [
+      "bf-109f-4"
+    ],
+    "bf-109g-14": [
+      "bf-109g-2",
+      "bf-109g-10",
+      "bf-109k-4"
+    ],
+    "bf-109g-10": [
+      "bf-109g-14"
+    ],
+    "bf-109g-14as": [
+      "mc-205_serie3",
+      "fiat_g91_ps"
+    ],
+    "bf-109c_1": [
+      "bf-109b_2"
+    ],
+    "bf-109g-6_erla_finland": [
+      "bf-109g-2_finland"
+    ],
+    "bf-109g-6": [
+      "bf-109g-2"
+    ],
+    "bf-109k-4": [
+      "bf-109g-14",
+      "me-262a-1a"
+    ],
+    "bf-110c-6": [
+      "sm_79_1936"
+    ],
+    "bf-109g-2_finland": [
+      "p-51d-20-na_j26",
+      "bf-109g-6_erla_finland",
+      "vampire_fb5_j28b"
+    ],
+    "bf-109g-2": [
+      "bf-109f-4",
+      "bf-109g-6",
+      "bf-109g-14"
+    ],
+    "bf-110f-2": [
+      "bf-110c-4"
+    ],
+    "bf2c_1": [
+      "f3f-2"
+    ],
+    "bf-110c-4": [
+      "do_217n_1",
+      "bf-110f-2",
+      "bf-110g-2"
+    ],
+    "bf-110g-2": [
+      "bf-110c-4",
+      "bf_110g_4",
+      "me-410a-1_u2"
+    ],
+    "bf_110g_4": [
+      "bf-110g-2"
+    ],
+    "blenheim_mkiv": [
+      "v_156_b1",
+      "beaufort_mkviii"
+    ],
+    "bo_105pah1_a1": [
+      "bo_105pah1",
+      "tiger_uht"
+    ],
+    "boomerang_mki": [
+      "boomerang_mkii"
+    ],
+    "bo_105pah1": [
+      "uh_1d",
+      "bo_105pah1_a1"
+    ],
+    "boomerang_mkii": [
+      "boomerang_mki"
+    ],
+    "br_693_ab2": [
+      "v_156_f"
+    ],
+    "br_20_dr": [
+      "s_81_ar125",
+      "br_20m_m1",
+      "sm_79_1936_italy"
+    ],
+    "br_20m_m1": [
+      "br_20_dr"
+    ],
+    "brigand_b1": [
+      "mosquito_fb_mk6",
+      "whirlwind_mk1",
+      "hornet_mk3"
+    ],
+    "breda_88": [
+      "ba_65_k14_l",
+      "p_108a_serie2",
+      "fc_20_bis"
+    ],
+    "buccaneer_s2": [
+      "canberra_bmk2",
+      "buccaneer_s2b"
+    ],
+    "bv-138c-1": [
+      "he_115c_1"
+    ],
+    "buccaneer_s2b": [
+      "buccaneer_s2",
+      "f_111c_raaf"
+    ],
+    "caudron_cr714": [
+      "d_371",
+      "ms_405c1"
+    ],
+    "canberra_bimk6": [
+      "canberra_bmk2"
+    ],
+    "canberra_bmk2": [
+      "lincoln_b2",
+      "canberra_bimk6",
+      "buccaneer_s2"
+    ],
+    "c_3604": [
+      "he_112b_0",
+      "fw-190a-1"
+    ],
+    "cn_cm_25": [
+      "cn_m113a1_tow",
+      "cn_ptz_89",
+      "cn_ptl_02"
+    ],
+    "cn_antelope_tc_1l_ads": [
+      "cn_pgz_04a",
+      "cn_tor_m1"
+    ],
+    "cn_gmc_cckw_353_m45_quad": [
+      "cn_m42_duster"
+    ],
+    "cn_hj_9": [
+      "cn_ptl_02"
+    ],
+    "cn_hq_11": [
+      "cn_pgz_625_fb10"
+    ],
+    "cn_hq_17": [
+      "cn_tor_m1"
+    ],
+    "cn_cm11": [
+      "cn_m60a3_tts",
+      "cn_mbt2000"
+    ],
+    "cn_cm_34": [
+      "cn_ptl_02",
+      "cn_ztl_11"
+    ],
+    "cn_is_2_1943": [
+      "cn_t_34_85_d_5t",
+      "cn_is_2_1944",
+      "cn_m48a1_patton_III"
+    ],
+    "cn_isu_152": [
+      "cn_m55",
+      "cn_m36"
+    ],
+    "cn_is_2_1944": [
+      "cn_is_2_1943"
+    ],
+    "cn_m113a1_tow": [
+      "cn_plz_05",
+      "cn_cm_25"
+    ],
+    "cn_m18_hellcat": [
+      "cn_object_211",
+      "cn_type_63_I"
+    ],
+    "cn_m10": [
+      "cn_lvt_4_zis_2",
+      "cn_m55"
+    ],
+    "cn_isu_122": [
+      "cn_m36"
+    ],
+    "cn_m36": [
+      "cn_isu_152",
+      "cn_isu_122",
+      "cn_su_100_1945"
+    ],
+    "cn_m3a3_stuart": [
+      "cn_m8_greyhound",
+      "cn_m5a1_stuart",
+      "cn_m24_chaffee"
+    ],
+    "cn_lvt_4_zis_2": [
+      "cn_m10"
+    ],
+    "cn_m42_duster": [
+      "cn_gmc_cckw_353_m45_quad",
+      "cn_type_65_aa"
+    ],
+    "cn_m1a2t": [
+      "cn_vt_4b"
+    ],
+    "cn_m24_chaffee": [
+      "cn_m3a3_stuart",
+      "cn_object_211"
+    ],
+    "cn_m4a4_sherman": [
+      "cn_type_97_kai",
+      "cn_t_34_1942"
+    ],
+    "cn_m4a1_76w_sherman": [
+      "cn_t_34_1942"
+    ],
+    "cn_m5a1_stuart": [
+      "cn_m3a3_stuart"
+    ],
+    "cn_m60a3_tts": [
+      "cn_m_41d",
+      "cn_cm11"
+    ],
+    "cn_m8_greyhound": [
+      "cn_m3a3_stuart"
+    ],
+    "cn_m8_scott": [
+      "cn_su_76m_1943"
+    ],
+    "cn_m48a1_patton_III": [
+      "cn_is_2_1943",
+      "cn_type_59"
+    ],
+    "cn_object_211": [
+      "cn_m24_chaffee",
+      "cn_m18_hellcat"
+    ],
+    "cn_m55": [
+      "cn_m10",
+      "cn_isu_152"
+    ],
+    "cn_pgz_04a": [
+      "cn_pgz_09",
+      "cn_antelope_tc_1l_ads"
+    ],
+    "cn_m_41d": [
+      "cn_zts_63_1980",
+      "cn_m60a3_tts"
+    ],
+    "cn_plz_05": [
+      "cn_plz_83",
+      "cn_m113a1_tow"
+    ],
+    "cn_pgz_09": [
+      "cn_wz_305",
+      "cn_pgz_04a"
+    ],
+    "cn_plz_83": [
+      "cn_su_100_1945",
+      "cn_plz_05"
+    ],
+    "cn_pgz_625_fb10": [
+      "cn_tor_m1",
+      "cn_hq_11"
+    ],
+    "cn_ptz_89": [
+      "cn_cm_25"
+    ],
+    "cn_ptl_02": [
+      "cn_cm_25",
+      "cn_hj_9",
+      "cn_cm_34"
+    ],
+    "cn_su_100_1945": [
+      "cn_m36",
+      "cn_plz_83"
+    ],
+    "cn_mbt2000": [
+      "cn_cm11",
+      "cn_vt_4"
+    ],
+    "cn_t_26_1940": [
+      "cn_type_97_chi_ha"
+    ],
+    "cn_su_76m_1943": [
+      "cn_m8_scott"
+    ],
+    "cn_t_34_1942": [
+      "cn_m4a4_sherman",
+      "cn_m4a1_76w_sherman",
+      "cn_t_34_85_d_5t"
+    ],
+    "cn_t_34_85_d_5t": [
+      "cn_t_34_1942",
+      "cn_type_58",
+      "cn_is_2_1943"
+    ],
+    "cn_type_58": [
+      "cn_t_34_85_d_5t"
+    ],
+    "cn_type_59d": [
+      "cn_type_59",
+      "cn_ztz_88b"
+    ],
+    "cn_type_59": [
+      "cn_m48a1_patton_III",
+      "cn_type_69",
+      "cn_type_59d"
+    ],
+    "cn_type_69": [
+      "cn_type_59"
+    ],
+    "cn_type_62": [
+      "cn_type_63_I"
+    ],
+    "cn_type_65_aa": [
+      "cn_m42_duster",
+      "cn_zsd63_pg87"
+    ],
+    "cn_type_86": [
+      "cn_zts_63_1980"
+    ],
+    "cn_tor_m1": [
+      "cn_antelope_tc_1l_ads",
+      "cn_hq_17",
+      "cn_pgz_625_fb10"
+    ],
+    "cn_type_63_I": [
+      "cn_m18_hellcat",
+      "cn_type_62",
+      "cn_zts_63_1980"
+    ],
+    "cn_type_97_chi_ha": [
+      "cn_t_26_1940"
+    ],
+    "cn_type_97_kai": [
+      "cn_m4a4_sherman"
+    ],
+    "cn_vt_4": [
+      "cn_mbt2000",
+      "cn_vt_4b"
+    ],
+    "cn_vt_4b": [
+      "cn_vt_4",
+      "cn_m1a2t"
+    ],
+    "cn_wz_1001": [
+      "cn_ztz_99",
+      "cn_ztz_99a"
+    ],
+    "cn_wz_305": [
+      "cn_zsl_92",
+      "cn_pgz_09"
+    ],
+    "cn_zbd_04a": [
+      "cn_ztl_11"
+    ],
+    "cn_zsd63_pg87": [
+      "cn_type_65_aa",
+      "cn_zsl_92"
+    ],
+    "cn_ztl_11": [
+      "cn_cm_34",
+      "cn_zbd_04a"
+    ],
+    "cn_ztz_88a": [
+      "cn_ztz_88b"
+    ],
+    "cn_zts_63_1980": [
+      "cn_type_63_I",
+      "cn_type_86",
+      "cn_m_41d"
+    ],
+    "cn_ztz_96": [
+      "cn_ztz_88b",
+      "cn_ztz_96a"
+    ],
+    "cn_ztz_96a": [
+      "cn_ztz_96",
+      "cn_ztz_99"
+    ],
+    "cn_ztz_99a": [
+      "cn_wz_1001"
+    ],
+    "cn_ztz_99": [
+      "cn_ztz_96a",
+      "cn_ztz_99_w",
+      "cn_wz_1001"
+    ],
+    "cn_zsl_92": [
+      "cn_zsd63_pg87",
+      "cn_wz_305"
+    ],
+    "cr_32_quater": [
+      "cr_32"
+    ],
+    "cr_32": [
+      "cr_32_quater",
+      "fiat_cr42_italy"
+    ],
+    "cn_ztz_99_w": [
+      "cn_ztz_99"
+    ],
+    "cn_ztz_88b": [
+      "cn_type_59d",
+      "cn_ztz_88a",
+      "cn_ztz_96"
+    ],
+    "d3a1": [
+      "b5n2",
+      "b6n1"
+    ],
+    "d_373": [
+      "d_371"
+    ],
+    "d4y2": [
+      "d4y1"
+    ],
+    "d4y1": [
+      "b6n2",
+      "d4y2",
+      "d4y3"
+    ],
+    "d_371": [
+      "d_373",
+      "caudron_cr714"
+    ],
+    "d_501": [
+      "d_500"
+    ],
+    "d_500": [
+      "d_501",
+      "h-75a-1_france"
+    ],
+    "cw_21": [
+      "ki-27_otsu_china"
+    ],
+    "d4y3": [
+      "d4y1",
+      "p1y1_mod11"
+    ],
+    "d_520_france": [
+      "vg_33"
+    ],
+    "db_3a_china": [
+      "martin_139wc",
+      "sb_2m_103u_china",
+      "p1y1_mod11_china"
+    ],
+    "do_17z_2": [
+      "do_17e_1"
+    ],
+    "do_17z_7": [
+      "do_217j_1"
+    ],
+    "do_217e_2": [
+      "me_264",
+      "do_217e_4",
+      "do_217k_1"
+    ],
+    "do_17e_1": [
+      "do_17z_2",
+      "he_115c_1"
+    ],
+    "do_217e_4": [
+      "do_217e_2"
+    ],
+    "do_217j_1": [
+      "do_17z_7",
+      "do_217j_2"
+    ],
+    "do_217j_2": [
+      "do_217j_1"
+    ],
+    "do_217m_1": [
+      "do_217k_1"
+    ],
+    "do_217n_1": [
+      "ju-88c-6",
+      "do_217n_2",
+      "bf-110c-4"
+    ],
+    "do_335a_0": [
+      "do_335a_1"
+    ],
+    "do_335a_1": [
+      "me-410a-1",
+      "do_335a_0",
+      "fw-190f-8"
+    ],
+    "douglas_ad_2": [
+      "a-26b_10",
+      "douglas_ad_4",
+      "f3d_1"
+    ],
+    "do_217n_2": [
+      "do_217n_1"
+    ],
+    "douglas_ad_4_france": [
+      "sb2c_5_france",
+      "f4u-7"
+    ],
+    "db_3b": [
+      "ar_2",
+      "il-4",
+      "pe-2-1"
+    ],
+    "do_217k_1": [
+      "do_217e_2",
+      "do_217m_1",
+      "ju-188a-2"
+    ],
+    "douglas_ad_4": [
+      "douglas_ad_2",
+      "am_1_mauler"
+    ],
+    "ef_2000_fgr4": [
+      "saab_jas39c_south_africa",
+      "ef_2000_typhoon_aesa"
+    ],
+    "er-2_ach30b_early": [
+      "pe-8_m82",
+      "er-2_ach30b_late",
+      "tu-2"
+    ],
+    "ef_2000_typhoon_aesa": [
+      "ef_2000_fgr4"
+    ],
+    "ef_2000_block_10": [
+      "f-4f_kws_lv",
+      "ef_2000_aesa"
+    ],
+    "er-2_ach30b_late": [
+      "er-2_ach30b_early"
+    ],
+    "ef_2000a_aesa": [
+      "ef_2000a"
+    ],
+    "er-2_m105_mv3": [
+      "pe-2-1",
+      "er-2_m105r_lu2b",
+      "pe-2-110"
+    ],
+    "ef_2000_aesa": [
+      "ef_2000_block_10"
+    ],
+    "ef_2000a": [
+      "f_16a_block_15_adf_italy",
+      "ef_2000a_aesa"
+    ],
+    "etndard_4m": [
+      "so_4050_vautour_2b",
+      "super_etendard_97"
+    ],
+    "er-2_m105r_lu2b": [
+      "er-2_m105_mv3"
+    ],
+    "f-104a": [
+      "f-80",
+      "f-104c",
+      "f-5e"
+    ],
+    "f-100a_china": [
+      "f-86f-30_china",
+      "f-104a_china"
+    ],
+    "f-104g_belgium": [
+      "mirage_5ba",
+      "f_16a_block_15_belgium"
+    ],
+    "f-104a_china": [
+      "f-100a_china",
+      "f-104g_china"
+    ],
+    "f-104g": [
+      "f-86k_late_german",
+      "f-4f_late"
+    ],
+    "f-104g_china": [
+      "f-104a_china",
+      "f-5a_china"
+    ],
+    "f-104c": [
+      "f-104a"
+    ],
+    "f-4c": [
+      "f-100d",
+      "f-4e"
+    ],
+    "f-104j": [
+      "f-86f-30_japan",
+      "f-4ej"
+    ],
+    "f-104g_italy": [
+      "f-86k_late_italy",
+      "f-104s"
+    ],
+    "f-104s_asa": [
+      "f-104s",
+      "f_16a_block_15_adf_italy"
+    ],
+    "f-4e_iaf": [
+      "a_4n",
+      "f-4e_kurnass_2000"
+    ],
+    "f-100d": [
+      "f-86f-2",
+      "f-4c"
+    ],
+    "f-100d_france": [
+      "f-84f_france",
+      "mirage_5f"
+    ],
+    "f-105d": [
+      "b_66b",
+      "f_111a"
+    ],
+    "f-4e_kurnass_2000": [
+      "f-4e_iaf",
+      "f_15a_iaf",
+      "f_15c_baz_msip"
+    ],
+    "f-4ej_kai": [
+      "f-4ej",
+      "f_15j"
+    ],
+    "f-4j": [
+      "f-8e",
+      "fa_18a"
+    ],
+    "f-4f_kws_lv": [
+      "f-4f_late",
+      "ef_2000_block_10"
+    ],
+    "f-4e": [
+      "f-4c",
+      "f_15a"
+    ],
+    "f-4ej": [
+      "f-104j",
+      "f-4ej_kai"
+    ],
+    "f-104s": [
+      "f-104g_italy",
+      "f-104s_asa"
+    ],
+    "f-5a_china": [
+      "f-104g_china",
+      "f-5e_aidc",
+      "f_16a_block_20_mlu"
+    ],
+    "f-4f_late": [
+      "f-104g",
+      "f-4f_kws_lv"
+    ],
+    "f-5e_aidc": [
+      "f-5a_china"
+    ],
+    "f-5a_thailand": [
+      "alpha_jet_th_phase_1",
+      "f-5t_thailand"
+    ],
+    "f-5e": [
+      "f-104a",
+      "f_16a_block_10"
+    ],
+    "f-5t_thailand": [
+      "f-5a_thailand",
+      "f-5th_thailand"
+    ],
+    "f-80a": [
+      "f-82e",
+      "f-80"
+    ],
+    "f-4k": [
+      "harrier_frs1_early",
+      "fa_18a_raaf"
+    ],
+    "f-82e": [
+      "p-38j",
+      "f-80a"
+    ],
+    "f-4m_fgr2": [
+      "hunter_f6",
+      "saab_jas39c_south_africa"
+    ],
+    "f-80": [
+      "f-80a",
+      "f-104a"
+    ],
+    "f-5th_thailand": [
+      "f-5t_thailand",
+      "f_16a_block_15_ocu_thailand",
+      "saab_jas39c_thailand"
+    ],
+    "f-84f_france": [
+      "f-84g_france",
+      "f-100d_france"
+    ],
+    "f-84f_germany": [
+      "me-262a-1a_early",
+      "mig_23bn"
+    ],
+    "f-84f": [
+      "f3d_1",
+      "a_4b"
+    ],
+    "f-84g_china": [
+      "il-10_1946_china",
+      "q_5_early"
+    ],
+    "f-84g_france": [
+      "f4u-7",
+      "f-84f_france"
+    ],
+    "f-84g": [
+      "f-84b"
+    ],
+    "f-5e_switzerland": [
+      "mirage_3s_c70_switzerland",
+      "fa_18c_late_switzerland"
+    ],
+    "f-84g_italy": [
+      "mb_326k",
+      "f-84f_italy"
+    ],
+    "f-86_cl_13_mk4_italy": [
+      "vampire_fb52a_italy",
+      "f-86k_late_italy"
+    ],
+    "f-84b": [
+      "p-51h-5_na",
+      "f-84g",
+      "f-86a-5"
+    ],
+    "f-86_canadair_german": [
+      "me-163b",
+      "f-86_cl_13b_mk6",
+      "f-86k_late_german"
+    ],
+    "f-84g_thailand": [
+      "ki-83",
+      "alpha_jet_a_thailand"
+    ],
+    "f-86_cl_13b_mk6": [
+      "f-86_canadair_german"
+    ],
+    "f-86a-5": [
+      "f-84b",
+      "f-86f-25",
+      "f-86f-2"
+    ],
+    "f-84f_italy": [
+      "f-84g_italy",
+      "tornado_ids_it"
+    ],
+    "f-86f-25": [
+      "f-86a-5"
+    ],
+    "f-86f-30_japan": [
+      "kitsuka",
+      "f-86f-40_japan",
+      "f-104j"
+    ],
+    "f-86f-30_china": [
+      "p-51d-20_china",
+      "f-86f-40_china",
+      "f-100a_china"
+    ],
+    "f-86f-2": [
+      "f-86a-5",
+      "f-100d"
+    ],
+    "f-86f-40_japan": [
+      "f-86f-30_japan"
+    ],
+    "f-86f-40_china": [
+      "f-86f-30_china"
+    ],
+    "f-86k_late_german": [
+      "f-86_canadair_german",
+      "f-104g"
+    ],
+    "f-86k_late": [
+      "so_4050_vautour_2n_late",
+      "alpha_jet_e"
+    ],
+    "f1": [
+      "t2",
+      "a_7e_thailand"
+    ],
+    "f1m2": [
+      "a5m4"
+    ],
+    "f-8e": [
+      "f8u-2",
+      "f-4j"
+    ],
+    "f2a-1": [
+      "f3f-2"
+    ],
+    "f-86k_late_italy": [
+      "f-86_cl_13_mk4_italy",
+      "f-104g_italy"
+    ],
+    "f2a-3": [
+      "f4f-3"
+    ],
+    "f-8e_fn": [
+      "alpha_jet_e",
+      "mirage_4000"
+    ],
+    "f2h-2": [
+      "f8f1b",
+      "f9f-2"
+    ],
+    "f3d_1": [
+      "douglas_ad_2",
+      "f-84f"
+    ],
+    "f4f-3": [
+      "f2a-3",
+      "f4f-4",
+      "f4u-1a"
+    ],
+    "f3f-2": [
+      "bf2c_1",
+      "f2a-1"
+    ],
+    "f4u-1a": [
+      "f4f-3",
+      "f4u-1a_usmc",
+      "f4u-4"
+    ],
+    "f4f-4": [
+      "f4f-3",
+      "f6f-3"
+    ],
+    "f3h-2": [
+      "f9f-2",
+      "f8u-2"
+    ],
+    "f4u-1c": [
+      "f6f-5n",
+      "f4u-4b",
+      "f8f1b"
+    ],
+    "f4u-1d": [
+      "f4u-1a_usmc"
+    ],
+    "f4u-4": [
+      "f4u-1a",
+      "f8f1"
+    ],
+    "f4u-1a_usmc": [
+      "f4u-1a",
+      "f4u-1d"
+    ],
+    "f4u-7": [
+      "douglas_ad_4_france",
+      "f-84g_france"
+    ],
+    "f4u-4b": [
+      "f4u-1c"
+    ],
+    "f6f-3": [
+      "f4f-4"
+    ],
+    "f6f-5n_france": [
+      "p-63c-5_france",
+      "f8f1b_france"
+    ],
+    "f6f-5_france": [
+      "potez_630",
+      "mb_157"
+    ],
+    "f9f-2": [
+      "f2h-2",
+      "f9f-5",
+      "f3h-2"
+    ],
+    "f8f1b": [
+      "f4u-1c",
+      "f7f1",
+      "f2h-2"
+    ],
+    "f7f1": [
+      "f8f1b"
+    ],
+    "f9f-8": [
+      "f9f-5"
+    ],
+    "f8f1b_france": [
+      "f6f-5n_france",
+      "so_4050_vautour_2n_late"
+    ],
+    "f8u-2": [
+      "f3h-2",
+      "f-8e"
+    ],
+    "f8f1": [
+      "f4u-4",
+      "f6f-5n"
+    ],
+    "f6f-5n": [
+      "f8f1",
+      "f4u-1c"
+    ],
+    "f9f-5": [
+      "f9f-2",
+      "f9f-8"
+    ],
+    "f_111f": [
+      "f_111a",
+      "f_15e"
+    ],
+    "f_111c_raaf": [
+      "buccaneer_s2b",
+      "tornado_gr1",
+      "tornado_gr4"
+    ],
+    "f_14a_early": [
+      "fa_18a",
+      "f_14b",
+      "fa_18e_block_2"
+    ],
+    "f_111a": [
+      "f-105d",
+      "f_111f"
+    ],
+    "f_15a": [
+      "f-4e",
+      "f_15c_msip2"
+    ],
+    "f_15c_golden_eagle": [
+      "f_15c_msip2"
+    ],
+    "f_15a_iaf": [
+      "f-4e_kurnass_2000"
+    ],
+    "f_15c_baz_msip": [
+      "f-4e_kurnass_2000"
+    ],
+    "f_16a_block_10": [
+      "f-5e",
+      "f_16a_block_15_adf",
+      "f_16c_block_50"
+    ],
+    "f_15c_msip2": [
+      "f_15a",
+      "f_15c_golden_eagle"
+    ],
+    "f_15i_raam": [
+      "f_16d_block_40_barak_2"
+    ],
+    "f_14b": [
+      "f_14a_early"
+    ],
+    "f_15j_kai": [
+      "f_15j"
+    ],
+    "f_16a_block_10_norway": [
+      "saab_ajs37",
+      "f_16am_block_20_mlu_norway"
+    ],
+    "f_16a_block_15_adf_italy": [
+      "f-104s_asa",
+      "ef_2000a"
+    ],
+    "f_15e": [
+      "f_111f"
+    ],
+    "f_16a_block_15_belgium": [
+      "f-104g_belgium",
+      "f_16am_block_15_mlu_belgium"
+    ],
+    "f_16c_block_40_barak_2": [
+      "f_16a_block_10_iaf"
+    ],
+    "f_16a_block_10_iaf": [
+      "kfir_c7",
+      "f_16c_block_40_barak_2"
+    ],
+    "f_16a_block_20_mlu": [
+      "f-5a_china",
+      "mirage_2000_5ei"
+    ],
+    "f_16a_block_15_ocu_thailand": [
+      "f-5th_thailand"
+    ],
+    "f_15j": [
+      "f-4ej_kai",
+      "f_15j_kai"
+    ],
+    "f_16am_block_15_mlu_belgium": [
+      "f_16a_block_15_belgium"
+    ],
+    "f_16am_block_20_mlu_norway": [
+      "f_16a_block_10_norway"
+    ],
+    "f_16c_block_52_aesa": [
+      "f_16c_block_50"
+    ],
+    "f_16c_block_50": [
+      "f_16a_block_10",
+      "f_16c_block_52_aesa"
+    ],
+    "f_16aj": [
+      "av_8s_late_thailand",
+      "f_2a"
+    ],
+    "f_16d_block_40_barak_2": [
+      "nesher",
+      "f_16i_sufa",
+      "f_15i_raam"
+    ],
+    "f_16i_sufa": [
+      "f_16d_block_40_barak_2"
+    ],
+    "f_222_2": [
+      "potez_633",
+      "maryland_mk1_france"
+    ],
+    "f_16a_block_15_adf": [
+      "f_16a_block_10"
+    ],
+    "fa_18a_raaf": [
+      "f-4k",
+      "fa_18a_hug_2_raaf",
+      "sea_harrier_fa2"
+    ],
+    "fa_18a": [
+      "f-4j",
+      "fa_18c_late",
+      "f_14a_early"
+    ],
+    "f_2a": [
+      "f_16aj"
+    ],
+    "fa_18c_finland": [
+      "mig_21_bis_finland",
+      "fa_18c_mlu_2_finland"
+    ],
+    "fa_18c_late_switzerland": [
+      "f-5e_switzerland"
+    ],
+    "fa_18c_late": [
+      "fa_18a"
+    ],
+    "fa_18d_late_malaysia": [
+      "mig_29n",
+      "su_30mkm"
+    ],
+    "fa_18f_block_2_raaf": [
+      "sea_harrier_fa2"
+    ],
+    "fa_18e_block_2": [
+      "f_14a_early"
+    ],
+    "fa_18a_hug_2_raaf": [
+      "fa_18a_raaf"
+    ],
+    "ffvs_j22_b": [
+      "ffvs_j22_a",
+      "saab_j21a_1"
+    ],
+    "fiat_cr42_j11": [
+      "gladiator_j8a"
+    ],
+    "fc_20_bis": [
+      "breda_88"
+    ],
+    "ffvs_j22_a": [
+      "re_2000_j20",
+      "ffvs_j22_b"
+    ],
+    "fiat_g50_seria2": [
+      "fiat_cr42",
+      "fiat_g50_seria7as"
+    ],
+    "fa_18c_mlu_2_finland": [
+      "fa_18c_finland"
+    ],
+    "fiat_cr42_marcolin": [
+      "fiat_cr42"
+    ],
+    "fiat_cr42_italy": [
+      "cr_32",
+      "fiat_g50_seria2_italy"
+    ],
+    "fiat_g50_seria7as": [
+      "fiat_g50_seria2"
+    ],
+    "fiat_g50_seria2_italy": [
+      "fiat_cr42_italy",
+      "fiat_g50_seria7as_italy",
+      "mc200_serie3_italy"
+    ],
+    "fiat_g50_seria7as_italy": [
+      "fiat_g50_seria2_italy"
+    ],
+    "fiat_g91_ps": [
+      "bf-109g-14as",
+      "fiat_g91_r1",
+      "sagittario_2"
+    ],
+    "fiat_cr42": [
+      "fiat_cr42_marcolin",
+      "fiat_g50_seria2",
+      "mc200_serie3"
+    ],
+    "fiat_g91_r3": [
+      "go229_v3",
+      "alpha_jet_a"
+    ],
+    "fiat_g91_r1": [
+      "fiat_g91_ps"
+    ],
+    "fiat_g91_ys": [
+      "fiat_g91_y"
+    ],
+    "firebrand_tf4": [
+      "hurricane_mk1c",
+      "firefly_mk1"
+    ],
+    "firefly_mk4_netherlands": [
+      "fokker_d23",
+      "spitfire_fr_mk14e_belgium"
+    ],
+    "firefly_mk5": [
+      "firefly_mk1"
+    ],
+    "fj_4b": [
+      "a_4b"
+    ],
+    "f_4e_event": [
+      "f-4c",
+      "f_15a"
+    ],
+    "firefly_mk1": [
+      "firebrand_tf4",
+      "firefly_mk5",
+      "seafire_mk3"
+    ],
+    "fokker_d21_netherlands": [
+      "gladiator_mk1_belgium"
+    ],
+    "fiat_g91_y": [
+      "sagittario_2",
+      "fiat_g91_ys",
+      "amx"
+    ],
+    "fokker_d23": [
+      "fokker_g1a",
+      "firefly_mk4_netherlands"
+    ],
+    "fr_amc_35": [
+      "fr_amd_35"
+    ],
+    "fokker_g1a": [
+      "fokker_d23"
+    ],
+    "fr_amd_35_kwk39": [
+      "fr_crusader_mk_2"
+    ],
+    "fr_adroit_class": [
+      "fr_type40k_vedette",
+      "fr_arras_class_arras"
+    ],
+    "fr_aml_90": [
+      "fr_amx_13_75",
+      "fr_amx_13_90",
+      "fr_marder_df_105"
+    ],
+    "fr_amr_35_zt3": [
+      "fr_lorraine_37l"
+    ],
+    "fr_amx_10m_acra": [
+      "fr_amx_50_foch"
+    ],
+    "fr_amx_10p": [
+      "fr_tpk_641_vpc",
+      "fr_amx_30_dca"
+    ],
+    "fr_amx_13_75": [
+      "fr_amx_elc_bis",
+      "fr_aml_90"
+    ],
+    "fr_amd_35": [
+      "fr_amc_35"
+    ],
+    "fr_amx_13_fl_11": [
+      "fr_crusader_mk_2",
+      "fr_panhard_ebr_1951"
+    ],
+    "fr_amx_10rc": [
+      "fr_mars_15",
+      "fr_sk105_a2",
+      "fr_vbci"
+    ],
+    "fr_amx_13_hot": [
+      "fr_mars_15"
+    ],
+    "fr_amx_13_90": [
+      "fr_aml_90"
+    ],
+    "fr_amx_30_auf_1": [
+      "fr_lorraine_100",
+      "fr_amx_50_foch"
+    ],
+    "fr_amx_30_1972": [
+      "fr_lorraine_40t",
+      "fr_amx_30_b2"
+    ],
+    "fr_amx_13_dca_40": [
+      "fr_amx_vtt_dca",
+      "fr_tpk_641_vpc"
+    ],
+    "fr_amx_30_b2": [
+      "fr_amx_30_1972",
+      "fr_amx_30_b2_brenus",
+      "fr_msc"
+    ],
+    "fr_amx_30_dca": [
+      "fr_amx_10p",
+      "fr_vab_santal"
+    ],
+    "fr_amx_32": [
+      "fr_amx_32_105"
+    ],
+    "fr_amx_30_roland": [
+      "fr_vab_santal",
+      "fr_crotale_ng"
+    ],
+    "fr_amx_30_b2_brenus": [
+      "fr_amx_30_b2"
+    ],
+    "fr_amx_30_ACRA": [
+      "fr_amx_50_foch",
+      "fr_vcac_mephisto"
+    ],
+    "fr_amx_50_foch": [
+      "fr_amx_30_auf_1",
+      "fr_amx_10m_acra",
+      "fr_amx_30_ACRA"
+    ],
+    "fr_amx_32_105": [
+      "fr_amx_50_surbaisse",
+      "fr_amx_32",
+      "fr_amx_40"
+    ],
+    "fr_amx_40": [
+      "fr_amx_32_105",
+      "fr_leopard_2a4nl"
+    ],
+    "fr_amx_50": [
+      "fr_amx_m4",
+      "fr_amx_50_surbaisse"
+    ],
+    "fr_amx_50_surbaisse": [
+      "fr_amx_50",
+      "fr_amx_32_105"
+    ],
+    "fr_amx_m4": [
+      "fr_arl_44",
+      "fr_amx_50"
+    ],
+    "fr_amx_elc_bis": [
+      "fr_panhard_ebr_1951",
+      "fr_amx_13_75"
+    ],
+    "fr_amx_vtt_dca": [
+      "fr_cckw_353_bofors",
+      "fr_amx_13_dca_40"
+    ],
+    "fr_arras_class_arras": [
+      "fr_adroit_class",
+      "fr_vlt1"
+    ],
+    "fr_arl_44_acl1": [
+      "fr_b1_bis",
+      "fr_arl_44"
+    ],
+    "fr_b1_bis": [
+      "fr_renault_d2",
+      "fr_char_2c",
+      "fr_arl_44_acl1"
+    ],
+    "fr_bat_chat_25t": [
+      "fr_lorraine_40t"
+    ],
+    "fr_battleship_courbet_class_paris": [
+      "fr_cruiser_suffren_class_suffren",
+      "fr_battleship_bretagne_class_lorraine"
+    ],
+    "fr_battleship_bretagne_class_bretagne": [
+      "fr_cruiser_la_galissoniere_class_gloire",
+      "fr_battleship_richelieu_class_clemenceau"
+    ],
+    "fr_battleship_bretagne_class_lorraine": [
+      "fr_battleship_courbet_class_paris",
+      "fr_battleship_dunkerque"
+    ],
+    "fr_arl_44": [
+      "fr_arl_44_acl1",
+      "fr_m4a3e2_sherman_jumbo",
+      "fr_amx_m4"
+    ],
+    "fr_battleship_dunkerque": [
+      "fr_battleship_bretagne_class_lorraine",
+      "fr_battleship_richelieu_class_richelieu"
+    ],
+    "fr_battleship_richelieu_class_clemenceau": [
+      "fr_battleship_bretagne_class_bretagne"
+    ],
+    "fr_battleship_richelieu_class_richelieu": [
+      "fr_battleship_dunkerque"
+    ],
+    "fr_cckw_353_bofors": [
+      "fr_amx_vtt_dca"
+    ],
+    "fr_cruiser_dugauy_class_primaguet": [
+      "fr_cruiser_jeanne_darc",
+      "fr_cruiser_emile_bertin"
+    ],
+    "fr_cruiser_jeanne_darc": [
+      "fr_destroyer_marceau_class_marceau",
+      "fr_cruiser_dugauy_class_primaguet"
+    ],
+    "fr_char_2c": [
+      "fr_b1_bis"
+    ],
+    "fr_cruiser_la_galissoniere_class_gloire": [
+      "fr_cruiser_la_galissoniere_class_la_galissoniere",
+      "fr_battleship_bretagne_class_bretagne"
+    ],
+    "fr_cruiser_emile_bertin": [
+      "fr_cruiser_dugauy_class_primaguet",
+      "fr_cruiser_la_galissoniere_class_la_galissoniere"
+    ],
+    "fr_crotale_ng": [
+      "fr_amx_30_roland",
+      "fr_samp_t_fcs"
+    ],
+    "fr_cruiser_chateaurenault_class_guichen": [
+      "fr_destroyer_vauquelin_class_vauquelin",
+      "fr_destroyer_le_fantasque_class_le_malin"
+    ],
+    "fr_cruiser_suffren_class_suffren": [
+      "fr_cruiser_suffren_class_colbert",
+      "fr_battleship_courbet_class_paris"
+    ],
+    "fr_crusader_mk_2": [
+      "fr_amd_35_kwk39",
+      "fr_amx_13_fl_11"
+    ],
+    "fr_cruiser_la_galissoniere_class_la_galissoniere": [
+      "fr_cruiser_emile_bertin",
+      "fr_cruiser_la_galissoniere_class_gloire"
+    ],
+    "fr_destroyer_aigle_class_milan": [
+      "fr_destroyer_desaix_class_kleber",
+      "fr_destroyer_marceau_class_marceau"
+    ],
+    "fr_destroyer_aigle_class_vautour": [
+      "fr_destroyer_hunt_3series",
+      "fr_destroyer_vauquelin_class_vauquelin"
+    ],
+    "fr_destroyer_bourrasque_class_bourrasque": [
+      "fr_destroyer_hunt_3series"
+    ],
+    "fr_cruiser_suffren_class_colbert": [
+      "fr_destroyer_mogador_class_mogador",
+      "fr_cruiser_suffren_class_suffren"
+    ],
+    "fr_destroyer_guepard_class_verdun": [
+      "fr_destroyer_jaguar_class_chacal",
+      "fr_destroyer_desaix_class_kleber"
+    ],
+    "fr_destroyer_jaguar_class_chacal": [
+      "fr_destroyer_jaguar_class_leopard",
+      "fr_destroyer_guepard_class_verdun"
+    ],
+    "fr_destroyer_desaix_class_kleber": [
+      "fr_destroyer_guepard_class_verdun",
+      "fr_destroyer_aigle_class_milan"
+    ],
+    "fr_destroyer_hunt_3series": [
+      "fr_destroyer_bourrasque_class_bourrasque",
+      "fr_destroyer_aigle_class_vautour"
+    ],
+    "fr_destroyer_le_fantasque_class_le_malin": [
+      "fr_cruiser_chateaurenault_class_guichen",
+      "fr_destroyer_mogador_class_mogador"
+    ],
+    "fr_destroyer_jaguar_class_leopard": [
+      "fr_destroyer_jaguar_class_chacal"
+    ],
+    "fr_destroyer_vauquelin_class_vauquelin": [
+      "fr_destroyer_aigle_class_vautour",
+      "fr_cruiser_chateaurenault_class_guichen"
+    ],
+    "fr_destroyer_marceau_class_marceau": [
+      "fr_destroyer_aigle_class_milan",
+      "fr_cruiser_jeanne_darc"
+    ],
+    "fr_elan_class_commandant_domine": [
+      "fr_marne_class_marne",
+      "fr_frigate_croix_de_lorraine_class_la_surprise"
+    ],
+    "fr_frigate_corse_class_brestois": [
+      "fr_frigate_croix_de_lorraine_class_la_surprise"
+    ],
+    "fr_flower_class_aconit": [
+      "fr_mtb96_vosper",
+      "fr_lcg_m_l9059"
+    ],
+    "fr_destroyer_mogador_class_mogador": [
+      "fr_destroyer_le_fantasque_class_le_malin",
+      "fr_cruiser_suffren_class_colbert"
+    ],
+    "fr_hotchkiss_h39": [
+      "fr_somua_s35"
+    ],
+    "fr_frigate_croix_de_lorraine_class_la_surprise": [
+      "fr_elan_class_commandant_domine",
+      "fr_frigate_corse_class_brestois"
+    ],
+    "fr_leclerc_s1": [
+      "fr_msc",
+      "fr_leclerc_s2",
+      "fr_leclerc_sxxi"
+    ],
+    "fr_leclerc_s2": [
+      "fr_leclerc_s1"
+    ],
+    "fr_lcg_m_l9059": [
+      "fr_flower_class_aconit",
+      "fr_marne_class_marne"
+    ],
+    "fr_leopard_2a4nl": [
+      "fr_amx_40",
+      "fr_leopard_2a5nl"
+    ],
+    "fr_leopard_2a6nl": [
+      "fr_leopard_2a5nl"
+    ],
+    "fr_jaguar_ebrc": [
+      "fr_vcac_mephisto"
+    ],
+    "fr_leclerc_sxxi": [
+      "fr_leclerc_s1",
+      "fr_leclerc_azur"
+    ],
+    "fr_leclerc_azur": [
+      "fr_leclerc_sxxi"
+    ],
+    "fr_lorraine_100": [
+      "fr_m36b2_cefeo",
+      "fr_amx_30_auf_1"
+    ],
+    "fr_leopard_2a5nl": [
+      "fr_leopard_2a4nl",
+      "fr_leopard_2a6nl"
+    ],
+    "fr_m10": [
+      "fr_m4a3_105_sherman",
+      "fr_m44"
+    ],
+    "fr_lorraine_37l": [
+      "fr_amr_35_zt3",
+      "fr_somua_sau40"
+    ],
+    "fr_lorraine_40t": [
+      "fr_m26_pershing",
+      "fr_bat_chat_25t",
+      "fr_amx_30_1972"
+    ],
+    "fr_m26_pershing": [
+      "fr_m4a4_cn_75_50",
+      "fr_lorraine_40t"
+    ],
+    "fr_m44": [
+      "fr_m10",
+      "fr_m55",
+      "fr_m36b2_cefeo"
+    ],
+    "fr_m4a1_sherman": [
+      "fr_m3a3_stuart",
+      "fr_m4a4_sherman"
+    ],
+    "fr_m3a3_stuart": [
+      "fr_m4a1_sherman"
+    ],
+    "fr_m4a4_cn_75_50": [
+      "fr_m4a4_sherman",
+      "fr_m26_pershing"
+    ],
+    "fr_m55": [
+      "fr_m44"
+    ],
+    "fr_m4a3e2_sherman_jumbo": [
+      "fr_arl_44"
+    ],
+    "fr_m4a4_sherman": [
+      "fr_m4a1_sherman",
+      "fr_m4a4_cn_75_50"
+    ],
+    "fr_marne_class_marne": [
+      "fr_lcg_m_l9059",
+      "fr_elan_class_commandant_domine"
+    ],
+    "fr_m36b2_cefeo": [
+      "fr_m44",
+      "fr_lorraine_100"
+    ],
+    "fr_marder_df_105": [
+      "fr_aml_90",
+      "fr_mars_15"
+    ],
+    "fr_panhard_ebr_1951": [
+      "fr_amx_13_fl_11",
+      "fr_amx_elc_bis"
+    ],
+    "fr_m4a3_105_sherman": [
+      "fr_m10"
+    ],
+    "fr_mtb96_vosper": [
+      "fr_vtb13",
+      "fr_flower_class_aconit"
+    ],
+    "fr_renault_d2": [
+      "fr_renault_r39",
+      "fr_b1_bis"
+    ],
+    "fr_p730_combattante": [
+      "fr_vlt1"
+    ],
+    "fr_renault_r39": [
+      "fr_renault_d2"
+    ],
+    "fr_mars_15": [
+      "fr_marder_df_105",
+      "fr_amx_13_hot",
+      "fr_amx_10rc"
+    ],
+    "fr_msc": [
+      "fr_amx_30_b2",
+      "fr_leclerc_s1"
+    ],
+    "fr_samp_t_fcs": [
+      "fr_crotale_ng"
+    ],
+    "fr_somua_s35": [
+      "fr_hotchkiss_h39"
+    ],
+    "fr_somua_sau40": [
+      "fr_lorraine_37l"
+    ],
+    "fr_tpk_641_vpc": [
+      "fr_amx_13_dca_40",
+      "fr_amx_10p"
+    ],
+    "fr_sk105_a2": [
+      "fr_amx_10rc"
+    ],
+    "fr_type40k_vedette": [
+      "fr_vtb18",
+      "fr_adroit_class"
+    ],
+    "fr_vab_santal": [
+      "fr_amx_30_dca",
+      "fr_amx_30_roland"
+    ],
+    "fr_vbci": [
+      "fr_amx_10rc",
+      "fr_vextra_105"
+    ],
+    "fr_vextra_105": [
+      "fr_vbci"
+    ],
+    "fr_vlt1": [
+      "fr_arras_class_arras",
+      "fr_p730_combattante"
+    ],
+    "fr_vtb12_mod": [
+      "fr_vtb18"
+    ],
+    "fr_vcac_mephisto": [
+      "fr_amx_30_ACRA",
+      "fr_jaguar_ebrc"
+    ],
+    "fr_vtb13": [
+      "fr_mtb96_vosper"
+    ],
+    "fr_vtb18": [
+      "fr_vtb12_mod",
+      "fr_type40k_vedette"
+    ],
+    "fury_mk1": [
+      "fury_mk2",
+      "hurricanemkii"
+    ],
+    "fw-190a-1": [
+      "c_3604",
+      "fw-190a-4"
+    ],
+    "fw-190a-5": [
+      "fw-190a-5_cannons",
+      "fw-190d-12",
+      "ta-152h-1"
+    ],
+    "fury_mk2": [
+      "fury_mk1"
+    ],
+    "fw-190a-4": [
+      "fw-190a-1",
+      "fw-190a-5_u2",
+      "fw-190d-9"
+    ],
+    "fw-190a-5_cannons": [
+      "fw-190d-9",
+      "fw-190a-8",
+      "fw-190a-5"
+    ],
+    "fw-190a-5_u2": [
+      "fw-190a-4"
+    ],
+    "fw-190a-8": [
+      "fw-190a-5_cannons"
+    ],
+    "fw-190d-12": [
+      "fw-190a-5"
+    ],
+    "fw_190f_8_hungary": [
+      "yak-9p_hungary",
+      "mig-15bis_nr23_hungary"
+    ],
+    "g5n1": [
+      "ki-49_2b",
+      "ki_67_1_ko"
+    ],
+    "g8n1": [
+      "ki_67_1_ko",
+      "mig_29n"
+    ],
+    "g_56": [
+      "g_55_serie1",
+      "vampire_fb52a_italy"
+    ],
+    "g4m1": [
+      "h8k2"
+    ],
+    "g_55_serie1_ss0": [
+      "re_2001_cn",
+      "g_55_serie1"
+    ],
+    "germ_9a33bm3": [
+      "germ_flarakpz_1"
+    ],
+    "fw-190f-8": [
+      "do_335a_1",
+      "me-262a-1a_u4"
+    ],
+    "fw-190d-9": [
+      "fw-190a-4",
+      "fw-190a-5_cannons"
+    ],
+    "g_55_serie1": [
+      "g_55_serie1_ss0",
+      "re_2005_serie0",
+      "g_56"
+    ],
+    "germ_9a35_m": [
+      "germ_flarakpz_1",
+      "germ_flarakrad"
+    ],
+    "germ_battlecruiser_ersatz_yorck": [
+      "germ_battlecruiser_derfflinger",
+      "germ_battleship_scharnhorst"
+    ],
+    "germ_artilleriefahrprahm_typ_d3": [
+      "germ_artilleriefahrprahm_typ_d1",
+      "germ_escort_typem1935"
+    ],
+    "germ_amd_35_kwk39": [
+      "germ_sdkfz_234_2"
+    ],
+    "germ_battlecruiser_derfflinger": [
+      "germ_battlecruiser_von_der_tann",
+      "germ_battlecruiser_ersatz_yorck"
+    ],
+    "germ_battlecruiser_von_der_tann": [
+      "germ_cruiser_admiral_graf_spee",
+      "germ_battlecruiser_derfflinger"
+    ],
+    "germ_battleship_bayern": [
+      "germ_battleship_konig",
+      "germ_battleship_sachsen"
+    ],
+    "germ_artilleriefahrprahm_typ_d1": [
+      "germ_sf40_leichte_flakkampffaehre",
+      "germ_artilleriefahrprahm_typ_d3"
+    ],
+    "fw_200c_1": [
+      "ju-88a-1"
+    ],
+    "germ_battleship_helgoland": [
+      "germ_battleship_westfalen"
+    ],
+    "germ_battleship_bismarck": [
+      "germ_battleship_sachsen"
+    ],
+    "germ_battleship_kaiser": [
+      "germ_battleship_westfalen",
+      "germ_battleship_konig"
+    ],
+    "germ_battleship_konig": [
+      "germ_battleship_kaiser",
+      "germ_battleship_bayern"
+    ],
+    "germ_battleship_sachsen": [
+      "germ_battleship_bayern",
+      "germ_battleship_bismarck"
+    ],
+    "germ_battleship_westfalen": [
+      "germ_cruiser_admiral_hipper",
+      "germ_battleship_helgoland",
+      "germ_battleship_kaiser"
+    ],
+    "germ_battleship_scharnhorst": [
+      "germ_battlecruiser_ersatz_yorck"
+    ],
+    "germ_beutepanzer_mk_iv": [
+      "germ_pzkpfw_III_ausf_E"
+    ],
+    "germ_begleitpanzer_57": [
+      "germ_thyssen_henschel_tam",
+      "germ_radpanzer_90"
+    ],
+    "germ_boxer_swatrinf": [
+      "germ_wiesel_1_tow"
+    ],
+    "germ_bmp_1_ddr": [
+      "germ_marder_1a1"
+    ],
+    "germ_cruiser_admiral_graf_spee": [
+      "germ_cruiser_koln",
+      "germ_battlecruiser_von_der_tann"
+    ],
+    "germ_cruiser_emden_1944": [
+      "germ_cruiser_elbing",
+      "germ_cruiser_koln"
+    ],
+    "germ_cruiser_leipzig": [
+      "germ_destroyer_lutjens_class_lutjens",
+      "germ_cruiser_nurnberg",
+      "germ_cruiser_admiral_hipper"
+    ],
+    "germ_cruiser_koln": [
+      "germ_cruiser_emden_1944",
+      "germ_cruiser_admiral_graf_spee"
+    ],
+    "germ_cruiser_elbing": [
+      "germ_destroyer_class1936b",
+      "germ_cruiser_emden_1944"
+    ],
+    "germ_cruiser_nurnberg": [
+      "germ_cruiser_leipzig"
+    ],
+    "germ_destroyer_class1934a_1940": [
+      "germ_destroyer_class1934a_1944",
+      "germ_destroyer_class1936a_mob_z32"
+    ],
+    "germ_destroyer_class1934a_1944": [
+      "germ_destroyer_class1924_leopard1932",
+      "germ_destroyer_class1934a_1940"
+    ],
+    "germ_cruiser_admiral_hipper": [
+      "germ_cruiser_leipzig",
+      "germ_battleship_westfalen"
+    ],
+    "germ_destroyer_class1936_z20": [
+      "germ_kanonenboot_k2",
+      "germ_destroyer_class1936b"
+    ],
+    "germ_destroyer_class1936b": [
+      "germ_destroyer_class1936_z20",
+      "germ_cruiser_elbing"
+    ],
+    "germ_destroyer_class1924_leopard1932": [
+      "germ_destroyer_class1934a_1944"
+    ],
+    "germ_destroyer_class1939_t22": [
+      "germ_kanonenboot_k2"
+    ],
+    "germ_destroyer_class1936a_mob_z32": [
+      "germ_destroyer_class1934a_1940",
+      "germ_destroyer_class1942_z51"
+    ],
+    "germ_destroyer_class1936c_z46": [
+      "germ_destroyer_class1942_z51",
+      "germ_destroyer_class1944_z52"
+    ],
+    "germ_destroyer_class1944_z52": [
+      "germ_destroyer_class1936c_z46",
+      "germ_destroyer_lutjens_class_lutjens"
+    ],
+    "germ_destroyer_class1942_z51": [
+      "germ_destroyer_class1936a_mob_z32",
+      "germ_destroyer_class1936c_z46"
+    ],
+    "germ_destroyer_lutjens_class_lutjens": [
+      "germ_destroyer_class1944_z52",
+      "germ_cruiser_leipzig"
+    ],
+    "germ_flakpanzer_38t_Gepard": [
+      "germ_flakpanzer_I_ausf_A"
+    ],
+    "germ_flakpanzer_IV_Ostwind": [
+      "germ_sdkfz_251_21",
+      "germ_flakpanzer_IV_Wirbelwind",
+      "germ_flakpanzer_IV_Ostwind_2"
+    ],
+    "germ_flakpanzer_IV_Ostwind_2": [
+      "germ_flakpanzer_IV_Ostwind",
+      "germ_flakpanzer_zerstorer_45"
+    ],
+    "germ_escort_typem1935": [
+      "germ_artilleriefahrprahm_typ_d3",
+      "germ_type140_jaguar"
+    ],
+    "germ_flakpanzer_IV_Kugelblitz": [
+      "germ_flakpanzer_zerstorer_45",
+      "germ_wiesel_1_mk20"
+    ],
+    "germ_flakpanzer_IV_Wirbelwind": [
+      "germ_flakpanzer_IV_Ostwind"
+    ],
+    "germ_flakpanzer_zerstorer_45": [
+      "germ_flakpanzer_IV_Ostwind_2",
+      "germ_flakpanzer_IV_Kugelblitz"
+    ],
+    "germ_flakpanzer_I_ausf_A": [
+      "germ_flakpanzer_38t_Gepard",
+      "germ_sdkfz_222"
+    ],
+    "germ_flarakpz_1": [
+      "germ_wiesel_2_adwc",
+      "germ_9a33bm3",
+      "germ_9a35_m"
+    ],
+    "germ_flakpz_1a2_Gepard": [
+      "germ_wiesel_2_adwc"
+    ],
+    "germ_flarakrad": [
+      "germ_9a35_m",
+      "germ_iris_slm_fcs"
+    ],
+    "germ_frigate_koln": [
+      "germ_type140_jaguar"
+    ],
+    "germ_iris_slm_fcs": [
+      "germ_flarakrad"
+    ],
+    "germ_jgdpz_38t": [
+      "germ_jgdpz_IV_L48"
+    ],
+    "germ_flakpz_I_Gepard": [
+      "germ_sppz2_luchs_a2",
+      "germ_wiesel_2_adwc"
+    ],
+    "germ_kondor2_class": [
+      "germ_schutze_class",
+      "germ_pr1331"
+    ],
+    "germ_kpz_70": [
+      "germ_mkpz_m48a2ga2",
+      "germ_mkpz_super_m48",
+      "germ_kpz_t72m1"
+    ],
+    "germ_jgdpz_IV_L48": [
+      "germ_m55",
+      "germ_jgdpz_38t",
+      "germ_pz_IV_L70"
+    ],
+    "germ_kanonenjagdpanzer": [
+      "germ_panzerjager_panther"
+    ],
+    "germ_kanonenboot_k2": [
+      "germ_destroyer_class1939_t22",
+      "germ_destroyer_class1936_z20"
+    ],
+    "germ_jaguar_2": [
+      "germ_raketenjagdpanzer_2_hot",
+      "germ_wiesel_1_tow"
+    ],
+    "germ_le_kpz_m41": [
+      "germ_m109g",
+      "germ_marder_1a1"
+    ],
+    "germ_beutepanzer_mk_iv_event": [
+      "germ_pzkpfw_III_ausf_E"
+    ],
+    "germ_leopard_1a5": [
+      "germ_leopard_I_a1"
+    ],
+    "germ_kpz_t72m1": [
+      "germ_kpz_70",
+      "germ_leopard_2k"
+    ],
+    "germ_leopard_2a5": [
+      "germ_leopard_2a4",
+      "germ_leopard_2a6",
+      "germ_leopard_2a5_pso"
+    ],
+    "germ_leopard_2a6": [
+      "germ_leopard_2a5"
+    ],
+    "germ_leopard_2a4": [
+      "germ_leopard_I_a1",
+      "germ_leopard_2a5"
+    ],
+    "germ_leopard_2a7v": [
+      "germ_leopard_2a5_pso"
+    ],
+    "germ_leopard_2a5_pso": [
+      "germ_leopard_2a5",
+      "germ_leopard_2a7v"
+    ],
+    "germ_m44": [
+      "germ_sdkfz_9_flak37"
+    ],
+    "germ_leopard_I_a1": [
+      "germ_leopard_I",
+      "germ_leopard_1a5",
+      "germ_leopard_2a4"
+    ],
+    "germ_leopard_I": [
+      "germ_pzkpfw_V_ausf_a_panther",
+      "germ_leopard_I_a1"
+    ],
+    "germ_m109g": [
+      "germ_panzerjager_nashorn",
+      "germ_le_kpz_m41"
+    ],
+    "germ_m55": [
+      "germ_stug_III_ausf_G",
+      "germ_jgdpz_IV_L48"
+    ],
+    "germ_marder_df_105": [
+      "germ_marder_1a3"
+    ],
+    "germ_marder_1a1": [
+      "germ_le_kpz_m41",
+      "germ_bmp_1_ddr",
+      "germ_marder_1a3"
+    ],
+    "germ_marder_1a3": [
+      "germ_marder_1a1",
+      "germ_marder_df_105",
+      "germ_thyssen_henschel_tam"
+    ],
+    "germ_minelayer_drache": [
+      "germ_mz_1",
+      "germ_type143_albatros"
+    ],
+    "germ_mz_1": [
+      "germ_vs10_hydrofoil",
+      "germ_minelayer_drache"
+    ],
+    "germ_mkpz_m48a2ga2": [
+      "germ_mkpz_m48a2c",
+      "germ_kpz_70"
+    ],
+    "germ_mkpz_super_m48": [
+      "germ_kpz_70"
+    ],
+    "germ_mkpz_m48a2c": [
+      "germ_pzkpfw_VI_ausf_b_tiger_IIh",
+      "germ_mkpz_m48a2ga2"
+    ],
+    "germ_panzerjager_1": [
+      "germ_sturmpanzer_II",
+      "germ_sdkfz_251_9",
+      "germ_pzkpfw_38t_Marder_III"
+    ],
+    "germ_leopard_2k": [
+      "germ_kpz_t72m1"
+    ],
+    "germ_panzerjager_panther": [
+      "germ_pz_IV_L70",
+      "germ_kanonenjagdpanzer",
+      "germ_panzerjager_tiger_P_ferdinand"
+    ],
+    "germ_pr_131": [
+      "germ_s_100_s_174_class",
+      "germ_vs10_hydrofoil"
+    ],
+    "germ_pzh_2000": [
+      "germ_panzerjager_tiger_P_ferdinand",
+      "germ_spz_oerlikon_raketenautomat"
+    ],
+    "germ_pr1331": [
+      "germ_kondor2_class",
+      "germ_type152_hugin"
+    ],
+    "germ_pr_206": [
+      "germ_type143_albatros"
+    ],
+    "germ_panzerjager_tiger": [
+      "germ_panzerjager_tiger_P_ferdinand"
+    ],
+    "germ_panzerjager_nashorn": [
+      "germ_sdkfz_9_flak37",
+      "germ_waffentrager_krupp_steyr",
+      "germ_m109g"
+    ],
+    "germ_pzkpfw_38t_na": [
+      "germ_pzkpfw_38t_ausf_F"
+    ],
+    "germ_panzerjager_tiger_P_ferdinand": [
+      "germ_panzerjager_panther",
+      "germ_panzerjager_tiger",
+      "germ_pzh_2000"
+    ],
+    "germ_pz_IV_L70": [
+      "germ_jgdpz_IV_L48",
+      "germ_panzerjager_panther"
+    ],
+    "germ_pzkpfw_35t": [
+      "germ_pzkpfw_38t_ausf_A"
+    ],
+    "germ_pzkpfw_38t_Marder_III": [
+      "germ_panzerjager_1",
+      "germ_stug_III_ausf_A",
+      "germ_pzkpfw_38t_Marder_III_ausf_H"
+    ],
+    "germ_pzkpfw_III_ausf_E": [
+      "germ_beutepanzer_mk_iv",
+      "germ_pzkpfw_III_ausf_B",
+      "germ_pzkpfw_III_ausf_F"
+    ],
+    "germ_pzkpfw_38t_Marder_III_ausf_H": [
+      "germ_pzkpfw_38t_Marder_III",
+      "germ_stuh_III_ausf_G",
+      "germ_stug_III_ausf_G"
+    ],
+    "germ_pzkpfw_38t_ausf_F": [
+      "germ_pzkpfw_38t_ausf_A",
+      "germ_pzkpfw_38t_na"
+    ],
+    "germ_pzkpfw_III_ausf_F": [
+      "germ_pzkpfw_III_ausf_E",
+      "germ_pzkpfw_III_ausf_J_L42"
+    ],
+    "germ_pzkpfw_III_ausf_B": [
+      "germ_pzkpfw_III_ausf_E"
+    ],
+    "germ_pzkpfw_38t_ausf_A": [
+      "germ_pzkpfw_35t",
+      "germ_pzkpfw_38t_ausf_F"
+    ],
+    "germ_pzkpfw_III_ausf_J_L42": [
+      "germ_pzkpfw_III_ausf_F"
+    ],
+    "germ_pzkpfw_III_ausf_J": [
+      "germ_pzkpfw_III_ausf_L"
+    ],
+    "germ_pzkpfw_III_ausf_L": [
+      "germ_pzkpfw_III_ausf_J",
+      "germ_pzkpfw_III_ausf_M",
+      "germ_pzkpfw_VI_ausf_h1_tiger"
+    ],
+    "germ_pzkpfw_III_ausf_M": [
+      "germ_pzkpfw_III_ausf_L"
+    ],
+    "germ_pzkpfw_II_ausf_C": [
+      "germ_pzkpfw_IV_ausf_C",
+      "germ_pzkpfw_II_ausf_F",
+      "germ_pzkpfw_IV_ausf_E"
+    ],
+    "germ_pzkpfw_II_ausf_F": [
+      "germ_pzkpfw_II_ausf_C"
+    ],
+    "germ_pzkpfw_IV_ausf_C": [
+      "germ_pzkpfw_II_ausf_C"
+    ],
+    "germ_pzkpfw_IV_ausf_E": [
+      "germ_pzkpfw_II_ausf_C",
+      "germ_pzkpfw_IV_ausf_F",
+      "germ_pzkpfw_IV_ausf_F2"
+    ],
+    "germ_pzkpfw_IV_ausf_J": [
+      "germ_pzkpfw_IV_ausf_H"
+    ],
+    "germ_pzkpfw_IV_ausf_F2": [
+      "germ_pzkpfw_IV_ausf_E",
+      "germ_pzkpfw_IV_ausf_G",
+      "germ_pzkpfw_IV_ausf_H"
+    ],
+    "germ_pzkpfw_VI_ausf_b_tiger_IIh": [
+      "germ_pzkpfw_VI_ausf_b_tiger_IIp",
+      "germ_mkpz_m48a2c"
+    ],
+    "germ_pzkpfw_IV_ausf_G": [
+      "germ_pzkpfw_IV_ausf_F2"
+    ],
+    "germ_pzkpfw_VI_ausf_h1_tiger": [
+      "germ_pzkpfw_III_ausf_L",
+      "germ_pzkpfw_VI_ausf_e_tiger"
+    ],
+    "germ_pzkpfw_VI_ausf_b_tiger_IIp": [
+      "germ_pzkpfw_VI_ausf_e_tiger",
+      "germ_pzkpfw_VI_ausf_b_tiger_IIh"
+    ],
+    "germ_pzkpfw_IV_ausf_H": [
+      "germ_pzkpfw_IV_ausf_F2",
+      "germ_pzkpfw_IV_ausf_J",
+      "germ_vk_3002m"
+    ],
+    "germ_pzkpfw_VI_ausf_e_tiger": [
+      "germ_pzkpfw_VI_ausf_h1_tiger",
+      "germ_pzkpfw_VI_ausf_b_tiger_IIp"
+    ],
+    "germ_pzkpfw_IV_ausf_F": [
+      "germ_pzkpfw_IV_ausf_E"
+    ],
+    "germ_pzkpfw_V_ausf_d_panther": [
+      "germ_vk_3002m",
+      "germ_pzkpfw_V_ausf_a_panther"
+    ],
+    "germ_pzkpfw_V_ausf_f_panther": [
+      "germ_pzkpfw_V_ausf_g_panther"
+    ],
+    "germ_pzkpfw_V_ausf_g_panther": [
+      "germ_pzkpfw_V_ausf_a_panther",
+      "germ_pzkpfw_V_ausf_f_panther"
+    ],
+    "germ_raketenjagdpanzer_2": [
+      "germ_spz_oerlikon_raketenautomat"
+    ],
+    "germ_radpanzer_90": [
+      "germ_begleitpanzer_57",
+      "germ_thyssen_henschel_tam_2c",
+      "germ_schutzenpanzer_puma"
+    ],
+    "germ_pzkpfw_V_ausf_a_panther": [
+      "germ_pzkpfw_V_ausf_d_panther",
+      "germ_pzkpfw_V_ausf_g_panther",
+      "germ_leopard_I"
+    ],
+    "germ_rboot_r130": [
+      "germ_rboot_r41",
+      "germ_rboot_r301"
+    ],
+    "germ_pzsfl_IVa_dickermax": [
+      "germ_sdkfz_234_2",
+      "germ_pzsflk40_sturer_emil",
+      "germ_sdkfz_9_flak37"
+    ],
+    "germ_pzsflk40_sturer_emil": [
+      "germ_pzsfl_IVa_dickermax"
+    ],
+    "germ_raketenjagdpanzer_2_hot": [
+      "germ_spz_oerlikon_raketenautomat",
+      "germ_jaguar_2"
+    ],
+    "germ_rboot_r301": [
+      "germ_rboot_r130",
+      "germ_sf40_schwere_flakkampffaehre"
+    ],
+    "germ_rdm242": [
+      "germ_schutze_class"
+    ],
+    "germ_rboot_r41": [
+      "germ_rboot_r130"
+    ],
+    "germ_s38": [
+      "germ_s38b"
+    ],
+    "germ_s38b": [
+      "germ_s38",
+      "germ_s30_s61"
+    ],
+    "germ_s30_s61": [
+      "germ_s38b",
+      "germ_s_100_class"
+    ],
+    "germ_s_100_class": [
+      "germ_s30_s61",
+      "germ_s_100_s_174_class"
+    ],
+    "germ_sdkfz_221_s_pz_b_41": [
+      "germ_sturmpanzer_II"
+    ],
+    "germ_s_100_s_174_class": [
+      "germ_s_100_class",
+      "germ_pr_131"
+    ],
+    "germ_schutze_class": [
+      "germ_rdm242",
+      "germ_kondor2_class"
+    ],
+    "germ_sdkfz_222": [
+      "germ_flakpanzer_I_ausf_A",
+      "germ_sdkfz_6_2_flak36"
+    ],
+    "germ_sdkfz_234_2": [
+      "germ_amd_35_kwk39",
+      "germ_pzsfl_IVa_dickermax"
+    ],
+    "germ_schutzenpanzer_puma_vjtf": [
+      "germ_schutzenpanzer_puma"
+    ],
+    "germ_sdkfz_251_9": [
+      "germ_panzerjager_1"
+    ],
+    "germ_sdkfz_6_2_flak36": [
+      "germ_sdkfz_222"
+    ],
+    "germ_sdkfz_251_21": [
+      "germ_flakpanzer_IV_Ostwind"
+    ],
+    "germ_schutzenpanzer_puma": [
+      "germ_radpanzer_90",
+      "germ_schutzenpanzer_puma_vjtf"
+    ],
+    "germ_sf40_leichte_flakkampffaehre": [
+      "germ_sf40_schwere_flakkampffaehre",
+      "germ_artilleriefahrprahm_typ_d1"
+    ],
+    "germ_sdkfz_9_flak37": [
+      "germ_pzsfl_IVa_dickermax",
+      "germ_m44",
+      "germ_panzerjager_nashorn"
+    ],
+    "germ_sk105_a2": [
+      "germ_thyssen_henschel_tam"
+    ],
+    "germ_sppz2_luchs_a2": [
+      "germ_wiesel_1_mk20",
+      "germ_flakpz_I_Gepard"
+    ],
+    "germ_spz_oerlikon_raketenautomat": [
+      "germ_pzh_2000",
+      "germ_raketenjagdpanzer_2",
+      "germ_raketenjagdpanzer_2_hot"
+    ],
+    "germ_stug_III_ausf_F": [
+      "germ_stuh_III_ausf_G"
+    ],
+    "germ_sf40_schwere_flakkampffaehre": [
+      "germ_rboot_r301",
+      "germ_sf40_leichte_flakkampffaehre"
+    ],
+    "germ_stug_III_ausf_G": [
+      "germ_pzkpfw_38t_Marder_III_ausf_H",
+      "germ_m55"
+    ],
+    "germ_stuh_III_ausf_G": [
+      "germ_pzkpfw_38t_Marder_III_ausf_H",
+      "germ_stug_III_ausf_F"
+    ],
+    "germ_sturmpanzer_II": [
+      "germ_sdkfz_221_s_pz_b_41",
+      "germ_panzerjager_1"
+    ],
+    "germ_stug_III_ausf_A": [
+      "germ_pzkpfw_38t_Marder_III"
+    ],
+    "germ_thyssen_henschel_tam_2c": [
+      "germ_radpanzer_90"
+    ],
+    "germ_type140_jaguar": [
+      "germ_escort_typem1935",
+      "germ_frigate_koln"
+    ],
+    "germ_type143_albatros": [
+      "germ_minelayer_drache",
+      "germ_pr_206"
+    ],
+    "germ_type152_hugin": [
+      "germ_pr1331",
+      "germ_type153_pfeil"
+    ],
+    "germ_thyssen_henschel_tam": [
+      "germ_marder_1a3",
+      "germ_sk105_a2",
+      "germ_begleitpanzer_57"
+    ],
+    "germ_type153_pfeil": [
+      "germ_type152_hugin"
+    ],
+    "germ_vs10_hydrofoil": [
+      "germ_pr_131",
+      "germ_mz_1"
+    ],
+    "germ_vk_3002m": [
+      "germ_pzkpfw_IV_ausf_H",
+      "germ_pzkpfw_V_ausf_d_panther"
+    ],
+    "germ_waffentrager_krupp_steyr": [
+      "germ_panzerjager_nashorn"
+    ],
+    "germ_wiesel_1_mk20": [
+      "germ_flakpanzer_IV_Kugelblitz",
+      "germ_sppz2_luchs_a2"
+    ],
+    "germ_wiesel_1_tow": [
+      "germ_jaguar_2",
+      "germ_boxer_swatrinf"
+    ],
+    "germ_wiesel_2_adwc": [
+      "germ_flakpz_I_Gepard",
+      "germ_flakpz_1a2_Gepard",
+      "germ_flarakpz_1"
+    ],
+    "gladiator_j8a": [
+      "j6b",
+      "fiat_cr42_j11"
+    ],
+    "gladiator_mk1_belgium": [
+      "fokker_d21_netherlands"
+    ],
+    "gladiator_mk2": [
+      "spitfire_mk1"
+    ],
+    "gladiator_mk1_china": [
+      "ki-27_otsu_china"
+    ],
+    "h-75a-1_france": [
+      "d_500",
+      "h-75a-4_france",
+      "potez_630"
+    ],
+    "h8k2": [
+      "g4m1",
+      "ki-49_1"
+    ],
+    "gladiator_mk2_navy": [
+      "nimrod_mk2"
+    ],
+    "go229_v3": [
+      "me-410b-6_r3",
+      "fiat_g91_r3"
+    ],
+    "h_34_france": [
+      "sa_316b",
+      "sa_313b_france"
+    ],
+    "h-75a-4_france": [
+      "h-75a-1_france"
+    ],
+    "h6k4": [
+      "ki_21_1ko"
+    ],
+    "harrier_frs1_early": [
+      "scimitar_f1",
+      "f-4k"
+    ],
+    "halifax_mk3": [
+      "wellington_mk3",
+      "stirling_mk1"
+    ],
+    "harrier_gr3": [
+      "jaguar_gr1",
+      "jaguar_gr1a"
+    ],
+    "hawk_200_rda": [
+      "hawk_200"
+    ],
+    "he-111h-16_winter": [
+      "he-111h-6"
+    ],
+    "hawk_200": [
+      "jaguar_gr1a",
+      "hawk_200_rda",
+      "harrier_gr7"
+    ],
+    "he-111h-2": [
+      "he_115c_1"
+    ],
+    "harrier_gr7": [
+      "hawk_200"
+    ],
+    "he-111h-6": [
+      "ju-88a-1",
+      "he-111h-16_winter",
+      "me_264"
+    ],
+    "he-162a-2": [
+      "ta-152h-1",
+      "mig-15bis_nr23_german"
+    ],
+    "he51b1": [
+      "he51a1",
+      "he51c1"
+    ],
+    "he-177a-5": [
+      "ju-188a-2",
+      "arado-234"
+    ],
+    "he51a1": [
+      "he51b1",
+      "he_112v_5"
+    ],
+    "he_100d_1": [
+      "he_112v_5"
+    ],
+    "he51c1": [
+      "he51b1"
+    ],
+    "he_115a_2_sweden": [
+      "saab_b3c"
+    ],
+    "he_112b_0": [
+      "c_3604"
+    ],
+    "he_115c_1": [
+      "do_17e_1",
+      "bv-138c-1",
+      "he-111h-2"
+    ],
+    "he_112v_5": [
+      "he51a1",
+      "he_112a_0",
+      "he_100d_1"
+    ],
+    "he_112a_0": [
+      "he_112v_5"
+    ],
+    "hkp3c": [
+      "hkp2"
+    ],
+    "hkp9a_cb2": [
+      "hkp2",
+      "hkp9a_cb3_fc"
+    ],
+    "hp52_hampden_mk1_late": [
+      "swordfish_mk1",
+      "hp52_hampden_tbmk1",
+      "sunderland_mk3a"
+    ],
+    "hkp2": [
+      "hkp3c",
+      "hkp9a_cb2"
+    ],
+    "hkp9a_cb3_fc": [
+      "hkp9a_cb2",
+      "ahs"
+    ],
+    "hp52_hampden_tbmk1": [
+      "hp52_hampden_mk1_late"
+    ],
+    "hornet_mk3": [
+      "brigand_b1",
+      "swift_f1"
+    ],
+    "hs-129b-3": [
+      "ju-87g_1",
+      "hs-129b-2",
+      "ju-87d-3"
+    ],
+    "hs-123a-1_china": [
+      "v_11g"
+    ],
+    "hs-129b-2": [
+      "hs-129b-3"
+    ],
+    "hunter_f1": [
+      "venom_fb4",
+      "hunter_f6"
+    ],
+    "hs-123a-1": [
+      "ju-87b-2"
+    ],
+    "hunter_f6_holland": [
+      "meteor_fmk8_belgium",
+      "mirage_5ba"
+    ],
+    "hunter_f58a_1971_switzerland": [
+      "il_28_german",
+      "mirage_3s_c70_switzerland"
+    ],
+    "hurricane_mk1_late_finland": [
+      "b_239_finland",
+      "p-51d-20-na_j26"
+    ],
+    "hunter_f50_sweden": [
+      "vampire_fb5_j28b",
+      "mig_21_bis_finland"
+    ],
+    "hunter_f6": [
+      "hunter_f1",
+      "f-4m_fgr2"
+    ],
+    "hurricane_mk1c": [
+      "hurricane_mk1b",
+      "firebrand_tf4"
+    ],
+    "i-153_m62": [
+      "i-15bis"
+    ],
+    "hurricane_mk1b": [
+      "hurricane_mk1c"
+    ],
+    "hurricane_mk4": [
+      "beaufighter_mk6c"
+    ],
+    "i-153_m62_china": [
+      "i-16_chung_28"
+    ],
+    "hurricane_mk1": [
+      "hurricanemkii"
+    ],
+    "hurricanemkii": [
+      "fury_mk1",
+      "hurricane_mk1",
+      "typhoon_mk1a"
+    ],
+    "i-15_1934": [
+      "i-15_1935",
+      "i-15bis"
+    ],
+    "he51c1_late": [
+      "he51b1"
+    ],
+    "i-15bis": [
+      "i-15_1934",
+      "i-153_m62",
+      "lagg-3-8"
+    ],
+    "i-15_1935_moscow": [
+      "i-15_1935"
+    ],
+    "i-16_chung_28": [
+      "i-15bis_china",
+      "i-16_type5_1935_china",
+      "i-153_m62_china"
+    ],
+    "i-16_type10_china": [
+      "i-16_type17_china"
+    ],
+    "i-15bis_china": [
+      "i-16_chung_28"
+    ],
+    "i-16_type17_china": [
+      "i-16_type10_china",
+      "ki_44_2_hei_china"
+    ],
+    "i-16_type24": [
+      "i-16_type18"
+    ],
+    "i-15_1935": [
+      "i-15_1934",
+      "i-15_1935_moscow"
+    ],
+    "i-16_type10": [
+      "mig_3_series_1_15",
+      "i-16_type18",
+      "mig_3_series_1_15_bk_pod"
+    ],
+    "i_185_m82": [
+      "i-16_type27",
+      "i_185_m71_standard"
+    ],
+    "i-16_type27": [
+      "mig_3_series_1_15_bk_pod",
+      "i_185_m82"
+    ],
+    "i-16_type5": [
+      "mig_3_series_1_15"
+    ],
+    "i-16_type5_1935_china": [
+      "i-16_chung_28"
+    ],
+    "i_185_m71_standard": [
+      "i_185_m82",
+      "i_225"
+    ],
+    "i_225": [
+      "i_185_m71_standard",
+      "mig-9"
+    ],
+    "i-16_type18": [
+      "i-16_type10",
+      "i-16_type24"
+    ],
+    "il-10_1946_china": [
+      "p-38l_1_china_rocaf",
+      "f-84g_china"
+    ],
+    "il-2m": [
+      "il_2m_1943"
+    ],
+    "il-10_1946_hungary": [
+      "p-47d_30_italy",
+      "mb_326k"
+    ],
+    "il-2i": [
+      "il_2_1941",
+      "il_2_37_1943",
+      "pe-3_bis"
+    ],
+    "il-10": [
+      "su-6_am42",
+      "il-10_1946",
+      "il_28"
+    ],
+    "il_28_china": [
+      "tu_4_china",
+      "j_11"
+    ],
+    "il-4": [
+      "db_3b"
+    ],
+    "il_28_german": [
+      "arado-234",
+      "hunter_f58a_1971_switzerland"
+    ],
+    "il_28": [
+      "il-10",
+      "il_28sh",
+      "su_25"
+    ],
+    "il_28sh": [
+      "il_28"
+    ],
+    "il-10_1946": [
+      "il-10"
+    ],
+    "il_28_hungary": [
+      "tu-2_postwar_late_hungary",
+      "su_22m3_hungary"
+    ],
+    "il_2_1941": [
+      "il-2i"
+    ],
+    "il_centurion_mk_5_shot": [
+      "il_aml_90",
+      "il_tiran_4"
+    ],
+    "il_centurion_shot_kal_gimel": [
+      "il_centurion_shot_kal_alef",
+      "il_tiran_6",
+      "il_merkava_mk_1"
+    ],
+    "il_2_37_1943": [
+      "il-2i"
+    ],
+    "il_eitan": [
+      "il_namer_rcws_30",
+      "il_namer_tsrikhon"
+    ],
+    "il_centurion_shot_kal_alef": [
+      "il_tiran_4",
+      "il_centurion_shot_kal_gimel"
+    ],
+    "il_m109a1": [
+      "il_m109",
+      "il_ss_11_halftrack",
+      "il_m113_hvms"
+    ],
+    "il_2m_1943": [
+      "pe-3_bis",
+      "il-2m",
+      "su-6_m71"
+    ],
+    "il_m113_hvms": [
+      "il_m109a1",
+      "il_m113a1_tow"
+    ],
+    "il_amx_13_75": [
+      "il_aml_90"
+    ],
+    "il_m_51": [
+      "il_m48a1_patton_III"
+    ],
+    "il_aml_90": [
+      "il_amx_13_75",
+      "il_centurion_mk_5_shot"
+    ],
+    "il_m113a1_tow": [
+      "il_m113_hvms",
+      "il_namer_rcws_30"
+    ],
+    "il_m163_vulcan": [
+      "il_zsu_57_2",
+      "il_zsu_23_4"
+    ],
+    "il_m109": [
+      "il_m109a1"
+    ],
+    "il_machbet": [
+      "il_zsu_23_4",
+      "il_mim_72_chaparral"
+    ],
+    "il_magach_3_idf": [
+      "il_m48a1_patton_III",
+      "il_magach_6",
+      "il_magach_6a"
+    ],
+    "il_magach_2": [
+      "il_m48a1_patton_III"
+    ],
+    "il_magach_6_rocket": [
+      "il_magach_6b"
+    ],
+    "il_magach_6": [
+      "il_magach_3_idf"
+    ],
+    "il_magach_6a": [
+      "il_magach_3_idf",
+      "il_magach_5",
+      "il_magach_6r"
+    ],
+    "il_magach_6b": [
+      "il_magach_6r",
+      "il_magach_6_rocket"
+    ],
+    "il_magach_6b_gal_batash": [
+      "il_magach_6m",
+      "il_magach_7c",
+      "il_sabra_mk1"
+    ],
+    "il_m48a1_patton_III": [
+      "il_m_51",
+      "il_magach_2",
+      "il_magach_3_idf"
+    ],
+    "il_magach_6r": [
+      "il_magach_6a",
+      "il_magach_6b",
+      "il_magach_6m"
+    ],
+    "il_magach_6m": [
+      "il_magach_6r",
+      "il_magach_6c",
+      "il_magach_6b_gal_batash"
+    ],
+    "il_magach_7c": [
+      "il_magach_6b_gal_batash"
+    ],
+    "il_magach_6c": [
+      "il_magach_6m"
+    ],
+    "il_merkava_mk_2b_early": [
+      "il_merkava_mk_1b"
+    ],
+    "il_merkava_mk_1b": [
+      "il_merkava_mk_1",
+      "il_merkava_mk_2b_early",
+      "il_merkava_mk_3b"
+    ],
+    "il_magach_5": [
+      "il_magach_6a"
+    ],
+    "il_merkava_mk_4_lic": [
+      "il_merkava_mk_4b"
+    ],
+    "il_merkava_mk_3c": [
+      "il_merkava_mk_3b"
+    ],
+    "il_merkava_mk_4m": [
+      "il_merkava_mk_4b"
+    ],
+    "il_mim_72_chaparral": [
+      "il_machbet",
+      "il_spyder_aio"
+    ],
+    "il_merkava_mk_1": [
+      "il_centurion_shot_kal_gimel",
+      "il_merkava_mk_1b"
+    ],
+    "il_merkava_mk_3b": [
+      "il_merkava_mk_1b",
+      "il_merkava_mk_3c",
+      "il_merkava_mk_4b"
+    ],
+    "il_merkava_mk_4b": [
+      "il_merkava_mk_3b",
+      "il_merkava_mk_4_lic",
+      "il_merkava_mk_4m"
+    ],
+    "il_ss_11_halftrack": [
+      "il_m109a1"
+    ],
+    "il_tcm_20": [
+      "il_zsu_57_2"
+    ],
+    "il_namer_tsrikhon": [
+      "il_eitan"
+    ],
+    "il_namer_rcws_30": [
+      "il_m113a1_tow",
+      "il_eitan"
+    ],
+    "il_tiran_6": [
+      "il_centurion_shot_kal_gimel"
+    ],
+    "il_sabra_mk1": [
+      "il_magach_6b_gal_batash"
+    ],
+    "il_tiran_4": [
+      "il_centurion_mk_5_shot",
+      "il_tiran_4_sh",
+      "il_centurion_shot_kal_alef"
+    ],
+    "il_tiran_4_sh": [
+      "il_tiran_4"
+    ],
+    "il_zsu_23_4": [
+      "il_m163_vulcan",
+      "il_machbet"
+    ],
+    "it_40_43m_zrinyi_2": [
+      "it_40m_turan_1",
+      "it_43m_turan_3"
+    ],
+    "it_40m_turan_1": [
+      "it_40_43m_zrinyi_2"
+    ],
+    "it_43m_turan_3": [
+      "it_40_43m_zrinyi_2",
+      "it_2s1"
+    ],
+    "il_spyder_aio": [
+      "il_mim_72_chaparral"
+    ],
+    "il_zsu_57_2": [
+      "il_tcm_20",
+      "il_m163_vulcan"
+    ],
+    "it_9a33bm3": [
+      "it_otobreda_sidam_25_mistral",
+      "it_9a35_m",
+      "it_otomatic"
+    ],
+    "it_9a35_m": [
+      "it_9a33bm3"
+    ],
+    "it_ab_43": [
+      "it_m3a3_stuart"
+    ],
+    "it_ab_41": [
+      "it_m11_39"
+    ],
+    "it_alano_9851": [
+      "it_mc492_baleno",
+      "it_cassiopea_p401"
+    ],
+    "it_ariete_amv_pt1": [
+      "it_c1_ariete_pso"
+    ],
+    "it_as_42_47": [
+      "it_m11_39"
+    ],
+    "it_2s1": [
+      "it_43m_turan_3",
+      "it_btr_80a_hungary"
+    ],
+    "it_a1_vosper": [
+      "it_mas_stefano_turr",
+      "it_ms473_2a"
+    ],
+    "it_b1_centauro": [
+      "it_vcc_80_hitfist_60",
+      "it_b1_centauro_romor",
+      "it_centauro_mgs_120"
+    ],
+    "it_b1_centauro_romor": [
+      "it_b1_centauro"
+    ],
+    "it_battleship_caio_duilio": [
+      "it_battleship_andrea_doria",
+      "it_battleship_littorio_class_littorio"
+    ],
+    "it_albatros_class_f543": [
+      "it_ciclone_class_ghibli"
+    ],
+    "it_battleship_andrea_doria": [
+      "it_cruiser_zara_class",
+      "it_battleship_caio_duilio"
+    ],
+    "it_battleship_conte_di_cavour": [
+      "it_battleship_francesco_caracciolo",
+      "it_battleship_littorio_class_roma"
+    ],
+    "it_battleship_francesco_caracciolo": [
+      "it_battleship_dante_alighieri",
+      "it_battleship_conte_di_cavour"
+    ],
+    "it_battleship_littorio_class_roma": [
+      "it_battleship_conte_di_cavour"
+    ],
+    "it_c13_t90": [
+      "it_fiat_6616_cockerill",
+      "it_oto_r3_106sr"
+    ],
+    "it_btr_80a_hungary": [
+      "it_2s1",
+      "it_t_72m1"
+    ],
+    "it_c1_ariete": [
+      "it_c1_ariete_pso"
+    ],
+    "it_battleship_dante_alighieri": [
+      "it_cruiser_garibaldi_class_abruzzi",
+      "it_battleship_francesco_caracciolo"
+    ],
+    "it_c1_ariete_pso": [
+      "it_c1_ariete_preserie",
+      "it_c1_ariete",
+      "it_ariete_amv_pt1"
+    ],
+    "it_cassiopea_p401": [
+      "it_alano_9851",
+      "it_p494_saetta"
+    ],
+    "it_battleship_littorio_class_littorio": [
+      "it_battleship_caio_duilio"
+    ],
+    "it_c1_ariete_preserie": [
+      "it_leopard_1a5",
+      "it_c1_ariete_pso"
+    ],
+    "it_cruiser_bolzano": [
+      "it_cruiser_trento",
+      "it_cruiser_zara_class"
+    ],
+    "it_centauro_mgs_120": [
+      "it_b1_centauro",
+      "it_centauro_2"
+    ],
+    "it_centauro_2": [
+      "it_centauro_mgs_120"
+    ],
+    "it_cruiser_bartolomeocolleoni_1940": [
+      "it_destroyer_navigatori_class_verazzano",
+      "it_cruiser_cadorna_class_diaz"
+    ],
+    "it_cruiser_cadorna_class_diaz": [
+      "it_cruiser_bartolomeocolleoni_1940",
+      "it_cruiser_montecuccoli"
+    ],
+    "it_cruiser_eugenio_di_savoia": [
+      "it_cruiser_montecuccoli",
+      "it_cruiser_garibaldi_class_abruzzi"
+    ],
+    "it_cruiser_etna_class": [
+      "it_destroyer_impetuoso_class_impetuoso",
+      "it_cruiser_capitani_romani_class_attilio_regolo"
+    ],
+    "it_cruiser_montecuccoli": [
+      "it_cruiser_cadorna_class_diaz",
+      "it_cruiser_eugenio_di_savoia"
+    ],
+    "it_ciclone_class_ghibli": [
+      "it_gabbiano_class",
+      "it_albatros_class_f543"
+    ],
+    "it_destroyer_comandanti_medaglie_doro": [
+      "it_destroyer_maestrale_class_grecale",
+      "it_destroyer_impetuoso_class_impetuoso"
+    ],
+    "it_cruiser_garibaldi_class_abruzzi": [
+      "it_cruiser_eugenio_di_savoia",
+      "it_battleship_dante_alighieri"
+    ],
+    "it_cruiser_zara_class": [
+      "it_cruiser_bolzano",
+      "it_battleship_andrea_doria"
+    ],
+    "it_destroyer_dardo": [
+      "it_destroyer_turbine",
+      "it_destroyer_oriani_class_gioberti"
+    ],
+    "it_cruiser_capitani_romani_class_attilio_regolo": [
+      "it_cruiser_etna_class",
+      "it_cruiser_trento"
+    ],
+    "it_destroyer_leone_class": [
+      "it_destroyer_oriani_class_gioberti",
+      "it_destroyer_soldati_serie1_camicianera"
+    ],
+    "it_destroyer_navigatori_class_verazzano": [
+      "it_destroyer_soldati_serie1_camicianera",
+      "it_cruiser_bartolomeocolleoni_1940"
+    ],
+    "it_destroyer_soldati_serie1_camicianera": [
+      "it_destroyer_leone_class",
+      "it_destroyer_navigatori_class_verazzano"
+    ],
+    "it_dardo_vcc": [
+      "it_vbc_pt2",
+      "it_vcc_80_hitfist_30",
+      "it_freccia"
+    ],
+    "it_destroyer_turbine": [
+      "it_destroyer_dardo"
+    ],
+    "it_destroyer_maestrale_class_grecale": [
+      "it_destroyer_vifor_class_aquila",
+      "it_destroyer_comandanti_medaglie_doro"
+    ],
+    "it_destroyer_oriani_class_gioberti": [
+      "it_destroyer_dardo",
+      "it_destroyer_leone_class"
+    ],
+    "it_cruiser_trento": [
+      "it_cruiser_capitani_romani_class_attilio_regolo",
+      "it_cruiser_bolzano"
+    ],
+    "it_destroyer_impetuoso_class_impetuoso": [
+      "it_destroyer_comandanti_medaglie_doro",
+      "it_cruiser_etna_class"
+    ],
+    "it_fiat_6614_106sr": [
+      "it_fiat_6616_cockerill"
+    ],
+    "it_fiat_cm52": [
+      "it_m15_42_contraereo"
+    ],
+    "it_destroyer_vifor_class_aquila": [
+      "it_destroyer_maestrale_class_grecale"
+    ],
+    "it_gabbiano_class": [
+      "it_ms473_2a_art",
+      "it_ciclone_class_ghibli"
+    ],
+    "it_l3_cc": [
+      "it_semovente_l40"
+    ],
+    "it_l6": [
+      "it_m13_40_serie_1"
+    ],
+    "it_fiat_6616_cockerill": [
+      "it_m18_hellcat",
+      "it_fiat_6614_106sr",
+      "it_c13_t90"
+    ],
+    "it_kf_41": [
+      "it_leopard_2a4",
+      "it_leopard_2a7_hungary"
+    ],
+    "it_lancia3ro_100": [
+      "it_semovente_l40",
+      "it_semovente_m41_75_18"
+    ],
+    "it_leopard_2a7_hungary": [
+      "it_kf_41"
+    ],
+    "it_m109g": [
+      "it_m36b1",
+      "it_m113a1_tow"
+    ],
+    "it_leopard_1a2": [
+      "it_of_40_mk_1"
+    ],
+    "it_m113a1_tow": [
+      "it_m109g",
+      "it_vbc_pt2"
+    ],
+    "it_leopard_1a5": [
+      "it_of_40_mk_2a",
+      "it_c1_ariete_preserie"
+    ],
+    "it_m13_40_serie_1": [
+      "it_l6",
+      "it_m13_40_serie_3",
+      "it_m14_41"
+    ],
+    "it_freccia": [
+      "it_dardo_vcc"
+    ],
+    "it_m13_40_serie_3": [
+      "it_m13_40_serie_1"
+    ],
+    "it_m15_42_contraereo": [
+      "it_fiat_cm52",
+      "it_leopard_bofors"
+    ],
+    "it_m14_41": [
+      "it_m13_40_serie_1",
+      "it_m15_42"
+    ],
+    "it_leopard_2a4": [
+      "it_t_72m1",
+      "it_kf_41"
+    ],
+    "it_m18_hellcat": [
+      "it_semovente_breda_501",
+      "it_fiat_6616_cockerill"
+    ],
+    "it_leopard_bofors": [
+      "it_m15_42_contraereo",
+      "it_oto_r3_t20_fa"
+    ],
+    "it_m15_42": [
+      "it_m14_41",
+      "it_pzkpfw_III_ausf_N",
+      "it_p_40"
+    ],
+    "it_m11_39": [
+      "it_ab_41",
+      "it_as_42_47"
+    ],
+    "it_m24_chaffee": [
+      "it_m3a3_stuart",
+      "it_m44"
+    ],
+    "it_m26a1_pershing": [
+      "it_sherman_vc_firefly",
+      "it_m47_105"
+    ],
+    "it_m36b1": [
+      "it_semovente_m43_75_46",
+      "it_m109g"
+    ],
+    "it_m44": [
+      "it_m24_chaffee",
+      "it_semovente_breda_501"
+    ],
+    "it_m4a4_sherman": [
+      "it_p_40",
+      "it_sherman_VII"
+    ],
+    "it_m55": [
+      "it_semovente_m43_105",
+      "it_semovente_m41m_90"
+    ],
+    "it_m3a3_stuart": [
+      "it_ab_43",
+      "it_m24_chaffee"
+    ],
+    "it_mas441": [
+      "it_ms53_2a",
+      "it_ms471_1a"
+    ],
+    "it_mas_classe500_3_1944": [
+      "it_vas_baglietto_68t_1serie"
+    ],
+    "it_mas_classe500_3": [
+      "it_ms53_2a"
+    ],
+    "it_mc490_folgore": [
+      "it_ms473_2a",
+      "it_mc492_baleno"
+    ],
+    "it_ms15_1a": [
+      "it_vas_baglietto_68t_1serie",
+      "it_mas_stefano_turr"
+    ],
+    "it_ms473_2a": [
+      "it_a1_vosper",
+      "it_mc490_folgore"
+    ],
+    "it_mas_stefano_turr": [
+      "it_ms15_1a",
+      "it_a1_vosper"
+    ],
+    "it_m47_105": [
+      "it_m26a1_pershing",
+      "it_of_40_mk_1"
+    ],
+    "it_ms473_2a_art": [
+      "it_ms471_1a",
+      "it_gabbiano_class"
+    ],
+    "it_ms53_2a": [
+      "it_mas_classe500_3",
+      "it_mas441"
+    ],
+    "it_ms471_1a": [
+      "it_mas441",
+      "it_ms473_2a_art"
+    ],
+    "it_of_40_mk_2a": [
+      "it_of_40_mk_1",
+      "it_leopard_1a5"
+    ],
+    "it_of_40_mk_1": [
+      "it_m47_105",
+      "it_leopard_1a2",
+      "it_of_40_mk_2a"
+    ],
+    "it_mc492_baleno": [
+      "it_mc490_folgore",
+      "it_alano_9851"
+    ],
+    "it_oto_r3_t20_fa": [
+      "it_leopard_bofors",
+      "it_zsu_57_2"
+    ],
+    "it_otobreda_sidam_25": [
+      "it_zsu_23_4",
+      "it_otobreda_sidam_25_mistral"
+    ],
+    "it_otobreda_sidam_25_mistral": [
+      "it_otobreda_sidam_25",
+      "it_9a33bm3"
+    ],
+    "it_otomatic": [
+      "it_9a33bm3",
+      "it_samp_t_fcs"
+    ],
+    "it_p494_saetta": [
+      "it_cassiopea_p401"
+    ],
+    "it_oto_r3_106sr": [
+      "it_c13_t90",
+      "it_vcc_80_hitfist_60"
+    ],
+    "it_samp_t_fcs": [
+      "it_otomatic"
+    ],
+    "it_semovente_breda_501": [
+      "it_m44",
+      "it_m18_hellcat"
+    ],
+    "it_semovente_l40": [
+      "it_l3_cc",
+      "it_lancia3ro_100"
+    ],
+    "it_pzkpfw_III_ausf_N": [
+      "it_m15_42"
+    ],
+    "it_semovente_m41_75_32": [
+      "it_semovente_m41_75_18",
+      "it_semovente_m42_75_34"
+    ],
+    "it_semovente_m41m_90": [
+      "it_m55",
+      "it_stug_III_ausf_G",
+      "it_semovente_m43_75_46"
+    ],
+    "it_semovente_m42_75_34": [
+      "it_semovente_m41_75_32"
+    ],
+    "it_p_40": [
+      "it_m15_42",
+      "it_m4a4_sherman"
+    ],
+    "it_semovente_m43_75_34": [
+      "it_semovente_m43_105"
+    ],
+    "it_semovente_m41_75_18": [
+      "it_lancia3ro_100",
+      "it_semovente_m41_75_32",
+      "it_semovente_m43_105"
+    ],
+    "it_semovente_m43_105": [
+      "it_semovente_m41_75_18",
+      "it_semovente_m43_75_34",
+      "it_m55"
+    ],
+    "it_semovente_m43_75_46": [
+      "it_semovente_m41m_90",
+      "it_m36b1"
+    ],
+    "it_vas_baglietto_68t_1serie": [
+      "it_mas_classe500_3_1944",
+      "it_ms15_1a"
+    ],
+    "it_m13_40_serie_2": [
+      "us_halftrack_m15"
+    ],
+    "it_t_72m1": [
+      "it_btr_80a_hungary",
+      "it_leopard_2a4"
+    ],
+    "it_sherman_vc_firefly": [
+      "it_sherman_VII",
+      "it_m26a1_pershing"
+    ],
+    "it_vcc_80_hitfist_30": [
+      "it_dardo_vcc"
+    ],
+    "it_vbc_pt2": [
+      "it_m113a1_tow",
+      "it_dardo_vcc"
+    ],
+    "it_vcc_80_hitfist_60": [
+      "it_oto_r3_106sr",
+      "it_b1_centauro"
+    ],
+    "it_sherman_VII": [
+      "it_m4a4_sherman",
+      "it_sherman_vc_firefly"
+    ],
+    "it_stug_III_ausf_G": [
+      "it_semovente_m41m_90"
+    ],
+    "it_zsu_57_2": [
+      "it_oto_r3_t20_fa",
+      "it_zsu_23_4"
+    ],
+    "j1n1_mod11_early": [
+      "ki_102_otsu"
+    ],
+    "it_zsu_23_4": [
+      "it_zsu_57_2",
+      "it_otobreda_sidam_25"
+    ],
+    "j2m2": [
+      "ki_108",
+      "j5n1"
+    ],
+    "j5n1": [
+      "j2m2",
+      "j7w1"
+    ],
+    "j2m3": [
+      "j7w1",
+      "j2m5",
+      "ki-83"
+    ],
+    "j7w1": [
+      "j5n1",
+      "j2m3"
+    ],
+    "j2m5": [
+      "j2m3"
+    ],
+    "j_10a": [
+      "j_8f",
+      "j_10c"
+    ],
+    "j_10c": [
+      "j_10a"
+    ],
+    "j_7_mk2": [
+      "mig-19j_6a"
+    ],
+    "j6b": [
+      "gladiator_j8a"
+    ],
+    "j_11a": [
+      "j_11"
+    ],
+    "j_15t": [
+      "j_11b"
+    ],
+    "j_7e": [
+      "mig-19j_6a",
+      "j_8b"
+    ],
+    "j_8b": [
+      "j_7e",
+      "j_8f"
+    ],
+    "j8m1": [
+      "ki_84_hei",
+      "t2"
+    ],
+    "jaguar_a": [
+      "super_etendard_97",
+      "mirage_2000d_r1"
+    ],
+    "j_11b": [
+      "j_11",
+      "j_15t"
+    ],
+    "j_8f": [
+      "j_8b",
+      "j_10a"
+    ],
+    "jh_7a": [
+      "jh_7"
+    ],
+    "jp_abtei_pr1": [
+      "jp_type_t1_1941",
+      "jp_abtei_pr4"
+    ],
+    "j_11": [
+      "il_28_china",
+      "j_11a",
+      "j_11b"
+    ],
+    "jp_armoredcruiser_ikoma": [
+      "jp_destroyer_kagero",
+      "jp_battleship_settsu"
+    ],
+    "jaguar_gr1": [
+      "swift_f7",
+      "harrier_gr3"
+    ],
+    "jh_7": [
+      "q_5l",
+      "jh_7a"
+    ],
+    "jp_abtei_pr4": [
+      "jp_abtei_pr1",
+      "jp_type38_1944"
+    ],
+    "jaguar_gr1a": [
+      "harrier_gr3",
+      "hawk_200"
+    ],
+    "javelin_fmk9": [
+      "meteor_fmk4_lw",
+      "lightning_f6"
+    ],
+    "jp_battleship_ise": [
+      "jp_battleship_hyuga",
+      "jp_battlecruiser_amagi"
+    ],
+    "jp_battleship_musashi": [
+      "jp_battlecruiser_amagi"
+    ],
+    "jp_battleship_fuso": [
+      "jp_cruiser_tone",
+      "jp_battleship_yamato"
+    ],
+    "jp_battlecruiser_amagi": [
+      "jp_battleship_ise",
+      "jp_battleship_musashi"
+    ],
+    "jp_battleship_hyuga": [
+      "jp_cruiser_mogami",
+      "jp_battleship_ise"
+    ],
+    "jp_battleship_settsu": [
+      "jp_armoredcruiser_ikoma",
+      "jp_battlecruiser_hiei"
+    ],
+    "jp_battlecruiser_kongo": [
+      "jp_battlecruiser_hiei",
+      "jp_battleship_mutsu"
+    ],
+    "jp_battleship_mutsu": [
+      "jp_battlecruiser_kongo"
+    ],
+    "jp_battlecruiser_hiei": [
+      "jp_battleship_settsu",
+      "jp_battlecruiser_kongo"
+    ],
+    "jp_battleship_yamato": [
+      "jp_battleship_fuso"
+    ],
+    "jp_cruiser_agano": [
+      "jp_cruiser_sendai",
+      "jp_cruiser_oyodo"
+    ],
+    "jp_cruiser_furutaka": [
+      "jp_cruiser_kako",
+      "jp_cruiser_aoba",
+      "jp_cruiser_haguro"
+    ],
+    "jp_cruiser_aoba": [
+      "jp_cruiser_furutaka"
+    ],
+    "jp_cruiser_isuzu": [
+      "jp_destroyer_yugumo",
+      "jp_cruiser_kuma"
+    ],
+    "jp_btr_3e1": [
+      "jp_m60a3_tts"
+    ],
+    "jp_cruiser_kako": [
+      "jp_destroyer_akizuki",
+      "jp_cruiser_furutaka"
+    ],
+    "jp_cruiser_mogami": [
+      "jp_cruiser_mogami_suzuya",
+      "jp_battleship_hyuga"
+    ],
+    "jp_cruiser_kuma": [
+      "jp_cruiser_isuzu",
+      "jp_cruiser_sendai"
+    ],
+    "jp_cruiser_haguro": [
+      "jp_cruiser_furutaka",
+      "jp_cruiser_tone"
+    ],
+    "jp_cruiser_sendai": [
+      "jp_cruiser_kuma",
+      "jp_cruiser_agano"
+    ],
+    "jp_cruiser_oyodo": [
+      "jp_cruiser_agano",
+      "jp_cruiser_mogami_suzuya"
+    ],
+    "jp_cruiser_mogami_suzuya": [
+      "jp_cruiser_oyodo",
+      "jp_cruiser_mogami"
+    ],
+    "jp_cruiser_tone": [
+      "jp_cruiser_haguro",
+      "jp_battleship_fuso"
+    ],
+    "jp_destroyer_akizuki": [
+      "jp_destroyer_murasame",
+      "jp_cruiser_kako"
+    ],
+    "jp_destroyer_fubuki": [
+      "jp_destroyer_hatsuharu",
+      "jp_destroyer_yugumo"
+    ],
+    "jp_destroyer_ayanami": [
+      "jp_destroyer_isuzu"
+    ],
+    "jp_destroyer_chidori": [
+      "jp_yuri_class_asagao"
+    ],
+    "jp_destroyer_harukaze": [
+      "jp_minelayer_tsugaru",
+      "jp_destroyer_murasame"
+    ],
+    "jp_destroyer_isuzu": [
+      "jp_escort_chikugo_class",
+      "jp_destroyer_ayanami"
+    ],
+    "jp_destroyer_hatsuharu": [
+      "jp_destroyer_mutsuki",
+      "jp_destroyer_fubuki"
+    ],
+    "jp_destroyer_matsu": [
+      "jp_destroyer_momi",
+      "jp_minelayer_tsugaru"
+    ],
+    "jp_destroyer_kagero": [
+      "jp_armoredcruiser_ikoma"
+    ],
+    "jp_destroyer_momi": [
+      "jp_destroyer_matsu"
+    ],
+    "jp_destroyer_mutsuki": [
+      "jp_destroyer_hatsuharu"
+    ],
+    "jp_destroyer_murasame": [
+      "jp_destroyer_harukaze",
+      "jp_destroyer_akizuki"
+    ],
+    "jp_destroyer_yugumo": [
+      "jp_destroyer_fubuki",
+      "jp_cruiser_isuzu"
+    ],
+    "jp_escort_chikugo_class": [
+      "jp_type7_pt808",
+      "jp_destroyer_isuzu"
+    ],
+    "jp_escort_ikazuchi_class": [
+      "jp_type_11_pt_15",
+      "jp_escort_hiburi_class_syonan"
+    ],
+    "jp_halftrack_m16": [
+      "jp_type_95_so_ki"
+    ],
+    "jp_karotei_type2": [
+      "jp_type5_escortboat",
+      "jp_sehatei_mod1"
+    ],
+    "jp_icv_ifv_prototype": [
+      "jp_type_87_rcv",
+      "jp_type_10_prototype"
+    ],
+    "jp_escort_hiburi_class_syonan": [
+      "jp_escort_ikazuchi_class",
+      "jp_yuri_class_asagao"
+    ],
+    "jp_kusen_tei_13_1944": [
+      "jp_sehatei_mod1",
+      "jp_t51b"
+    ],
+    "jp_m19": [
+      "jp_type_95_so_ki",
+      "jp_m42_duster"
+    ],
+    "jp_m163_vulcan": [
+      "jp_sub_i_ii_20mm",
+      "jp_type_87"
+    ],
+    "jp_hiro_sha": [
+      "jp_type_2_ho_ni_2",
+      "jp_type_3_ho_ni_I"
+    ],
+    "jp_m24_chaffee": [
+      "jp_m4a3e8_76w_sherman"
+    ],
+    "jp_m41_walker_bulldog": [
+      "jp_m4a3e8_76w_sherman",
+      "jp_type_60_sprg"
+    ],
+    "jp_m42_duster": [
+      "jp_m19",
+      "jp_sub_i_ii_20mm"
+    ],
+    "jp_m4a3e8_76w_sherman": [
+      "jp_m24_chaffee",
+      "jp_m41_walker_bulldog"
+    ],
+    "jp_m44": [
+      "jp_type_5_na_to",
+      "jp_m36b2_jgsdf"
+    ],
+    "jp_navy_120mm_spg": [
+      "jp_type_3_ho_ni_I",
+      "jp_type_5_na_to"
+    ],
+    "jp_m60a3_tts": [
+      "jp_btr_3e1",
+      "jp_stingray"
+    ],
+    "jp_m36b2_jgsdf": [
+      "jp_m44",
+      "jp_type_75"
+    ],
+    "jp_minelayer_tsugaru": [
+      "jp_destroyer_matsu",
+      "jp_destroyer_harukaze"
+    ],
+    "jp_oplot_t": [
+      "jp_stingray"
+    ],
+    "jp_pc301_kari_class": [
+      "jp_t51b",
+      "jp_type_11_pt_15"
+    ],
+    "jp_no1_ch2": [
+      "jp_type1_pt2",
+      "jp_no4_ch8"
+    ],
+    "jp_no4_ch8": [
+      "jp_no1_ch2",
+      "jp_type7_pt808"
+    ],
+    "jp_m47_patton_II": [
+      "jp_type_61",
+      "jp_st_b1"
+    ],
+    "jp_sehatei_mod1": [
+      "jp_karotei_type2",
+      "jp_kusen_tei_13_1944"
+    ],
+    "jp_st_a2": [
+      "jp_st_a1"
+    ],
+    "jp_st_a3": [
+      "jp_type_61"
+    ],
+    "jp_st_b1": [
+      "jp_m47_patton_II",
+      "jp_type_74_c",
+      "jp_type_74"
+    ],
+    "jp_t14_class_mod02": [
+      "jp_type5_escortboat"
+    ],
+    "jp_t51b": [
+      "jp_kusen_tei_13_1944",
+      "jp_pc301_kari_class"
+    ],
+    "jp_stingray": [
+      "jp_m60a3_tts",
+      "jp_oplot_t"
+    ],
+    "jp_type5_escortboat": [
+      "jp_t14_class_mod02",
+      "jp_karotei_type2"
+    ],
+    "jp_type7_pt808": [
+      "jp_no4_ch8",
+      "jp_escort_chikugo_class"
+    ],
+    "jp_type_03_chusam_fcs": [
+      "jp_type_81_tansam_fcs"
+    ],
+    "jp_sub_i_ii_20mm": [
+      "jp_m42_duster",
+      "jp_m163_vulcan"
+    ],
+    "jp_type_10": [
+      "jp_type_90",
+      "jp_tkx_prot"
+    ],
+    "jp_st_a1": [
+      "jp_type_5_chi_ri",
+      "jp_st_a2",
+      "jp_type_61"
+    ],
+    "jp_tkx_prot": [
+      "jp_type_10"
+    ],
+    "jp_type38_1944": [
+      "jp_abtei_pr4",
+      "jp_type1_pt2"
+    ],
+    "jp_type_16": [
+      "jp_type_16_mcv_prot"
+    ],
+    "jp_type1_pt2": [
+      "jp_type38_1944",
+      "jp_no1_ch2"
+    ],
+    "jp_type_2_ka_mi": [
+      "jp_type_98_ke_ni"
+    ],
+    "jp_type_10_prototype": [
+      "jp_icv_ifv_prototype"
+    ],
+    "jp_type_1_chi_he": [
+      "jp_type_97_kai",
+      "jp_type_3_chi_nu"
+    ],
+    "jp_type_11_pt_15": [
+      "jp_pc301_kari_class",
+      "jp_escort_ikazuchi_class"
+    ],
+    "jp_type_2_ho_i": [
+      "jp_type_97_chi_ha"
+    ],
+    "jp_type_3_chi_nu": [
+      "jp_type_1_chi_he",
+      "jp_type_4_chi_to"
+    ],
+    "jp_type_16_mcv_prot": [
+      "jp_type_5_ho_ri_production",
+      "jp_type_16"
+    ],
+    "jp_type_4_chi_to": [
+      "jp_type_3_chi_nu",
+      "jp_type_4_chi_to_late",
+      "jp_type_5_chi_ri"
+    ],
+    "jp_type_4_chi_to_late": [
+      "jp_type_4_chi_to"
+    ],
+    "jp_type_2_ho_ni_2": [
+      "jp_type_4_ho_ro",
+      "jp_hiro_sha"
+    ],
+    "jp_type_5_chi_ri": [
+      "jp_type_4_chi_to",
+      "jp_st_a1"
+    ],
+    "jp_type_5_ho_ri_production": [
+      "jp_type_99",
+      "jp_type_16_mcv_prot"
+    ],
+    "jp_type_5_na_to": [
+      "jp_navy_120mm_spg",
+      "jp_m44"
+    ],
+    "jp_type_3_ho_ni_I": [
+      "jp_hiro_sha",
+      "jp_type_3_ho_ni_III",
+      "jp_navy_120mm_spg"
+    ],
+    "jp_type_3_ho_ni_III": [
+      "jp_type_3_ho_ni_I"
+    ],
+    "jp_type_61": [
+      "jp_st_a1",
+      "jp_st_a3",
+      "jp_m47_patton_II"
+    ],
+    "jp_type_74": [
+      "jp_st_b1",
+      "jp_type_74_f",
+      "jp_type_90"
+    ],
+    "jp_type_60_sprg": [
+      "jp_m41_walker_bulldog",
+      "jp_type_60_atm",
+      "jp_type_87_rcv_prot"
+    ],
+    "jp_type_74_c": [
+      "jp_st_b1"
+    ],
+    "jp_type_75": [
+      "jp_m36b2_jgsdf",
+      "jp_type_99"
+    ],
+    "jp_type_81_tansam": [
+      "jp_type_93",
+      "jp_type_81_tansam_fcs"
+    ],
+    "jp_type_4_ho_ro": [
+      "jp_type_2_ho_ni_2"
+    ],
+    "jp_type_74_f": [
+      "jp_type_74"
+    ],
+    "jp_type_60_atm": [
+      "jp_type_60_sprg"
+    ],
+    "jp_type_87": [
+      "jp_m163_vulcan",
+      "jp_type_93"
+    ],
+    "jp_type_87_rcv": [
+      "jp_type_87_rcv_prot",
+      "jp_type_89",
+      "jp_icv_ifv_prototype"
+    ],
+    "jp_type_89b_i_go_otsu": [
+      "jp_type_97_chi_ha"
+    ],
+    "jp_type_89": [
+      "jp_type_87_rcv"
+    ],
+    "jp_type_90b": [
+      "jp_type_90"
+    ],
+    "jp_type_87_rcv_prot": [
+      "jp_type_60_sprg",
+      "jp_type_87_rcv"
+    ],
+    "jp_type_90": [
+      "jp_type_74",
+      "jp_type_90b",
+      "jp_type_10"
+    ],
+    "jp_type_93": [
+      "jp_type_87",
+      "jp_type_81_tansam"
+    ],
+    "jp_type_81_tansam_fcs": [
+      "jp_type_81_tansam",
+      "jp_type_03_chusam_fcs"
+    ],
+    "jp_type_94": [
+      "jp_type_98_ta_se"
+    ],
+    "jp_type_95_so_ki": [
+      "jp_halftrack_m16",
+      "jp_m19"
+    ],
+    "jp_type_97_kai": [
+      "jp_type_1_chi_he"
+    ],
+    "jp_type_98_ke_ni": [
+      "jp_type_2_ka_mi"
+    ],
+    "jp_type_97_chi_ha": [
+      "jp_type_89b_i_go_otsu",
+      "jp_type_2_ho_i"
+    ],
+    "jp_type_98_ta_se": [
+      "jp_type_94"
+    ],
+    "jp_type_99": [
+      "jp_type_75",
+      "jp_type_5_ho_ri_production"
+    ],
+    "jp_type_t1_1941": [
+      "jp_abtei_pr1"
+    ],
+    "jp_yuri_class_asagao": [
+      "jp_escort_hiburi_class_syonan",
+      "jp_destroyer_chidori"
+    ],
+    "ju-188a-2": [
+      "do_217k_1",
+      "he-177a-5"
+    ],
+    "ju-87d-5": [
+      "ju-87d-3"
+    ],
+    "ju-87d-3_italy": [
+      "sm_91"
+    ],
+    "ju-87r-2_italy": [
+      "ba_65_k14_l"
+    ],
+    "ju-87b-2": [
+      "hs-123a-1",
+      "ju-87r-2",
+      "ju-87g_1"
+    ],
+    "ju-87r-2": [
+      "ju-87b-2"
+    ],
+    "ju-88a-1": [
+      "fw_200c_1",
+      "ju-88a-4",
+      "he-111h-6"
+    ],
+    "ju-87g_2": [
+      "ju-87g_1"
+    ],
+    "ju-88a-4": [
+      "ju-88a-1"
+    ],
+    "ju-88a-4_finland": [
+      "saab_b18a",
+      "saab_b18b"
+    ],
+    "ju-87d-3": [
+      "hs-129b-3",
+      "ju-87d-5",
+      "me_210a_1"
+    ],
+    "ka_52": [
+      "ka_29"
+    ],
+    "ki-27_otsu": [
+      "ki_10_1",
+      "ki_43_1"
+    ],
+    "ka_29": [
+      "mi_24p",
+      "ka_52"
+    ],
+    "ju-88c-6": [
+      "do_217n_1"
+    ],
+    "ki-45_hei": [
+      "ki-45_ko"
+    ],
+    "kfir_c7": [
+      "mirage_3cj",
+      "f_16a_block_10_iaf"
+    ],
+    "ki-45_ko": [
+      "ki-45_tei",
+      "ki-45_hei",
+      "ki_109"
+    ],
+    "ki-45_otsu": [
+      "ki-45_tei"
+    ],
+    "ki-45_tei": [
+      "ki-45_otsu",
+      "ki-45_ko"
+    ],
+    "ju-87g_1": [
+      "ju-87b-2",
+      "ju-87g_2",
+      "hs-129b-3"
+    ],
+    "ki-49_2a": [
+      "ki-49_1"
+    ],
+    "ki-27_otsu_china": [
+      "gladiator_mk1_china",
+      "ki_43_3_ko",
+      "cw_21"
+    ],
+    "ki-83": [
+      "j2m3",
+      "f-84g_thailand"
+    ],
+    "ki-49_2b_late": [
+      "ki-49_2b"
+    ],
+    "ki-49_2b": [
+      "ki-49_1",
+      "ki-49_2b_late",
+      "g5n1"
+    ],
+    "ki_100_early": [
+      "ki_61_1a_tei",
+      "ki_61_1a_hei"
+    ],
+    "ki_102_otsu": [
+      "j1n1_mod11_early",
+      "ki_108"
+    ],
+    "ki_109": [
+      "ki-45_ko"
+    ],
+    "ki_10_2": [
+      "ki_10_1",
+      "ki_10_1_commander"
+    ],
+    "ki_10_1_commander": [
+      "ki_10_2"
+    ],
+    "ki_108": [
+      "ki_102_otsu",
+      "j2m2"
+    ],
+    "ki-49_1": [
+      "h8k2",
+      "ki-49_2a",
+      "ki-49_2b"
+    ],
+    "ki_21_1ko": [
+      "ki_32",
+      "h6k4"
+    ],
+    "ki_32": [
+      "ki_21_1ko"
+    ],
+    "ki_43_2": [
+      "ki_43_1"
+    ],
+    "ki_10_1": [
+      "ki_10_2",
+      "ki-27_otsu"
+    ],
+    "ki_43_3_ko": [
+      "ki-27_otsu_china"
+    ],
+    "ki_43_3_otsu": [
+      "ki_44_2_hei",
+      "ki_61_1a_tei"
+    ],
+    "ki_44_1": [
+      "ki_43_1",
+      "ki_61_1a_ko",
+      "ki_44_2_hei"
+    ],
+    "ki_44_2_hei": [
+      "ki_44_1",
+      "ki_61_1a_otsu",
+      "ki_43_3_otsu"
+    ],
+    "ki_44_2_hei_china": [
+      "i-16_type17_china",
+      "ki_61_1a_otsu_china"
+    ],
+    "ki_61_1a_ko": [
+      "ki_44_1"
+    ],
+    "ki_61_1a_otsu_china": [
+      "ki_44_2_hei_china",
+      "la-11_china"
+    ],
+    "ki_61_1a_otsu": [
+      "ki_44_2_hei"
+    ],
+    "ki_43_1": [
+      "ki-27_otsu",
+      "ki_43_2",
+      "ki_44_1"
+    ],
+    "ki_61_1a_hei": [
+      "ki_100_early",
+      "ki_84_ko"
+    ],
+    "ki_61_1a_tei": [
+      "ki_43_3_otsu",
+      "ki_61_2_early",
+      "ki_100_early"
+    ],
+    "ki_61_2_early": [
+      "ki_61_1a_tei"
+    ],
+    "ki_84_ko": [
+      "ki_61_1a_hei",
+      "ki_84_otsu",
+      "ki_84_hei"
+    ],
+    "ki_67_1_ko": [
+      "g5n1",
+      "ki_67_1_otsu",
+      "g8n1"
+    ],
+    "ki_84_otsu": [
+      "ki_84_ko"
+    ],
+    "ki_67_1_otsu": [
+      "ki_67_1_ko"
+    ],
+    "ki_84_hei": [
+      "ki_84_ko",
+      "j8m1"
+    ],
+    "kitsuka": [
+      "n1k1_ja",
+      "f-86f-30_japan"
+    ],
+    "la-5_type37_early": [
+      "lagg-3-35",
+      "la-5_type39",
+      "la-5fn"
+    ],
+    "la-5_type39": [
+      "la-5_type37_early"
+    ],
+    "la-15": [
+      "la_200_toriy"
+    ],
+    "la-11_china": [
+      "ki_61_1a_otsu_china",
+      "la-9_china"
+    ],
+    "la-7b-20": [
+      "la-7",
+      "la-9"
+    ],
+    "la-7": [
+      "la-5fn",
+      "la-7b-20"
+    ],
+    "la-9_china": [
+      "la-11_china",
+      "mig-9_china"
+    ],
+    "la-9": [
+      "la-7b-20",
+      "su-9"
+    ],
+    "la-5fn": [
+      "la-5_type37_early",
+      "la-7"
+    ],
+    "la_200_toriy": [
+      "su-9",
+      "la-15",
+      "su-7b"
+    ],
+    "ki_43_2_late": [
+      "ki_43_1"
+    ],
+    "lagg-3-11": [
+      "lagg-3-8"
+    ],
+    "lagg-3-66": [
+      "lagg-3-35"
+    ],
+    "lagg-3-35": [
+      "lagg-3-8",
+      "lagg-3-66",
+      "la-5_type37_early"
+    ],
+    "lagg-3-8": [
+      "i-15bis",
+      "lagg-3-11",
+      "lagg-3-35"
+    ],
+    "lancaster_mr7_france": [
+      "pb4y-2_france",
+      "so_4050_vautour_2b"
+    ],
+    "lancaster_mk3": [
+      "lancaster_mk1"
+    ],
+    "lightning_f6": [
+      "javelin_fmk9",
+      "tornado_f3"
+    ],
+    "leo_451_late": [
+      "leo_451_early"
+    ],
+    "lincoln_b2": [
+      "lancaster_mk1",
+      "shackleton_mr_mk_2",
+      "canberra_bmk2"
+    ],
+    "leo_451_early": [
+      "nc_223_3",
+      "leo_451_late",
+      "b_26c_france"
+    ],
+    "martin_139wc": [
+      "db_3a_china"
+    ],
+    "lynx_ah_mk1": [
+      "wessex_mk5",
+      "ah_mk1"
+    ],
+    "maryland_mk1_france": [
+      "f_222_2",
+      "mb_174_a3"
+    ],
+    "lancaster_mk1": [
+      "stirling_mk1",
+      "lancaster_mk3",
+      "lincoln_b2"
+    ],
+    "mb_157": [
+      "f6f-5_france",
+      "p-63c-5_france"
+    ],
+    "mb_162": [
+      "b_26c_france",
+      "pb4y-2_france"
+    ],
+    "mb_175t": [
+      "a-35b",
+      "sb2c_5_france"
+    ],
+    "mc-202_ec": [
+      "mc-202_italy",
+      "mc-205_n2"
+    ],
+    "mb_174_a3": [
+      "maryland_mk1_france"
+    ],
+    "mc-205_n2": [
+      "mc-202_ec",
+      "mc-205_serie3"
+    ],
+    "mc-202_italy": [
+      "mc200_serie3_italy",
+      "mc-205_serie1",
+      "mc-202_ec"
+    ],
+    "mc-205_serie1": [
+      "mc-202_italy"
+    ],
+    "mc-202": [
+      "mc200_serie7"
+    ],
+    "mb_326k": [
+      "il-10_1946_hungary",
+      "f-84g_italy"
+    ],
+    "mc200_serie3": [
+      "fiat_cr42",
+      "mc200_serie7"
+    ],
+    "mc-205_serie3": [
+      "mc-205_n2",
+      "bf-109g-14as"
+    ],
+    "md_450b_ouragan": [
+      "sea_fury_fb51",
+      "md_450b_barougan",
+      "md_452_mystere_2a"
+    ],
+    "md_450b_ouragan_iaf": [
+      "p-51d-20-na_iaf",
+      "a_4h"
+    ],
+    "mc200_serie3_italy": [
+      "fiat_g50_seria2_italy",
+      "mc200_serie7_italy",
+      "mc-202_italy"
+    ],
+    "mc200_serie7": [
+      "mc200_serie3",
+      "mc-202"
+    ],
+    "md_452_mystere_2a": [
+      "md_450b_ouragan",
+      "md_452_mystere_2c_preproduction",
+      "md_454_mystere_4a"
+    ],
+    "md_460_sambad": [
+      "md_454_mystere_4a_iaf",
+      "md_460_saar",
+      "mirage_3cj"
+    ],
+    "md_450b_barougan": [
+      "md_450b_ouragan"
+    ],
+    "me-262a-1a": [
+      "bf-109k-4",
+      "me-262c-1a",
+      "me-163b"
+    ],
+    "mc200_serie7_italy": [
+      "mc200_serie3_italy"
+    ],
+    "md_460": [
+      "md_454_mystere_4a"
+    ],
+    "md_452_mystere_2c_preproduction": [
+      "md_452_mystere_2a"
+    ],
+    "md_500_tow_late": [
+      "ah_1g_iaf",
+      "ah_60_iaf"
+    ],
+    "md_460_saar": [
+      "md_460_sambad"
+    ],
+    "me-163b": [
+      "me-262a-1a",
+      "me-163b-0",
+      "f-86_canadair_german"
+    ],
+    "md_454_mystere_4a_iaf": [
+      "meteor_fmk8_iaf",
+      "md_460_sambad"
+    ],
+    "md_454_mystere_4a": [
+      "md_452_mystere_2a",
+      "md_460",
+      "mirage_3c"
+    ],
+    "me-262a-1a_early": [
+      "me-262a-1a_u4",
+      "f-84f_germany"
+    ],
+    "me-262a-1a_u4": [
+      "fw-190f-8",
+      "me-262a-1a_early"
+    ],
+    "me-163b-0": [
+      "me-163b"
+    ],
+    "me-410b-2_u4": [
+      "me-410a-1_u4"
+    ],
+    "me-410a-1_u2": [
+      "bf-110g-2",
+      "me-410b-1_u2",
+      "me-410b-6_r3"
+    ],
+    "me-410a-1_u4": [
+      "me_210a_1",
+      "me-410b-2_u4",
+      "me-410a-1"
+    ],
+    "me-410b-1": [
+      "me-410a-1"
+    ],
+    "me-410b-1_u2": [
+      "me-410a-1_u2"
+    ],
+    "me-262c-2b": [
+      "me-262c-1a"
+    ],
+    "me-410a-1": [
+      "me-410a-1_u4",
+      "me-410b-1",
+      "do_335a_1"
+    ],
+    "me-410b-6_r3": [
+      "me-410a-1_u2",
+      "go229_v3"
+    ],
+    "me_210a_1": [
+      "ju-87d-3",
+      "me-410a-1_u4"
+    ],
+    "me-262c-1a": [
+      "me-262a-1a",
+      "me-262c-2b"
+    ],
+    "me_210ca_1_40_mm_hungary": [
+      "me_210ca_1_hungary"
+    ],
+    "meteor_fmk3_navy": [
+      "meteor_fmk3"
+    ],
+    "meteor_fmk4_lw": [
+      "meteor_fmk3",
+      "meteor_fmk4_sw",
+      "javelin_fmk9"
+    ],
+    "meteor_fmk4_sw": [
+      "meteor_fmk4_lw",
+      "meteor_fmk8"
+    ],
+    "meteor_fmk8": [
+      "meteor_fmk4_sw"
+    ],
+    "meteor_fmk8_belgium": [
+      "spitfire_fr_mk14e_belgium",
+      "hunter_f6_holland"
+    ],
+    "me_264": [
+      "he-111h-6",
+      "do_217e_2"
+    ],
+    "meteor_fmk8_iaf": [
+      "meteor_nfmk13",
+      "md_454_mystere_4a_iaf"
+    ],
+    "me_210ca_1_hungary": [
+      "wm_23",
+      "me_210ca_1_40_mm_hungary",
+      "yak-9p_hungary"
+    ],
+    "mi_24a": [
+      "mi_4av",
+      "mi_24v"
+    ],
+    "meteor_fmk3": [
+      "spitfire_f22",
+      "meteor_fmk3_navy",
+      "meteor_fmk4_lw"
+    ],
+    "meteor_nfmk13": [
+      "spitfire_lf_mk9e_iaf",
+      "meteor_fmk8_iaf"
+    ],
+    "mi_24p_german": [
+      "mi_8tb"
+    ],
+    "mh_60l_dap": [
+      "oh_58d"
+    ],
+    "mi_28n": [
+      "mi_35m",
+      "mi_28nm"
+    ],
+    "mi_28nm": [
+      "mi_28n"
+    ],
+    "mi_24p": [
+      "mi_24v",
+      "mi_35m",
+      "ka_29"
+    ],
+    "mi_35m": [
+      "mi_24p",
+      "mi_28n"
+    ],
+    "mi_24d_hungary": [
+      "ab_205a_1",
+      "a_109_eoa2"
+    ],
+    "mi_24v": [
+      "mi_24a",
+      "mi_24p"
+    ],
+    "mi_8tb": [
+      "sa_313b",
+      "mi_24p_german"
+    ],
+    "mi_8amtsh": [
+      "mi_8tv",
+      "mi_8amtsh_vn"
+    ],
+    "mi_24v_hungary": [
+      "a_109_eoa2",
+      "a_129_cbt"
+    ],
+    "mi_4av": [
+      "mi_24a",
+      "mi_8tv"
+    ],
+    "mig-15": [
+      "mig-15_ns23"
+    ],
+    "mig-15_ns23": [
+      "mig-9",
+      "mig-15",
+      "mig-17"
+    ],
+    "mi_35p_indonesia": [
+      "ah_1s_early"
+    ],
+    "mi_8tv": [
+      "mi_4av",
+      "mi_8amtsh"
+    ],
+    "mi_8amtsh_vn": [
+      "mi_8amtsh"
+    ],
+    "mig-15bis_nr23_german": [
+      "he-162a-2",
+      "mig-17p_lim_5p"
+    ],
+    "mig-17": [
+      "mig-15_ns23",
+      "mig-19pt"
+    ],
+    "mig-15bis_nr23_hungary": [
+      "fw_190f_8_hungary",
+      "mig-17pf_hungary"
+    ],
+    "mig-15bis_nr23_china": [
+      "mig-9_china",
+      "mig-17_china",
+      "mig-19j_6a"
+    ],
+    "mig-17_china": [
+      "mig-15bis_nr23_china"
+    ],
+    "mig-19j_6a": [
+      "mig-15bis_nr23_china",
+      "j_7_mk2",
+      "j_7e"
+    ],
+    "mig-17p_lim_5p": [
+      "mig-15bis_nr23_german",
+      "mig-19s"
+    ],
+    "mig-19pt": [
+      "mig-17",
+      "mig-21_f13",
+      "mig-21_smt"
+    ],
+    "mig-19s": [
+      "mig-17p_lim_5p",
+      "mig-21_mf"
+    ],
+    "mig-21_bis_sau": [
+      "mig-21_mf"
+    ],
+    "mig-21_bis": [
+      "mig-21_smt"
+    ],
+    "mig-17pf_hungary": [
+      "mig-15bis_nr23_hungary",
+      "mig-21_mf_hungary"
+    ],
+    "mig-21_f13": [
+      "mig-19pt"
+    ],
+    "mig-21_mf_hungary": [
+      "mig-17pf_hungary",
+      "mig-21_bis_sau_hungary",
+      "mig_23mf_hungary"
+    ],
+    "mig-21_mf": [
+      "mig-19s",
+      "mig-21_bis_sau",
+      "mig_23mla"
+    ],
+    "mig-9": [
+      "i_225",
+      "mig-9_ussr",
+      "mig-15_ns23"
+    ],
+    "mig-21_bis_sau_hungary": [
+      "mig-21_mf_hungary"
+    ],
+    "mig-9_ussr": [
+      "mig-9"
+    ],
+    "mig-21_smt": [
+      "mig-19pt",
+      "mig-21_bis",
+      "mig_23m"
+    ],
+    "mig_21_bis_finland": [
+      "hunter_f50_sweden",
+      "fa_18c_finland"
+    ],
+    "mig-9_late_china": [
+      "mig-9_china"
+    ],
+    "mig_23bn": [
+      "f-84f_germany",
+      "su_22um3k"
+    ],
+    "mig-9_china": [
+      "la-9_china",
+      "mig-9_late_china",
+      "mig-15bis_nr23_china"
+    ],
+    "mig_23m": [
+      "mig-21_smt",
+      "mig_23mld",
+      "mig_29_9_12"
+    ],
+    "mig_23mla": [
+      "mig-21_mf",
+      "mig_29_9_12_germany"
+    ],
+    "mig_29_9_12": [
+      "mig_23m",
+      "mig_29_9_13"
+    ],
+    "mig_27k": [
+      "mig_27m"
+    ],
+    "mig_29_9_12_germany": [
+      "mig_23mla",
+      "mig_29_9_12g"
+    ],
+    "mig_23mf_hungary": [
+      "mig-21_mf_hungary",
+      "mig_29_9_12b_hungary"
+    ],
+    "mig_23mld": [
+      "mig_23m"
+    ],
+    "mig_29_9_12b_hungary": [
+      "mig_23mf_hungary",
+      "saab_jas39c_hungary"
+    ],
+    "mig_3_series_34": [
+      "mig_3_series_1_15_bk_pod"
+    ],
+    "mig_3_series_1_15": [
+      "i-16_type5",
+      "i-16_type10"
+    ],
+    "mig_29_9_12g": [
+      "mig_29_9_12_germany"
+    ],
+    "mig_3_series_1_15_bk_pod": [
+      "i-16_type10",
+      "mig_3_series_34",
+      "i-16_type27"
+    ],
+    "mig_27m": [
+      "yak-28b",
+      "mig_27k",
+      "su_24m"
+    ],
+    "mig_29_9_13": [
+      "mig_29_9_12",
+      "mig_29smt_9_19"
+    ],
+    "mig_29n": [
+      "g8n1",
+      "fa_18d_late_malaysia"
+    ],
+    "mirage_2000_5ei": [
+      "f_16a_block_20_mlu"
+    ],
+    "mirage_2000d_rmv": [
+      "mirage_2000d_r1"
+    ],
+    "mirage_2000_5f": [
+      "mirage_2000c_s5",
+      "rafale_c_f3"
+    ],
+    "mirage_2000c_s5": [
+      "mirage_f1c",
+      "mirage_2000_5f"
+    ],
+    "mig_29smt_9_19": [
+      "mig_29_9_13"
+    ],
+    "mirage_3e": [
+      "mirage_3c"
+    ],
+    "mirage_3c": [
+      "md_454_mystere_4a",
+      "mirage_3e",
+      "mirage_f1c"
+    ],
+    "mirage_3cj": [
+      "md_460_sambad",
+      "kfir_c7"
+    ],
+    "mirage_2000d_r1": [
+      "jaguar_a",
+      "mirage_2000d_rmv"
+    ],
+    "mirage_3s_c70_switzerland": [
+      "hunter_f58a_1971_switzerland",
+      "f-5e_switzerland"
+    ],
+    "mirage_5f": [
+      "f-100d_france",
+      "mirage_f1ct"
+    ],
+    "mirage_f1ct": [
+      "mirage_5f"
+    ],
+    "mosquito_fb_mk18": [
+      "mosquito_fb_mk6",
+      "mosquito_nf_mk2"
+    ],
+    "mirage_f1c": [
+      "mirage_3c",
+      "mirage_2000c_s5"
+    ],
+    "mosquito_fb_mk26_china": [
+      "a_29_hudson",
+      "p-38l_1_china_rocaf"
+    ],
+    "mosquito_fb_mk6": [
+      "tempest_mkv_vikkers",
+      "mosquito_fb_mk18",
+      "brigand_b1"
+    ],
+    "mosquito_fb_mk6_ash_norway": [
+      "mosquito_fb_mk6_norway"
+    ],
+    "ms_405c1": [
+      "caudron_cr714",
+      "ms_406c1"
+    ],
+    "mirage_5ba": [
+      "hunter_f6_holland",
+      "f-104g_belgium"
+    ],
+    "ms_410c1": [
+      "vg_33"
+    ],
+    "mosquito_tr_mk33": [
+      "mosquito_nf_mk2"
+    ],
+    "mosquito_fb_mk6_norway": [
+      "mosquito_f_mk2_norway",
+      "mosquito_fb_mk6_ash_norway",
+      "saab_a21a_3"
+    ],
+    "mirage_4000": [
+      "f-8e_fn",
+      "rafale_m_f3r"
+    ],
+    "n1k1_ja": [
+      "a7m2",
+      "n1k2_j",
+      "kitsuka"
+    ],
+    "nc_223_3": [
+      "leo_451_early"
+    ],
+    "n1k1_kyuofu": [
+      "a6m2_n_zero"
+    ],
+    "n1k2_j": [
+      "n1k1_ja",
+      "n1k2_jko"
+    ],
+    "mosquito_nf_mk2": [
+      "mosquito_fb_mk18",
+      "mosquito_tr_mk33"
+    ],
+    "mosquito_f_mk2_norway": [
+      "mosquito_fb_mk6_norway"
+    ],
+    "nesher": [
+      "so_4050_vautour_2a_israel_iaf",
+      "f_16d_block_40_barak_2"
+    ],
+    "nimrod_mk2": [
+      "nimrod_mk1",
+      "gladiator_mk2_navy"
+    ],
+    "nimrod_mk1": [
+      "nimrod_mk2"
+    ],
+    "oh_58d": [
+      "ah_6m",
+      "mh_60l_dap"
+    ],
+    "os2u_1": [
+      "sb2u-2"
+    ],
+    "ms_406c1": [
+      "ms_405c1"
+    ],
+    "oh_58d_china": [
+      "sa_342l_china",
+      "ah_1w_china"
+    ],
+    "n1k2_jko": [
+      "n1k2_j"
+    ],
+    "p-26b_35": [
+      "p-26a_33"
+    ],
+    "p-36a": [
+      "p-36c"
+    ],
+    "p-26a_33": [
+      "p-26a_34_m2",
+      "p-26b_35"
+    ],
+    "p-36c": [
+      "p-36a"
+    ],
+    "p-38e": [
+      "p-400",
+      "p-38g",
+      "p-39n"
+    ],
+    "p-38g": [
+      "p-38e"
+    ],
+    "p-36g": [
+      "p-40e"
+    ],
+    "p-26a_34_m2": [
+      "p-26a_33"
+    ],
+    "p-39n": [
+      "p-38e",
+      "p-39q_5",
+      "p-63a-5"
+    ],
+    "p-38j": [
+      "p-63a-10",
+      "p-38l",
+      "f-82e"
+    ],
+    "p-38l_1_china_rocaf": [
+      "mosquito_fb_mk26_china",
+      "il-10_1946_china"
+    ],
+    "p-400": [
+      "p-38e"
+    ],
+    "p-39q_5": [
+      "p-39n"
+    ],
+    "p-40e": [
+      "p-36g",
+      "p-40f_10",
+      "p-51c-10-nt"
+    ],
+    "p-40e_china": [
+      "p-66",
+      "p-43a-1_china",
+      "p-47d_23_ra_china_rocaf"
+    ],
+    "p-38l": [
+      "p-38j"
+    ],
+    "p-40f_10": [
+      "p-40e"
+    ],
+    "p-43a-1_china": [
+      "p-40e_china"
+    ],
+    "p-47d": [
+      "p-47d_22_re"
+    ],
+    "p-47d_22_re": [
+      "p-51_mk1a_usaaf",
+      "p-47d",
+      "p-47d-28"
+    ],
+    "p-47d_23_ra_china_rocaf": [
+      "p-40e_china",
+      "p-47d_30_china",
+      "p-51d-20_china"
+    ],
+    "p-47d_30_china": [
+      "p-47d_23_ra_china_rocaf"
+    ],
+    "p-47d-28": [
+      "p-47d_22_re",
+      "p-47n-15",
+      "p-51d-30_usaaf_korea"
+    ],
+    "p-47d_30_italy": [
+      "sm_92",
+      "il-10_1946_hungary"
+    ],
+    "p-47n-15": [
+      "p-47d-28"
+    ],
+    "p-51_a-36": [
+      "a-20g"
+    ],
+    "p-51_mk1a_usaaf": [
+      "p-51c-10-nt",
+      "p-51d-5",
+      "p-47d_22_re"
+    ],
+    "p-51c-10-nt": [
+      "p-40e",
+      "p-51_mk1a_usaaf"
+    ],
+    "p-51d-20-na_j26": [
+      "hurricane_mk1_late_finland",
+      "bf-109g-2_finland"
+    ],
+    "p-51d-20-na_iaf": [
+      "s_199",
+      "md_450b_ouragan_iaf"
+    ],
+    "p-51k": [
+      "p-51d-20_china"
+    ],
+    "p-51d-5": [
+      "p-51_mk1a_usaaf"
+    ],
+    "p-51d-20_china": [
+      "p-47d_23_ra_china_rocaf",
+      "p-51k",
+      "f-86f-30_china"
+    ],
+    "p-51d-30_usaaf_korea": [
+      "p-47d-28",
+      "p-51h-5_na"
+    ],
+    "p-51h-5_na": [
+      "p-51d-30_usaaf_korea",
+      "f-84b"
+    ],
+    "p-63a-5": [
+      "p-39n",
+      "p-63a-10"
+    ],
+    "p-61c_1": [
+      "pbj_1j",
+      "a-26b_10"
+    ],
+    "p-63a-10": [
+      "p-63a-5",
+      "p-63c-5",
+      "p-38j"
+    ],
+    "p-63c-5": [
+      "p-63a-10"
+    ],
+    "p-63c-5_france": [
+      "mb_157",
+      "f6f-5n_france"
+    ],
+    "p1y1_mod11_china": [
+      "db_3a_china",
+      "b_25j_30_china"
+    ],
+    "p1y1_mod11": [
+      "d4y3",
+      "b7a2"
+    ],
+    "p-66": [
+      "p-40e_china"
+    ],
+    "pb4y-2_china": [
+      "b_25j_30_china",
+      "tu-2_postwar_china"
+    ],
+    "p_108a_serie2": [
+      "breda_88"
+    ],
+    "pb4y-2_france": [
+      "mb_162",
+      "lancaster_mr7_france"
+    ],
+    "p_108b_serie1": [
+      "z_1007_bis_serie3",
+      "p_108b_serie2",
+      "tu-2_postwar_late_hungary"
+    ],
+    "p_108b_serie2": [
+      "p_108b_serie1"
+    ],
+    "pb4y-2": [
+      "b-17e",
+      "b-17g"
+    ],
+    "pbj_1j": [
+      "sb2c_1c",
+      "pbj_1h",
+      "p-61c_1"
+    ],
+    "pby-5": [
+      "tbd-1_1938",
+      "pby-5a",
+      "pbm_1"
+    ],
+    "pe-2-1": [
+      "db_3b",
+      "pe-2-31",
+      "er-2_m105_mv3"
+    ],
+    "pbm_1": [
+      "pby-5"
+    ],
+    "pbj_1h": [
+      "pbj_1j"
+    ],
+    "pe-2-31": [
+      "pe-2-1",
+      "pe-2-83"
+    ],
+    "pe-2-110": [
+      "er-2_m105_mv3",
+      "pe-2-359",
+      "pe-8_m82"
+    ],
+    "pby-5a": [
+      "pby-5"
+    ],
+    "pe-2-83": [
+      "pe-2-31"
+    ],
+    "pe-3_bis": [
+      "il-2i",
+      "il_2m_1943"
+    ],
+    "potez_630": [
+      "h-75a-1_france",
+      "potez_631",
+      "f6f-5_france"
+    ],
+    "pe-3": [
+      "pe-3_early"
+    ],
+    "potez_631": [
+      "potez_630"
+    ],
+    "pe-2-359": [
+      "pe-2-110"
+    ],
+    "pe-8_m82": [
+      "pe-2-110",
+      "er-2_ach30b_early"
+    ],
+    "potez_633": [
+      "f_222_2"
+    ],
+    "q_5_early": [
+      "f-84g_china",
+      "q_5a"
+    ],
+    "pe-3_early": [
+      "bb-1",
+      "pe-3",
+      "yak_2_kabb"
+    ],
+    "q_5l": [
+      "q_5a",
+      "jh_7"
+    ],
+    "q_5a": [
+      "q_5_early",
+      "q_5l"
+    ],
+    "r2y2_kai": [
+      "r2y2_v2"
+    ],
+    "r2y2_v2": [
+      "r2y2_v1",
+      "r2y2_kai"
+    ],
+    "rafale_c_f3": [
+      "mirage_2000_5f"
+    ],
+    "re_2000_heja_1": [
+      "wm_21",
+      "re_2000_heja_2"
+    ],
+    "r2y2_v1": [
+      "b7a2",
+      "r2y2_v2"
+    ],
+    "re_2000_heja_2": [
+      "re_2000_heja_1"
+    ],
+    "re_2000_int": [
+      "ro_44",
+      "re_2000_ga"
+    ],
+    "re_2001_cb": [
+      "re_2001_serie1"
+    ],
+    "re_2001_cn": [
+      "re_2001_serie1",
+      "g_55_serie1_ss0"
+    ],
+    "rafale_m_f3r": [
+      "mirage_4000"
+    ],
+    "re_2001_serie1": [
+      "re_2002_early",
+      "re_2001_cb",
+      "re_2001_cn"
+    ],
+    "re_2000_ga": [
+      "re_2000_int"
+    ],
+    "re_2002_early": [
+      "re_2001_serie1"
+    ],
+    "re_2005_serie0": [
+      "g_55_serie1"
+    ],
+    "ro_44": [
+      "re_2000_int"
+    ],
+    "re_2000_j20": [
+      "ffvs_j22_a"
+    ],
+    "s_81_ar125": [
+      "br_20_dr"
+    ],
+    "sa_341f": [
+      "sa_316b",
+      "sa_342m"
+    ],
+    "sa_316b": [
+      "h_34_france",
+      "sa_341f"
+    ],
+    "sa_313b": [
+      "uh_1d",
+      "mi_8tb"
+    ],
+    "s_199": [
+      "p-51d-20-na_iaf"
+    ],
+    "sa_313b_france": [
+      "h_34_france"
+    ],
+    "sa_342l_china": [
+      "z_11wa",
+      "oh_58d_china"
+    ],
+    "saab_a21a_3": [
+      "mosquito_fb_mk6_norway",
+      "saab_a21rb"
+    ],
+    "sa_342m": [
+      "sa_341f",
+      "tiger_had_france"
+    ],
+    "saab_a21rb": [
+      "saab_a21a_3",
+      "saab_j29b"
+    ],
+    "saab_105g": [
+      "saab_sk60b"
+    ],
+    "saab_ajs37": [
+      "saab_aj37",
+      "f_16a_block_10_norway"
+    ],
+    "saab_b17b": [
+      "saab_b17bs",
+      "saab_b17a"
+    ],
+    "saab_b17a": [
+      "saab_b17b"
+    ],
+    "saab_b17bs": [
+      "saab_b17b"
+    ],
+    "saab_b18b": [
+      "ju-88a-4_finland",
+      "saab_t18b_1"
+    ],
+    "saab_aj37": [
+      "saab_a32a",
+      "saab_ajs37"
+    ],
+    "saab_j21a_1": [
+      "ffvs_j22_b",
+      "saab_j21a_2",
+      "saab_j21ra"
+    ],
+    "saab_j21ra": [
+      "saab_j21a_1",
+      "saab_j29a"
+    ],
+    "saab_j29a": [
+      "saab_j21ra",
+      "saab_j29f"
+    ],
+    "saab_b3c": [
+      "he_115a_2_sweden"
+    ],
+    "saab_b18a": [
+      "ju-88a-4_finland"
+    ],
+    "saab_j21a_2": [
+      "saab_j21a_1"
+    ],
+    "saab_j29b": [
+      "saab_a21rb",
+      "saab_a32a"
+    ],
+    "saab_a32a": [
+      "saab_j29b",
+      "saab_aj37"
+    ],
+    "saab_j32b": [
+      "saab_j29f",
+      "saab_j35d"
+    ],
+    "saab_ja37d": [
+      "saab_ja37",
+      "saab_ja37di",
+      "saab_jas39a"
+    ],
+    "saab_jas39c": [
+      "saab_jas39a"
+    ],
+    "saab_j35d": [
+      "saab_j32b",
+      "saab_ja37"
+    ],
+    "saab_ja37": [
+      "saab_j35d",
+      "saab_ja37d"
+    ],
+    "saab_jas39a": [
+      "saab_ja37d",
+      "saab_jas39c",
+      "saab_jas39e"
+    ],
+    "saab_jas39c_south_africa": [
+      "f-4m_fgr2",
+      "ef_2000_fgr4"
+    ],
+    "saab_j29f": [
+      "saab_j29a",
+      "saab_j32b"
+    ],
+    "saab_jas39e": [
+      "saab_jas39a"
+    ],
+    "saab_jas39c_hungary": [
+      "mig_29_9_12b_hungary"
+    ],
+    "saab_sk60b": [
+      "saab_t18b_1",
+      "saab_105g"
+    ],
+    "saab_t18b_1": [
+      "saab_b18b",
+      "saab_t18b_2",
+      "saab_sk60b"
+    ],
+    "saab_ja37di": [
+      "saab_ja37d"
+    ],
+    "sb2c_5_france": [
+      "mb_175t",
+      "douglas_ad_4_france"
+    ],
+    "saab_jas39c_thailand": [
+      "f-5th_thailand"
+    ],
+    "saab_t18b_2": [
+      "saab_t18b_1"
+    ],
+    "sb2u-3": [
+      "sb2u-2"
+    ],
+    "sb2c_4": [
+      "sb2c_1c"
+    ],
+    "sb_2m_100": [
+      "sb_2m_103c",
+      "yak-4"
+    ],
+    "sagittario_2": [
+      "fiat_g91_ps",
+      "fiat_g91_y"
+    ],
+    "sb2u-2": [
+      "os2u_1",
+      "sb2u-3",
+      "tbf-1c"
+    ],
+    "sb2c_1c": [
+      "a-20g",
+      "sb2c_4",
+      "pbj_1j"
+    ],
+    "sb_2m_103u_mv3": [
+      "ar_2",
+      "sb_2m_105"
+    ],
+    "sb_2m_103u_china": [
+      "db_3a_china"
+    ],
+    "scout_ah_mk1": [
+      "wasp_has_mk1"
+    ],
+    "sb_2m_103c": [
+      "sb_2m_100"
+    ],
+    "scimitar_f1": [
+      "sea_hawk_fga6",
+      "harrier_frs1_early"
+    ],
+    "sea_harrier_fa2": [
+      "fa_18a_raaf",
+      "fa_18f_block_2_raaf"
+    ],
+    "sb_2m_105": [
+      "sb_2m_103u_mv3"
+    ],
+    "sea_fury_fb11": [
+      "seafire_mk17",
+      "attaker_fb1"
+    ],
+    "sea_fury_fb51": [
+      "seafire_mk3_france",
+      "md_450b_ouragan"
+    ],
+    "sea_venom_faw20": [
+      "sea_hawk_fga6"
+    ],
+    "sbd-3": [
+      "tbf-1c"
+    ],
+    "seafire_mk3_france": [
+      "vb_10_02",
+      "sea_fury_fb51"
+    ],
+    "seafire_fr47": [
+      "seafire_mk17"
+    ],
+    "shackleton_mr_mk_2": [
+      "lincoln_b2"
+    ],
+    "seafire_mk3": [
+      "firefly_mk1",
+      "seafire_mk17"
+    ],
+    "sm_79_1936_italy": [
+      "br_20_dr",
+      "sm_79_1939_italy",
+      "sm_79_1941_italy"
+    ],
+    "sea_hawk_fga6": [
+      "attaker_fb1",
+      "sea_venom_faw20",
+      "scimitar_f1"
+    ],
+    "sm_79_1941_italy": [
+      "sm_79_1936_italy",
+      "sm_79_1943_italy",
+      "z_1007_bis_serie3"
+    ],
+    "sm_79_1939_italy": [
+      "sm_79_1936_italy"
+    ],
+    "seafire_mk17": [
+      "seafire_mk3",
+      "seafire_fr47",
+      "sea_fury_fb11"
+    ],
+    "sm_79_1936": [
+      "bf-110c-6"
+    ],
+    "sm_79_iar_italy": [
+      "sm_79_1943_italy"
+    ],
+    "sm_91": [
+      "ju-87d-3_italy",
+      "sm_92"
+    ],
+    "sm_79_1943_italy": [
+      "sm_79_1941_italy",
+      "sm_79_iar_italy"
+    ],
+    "sm_92": [
+      "sm_91",
+      "p-47d_30_italy"
+    ],
+    "so_4050_vautour_2a": [
+      "so_4050_vautour_2b"
+    ],
+    "so_4050_vautour_2a_israel_iaf": [
+      "b-17g_iaf",
+      "so_4050_vautour_2n_iaf",
+      "nesher"
+    ],
+    "so_4050_vautour_2n_late": [
+      "f8f1b_france",
+      "f-86k_late"
+    ],
+    "so_4050_vautour_2b": [
+      "lancaster_mr7_france",
+      "so_4050_vautour_2a",
+      "etndard_4m"
+    ],
+    "spitfire_f24": [
+      "spitfire_f22"
+    ],
+    "so_4050_vautour_2n_iaf": [
+      "so_4050_vautour_2a_israel_iaf"
+    ],
+    "spitfire_ix_early": [
+      "spitfire_mk5b",
+      "spitfire_xvi",
+      "spitfire_mk5c"
+    ],
+    "spitfire_fr_mk14e_belgium": [
+      "firefly_mk4_netherlands",
+      "meteor_fmk8_belgium"
+    ],
+    "spitfire_ix": [
+      "spitfire_mk18e"
+    ],
+    "spitfire_f22": [
+      "spitfire_mk14e",
+      "spitfire_f24",
+      "meteor_fmk3"
+    ],
+    "spitfire_lf_mk9e_iaf": [
+      "spitfire_mk9c_iaf",
+      "meteor_nfmk13"
+    ],
+    "spitfire_mk14e": [
+      "spitfire_mk5c",
+      "spitfire_mk18e",
+      "spitfire_f22"
+    ],
+    "spitfire_mk1": [
+      "gladiator_mk2",
+      "spitfiremkiia",
+      "spitfiremkii"
+    ],
+    "spitfire_mk18e": [
+      "spitfire_mk14e",
+      "spitfire_ix"
+    ],
+    "spitfire_mk5c": [
+      "spitfire_ix_early",
+      "spitfire_mk5c_notrop",
+      "spitfire_mk14e"
+    ],
+    "spitfire_mk5b": [
+      "spitfiremkii",
+      "spitfire_mk5b_notrop",
+      "spitfire_ix_early"
+    ],
+    "spitfire_mk5b_notrop": [
+      "spitfire_mk5b"
+    ],
+    "spitfire_xvi": [
+      "spitfire_ix_early"
+    ],
+    "spitfiremkii": [
+      "spitfire_mk1",
+      "spitfire_mk5b"
+    ],
+    "spitfire_mk5c_notrop": [
+      "spitfire_mk5c"
+    ],
+    "spitfire_mk9c_iaf": [
+      "spitfire_lf_mk9e_iaf"
+    ],
+    "spitfiremkiia": [
+      "spitfire_mk1"
+    ],
+    "su-7b": [
+      "la_200_toriy",
+      "su-7bkl",
+      "su_17m2"
+    ],
+    "su-2_mv5": [
+      "bb-1",
+      "su-2_tss1"
+    ],
+    "stirling_mk1": [
+      "halifax_mk3",
+      "stirling_mk3",
+      "lancaster_mk1"
+    ],
+    "stirling_mk3": [
+      "stirling_mk1"
+    ],
+    "su-6_am42": [
+      "su-6_m71",
+      "il-10"
+    ],
+    "su-6_m71": [
+      "il_2m_1943",
+      "su-6_am42"
+    ],
+    "su-2_m82": [
+      "su-2_tss1"
+    ],
+    "su-7bkl": [
+      "su-7b"
+    ],
+    "su_17m2": [
+      "su-7b",
+      "su_17m4"
+    ],
+    "su-2_tss1": [
+      "su-2_mv5",
+      "su-2_m82"
+    ],
+    "su_17m4": [
+      "su_17m2",
+      "su_27"
+    ],
+    "su_22m4": [
+      "su_22um3k"
+    ],
+    "su_22m3_hungary": [
+      "il_28_hungary"
+    ],
+    "su-9": [
+      "la-9",
+      "la_200_toriy"
+    ],
+    "su_25": [
+      "il_28",
+      "su_25t"
+    ],
+    "su_24m": [
+      "mig_27m",
+      "su_34"
+    ],
+    "su_22um3k": [
+      "mig_23bn",
+      "su_22m4"
+    ],
+    "su_25sm3": [
+      "su_25t"
+    ],
+    "su_25t": [
+      "su_25",
+      "su_25sm3"
+    ],
+    "su_30mkm": [
+      "fa_18d_late_malaysia"
+    ],
+    "su_30sm2": [
+      "su_30sm"
+    ],
+    "su_27": [
+      "su_17m4",
+      "su_27sm"
+    ],
+    "su_27sm": [
+      "su_27",
+      "su_30sm"
+    ],
+    "su_34": [
+      "su_24m"
+    ],
+    "sunderland_mk3a": [
+      "hp52_hampden_mk1_late",
+      "sunderland_mk5",
+      "wellington_mk1c"
+    ],
+    "su_30sm": [
+      "su_27sm",
+      "su_30sm2"
+    ],
+    "sunderland_mk5": [
+      "sunderland_mk3a"
+    ],
+    "sw_bkan_1c": [
+      "sw_pvkv_m43_1963",
+      "sw_pvrbv_551"
+    ],
+    "sw_bt_42": [
+      "sw_strv_m31"
+    ],
+    "super_etendard_97": [
+      "etndard_4m",
+      "jaguar_a"
+    ],
+    "sw_asrad_r": [
+      "sw_lvkv_90c"
+    ],
+    "sw_a_34_comet": [
+      "sw_pt_76b"
+    ],
+    "sw_crotale_ng": [
+      "sw_lvkv_90c",
+      "sw_eldenhet_98"
+    ],
+    "sw_cv_90120": [
+      "sw_strf_90c"
+    ],
+    "sw_cv_90_mk4": [
+      "sw_strf_9056"
+    ],
+    "sw_cv_90105": [
+      "sw_landsverk_ush_405",
+      "sw_ikv_91_105"
+    ],
+    "sw_ikv_103": [
+      "sw_pvkv_m43_1946"
+    ],
+    "sw_charioteer_mk_7": [
+      "sw_t_34_85_zis_53",
+      "sw_t_54_1951"
+    ],
+    "sw_cv_9030_fin": [
+      "sw_ikv_91_105",
+      "sw_strf_90b",
+      "sw_strf_90c"
+    ],
+    "sw_ikv_72": [
+      "sw_sav_m43_1944"
+    ],
+    "sw_ikv_91": [
+      "sw_pbv_501",
+      "sw_landsverk_ush_405"
+    ],
+    "sw_eldenhet_98": [
+      "sw_crotale_ng",
+      "sw_nasams_fcs"
+    ],
+    "sw_itpsv_90": [
+      "sw_veak_40",
+      "sw_lvrbv_701"
+    ],
+    "sw_ikv_91_105": [
+      "sw_cv_90105",
+      "sw_cv_9030_fin"
+    ],
+    "sw_landsverk_ush_204_gk": [
+      "sw_lvkv_42",
+      "sw_zsu_57_2"
+    ],
+    "sw_leopard_2a6nl": [
+      "sw_leopard_2a4_fin"
+    ],
+    "sw_l_62_anti_II": [
+      "sw_tgdgb_m40_lv",
+      "sw_lvkv_42"
+    ],
+    "sw_landsverk_ush_405": [
+      "sw_ikv_91",
+      "sw_cv_90105"
+    ],
+    "sw_lago_1": [
+      "sw_strv_m42_eh"
+    ],
+    "sw_lvkv_90c": [
+      "sw_lvrbv_701",
+      "sw_asrad_r",
+      "sw_crotale_ng"
+    ],
+    "sw_m24_chaffee_dk": [
+      "sw_pvkv_III",
+      "sw_pvkv_II"
+    ],
+    "sw_lvkv_42": [
+      "sw_l_62_anti_II",
+      "sw_landsverk_ush_204_gk"
+    ],
+    "sw_nasams_fcs": [
+      "sw_eldenhet_98"
+    ],
+    "sw_leopard_2a4_fin": [
+      "sw_t_72m1",
+      "sw_leopard_2a6nl"
+    ],
+    "sw_pt_76b": [
+      "sw_t_34_1941",
+      "sw_a_34_comet",
+      "sw_t_34_85_zis_53"
+    ],
+    "sw_pbv_302_bill": [
+      "sw_udes_33"
+    ],
+    "sw_lvrbv_701": [
+      "sw_itpsv_90",
+      "sw_lvkv_90c"
+    ],
+    "sw_pbv_301": [
+      "sw_tgdgb_m40_lv"
+    ],
+    "sw_pvkv_III": [
+      "sw_strv_m41_s2",
+      "sw_m24_chaffee_dk"
+    ],
+    "sw_pbv_501": [
+      "sw_pvkv_II",
+      "sw_ikv_91"
+    ],
+    "sw_pvrbv_551": [
+      "sw_bkan_1c",
+      "sw_udes_33"
+    ],
+    "sw_pvkv_II": [
+      "sw_m24_chaffee_dk",
+      "sw_pbv_501"
+    ],
+    "sw_sav_m43_1944": [
+      "sw_ikv_72"
+    ],
+    "sw_pvkv_m43_1963": [
+      "sw_pvkv_m43_1946",
+      "sw_bkan_1c"
+    ],
+    "sw_sav_m43_1946": [
+      "sw_stormpjas_fm43_44",
+      "sw_pvkv_m43_1946"
+    ],
+    "sw_pvkv_iv": [
+      "sw_strv_m42_eh",
+      "sw_strv_m42_delat_torn"
+    ],
+    "sw_stormpjas_fm43_44": [
+      "sw_sav_m43_1946"
+    ],
+    "sw_pvkv_m43_1946": [
+      "sw_sav_m43_1946",
+      "sw_ikv_103",
+      "sw_pvkv_m43_1963"
+    ],
+    "sw_strf_90c": [
+      "sw_cv_9030_fin",
+      "sw_cv_90120"
+    ],
+    "sw_pzkpfw_IV_ausf_J": [
+      "sw_t_34_1941"
+    ],
+    "sw_strf_9056": [
+      "sw_udes_33",
+      "sw_cv_90_mk4"
+    ],
+    "sw_strv_101": [
+      "sw_strv_81",
+      "sw_strv_103a",
+      "sw_strv_104"
+    ],
+    "sw_strv_103c": [
+      "sw_strv_104"
+    ],
+    "sw_strv_105": [
+      "sw_strv_104",
+      "sw_strv_121"
+    ],
+    "sw_strv_122b_plus": [
+      "sw_strv_122"
+    ],
+    "sw_strv_81": [
+      "sw_strv_74",
+      "sw_strv_101"
+    ],
+    "sw_strv_74": [
+      "sw_strv_m42_delat_torn",
+      "sw_strv_81"
+    ],
+    "sw_strv_122": [
+      "sw_strv_121",
+      "sw_strv_122b_plss",
+      "sw_strv_122b_plus"
+    ],
+    "sw_strv_121": [
+      "sw_strv_105",
+      "sw_strv_122"
+    ],
+    "sw_strv_103a": [
+      "sw_strv_101"
+    ],
+    "sw_strv_m38": [
+      "sw_strv_m40l"
+    ],
+    "sw_strf_90b": [
+      "sw_cv_9030_fin"
+    ],
+    "sw_strv_m31": [
+      "sw_bt_42"
+    ],
+    "sw_strv_104": [
+      "sw_strv_101",
+      "sw_strv_103c",
+      "sw_strv_105"
+    ],
+    "sw_strv_m42_delat_torn": [
+      "sw_pvkv_iv",
+      "sw_strv_74"
+    ],
+    "sw_strv_m42_eh": [
+      "sw_lago_1",
+      "sw_pvkv_iv"
+    ],
+    "sw_t_28": [
+      "sw_vickers_mk_e_37",
+      "sw_t_34_1941"
+    ],
+    "sw_strv_m40l": [
+      "sw_strv_m38"
+    ],
+    "sw_strv_m41_s2": [
+      "sw_pvkv_III"
+    ],
+    "sw_strv_122b_plss": [
+      "sw_strv_122"
+    ],
+    "sw_t_34_1941": [
+      "sw_t_28",
+      "sw_pzkpfw_IV_ausf_J",
+      "sw_pt_76b"
+    ],
+    "sw_t_34_85_zis_53": [
+      "sw_pt_76b",
+      "sw_charioteer_mk_7"
+    ],
+    "sw_t_54_1951": [
+      "sw_charioteer_mk_7",
+      "sw_t_55m"
+    ],
+    "sw_t_55m": [
+      "sw_t_54_1951",
+      "sw_t_72m1"
+    ],
+    "swift_f1": [
+      "hornet_mk3",
+      "swift_f7"
+    ],
+    "sw_udes_33": [
+      "sw_pvrbv_551",
+      "sw_pbv_302_bill",
+      "sw_strf_9056"
+    ],
+    "sw_t_72m1": [
+      "sw_t_55m",
+      "sw_leopard_2a4_fin"
+    ],
+    "swordfish_mk1": [
+      "hp52_hampden_mk1_late"
+    ],
+    "sw_tgdgb_m40_lv": [
+      "sw_pbv_301",
+      "sw_l_62_anti_II"
+    ],
+    "sw_veak_40": [
+      "sw_zsu_57_2",
+      "sw_itpsv_90"
+    ],
+    "sw_zsu_57_2": [
+      "sw_landsverk_ush_204_gk",
+      "sw_veak_40"
+    ],
+    "sw_vickers_mk_e_37": [
+      "sw_t_28"
+    ],
+    "t2": [
+      "j8m1",
+      "f1"
+    ],
+    "ta-152h-1": [
+      "fw-190a-5",
+      "ta-152c",
+      "he-162a-2"
+    ],
+    "ta-152c": [
+      "ta-152h-1"
+    ],
+    "tempest_mk2": [
+      "tempest_mkv",
+      "vampire_fb5"
+    ],
+    "tbf-1c": [
+      "sb2u-2",
+      "sbd-3"
+    ],
+    "swift_f7": [
+      "swift_f1",
+      "jaguar_gr1"
+    ],
+    "tempest_mkv": [
+      "typhoon_mk1b_late",
+      "tempest_mk2"
+    ],
+    "tbd-1_1938": [
+      "b_18a",
+      "pby-5"
+    ],
+    "tempest_mkv_vikkers": [
+      "beaufighter_mk6c",
+      "mosquito_fb_mk6"
+    ],
+    "tiger_had_france": [
+      "sa_342m",
+      "tiger_hac_france",
+      "tiger_had_block2_france",
+      "ah_64e_netherlands"
+    ],
+    "tiger_had_block2_france": [
+      "tiger_had_france"
+    ],
+    "tiger_hac_france": [
+      "tiger_had_france"
+    ],
+    "tornado_f3_late": [
+      "tornado_f3"
+    ],
+    "tornado_f3": [
+      "lightning_f6",
+      "tornado_f3_late"
+    ],
+    "tornado_adv": [
+      "amx"
+    ],
+    "tornado_ids_de_assta1": [
+      "alpha_jet_a",
+      "tornado_ids_de_assta3_sle"
+    ],
+    "tiger_uht": [
+      "bo_105pah1_a1"
+    ],
+    "tornado_gr1": [
+      "f_111c_raaf"
+    ],
+    "tornado_gr4": [
+      "f_111c_raaf"
+    ],
+    "tornado_ids_de_assta3_sle": [
+      "tornado_ids_de_assta1"
+    ],
+    "tu-2": [
+      "er-2_ach30b_early",
+      "tu-2_postwar",
+      "tu_4"
+    ],
+    "tu-2_postwar_china": [
+      "pb4y-2_china",
+      "tu_4_china"
+    ],
+    "tu-2_postwar": [
+      "tu-2",
+      "tu-2_postwar_late"
+    ],
+    "tornado_ids_it": [
+      "f-84f_italy",
+      "tornado_ids_it_mod95"
+    ],
+    "tornado_ids_it_ret8": [
+      "tornado_ids_it_mod95"
+    ],
+    "tu-2_postwar_late": [
+      "tu-2_postwar"
+    ],
+    "tornado_ids_it_mod95": [
+      "tornado_ids_it",
+      "tornado_ids_it_ret8",
+      "av_8b_plus_italy"
+    ],
+    "tu_4_china": [
+      "tu-2_postwar_china",
+      "il_28_china"
+    ],
+    "typhoon_mk1a": [
+      "hurricanemkii",
+      "typhoon_mk1b_late"
+    ],
+    "tu-2_postwar_late_hungary": [
+      "p_108b_serie1",
+      "il_28_hungary"
+    ],
+    "typhoon_mk1b_late": [
+      "typhoon_mk1a",
+      "tempest_mkv"
+    ],
+    "uh_1d": [
+      "sa_313b",
+      "bo_105pah1"
+    ],
+    "tu_4": [
+      "tu-2",
+      "tu_14t"
+    ],
+    "uh_1b": [
+      "ah_1g",
+      "uh_1c",
+      "ah_6m"
+    ],
+    "uh_1b_japan": [
+      "ah_1s_early"
+    ],
+    "tu_14t": [
+      "tu_4",
+      "yak-28b"
+    ],
+    "t2_early": [
+      "j8m1",
+      "f1"
+    ],
+    "uk_3_inch_gun_carrier": [
+      "uk_sp_17_pdr_valentine",
+      "uk_17_pdr_m10_achilles"
+    ],
+    "uk_17_pdr_m10_achilles": [
+      "uk_3_inch_gun_carrier",
+      "uk_m44"
+    ],
+    "uk_71ft_mtb460": [
+      "uk_dark_class",
+      "uk_dark_class_mtb"
+    ],
+    "uh_1c": [
+      "uh_1b",
+      "ah_1f"
+    ],
+    "uk_9a33bm2": [
+      "uk_stormer_air_defence"
+    ],
+    "uk_9a35_m": [
+      "uk_stormer_hvm"
+    ],
+    "uk_a17_mk_1_tetrarch": [
+      "uk_daimler_mk_2"
+    ],
+    "uk_a27m_cromwell_1": [
+      "uk_a27m_cromwell_5",
+      "uk_sherman_II"
+    ],
+    "uk_70ft_mgb": [
+      "uk_fairmile_a_ml100",
+      "uk_73ft_vosper_type1"
+    ],
+    "uk_a25_mk_8": [
+      "uk_marmon_herrington_mk_6_2pdr",
+      "uk_marmon_herrington_mk_6_6pdr"
+    ],
+    "uk_a30_sp_avenger": [
+      "uk_m44",
+      "uk_fv4005"
+    ],
+    "uk_73ft_vosper_type1": [
+      "uk_70ft_mgb",
+      "uk_fairmile_b_ml345"
+    ],
+    "uk_a39_tortoise": [
+      "uk_g6_spg"
+    ],
+    "uk_a_12_mk_2_matilda_2": [
+      "uk_valentine_mk_1",
+      "uk_a_22_mk_1_churchill_1941"
+    ],
+    "uk_a_13_mk1": [
+      "uk_a_13_mk2"
+    ],
+    "uk_a27m_cromwell_5": [
+      "uk_cruiser_ram_1",
+      "uk_a27m_cromwell_1",
+      "uk_sherman_vc_firefly"
+    ],
+    "uk_a30_challenger": [
+      "uk_sherman_vc_firefly",
+      "uk_a_34_comet",
+      "uk_centurion_mk_1"
+    ],
+    "uk_a_13_mk2": [
+      "uk_a_13_mk1",
+      "uk_crusader_mk_2"
+    ],
+    "uk_a_22b_mk_3_churchill_1942": [
+      "uk_a_22_mk_1_churchill_1941",
+      "uk_churchill_na75",
+      "uk_a_22f_mk_7_churchill_1944"
+    ],
+    "uk_a_34_comet": [
+      "uk_a30_challenger"
+    ],
+    "uk_a_22_mk_1_churchill_1941": [
+      "uk_a_12_mk_2_matilda_2",
+      "uk_a_22b_mk_3_churchill_1942"
+    ],
+    "uk_adats_m113a3": [
+      "uk_stormer_hvm",
+      "uk_sky_sabre_fcs"
+    ],
+    "uk_a_22f_mk_7_churchill_1944": [
+      "uk_a_22b_mk_3_churchill_1942",
+      "uk_charioteer_mk_7"
+    ],
+    "uk_ajax": [
+      "uk_vfm_5"
+    ],
+    "uk_armored_car_mk_2_aa": [
+      "uk_crusader_aa_mk_1",
+      "uk_ystervark_spaa"
+    ],
+    "uk_as_90_mk_2": [
+      "uk_g6_spg",
+      "uk_fv438_swingfire"
+    ],
+    "uk_badger": [
+      "uk_vickers_mk_11",
+      "uk_vfm_5"
+    ],
+    "tu-2_early": [
+      "er-2_ach30b_early",
+      "tu-2_postwar",
+      "tu_4"
+    ],
+    "uk_battlecruiser_invincible": [
+      "uk_cruiser_kent",
+      "uk_battlecruiser_glorious"
+    ],
+    "uk_attack_class_arrow": [
+      "uk_fairmile_d_601_616",
+      "uk_fremantle_class"
+    ],
+    "uk_battlecruiser_repulse": [
+      "uk_battlecruiser_queen_mary",
+      "uk_battlecruiser_hood"
+    ],
+    "uk_battleship_colossus": [
+      "uk_cruiser_york",
+      "uk_battleship_centurion"
+    ],
+    "uk_battlecruiser_glorious": [
+      "uk_battlecruiser_invincible",
+      "uk_battlecruiser_queen_mary"
+    ],
+    "uk_battleship_centurion": [
+      "uk_battleship_colossus",
+      "uk_battleship_rodney"
+    ],
+    "uk_battlecruiser_hood": [
+      "uk_battlecruiser_repulse"
+    ],
+    "uk_battlecruiser_queen_mary": [
+      "uk_battlecruiser_glorious",
+      "uk_battlecruiser_repulse"
+    ],
+    "uk_battleship_dreadnought": [
+      "uk_cruiser_southampton",
+      "uk_battleship_orion"
+    ],
+    "uk_battleship_prince_of_wales": [
+      "uk_battleship_rodney"
+    ],
+    "uk_battleship_orion": [
+      "uk_battleship_dreadnought",
+      "uk_battleship_marlborough"
+    ],
+    "uk_battleship_marlborough": [
+      "uk_battleship_orion",
+      "uk_battleship_q_elizabet_class_warspite"
+    ],
+    "uk_bosvark": [
+      "uk_ystervark_spaa",
+      "uk_skink_aa"
+    ],
+    "uk_battleship_vanguard": [
+      "uk_battleship_q_elizabet_class_warspite"
+    ],
+    "uk_brave_borderer": [
+      "uk_sgb_304",
+      "uk_destroyer_restigouche_class_terranova"
+    ],
+    "uk_centurion_mk_1": [
+      "uk_a30_challenger",
+      "uk_fv4004_conway"
+    ],
+    "uk_battleship_q_elizabet_class_warspite": [
+      "uk_battleship_marlborough",
+      "uk_battleship_vanguard"
+    ],
+    "uk_battleship_rodney": [
+      "uk_battleship_centurion",
+      "uk_battleship_prince_of_wales"
+    ],
+    "uk_centurion_mk_10": [
+      "uk_fv221_caernarvon",
+      "uk_chieftain_mk_3"
+    ],
+    "uk_centurion_mk_3": [
+      "uk_fv4004_conway",
+      "uk_fv221_caernarvon"
+    ],
+    "uk_challenger_1": [
+      "uk_chieftain_mk_10",
+      "uk_challenger_mk_3",
+      "uk_challenger_II"
+    ],
+    "uk_challenger_2_dorchester": [
+      "uk_challenger_II",
+      "uk_challenger_2_tes"
+    ],
+    "uk_challenger_2_lep": [
+      "uk_challenger_II",
+      "uk_challenger_2_bn"
+    ],
+    "uk_challenger_2e": [
+      "uk_challenger_2_bn"
+    ],
+    "uk_challenger_2_bn": [
+      "uk_challenger_2_lep",
+      "uk_challenger_2e"
+    ],
+    "uk_chieftain_900": [
+      "uk_chieftain_mk_10"
+    ],
+    "uk_challenger_2_tes": [
+      "uk_challenger_2_dorchester"
+    ],
+    "uk_chieftain_mk_3": [
+      "uk_centurion_mk_10",
+      "uk_chieftain_mk_5",
+      "uk_chieftain_mk_10"
+    ],
+    "uk_chieftain_marksman": [
+      "uk_falcon",
+      "uk_rooikat_za_35",
+      "uk_tracked_rapier"
+    ],
+    "uk_challenger_mk_3": [
+      "uk_challenger_1"
+    ],
+    "uk_charioteer_mk_7": [
+      "uk_a_22f_mk_7_churchill_1944",
+      "uk_fv4202"
+    ],
+    "uk_churchill_na75": [
+      "uk_a_22b_mk_3_churchill_1942"
+    ],
+    "uk_challenger_II": [
+      "uk_challenger_1",
+      "uk_challenger_2_dorchester",
+      "uk_challenger_2_lep"
+    ],
+    "uk_chieftain_mk_5": [
+      "uk_chieftain_mk_3"
+    ],
+    "uk_conqueror_mk_2": [
+      "uk_fv221_caernarvon"
+    ],
+    "uk_chieftain_mk_10": [
+      "uk_chieftain_mk_3",
+      "uk_chieftain_900",
+      "uk_challenger_1"
+    ],
+    "uk_corvette_peacock": [
+      "uk_frigate_whitby_blackpool"
+    ],
+    "uk_cruiser_arethusa": [
+      "uk_destroyer_battle_2series",
+      "uk_cruiser_leander"
+    ],
+    "uk_cruiser_fiji_class_fiji": [
+      "uk_cruiser_leander",
+      "uk_cruiser_southampton"
+    ],
+    "uk_cruiser_hawkins": [
+      "uk_cruiser_enterprise_d52",
+      "uk_cruiser_kent"
+    ],
+    "uk_concept3_ngac": [
+      "uk_marmon_herrington_mk_6_6pdr",
+      "uk_ratel_90"
+    ],
+    "uk_cruiser_enterprise_d52": [
+      "uk_minelayer_abdiel_class_abdiel",
+      "uk_cruiser_hawkins"
+    ],
+    "uk_cruiser_kent": [
+      "uk_cruiser_hawkins",
+      "uk_cruiser_norfolk",
+      "uk_battlecruiser_invincible"
+    ],
+    "uk_cruiser_leander": [
+      "uk_cruiser_arethusa",
+      "uk_cruiser_fiji_class_fiji"
+    ],
+    "uk_cruiser_york": [
+      "uk_cruiser_dido",
+      "uk_battleship_colossus"
+    ],
+    "uk_crusader_aa_mk_1": [
+      "uk_armored_car_mk_2_aa"
+    ],
+    "uk_crusader_aa_mk_2": [
+      "uk_ystervark_spaa"
+    ],
+    "uk_cruiser_dido": [
+      "uk_destroyer_daring_class_diana",
+      "uk_cruiser_york"
+    ],
+    "uk_cruiser_norfolk": [
+      "uk_cruiser_kent",
+      "uk_cruiser_london"
+    ],
+    "uk_cruiser_london": [
+      "uk_cruiser_norfolk"
+    ],
+    "uk_crusader_mk_2": [
+      "uk_a_13_mk2",
+      "uk_crusader_mk_3",
+      "uk_cruiser_ram_1"
+    ],
+    "uk_cruiser_southampton": [
+      "uk_cruiser_fiji_class_fiji",
+      "uk_battleship_dreadnought"
+    ],
+    "uk_cruiser_ram_1": [
+      "uk_crusader_mk_2",
+      "uk_a27m_cromwell_5"
+    ],
+    "uk_daimler_mk_2": [
+      "uk_a17_mk_1_tetrarch"
+    ],
+    "uk_crusader_mk_3": [
+      "uk_crusader_mk_2"
+    ],
+    "uk_dark_class": [
+      "uk_fairmile_b_ml345",
+      "uk_71ft_mtb460"
+    ],
+    "uk_dark_class_mtb": [
+      "uk_71ft_mtb460",
+      "uk_fairmile_d_617_632"
+    ],
+    "uk_destroyer_daring_class_daring": [
+      "uk_destroyer_daring_class_diana"
+    ],
+    "uk_desert_warrior": [
+      "uk_fv102_striker"
+    ],
+    "uk_destroyer_g_grafton": [
+      "uk_destroyer_st_class_saumarez"
+    ],
+    "uk_destroyer_n_class": [
+      "uk_destroyer_tribal",
+      "uk_destroyer_battle_2series"
+    ],
+    "uk_destroyer_hunt_4series": [
+      "uk_destroyer_st_class_saumarez",
+      "uk_destroyer_k_class"
+    ],
+    "uk_destroyer_battle_tobruk": [
+      "uk_destroyer_battle_2series"
+    ],
+    "uk_destroyer_hunt_2series": [
+      "uk_destroyer_v_class_vega",
+      "uk_destroyer_tribal"
+    ],
+    "uk_destroyer_daring_class_diana": [
+      "uk_destroyer_k_class",
+      "uk_destroyer_daring_class_daring",
+      "uk_cruiser_dido"
+    ],
+    "uk_destroyer_battle_2series": [
+      "uk_destroyer_n_class",
+      "uk_destroyer_battle_tobruk",
+      "uk_cruiser_arethusa"
+    ],
+    "uk_destroyer_st_class_saumarez": [
+      "uk_destroyer_g_grafton",
+      "uk_destroyer_hunt_4series"
+    ],
+    "uk_destroyer_v_class_vega": [
+      "uk_destroyer_hunt_2series"
+    ],
+    "uk_destroyer_k_class": [
+      "uk_destroyer_hunt_4series",
+      "uk_destroyer_daring_class_diana"
+    ],
+    "uk_destroyer_restigouche_class_terranova": [
+      "uk_brave_borderer",
+      "uk_frigate_leopard"
+    ],
+    "uk_destroyer_tribal": [
+      "uk_destroyer_hunt_2series",
+      "uk_destroyer_n_class"
+    ],
+    "uk_eland_90_mk_7": [
+      "uk_ratel_90",
+      "uk_fv107_scimitar"
+    ],
+    "uk_fairmile_c": [
+      "uk_flower_class",
+      "uk_fairmile_lcs_l_h_mk2"
+    ],
+    "uk_fairmile_d_617_632": [
+      "uk_dark_class_mtb",
+      "uk_fairmile_d_697_800"
+    ],
+    "uk_fairmile_a_ml100": [
+      "uk_mtb35_vosper",
+      "uk_70ft_mgb"
+    ],
+    "uk_fairmile_d_697_800": [
+      "uk_fairmile_d_617_632",
+      "uk_sgb_304"
+    ],
+    "uk_fairmile_b_ml345": [
+      "uk_73ft_vosper_type1",
+      "uk_dark_class"
+    ],
+    "uk_fairmile_d_601_616": [
+      "uk_fairmile_lcs_l_h_mk2",
+      "uk_attack_class_arrow"
+    ],
+    "uk_fairmile_c_332": [
+      "uk_fremantle_class",
+      "uk_frigate_whitby_blackpool"
+    ],
+    "uk_fairmile_lcs_l_h_mk2": [
+      "uk_fairmile_c",
+      "uk_fairmile_d_601_616"
+    ],
+    "uk_falcon": [
+      "uk_skink_aa",
+      "uk_chieftain_marksman"
+    ],
+    "uk_fv102_striker": [
+      "uk_fv510_isv",
+      "uk_desert_warrior"
+    ],
+    "uk_frigate_leopard": [
+      "uk_destroyer_restigouche_class_terranova"
+    ],
+    "uk_fremantle_class": [
+      "uk_attack_class_arrow",
+      "uk_fairmile_c_332"
+    ],
+    "uk_flower_class": [
+      "uk_isles_class_trawler",
+      "uk_fairmile_c"
+    ],
+    "uk_fv221_caernarvon": [
+      "uk_centurion_mk_3",
+      "uk_conqueror_mk_2",
+      "uk_centurion_mk_10"
+    ],
+    "uk_fv4005": [
+      "uk_a30_sp_avenger",
+      "uk_m109a1",
+      "uk_g6_spg"
+    ],
+    "uk_fv107_scimitar": [
+      "uk_eland_90_mk_7",
+      "uk_fv721_fox",
+      "uk_vickers_mk_11"
+    ],
+    "uk_frigate_whitby_blackpool": [
+      "uk_fairmile_c_332",
+      "uk_corvette_peacock"
+    ],
+    "uk_fv721_fox": [
+      "uk_fv107_scimitar"
+    ],
+    "uk_fv4004_conway": [
+      "uk_centurion_mk_1",
+      "uk_centurion_mk_3"
+    ],
+    "uk_g6_spg": [
+      "uk_fv4005",
+      "uk_a39_tortoise",
+      "uk_as_90_mk_2"
+    ],
+    "uk_fv438_swingfire": [
+      "uk_as_90_mk_2",
+      "uk_fv510_isv"
+    ],
+    "uk_fv4202": [
+      "uk_charioteer_mk_7",
+      "uk_vickers_mbt_mk_1"
+    ],
+    "uk_isles_class_trawler": [
+      "uk_hdml_ml1383",
+      "uk_flower_class"
+    ],
+    "uk_m109a1": [
+      "uk_fv4005"
+    ],
+    "uk_hdml_ml1383": [
+      "uk_mtb_vosper_2series",
+      "uk_isles_class_trawler"
+    ],
+    "uk_fv510_isv": [
+      "uk_fv438_swingfire",
+      "uk_ratel_zt3",
+      "uk_fv102_striker"
+    ],
+    "uk_m3_stuart": [
+      "uk_m3a1_stuart"
+    ],
+    "uk_marmon_herrington_mk_6_6pdr": [
+      "uk_a25_mk_8",
+      "uk_concept3_ngac"
+    ],
+    "uk_minelayer_abdiel_class_abdiel": [
+      "uk_cruiser_enterprise_d52"
+    ],
+    "uk_mtb35_vosper": [
+      "uk_fairmile_a_ml100"
+    ],
+    "uk_m3a1_stuart": [
+      "uk_m3_stuart",
+      "uk_valentine_mk_1"
+    ],
+    "uk_m44": [
+      "uk_17_pdr_m10_achilles",
+      "uk_a30_sp_avenger"
+    ],
+    "uk_mtb_vosper_1series": [
+      "uk_mtb_vosper_2series"
+    ],
+    "uk_mtb_vosper_2series": [
+      "uk_mtb_vosper_1series",
+      "uk_hdml_ml1383"
+    ],
+    "uk_marmon_herrington_mk_6_2pdr": [
+      "uk_a25_mk_8"
+    ],
+    "uk_ratel_zt3": [
+      "uk_fv510_isv"
+    ],
+    "uk_olifant_mk_2": [
+      "uk_vickers_mbt_mk_3",
+      "uk_ttd"
+    ],
+    "uk_ratel_90": [
+      "uk_concept3_ngac",
+      "uk_ratel_20",
+      "uk_eland_90_mk_7"
+    ],
+    "uk_olifant_mk_1a": [
+      "uk_vickers_mbt_mk_3"
+    ],
+    "uk_rooikat_mttd": [
+      "uk_vfm_5"
+    ],
+    "uk_rooikat_76": [
+      "uk_vickers_mk_11"
+    ],
+    "uk_rooikat_za_35": [
+      "uk_chieftain_marksman"
+    ],
+    "uk_ratel_20": [
+      "uk_ratel_90"
+    ],
+    "uk_sgb_304": [
+      "uk_fairmile_d_697_800",
+      "uk_brave_borderer"
+    ],
+    "uk_sherman_vc_firefly": [
+      "uk_a27m_cromwell_5",
+      "uk_a30_challenger"
+    ],
+    "uk_skink_aa": [
+      "uk_bosvark",
+      "uk_falcon"
+    ],
+    "uk_sherman_II": [
+      "uk_a27m_cromwell_1"
+    ],
+    "uk_sp_17_pdr_valentine": [
+      "uk_3_inch_gun_carrier"
+    ],
+    "uk_sky_sabre_fcs": [
+      "uk_adats_m113a3"
+    ],
+    "uk_stormer_hvm": [
+      "uk_stormer_air_defence",
+      "uk_9a35_m",
+      "uk_adats_m113a3"
+    ],
+    "uk_t17e2": [
+      "uk_vickers_mk_6_aa_mk_1"
+    ],
+    "uk_tracked_rapier": [
+      "uk_chieftain_marksman",
+      "uk_stormer_air_defence"
+    ],
+    "uk_valentine_mk_1": [
+      "uk_m3a1_stuart",
+      "uk_valentine_mk_11",
+      "uk_a_12_mk_2_matilda_2"
+    ],
+    "uk_stormer_air_defence": [
+      "uk_tracked_rapier",
+      "uk_9a33bm2",
+      "uk_stormer_hvm"
+    ],
+    "uk_valentine_mk_11": [
+      "uk_valentine_mk_1",
+      "uk_valentine_mk_9"
+    ],
+    "uk_valentine_mk_9": [
+      "uk_valentine_mk_11"
+    ],
+    "uk_vickers_mk7": [
+      "uk_ttd"
+    ],
+    "uk_vickers_mbt_mk_3": [
+      "uk_vickers_mbt_mk_1",
+      "uk_olifant_mk_1a",
+      "uk_olifant_mk_2"
+    ],
+    "uk_ttd": [
+      "uk_olifant_mk_2",
+      "uk_vickers_mk7"
+    ],
+    "uk_vickers_mk_11": [
+      "uk_fv107_scimitar",
+      "uk_rooikat_76",
+      "uk_badger"
+    ],
+    "uk_vickers_mbt_mk_1": [
+      "uk_fv4202",
+      "uk_vickers_mbt_mk_3"
+    ],
+    "uk_ystervark_spaa": [
+      "uk_armored_car_mk_2_aa",
+      "uk_crusader_aa_mk_2",
+      "uk_bosvark"
+    ],
+    "us_ashville_class": [
+      "us_elco_77ft_pt59",
+      "us_admirable_class"
+    ],
+    "uk_vickers_mk_6_aa_mk_1": [
+      "uk_t17e2"
+    ],
+    "uk_vfm_5": [
+      "uk_badger",
+      "uk_rooikat_mttd",
+      "uk_ajax"
+    ],
+    "us_adats_bradley": [
+      "us_xm_975_roland",
+      "us_sl_amraam_fcs"
+    ],
+    "us_battlecruiser_alaska_class": [
+      "us_cruiser_oregon_class"
+    ],
+    "us_battleship_arizona_1931": [
+      "us_battleship_texas",
+      "us_battleship_colorado_class_colorado"
+    ],
+    "us_admirable_class": [
+      "us_ashville_class",
+      "us_lcs_l_3"
+    ],
+    "us_battleship_tennessee": [
+      "us_battleship_nevada",
+      "us_battleship_south_dakota"
+    ],
+    "us_battleship_nevada": [
+      "us_battleship_wyoming_class",
+      "us_battleship_tennessee"
+    ],
+    "us_battleship_colorado_class_colorado": [
+      "us_battleship_arizona_1931"
+    ],
+    "us_battleship_iowa_class_iowa": [
+      "us_battleship_south_dakota"
+    ],
+    "us_battleship_north_dakota": [
+      "us_cruiser_fargo_class",
+      "us_battleship_wyoming_class"
+    ],
+    "us_cruiser_baltimore_class_pittsburgh": [
+      "us_cruiser_new_orleans_class",
+      "us_cruiser_oregon_class"
+    ],
+    "us_battleship_wyoming_class": [
+      "us_battleship_north_dakota",
+      "us_battleship_nevada"
+    ],
+    "us_battleship_texas": [
+      "us_cruiser_worcester_class_roanoke",
+      "us_battleship_arizona_1931"
+    ],
+    "us_battleship_south_dakota": [
+      "us_battleship_tennessee",
+      "us_battleship_iowa_class_iowa"
+    ],
+    "us_cruiser_cleveland_class_cleveland": [
+      "us_cruiser_omaha_class_raleigh",
+      "us_cruiser_fargo_class"
+    ],
+    "us_cruiser_new_orleans_class": [
+      "us_cruiser_northampton_class",
+      "us_cruiser_baltimore_class_pittsburgh"
+    ],
+    "us_cruiser_atlanta_class_atlanta": [
+      "us_destroyer_forrestsherman_class",
+      "us_cruiser_worcester_class_roanoke"
+    ],
+    "us_cruiser_fargo_class": [
+      "us_cruiser_cleveland_class_cleveland",
+      "us_cruiser_brooklyn_class_brooklyn",
+      "us_battleship_north_dakota"
+    ],
+    "us_cruiser_brooklyn_class_brooklyn": [
+      "us_cruiser_fargo_class"
+    ],
+    "us_cruiser_northampton_class": [
+      "us_destroyer_gearing",
+      "us_cruiser_portland_class",
+      "us_cruiser_new_orleans_class"
+    ],
+    "us_cruiser_omaha_class_trenton": [
+      "us_destroyer_mitscher",
+      "us_cruiser_omaha_class_raleigh"
+    ],
+    "us_destroyer_clemson_barker": [
+      "us_destroyer_bagley_class_bagley"
+    ],
+    "us_cruiser_pensacola_class": [
+      "us_cruiser_portland_class"
+    ],
+    "us_destroyer_bagley_class_bagley": [
+      "us_destroyer_clemson_barker",
+      "us_destroyer_mitscher"
+    ],
+    "us_destroyer_cf_adams_class_cf_adams": [
+      "us_destroyer_somers",
+      "us_destroyer_forrestsherman_class"
+    ],
+    "us_cruiser_oregon_class": [
+      "us_cruiser_baltimore_class_pittsburgh",
+      "us_battlecruiser_alaska_class"
+    ],
+    "us_cruiser_omaha_class_raleigh": [
+      "us_cruiser_omaha_class_trenton",
+      "us_cruiser_cleveland_class_cleveland"
+    ],
+    "us_cruiser_worcester_class_roanoke": [
+      "us_cruiser_atlanta_class_atlanta",
+      "us_battleship_texas"
+    ],
+    "us_cruiser_portland_class": [
+      "us_cruiser_northampton_class",
+      "us_cruiser_pensacola_class"
+    ],
+    "us_cyclone_class_cyclone": [
+      "us_pgm_9_class"
+    ],
+    "us_destroyer_clemson_litchfield": [
+      "us_destroyer_farragut_1942"
+    ],
+    "us_destroyer_fletcher": [
+      "us_destroyer_farragut_1942",
+      "us_destroyer_porter_1941"
+    ],
+    "us_destroyer_forrestsherman_class": [
+      "us_destroyer_cf_adams_class_cf_adams",
+      "us_cruiser_atlanta_class_atlanta"
+    ],
+    "us_destroyer_gearing": [
+      "us_destroyer_sumner",
+      "us_cruiser_northampton_class"
+    ],
+    "us_destroyer_farragut_1942": [
+      "us_destroyer_clemson_litchfield",
+      "us_destroyer_fletcher"
+    ],
+    "us_destroyer_mitscher": [
+      "us_destroyer_bagley_class_bagley",
+      "us_cruiser_omaha_class_trenton"
+    ],
+    "us_destroyer_porter_1941": [
+      "us_destroyer_fletcher",
+      "us_destroyer_somers"
+    ],
+    "us_destroyer_somers": [
+      "us_destroyer_porter_1941",
+      "us_destroyer_cf_adams_class_cf_adams"
+    ],
+    "us_elco_77ft_pt20": [
+      "us_huckins_78ft_pt95"
+    ],
+    "us_elco_77ft_pt59": [
+      "us_higgins_78ft_pt625",
+      "us_ashville_class"
+    ],
+    "us_elco_80ft_pt_boat": [
+      "us_nasty_ptf",
+      "us_higgins_78ft_pt71"
+    ],
+    "us_elco_80ft_pt_boat_mod02": [
+      "us_elco_80ft_pt_boat_mod01",
+      "us_tucumcari_pgh2"
+    ],
+    "us_destroyer_sumner": [
+      "us_destroyer_gearing"
+    ],
+    "us_frigate_buckley_class_coolbaugh": [
+      "us_lcs_l_3"
+    ],
+    "us_elco_80ft_pt_boat_mod01": [
+      "us_higgins_78ft_pt71",
+      "us_elco_80ft_pt_boat_mod02"
+    ],
+    "us_frigate_dealey": [
+      "us_frigate_tacoma"
+    ],
+    "us_frigate_tacoma": [
+      "us_pt810",
+      "us_frigate_dealey"
+    ],
+    "us_halftrack_m13": [
+      "us_halftrack_m15"
+    ],
+    "us_higgins_78ft_pt625": [
+      "us_sc_497",
+      "us_elco_77ft_pt59"
+    ],
+    "us_halftrack_m16": [
+      "us_t77e1"
+    ],
+    "us_halftrack_m3_75mm_gmc": [
+      "us_m8_scott"
+    ],
+    "us_higgins_78ft_pt71": [
+      "us_elco_80ft_pt_boat",
+      "us_elco_80ft_pt_boat_mod01"
+    ],
+    "us_halftrack_m15": [
+      "us_halftrack_m13"
+    ],
+    "us_huckins_78ft_pt95": [
+      "us_elco_77ft_pt20",
+      "us_pc_451"
+    ],
+    "us_lcs_l_3": [
+      "us_admirable_class",
+      "us_frigate_buckley_class_coolbaugh"
+    ],
+    "us_lav_ad": [
+      "us_m247",
+      "us_xm_975_roland"
+    ],
+    "us_hstv_l": [
+      "us_m10_booker_late"
+    ],
+    "us_lvt_a_1": [
+      "us_m22_locust"
+    ],
+    "us_m103": [
+      "us_t32",
+      "us_t95e1"
+    ],
+    "us_m109a1": [
+      "us_m36",
+      "us_m56_scorpion"
+    ],
+    "us_m10_booker_late": [
+      "us_m1128_mgs",
+      "us_hstv_l"
+    ],
+    "us_m18_hellcat": [
+      "us_m24_chaffee",
+      "us_m41_walker_bulldog"
+    ],
+    "us_m1296_dragoon": [
+      "us_stingray",
+      "us_m1128_mgs"
+    ],
+    "us_m1128_mgs": [
+      "us_m1296_dragoon",
+      "us_m10_booker_late"
+    ],
+    "us_m19": [
+      "us_t77e1",
+      "us_m42_duster",
+      "us_skink_aa"
+    ],
+    "us_m10": [
+      "us_m4a3_105_sherman",
+      "us_m44"
+    ],
+    "us_m163_vulcan": [
+      "us_skink_aa",
+      "us_xm246"
+    ],
+    "us_m1_ip_abrams": [
+      "us_m1a1_abrams"
+    ],
+    "us_m1_abrams": [
+      "us_xm_803",
+      "us_m1a1_abrams"
+    ],
+    "us_m1a2_abrams": [
+      "us_m1a1_abrams",
+      "us_m1a2_sep_abrams",
+      "us_m1a2_sep2_abrams"
+    ],
+    "us_m1a2_sep2_abrams": [
+      "us_m1a2_abrams"
+    ],
+    "us_m1a1_hc_abrams": [
+      "us_m60_120s"
+    ],
+    "us_m247": [
+      "us_xm246",
+      "us_mim_72_chaparral",
+      "us_lav_ad"
+    ],
+    "us_m1a1_abrams": [
+      "us_m1_abrams",
+      "us_m1_ip_abrams",
+      "us_m1a2_abrams"
+    ],
+    "us_m1a2_sep_abrams": [
+      "us_m1a2_abrams"
+    ],
+    "us_m26_pershing": [
+      "us_m4_t26",
+      "us_m46_patton"
+    ],
+    "us_m24_chaffee": [
+      "us_m5a1_stuart",
+      "us_m18_hellcat"
+    ],
+    "us_m22_locust": [
+      "us_lvt_a_1",
+      "us_m6a1"
+    ],
+    "us_m2a2": [
+      "us_m8_scott"
+    ],
+    "us_m2a4": [
+      "us_m3_stuart"
+    ],
+    "us_m3_lee": [
+      "us_m4a1_1942_sherman"
+    ],
+    "us_m3_stuart": [
+      "us_m2a4",
+      "us_m3a1_stuart"
+    ],
+    "us_m36": [
+      "us_m44",
+      "us_m36b2",
+      "us_m109a1"
+    ],
+    "us_m36b2": [
+      "us_m36"
+    ],
+    "us_m3_bradley": [
+      "us_m60a2",
+      "us_m3a3_bradley"
+    ],
+    "us_m41_walker_bulldog": [
+      "us_m18_hellcat",
+      "us_t92"
+    ],
+    "us_m42_duster": [
+      "us_m19"
+    ],
+    "us_m46_patton": [
+      "us_m26_pershing",
+      "us_m47_patton_II"
+    ],
+    "us_m44": [
+      "us_m10",
+      "us_m55",
+      "us_m36"
+    ],
+    "us_m3a1_stuart": [
+      "us_m3_stuart"
+    ],
+    "us_m18_hellcat_black_cat": [
+      "us_m24_chaffee",
+      "us_m41_walker_bulldog"
+    ],
+    "us_m4_sherman": [
+      "us_m4a1_1942_sherman",
+      "us_m4a2_sherman"
+    ],
+    "us_m3a3_bradley": [
+      "us_m3_bradley"
+    ],
+    "us_m4a1_1942_sherman": [
+      "us_m3_lee",
+      "us_m4_sherman",
+      "us_m4a1_76w_sherman"
+    ],
+    "us_m4a1_76w_sherman": [
+      "us_m4a1_1942_sherman",
+      "us_m4a2_76w_sherman"
+    ],
+    "us_m47_patton_II": [
+      "us_m46_patton",
+      "us_m48a1_patton_III",
+      "us_m60"
+    ],
+    "us_m4_t26": [
+      "us_m4a2_76w_sherman",
+      "us_t25",
+      "us_m26_pershing"
+    ],
+    "us_m18_hellcat_kit_3rank": [
+      "us_m24_chaffee",
+      "us_m41_walker_bulldog"
+    ],
+    "us_m4a3e2_76w_sherman_jumbo": [
+      "us_t1e1_90",
+      "us_t26e5"
+    ],
+    "us_m18_super_hellcat": [
+      "us_m24_chaffee",
+      "us_m41_walker_bulldog"
+    ],
+    "us_m4a2_76w_sherman": [
+      "us_m4a1_76w_sherman",
+      "us_m4a3e8_76w_sherman",
+      "us_m4_t26"
+    ],
+    "us_m48a1_patton_III": [
+      "us_m47_patton_II"
+    ],
+    "us_m4a3e2_sherman_jumbo": [
+      "us_m6a1",
+      "us_t1e1_90"
+    ],
+    "us_m50_ontos": [
+      "us_m56_scorpion"
+    ],
+    "us_m4a3e8_76w_sherman": [
+      "us_m4a2_76w_sherman"
+    ],
+    "us_m4a2_sherman": [
+      "us_m4_sherman"
+    ],
+    "us_m4a3_105_sherman": [
+      "us_m10"
+    ],
+    "us_m55": [
+      "us_m44"
+    ],
+    "us_m551": [
+      "us_t92",
+      "us_xm_800t"
+    ],
+    "us_m60": [
+      "us_m47_patton_II",
+      "us_m60a1"
+    ],
+    "us_m56_scorpion": [
+      "us_m109a1",
+      "us_m50_ontos",
+      "us_t95"
+    ],
+    "us_m5a1_stuart": [
+      "us_m24_chaffee"
+    ],
+    "us_m60_120s": [
+      "us_m60a3_tts",
+      "us_m1a1_hc_abrams"
+    ],
+    "us_m6a1": [
+      "us_m22_locust",
+      "us_t1e1",
+      "us_m4a3e2_sherman_jumbo"
+    ],
+    "us_m60a2": [
+      "us_t95",
+      "us_m3_bradley"
+    ],
+    "us_m8_scott": [
+      "us_m2a2",
+      "us_halftrack_m3_75mm_gmc"
+    ],
+    "us_m60a1": [
+      "us_m60",
+      "us_m60a1_rise_passive_era",
+      "us_m60a3_tts"
+    ],
+    "us_m60a3_tts": [
+      "us_m60a1",
+      "us_m60_120s"
+    ],
+    "us_m60a1_rise_passive_era": [
+      "us_m60a1"
+    ],
+    "us_mim_72_chaparral": [
+      "us_m247"
+    ],
+    "us_mbt_70": [
+      "us_xm_803"
+    ],
+    "us_nasams_fcs": [
+      "us_sl_amraam_fcs"
+    ],
+    "us_nasty_ptf": [
+      "us_pt6",
+      "us_elco_80ft_pt_boat"
+    ],
+    "us_pc_451": [
+      "us_huckins_78ft_pt95",
+      "us_sc_497"
+    ],
+    "us_pgm_59_class": [
+      "us_pgm_9_class"
+    ],
+    "us_pt6": [
+      "us_nasty_ptf"
+    ],
+    "us_pt810": [
+      "us_pt812",
+      "us_frigate_tacoma"
+    ],
+    "us_pt812": [
+      "us_tucumcari_pgh2",
+      "us_pt810"
+    ],
+    "us_pgm_9_class": [
+      "us_pgm_59_class",
+      "us_cyclone_class_cyclone"
+    ],
+    "us_sl_amraam_fcs": [
+      "us_adats_bradley",
+      "us_nasams_fcs"
+    ],
+    "us_skink_aa": [
+      "us_m19",
+      "us_m163_vulcan"
+    ],
+    "us_sc_497": [
+      "us_pc_451",
+      "us_higgins_78ft_pt625"
+    ],
+    "us_t1e1": [
+      "us_m6a1"
+    ],
+    "us_stingray": [
+      "us_xm_800t",
+      "us_m1296_dragoon"
+    ],
+    "us_t25": [
+      "us_m4_t26"
+    ],
+    "us_t1e1_90": [
+      "us_m4a3e2_sherman_jumbo",
+      "us_m4a3e2_76w_sherman_jumbo"
+    ],
+    "us_t26e5": [
+      "us_m4a3e2_76w_sherman_jumbo",
+      "us_t26e4_superpershing",
+      "us_t34"
+    ],
+    "us_t32": [
+      "us_t34",
+      "us_t32e1",
+      "us_m103"
+    ],
+    "us_t32e1": [
+      "us_t32"
+    ],
+    "us_t26e4_superpershing": [
+      "us_t26e5"
+    ],
+    "us_t77e1": [
+      "us_halftrack_m16",
+      "us_m19"
+    ],
+    "us_t95": [
+      "us_m56_scorpion",
+      "us_m60a2"
+    ],
+    "us_t92": [
+      "us_m41_walker_bulldog",
+      "us_m551"
+    ],
+    "us_t95e1": [
+      "us_m103",
+      "us_xm_803"
+    ],
+    "us_t34": [
+      "us_t26e5",
+      "us_t32"
+    ],
+    "us_tucumcari_pgh2": [
+      "us_elco_80ft_pt_boat_mod02",
+      "us_pt812"
+    ],
+    "us_xm246": [
+      "us_m163_vulcan",
+      "us_m247"
+    ],
+    "ussr_2s1": [
+      "ussr_su_100_1945",
+      "ussr_2s3m",
+      "ussr_su_122_54"
+    ],
+    "ussr_1124_ack": [
+      "ussr_1124_art",
+      "ussr_skr_groza_1943"
+    ],
+    "us_xm_803": [
+      "us_t95e1",
+      "us_mbt_70",
+      "us_m1_abrams"
+    ],
+    "ussr_2s19_m1": [
+      "ussr_su_122_54",
+      "ussr_it_1"
+    ],
+    "us_xm_800t": [
+      "us_m551",
+      "us_stingray"
+    ],
+    "us_xm_975_roland": [
+      "us_lav_ad",
+      "us_adats_bradley"
+    ],
+    "ussr_1124_art": [
+      "ussr_mpk_122a",
+      "ussr_1124_ack"
+    ],
+    "ussr_2s25": [
+      "ussr_bmp_3"
+    ],
+    "ussr_2s25m": [
+      "ussr_bmd_4m2"
+    ],
+    "ussr_9a35_m2": [
+      "ussr_9a33bm3"
+    ],
+    "ussr_2s3m": [
+      "ussr_2s1"
+    ],
+    "ussr_9p157": [
+      "ussr_object_775",
+      "ussr_bmpt"
+    ],
+    "ussr_battlecruiser_izmail": [
+      "ussr_battleship_imperatritsa_mariya",
+      "ussr_battlecruiser_kronshtadt"
+    ],
+    "ussr_9p149": [
+      "ussr_it_1"
+    ],
+    "ussr_asu_85": [
+      "ussr_pt_76b",
+      "ussr_su_100p"
+    ],
+    "ussr_9a33bm3": [
+      "ussr_zsu_23_4m4",
+      "ussr_9a35_m2",
+      "ussr_zprk_2s6"
+    ],
+    "ussr_battlecruiser_stalingrad": [
+      "ussr_battlecruiser_kronshtadt"
+    ],
+    "ussr_battleship_poltava": [
+      "ussr_cruiser_chapayev",
+      "ussr_battleship_parizhskaya_kommuna"
+    ],
+    "ussr_battleship_arhangelsk": [
+      "ussr_battleship_novorossiysk",
+      "ussr_battleship_pr23_sovetskij_soyuz"
+    ],
+    "ussr_battleship_pr23_sovetskij_soyuz": [
+      "ussr_battleship_arhangelsk"
+    ],
+    "ussr_asu_57": [
+      "ussr_t_80",
+      "ussr_pt_76b"
+    ],
+    "ussr_battlecruiser_kronshtadt": [
+      "ussr_battlecruiser_izmail",
+      "ussr_battlecruiser_stalingrad"
+    ],
+    "ussr_battleship_parizhskaya_kommuna": [
+      "ussr_battleship_poltava",
+      "ussr_battleship_novorossiysk"
+    ],
+    "ussr_battleship_novorossiysk": [
+      "ussr_battleship_parizhskaya_kommuna",
+      "ussr_battleship_arhangelsk"
+    ],
+    "ussr_bmd_4m2": [
+      "ussr_bmp_3",
+      "ussr_2s25m"
+    ],
+    "ussr_battleship_imperatritsa_mariya": [
+      "ussr_destroyer_pr56_bravy",
+      "ussr_battlecruiser_izmail"
+    ],
+    "ussr_bmo": [
+      "ussr_pr_1204_late",
+      "ussr_pr_183"
+    ],
+    "ussr_bmp_3": [
+      "ussr_bmp_2",
+      "ussr_2s25",
+      "ussr_bmd_4m2"
+    ],
+    "ussr_bmp_1": [
+      "ussr_btr_80a",
+      "ussr_object_906",
+      "ussr_bmp_2"
+    ],
+    "ussr_bt_5": [
+      "ussr_bt_7_1937"
+    ],
+    "ussr_bt_7_1937": [
+      "ussr_bt_5",
+      "ussr_bt_7_m"
+    ],
+    "ussr_bmpt": [
+      "ussr_9p157"
+    ],
+    "ussr_bmp_2": [
+      "ussr_bmp_1",
+      "ussr_object_685",
+      "ussr_bmp_3"
+    ],
+    "ussr_btr_82at": [
+      "ussr_it_1",
+      "ussr_object_775"
+    ],
+    "ussr_bt_7_m": [
+      "ussr_bt_7_1937"
+    ],
+    "ussr_buk_m3_fcs": [
+      "ussr_pantsyr_s1",
+      "ussr_pantsyr_sm_sv"
+    ],
+    "ussr_btr_152a": [
+      "ussr_gaz_mm_72k",
+      "ussr_zis_43",
+      "ussr_zis_12_94KM_1945"
+    ],
+    "ussr_btr_zd": [
+      "ussr_btr_152d",
+      "ussr_m53_59"
+    ],
+    "ussr_btr_152d": [
+      "ussr_zis_12_94KM_1945",
+      "ussr_btr_zd"
+    ],
+    "ussr_btr_80a": [
+      "ussr_su_100p",
+      "ussr_bmp_1"
+    ],
+    "ussr_cruiser_chapayev": [
+      "ussr_cruiser_kirov",
+      "ussr_cruiser_sverdlov",
+      "ussr_battleship_poltava"
+    ],
+    "ussr_cruiser_kirov": [
+      "ussr_cruiser_krasnyi_krim",
+      "ussr_cruiser_chapayev"
+    ],
+    "ussr_cruiser_krasnyi_kavkaz": [
+      "ussr_destroyer_7y",
+      "ussr_cruiser_krasnyi_krim"
+    ],
+    "ussr_cruiser_krasnyi_krim": [
+      "ussr_cruiser_krasnyi_kavkaz",
+      "ussr_cruiser_kirov"
+    ],
+    "ussr_cruiser_sverdlov": [
+      "ussr_cruiser_chapayev",
+      "ussr_cruiser_mikhail_kutuzov"
+    ],
+    "ussr_d3": [
+      "ussr_pr_103_sm4"
+    ],
+    "ussr_destroyer_7_besposhchadny": [
+      "ussr_destroyer_frunze",
+      "ussr_destroyer_moskva"
+    ],
+    "ussr_cruiser_mikhail_kutuzov": [
+      "ussr_cruiser_sverdlov"
+    ],
+    "ussr_destroyer_frunze": [
+      "ussr_destroyer_7_besposhchadny"
+    ],
+    "ussr_destroyer_7y": [
+      "ussr_destroyer_moskva",
+      "ussr_cruiser_krasnyi_kavkaz"
+    ],
+    "ussr_destroyer_moskva": [
+      "ussr_destroyer_7_besposhchadny",
+      "ussr_destroyer_7y"
+    ],
+    "ussr_destroyer_pr30bis_bezuprechnyi": [
+      "ussr_destroyer_pr30_ognevoy",
+      "ussr_destroyer_pr20_tashkent"
+    ],
+    "ussr_d3_tk126": [
+      "ussr_pr253l"
+    ],
+    "ussr_destroyer_pr30_ognevoy": [
+      "ussr_destroyer_regele_ferdinand_class_letuchiy",
+      "ussr_destroyer_pr30bis_bezuprechnyi"
+    ],
+    "ussr_destroyer_pr45": [
+      "ussr_destroyer_regele_ferdinand_class_letuchiy"
+    ],
+    "ussr_destroyer_pr48k_erevan": [
+      "ussr_destroyer_pr20_tashkent",
+      "ussr_destroyer_pr56_spokoinyy"
+    ],
+    "ussr_destroyer_pr20_tashkent": [
+      "ussr_destroyer_pr30bis_bezuprechnyi",
+      "ussr_destroyer_pr48k_erevan"
+    ],
+    "ussr_gaz_4m": [
+      "ussr_gaz_dshk"
+    ],
+    "ussr_gaz_dshk": [
+      "ussr_gaz_4m"
+    ],
+    "ussr_destroyer_pr56_spokoinyy": [
+      "ussr_destroyer_pr48k_erevan",
+      "ussr_destroyer_pr56_bravy"
+    ],
+    "ussr_gaz_mm_72k": [
+      "ussr_btr_152a"
+    ],
+    "ussr_is_1": [
+      "ussr_kv_1_zis_5",
+      "ussr_is_2_1943"
+    ],
+    "ussr_destroyer_pr56_bravy": [
+      "ussr_destroyer_pr56_spokoinyy",
+      "ussr_battleship_imperatritsa_mariya"
+    ],
+    "ussr_destroyer_regele_ferdinand_class_letuchiy": [
+      "ussr_destroyer_pr45",
+      "ussr_destroyer_pr30_ognevoy"
+    ],
+    "ussr_is_2_1943": [
+      "ussr_is_1",
+      "ussr_is_2_1944"
+    ],
+    "ussr_is_4m": [
+      "ussr_is_3",
+      "ussr_t_10m"
+    ],
+    "ussr_is_2_1944": [
+      "ussr_is_2_1943",
+      "ussr_is_3"
+    ],
+    "ussr_is_3": [
+      "ussr_is_2_1944",
+      "ussr_is_4m"
+    ],
+    "ussr_isu_122": [
+      "ussr_su_85m",
+      "ussr_isu_122s"
+    ],
+    "ussr_isu_122s": [
+      "ussr_isu_122"
+    ],
+    "ussr_isu_152": [
+      "ussr_su_85_1943"
+    ],
+    "ussr_it_1": [
+      "ussr_2s19_m1",
+      "ussr_9p149",
+      "ussr_btr_82at"
+    ],
+    "ussr_kv_1_zis_5": [
+      "ussr_kv_1s",
+      "ussr_kv_85",
+      "ussr_is_1"
+    ],
+    "ussr_kv_2_1939": [
+      "ussr_kv_1_L_11"
+    ],
+    "ussr_kv_1s": [
+      "ussr_kv_1_L_11",
+      "ussr_kv_1_zis_5"
+    ],
+    "ussr_kv_85": [
+      "ussr_kv_1_zis_5"
+    ],
+    "ussr_kv_1_L_11": [
+      "ussr_t_28E",
+      "ussr_kv_2_1939",
+      "ussr_kv_1s"
+    ],
+    "ussr_mbk_161_1944": [
+      "ussr_mkl_186",
+      "ussr_mpk_pr12412"
+    ],
+    "ussr_mkl_186": [
+      "ussr_pr_191m",
+      "ussr_mbk_161_1944"
+    ],
+    "ussr_mo_4": [
+      "ussr_od_200"
+    ],
+    "ussr_m53_59": [
+      "ussr_btr_zd",
+      "ussr_zsu_57_2"
+    ],
+    "ussr_mpk_163": [
+      "ussr_pr_103_sm4",
+      "ussr_pr_123bis"
+    ],
+    "ussr_mpk_122a": [
+      "ussr_od_200",
+      "ussr_1124_art"
+    ],
+    "ussr_mpk_201m": [
+      "ussr_skr_groza_1943",
+      "ussr_mpk_204"
+    ],
+    "ussr_mpk_204": [
+      "ussr_mpk_201m",
+      "ussr_skr_pr50_jenot"
+    ],
+    "ussr_mpk_pr_1124": [
+      "ussr_mpk_pr11451"
+    ],
+    "ussr_mpk_pr12412": [
+      "ussr_mbk_161_1944",
+      "ussr_mpk_pr11451"
+    ],
+    "ussr_mpk_pr11451": [
+      "ussr_mpk_pr12412",
+      "ussr_mpk_pr_1124"
+    ],
+    "ussr_mpk_pr1331m": [
+      "ussr_skr_pr50_jenot",
+      "ussr_skr_pr159"
+    ],
+    "ussr_object_268": [
+      "ussr_su_122_54"
+    ],
+    "ussr_object_435": [
+      "ussr_t_10m",
+      "ussr_t_64a_1971"
+    ],
+    "ussr_object_775": [
+      "ussr_btr_82at",
+      "ussr_9p157"
+    ],
+    "ussr_object_685": [
+      "ussr_bmp_2"
+    ],
+    "ussr_od_200": [
+      "ussr_mo_4",
+      "ussr_mpk_122a"
+    ],
+    "ussr_pantsyr_sm_sv": [
+      "ussr_buk_m3_fcs"
+    ],
+    "ussr_pr_123bis": [
+      "ussr_mpk_163",
+      "ussr_pr_123k"
+    ],
+    "ussr_pr_123k": [
+      "ussr_pr_123bis",
+      "ussr_pr_1204_late"
+    ],
+    "ussr_pr_183": [
+      "ussr_bmo",
+      "ussr_pr_206"
+    ],
+    "ussr_object_906": [
+      "ussr_bmp_1"
+    ],
+    "ussr_pr_1204_late": [
+      "ussr_pr_123k",
+      "ussr_bmo"
+    ],
+    "ussr_pr_103_sm4": [
+      "ussr_d3",
+      "ussr_mpk_163"
+    ],
+    "ussr_pantsyr_s1": [
+      "ussr_tor_m1",
+      "ussr_buk_m3_fcs"
+    ],
+    "ussr_pr253l": [
+      "ussr_d3_tk126",
+      "ussr_pr_191"
+    ],
+    "ussr_pr_191m": [
+      "ussr_pr_191",
+      "ussr_mkl_186"
+    ],
+    "ussr_pr_206m": [
+      "ussr_pr_206"
+    ],
+    "ussr_pr_191": [
+      "ussr_pr253l",
+      "ussr_pr_191m"
+    ],
+    "ussr_pr_206": [
+      "ussr_pr_183",
+      "ussr_pr_206m"
+    ],
+    "ussr_pt_76b": [
+      "ussr_asu_57",
+      "ussr_asu_85"
+    ],
+    "ussr_skr_groza_1943": [
+      "ussr_1124_ack",
+      "ussr_mpk_201m"
+    ],
+    "ussr_skr_pr159": [
+      "ussr_mpk_pr1331m"
+    ],
+    "ussr_su_100_1945": [
+      "ussr_su_85m",
+      "ussr_2s1"
+    ],
+    "ussr_su_100p": [
+      "ussr_asu_85",
+      "ussr_btr_80a"
+    ],
+    "ussr_su_122": [
+      "ussr_zis_30",
+      "ussr_zsu_29k"
+    ],
+    "ussr_skr_pr50_jenot": [
+      "ussr_mpk_204",
+      "ussr_mpk_pr1331m"
+    ],
+    "ussr_su_122_54": [
+      "ussr_2s1",
+      "ussr_object_268",
+      "ussr_2s19_m1"
+    ],
+    "ussr_su_152": [
+      "ussr_zsu_29k",
+      "ussr_su_85_1943",
+      "ussr_su_85m"
+    ],
+    "ussr_su_76m_1943": [
+      "ussr_su_5_1",
+      "ussr_zis_30"
+    ],
+    "ussr_su_57b": [
+      "ussr_zis_30"
+    ],
+    "ussr_su_5_1": [
+      "ussr_su_76m_1943"
+    ],
+    "ussr_su_85m": [
+      "ussr_su_152",
+      "ussr_isu_122",
+      "ussr_su_100_1945"
+    ],
+    "ussr_su_85_1943": [
+      "ussr_su_152",
+      "ussr_isu_152"
+    ],
+    "ussr_t_26_1940": [
+      "ussr_t_28_1938"
+    ],
+    "ussr_t_10m": [
+      "ussr_is_4m",
+      "ussr_object_435"
+    ],
+    "ussr_t_26_4": [
+      "ussr_t_60_1941"
+    ],
+    "ussr_t_28": [
+      "ussr_t_28_1938"
+    ],
+    "ussr_t_34_1941": [
+      "ussr_t_34_1941_l_11"
+    ],
+    "ussr_t_28E": [
+      "ussr_kv_1_L_11"
+    ],
+    "ussr_t_28_1938": [
+      "ussr_t_26_1940",
+      "ussr_t_28"
+    ],
+    "ussr_t_34E_STZ": [
+      "ussr_t_34_1942"
+    ],
+    "ussr_t_34_1942": [
+      "ussr_t_34_1941_l_11",
+      "ussr_t_34E_STZ",
+      "ussr_t_34_1941_57"
+    ],
+    "ussr_t_34_1941_l_11": [
+      "ussr_t_50",
+      "ussr_t_34_1941",
+      "ussr_t_34_1942"
+    ],
+    "ussr_t_34_1941_57": [
+      "ussr_t_34_1942",
+      "ussr_t_34_85_d_5t"
+    ],
+    "ussr_t_34_85_stp_s53": [
+      "ussr_t_34_85_d_5t",
+      "ussr_t_44"
+    ],
+    "ussr_t_34_85_zis_53": [
+      "ussr_t_34_85_d_5t"
+    ],
+    "ussr_t_54_1947": [
+      "ussr_t_44_100",
+      "ussr_t_54_1949",
+      "ussr_t_55a"
+    ],
+    "ussr_t_50": [
+      "ussr_t_34_1941_l_11"
+    ],
+    "ussr_t_44": [
+      "ussr_t_34_85_stp_s53",
+      "ussr_t_44_100"
+    ],
+    "ussr_t_54_1949": [
+      "ussr_t_54_1947",
+      "ussr_t_54_1951"
+    ],
+    "ussr_t_34_85_d_5t": [
+      "ussr_t_34_1941_57",
+      "ussr_t_34_85_zis_53",
+      "ussr_t_34_85_stp_s53"
+    ],
+    "ussr_t_44_100": [
+      "ussr_t_44",
+      "ussr_t_54_1947"
+    ],
+    "ussr_t_60_1941": [
+      "ussr_t_26_4",
+      "ussr_t_70_1942"
+    ],
+    "ussr_t_55a": [
+      "ussr_t_54_1947",
+      "ussr_t_62",
+      "ussr_t_55_amd_1"
+    ],
+    "ussr_t_54_1951": [
+      "ussr_t_54_1949"
+    ],
+    "ussr_t_55_amd_1": [
+      "ussr_t_55a",
+      "ussr_t_62m1",
+      "ussr_t_72a"
+    ],
+    "ussr_t_62m1": [
+      "ussr_t_55_amd_1"
+    ],
+    "ussr_t_70_1942": [
+      "ussr_t_60_1941"
+    ],
+    "ussr_t_62": [
+      "ussr_t_55a"
+    ],
+    "ussr_t_64_b_1984": [
+      "ussr_t_64a_1971",
+      "ussr_t_80b",
+      "ussr_t_80u"
+    ],
+    "ussr_t_72b3_arena_m": [
+      "ussr_t_72b3_2011",
+      "ussr_t_90m_2020"
+    ],
+    "ussr_t_72b3_2011": [
+      "ussr_t_90a",
+      "ussr_t_72b3_arena_m"
+    ],
+    "ussr_t_64a_1971": [
+      "ussr_object_435",
+      "ussr_t_64_b_1984"
+    ],
+    "ussr_t_80": [
+      "ussr_asu_57"
+    ],
+    "ussr_t_72b_1989": [
+      "ussr_t_72b"
+    ],
+    "ussr_t_72a": [
+      "ussr_t_55_amd_1",
+      "ussr_t_72b"
+    ],
+    "ussr_t_80u": [
+      "ussr_t_64_b_1984",
+      "ussr_t_80bvm"
+    ],
+    "ussr_t_80b": [
+      "ussr_t_64_b_1984"
+    ],
+    "ussr_t_80bvm": [
+      "ussr_t_80u"
+    ],
+    "ussr_t_72b": [
+      "ussr_t_72a",
+      "ussr_t_72b_1989",
+      "ussr_t_90a"
+    ],
+    "ussr_t_90a": [
+      "ussr_t_72b",
+      "ussr_t_72b3_2011"
+    ],
+    "ussr_t_90m_2020": [
+      "ussr_t_72b3_arena_m"
+    ],
+    "ussr_zprk_2s6": [
+      "ussr_9a33bm3",
+      "ussr_tor_m1"
+    ],
+    "ussr_zsu_23_4": [
+      "ussr_zsu_37_2",
+      "ussr_zsu_23_4m4"
+    ],
+    "ussr_zis_43": [
+      "ussr_btr_152a"
+    ],
+    "ussr_zsu_23_4m2": [
+      "ussr_zsu_57_2",
+      "ussr_zsu_37_2"
+    ],
+    "ussr_zsu_23_4m4": [
+      "ussr_zsu_23_4",
+      "ussr_9a33bm3"
+    ],
+    "ussr_tor_m1": [
+      "ussr_zprk_2s6",
+      "ussr_pantsyr_s1"
+    ],
+    "ussr_zis_12_94KM_1945": [
+      "ussr_btr_152a",
+      "ussr_zsu_37",
+      "ussr_btr_152d"
+    ],
+    "ussr_zsu_29k": [
+      "ussr_su_122",
+      "ussr_su_152"
+    ],
+    "ussr_zis_30": [
+      "ussr_su_76m_1943",
+      "ussr_su_57b",
+      "ussr_su_122"
+    ],
+    "ussr_zsu_57_2": [
+      "ussr_m53_59",
+      "ussr_zsu_23_4m2"
+    ],
+    "ussr_zsu_37_2": [
+      "ussr_zsu_23_4m2",
+      "ussr_zsu_23_4"
+    ],
+    "v_156_b1": [
+      "blenheim_mkiv"
+    ],
+    "v_11g": [
+      "hs-123a-1_china",
+      "v_12d"
+    ],
+    "ussr_zsu_37": [
+      "ussr_zis_12_94KM_1945"
+    ],
+    "vampire_fb5": [
+      "tempest_mk2",
+      "venom_fb4"
+    ],
+    "v_156_f": [
+      "br_693_ab2"
+    ],
+    "vampire_fb5_j28b": [
+      "bf-109g-2_finland",
+      "vampire_fb52_finland",
+      "hunter_f50_sweden"
+    ],
+    "vb_10_02": [
+      "vb_10c1",
+      "seafire_mk3_france"
+    ],
+    "vb_10c1": [
+      "vg_33",
+      "vb_10_02"
+    ],
+    "vampire_fb52a_italy": [
+      "g_56",
+      "f-86_cl_13_mk4_italy"
+    ],
+    "v_12d": [
+      "v_11g"
+    ],
+    "vg_33": [
+      "ms_410c1",
+      "d_520_france",
+      "vb_10c1"
+    ],
+    "wasp_has_mk1": [
+      "scout_ah_mk1",
+      "wessex_mk5"
+    ],
+    "wellington_mk1c_late": [
+      "wellington_mk1c"
+    ],
+    "vampire_fb52_finland": [
+      "vampire_fb5_j28b"
+    ],
+    "wellington_mk1c": [
+      "sunderland_mk3a",
+      "wellington_mk1c_late",
+      "wellington_mk3"
+    ],
+    "wessex_mk5": [
+      "wasp_has_mk1",
+      "lynx_ah_mk1"
+    ],
+    "wellington_mk3": [
+      "wellington_mk1c",
+      "wellington_mk10",
+      "halifax_mk3"
+    ],
+    "wm_21": [
+      "re_2000_heja_1"
+    ],
+    "whirlwind_mk1": [
+      "brigand_b1"
+    ],
+    "wellington_mk10": [
+      "wellington_mk3"
+    ],
+    "venom_fb4": [
+      "vampire_fb5",
+      "hunter_f1"
+    ],
+    "yak-15": [
+      "yak-15_early",
+      "yak-17"
+    ],
+    "yak-15_early": [
+      "yak-3u",
+      "yak-15",
+      "yak-23"
+    ],
+    "yak-17": [
+      "yak-15"
+    ],
+    "yak-23": [
+      "yak-15_early",
+      "yak-30d"
+    ],
+    "yak-1_early": [
+      "yak-1b",
+      "yak-7b"
+    ],
+    "wm_23": [
+      "me_210ca_1_hungary"
+    ],
+    "yak-1b": [
+      "yak-1_early"
+    ],
+    "yak-28b": [
+      "tu_14t",
+      "mig_27m"
+    ],
+    "yak-30d": [
+      "yak-23",
+      "yak-38m"
+    ],
+    "yak-38m": [
+      "yak-30d",
+      "yak_141"
+    ],
+    "yak-3u": [
+      "yak-3p",
+      "yak-9ut",
+      "yak-15_early"
+    ],
+    "yak-3p": [
+      "yak-3",
+      "yak-9p",
+      "yak-3u"
+    ],
+    "yak-4": [
+      "sb_2m_100",
+      "ar_2"
+    ],
+    "yak-3": [
+      "yak-9t",
+      "yak-9u",
+      "yak-3p"
+    ],
+    "yak-7b": [
+      "yak-1_early",
+      "yak-9"
+    ],
+    "yak-9": [
+      "yak-7b",
+      "yak-9b",
+      "yak-9t"
+    ],
+    "yak-9b": [
+      "yak-9"
+    ],
+    "yak-9p": [
+      "yak-3p"
+    ],
+    "yak-9k": [
+      "yak-9t"
+    ],
+    "yak-9u": [
+      "yak-3"
+    ],
+    "yak-9t": [
+      "yak-9",
+      "yak-9k",
+      "yak-3"
+    ],
+    "yak-9ut": [
+      "yak-3u"
+    ],
+    "yak-9p_hungary": [
+      "me_210ca_1_hungary",
+      "fw_190f_8_hungary"
+    ],
+    "yak_141": [
+      "yak-38m"
+    ],
+    "yak_2_kabb": [
+      "pe-3_early"
+    ],
+    "z_10": [
+      "z_19",
+      "z_10me"
+    ],
+    "z_1007_bis_serie3": [
+      "sm_79_1941_italy",
+      "z_1007_bis_serie5",
+      "p_108b_serie1"
+    ],
+    "z_1007_bis_serie5": [
+      "z_1007_bis_serie3"
+    ],
+    "z_11wa": [
+      "z_9w",
+      "sa_342l_china"
+    ],
+    "z_19": [
+      "z_9wa",
+      "z_10"
+    ],
+    "z_9wa": [
+      "z_9w",
+      "z_19"
+    ],
+    "z_10me": [
+      "z_10"
+    ],
+    "z_9w": [
+      "z_11wa",
+      "z_9wa"
+    ]
+  }
+}

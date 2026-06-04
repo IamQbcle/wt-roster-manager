@@ -1,0 +1,26 @@
+{
+  "source": "Parsed Wiki tech_tree_layout prefix glyphs + uploaded icon pack",
+  "rules": {
+    "⋠": {"icon": "assets/icons/prefixes/usa.png", "label_ru": "Boxted / специальный США", "count_in_data_26": 1},
+    "␗": {"icon": "assets/icons/prefixes/china.png", "label_ru": "Китай", "count_in_data_26": 63},
+    "␙": {"icon": "assets/icons/prefixes/youtube_cup_2019.png", "label_ru": "YouTube Cup 2019", "count_in_data_26": 3, "fallback_ids": ["germ_leopard_2a5_yt_cup_2019"]},
+    "␠": {"icon": "assets/icons/prefixes/senrai_maidens.png", "label_ru": "Senrai Maidens / creator marker", "count_in_data_26": 2},
+    "▀": {"icon": "assets/icons/prefixes/germany_cross.png", "label_ru": "Германия / захваченная или иностранная техника", "count_in_data_26": 18},
+    "▂": {"icon": "assets/icons/prefixes/ussr.png", "label_ru": "СССР", "count_in_data_26": 25},
+    "▃": {"icon": "assets/icons/prefixes/usa.png", "label_ru": "США", "count_in_data_26": 16},
+    "▄": {"icon": "assets/icons/prefixes/allied_roundel.png", "label_ru": "Техника союзников / allied roundel", "count_in_data_26": 133},
+    "▅": {"icon": "assets/icons/prefixes/japan.png", "label_ru": "Япония", "count_in_data_26": 18},
+    "◄": {"icon": "assets/icons/prefixes/germany_cross.png", "label_ru": "ФРГ / западногерманский маркер", "count_in_data_26": 23},
+    "◊": {"icon": "assets/icons/prefixes/germany_cross.png", "label_ru": "ГДР / восточногерманский маркер", "count_in_data_26": 16},
+    "○": {"icon": "assets/icons/prefixes/trb.png", "label_ru": "TheRussianBadger / creator marker", "count_in_data_26": 2},
+    "◌": {"icon": "assets/icons/prefixes/switzerland.png", "label_ru": "Швейцария", "count_in_data_26": 8},
+    "◍": {"icon": null, "label_ru": "Канада / special marker, иконка не прислана", "count_in_data_26": 3},
+    "◔": {"icon": "assets/icons/prefixes/hungary.png", "label_ru": "Венгрия", "count_in_data_26": 29},
+    "◗": {"icon": "assets/icons/prefixes/netherlands_legacy.png", "label_ru": "Нидерланды, старая группа", "count_in_data_26": 3},
+    "◘": {"icon": "assets/icons/prefixes/netherlands_new.png", "label_ru": "Нидерланды", "count_in_data_26": 9},
+    "◡": {"icon": "assets/icons/prefixes/colombia.png", "label_ru": "Колумбия", "count_in_data_26": 1},
+    "◢": {"icon": "assets/icons/prefixes/norway.png", "label_ru": "Норвегия", "count_in_data_26": 5},
+    "◥": {"icon": null, "label_ru": "Индонезия, иконка не прислана", "count_in_data_26": 3},
+    "": {"icon": "assets/icons/prefixes/israel.png", "label_ru": "Израиль", "count_in_data_26": 23}
+  }
+}

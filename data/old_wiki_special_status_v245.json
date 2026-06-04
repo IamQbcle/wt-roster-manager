@@ -1,0 +1,74 @@
+{
+  "items": {
+    "gift_ground": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Gift_ground_vehicles",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:41+00:00"
+    },
+    "premium_ground": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Premium_ground_vehicles",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:42+00:00"
+    },
+    "gift_air": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Gift_aircraft",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:42+00:00"
+    },
+    "premium_air": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Premium_aircraft",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:42+00:00"
+    },
+    "gift_bluewater": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Gift_ships",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:42+00:00"
+    },
+    "premium_bluewater": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Premium_ships",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:42+00:00"
+    },
+    "gift_coastal": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Gift_boats",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:43+00:00"
+    },
+    "premium_coastal": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Premium_boats",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:44+00:00"
+    },
+    "gift_heli": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Gift_helicopters",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:44+00:00"
+    },
+    "premium_heli": {
+      "status": "missing",
+      "url": "https://old-wiki.warthunder.com/Category:Premium_helicopters",
+      "ids": [],
+      "count": 0,
+      "updated_at": "2026-06-04T13:56:44+00:00"
+    }
+  }
+}

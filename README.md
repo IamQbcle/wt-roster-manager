@@ -18,7 +18,7 @@ War Thunder has a limited number of in-game presets, and crews are trained for s
 The repository also contains the full working project files, but the release ZIP is the easiest way to download the app. /
 В репозитории также лежат рабочие файлы проекта, но ZIP из Releases — самый простой способ скачать программу.
 
-Use the latest ZIP from the **Releases** section / Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases)
+Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases) section / Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases)
 
 ## Quickstart
 

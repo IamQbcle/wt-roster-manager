@@ -54,6 +54,7 @@ Questions, ideas and bug reports / Вопросы, идеи и багрепор�
 The vehicle database is built with help from the community War Thunder Vehicles API:
 
 https://github.com/Sgambe33/WarThunder-Vehicles-API
+
 Some availability corrections are maintained manually when the public API cannot fully reflect hidden, owner-only or removed vehicles.
 
 База техники собирается с помощью стороннего War Thunder Vehicles API и данных War Thunder Wiki. Часть статусов доступности поддерживается вручную, если публичные источники не могут точно отразить скрытую, удалённую или доступную только владельцам технику.

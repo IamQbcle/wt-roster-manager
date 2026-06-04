@@ -54,6 +54,28 @@ Questions, ideas and bug reports:
 
 [GitHub Discussions](https://github.com/IamQbcle/wt-roster-manager/discussions)
 
+## Quickstart
+
+1. Download the latest ZIP from the **Releases** section.
+2. Extract the whole archive to a normal folder.
+3. Run `Launch App.bat`.
+4. Open the roster and mark your owned vehicles.
+5. Recreate your current in-game lineups in the app.
+6. Now you can plan new lineups, research goals, squad play and lineup roulette without losing your saved plans.
+
+Detailed instructions are available in [README_EN.txt](README_EN.txt) and [README_RU.txt](README_RU.txt).
+
+## Быстрый старт
+
+1. Скачайте свежий ZIP из раздела **Releases**.
+2. Полностью распакуйте архив в обычную папку.
+3. Запустите `Launch App.bat`.
+4. Откройте ростер и отметьте свою купленную технику.
+5. Создайте в программе ваши текущие игровые наборы.
+6. Теперь можно планировать новые наборы, порядок исследования, игру отрядом и рулетку наборов, не теряя сохранённые планы.
+
+Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
+
 ---
 
 ## Data source / Источник данных
@@ -76,3 +98,24 @@ It is not affiliated with Gaijin Entertainment or War Thunder.
 
 Created by a non-professional developer with ChatGPT assistance.  
 Создано непрофессиональным разработчиком при помощи ChatGPT.
+
+<details>
+<summary>Screenshots / Скриншоты</summary>
+
+### Roster / Ростер
+
+![Roster](screenshots/roster.png)
+
+### Lineup editor / Редактор наборов
+
+![Lineup editor](screenshots/lineup-editor.png)
+
+### Auto-pick / Автоподбор
+
+![Auto-pick](screenshots/autopick.png)
+
+### Squad compatibility / Совместимость отряда
+
+![Squad compatibility](screenshots/squad.png)
+
+</details>

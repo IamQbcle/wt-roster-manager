@@ -18,11 +18,11 @@ War Thunder has a limited number of in-game presets, and crews are trained for s
 
 ## Contents / Оглавление
 
-- [Documentation / Документация](#documentation--документация)
-- [Download / Скачать](#download--скачать)
-- [Quickstart / Быстрый старт](#quickstart--быстрый-старт)
-- [Screenshots / Скриншоты](#screenshots--скриншоты)
-- [Feedback / Обратная связь](#feedback--обратная-связь)
+- [Documentation / Документация](#⭐ documentation--документация)
+- [Download / Скачать](#🚀 download--скачать)
+- [Quickstart / Быстрый старт](#🧭 quickstart--быстрый-старт)
+- [Screenshots / Скриншоты](#🖼️ screenshots--скриншоты)
+- [Feedback / Обратная связь](#💬 feedback--обратная-связь)
 - [Platform notes / Платформы](#platform-notes--платформы)
 - [Data source / Источник данных](#data-source--источник-данных)
 - [Disclaimer / Дисклеймер](#disclaimer--дисклеймер)

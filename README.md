@@ -32,7 +32,7 @@ Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster
 
 Detailed instructions are available in [README_EN.txt](README_EN.txt) and [README_RU.txt](README_RU.txt).
 
-### Русский
+### Быстрый старт
 
 1. Установите Python 3 с python.org, если он ещё не установлен. При установке включите галочку **Add python.exe to PATH**.
 2. Скачайте свежий ZIP из раздела **Releases**.
@@ -99,8 +99,6 @@ Created by a non-professional developer with ChatGPT assistance.
 
 ## Platform notes / Платформы
 
-### English
-
 The main tested launch method is Windows: `Launch App.bat`.
 Experimental Linux/macOS scripts are included:
 - `Launch_App.sh`
@@ -111,7 +109,7 @@ chmod +x Launch_App.sh update_from_api.sh
 
 Linux/macOS feedback and fixes are welcome.
 
-### Русский
+---
 
 Основной проверенный способ запуска — Windows: Launch App.bat.
 В архиве также есть экспериментальные скрипты для Linux/macOS:

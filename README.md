@@ -88,3 +88,31 @@ Created by a non-professional developer with ChatGPT assistance.
 ![Squad compatibility](screenshots/squad.png)
 
 </details>
+
+## Platform notes / Платформы
+
+### English
+
+The main tested launch method is Windows: `Launch App.bat`.
+Experimental Linux/macOS scripts are included:
+- `Launch_App.sh`
+- `update_from_api.sh`
+They may require manual permission changes, for example:
+
+```bash
+chmod +x Launch_App.sh update_from_api.sh
+
+Linux/macOS feedback and fixes are welcome.
+
+### Русский
+
+Основной проверенный способ запуска — Windows: Launch App.bat.
+В архиве также есть экспериментальные скрипты для Linux/macOS:
+Launch_App.sh
+update_from_api.sh
+Возможно, им потребуется вручную выдать права на запуск, например:
+
+```bash
+chmod +x Launch_App.sh update_from_api.sh
+
+Проверки, багрепорты и исправления для Linux/macOS приветствуются.

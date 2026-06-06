@@ -18,19 +18,23 @@ War Thunder has a limited number of in-game presets, and crews are trained for s
 
 ## Contents / Оглавление
 
-- [Documentation / Документация](#⭐ documentation--документация)
-- [Download / Скачать](#🚀 download--скачать)
-- [Quickstart / Быстрый старт](#🧭 quickstart--быстрый-старт)
-- [Screenshots / Скриншоты](#🖼️ screenshots--скриншоты)
-- [Feedback / Обратная связь](#💬 feedback--обратная-связь)
-- [Platform notes / Платформы](#platform-notes--платформы)
-- [Data source / Источник данных](#data-source--источник-данных)
-- [Disclaimer / Дисклеймер](#disclaimer--дисклеймер)
+- [Documentation / Документация](#documentation)
+- [Download / Скачать](#download)
+- [Quickstart / Быстрый старт](#quickstart)
+- [Screenshots / Скриншоты](#screenshots)
+- [Feedback / Обратная связь](#feedback)
+- [Platform notes / Платформы](#platform-notes)
+- [Data source / Источник данных](#data-source)
+- [Disclaimer / Дисклеймер](#disclaimer)
+
+<a id="documentation"></a>
 
 ## ⭐ Documentation / Документация
 
 - [English documentation](README_EN.txt)
 - [Русская документация](README_RU.txt)
+
+<a id="download"></a>
 
 ## 🚀 Download / Скачать
 
@@ -41,6 +45,8 @@ The repository also contains the full working project files, but the release ZIP
 Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases) section.
 
 Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases).
+
+<a id="quickstart"></a>
 
 ## 🧭 Quickstart / Быстрый старт
 
@@ -67,6 +73,8 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 7. Теперь можно планировать новые наборы, порядок исследования, игру отрядом и рулетку наборов, не теряя сохранённые планы.
 
 Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
+
+<a id="screenshots"></a>
 
 ## 🖼️ Screenshots / Скриншоты
 
@@ -97,11 +105,15 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 </details>
 
+<a id="feedback"></a>
+
 ## 💬 Feedback / Обратная связь
 
 Questions, ideas and bug reports / Вопросы, идеи и багрепорты:
 
 [GitHub Discussions](https://github.com/IamQbcle/wt-roster-manager/discussions)
+
+<a id="platform-notes"></a>
 
 ## Platform notes / Платформы
 
@@ -139,6 +151,8 @@ chmod +x Launch_App.sh update_from_api.sh
 
 Проверки, багрепорты и исправления для Linux/macOS приветствуются.
 
+<a id="data-source"></a>
+
 ## Data source / Источник данных
 
 The vehicle database is built with help from the community War Thunder Vehicles API:
@@ -148,6 +162,8 @@ https://github.com/Sgambe33/WarThunder-Vehicles-API
 Some availability corrections are maintained manually when the public API cannot fully reflect hidden, owner-only or removed vehicles.
 
 База техники собирается с помощью стороннего War Thunder Vehicles API и данных War Thunder Wiki. Часть статусов доступности поддерживается вручную, если публичные источники не могут точно отразить скрытую, удалённую или доступную только владельцам технику.
+
+<a id="disclaimer"></a>
 
 ## Disclaimer / Дисклеймер
 

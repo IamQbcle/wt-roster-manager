@@ -44,30 +44,6 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
 
-[## Feedback / Обратная связь](https://github.com/IamQbcle/wt-roster-manager/discussions)
-
----
-
-## Data source / Источник данных
-
-The vehicle database is built with help from the community War Thunder Vehicles API:
-
-https://github.com/Sgambe33/WarThunder-Vehicles-API
-
-Some availability corrections are maintained manually when the public API cannot fully reflect hidden, owner-only or removed vehicles.
-
-База техники собирается с помощью стороннего War Thunder Vehicles API и данных War Thunder Wiki. Часть статусов доступности поддерживается вручную, если публичные источники не могут точно отразить скрытую, удалённую или доступную только владельцам технику.
-
-## Disclaimer / Дисклеймер
-
-This is an unofficial fan-made tool.  
-It is not affiliated with Gaijin Entertainment or War Thunder.
-Created by a non-professional developer with ChatGPT assistance.  
-
-Это неофициальная фанатская утилита.  
-Проект не связан с Gaijin Entertainment и War Thunder.
-Создано непрофессиональным разработчиком при помощи ChatGPT.
-
 ## Screenshots / Скриншоты
 
 <p align="center">
@@ -96,6 +72,33 @@ Created by a non-professional developer with ChatGPT assistance.
 ![Squad compatibility](screenshots/squad.png)
 
 </details>
+
+## Feedback / Обратная связь
+
+Questions, ideas and bug reports / Вопросы, идеи и багрепорты:  
+[GitHub Discussions](https://github.com/IamQbcle/wt-roster-manager/discussions)
+
+---
+
+## Data source / Источник данных
+
+The vehicle database is built with help from the community War Thunder Vehicles API:
+
+https://github.com/Sgambe33/WarThunder-Vehicles-API
+
+Some availability corrections are maintained manually when the public API cannot fully reflect hidden, owner-only or removed vehicles.
+
+База техники собирается с помощью стороннего War Thunder Vehicles API и данных War Thunder Wiki. Часть статусов доступности поддерживается вручную, если публичные источники не могут точно отразить скрытую, удалённую или доступную только владельцам технику.
+
+## Disclaimer / Дисклеймер
+
+This is an unofficial fan-made tool.  
+It is not affiliated with Gaijin Entertainment or War Thunder.
+Created by a non-professional developer with ChatGPT assistance.  
+
+Это неофициальная фанатская утилита.  
+Проект не связан с Gaijin Entertainment и War Thunder.
+Создано непрофессиональным разработчиком при помощи ChatGPT.
 
 ## Platform notes / Платформы
 

@@ -16,12 +16,23 @@ War Thunder has a limited number of in-game presets, and crews are trained for s
 
 В War Thunder ограничено количество игровых наборов, а экипажи обучаются на конкретную технику. Эта программа помогает хранить много внешних наборов, восстанавливать старые пресеты, планировать прокачку и не держать в голове, какая техника должна стоять на каком экипаже.
 
-## Documentation / Документация
+## Contents / Оглавление
+
+- [Documentation / Документация](#documentation--документация)
+- [Download / Скачать](#download--скачать)
+- [Quickstart / Быстрый старт](#quickstart--быстрый-старт)
+- [Screenshots / Скриншоты](#screenshots--скриншоты)
+- [Feedback / Обратная связь](#feedback--обратная-связь)
+- [Platform notes / Платформы](#platform-notes--платформы)
+- [Data source / Источник данных](#data-source--источник-данных)
+- [Disclaimer / Дисклеймер](#disclaimer--дисклеймер)
+
+## ⭐ Documentation / Документация
 
 - [English documentation](README_EN.txt)
 - [Русская документация](README_RU.txt)
 
-## Download / Скачать
+## 🚀 Download / Скачать
 
 The repository also contains the full working project files, but the release ZIP is the easiest way to download the app.
 
@@ -31,7 +42,7 @@ Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster
 
 Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases).
 
-## Quickstart / Быстрый старт
+## 🧭 Quickstart / Быстрый старт
 
 ### 🇬🇧 English
 
@@ -57,7 +68,7 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
 
-## Screenshots / Скриншоты
+## 🖼️ Screenshots / Скриншоты
 
 <p align="center">
   <img src="screenshots/roster.png" width="32%" alt="Roster / Ростер">
@@ -86,7 +97,7 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 </details>
 
-## Feedback / Обратная связь
+## 💬 Feedback / Обратная связь
 
 Questions, ideas and bug reports / Вопросы, идеи и багрепорты:
 

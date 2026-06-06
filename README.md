@@ -68,8 +68,16 @@ Created by a non-professional developer with ChatGPT assistance.
 Проект не связан с Gaijin Entertainment и War Thunder.
 Создано непрофессиональным разработчиком при помощи ChatGPT.
 
+## Screenshots / Скриншоты
+
+<p align="center">
+  <img src="screenshots/roster.png" width="32%" alt="Roster / Ростер">
+  <img src="screenshots/lineup-editor.png" width="32%" alt="Lineup editor / Редактор наборов">
+  <img src="screenshots/autopick.png" width="32%" alt="Auto-pick / Автоподбор">
+</p>
+
 <details>
-<summary>Screenshots / Скриншоты</summary>
+<summary><h2>Open full screenshots / Открыть все скриншоты</h2></summary>
 
 ### Roster / Ростер
 
@@ -99,7 +107,6 @@ Experimental Linux/macOS scripts are included:
 - `update_from_api.sh`
 They may require manual permission changes, for example:
 
-```bash
 chmod +x Launch_App.sh update_from_api.sh
 
 Linux/macOS feedback and fixes are welcome.
@@ -112,7 +119,6 @@ Launch_App.sh
 update_from_api.sh
 Возможно, им потребуется вручную выдать права на запуск, например:
 
-```bash
 chmod +x Launch_App.sh update_from_api.sh
 
 Проверки, багрепорты и исправления для Linux/macOS приветствуются.

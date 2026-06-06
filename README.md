@@ -1,26 +1,39 @@
 # WT Roster Manager
 
+## 🇬🇧 English
+
 **WT Roster Manager** is a free local roster and lineup planning tool for War Thunder.
+
 It adds an external planning layer on top of the game: unlimited lineups, owned-vehicle tracking, auto-pick, lineup roulette, squad compatibility and collection planning.
+
 War Thunder has a limited number of in-game presets, and crews are trained for specific vehicles. This tool helps you keep many external lineups, rebuild old presets later, plan future research and avoid guessing which vehicle was supposed to be assigned to which crew.
 
+## 🇷🇺 Русский
+
 **WT Roster Manager** — бесплатный локальный менеджер ангара, коллекции и наборов для War Thunder.
+
 Он добавляет внешний слой планирования поверх игры: неограниченное количество наборов, учёт купленной техники, автоподбор, рулетку наборов, проверку совместимости для игры отрядом и планирование коллекции.
+
 В War Thunder ограничено количество игровых наборов, а экипажи обучаются на конкретную технику. Эта программа помогает хранить много внешних наборов, восстанавливать старые пресеты, планировать прокачку и не держать в голове, какая техника должна стоять на каком экипаже.
 
-## Documentation / документация
+## Documentation / Документация
 
 - [English documentation](README_EN.txt)
 - [Русская документация](README_RU.txt)
 
 ## Download / Скачать
 
-The repository also contains the full working project files, but the release ZIP is the easiest way to download the app. /
+The repository also contains the full working project files, but the release ZIP is the easiest way to download the app.
+
 В репозитории также лежат рабочие файлы проекта, но ZIP из Releases — самый простой способ скачать программу.
 
-Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases) section / Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases)
+Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases) section.
 
-## Quickstart
+Используйте свежий ZIP из раздела [**Releases**](https://github.com/IamQbcle/wt-roster-manager/releases).
+
+## Quickstart / Быстрый старт
+
+### 🇬🇧 English
 
 1. Install Python 3 from python.org if it is not installed yet. During installation, enable **Add python.exe to PATH**.
 2. Download the latest ZIP from the **Releases** section.
@@ -32,7 +45,7 @@ Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster
 
 Detailed instructions are available in [README_EN.txt](README_EN.txt) and [README_RU.txt](README_RU.txt).
 
-### Быстрый старт
+### 🇷🇺 Русский
 
 1. Установите Python 3 с python.org, если он ещё не установлен. При установке включите галочку **Add python.exe to PATH**.
 2. Скачайте свежий ZIP из раздела **Releases**.
@@ -53,7 +66,7 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 </p>
 
 <details>
-<summary><h2>Open full screenshots / Открыть все скриншоты</h2></summary>
+<summary><strong>Open full screenshots / Открыть все скриншоты</strong></summary>
 
 ### Roster / Ростер
 
@@ -75,10 +88,45 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 
 ## Feedback / Обратная связь
 
-Questions, ideas and bug reports / Вопросы, идеи и багрепорты:  
+Questions, ideas and bug reports / Вопросы, идеи и багрепорты:
+
 [GitHub Discussions](https://github.com/IamQbcle/wt-roster-manager/discussions)
 
----
+## Platform notes / Платформы
+
+### 🇬🇧 English
+
+The main tested launch method is Windows: `Launch App.bat`.
+
+Experimental Linux/macOS scripts are included:
+
+- `Launch_App.sh`
+- `update_from_api.sh`
+
+They may require manual permission changes, for example:
+
+```bash
+chmod +x Launch_App.sh update_from_api.sh
+```
+
+Linux/macOS feedback and fixes are welcome.
+
+### 🇷🇺 Русский
+
+Основной проверенный способ запуска — Windows: `Launch App.bat`.
+
+В архиве также есть экспериментальные скрипты для Linux/macOS:
+
+- `Launch_App.sh`
+- `update_from_api.sh`
+
+Возможно, им потребуется вручную выдать права на запуск, например:
+
+```bash
+chmod +x Launch_App.sh update_from_api.sh
+```
+
+Проверки, багрепорты и исправления для Linux/macOS приветствуются.
 
 ## Data source / Источник данных
 
@@ -92,34 +140,14 @@ Some availability corrections are maintained manually when the public API cannot
 
 ## Disclaimer / Дисклеймер
 
-This is an unofficial fan-made tool.  
+This is an unofficial fan-made tool.
+
 It is not affiliated with Gaijin Entertainment or War Thunder.
-Created by a non-professional developer with ChatGPT assistance.  
 
-Это неофициальная фанатская утилита.  
+Created by a non-professional developer with ChatGPT assistance.
+
+Это неофициальная фанатская утилита.
+
 Проект не связан с Gaijin Entertainment и War Thunder.
+
 Создано непрофессиональным разработчиком при помощи ChatGPT.
-
-## Platform notes / Платформы
-
-The main tested launch method is Windows: `Launch App.bat`.
-Experimental Linux/macOS scripts are included:
-- `Launch_App.sh`
-- `update_from_api.sh`
-They may require manual permission changes, for example:
-
-chmod +x Launch_App.sh update_from_api.sh
-
-Linux/macOS feedback and fixes are welcome.
-
----
-
-Основной проверенный способ запуска — Windows: Launch App.bat.
-В архиве также есть экспериментальные скрипты для Linux/macOS:
-Launch_App.sh
-update_from_api.sh
-Возможно, им потребуется вручную выдать права на запуск, например:
-
-chmod +x Launch_App.sh update_from_api.sh
-
-Проверки, багрепорты и исправления для Linux/macOS приветствуются.

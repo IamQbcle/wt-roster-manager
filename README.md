@@ -2,7 +2,7 @@
 
 ## 🇬🇧 English
 
-**WT Roster Manager** is a free local roster and lineup planning tool for War Thunder.
+**WT Roster Manager** is a free local roster, lineup and preset planning tool for War Thunder.
 
 It adds an external planning layer on top of the game: unlimited lineups, owned-vehicle tracking, auto-pick, lineup roulette, squad compatibility and collection planning.
 

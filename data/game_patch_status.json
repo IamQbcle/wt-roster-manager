@@ -1,0 +1,14 @@
+{
+  "schema": "wt-roster-game-patch-status-v2",
+  "manager_data_patch": "unknown-2026-06-04 / v3.75 data baseline",
+  "latest_known_patch": "Heavy Cavalry pre-release news window, 2026-06-05",
+  "latest_public_signal": "F-14D / M1A2C / Hummel / Washington B.1 dev blogs before Heavy Cavalry",
+  "checked_at": "2026-06-09",
+  "needs_review": true,
+  "notes": {
+    "ru": "v3.77: кнопка во вкладке «Изменения» проверяет только номер последней версии War Thunder по официальному changelog. Новости, магазин и availability автоматически не анализируются.",
+    "en": "v3.77: the Changes tab button checks only the latest War Thunder version number from the official changelog. News, store items and availability are not analyzed automatically."
+  },
+  "data_verified_game_version": "",
+  "version_check_mode": "official_changelog_version_only"
+}

@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>War Thunder Roster Manager v3.75</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="shortcut icon" href="assets/favicon.ico">
+<title>War Thunder Roster Manager v3.79</title>
 <style>
 :root{--bg:#0b0f16;--panel:#121a26;--panel2:#172132;--panel3:#0f1622;--line:#2b3546;--ink:#ecf3ff;--muted:#94a3b8;--accent:#d8a22d;--good:#36b97d;--bad:#d45b65;--warn:#e4b33b;--chip:#233149;--blue:#6da8ff}*{box-sizing:border-box}body{margin:0;background:#0b0f16;color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;font-size:15px}button,input,select,textarea{font:inherit}button{border:0;border-radius:10px;min-height:32px;padding:7px 12px;font-weight:900;cursor:pointer;background:var(--accent);color:#191104}button.secondary{background:#26344c;color:var(--ink)}button.ghost{background:#0e141e;color:var(--muted);border:1px solid var(--line)}button.danger{background:#76323d;color:#fff}button.buy{background:#2d7a57;color:#eafff3}button.unset{background:#b98b22;color:#15100a}input,select,textarea{background:#0d131d;border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:8px 10px;min-height:36px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent)}label{font-size:12px;color:var(--muted)}header{position:sticky;top:0;z-index:100;background:rgba(8,12,18,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.top{display:flex;gap:12px;align-items:center;padding:10px 16px}.logo{width:38px;height:38px;border-radius:10px;border:1px solid #536881;display:grid;place-items:center;font-weight:1000;font-size:18px;background:#162131}.brand h1{font-size:20px;margin:0}.brand .ver{font-size:13px;color:var(--muted);margin-left:4px}.tabs{display:flex;gap:8px;padding:0 16px 10px}.tab{background:#1a2638;color:#e8f0fb;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:900}.tab.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px rgba(216,162,45,.25)}main{padding:14px;max-width:1900px;margin:0 auto}.view{display:none}.view.active{display:block}.card{background:rgba(17,25,37,.9);border:1px solid var(--line);border-radius:16px;padding:14px}.grid2{display:grid;grid-template-columns:440px minmax(0,1fr);gap:14px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:end}.field{display:flex;flex-direction:column;gap:4px}.filter-grid{display:grid;grid-template-columns:210px 150px 170px 150px 140px 140px 130px 130px 130px;gap:7px;align-items:end}.type-line{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}.check-mini{display:flex;gap:5px;align-items:center;border:1px solid var(--line);background:#182337;border-radius:8px;min-height:26px;padding:2px 8px;color:var(--muted);font-size:12px;white-space:nowrap}.check-mini input{min-height:auto}.found{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--accent);border-radius:999px;padding:5px 14px;font-weight:1000;font-size:17px;background:#233047;min-width:136px}.reset-inline{background:#24334d;color:#fff;min-height:30px;padding:5px 12px}.notice{border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.025);padding:12px;color:var(--muted);line-height:1.4}.roster-sticky{position:sticky;top:54px;z-index:50;background:#0d141f;border:1px solid var(--line);border-radius:14px;padding:8px;margin-bottom:8px}.roster-actions{display:flex;gap:8px;margin:8px 0 0}.view-toggle{background:#1b2940;color:#e8f0fb;border:1px solid #3a4b67;border-radius:10px;min-height:34px;padding:7px 16px;font-weight:1000}.view-toggle.active{background:#d8a22d;color:#191104;border-color:#d8a22d}.table-wrap{border:1px solid var(--line);border-radius:14px;overflow:auto;background:#0e151f}.veh-table{width:100%;border-collapse:separate;border-spacing:0}.veh-table th,.veh-table td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:left}.veh-table th{position:sticky;top:0;background:#141d2b;color:#cbd6e6;font-size:12px;z-index:4}.veh-cell{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;align-items:center}.thumb{width:96px;height:58px;border-radius:9px;background:#08101a;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}.thumb img{max-width:100%;max-height:100%;object-fit:contain}.thumb.small{width:82px;height:52px}.id{font-size:11px;color:var(--muted);font-family:Consolas,monospace;margin-top:3px}.pill{display:inline-flex;align-items:center;border-radius:999px;background:var(--chip);border:1px solid var(--line);padding:3px 8px;font-size:12px}.pill.good{background:rgba(54,185,125,.15);border-color:rgba(54,185,125,.55)}.pill.warn{background:rgba(228,179,59,.14);border-color:rgba(228,179,59,.55)}.role-img{display:inline-block;width:18px;height:18px;vertical-align:-4px;margin-right:7px}.role-img img{max-width:18px;max-height:18px;display:block}.role-shape{display:inline-block;width:15px;height:15px;margin-right:7px;vertical-align:-3px;background:#91a0b5;border-radius:50%}.role-shape.fighter{background:#ec9449;transform:rotate(45deg);border-radius:3px}.role-shape.bomber{width:0;height:0;background:transparent;border-left:8px solid transparent;border-right:8px solid transparent;border-top:16px solid #89a3ff}.role-shape.attacker{background:#a9dea1;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);border-radius:0}.role-shape.spaa{background:#c596ff;clip-path:polygon(20% 100%,45% 0,55% 0,80% 100%,65% 100%,50% 35%,35% 100%)}.tree-wrap{display:flex;flex-direction:column;gap:14px}.rank-block{border:1px solid var(--line);border-radius:16px;padding:12px;background:#111925}.rank-block h3{margin:0 0 12px}.tree-columns{display:grid;grid-template-columns:minmax(0,5fr) minmax(320px,2fr);gap:18px}.tree-title{font-weight:900;color:#c8d4e5;margin:0 0 8px}.tree-grid-left{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:10px}.tree-grid-right{display:grid;grid-template-columns:repeat(2,minmax(190px,1fr));gap:10px}.tree-card{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:13px;background:#122034;min-height:96px;padding:8px;overflow:hidden}.tree-card.special{background:rgba(92,78,29,.6);border-color:#795e1d}.tree-card.owned{border-color:#28a96d;box-shadow:inset 0 0 0 1px rgba(40,169,109,.45)}.tree-name{font-weight:1000;white-space:normal;line-height:1.16;overflow-wrap:anywhere}.tree-meta{color:#bdd0e8;font-size:13px;line-height:1.35;margin-top:2px}.tree-buttons{display:flex;gap:6px;flex-wrap:nowrap}.lineup-layout{display:grid;grid-template-columns:420px minmax(0,1fr);gap:14px}.lineup-filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.lineup-list{display:flex;flex-direction:column;gap:9px;max-height:68vh;overflow:auto}.lineup-item{border:1px solid var(--line);background:#172133;border-radius:12px;padding:10px;cursor:pointer}.lineup-item.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px rgba(216,162,45,.22)}.meta{color:var(--muted);font-size:12px}.editor-head{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}.editor-filters{display:grid;grid-template-columns:170px 170px 120px 120px 110px 110px;gap:8px;margin-bottom:10px}.slots{display:grid;grid-template-columns:repeat(2,minmax(520px,1fr));gap:10px}.slot{border:1px solid var(--line);background:#101823;border-radius:14px;padding:8px}.slot-top{display:grid;grid-template-columns:180px minmax(180px,1fr) 160px 145px;gap:8px;align-items:center;margin-bottom:7px}.slot-title{font-weight:1000;display:flex;gap:8px;align-items:center}.drag-handle{width:22px;height:22px;display:inline-grid;place-items:center;cursor:grab;flex:0 0 auto}.slot.dragging,.slot.drop-target{border-color:var(--accent);box-shadow:0 0 0 2px rgba(216,162,45,.25)}.slot-result{min-height:80px;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;background:rgba(255,255,255,.025)}.slot-result.good{border-color:rgba(54,185,125,.7);background:rgba(54,185,125,.08)}.slot-result.missing{border-color:rgba(228,179,59,.65);background:rgba(228,179,59,.08)}.slot-card{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:10px;align-items:center}.slot-name{font-weight:1000;font-size:18px;line-height:1.1}.slot-meta{font-size:14px;color:#c3d1e4;margin-top:2px}.chipline{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}.suggest-wrap{position:relative}.suggest{display:none;position:absolute;z-index:80;top:39px;left:0;right:0;max-height:250px;overflow:auto;background:#0b111a;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 45px rgba(0,0,0,.45)}.suggest.open{display:block}.suggest div{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}.suggest div:hover{background:#182335}.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.65);padding:18px}.modal.open{display:flex}.modal-box{width:min(980px,96vw);max-height:92vh;overflow:auto;background:#121a26;border:1px solid var(--line);border-radius:18px;padding:18px}.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.big-check{display:flex;align-items:center;gap:10px;background:#172133;border:1px solid var(--line);border-radius:12px;padding:10px}.magic-warning{border:1px solid var(--bad);background:rgba(212,91,101,.16);border-radius:13px;padding:12px;margin:12px 0;font-weight:900;color:#ffe7e7}.magic-warning .nums{font-weight:700;margin-top:6px}.footer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.settings-grid{display:grid;grid-template-columns:repeat(2,minmax(280px,1fr));gap:12px}.hidden{display:none!important}@media(max-width:1200px){.filter-grid{grid-template-columns:repeat(4,1fr)}.slots{grid-template-columns:1fr}.tree-grid-left{grid-template-columns:repeat(3,1fr)}.tree-columns{grid-template-columns:1fr}.lineup-layout{grid-template-columns:1fr}.editor-filters{grid-template-columns:repeat(3,1fr)}}
 
@@ -499,22 +501,52 @@ main{padding:0 10px 10px!important;max-width:1920px!important}
 .squad-profile-meta{font-size:11px;color:#9fb0c8;margin:5px 0 7px;line-height:1.35}
 .squad-profile-meta.warn{color:#ffe0a0}
 
+
+/* v3.76: favicon, onboarding and patch-status helper */
+.tab.patch-attention{background:rgba(160,43,55,.30)!important;border-color:rgba(255,120,128,.75)!important;box-shadow:inset 0 0 0 1px rgba(255,120,128,.28)}
+.patch-status-box{border:1px solid var(--line);border-radius:14px;padding:12px;margin:0 0 12px;background:rgba(255,255,255,.025);line-height:1.45}
+.patch-status-box.warn{border-color:rgba(255,120,128,.75);background:rgba(160,43,55,.18)}
+.patch-status-box.ok{border-color:rgba(54,185,125,.65);background:rgba(54,185,125,.10)}
+.patch-status-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.onboarding-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin:12px 0}
+.onboarding-step{border:1px solid var(--line);border-radius:13px;background:#101823;padding:10px}
+.onboarding-step b{display:block;margin-bottom:4px;color:#ffe0a0}
+.onboarding-small{font-size:12px;color:var(--muted);line-height:1.45}
+.help-mini{border:1px solid var(--line);border-radius:12px;margin:8px 0;background:#101823;overflow:hidden}
+.help-mini summary{cursor:pointer;padding:10px;font-weight:900;color:#ffe0a0}
+.help-mini div{padding:0 10px 10px;color:#cbd6e6;line-height:1.45}
+
+
+/* v3.77: in-app official War Thunder version check */
+.patch-status-box.checking{border-color:rgba(255,217,138,.7);background:rgba(255,217,138,.09)}
+.patch-version-line{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0}
+.patch-version-pill{display:inline-flex;border:1px solid rgba(255,255,255,.16);background:rgba(0,0,0,.18);border-radius:999px;padding:3px 9px;font-weight:900}
+.patch-status-error{color:#ffb8be;margin-top:6px}
+
+/* v3.78: onboarding language switch, overview tutorial entry, readable changelog link */
+.onboarding-lang-row{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin:0 0 8px}
+.onboarding-lang-row label{font-size:12px;color:var(--muted);font-weight:800}
+.onboarding-lang-row select{min-width:150px}
+.overview-help-strip{display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid var(--line);border-radius:14px;background:#101823;padding:10px 12px;margin:0 0 12px}
+.overview-help-strip b{color:#ffe0a0}
+.patch-status-box a,.patch-status-box a:visited{color:#ffe08a!important;text-decoration:underline;text-underline-offset:2px;font-weight:900}
+.patch-status-box.ok a,.patch-status-box.warn a,.patch-status-box.checking a{color:#ffe08a!important}
 </style>
 </head>
 <body>
-<header><div class="top one-line"><nav class="tabs"><button class="tab" data-view="dashboard">Обзор</button><button class="tab" data-view="lineups">Наборы</button><button class="tab active" data-view="roster">Ростер</button><button class="tab" data-view="changes">Изменения</button><button class="tab" data-view="squad">Отряд</button><span id="topLangMount" class="top-lang-mount"></span></nav><div class="brand"><h1><span class="logo mini">WT</span> War Thunder Roster Manager <span class="ver">v3.75</span></h1></div></div></header>
+<header><div class="top one-line"><nav class="tabs"><button class="tab" data-view="dashboard">Обзор</button><button class="tab" data-view="lineups">Наборы</button><button class="tab active" data-view="roster">Ростер</button><button class="tab" data-view="changes">Изменения</button><button class="tab" data-view="squad">Отряд</button><span id="topLangMount" class="top-lang-mount"></span></nav><div class="brand"><h1><span class="logo mini">WT</span> War Thunder Roster Manager <span class="ver">v3.79</span></h1></div></div></header>
 <main>
 <section id="dashboard" class="view"><div class="card"><h2>Обзор</h2><div id="overviewStats" class="stats"></div></div></section>
 <section id="lineups" class="view"><div class="lineup-layout"><aside class="card"><div id="lineupFilters" class="lineup-filters"></div><div class="toolbar lineup-toolbar"><button id="newLineup">Новый</button><button id="copyLineup" class="secondary">Копия</button><button id="deleteLineup" class="danger">Удалить</button><button id="autopickBtn" style="width:100%;background:#7a47df;color:#fff">Автоподбор</button><button id="rouletteBtn" class="secondary" style="width:100%;background:#38506f;color:#fff">🎲🎲 Рулетка</button><button id="sortLineups" class="secondary" style="width:100%">Автосортировка</button></div><div id="lineupList" class="lineup-list"></div></aside><section class="card lineup-editor-card"><h2>Редактор набора</h2><div class="editor-head"><div class="field"><label>Название</label><input id="pName" placeholder="Название набора"></div><div class="field"><label>Комментарий</label><input id="pComment" placeholder="Комментарий к набору"></div></div><div class="editor-filters"><div class="field"><label>Нация</label><select id="pNation"></select></div><div class="field"><label>Режим</label><select id="pMode"></select></div><div class="field"><label>BR от</label><select id="pBrMin"></select></div><div class="field"><label>BR до</label><select id="pBrMax"></select></div><div class="field"><label>Ранг от</label><select id="pRankMin"></select></div><div class="field"><label>Ранг до</label><select id="pRankMax"></select></div></div><div id="slots" class="slots"></div></section></div></section>
 <section id="roster" class="view active"><div class="roster-sticky"><div class="roster-actions"><button id="tableBtn" class="view-toggle">Таблица</button><button id="treeBtn" class="view-toggle">Дерево</button></div><div id="rosterFilters"></div></div><div id="rosterTableWrap" class="table-wrap"><table id="rosterTable" class="veh-table"></table></div><div id="rosterTreeWrap" class="hidden tree-wrap"></div></section>
 <section id="changes" class="view"><div class="card"><div class="changes-head"><div><h2>Изменения</h2><p class="meta" id="changesSubtitle"></p></div><div class="changes-version"><span id="currentGameVersion">—</span></div></div><div id="changesFilters" class="changes-filters"></div><div id="changesContent"></div></div></section>
 <section id="squad" class="view"><div class="card"><h2>Отряд</h2><div id="squadContent"></div></div></section>
-<section id="settings" class="view"><div class="card"><h2>Настройки</h2><div class="settings-grid"><div class="field"><label>Язык интерфейса / названий</label><select id="localeSelect"><option value="ru">Русский</option><option value="en">English</option></select></div><div class="field"><label>Данные</label><div class="toolbar"><button id="exportUser" class="secondary">Экспорт JSON</button><button id="importUser" class="secondary">Импорт JSON</button><input id="importFile" type="file" accept="application/json" class="hidden"></div></div></div><p class="meta">Системные данные лежат в папке data/, картинки — в assets/vehicles/. Пользовательские данные могут сохраняться в user_data/ при запуске через Launch App.</p><div id="userDataStatus" class="user-data-status"></div></div></section>
+<section id="settings" class="view"><div class="card"><h2>Настройки</h2><div class="settings-grid"><div class="field"><label>Язык интерфейса / названий</label><select id="localeSelect"><option value="ru">Русский</option><option value="en">English</option></select></div><div class="field"><label>Данные</label><div class="toolbar"><button id="exportUser" class="secondary">Экспорт JSON</button><button id="importUser" class="secondary">Импорт JSON</button><button id="showOnboarding" class="secondary">Показать обучение</button><input id="importFile" type="file" accept="application/json" class="hidden"></div></div></div><div id="quickHelpPanel"></div><p class="meta">Системные данные лежат в папке data/, картинки — в assets/vehicles/. Пользовательские данные могут сохраняться в user_data/ при запуске через Launch App.</p><div id="userDataStatus" class="user-data-status"></div></div></section>
 </main>
 <div id="modal" class="modal"><div id="modalBox" class="modal-box"></div></div>
 <script>
 'use strict';
-const VERSION='3.54';
+const VERSION='3.79';
 const LS_KEY='wt_roster_manager_state_v62';
 const OLD_KEYS=['wt_roster_manager_state_v61','wt_roster_manager_state_v60','wt_roster_manager_state_v58','wt_roster_manager_state_v57','wt_roster_manager_state_v55','wt_roster_manager_state_v54','wt_rm_v2_16_state','wt_roster_manager_state','wt_rm_state','wt_roster_manager_state_v2'];
 const RANKS=['I','II','III','IV','V','VI','VII','VIII','IX'];
@@ -4453,8 +4485,8 @@ function installGroupIconFallbackTimer(root){
    nation/class selection and left the old "choose nation/class" notice on screen.
    This final override defines the sorter and renders the tree from the current DOM/state
    without relying on stale wrappers. */
-const WT_APP_VERSION_V370='v3.75';
-const WT_APP_BUILD_DATE_V370='2026-06-04';
+const WT_APP_VERSION_V370='v3.79';
+const WT_APP_BUILD_DATE_V370='2026-06-09';
 // v3.71: restore the canonical left/right tree placement helper.
 // Earlier public cleanup removed rightSide(), while many tree card/render functions still use it.
 function rightSide(v){
@@ -4539,6 +4571,237 @@ drawTree = function(){
 };
 exportSquadProfile = function(){const payload={schema:'wt-roster-squad-profile',schema_version:1,app_version:WT_APP_VERSION_V370,app_build_date:WT_APP_BUILD_DATE_V370,profile_id:'profile-'+Date.now(),profile_name:(state&&state.squadProfileName)||'Player',exported_at:new Date().toISOString(),lineups:(state.lineups||[]).map(normalizeSquadLineup)};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wt_roster_squad_profile_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
 squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-profile-meta">${t('profileVersion')}: ${WT_APP_VERSION_V370} · ${WT_APP_BUILD_DATE_V370}</div>`;const prof=pl.profile||{};const notImported=lang()==='en'?'Profile is not imported':'Профиль не импортирован';if(!prof.app_version&&!prof.exported_at)return `<div class="squad-profile-meta warn">${notImported}</div>`;const old=prof.app_version&&prof.app_version!==WT_APP_VERSION_V370;const warn=lang()==='en'?'Profile was exported from another version; data may be outdated.':'Профиль экспортирован из другой версии, возможны устаревшие данные.';return `<div class="squad-profile-meta ${old?'warn':''}">${t('profileVersion')}: ${esc(prof.app_version||'?')} ${prof.app_build_date?'· '+esc(prof.app_build_date):''}<br>${t('profileExported')}: ${esc((prof.exported_at||'?').slice(0,10))}${old?'<br>'+warn:''}</div>`};
+
+
+/* v3.76: first-run onboarding + manual game patch status */
+const WT_APP_VERSION_V376='v3.79';
+const WT_APP_BUILD_DATE_V376='2026-06-09';
+let gamePatchStatusV376=null;
+function userAckPatchKeyV376(){return 'wt_rm_patch_ack_'+String(gamePatchStatusV376?.latest_known_patch||gamePatchStatusV376?.latest_public_signal||'unknown').replace(/[^a-z0-9_.-]+/gi,'_')}
+function patchNeedsAttentionV376(){
+  if(!gamePatchStatusV376)return false;
+  if(!gamePatchStatusV376.needs_review)return false;
+  return localStorage.getItem(userAckPatchKeyV376())!=='1';
+}
+async function loadGamePatchStatusV376(){
+  try{gamePatchStatusV376=await (await fetch('data/game_patch_status.json',{cache:'no-store'})).json();}
+  catch(e){gamePatchStatusV376=null;}
+}
+function applyPatchAttentionV376(){
+  const tab=document.querySelector('[data-view="changes"]');
+  if(tab)tab.classList.toggle('patch-attention',patchNeedsAttentionV376());
+}
+function renderPatchStatusBoxV376(){
+  const host=document.getElementById('patchStatusV376'); if(!host)return;
+  const st=gamePatchStatusV376;
+  if(!st){host.innerHTML='';return;}
+  const attention=patchNeedsAttentionV376();
+  const ru=lang()==='ru';
+  const title=attention?(ru?'Нужна ручная проверка актуальности данных':'Manual data review recommended'):(ru?'Статус подтверждён пользователем':'Status acknowledged');
+  const basePatch=st.manager_data_patch||st.data_current_patch||'—';
+  const latest=st.latest_known_patch||st.latest_public_signal||'—';
+  const checked=st.checked_at||'—';
+  const notes=(st.notes&&st.notes[lang()])||st.notes_ru||st.notes_en||'';
+  host.innerHTML=`<div class="patch-status-box ${attention?'warn':'ok'}"><b>${esc(title)}</b><br>`+
+    `${ru?'Данные менеджера актуальны по нашу последнюю проверку':'Manager data is current as of our last review'}: <b>${esc(basePatch)}</b><br>`+
+    `${ru?'Свежий публичный сигнал':'Latest public signal'}: <b>${esc(latest)}</b><br>`+
+    `${ru?'Проверено':'Checked'}: ${esc(checked)}${notes?`<div class="onboarding-small">${esc(notes)}</div>`:''}`+
+    `<div class="patch-status-row"><button id="ackPatchV376" class="secondary">${ru?'Считать данные актуальными / критических правок нет':'Acknowledge as current'}</button>`+
+    `<button id="resetPatchAckV376" class="ghost">${ru?'Вернуть предупреждение':'Reset warning'}</button></div></div>`;
+  const ack=document.getElementById('ackPatchV376'); if(ack)ack.onclick=()=>{localStorage.setItem(userAckPatchKeyV376(),'1');applyPatchAttentionV376();renderPatchStatusBoxV376();};
+  const reset=document.getElementById('resetPatchAckV376'); if(reset)reset.onclick=()=>{localStorage.removeItem(userAckPatchKeyV376());applyPatchAttentionV376();renderPatchStatusBoxV376();};
+}
+const _renderChanges_v376=renderChanges;
+renderChanges=function(){_renderChanges_v376();const host=document.getElementById('changesContent');if(host&&!document.getElementById('patchStatusV376'))host.insertAdjacentHTML('afterbegin','<div id="patchStatusV376"></div>');renderPatchStatusBoxV376();applyPatchAttentionV376();};
+function onboardingHtmlV376(){const ru=lang()==='ru';return `<h2>${ru?'Добро пожаловать в WT Roster Manager':'Welcome to WT Roster Manager'}</h2><p class="meta">${ru?'Это внешний локальный менеджер ангара и наборов. Он не логинится в War Thunder и не управляет клиентом игры.':'This is a local external hangar and lineup manager. It does not log in to War Thunder or control the game client.'}</p><div class="onboarding-steps"><div class="onboarding-step"><b>1. ${ru?'Отметь купленную технику':'Mark owned vehicles'}</b>${ru?'В Ростере поставь галки у техники, которая уже есть в ангаре.':'Use the Roster tab to mark vehicles you own.'}</div><div class="onboarding-step"><b>2. ${ru?'Создай наборы':'Create lineups'}</b>${ru?'Во вкладке Наборы собери внешние пресеты под нации, режимы, БР и ранги.':'Build external lineups by nation, mode, BR and rank.'}</div><div class="onboarding-step"><b>3. ${ru?'Используй автоподбор':'Use autopick'}</b>${ru?'Автоподбор помогает заполнить экипажи по правилам доступности и твоим ролям экипажей.':'Autopick fills crew slots using availability rules and crew roles.'}</div><div class="onboarding-step"><b>4. ${ru?'Пробуй рулетку и отряд':'Try roulette and squad'}</b>${ru?'Рулетка выбирает набор случайно, Отряд сравнивает твои наборы с профилями друзей.':'Roulette picks a lineup randomly; Squad compares lineups with friends.'}</div></div><details class="help-mini" open><summary>${ru?'Краткая инструкция по вкладкам':'Quick guide by tab'}</summary><div>${ru?'<b>Обзор</b> — прогресс коллекции. <b>Ростер</b> — база техники, фильтры, покупка, талисман. <b>Наборы</b> — пресеты и экипажи. <b>Изменения</b> — патчи и ручная проверка актуальности базы. <b>Отряд</b> — импорт профилей друзей. <b>Настройки</b> — язык, экспорт/импорт данных и повторный запуск обучения.':'<b>Dashboard</b> — collection progress. <b>Roster</b> — vehicles, filters, ownership, talismans. <b>Lineups</b> — presets and crew slots. <b>Changes</b> — patch history and manual data review. <b>Squad</b> — import friends profiles. <b>Settings</b> — language, data import/export and tutorial.'}</div></details><label class="big-check"><input id="onboardingDontShowV376" type="checkbox"> ${ru?'Больше не показывать автоматически':'Do not show automatically again'}</label><div class="footer-actions"><button data-modal-action="onboarding-close">${ru?'Понятно':'Got it'}</button><button class="secondary" data-modal-action="onboarding-later">${ru?'Закрыть, но показать в следующий раз':'Close, show next time'}</button></div>`;}
+function openOnboardingV376(force=false){const seen=localStorage.getItem('wt_rm_onboarding_seen_v376')==='1';if(seen&&!force)return;if(typeof modal==='undefined'||typeof modalBox==='undefined')return;modalBox.innerHTML=onboardingHtmlV376();modal.classList.add('open');}
+function renderQuickHelpPanelV376(){const host=document.getElementById('quickHelpPanel');if(!host)return;const ru=lang()==='ru';host.innerHTML=`<details class="help-mini"><summary>${ru?'Краткая инструкция по функциям':'Quick feature guide'}</summary><div>${ru?'Скриншоты лучше добавить руками в README/папку screenshots: я могу сверстать блоки и подписи, но реальные скрины из твоего браузера точнее. Внутри приложения сейчас добавлен текстовый onboarding без картинок, чтобы не тащить случайные/устаревшие изображения.':'Screenshots are best added manually to README/screenshots. The in-app onboarding is text-only to avoid stale images.'}</div></details>`;}
+const _bindGlobal_v376=bindGlobal;
+bindGlobal=function(){_bindGlobal_v376();const b=document.getElementById('showOnboarding');if(b)b.onclick=()=>openOnboardingV376(true);document.addEventListener('click',e=>{const a=e.target?.closest?.('[data-modal-action]')?.dataset?.modalAction;if(a==='onboarding-close'){if(document.getElementById('onboardingDontShowV376')?.checked)localStorage.setItem('wt_rm_onboarding_seen_v376','1');modal.classList.remove('open');}if(a==='onboarding-later'){modal.classList.remove('open');}});};
+const _renderSettings_v376=renderSettings;
+renderSettings=function(){_renderSettings_v376();renderQuickHelpPanelV376();const b=document.getElementById('showOnboarding');if(b)b.textContent=lang()==='ru'?'Показать обучение':'Show tutorial';};
+const _updateStaticUI_v376=updateStaticUI;
+updateStaticUI=function(){_updateStaticUI_v376();applyPatchAttentionV376();};
+const _wtStartApp_v376=window.__wtStartApp;
+window.__wtStartApp=async function(){await loadGamePatchStatusV376();await _wtStartApp_v376();applyPatchAttentionV376();setTimeout(()=>openOnboardingV376(false),250);};
+setTimeout(async()=>{try{if(!gamePatchStatusV376)await loadGamePatchStatusV376();applyPatchAttentionV376();if(document.getElementById('changes')?.classList.contains('active'))renderChanges();renderQuickHelpPanelV376();const b=document.getElementById('showOnboarding');if(b)b.onclick=()=>openOnboardingV376(true);openOnboardingV376(false);}catch(e){console.warn('v3.76 late init skipped',e)}},900);
+
+
+/* v3.77: in-app official War Thunder version check button
+   The UI button calls the local server endpoint /api/latest-wt-version.
+   This keeps the action inside the app while avoiding browser CORS issues. */
+const WT_PATCH_VERIFIED_KEY_V377='wt_rm_verified_game_version_v377';
+const WT_PATCH_LAST_CHECK_KEY_V377='wt_rm_last_game_version_check_v377';
+let lastVersionCheckV377=null;
+function normGameVersionV377(v){return String(v||'').trim();}
+function initialVerifiedVersionV377(){
+  const saved=normGameVersionV377(localStorage.getItem(WT_PATCH_VERIFIED_KEY_V377));
+  if(saved)return saved;
+  const st=gamePatchStatusV376||{};
+  const candidates=[st.data_verified_game_version,st.verified_game_version,st.manager_data_patch,patchHistory?.current_version];
+  for(const c of candidates){const v=normGameVersionV377(c);if(v && !/^unknown/i.test(v))return v;}
+  return '';
+}
+function getVerifiedVersionV377(){return initialVerifiedVersionV377();}
+function setVerifiedVersionV377(v){v=normGameVersionV377(v);if(v)localStorage.setItem(WT_PATCH_VERIFIED_KEY_V377,v);}
+function latestCheckedVersionV377(){
+  if(lastVersionCheckV377?.latest_version)return normGameVersionV377(lastVersionCheckV377.latest_version);
+  try{const saved=JSON.parse(localStorage.getItem(WT_PATCH_LAST_CHECK_KEY_V377)||'null');if(saved?.latest_version)return normGameVersionV377(saved.latest_version);}catch(e){}
+  const st=gamePatchStatusV376||{};
+  return normGameVersionV377(st.latest_game_version||st.latest_known_patch||'');
+}
+function patchNeedsAttentionV376(){
+  const verified=getVerifiedVersionV377();
+  const latest=latestCheckedVersionV377();
+  if(verified && latest && verified!==latest)return true;
+  if(!gamePatchStatusV376)return false;
+  if(!gamePatchStatusV376.needs_review)return false;
+  return localStorage.getItem(userAckPatchKeyV376())!=='1';
+}
+async function checkOfficialWtVersionV377(){
+  const ru=lang()==='ru';
+  lastVersionCheckV377={checking:true};
+  renderPatchStatusBoxV376();
+  try{
+    const r=await fetch('/api/latest-wt-version',{cache:'no-store'});
+    const data=await r.json().catch(()=>({ok:false,error:'Bad JSON response'}));
+    if(!r.ok||!data.ok)throw new Error(data.error||('HTTP '+r.status));
+    lastVersionCheckV377=data;
+    localStorage.setItem(WT_PATCH_LAST_CHECK_KEY_V377,JSON.stringify(data));
+  }catch(e){
+    lastVersionCheckV377={ok:false,error:String(e&&e.message?e.message:e),checked_at:new Date().toISOString()};
+  }
+  applyPatchAttentionV376();
+  renderPatchStatusBoxV376();
+}
+function renderPatchStatusBoxV376(){
+  const host=document.getElementById('patchStatusV376'); if(!host)return;
+  const ru=lang()==='ru';
+  const verified=getVerifiedVersionV377();
+  const latest=latestCheckedVersionV377();
+  const checking=!!lastVersionCheckV377?.checking;
+  const failed=lastVersionCheckV377 && lastVersionCheckV377.ok===false;
+  const mismatch=!!(verified && latest && verified!==latest);
+  const missingVerified=!verified;
+  const attention=patchNeedsAttentionV376();
+  const title=checking?(ru?'Проверяю официальную версию War Thunder…':'Checking official War Thunder version…'):
+    mismatch?(ru?'Обнаружена новая версия War Thunder':'New War Thunder version detected'):
+    missingVerified?(ru?'Проверенная версия игры пока не указана':'Verified game version is not set yet'):
+    (ru?'Версия игры подтверждена':'Game version acknowledged');
+  const cls=checking?'checking':(attention||missingVerified?'warn':'ok');
+  const checked=(lastVersionCheckV377?.checked_at||gamePatchStatusV376?.checked_at||'—');
+  const source=lastVersionCheckV377?.source_url||'https://warthunder.com/en/game/changelog/';
+  host.innerHTML=`<div class="patch-status-box ${cls}"><b>${esc(title)}</b><br>`+
+    `<div class="patch-version-line"><span>${ru?'Данные менеджера считаются проверенными для':'Manager data is considered verified for'}:</span> <span class="patch-version-pill">${esc(verified||'—')}</span></div>`+
+    `<div class="patch-version-line"><span>${ru?'Последняя найденная публичная версия игры':'Latest public game version found'}:</span> <span class="patch-version-pill">${esc(latest||'—')}</span></div>`+
+    `<div class="onboarding-small">${ru?'Источник проверки':'Check source'}: <a href="${esc(source)}" target="_blank" rel="noopener">official changelog</a> · ${ru?'последняя проверка':'last check'}: ${esc(checked)}</div>`+
+    (failed?`<div class="patch-status-error">${ru?'Не удалось проверить версию':'Could not check version'}: ${esc(lastVersionCheckV377.error||'unknown error')}</div>`:'')+
+    `<div class="patch-status-row">`+
+      `<button id="checkWtVersionV377">${ru?'Проверить версию игры':'Check game version'}</button>`+
+      `<button id="ackPatchV376" class="secondary">${ru?'Считать найденную версию проверенной':'Mark found version as verified'}</button>`+
+      `<button id="setPatchVersionV377" class="ghost">${ru?'Указать проверенную версию вручную':'Set verified version manually'}</button>`+
+      `<button id="resetPatchAckV376" class="ghost">${ru?'Сбросить':'Reset'}</button>`+
+    `</div>`+
+    `<div class="onboarding-small">${ru?'Кнопка проверяет только номер версии игры. Она не анализирует новости, магазины, БР, ранги или availability.':'This checks only the game version number. It does not analyze news, store items, BR, ranks or availability.'}</div>`+
+    `</div>`;
+  const check=document.getElementById('checkWtVersionV377'); if(check)check.onclick=checkOfficialWtVersionV377;
+  const ack=document.getElementById('ackPatchV376'); if(ack)ack.onclick=()=>{const v=latestCheckedVersionV377()||getVerifiedVersionV377(); if(v)setVerifiedVersionV377(v); localStorage.setItem(userAckPatchKeyV376(),'1');applyPatchAttentionV376();renderPatchStatusBoxV376();};
+  const reset=document.getElementById('resetPatchAckV376'); if(reset)reset.onclick=()=>{localStorage.removeItem(WT_PATCH_VERIFIED_KEY_V377);localStorage.removeItem(WT_PATCH_LAST_CHECK_KEY_V377);localStorage.removeItem(userAckPatchKeyV376());lastVersionCheckV377=null;applyPatchAttentionV376();renderPatchStatusBoxV376();};
+  const manual=document.getElementById('setPatchVersionV377'); if(manual)manual.onclick=()=>{const cur=getVerifiedVersionV377()||latestCheckedVersionV377();const v=prompt(ru?'Версия War Thunder, для которой база проверена:':'War Thunder version this data was verified for:',cur||'');if(v&&v.trim()){setVerifiedVersionV377(v.trim());applyPatchAttentionV376();renderPatchStatusBoxV376();}};
+}
+(function initLastVersionCheckV377(){try{lastVersionCheckV377=JSON.parse(localStorage.getItem(WT_PATCH_LAST_CHECK_KEY_V377)||'null');}catch(e){lastVersionCheckV377=null;}})();
+
+
+
+/* v3.78: onboarding UX cleanup + Overview tutorial entry + readable changelog link */
+const WT_ONBOARDING_SEEN_KEY_V378='wt_rm_onboarding_seen_v378';
+function onboardingHtmlV378(){
+  const ru=lang()==='ru';
+  const tabsRu='<b>Обзор</b> — прогресс коллекции и кнопка повторного обучения. <b>Ростер</b> — база техники, фильтры, отметка купленной техники и талисманы. <b>Наборы</b> — внешние пресеты, экипажи, автоподбор и рулетка. <b>Изменения</b> — история патчей и проверка актуальности базы под текущую версию игры. <b>Отряд</b> — импорт профилей друзей и сравнение совместимости наборов.';
+  const tabsEn='<b>Overview</b> — collection progress and tutorial button. <b>Roster</b> — vehicle database, filters, owned marks and talismans. <b>Lineups</b> — external presets, crew slots, autopick and roulette. <b>Changes</b> — patch history and database review status for the current game version. <b>Squad</b> — import friend profiles and compare compatible lineups.';
+  return `<div class="onboarding-lang-row"><label for="onboardingLangV378">${ru?'Язык подсказки':'Tutorial language'}</label><select id="onboardingLangV378"><option value="ru" ${ru?'selected':''}>Русский</option><option value="en" ${!ru?'selected':''}>English</option></select></div>`+
+  `<h2>${ru?'Добро пожаловать в WT Roster Manager':'Welcome to WT Roster Manager'}</h2>`+
+  `<p class="meta">${ru?'Это внешний локальный менеджер ангара и наборов. Он не логинится в War Thunder, не просит пароль и не управляет клиентом игры.':'This is a local external hangar and lineup manager. It does not log in to War Thunder, does not ask for your password and does not control the game client.'}</p>`+
+  `<div class="onboarding-steps"><div class="onboarding-step"><b>1. ${ru?'Отметь купленную технику':'Mark owned vehicles'}</b>${ru?'В Ростере поставь галки у техники, которая уже есть в ангаре.':'Use the Roster tab to mark vehicles you own.'}</div>`+
+  `<div class="onboarding-step"><b>2. ${ru?'Создай наборы':'Create lineups'}</b>${ru?'Во вкладке Наборы собери внешние пресеты под нации, режимы, БР и ранги.':'Build external lineups by nation, mode, BR and rank.'}</div>`+
+  `<div class="onboarding-step"><b>3. ${ru?'Используй автоподбор':'Use autopick'}</b>${ru?'Автоподбор помогает заполнить экипажи по правилам доступности и твоим ролям экипажей.':'Autopick fills crew slots using availability rules and crew roles.'}</div>`+
+  `<div class="onboarding-step"><b>4. ${ru?'Пробуй рулетку и отряд':'Try roulette and squad'}</b>${ru?'Рулетка выбирает набор случайно, Отряд сравнивает твои наборы с профилями друзей.':'Roulette picks a lineup randomly; Squad compares lineups with friends.'}</div></div>`+
+  `<details class="help-mini" open><summary>${ru?'Краткая инструкция по вкладкам':'Quick guide by tab'}</summary><div>${ru?tabsRu:tabsEn}</div></details>`+
+  `<label class="big-check"><input id="onboardingDontShowV376" type="checkbox"> ${ru?'Больше не показывать автоматически':'Do not show automatically again'}</label>`+
+  `<div class="footer-actions"><button data-modal-action="onboarding-close">${ru?'Понятно':'Got it'}</button></div>`;
+}
+function openOnboardingV378(force=false){
+  const oldSeen=localStorage.getItem('wt_rm_onboarding_seen_v376')==='1';
+  const seen=localStorage.getItem(WT_ONBOARDING_SEEN_KEY_V378)==='1'||oldSeen;
+  if(seen&&!force)return;
+  if(typeof modal==='undefined'||typeof modalBox==='undefined')return;
+  modalBox.innerHTML=onboardingHtmlV378();
+  const sel=document.getElementById('onboardingLangV378');
+  if(sel)sel.onchange=()=>{state.settings.locale=sel.value;saveState();modalBox.innerHTML=onboardingHtmlV378();const sel2=document.getElementById('onboardingLangV378');if(sel2)sel2.onchange=sel.onchange;renderAllSoft();};
+  modal.classList.add('open');
+}
+openOnboardingV376=openOnboardingV378;
+onboardingHtmlV376=onboardingHtmlV378;
+const _renderOverview_v378=renderOverview;
+renderOverview=function(){
+  _renderOverview_v378();
+  const host=document.getElementById('overviewStats'); if(!host)return;
+  if(!document.getElementById('overviewOnboardingV378')){
+    const ru=lang()==='ru';
+    host.insertAdjacentHTML('afterbegin',`<div class="overview-help-strip"><div><b>${ru?'Нужна подсказка?':'Need a guide?'}</b><div class="onboarding-small">${ru?'Краткое обучение можно открыть повторно здесь в любой момент.':'You can reopen the short tutorial here at any time.'}</div></div><button id="overviewOnboardingV378" class="secondary">${ru?'Показать обучение':'Show tutorial'}</button></div>`);
+  }
+  const b=document.getElementById('overviewOnboardingV378'); if(b)b.onclick=()=>openOnboardingV378(true);
+};
+const _bindGlobal_v378=bindGlobal;
+bindGlobal=function(){
+  _bindGlobal_v378();
+  document.addEventListener('click',e=>{
+    const a=e.target?.closest?.('[data-modal-action]')?.dataset?.modalAction;
+    if(a==='onboarding-close'){
+      if(document.getElementById('onboardingDontShowV376')?.checked){
+        localStorage.setItem(WT_ONBOARDING_SEEN_KEY_V378,'1');
+        localStorage.setItem('wt_rm_onboarding_seen_v376','1');
+      }
+      modal.classList.remove('open');
+    }
+  });
+};
+const _wtStartApp_v378=window.__wtStartApp;
+window.__wtStartApp=async function(){await _wtStartApp_v378();setTimeout(()=>openOnboardingV378(false),350);};
+
+
+/* v3.79: keep the top language selector in sync when tutorial language is changed. */
+function syncTopLanguageSelectV379(){
+  const top=document.getElementById('localeSelect');
+  if(top && top.value!==lang()) top.value=lang();
+  if(top) top.title=lang()==='en'?'Interface language':'Язык интерфейса';
+}
+function bindOnboardingLanguageV379(){
+  const sel=document.getElementById('onboardingLangV378');
+  if(!sel)return;
+  sel.value=lang();
+  sel.onchange=()=>{
+    state.settings.locale=sel.value;
+    saveState();
+    syncTopLanguageSelectV379();
+    modalBox.innerHTML=onboardingHtmlV378();
+    bindOnboardingLanguageV379();
+    if(typeof renderAllSoft==='function')renderAllSoft();
+    syncTopLanguageSelectV379();
+  };
+}
+const _openOnboardingV378_forV379=openOnboardingV378;
+openOnboardingV378=function(force=false){
+  _openOnboardingV378_forV379(force);
+  bindOnboardingLanguageV379();
+  syncTopLanguageSelectV379();
+};
+openOnboardingV376=openOnboardingV378;
+const _updateStaticUI_v379=updateStaticUI;
+updateStaticUI=function(){
+  _updateStaticUI_v379();
+  syncTopLanguageSelectV379();
+};
 
 </script>
 </body></html>

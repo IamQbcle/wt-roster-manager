@@ -2,6 +2,10 @@
 from __future__ import annotations
 
 import json
+import re
+import sys
+import urllib.request
+from datetime import datetime, timezone
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse
@@ -9,6 +13,33 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 USER_DIR = ROOT / 'user_data'
 USER_FILE = USER_DIR / 'wt_roster_user_data.json'
+
+
+def _setup_windows_console():
+    """Set a friendlier title and icon for the local server console on Windows.
+
+    This is intentionally best-effort: if Windows blocks the icon change or the
+    app is running on Linux/macOS, the server continues normally.
+    """
+    if not sys.platform.startswith('win'):
+        return
+    try:
+        import ctypes
+        ctypes.windll.kernel32.SetConsoleTitleW('WT Roster Manager — Local Server')
+        hwnd = ctypes.windll.kernel32.GetConsoleWindow()
+        icon_path = ROOT / 'assets' / 'favicon.ico'
+        if hwnd and icon_path.exists():
+            IMAGE_ICON = 1
+            LR_LOADFROMFILE = 0x00000010
+            WM_SETICON = 0x0080
+            ICON_SMALL = 0
+            ICON_BIG = 1
+            hicon = ctypes.windll.user32.LoadImageW(None, str(icon_path), IMAGE_ICON, 0, 0, LR_LOADFROMFILE)
+            if hicon:
+                ctypes.windll.user32.SendMessageW(hwnd, WM_SETICON, ICON_SMALL, hicon)
+                ctypes.windll.user32.SendMessageW(hwnd, WM_SETICON, ICON_BIG, hicon)
+    except Exception:
+        pass
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
@@ -41,7 +72,53 @@ class Handler(SimpleHTTPRequestHandler):
             except Exception as e:
                 self._json(500, {'error': str(e)})
             return
+        if path == '/api/latest-wt-version':
+            self._latest_wt_version()
+            return
         return super().do_GET()
+
+    def _latest_wt_version(self):
+        """Return the latest public War Thunder client version from the official changelog.
+
+        The browser UI calls this same-origin endpoint so the app can have an in-app
+        button without running the heavier API updater. A direct browser fetch to
+        warthunder.com is not reliable because of normal browser CORS rules.
+        """
+        url = 'https://warthunder.com/en/game/changelog/'
+        try:
+            req = urllib.request.Request(url, headers={
+                'User-Agent': 'WT-Roster-Manager/3.79 (+local version check)',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            })
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                html = resp.read(1_500_000).decode('utf-8', errors='replace')
+
+            # Examples usually look like "Update 2.55.1.142". Keep the parser
+            # intentionally narrow: we only need the game client version, not news.
+            found = re.findall(r'Update\s+((?:\d+\.){2,}\d+)', html, flags=re.I)
+            if not found:
+                found = re.findall(r'\b((?:\d+\.){2,}\d+)\b', html)
+            # Preserve page order; the first changelog version is normally latest.
+            seen = []
+            for v in found:
+                if v not in seen:
+                    seen.append(v)
+            if not seen:
+                raise ValueError('Could not find a War Thunder version number on the changelog page')
+            self._json(200, {
+                'ok': True,
+                'latest_version': seen[0],
+                'candidates': seen[:5],
+                'source_url': url,
+                'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+            })
+        except Exception as e:
+            self._json(502, {
+                'ok': False,
+                'error': str(e),
+                'source_url': url,
+                'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+            })
 
     def do_POST(self):
         path = urlparse(self.path).path
@@ -63,6 +140,7 @@ class Handler(SimpleHTTPRequestHandler):
         self._json(404, {'error': 'not found'})
 
 if __name__ == '__main__':
+    _setup_windows_console()
     httpd = ThreadingHTTPServer(('127.0.0.1', 8765), Handler)
     print('WT Roster Manager server: http://127.0.0.1:8765/index.html')
     print('Portable user data:', USER_FILE)

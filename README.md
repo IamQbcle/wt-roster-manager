@@ -25,6 +25,7 @@ War Thunder has a limited number of in-game presets, and crews are trained for s
 - [Feedback / Обратная связь](#feedback)
 - [Platform notes / Платформы](#platform-notes)
 - [Data source / Источник данных](#data-source)
+- [Safety / Безопасность](#safety)
 - [Disclaimer / Дисклеймер](#disclaimer)
 
 <a id="documentation"></a>
@@ -162,6 +163,48 @@ https://github.com/Sgambe33/WarThunder-Vehicles-API
 Some availability corrections are maintained manually when the public API cannot fully reflect hidden, owner-only or removed vehicles.
 
 База техники собирается с помощью стороннего War Thunder Vehicles API и данных War Thunder Wiki. Часть статусов доступности поддерживается вручную, если публичные источники не могут точно отразить скрытую, удалённую или доступную только владельцам технику.
+
+<a id="safety"></a>
+
+## Safety / Безопасность
+
+### 🇬🇧 English
+
+WT Roster Manager is a local open-source HTML/Python tool.
+
+- It is not an overlay, not a cheat, and not a game-client mod.
+- It does not modify or interact with the War Thunder client.
+- It does not require administrator rights.
+- It is not an `.exe` installer.
+- It does not ask for Gaijin, War Thunder, Steam, Discord or any other account credentials, and does not read browser cookies or saved passwords.
+- It runs locally through `127.0.0.1:8765`.
+- User data is stored locally in `user_data/wt_roster_user_data.json`.
+- The main launch/update scripts can be inspected before running:
+  - `Launch App.bat`
+  - `update_from_api.bat`
+  - `scripts/local_server.py`
+  - `scripts/update_from_api.py`
+
+If any modified copy of this project asks for passwords, tokens, administrator rights or account access, do not use it.
+
+### 🇷🇺 Русский
+
+WT Roster Manager — локальная open-source утилита на HTML/Python.
+
+- Это не оверлей, не чит и не модификация клиента игры.
+- Программа не изменяет клиент War Thunder и не взаимодействует с ним.
+- Программа не требует прав администратора.
+- Это не `.exe`-установщик.
+- Программа не спрашивает логин/пароль от Gaijin, War Thunder, Steam, Discord или других аккаунтов, а также не читает cookies браузера и сохранённые пароли.
+- Программа работает локально через `127.0.0.1:8765`.
+- Пользовательские данные хранятся локально в `user_data/wt_roster_user_data.json`.
+- Перед запуском можно проверить основные файлы:
+  - `Launch App.bat`
+  - `update_from_api.bat`
+  - `scripts/local_server.py`
+  - `scripts/update_from_api.py`
+
+Если изменённая копия программы просит пароли, токены, права администратора или доступ к аккаунтам — не используйте её.
 
 <a id="disclaimer"></a>
 

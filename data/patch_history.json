@@ -1,5 +1,5 @@
 {
-  "current_version": "unknown-2026-06-04",
+  "current_version": "2.55.1.165",
   "patches": [
     {
       "version": "unknown-2026-06-04",
@@ -1256,6 +1256,22 @@
           "old": "M4A5",
           "new": "RAM II",
           "note": "British tree label aligned with current client naming."
+        }
+      ]
+    },
+    {
+      "version": "v3.80 manual scan",
+      "date": "2026-06-19",
+      "title": "June 2026 manual data review",
+      "source_url": "https://warthunder.com/en/news/10095-special-the-floats-event-is-back-now-with-the-spitfire-mk-vb-float-en",
+      "notes": "Latest live version verified as 2.55.1.165. Heavy Cavalry remained pre-release, so devblog/pre-order vehicles were not added to the live database. Spitfire Mk Vb (Float) added as an owner-only event reward after Wings Over Water ended.",
+      "vehicle_changes": [
+        {
+          "unit_id": "spitfire_mk5b_float",
+          "change_type": "added",
+          "old": "missing",
+          "new": "event / owner-only",
+          "note": "Wings Over Water 2026 reward; Rank II, BR 3.3, Britain."
         }
       ]
     }

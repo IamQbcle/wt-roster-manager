@@ -115463,5 +115463,25 @@
     "on_marketplace": 0,
     "squadron_vehicle": 0,
     "visibility": "wiki_supplement"
+  },
+  {
+    "identifier": "spitfire_mk5b_float",
+    "country": "britain",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "hydroplane"
+    ],
+    "era": 2,
+    "arcade_br": 3.3,
+    "realistic_br": 3.3,
+    "realistic_ground_br": 3.3,
+    "simulator_br": 3.3,
+    "simulator_ground_br": 3.3,
+    "event": "wings_over_water_2026",
+    "is_premium": 1,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "visibility": "wiki_supplement"
   }
 ]

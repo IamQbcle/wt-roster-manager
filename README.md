@@ -1,6 +1,6 @@
 # WT Roster Manager
 
-## 🇬🇧 English
+## EN — English
 
 **WT Roster Manager** is a free local roster, lineup and preset planning tool for War Thunder.
 
@@ -8,7 +8,7 @@ It adds an external planning layer on top of the game: unlimited lineups, owned-
 
 War Thunder has a limited number of in-game presets, and crews are trained for specific vehicles. This tool helps you keep many external lineups, rebuild old presets later, plan future research and avoid guessing which vehicle was supposed to be assigned to which crew.
 
-## 🇷🇺 Русский
+## RU — Русский
 
 **WT Roster Manager** — бесплатный локальный менеджер ангара, коллекции и наборов для War Thunder.
 
@@ -51,7 +51,7 @@ Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster
 
 ## 🧭 Quickstart / Быстрый старт
 
-### 🇬🇧 English
+### EN — English
 
 1. Install Python 3 from python.org if it is not installed yet. During installation, enable **Add python.exe to PATH**.
 2. Download the latest ZIP from the **Releases** section.
@@ -63,7 +63,9 @@ Use the latest ZIP from the [**Releases**](https://github.com/IamQbcle/wt-roster
 
 Detailed instructions are available in [README_EN.txt](README_EN.txt) and [README_RU.txt](README_RU.txt).
 
-### 🇷🇺 Русский
+The release ZIP already includes the vehicle database and images. `update_from_api.bat` is optional and is only needed for a manual database rebuild/update. In some regions, the third-party API domain may require a VPN.
+
+### RU — Русский
 
 1. Установите Python 3 с python.org, если он ещё не установлен. При установке включите галочку **Add python.exe to PATH**.
 2. Скачайте свежий ZIP из раздела **Releases**.
@@ -74,6 +76,8 @@ Detailed instructions are available in [README_EN.txt](README_EN.txt) and [READM
 7. Теперь можно планировать новые наборы, порядок исследования, игру отрядом и рулетку наборов, не теряя сохранённые планы.
 
 Подробное описание функций есть в [README_RU.txt](README_RU.txt) и [README_EN.txt](README_EN.txt).
+
+ZIP-релиз уже содержит базу техники и изображения. `update_from_api.bat` не обязателен для обычного запуска и нужен только для ручного обновления/пересборки базы. В некоторых регионах домен стороннего API может быть доступен только через VPN.
 
 <a id="screenshots"></a>
 
@@ -118,7 +122,7 @@ Questions, ideas and bug reports / Вопросы, идеи и багрепор�
 
 ## Platform notes / Платформы
 
-### 🇬🇧 English
+### EN — English
 
 The main tested launch method is Windows: `Launch App.bat`.
 
@@ -135,7 +139,7 @@ chmod +x Launch_App.sh update_from_api.sh
 
 Linux/macOS feedback and fixes are welcome.
 
-### 🇷🇺 Русский
+### RU — Русский
 
 Основной проверенный способ запуска — Windows: `Launch App.bat`.
 
@@ -168,7 +172,7 @@ Some availability corrections are maintained manually when the public API cannot
 
 ## Safety / Безопасность
 
-### 🇬🇧 English
+### EN — English
 
 WT Roster Manager is a local open-source HTML/Python tool.
 
@@ -187,7 +191,7 @@ WT Roster Manager is a local open-source HTML/Python tool.
 
 If any modified copy of this project asks for passwords, tokens, administrator rights or account access, do not use it.
 
-### 🇷🇺 Русский
+### RU — Русский
 
 WT Roster Manager — локальная open-source утилита на HTML/Python.
 

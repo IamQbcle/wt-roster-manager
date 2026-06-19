@@ -6130,6 +6130,21 @@ def main(argv: list[str] | None = None) -> int:
 # --- end v3.51 curated availability layer ---
 
 
+
+
+# --- v3.80: Wings Over Water 2026 Wiki-only supplement ---
+SUPPLEMENTAL_WIKI_UNITS_V380 = [
+    {"identifier":"spitfire_mk5b_float","country":"britain","vehicle_type":"fighter","vehicle_sub_types":["hydroplane"],"era":2,"arcade_br":3.3,"realistic_br":3.3,"realistic_ground_br":3.3,"simulator_br":3.3,"simulator_ground_br":3.3,"event":"wings_over_water_2026","is_premium":1,"is_pack":0,"on_marketplace":0,"squadron_vehicle":0,"visibility":"wiki_supplement"},
+]
+_old_add_supplemental_wiki_units_v380 = _add_supplemental_wiki_units_v300_network
+def _add_supplemental_wiki_units_v300_network(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:  # v3.80 override
+    rows = _old_add_supplemental_wiki_units_v380(rows)
+    seen = {row_identifier(r) for r in rows if row_identifier(r)}
+    for r in SUPPLEMENTAL_WIKI_UNITS_V380:
+        if r["identifier"] not in seen:
+            rows.append(dict(r)); seen.add(r["identifier"])
+    return rows
+
 if __name__ == "__main__":
     try:
         raise SystemExit(main())

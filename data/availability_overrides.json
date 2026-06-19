@@ -778,6 +778,12 @@
       "ru": "F-20A Tigershark Pack был указан среди наборов, снимаемых с продажи после May Sale 2026; считать owner-only, если техника не отмечена купленной.",
       "en": "F-20A Tigershark Pack was listed among packs retired after the May Sale 2026; treat as owner-only unless marked owned.",
       "source": "manual curated check, Gaijin May Sale 2026 retired packs section"
+    },
+    "spitfire_mk5b_float": {
+      "availability": "unavailable",
+      "ru": "Награда события Wings Over Water 2026; событие завершилось 15 июня 2026. Считать доступной только владельцам, пока не подтверждён Market/повторное получение.",
+      "en": "Wings Over Water 2026 event reward; the event ended on 15 June 2026. Treat as owner-only unless Market or another acquisition method is confirmed.",
+      "source": "War Thunder official event news 2026-06-12 + Wiki unit page"
     }
   },
   "heuristic": {

@@ -233,3 +233,14 @@ Do not publish:
 - user_data/wt_roster_user_data.json;
 - private friend squad profiles unless intended;
 - temporary logs and caches if they appear locally.
+
+--- v3.76 ---
+- Added browser favicon / tab icon.
+- Launch App.bat and update_from_api.bat now show a friendlier Python-missing notice and offer to open the Python download page via Y/N.
+- Added first-run onboarding inside the app with a “do not show again” checkbox and a manual replay button in Settings.
+- Added a manual game-patch review status to the Changes tab: fresh public signals can tint the tab pale red until the user acknowledges that the data is still current.
+
+--- v3.77 ---
+- Added an in-app button on the Changes tab to check the latest public War Thunder version from the official changelog.
+- Only the game version number is checked; news, store items, BR and availability are not analyzed automatically.
+- If the found version differs from the verified data version, the Changes tab is highlighted.

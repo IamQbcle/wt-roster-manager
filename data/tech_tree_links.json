@@ -8378,6 +8378,110 @@
     "z_9w": [
       "z_11wa",
       "z_9wa"
+    ],
+    "f_101c": [
+      "f-80",
+      "f-104a"
+    ],
+    "germ_hummel": [
+      "germ_pzkpfw_38t_Marder_III_ausf_H",
+      "germ_stug_III_ausf_G"
+    ],
+    "jp_ujishima_msc": [
+      "jp_type5_escortboat",
+      "jp_karotei_type2"
+    ],
+    "fr_leopard_1a5be": [
+      "fr_amx_30_b2",
+      "fr_msc"
+    ],
+    "it_mas_classe429": [
+      "it_mas_classe500_3",
+      "it_ms53_2a"
+    ],
+    "germ_kanonenboot_k4_lorelei": [
+      "germ_destroyer_class1939_t22"
+    ],
+    "it_palmaria": [
+      "it_m109g",
+      "it_m113a1_tow"
+    ],
+    "l_39za_art_thailand": [
+      "ki-83",
+      "f-84g_thailand"
+    ],
+    "cn_pgz_88": [
+      "cn_zsl_92",
+      "cn_wz_305"
+    ],
+    "il_hunter_afv": [
+      "il_m113a1_tow",
+      "il_namer_rcws_30"
+    ],
+    "jp_leopard_2ri": [
+      "jp_type_10_prototype"
+    ],
+    "jh_7a2": [
+      "jh_7a"
+    ],
+    "f_16a_block_72v_china": [
+      "mirage_2000_5ei"
+    ],
+    "m_346fa": [
+      "tornado_adv"
+    ],
+    "mi_24d_german": [
+      "mi_8tb",
+      "mi_24p_german"
+    ],
+    "mig_29kr_9_41r": [
+      "yak_141"
+    ],
+    "sw_nomads": [
+      "sw_eldenhet_98"
+    ],
+    "uk_egret_class": [
+      "uk_minelayer_abdiel_class_abdiel"
+    ],
+    "uk_m1a2_sep3_abrams": [
+      "uk_vickers_mk7"
+    ],
+    "us_destroyer_gridley": [
+      "us_destroyer_clemson_barker",
+      "us_destroyer_bagley_class_bagley"
+    ],
+    "us_battleship_north_carolina_class": [
+      "us_battleship_colorado_class_colorado"
+    ],
+    "us_m1a2_sep2_abrams_trophy": [
+      "us_m1a2_sep_abrams",
+      "us_m1a2_sep3_abrams"
+    ],
+    "us_m1a2_sep3_abrams": [
+      "us_m1a2_sep2_abrams_trophy"
+    ],
+    "ussr_cruiser_chervona_ukraina": [
+      "ussr_cruiser_krasnyi_krim",
+      "ussr_cruiser_kirov"
+    ],
+    "welkin_fmk1": [
+      "brigand_b1",
+      "hornet_mk3"
+    ],
+    "ussr_t_90m_arena_m": [
+      "ussr_t_90m_2020"
+    ],
+    "washington_b1": [
+      "lincoln_b2",
+      "canberra_bmk2"
+    ],
+    "yak_130_early": [
+      "il_28",
+      "su_25"
+    ],
+    "saab_ajs37_early": [
+      "saab_aj37",
+      "f_16a_block_10_norway"
     ]
   }
 }

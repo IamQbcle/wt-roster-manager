@@ -1,13 +1,13 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "2.55.1.165 / v3.80 data baseline",
-  "latest_known_patch": "2.55.1.165",
-  "latest_public_signal": "Heavy Cavalry pre-release devblog window; Spitfire Mk Vb (Float) event vehicle added manually",
-  "checked_at": "2026-06-19",
-  "needs_review": false,
+  "manager_data_patch": "Heavy Cavalry partial data update / v3.82",
+  "latest_known_patch": "Heavy Cavalry / 2026-06-24",
+  "latest_public_signal": "Heavy Cavalry released; full new-vehicle import pending external API update",
+  "checked_at": "2026-06-25",
+  "needs_review": true,
   "notes": {
-    "ru": "Ручная проверка на 19.06.2026: актуальная публичная версия 2.55.1.165. Крупное обновление Heavy Cavalry ещё не вышло; предзаказную технику вручную не добавляли. Добавлен Spitfire Mk Vb (Float) как награда события Wings Over Water.",
-    "en": "Manual review on 2026-06-19: latest public version 2.55.1.165. Heavy Cavalry has not released yet; pre-order vehicles were not added manually. Spitfire Mk Vb (Float) was added as a Wings Over Water event reward."
+    "ru": "Крупное обновление Heavy Cavalry вышло. В v3.82 вручную внесены BR-правки Hawk 209 и Tornado IDS MLU (RET.8), добавлена поддержка отдельных BR авиации для совместных боёв и исправлено отображение таких BR в ростере/дереве. Полный импорт новой техники ожидает стабильного обновления внешнего API.",
+    "en": "Heavy Cavalry has been released. v3.82 manually includes BR corrections for Hawk 209 and Tornado IDS MLU (RET.8), adds support for separate aircraft BR values in combined battles, and fixes how such BR hints are shown in the roster/tree. Full new-vehicle import is pending a stable external API update."
   },
   "data_verified_game_version": "2.55.1.165",
   "version_check_mode": "official_changelog_version_only"

@@ -28418,6 +28418,403 @@
       "reason": "not found",
       "logic_version": "v2.62-status-tree-unit-supplements",
       "updated_at": "2026-05-27T11:04:42+00:00"
+    },
+    "f_101c": {
+      "status": "ok",
+      "links": [
+        "f-80",
+        "f-104a"
+      ],
+      "reason": "f_101c; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:46+00:00"
+    },
+    "germ_hummel": {
+      "status": "ok",
+      "links": [
+        "germ_pzkpfw_38t_Marder_III_ausf_H",
+        "germ_stug_III_ausf_G"
+      ],
+      "reason": "germ_hummel; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:46+00:00"
+    },
+    "jp_ujishima_msc": {
+      "status": "ok",
+      "links": [
+        "jp_type5_escortboat",
+        "jp_karotei_type2"
+      ],
+      "reason": "jp_ujishima_msc; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:46+00:00"
+    },
+    "fr_leopard_1a5be": {
+      "status": "ok",
+      "links": [
+        "fr_amx_30_b2",
+        "fr_msc"
+      ],
+      "reason": "fr_leopard_1a5be; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:46+00:00"
+    },
+    "it_mas_classe429": {
+      "status": "ok",
+      "links": [
+        "it_mas_classe500_3",
+        "it_ms53_2a"
+      ],
+      "reason": "it_mas_classe429; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:46+00:00"
+    },
+    "germ_kanonenboot_k4_lorelei": {
+      "status": "ok",
+      "links": [
+        "germ_destroyer_class1939_t22"
+      ],
+      "reason": "germ_kanonenboot_k4_lorelei; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:46+00:00"
+    },
+    "it_palmaria": {
+      "status": "ok",
+      "links": [
+        "it_m109g",
+        "it_m113a1_tow"
+      ],
+      "reason": "it_palmaria; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "l_39za_art_thailand": {
+      "status": "ok",
+      "links": [
+        "ki-83",
+        "f-84g_thailand"
+      ],
+      "reason": "l_39za_art_thailand; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "cn_pgz_88": {
+      "status": "ok",
+      "links": [
+        "cn_zsl_92",
+        "cn_wz_305"
+      ],
+      "reason": "cn_pgz_88; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "il_hunter_afv": {
+      "status": "ok",
+      "links": [
+        "il_m113a1_tow",
+        "il_namer_rcws_30"
+      ],
+      "reason": "il_hunter_afv; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "jp_leopard_2ri": {
+      "status": "ok",
+      "links": [
+        "jp_type_10_prototype"
+      ],
+      "reason": "jp_leopard_2ri; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "jh_7a2": {
+      "status": "ok",
+      "links": [
+        "jh_7a"
+      ],
+      "reason": "jh_7a2; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "f_16a_block_72v_china": {
+      "status": "ok",
+      "links": [
+        "mirage_2000_5ei"
+      ],
+      "reason": "f_16a_block_72v_china; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "m_346fa": {
+      "status": "ok",
+      "links": [
+        "tornado_adv"
+      ],
+      "reason": "m_346fa; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "mi_24d_german": {
+      "status": "ok",
+      "links": [
+        "mi_8tb",
+        "mi_24p_german"
+      ],
+      "reason": "mi_24d_german; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "mig_29kr_9_41r": {
+      "status": "ok",
+      "links": [
+        "yak_141"
+      ],
+      "reason": "mig_29kr_9_41r; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "sw_nomads": {
+      "status": "ok",
+      "links": [
+        "sw_eldenhet_98"
+      ],
+      "reason": "sw_nomads; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "uk_egret_class": {
+      "status": "ok",
+      "links": [
+        "uk_minelayer_abdiel_class_abdiel"
+      ],
+      "reason": "uk_egret_class; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "uk_m1a2_sep3_abrams": {
+      "status": "ok",
+      "links": [
+        "uk_vickers_mk7"
+      ],
+      "reason": "uk_m1a2_sep3_abrams; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "us_destroyer_gridley": {
+      "status": "ok",
+      "links": [
+        "us_destroyer_clemson_barker",
+        "us_destroyer_bagley_class_bagley"
+      ],
+      "reason": "us_destroyer_gridley; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "us_battleship_north_carolina_class": {
+      "status": "ok",
+      "links": [
+        "us_battleship_colorado_class_colorado"
+      ],
+      "reason": "us_battleship_north_carolina_class; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "us_m1a2_sep2_abrams_trophy": {
+      "status": "ok",
+      "links": [
+        "us_m1a2_sep_abrams",
+        "us_m1a2_sep3_abrams"
+      ],
+      "reason": "us_m1a2_sep2_abrams_trophy; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "us_m1a2_sep3_abrams": {
+      "status": "ok",
+      "links": [
+        "us_m1a2_sep2_abrams_trophy"
+      ],
+      "reason": "us_m1a2_sep3_abrams; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "ussr_cruiser_chervona_ukraina": {
+      "status": "ok",
+      "links": [
+        "ussr_cruiser_krasnyi_krim",
+        "ussr_cruiser_kirov"
+      ],
+      "reason": "ussr_cruiser_chervona_ukraina; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "welkin_fmk1": {
+      "status": "ok",
+      "links": [
+        "brigand_b1",
+        "hornet_mk3"
+      ],
+      "reason": "welkin_fmk1; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "ussr_t_90m_arena_m": {
+      "status": "ok",
+      "links": [
+        "ussr_t_90m_2020"
+      ],
+      "reason": "ussr_t_90m_arena_m; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "washington_b1": {
+      "status": "ok",
+      "links": [
+        "lincoln_b2",
+        "canberra_bmk2"
+      ],
+      "reason": "washington_b1; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "ia_58a_pucara": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "yak_130_early": {
+      "status": "ok",
+      "links": [
+        "il_28",
+        "su_25"
+      ],
+      "reason": "yak_130_early; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "cn_mbt2000_sm": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "j_22m1a": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "fr_battleship_richelieu_class_jean_bart": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "germ_cruiser_admiral_scheer": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "fw_189c_0": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "jp_type_90b_sm": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "f_14d": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "f_16am_block_20_mlu_netherlands": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "fr_trident_class_glaive_p671": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "germ_schutzenpanzer_puma_vjtf_mod": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "spitfire_mk5b_float": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "mig_21_2000_iaf": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:47+00:00"
+    },
+    "uk_73ft_vosper_type2": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:48+00:00"
+    },
+    "uk_m1a1_aim_abrams": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:48+00:00"
+    },
+    "uk_challenger_2_megatron_sm": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:48+00:00"
+    },
+    "saab_ajs37_early": {
+      "status": "ok",
+      "links": [
+        "saab_aj37",
+        "f_16a_block_10_norway"
+      ],
+      "reason": "saab_ajs37; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:48+00:00"
+    },
+    "us_m60a1_rise_mod": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-06-25T07:27:48+00:00"
     }
   }
 }

@@ -749,15 +749,24 @@ def br_values(row: dict[str, Any]) -> dict[str, float]:
     if isinstance(row.get("br"), dict):
         b = row["br"]
         ab = to_float(b.get("ab")); rb = to_float(b.get("rb")); sb = to_float(b.get("sb"))
+        grb = to_float(b.get("ground_rb") or b.get("realistic_ground_br"))
+        gsb = to_float(b.get("ground_sb") or b.get("simulator_ground_br"))
     else:
         ab = to_float(first_defined(row, ["br_ab", "brAB", "arcade_br", "arcadeBattleRating", "battle_rating_arcade", "arcade"], None))
         rb = to_float(first_defined(row, ["br_rb", "brRB", "realistic_br", "realisticBattleRating", "battle_rating_realistic", "realistic"], None))
         sb = to_float(first_defined(row, ["br_sb", "brSB", "simulator_br", "simulatorBattleRating", "battle_rating_simulator", "simulator"], None))
+        grb = to_float(first_defined(row, ["ground_rb", "realistic_ground_br", "battle_rating_realistic_ground"], None))
+        gsb = to_float(first_defined(row, ["ground_sb", "simulator_ground_br", "battle_rating_simulator_ground"], None))
     any_br = to_float(first_defined(row, ["br", "battle_rating", "battleRating"], None))
     ab = ab if ab is not None else any_br if any_br is not None else 1.0
     rb = rb if rb is not None else ab
     sb = sb if sb is not None else rb
-    return {"ab": ab, "rb": rb, "sb": sb}
+    out = {"ab": ab, "rb": rb, "sb": sb}
+    if grb is not None:
+        out["ground_rb"] = grb
+    if gsb is not None:
+        out["ground_sb"] = gsb
+    return out
 
 
 

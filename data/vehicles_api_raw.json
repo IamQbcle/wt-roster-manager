@@ -7782,7 +7782,7 @@
     "country": "china",
     "vehicle_type": "light_tank",
     "vehicle_sub_types": [],
-    "era": 2,
+    "era": 3,
     "arcade_br": 3.7,
     "realistic_br": 4,
     "realistic_ground_br": 4,
@@ -7794,13 +7794,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 32000,
-    "req_exp": 14000,
+    "value": 47000,
+    "req_exp": 18000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.52,
-    "sl_mul_realistic": 0.68,
-    "sl_mul_simulator": 0.95,
-    "exp_mul": 1.3,
+    "sl_mul_arcade": 0.6,
+    "sl_mul_realistic": 0.79,
+    "sl_mul_simulator": 1.1,
+    "exp_mul": 1.36,
     "crew_total_count": 5,
     "visibility": 0,
     "hull_armor": [],
@@ -8439,6 +8439,47 @@
     }
   },
   {
+    "identifier": "cn_mbt2000_sm",
+    "country": "china",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 11.7,
+    "realistic_br": 11.7,
+    "realistic_ground_br": 11.7,
+    "simulator_br": 11.7,
+    "simulator_ground_br": 11.7,
+    "event": null,
+    "release_date": "2026-06-03",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 300000,
+    "ge_cost": 9450,
+    "sl_mul_arcade": 3,
+    "sl_mul_realistic": 3.75,
+    "sl_mul_simulator": 3.98,
+    "exp_mul": 2.38,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [
+      100,
+      50,
+      45
+    ],
+    "turret_armor": [
+      220,
+      50,
+      20
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/cn_mbt2000_sm.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/cn_mbt2000_sm.png"
+    }
+  },
+  {
     "identifier": "cn_object_122tm",
     "country": "china",
     "vehicle_type": "medium_tank",
@@ -8682,6 +8723,39 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/cn_pgz_625_fb10.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/cn_pgz_625_fb10.png"
+    }
+  },
+  {
+    "identifier": "cn_pgz_88",
+    "country": "china",
+    "vehicle_type": "spaa",
+    "vehicle_sub_types": [],
+    "era": 5,
+    "arcade_br": 7.7,
+    "realistic_br": 7.7,
+    "realistic_ground_br": 7.7,
+    "simulator_br": 7.7,
+    "simulator_ground_br": 7.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 270000,
+    "req_exp": 95000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.4,
+    "sl_mul_realistic": 1.76,
+    "sl_mul_simulator": 2.36,
+    "exp_mul": 1.9,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/cn_pgz_88.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/cn_pgz_88.png"
     }
   },
   {
@@ -12183,7 +12257,8 @@
     "country": "usa",
     "vehicle_type": "assault",
     "vehicle_sub_types": [
-      "strike_aircraft"
+      "strike_aircraft",
+      "naval_aircraft"
     ],
     "era": 4,
     "arcade_br": 6.7,
@@ -13601,7 +13676,7 @@
     "event": null,
     "release_date": "2022-12-20",
     "is_premium": 1,
-    "is_pack": 1,
+    "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
     "value": 0,
@@ -16964,6 +17039,41 @@
     }
   },
   {
+    "identifier": "f_101c",
+    "country": "usa",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "jet_fighter"
+    ],
+    "era": 6,
+    "arcade_br": 9.3,
+    "realistic_br": 9.3,
+    "realistic_ground_br": 9.3,
+    "simulator_br": 9.3,
+    "simulator_ground_br": 9.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 380000,
+    "req_exp": 135000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.19,
+    "sl_mul_realistic": 3.8,
+    "sl_mul_simulator": 6,
+    "exp_mul": 2.08,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/f_101c.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/f_101c.png"
+    }
+  },
+  {
     "identifier": "f_106a_1972",
     "country": "usa",
     "vehicle_type": "fighter",
@@ -17244,6 +17354,42 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/f_14b.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/f_14b.png"
+    }
+  },
+  {
+    "identifier": "f_14d",
+    "country": "usa",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "jet_fighter",
+      "naval_aircraft"
+    ],
+    "era": 8,
+    "arcade_br": 12.7,
+    "realistic_br": 13,
+    "realistic_ground_br": 12,
+    "simulator_br": 12.7,
+    "simulator_ground_br": 12.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 350000,
+    "ge_cost": 10160,
+    "sl_mul_arcade": 1.9,
+    "sl_mul_realistic": 6.43,
+    "sl_mul_simulator": 10.08,
+    "exp_mul": 2.62,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/f_14d.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/f_14d.png"
     }
   },
   {
@@ -17947,6 +18093,41 @@
     }
   },
   {
+    "identifier": "f_16a_block_72v_china",
+    "country": "china",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "jet_fighter"
+    ],
+    "era": 9,
+    "arcade_br": 14.3,
+    "realistic_br": 14.3,
+    "realistic_ground_br": 13,
+    "simulator_br": 14.3,
+    "simulator_ground_br": 14.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1080000,
+    "req_exp": 400000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.96,
+    "sl_mul_realistic": 3.24,
+    "sl_mul_simulator": 5.08,
+    "exp_mul": 2.68,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/f_16a_block_72v_china.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/f_16a_block_72v_china.png"
+    }
+  },
+  {
     "identifier": "f_16aj",
     "country": "japan",
     "vehicle_type": "fighter",
@@ -18014,6 +18195,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/f_16am_block_15_mlu_belgium.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/f_16am_block_15_mlu_belgium.png"
+    }
+  },
+  {
+    "identifier": "f_16am_block_20_mlu_netherlands",
+    "country": "france",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "jet_fighter"
+    ],
+    "era": 8,
+    "arcade_br": 13.7,
+    "realistic_br": 13.7,
+    "realistic_ground_br": 12.7,
+    "simulator_br": 13.7,
+    "simulator_ground_br": 13.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 350000,
+    "ge_cost": 10160,
+    "sl_mul_arcade": 1.9,
+    "sl_mul_realistic": 6.43,
+    "sl_mul_simulator": 10.08,
+    "exp_mul": 2.62,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/f_16am_block_20_mlu_netherlands.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/f_16am_block_20_mlu_netherlands.png"
     }
   },
   {
@@ -21502,8 +21718,8 @@
     "event": "battlepass_season22",
     "release_date": "2026-01-21",
     "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
+    "is_pack": 0,
+    "on_marketplace": 1,
     "squadron_vehicle": 0,
     "value": 0,
     "req_exp": 63000,
@@ -22125,6 +22341,39 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/fr_battleship_richelieu_class_clemenceau.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/fr_battleship_richelieu_class_clemenceau.png"
+    }
+  },
+  {
+    "identifier": "fr_battleship_richelieu_class_jean_bart",
+    "country": "france",
+    "vehicle_type": "battleship",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 8.3,
+    "realistic_br": 8.3,
+    "realistic_ground_br": 8.3,
+    "simulator_br": 8.3,
+    "simulator_ground_br": 8.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 400000,
+    "ge_cost": 9270,
+    "sl_mul_arcade": 9,
+    "sl_mul_realistic": 12,
+    "sl_mul_simulator": 1,
+    "exp_mul": 2.32,
+    "crew_total_count": 1569,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/fr_battleship_richelieu_class_jean_bart.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/fr_battleship_richelieu_class_jean_bart.png"
     }
   },
   {
@@ -23913,6 +24162,47 @@
     }
   },
   {
+    "identifier": "fr_leopard_1a5be",
+    "country": "france",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 6,
+    "arcade_br": 9.3,
+    "realistic_br": 9.3,
+    "realistic_ground_br": 9.3,
+    "simulator_br": 9.3,
+    "simulator_ground_br": 9.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 520000,
+    "req_exp": 190000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.52,
+    "sl_mul_realistic": 1.96,
+    "sl_mul_simulator": 2.31,
+    "exp_mul": 2.2,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      79,
+      35,
+      30
+    ],
+    "turret_armor": [
+      80,
+      41.5,
+      30
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/fr_leopard_1a5be.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/fr_leopard_1a5be.png"
+    }
+  },
+  {
     "identifier": "fr_leopard_2a4nl",
     "country": "france",
     "vehicle_type": "medium_tank",
@@ -25669,6 +25959,41 @@
     }
   },
   {
+    "identifier": "fr_trident_class_glaive_p671",
+    "country": "france",
+    "vehicle_type": "boat",
+    "vehicle_sub_types": [
+      "gun_boat"
+    ],
+    "era": 3,
+    "arcade_br": 2.7,
+    "realistic_br": 2.7,
+    "realistic_ground_br": 2.7,
+    "simulator_br": 2.7,
+    "simulator_ground_br": 2.7,
+    "event": "2026_05_ship",
+    "release_date": "2026-05-20",
+    "is_premium": 1,
+    "is_pack": 0,
+    "on_marketplace": 1,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 26000,
+    "ge_cost": 1450,
+    "sl_mul_arcade": 1.67,
+    "sl_mul_realistic": 2.5,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.42,
+    "crew_total_count": 19,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/fr_trident_class_glaive_p671.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/fr_trident_class_glaive_p671.png"
+    }
+  },
+  {
     "identifier": "fr_type40k_vedette",
     "country": "france",
     "vehicle_type": "boat",
@@ -26854,6 +27179,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/fw-190f-8.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/fw-190f-8.png"
+    }
+  },
+  {
+    "identifier": "fw_189c_0",
+    "country": "germany",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 1,
+    "arcade_br": 2.3,
+    "realistic_br": 2.7,
+    "realistic_ground_br": 2.7,
+    "simulator_br": 2.3,
+    "simulator_ground_br": 2.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 4000,
+    "ge_cost": 400,
+    "sl_mul_arcade": 0.27,
+    "sl_mul_realistic": 0.53,
+    "sl_mul_simulator": 1.22,
+    "exp_mul": 1,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/fw_189c_0.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/fw_189c_0.png"
     }
   },
   {
@@ -28381,6 +28741,39 @@
     }
   },
   {
+    "identifier": "germ_cruiser_admiral_scheer",
+    "country": "germany",
+    "vehicle_type": "heavy_cruiser",
+    "vehicle_sub_types": [],
+    "era": 4,
+    "arcade_br": 5.7,
+    "realistic_br": 5.7,
+    "realistic_ground_br": 5.7,
+    "simulator_br": 5.7,
+    "simulator_ground_br": 5.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 90000,
+    "ge_cost": 7480,
+    "sl_mul_arcade": 9,
+    "sl_mul_realistic": 12,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.84,
+    "crew_total_count": 1070,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/germ_cruiser_admiral_scheer.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/germ_cruiser_admiral_scheer.png"
+    }
+  },
+  {
     "identifier": "germ_cruiser_elbing",
     "country": "germany",
     "vehicle_type": "light_cruiser",
@@ -29024,11 +29417,11 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 700,
-    "req_exp": 2900,
+    "value": 2100,
+    "req_exp": 4000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.32,
-    "sl_mul_realistic": 0.55,
+    "sl_mul_arcade": 0.5,
+    "sl_mul_realistic": 0.86,
     "sl_mul_simulator": 1,
     "exp_mul": 1,
     "crew_total_count": 206,
@@ -29960,6 +30353,47 @@
     }
   },
   {
+    "identifier": "germ_hummel",
+    "country": "germany",
+    "vehicle_type": "tank_destroyer",
+    "vehicle_sub_types": [],
+    "era": 2,
+    "arcade_br": 3.7,
+    "realistic_br": 3.7,
+    "realistic_ground_br": 3.7,
+    "simulator_br": 3.7,
+    "simulator_ground_br": 3.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 22000,
+    "req_exp": 11000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.5,
+    "sl_mul_realistic": 0.76,
+    "sl_mul_simulator": 0.97,
+    "exp_mul": 1.24,
+    "crew_total_count": 6,
+    "visibility": 0,
+    "hull_armor": [
+      30,
+      20,
+      20
+    ],
+    "turret_armor": [
+      10,
+      10,
+      10
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/germ_hummel.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/germ_hummel.png"
+    }
+  },
+  {
     "identifier": "germ_infanterie_kampfpanzer_churchill",
     "country": "germany",
     "vehicle_type": "heavy_tank",
@@ -30240,6 +30674,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/germ_kanonenboot_k2.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/germ_kanonenboot_k2.png"
+    }
+  },
+  {
+    "identifier": "germ_kanonenboot_k4_lorelei",
+    "country": "germany",
+    "vehicle_type": "destroyer",
+    "vehicle_sub_types": [
+      "frigate"
+    ],
+    "era": 1,
+    "arcade_br": 3.7,
+    "realistic_br": 3.7,
+    "realistic_ground_br": 3.7,
+    "simulator_br": 3.7,
+    "simulator_ground_br": 3.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 700,
+    "req_exp": 2900,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.32,
+    "sl_mul_realistic": 0.55,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1,
+    "crew_total_count": 180,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/germ_kanonenboot_k4_lorelei.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/germ_kanonenboot_k4_lorelei.png"
     }
   },
   {
@@ -31409,13 +31878,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 76000,
-    "req_exp": 13000,
+    "value": 47000,
+    "req_exp": 18000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.79,
-    "sl_mul_realistic": 1.19,
-    "sl_mul_simulator": 1.52,
-    "exp_mul": 1.42,
+    "sl_mul_arcade": 0.69,
+    "sl_mul_realistic": 1.05,
+    "sl_mul_simulator": 1.34,
+    "exp_mul": 1.36,
     "crew_total_count": 5,
     "visibility": 0,
     "hull_armor": [
@@ -31450,13 +31919,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 47000,
-    "req_exp": 18000,
+    "value": 76000,
+    "req_exp": 13000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.69,
-    "sl_mul_realistic": 1.05,
-    "sl_mul_simulator": 1.34,
-    "exp_mul": 1.36,
+    "sl_mul_arcade": 0.79,
+    "sl_mul_realistic": 1.19,
+    "sl_mul_simulator": 1.52,
+    "exp_mul": 1.42,
     "crew_total_count": 6,
     "visibility": 0,
     "hull_armor": [
@@ -35026,6 +35495,47 @@
     }
   },
   {
+    "identifier": "germ_schutzenpanzer_puma_vjtf_mod",
+    "country": "germany",
+    "vehicle_type": "light_tank",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 11,
+    "realistic_br": 11,
+    "realistic_ground_br": 11,
+    "simulator_br": 11,
+    "simulator_ground_br": 11,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 350000,
+    "ge_cost": 9620,
+    "sl_mul_arcade": 2.55,
+    "sl_mul_realistic": 3.24,
+    "sl_mul_simulator": 4.11,
+    "exp_mul": 2.44,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [
+      32,
+      15,
+      11
+    ],
+    "turret_armor": [
+      25,
+      15,
+      15
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/germ_schutzenpanzer_puma_vjtf_mod.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/germ_schutzenpanzer_puma_vjtf_mod.png"
+    }
+  },
+  {
     "identifier": "germ_sdkfz_221_s_pz_b_41",
     "country": "germany",
     "vehicle_type": "light_tank",
@@ -35714,7 +36224,7 @@
     "is_premium": 0,
     "is_pack": 0,
     "on_marketplace": 0,
-    "squadron_vehicle": 0,
+    "squadron_vehicle": 1,
     "value": 640000,
     "req_exp": 460000,
     "ge_cost": 0,
@@ -37979,11 +38489,11 @@
       "strike_aircraft"
     ],
     "era": 7,
-    "arcade_br": 10.7,
-    "realistic_br": 10.3,
-    "realistic_ground_br": 10.3,
-    "simulator_br": 10.3,
-    "simulator_ground_br": 10.3,
+    "arcade_br": 11,
+    "realistic_br": 10.7,
+    "realistic_ground_br": 10.7,
+    "simulator_br": 10.7,
+    "simulator_ground_br": 10.7,
     "event": null,
     "release_date": "2025-12-16",
     "is_premium": 1,
@@ -39012,13 +39522,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 155000,
-    "req_exp": 46000,
+    "value": 185000,
+    "req_exp": 54000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.85,
-    "sl_mul_realistic": 1.95,
-    "sl_mul_simulator": 4.08,
-    "exp_mul": 1.6,
+    "sl_mul_arcade": 0.93,
+    "sl_mul_realistic": 2.13,
+    "sl_mul_simulator": 4.44,
+    "exp_mul": 1.66,
     "crew_total_count": 1,
     "visibility": 0,
     "hull_armor": [],
@@ -40750,6 +41260,41 @@
     }
   },
   {
+    "identifier": "ia_58a_pucara",
+    "country": "germany",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 4,
+    "arcade_br": 4.3,
+    "realistic_br": 4.3,
+    "realistic_ground_br": 4.3,
+    "simulator_br": 4.3,
+    "simulator_ground_br": 4.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 46000,
+    "ge_cost": 2980,
+    "sl_mul_arcade": 1.71,
+    "sl_mul_realistic": 3.08,
+    "sl_mul_simulator": 8.33,
+    "exp_mul": 1.6,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/ia_58a_pucara.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/ia_58a_pucara.png"
+    }
+  },
+  {
     "identifier": "iar_316b",
     "country": "france",
     "vehicle_type": "utility_helicopter",
@@ -41779,13 +42324,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 830000,
-    "req_exp": 300000,
+    "value": 950000,
+    "req_exp": 350000,
     "ge_cost": 0,
-    "sl_mul_arcade": 1.31,
-    "sl_mul_realistic": 1.59,
-    "sl_mul_simulator": 1.99,
-    "exp_mul": 2.38,
+    "sl_mul_arcade": 1.35,
+    "sl_mul_realistic": 1.63,
+    "sl_mul_simulator": 2.04,
+    "exp_mul": 2.44,
     "crew_total_count": 3,
     "visibility": 0,
     "hull_armor": [],
@@ -41793,6 +42338,39 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/il_eitan.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/il_eitan.png"
+    }
+  },
+  {
+    "identifier": "il_hunter_afv",
+    "country": "israel",
+    "vehicle_type": "light_tank",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 10.7,
+    "realistic_br": 10.7,
+    "realistic_ground_br": 10.7,
+    "simulator_br": 10.7,
+    "simulator_ground_br": 10.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 710000,
+    "req_exp": 260000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.36,
+    "sl_mul_realistic": 1.62,
+    "sl_mul_simulator": 2.14,
+    "exp_mul": 2.32,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/il_hunter_afv.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/il_hunter_afv.png"
     }
   },
   {
@@ -43208,13 +43786,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 710000,
-    "req_exp": 260000,
+    "value": 830000,
+    "req_exp": 300000,
     "ge_cost": 0,
-    "sl_mul_arcade": 1.38,
-    "sl_mul_realistic": 1.72,
-    "sl_mul_simulator": 2.21,
-    "exp_mul": 2.32,
+    "sl_mul_arcade": 1.42,
+    "sl_mul_realistic": 1.77,
+    "sl_mul_simulator": 2.27,
+    "exp_mul": 2.38,
     "crew_total_count": 3,
     "visibility": 0,
     "hull_armor": [],
@@ -47869,6 +48447,41 @@
     }
   },
   {
+    "identifier": "it_mas_classe429",
+    "country": "italy",
+    "vehicle_type": "boat",
+    "vehicle_sub_types": [
+      "gun_boat"
+    ],
+    "era": 1,
+    "arcade_br": 1.3,
+    "realistic_br": 1.3,
+    "realistic_ground_br": 1.3,
+    "simulator_br": 1.3,
+    "simulator_ground_br": 1.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 2100,
+    "req_exp": 4000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.22,
+    "sl_mul_realistic": 0.26,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1,
+    "crew_total_count": 11,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/it_mas_classe429.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/it_mas_classe429.png"
+    }
+  },
+  {
     "identifier": "it_mas_classe500_3",
     "country": "italy",
     "vehicle_type": "boat",
@@ -48829,6 +49442,47 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/it_p_40.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/it_p_40.png"
+    }
+  },
+  {
+    "identifier": "it_palmaria",
+    "country": "italy",
+    "vehicle_type": "tank_destroyer",
+    "vehicle_sub_types": [],
+    "era": 4,
+    "arcade_br": 6.7,
+    "realistic_br": 6.7,
+    "realistic_ground_br": 6.7,
+    "simulator_br": 6.7,
+    "simulator_ground_br": 6.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 210000,
+    "req_exp": 71000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.29,
+    "sl_mul_realistic": 2.02,
+    "sl_mul_simulator": 2.47,
+    "exp_mul": 1.78,
+    "crew_total_count": 5,
+    "visibility": 0,
+    "hull_armor": [
+      32,
+      32,
+      32
+    ],
+    "turret_armor": [
+      32,
+      32,
+      32
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/it_palmaria.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/it_palmaria.png"
     }
   },
   {
@@ -50674,6 +51328,41 @@
     }
   },
   {
+    "identifier": "j_22m1a",
+    "country": "ussr",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 6,
+    "arcade_br": 9,
+    "realistic_br": 9,
+    "realistic_ground_br": 10.7,
+    "simulator_br": 9,
+    "simulator_ground_br": 9,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 190000,
+    "ge_cost": 9090,
+    "sl_mul_arcade": 2.35,
+    "sl_mul_realistic": 6.86,
+    "sl_mul_simulator": 12,
+    "exp_mul": 2.26,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/j_22m1a.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/j_22m1a.png"
+    }
+  },
+  {
     "identifier": "j_7_mk2",
     "country": "china",
     "vehicle_type": "fighter",
@@ -50724,7 +51413,7 @@
     "event": null,
     "release_date": "2022-12-20",
     "is_premium": 1,
-    "is_pack": 1,
+    "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
     "value": 0,
@@ -51161,6 +51850,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/jh_7a.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jh_7a.png"
+    }
+  },
+  {
+    "identifier": "jh_7a2",
+    "country": "china",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 8,
+    "arcade_br": 13,
+    "realistic_br": 13,
+    "realistic_ground_br": 12.3,
+    "simulator_br": 13,
+    "simulator_ground_br": 13,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 860000,
+    "req_exp": 320000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.78,
+    "sl_mul_realistic": 2.89,
+    "sl_mul_simulator": 5.26,
+    "exp_mul": 2.56,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/jh_7a2.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jh_7a2.png"
     }
   },
   {
@@ -53380,13 +54104,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 6300,
-    "req_exp": 5900,
+    "value": 2100,
+    "req_exp": 4000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.22,
-    "sl_mul_realistic": 0.34,
-    "sl_mul_simulator": 0.42,
-    "exp_mul": 1.06,
+    "sl_mul_arcade": 0.15,
+    "sl_mul_realistic": 0.24,
+    "sl_mul_simulator": 0.29,
+    "exp_mul": 1,
     "crew_total_count": 7,
     "visibility": 0,
     "hull_armor": [
@@ -53626,6 +54350,47 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_kusen_tei_13_1944.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_kusen_tei_13_1944.png"
+    }
+  },
+  {
+    "identifier": "jp_leopard_2ri",
+    "country": "japan",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 8,
+    "arcade_br": 12.7,
+    "realistic_br": 12.7,
+    "realistic_ground_br": 12.7,
+    "simulator_br": 12.7,
+    "simulator_ground_br": 12.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1080000,
+    "req_exp": 400000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.5,
+    "sl_mul_realistic": 1.88,
+    "sl_mul_simulator": 2,
+    "exp_mul": 2.5,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      80,
+      65,
+      25
+    ],
+    "turret_armor": [
+      80,
+      80,
+      25
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_leopard_2ri.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_leopard_2ri.png"
     }
   },
   {
@@ -55350,13 +56115,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 2100,
-    "req_exp": 4000,
+    "value": 6300,
+    "req_exp": 5900,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.15,
-    "sl_mul_realistic": 0.24,
-    "sl_mul_simulator": 0.29,
-    "exp_mul": 1,
+    "sl_mul_arcade": 0.22,
+    "sl_mul_realistic": 0.34,
+    "sl_mul_simulator": 0.42,
+    "exp_mul": 1.06,
     "crew_total_count": 4,
     "visibility": 0,
     "hull_armor": [],
@@ -56676,6 +57441,39 @@
     }
   },
   {
+    "identifier": "jp_type_90b_sm",
+    "country": "japan",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 11.7,
+    "realistic_br": 11.7,
+    "realistic_ground_br": 11.7,
+    "simulator_br": 11.7,
+    "simulator_ground_br": 11.7,
+    "event": null,
+    "release_date": "2026-06-03",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 350000,
+    "ge_cost": 9620,
+    "sl_mul_arcade": 3.03,
+    "sl_mul_realistic": 3.88,
+    "sl_mul_simulator": 4.34,
+    "exp_mul": 2.44,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_type_90b_sm.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_type_90b_sm.png"
+    }
+  },
+  {
     "identifier": "jp_type_93",
     "country": "japan",
     "vehicle_type": "spaa",
@@ -57189,6 +57987,42 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_type_t1_1941.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_type_t1_1941.png"
+    }
+  },
+  {
+    "identifier": "jp_ujishima_msc",
+    "country": "japan",
+    "vehicle_type": "heavy_boat",
+    "vehicle_sub_types": [
+      "submarine_chaser",
+      "boat"
+    ],
+    "era": 2,
+    "arcade_br": 1.7,
+    "realistic_br": 1.7,
+    "realistic_ground_br": 1.7,
+    "simulator_br": 1.7,
+    "simulator_ground_br": 1.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 10000,
+    "req_exp": 7900,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.36,
+    "sl_mul_realistic": 0.44,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.12,
+    "crew_total_count": 32,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_ujishima_msc.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_ujishima_msc.png"
     }
   },
   {
@@ -59969,6 +60803,41 @@
     }
   },
   {
+    "identifier": "l_39za_art_thailand",
+    "country": "japan",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 5,
+    "arcade_br": 6.7,
+    "realistic_br": 6.7,
+    "realistic_ground_br": 7.3,
+    "simulator_br": 6.3,
+    "simulator_ground_br": 6.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 240000,
+    "req_exp": 82000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.09,
+    "sl_mul_realistic": 2.3,
+    "sl_mul_simulator": 6,
+    "exp_mul": 1.84,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/l_39za_art_thailand.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/l_39za_art_thailand.png"
+    }
+  },
+  {
     "identifier": "la-11",
     "country": "ussr",
     "vehicle_type": "fighter",
@@ -61084,6 +61953,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/lynx_ah_mk1.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/lynx_ah_mk1.png"
+    }
+  },
+  {
+    "identifier": "m_346fa",
+    "country": "italy",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 8,
+    "arcade_br": 13,
+    "realistic_br": 13,
+    "realistic_ground_br": 12.3,
+    "simulator_br": 13,
+    "simulator_ground_br": 13,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 780000,
+    "req_exp": 290000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.77,
+    "sl_mul_realistic": 2.86,
+    "sl_mul_simulator": 5.22,
+    "exp_mul": 2.5,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/m_346fa.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/m_346fa.png"
     }
   },
   {
@@ -63500,6 +64404,39 @@
     }
   },
   {
+    "identifier": "mi_24d_german",
+    "country": "germany",
+    "vehicle_type": "attack_helicopter",
+    "vehicle_sub_types": [],
+    "era": 6,
+    "arcade_br": 9.3,
+    "realistic_br": 8.7,
+    "realistic_ground_br": 8.7,
+    "simulator_br": 9.3,
+    "simulator_ground_br": 9.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 980000,
+    "req_exp": 360000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1,
+    "sl_mul_realistic": 3,
+    "sl_mul_simulator": 4.3,
+    "exp_mul": 2.08,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/mi_24d_german.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/mi_24d_german.png"
+    }
+  },
+  {
     "identifier": "mi_24d_hungary",
     "country": "italy",
     "vehicle_type": "attack_helicopter",
@@ -64854,7 +65791,7 @@
     "event": null,
     "release_date": "2024-06-19",
     "is_premium": 1,
-    "is_pack": 1,
+    "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
     "value": 0,
@@ -65256,6 +66193,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/mig-9_ussr.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/mig-9_ussr.png"
+    }
+  },
+  {
+    "identifier": "mig_21_2000_iaf",
+    "country": "israel",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "jet_fighter"
+    ],
+    "era": 7,
+    "arcade_br": 12,
+    "realistic_br": 12,
+    "realistic_ground_br": 11.3,
+    "simulator_br": 12,
+    "simulator_ground_br": 12,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 1,
+    "value": 750000,
+    "req_exp": 550000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.93,
+    "sl_mul_realistic": 3.13,
+    "sl_mul_simulator": 4.91,
+    "exp_mul": 2.44,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/mig_21_2000_iaf.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/mig_21_2000_iaf.png"
     }
   },
   {
@@ -65851,6 +66823,42 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/mig_29_9_13.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/mig_29_9_13.png"
+    }
+  },
+  {
+    "identifier": "mig_29kr_9_41r",
+    "country": "ussr",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "jet_fighter",
+      "naval_aircraft"
+    ],
+    "era": 8,
+    "arcade_br": 13.7,
+    "realistic_br": 13.7,
+    "realistic_ground_br": 12.3,
+    "simulator_br": 13.7,
+    "simulator_ground_br": 13.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 940000,
+    "req_exp": 350000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.95,
+    "sl_mul_realistic": 3.21,
+    "sl_mul_simulator": 5.04,
+    "exp_mul": 2.62,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/mig_29kr_9_41r.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/mig_29kr_9_41r.png"
     }
   },
   {
@@ -66952,8 +67960,8 @@
     "event": "battlepass_season22",
     "release_date": "2026-01-21",
     "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
+    "is_pack": 0,
+    "on_marketplace": 1,
     "squadron_vehicle": 0,
     "value": 0,
     "req_exp": 33000,
@@ -72929,6 +73937,41 @@
     }
   },
   {
+    "identifier": "saab_ajs37_early",
+    "country": "sweden",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 7,
+    "arcade_br": 11,
+    "realistic_br": 11,
+    "realistic_ground_br": 10.7,
+    "simulator_br": 11.3,
+    "simulator_ground_br": 11.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 260000,
+    "ge_cost": 9620,
+    "sl_mul_arcade": 1.63,
+    "sl_mul_realistic": 6.52,
+    "sl_mul_simulator": 12,
+    "exp_mul": 2.44,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/saab_ajs37_early.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/saab_ajs37_early.png"
+    }
+  },
+  {
     "identifier": "saab_b17a",
     "country": "sweden",
     "vehicle_type": "bomber",
@@ -76592,6 +77635,41 @@
     }
   },
   {
+    "identifier": "spitfire_mk5b_float",
+    "country": "britain",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "hydroplane"
+    ],
+    "era": 2,
+    "arcade_br": 3.3,
+    "realistic_br": 3.3,
+    "realistic_ground_br": 3.3,
+    "simulator_br": 3.3,
+    "simulator_ground_br": 3.3,
+    "event": "2026_06_air",
+    "release_date": "2026-06-03",
+    "is_premium": 1,
+    "is_pack": 0,
+    "on_marketplace": 1,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 11000,
+    "ge_cost": 1000,
+    "sl_mul_arcade": 0.8,
+    "sl_mul_realistic": 1.93,
+    "sl_mul_simulator": 3.93,
+    "exp_mul": 1.24,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/spitfire_mk5b_float.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/spitfire_mk5b_float.png"
+    }
+  },
+  {
     "identifier": "spitfire_mk5b_italy",
     "country": "italy",
     "vehicle_type": "fighter",
@@ -79851,6 +80929,47 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/sw_nasams_launcher.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/sw_nasams_launcher.png"
+    }
+  },
+  {
+    "identifier": "sw_nomads",
+    "country": "sweden",
+    "vehicle_type": "spaa",
+    "vehicle_sub_types": [],
+    "era": 8,
+    "arcade_br": 12,
+    "realistic_br": 12,
+    "realistic_ground_br": 12,
+    "simulator_br": 12,
+    "simulator_ground_br": 12,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1120000,
+    "req_exp": 210000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.6,
+    "sl_mul_realistic": 2.1,
+    "sl_mul_simulator": 2.04,
+    "exp_mul": 2.62,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [
+      38,
+      44,
+      38
+    ],
+    "turret_armor": [
+      10,
+      10,
+      10
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/sw_nomads.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/sw_nomads.png"
     }
   },
   {
@@ -83531,7 +84650,7 @@
     "era": 7,
     "arcade_br": 11.7,
     "realistic_br": 11.7,
-    "realistic_ground_br": 11.3,
+    "realistic_ground_br": 11.7,
     "simulator_br": 11.7,
     "simulator_ground_br": 11.7,
     "event": null,
@@ -84637,6 +85756,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_73ft_vosper_type1.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_73ft_vosper_type1.png"
+    }
+  },
+  {
+    "identifier": "uk_73ft_vosper_type2",
+    "country": "britain",
+    "vehicle_type": "boat",
+    "vehicle_sub_types": [
+      "torpedo_boat"
+    ],
+    "era": 2,
+    "arcade_br": 2,
+    "realistic_br": 2,
+    "realistic_ground_br": 2,
+    "simulator_br": 2,
+    "simulator_ground_br": 2,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 9200,
+    "ge_cost": 850,
+    "sl_mul_arcade": 0.91,
+    "sl_mul_realistic": 1.33,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.18,
+    "crew_total_count": 15,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_73ft_vosper_type2.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_73ft_vosper_type2.png"
     }
   },
   {
@@ -87360,6 +88514,47 @@
     }
   },
   {
+    "identifier": "uk_challenger_2_megatron_sm",
+    "country": "britain",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 11.7,
+    "realistic_br": 11.7,
+    "realistic_ground_br": 11.7,
+    "simulator_br": 11.7,
+    "simulator_ground_br": 11.7,
+    "event": null,
+    "release_date": "2026-06-03",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 350000,
+    "ge_cost": 9620,
+    "sl_mul_arcade": 3.07,
+    "sl_mul_realistic": 3.84,
+    "sl_mul_simulator": 4.08,
+    "exp_mul": 2.44,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      130,
+      38,
+      50
+    ],
+    "turret_armor": [
+      270,
+      80,
+      58
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_challenger_2_megatron_sm.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_challenger_2_megatron_sm.png"
+    }
+  },
+  {
     "identifier": "uk_challenger_2_tes",
     "country": "britain",
     "vehicle_type": "medium_tank",
@@ -89738,6 +90933,39 @@
     }
   },
   {
+    "identifier": "uk_egret_class",
+    "country": "britain",
+    "vehicle_type": "destroyer",
+    "vehicle_sub_types": [],
+    "era": 2,
+    "arcade_br": 4.3,
+    "realistic_br": 4.3,
+    "realistic_ground_br": 4.3,
+    "simulator_br": 4.3,
+    "simulator_ground_br": 4.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 16000,
+    "req_exp": 9000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.05,
+    "sl_mul_realistic": 2.42,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.18,
+    "crew_total_count": 184,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_egret_class.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_egret_class.png"
+    }
+  },
+  {
     "identifier": "uk_eland_90_mk_7",
     "country": "britain",
     "vehicle_type": "light_tank",
@@ -91016,6 +92244,88 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_m109a1.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_m109a1.png"
+    }
+  },
+  {
+    "identifier": "uk_m1a1_aim_abrams",
+    "country": "britain",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 12,
+    "realistic_br": 12,
+    "realistic_ground_br": 12,
+    "simulator_br": 12,
+    "simulator_ground_br": 12,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 1,
+    "value": 1000000,
+    "req_exp": 550000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.49,
+    "sl_mul_realistic": 1.86,
+    "sl_mul_simulator": 1.98,
+    "exp_mul": 2.44,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      133,
+      60,
+      32
+    ],
+    "turret_armor": [
+      139,
+      120,
+      13
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_m1a1_aim_abrams.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_m1a1_aim_abrams.png"
+    }
+  },
+  {
+    "identifier": "uk_m1a2_sep3_abrams",
+    "country": "britain",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 8,
+    "arcade_br": 12.7,
+    "realistic_br": 12.7,
+    "realistic_ground_br": 12.7,
+    "simulator_br": 12.7,
+    "simulator_ground_br": 12.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1120000,
+    "req_exp": 420000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.53,
+    "sl_mul_realistic": 1.91,
+    "sl_mul_simulator": 2.03,
+    "exp_mul": 2.62,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      133,
+      60,
+      32
+    ],
+    "turret_armor": [
+      139,
+      120,
+      13
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_m1a2_sep3_abrams.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_m1a2_sep3_abrams.png"
     }
   },
   {
@@ -93783,6 +95093,39 @@
     }
   },
   {
+    "identifier": "us_battleship_north_carolina_class",
+    "country": "usa",
+    "vehicle_type": "battleship",
+    "vehicle_sub_types": [],
+    "era": 7,
+    "arcade_br": 8.3,
+    "realistic_br": 8.3,
+    "realistic_ground_br": 8.3,
+    "simulator_br": 8.3,
+    "simulator_ground_br": 8.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1150000,
+    "req_exp": 400000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 4.5,
+    "sl_mul_realistic": 6,
+    "sl_mul_simulator": 1,
+    "exp_mul": 2.32,
+    "crew_total_count": 2351,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_battleship_north_carolina_class.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_battleship_north_carolina_class.png"
+    }
+  },
+  {
     "identifier": "us_battleship_north_dakota",
     "country": "usa",
     "vehicle_type": "battleship",
@@ -94668,13 +96011,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 8700,
-    "req_exp": 7000,
+    "value": 16000,
+    "req_exp": 9000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.88,
-    "sl_mul_realistic": 1.73,
+    "sl_mul_arcade": 1.15,
+    "sl_mul_realistic": 2.25,
     "sl_mul_simulator": 1,
-    "exp_mul": 1.12,
+    "exp_mul": 1.18,
     "crew_total_count": 158,
     "visibility": 0,
     "hull_armor": [],
@@ -95111,6 +96454,39 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_destroyer_gearing_frank_knox.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_destroyer_gearing_frank_knox.png"
+    }
+  },
+  {
+    "identifier": "us_destroyer_gridley",
+    "country": "usa",
+    "vehicle_type": "destroyer",
+    "vehicle_sub_types": [],
+    "era": 2,
+    "arcade_br": 4,
+    "realistic_br": 4,
+    "realistic_ground_br": 4,
+    "simulator_br": 4,
+    "simulator_ground_br": 4,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 8700,
+    "req_exp": 7000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.88,
+    "sl_mul_realistic": 1.73,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.12,
+    "crew_total_count": 253,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_destroyer_gridley.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_destroyer_gridley.png"
     }
   },
   {
@@ -96860,7 +98236,7 @@
     "sl_mul_realistic": 1.68,
     "sl_mul_simulator": 2.17,
     "exp_mul": 2.26,
-    "crew_total_count": 3,
+    "crew_total_count": 2,
     "visibility": 0,
     "hull_armor": [
       38,
@@ -97436,7 +98812,7 @@
     "country": "usa",
     "vehicle_type": "medium_tank",
     "vehicle_sub_types": [],
-    "era": 8,
+    "era": 7,
     "arcade_br": 12,
     "realistic_br": 12,
     "realistic_ground_br": 12,
@@ -97448,13 +98824,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 1080000,
-    "req_exp": 400000,
+    "value": 950000,
+    "req_exp": 350000,
     "ge_cost": 0,
-    "sl_mul_arcade": 1.55,
-    "sl_mul_realistic": 1.94,
-    "sl_mul_simulator": 2.06,
-    "exp_mul": 2.5,
+    "sl_mul_arcade": 1.54,
+    "sl_mul_realistic": 1.92,
+    "sl_mul_simulator": 2.04,
+    "exp_mul": 2.44,
     "crew_total_count": 4,
     "visibility": 0,
     "hull_armor": [
@@ -97490,7 +98866,7 @@
     "on_marketplace": 0,
     "squadron_vehicle": 0,
     "value": 1100000,
-    "req_exp": 410000,
+    "req_exp": 200000,
     "ge_cost": 0,
     "sl_mul_arcade": 1.57,
     "sl_mul_realistic": 1.96,
@@ -97514,6 +98890,88 @@
     }
   },
   {
+    "identifier": "us_m1a2_sep2_abrams_trophy",
+    "country": "usa",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 8,
+    "arcade_br": 12.7,
+    "realistic_br": 12.7,
+    "realistic_ground_br": 12.7,
+    "simulator_br": 12.7,
+    "simulator_ground_br": 12.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1100000,
+    "req_exp": 410000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.52,
+    "sl_mul_realistic": 1.89,
+    "sl_mul_simulator": 2.02,
+    "exp_mul": 2.56,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      133,
+      60,
+      32
+    ],
+    "turret_armor": [
+      139,
+      120,
+      13
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_m1a2_sep2_abrams_trophy.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_m1a2_sep2_abrams_trophy.png"
+    }
+  },
+  {
+    "identifier": "us_m1a2_sep3_abrams",
+    "country": "usa",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 8,
+    "arcade_br": 12.7,
+    "realistic_br": 12.7,
+    "realistic_ground_br": 12.7,
+    "simulator_br": 12.7,
+    "simulator_ground_br": 12.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1120000,
+    "req_exp": 420000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.53,
+    "sl_mul_realistic": 1.91,
+    "sl_mul_simulator": 2.03,
+    "exp_mul": 2.62,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      133,
+      60,
+      32
+    ],
+    "turret_armor": [
+      139,
+      120,
+      13
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_m1a2_sep3_abrams.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_m1a2_sep3_abrams.png"
+    }
+  },
+  {
     "identifier": "us_m1a2_sep_abrams",
     "country": "usa",
     "vehicle_type": "medium_tank",
@@ -97530,13 +98988,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 1100000,
-    "req_exp": 200000,
+    "value": 1080000,
+    "req_exp": 400000,
     "ge_cost": 0,
-    "sl_mul_arcade": 1.57,
-    "sl_mul_realistic": 1.96,
-    "sl_mul_simulator": 2.08,
-    "exp_mul": 2.56,
+    "sl_mul_arcade": 1.55,
+    "sl_mul_realistic": 1.94,
+    "sl_mul_simulator": 2.06,
+    "exp_mul": 2.5,
     "crew_total_count": 4,
     "visibility": 0,
     "hull_armor": [
@@ -97641,7 +99099,7 @@
     "country": "usa",
     "vehicle_type": "light_tank",
     "vehicle_sub_types": [],
-    "era": 2,
+    "era": 3,
     "arcade_br": 3.7,
     "realistic_br": 4,
     "realistic_ground_br": 4,
@@ -97653,13 +99111,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 22000,
-    "req_exp": 11000,
+    "value": 47000,
+    "req_exp": 18000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.43,
-    "sl_mul_realistic": 0.57,
-    "sl_mul_simulator": 0.79,
-    "exp_mul": 1.24,
+    "sl_mul_arcade": 0.6,
+    "sl_mul_realistic": 0.79,
+    "sl_mul_simulator": 1.1,
+    "exp_mul": 1.36,
     "crew_total_count": 5,
     "visibility": 0,
     "hull_armor": [],
@@ -97674,7 +99132,7 @@
     "country": "usa",
     "vehicle_type": "light_tank",
     "vehicle_sub_types": [],
-    "era": 2,
+    "era": 3,
     "arcade_br": 3.7,
     "realistic_br": 4,
     "realistic_ground_br": 4,
@@ -97686,13 +99144,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 32000,
-    "req_exp": 14000,
+    "value": 47000,
+    "req_exp": 18000,
     "ge_cost": 0,
-    "sl_mul_arcade": 0.52,
-    "sl_mul_realistic": 0.68,
-    "sl_mul_simulator": 0.95,
-    "exp_mul": 1.3,
+    "sl_mul_arcade": 0.6,
+    "sl_mul_realistic": 0.79,
+    "sl_mul_simulator": 1.1,
+    "exp_mul": 1.36,
     "crew_total_count": 5,
     "visibility": 0,
     "hull_armor": [],
@@ -99577,6 +101035,47 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_m60a1.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_m60a1.png"
+    }
+  },
+  {
+    "identifier": "us_m60a1_rise_mod",
+    "country": "usa",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 6,
+    "arcade_br": 8.7,
+    "realistic_br": 8.7,
+    "realistic_ground_br": 8.7,
+    "simulator_br": 8.7,
+    "simulator_ground_br": 8.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 160000,
+    "ge_cost": 8730,
+    "sl_mul_arcade": 2.81,
+    "sl_mul_realistic": 3.9,
+    "sl_mul_simulator": 4.67,
+    "exp_mul": 2.14,
+    "crew_total_count": 4,
+    "visibility": 0,
+    "hull_armor": [
+      108,
+      70,
+      40
+    ],
+    "turret_armor": [
+      230,
+      49,
+      57
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_m60a1_rise_mod.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_m60a1_rise_mod.png"
     }
   },
   {
@@ -104383,6 +105882,39 @@
     }
   },
   {
+    "identifier": "ussr_cruiser_chervona_ukraina",
+    "country": "ussr",
+    "vehicle_type": "light_cruiser",
+    "vehicle_sub_types": [],
+    "era": 3,
+    "arcade_br": 5.3,
+    "realistic_br": 5.3,
+    "realistic_ground_br": 5.3,
+    "simulator_br": 5.3,
+    "simulator_ground_br": 5.3,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 87000,
+    "req_exp": 25000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 3.62,
+    "sl_mul_realistic": 6,
+    "sl_mul_simulator": 1,
+    "exp_mul": 1.54,
+    "crew_total_count": 830,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/ussr_cruiser_chervona_ukraina.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/ussr_cruiser_chervona_ukraina.png"
+    }
+  },
+  {
     "identifier": "ussr_cruiser_kerch",
     "country": "ussr",
     "vehicle_type": "light_cruiser",
@@ -104498,13 +106030,13 @@
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
-    "value": 87000,
-    "req_exp": 25000,
+    "value": 70000,
+    "req_exp": 21000,
     "ge_cost": 0,
-    "sl_mul_arcade": 3.62,
+    "sl_mul_arcade": 3.26,
     "sl_mul_realistic": 6,
     "sl_mul_simulator": 1,
-    "exp_mul": 1.54,
+    "exp_mul": 1.48,
     "crew_total_count": 852,
     "visibility": 0,
     "hull_armor": [],
@@ -106660,11 +108192,11 @@
     "realistic_ground_br": 3.7,
     "simulator_br": 3.7,
     "simulator_ground_br": 3.7,
-    "event": null,
+    "event": "2026_05_tank",
     "release_date": "2026-05-06",
     "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
+    "is_pack": 0,
+    "on_marketplace": 1,
     "squadron_vehicle": 0,
     "value": 0,
     "req_exp": 11000,
@@ -108707,7 +110239,7 @@
     "is_premium": 0,
     "is_pack": 0,
     "on_marketplace": 0,
-    "squadron_vehicle": 0,
+    "squadron_vehicle": 1,
     "value": 700000,
     "req_exp": 520000,
     "ge_cost": 0,
@@ -112027,6 +113559,47 @@
     }
   },
   {
+    "identifier": "ussr_t_90m_arena_m",
+    "country": "ussr",
+    "vehicle_type": "medium_tank",
+    "vehicle_sub_types": [],
+    "era": 8,
+    "arcade_br": 12.7,
+    "realistic_br": 12.7,
+    "realistic_ground_br": 12.7,
+    "simulator_br": 12.7,
+    "simulator_ground_br": 12.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 1120000,
+    "req_exp": 420000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.53,
+    "sl_mul_realistic": 1.91,
+    "sl_mul_simulator": 2.03,
+    "exp_mul": 2.62,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [
+      176,
+      80,
+      40
+    ],
+    "turret_armor": [
+      235,
+      70,
+      50
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/ussr_t_90m_arena_m.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/ussr_t_90m_arena_m.png"
+    }
+  },
+  {
     "identifier": "ussr_to_55",
     "country": "ussr",
     "vehicle_type": "medium_tank",
@@ -113200,6 +114773,41 @@
     }
   },
   {
+    "identifier": "washington_b1",
+    "country": "britain",
+    "vehicle_type": "bomber",
+    "vehicle_sub_types": [
+      "longrange_bomber"
+    ],
+    "era": 5,
+    "arcade_br": 6.7,
+    "realistic_br": 7,
+    "realistic_ground_br": 6.7,
+    "simulator_br": 7,
+    "simulator_ground_br": 7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 270000,
+    "req_exp": 95000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.12,
+    "sl_mul_realistic": 3.77,
+    "sl_mul_simulator": 6,
+    "exp_mul": 1.9,
+    "crew_total_count": 7,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/washington_b1.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/washington_b1.png"
+    }
+  },
+  {
     "identifier": "wasp_has_mk1",
     "country": "britain",
     "vehicle_type": "utility_helicopter",
@@ -113230,6 +114838,41 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/wasp_has_mk1.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/wasp_has_mk1.png"
+    }
+  },
+  {
+    "identifier": "welkin_fmk1",
+    "country": "britain",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [
+      "aa_fighter"
+    ],
+    "era": 4,
+    "arcade_br": 4.7,
+    "realistic_br": 4.7,
+    "realistic_ground_br": 4.7,
+    "simulator_br": 4.7,
+    "simulator_ground_br": 4.7,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 155000,
+    "req_exp": 46000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 0.8,
+    "sl_mul_realistic": 1.96,
+    "sl_mul_simulator": 4.11,
+    "exp_mul": 1.6,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/welkin_fmk1.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/welkin_fmk1.png"
     }
   },
   {
@@ -114869,6 +116512,41 @@
     }
   },
   {
+    "identifier": "yak_130_early",
+    "country": "ussr",
+    "vehicle_type": "assault",
+    "vehicle_sub_types": [
+      "strike_aircraft"
+    ],
+    "era": 6,
+    "arcade_br": 9,
+    "realistic_br": 9,
+    "realistic_ground_br": 9.3,
+    "simulator_br": 9,
+    "simulator_ground_br": 9,
+    "event": null,
+    "release_date": "2026-06-24",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 480000,
+    "req_exp": 170000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.15,
+    "sl_mul_realistic": 3.34,
+    "sl_mul_simulator": 6,
+    "exp_mul": 2.2,
+    "crew_total_count": 2,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/yak_130_early.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/yak_130_early.png"
+    }
+  },
+  {
     "identifier": "yak_141",
     "country": "ussr",
     "vehicle_type": "fighter",
@@ -115459,26 +117137,6 @@
     "simulator_ground_br": 11.7,
     "event": "youtube_cup_2019",
     "is_premium": 0,
-    "is_pack": 0,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "visibility": "wiki_supplement"
-  },
-  {
-    "identifier": "spitfire_mk5b_float",
-    "country": "britain",
-    "vehicle_type": "fighter",
-    "vehicle_sub_types": [
-      "hydroplane"
-    ],
-    "era": 2,
-    "arcade_br": 3.3,
-    "realistic_br": 3.3,
-    "realistic_ground_br": 3.3,
-    "simulator_br": 3.3,
-    "simulator_ground_br": 3.3,
-    "event": "wings_over_water_2026",
-    "is_premium": 1,
     "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,

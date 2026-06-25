@@ -32,4 +32,4 @@ if errorlevel 1 (
 )
 start "WT Roster Local Server" /min cmd /c "%PYTHON_CMD% scripts\local_server.py"
 timeout /t 2 >nul
-start "" "http://127.0.0.1:8765/index.html?v=3.80"
+start "" "http://127.0.0.1:8765/index.html?v=3.82"

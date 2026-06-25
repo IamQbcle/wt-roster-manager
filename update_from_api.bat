@@ -37,7 +37,7 @@ if errorlevel 1 goto fail
 echo SUCCESS
 echo.
 echo After a major War Thunder patch, open the Changes tab and review the patch-status warning.
-echo If the data is still OK, use "Считать данные актуальными" in the app.
+echo If the data is still OK, use the "Mark as reviewed / current" button in the Changes tab.
 pause
 exit /b 0
 :fail

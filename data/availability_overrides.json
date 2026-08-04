@@ -228,8 +228,8 @@
     },
     "su-7bmk": {
       "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
-      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
+      "en": "Temporary event sale; normally hidden / owner-only."
     },
     "sb_2m_103u": {
       "availability": "unavailable",
@@ -297,14 +297,14 @@
       "en": "Снята из магазина; иногда временно возвращается на событиях."
     },
     "mig-21_sps_k": {
-      "availability": "unavailable",
-      "ru": "Скрытая премиумная техника; временно возвращается по акциям.",
-      "en": "Скрытая премиумная техника; временно возвращается по акциям."
+      "availability": "available",
+      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции.",
+      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
     },
     "su_22m4_de_wtd61": {
-      "availability": "unavailable",
-      "ru": "Платформенно/пакетно ограниченная техника; для обычного ПК-пула считается недоступной.",
-      "en": "Платформенно/пакетно ограниченная техника; для обычного ПК-пула считается недоступной."
+      "availability": "available",
+      "ru": "Возвращён в продажу после акции к первому полёту Су-17; доступен по полной цене после акции.",
+      "en": "Returned to sale after the Su-17 first-flight event; available at full price after the sale."
     },
     "ussr_g5_rct": {
       "availability": "unavailable",
@@ -492,9 +492,9 @@
       "en": "Owner-only / hidden from the regular client tree. Event/Market aircraft absent from current client tree; only if owned/market-acquired."
     },
     "mig-21_bison": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Pack/premium absent from current client tree; owner-only by default.",
-      "en": "Owner-only / hidden from the regular client tree. Pack/premium absent from current client tree; owner-only by default."
+      "availability": "available",
+      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции.",
+      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
     },
     "uk_gay_class_archer": {
       "availability": "unavailable",
@@ -528,8 +528,8 @@
     },
     "jp_destroyer_kiyoshimo": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
+      "en": "Temporary event sale; normally hidden / owner-only."
     },
     "jp_destroyer_suzutsuki": {
       "availability": "unavailable",
@@ -563,8 +563,8 @@
     },
     "j2m4_kai": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
+      "en": "Temporary event sale; normally hidden / owner-only."
     },
     "t2_early": {
       "availability": "unavailable",
@@ -583,8 +583,8 @@
     },
     "cn_type_69_2a": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Chinese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Chinese premium absent from current client tree."
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
+      "en": "Temporary event sale; normally hidden / owner-only."
     },
     "cn_t_62": {
       "availability": "unavailable",
@@ -597,9 +597,9 @@
       "en": "Owner-only / hidden from the regular client tree. Hidden/old Chinese pack absent from current client tree."
     },
     "j_7d": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Pack/premium absent from current client tree; owner-only by default.",
-      "en": "Owner-only / hidden from the regular client tree. Pack/premium absent from current client tree; owner-only by default."
+      "availability": "available",
+      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции.",
+      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
     },
     "ro_57_quadriarma": {
       "availability": "unavailable",
@@ -708,8 +708,8 @@
     },
     "so_4050_vautour_2n": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree."
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
+      "en": "Temporary event sale; normally hidden / owner-only."
     },
     "f-84f_iaf": {
       "availability": "unavailable",
@@ -743,8 +743,8 @@
     },
     "saab_j35a": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish premium aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish premium aircraft absent from current client tree."
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
+      "en": "Temporary event sale; normally hidden / owner-only."
     },
     "spitfire_lf_mk9c_cw_greece": {
       "availability": "unavailable",
@@ -784,6 +784,61 @@
       "ru": "Награда события Wings Over Water 2026; событие завершилось 15 июня 2026. Считать доступной только владельцам, пока не подтверждён Market/повторное получение.",
       "en": "Wings Over Water 2026 event reward; the event ended on 15 June 2026. Treat as owner-only unless Market or another acquisition method is confirmed.",
       "source": "War Thunder official event news 2026-06-12 + Wiki unit page"
+    },
+    "av_8b_na": {
+      "availability": "available",
+      "ru": "Возвращён в продажу к 250-летию США; остаётся доступен по полной цене после акции.",
+      "en": "Returned to sale for the USA 250th anniversary; remains available at full price after the sale."
+    },
+    "germ_pzh_2000": {
+      "availability": "unavailable",
+      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев.",
+      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+    },
+    "jh_7a_prototype": {
+      "availability": "unavailable",
+      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев.",
+      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+    },
+    "jp_type_74_red_star": {
+      "availability": "unavailable",
+      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев.",
+      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+    },
+    "us_m26e1_pershing": {
+      "availability": "unavailable",
+      "ru": "Временная продажа к 250-летию США; в постоянной базе считается недоступной / только у владельцев.",
+      "en": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
+    },
+    "f-86f-35": {
+      "availability": "unavailable",
+      "ru": "Временная продажа к 250-летию США; в постоянной базе считается недоступной / только у владельцев.",
+      "en": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
+    },
+    "us_xm1_chrysler": {
+      "availability": "unavailable",
+      "ru": "Временный набор к 250-летию США; в постоянной базе считается недоступным / только у владельцев.",
+      "en": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
+    },
+    "us_destroyer_fletcher_bennion": {
+      "availability": "unavailable",
+      "ru": "Временный набор к 250-летию США; в постоянной базе считается недоступным / только у владельцев.",
+      "en": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
+    },
+    "uk_fv107_scimitar_mk2": {
+      "availability": "unavailable",
+      "ru": "Событийная техника «Удар скимитара»; в стабильной базе считается недоступной / только у владельцев.",
+      "en": "Strike of the Scimitar event reward; treated as owner-only/unavailable in the stable database."
+    },
+    "it_fiat_6616_ub": {
+      "availability": "unavailable",
+      "ru": "Техника 24 сезона Боевого пропуска; в стабильной базе считается недоступной / только у владельцев.",
+      "en": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
+    },
+    "iar_81c_db_605": {
+      "availability": "unavailable",
+      "ru": "Техника 24 сезона Боевого пропуска; в стабильной базе считается недоступной / только у владельцев.",
+      "en": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
     }
   },
   "heuristic": {

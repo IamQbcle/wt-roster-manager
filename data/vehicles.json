@@ -4240,8 +4240,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VIII",
-    "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Pack/premium absent from current client tree; owner-only by default."
+    "availability": "available",
+    "availability_reason": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
   },
   {
     "id": "cf_188a_canada",
@@ -9773,6 +9773,35 @@
     "availability": "available"
   },
   {
+    "id": "uk_fv107_scimitar_mk2",
+    "name": "Scimitar Mk.2",
+    "nameRu": "Scimitar Mk.2",
+    "nameEn": "Scimitar Mk.2",
+    "nation": "Britain",
+    "class": "ground",
+    "className": "Наземка",
+    "role": "ЛТ",
+    "roleEn": "Light tank",
+    "rank": "VI",
+    "br": {
+      "ab": 8.3,
+      "rb": 8.3,
+      "sb": 8.3,
+      "ground_rb": 8.3,
+      "ground_sb": 8.3
+    },
+    "status": "Акционная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/uk_fv107_scimitar_mk2.png",
+    "search": "uk_fv107_scimitar_mk2 Scimitar Mk.2 Scimitar Mk.2 Fv107-Scimitar-Mk2 Britain ground ЛТ Light tank light_tank",
+    "treePlacement": "left",
+    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
+    "treeRank": "VI",
+    "availability": "unavailable",
+    "availability_reason": "Strike of the Scimitar event reward; treated as owner-only/unavailable in the stable database."
+  },
+  {
     "id": "uk_chieftain_marksman",
     "name": "Chieftain Marksman",
     "nameRu": "Chieftain Marksman",
@@ -10896,34 +10925,6 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "available"
-  },
-  {
-    "id": "uk_challenger_2_megatron_sm",
-    "name": "Challenger 2 OES (Великобритания)",
-    "nameRu": "Challenger 2 OES (Великобритания)",
-    "nameEn": "Challenger 2 OES (Great Britain)",
-    "nation": "Britain",
-    "class": "ground",
-    "className": "Наземка",
-    "role": "СТ",
-    "roleEn": "Medium tank",
-    "rank": "VII",
-    "br": {
-      "ab": 11.7,
-      "rb": 11.7,
-      "sb": 11.7,
-      "ground_rb": 11.7,
-      "ground_sb": 11.7
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/uk_challenger_2_megatron_sm.png",
-    "search": "uk_challenger_2_megatron_sm Challenger 2 OES (Великобритания) Challenger 2 OES (Great Britain) Challenger-2-Megatron-Sm Britain ground СТ Medium tank medium_tank",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
     "availability": "available"
   },
   {
@@ -13307,8 +13308,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Pack/premium absent from current client tree; owner-only by default."
+    "availability": "available",
+    "availability_reason": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
   },
   {
     "id": "j_7e",
@@ -13560,7 +13561,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VIII",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
   },
   {
     "id": "j_8f",
@@ -15437,7 +15439,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "V",
     "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Hidden/old Chinese premium absent from current client tree."
+    "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
   {
     "id": "cn_wz_305",
@@ -16308,34 +16310,6 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-marker+raw-api-ordinary-guard+raw-api-ordinary-guard",
     "treeRank": "VII",
-    "availability": "available"
-  },
-  {
-    "id": "cn_mbt2000_sm",
-    "name": "MBT-2000 (Китай)",
-    "nameRu": "MBT-2000 (Китай)",
-    "nameEn": "MBT-2000 (China)",
-    "nation": "China",
-    "class": "ground",
-    "className": "Наземка",
-    "role": "СТ",
-    "roleEn": "Medium tank",
-    "rank": "VII",
-    "br": {
-      "ab": 11.7,
-      "rb": 11.7,
-      "sb": 11.7,
-      "ground_rb": 11.7,
-      "ground_sb": 11.7
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/cn_mbt2000_sm.png",
-    "search": "cn_mbt2000_sm MBT-2000 (Китай) MBT-2000 (China) Mbt2000-Sm China ground СТ Medium tank medium_tank",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
     "availability": "available"
   },
   {
@@ -19367,7 +19341,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
     "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree."
+    "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
   {
     "id": "so_4050_vautour_2a_iaf",
@@ -26061,34 +26035,6 @@
     "availability": "available"
   },
   {
-    "id": "ia_58a_pucara",
-    "name": "IA-58A-Pucara",
-    "nameRu": "IA-58A-Pucara",
-    "nameEn": "IA-58A-Pucara",
-    "nation": "Germany",
-    "class": "air",
-    "className": "Авиация",
-    "role": "Штурмовик",
-    "roleEn": "Attacker",
-    "rank": "I",
-    "br": {
-      "ab": 4.3,
-      "rb": 4.3,
-      "sb": 4.3,
-      "ground_rb": 4.3,
-      "ground_sb": 4.3
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API",
-    "url": "",
-    "local_image": "assets/vehicles/slots/ia_58a_pucara.png",
-    "search": "ia_58a_pucara IA-58A-Pucara IA-58A-Pucara Ia-58a-Pucara Germany air Штурмовик Attacker assault",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
-    "availability": "available"
-  },
-  {
     "id": "hs-129b-3",
     "name": "Hs 129 B-3",
     "nameRu": "Hs 129 B-3",
@@ -27970,6 +27916,34 @@
     "availability": "available"
   },
   {
+    "id": "ia_58a_pucara",
+    "name": "IA.58A Pucara",
+    "nameRu": "IA.58A Pucara",
+    "nameEn": "IA.58A Pucara",
+    "nation": "Germany",
+    "class": "air",
+    "className": "Авиация",
+    "role": "Штурмовик",
+    "roleEn": "Attacker",
+    "rank": "IV",
+    "br": {
+      "ab": 4.3,
+      "rb": 4.3,
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
+    },
+    "status": "Пакетная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/ia_58a_pucara.png",
+    "search": "ia_58a_pucara IA.58A Pucara IA.58A Pucara Ia-58a-Pucara Germany air Штурмовик Attacker assault",
+    "treePlacement": "right",
+    "treePlacementSource": "raw-api-status",
+    "treeRank": "IV",
+    "availability": "available"
+  },
+  {
     "id": "bf-109z",
     "name": "Bf 109 Z-1",
     "nameRu": "Bf 109 Z-1",
@@ -29510,8 +29484,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
-    "availability": "unavailable",
-    "availability_reason": "Скрытая премиумная техника; временно возвращается по акциям."
+    "availability": "available",
+    "availability_reason": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
   },
   {
     "id": "mig-19s",
@@ -29904,8 +29878,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "unavailable",
-    "availability_reason": "Платформенно/пакетно ограниченная техника; для обычного ПК-пула считается недоступной."
+    "availability": "available",
+    "availability_reason": "Returned to sale after the Su-17 first-flight event; available at full price after the sale."
   },
   {
     "id": "su_22um3k",
@@ -36063,7 +36037,8 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "V",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
   },
   {
     "id": "germ_raketenjagdpanzer_2",
@@ -37219,34 +37194,6 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "available"
-  },
-  {
-    "id": "germ_leopard_2a4m_can_sm",
-    "name": "Leopard 2A4M (Германия)",
-    "nameRu": "Leopard 2A4M (Германия)",
-    "nameEn": "Leopard 2A4M (Germany)",
-    "nation": "Germany",
-    "class": "ground",
-    "className": "Наземка",
-    "role": "СТ",
-    "roleEn": "Medium tank",
-    "rank": "VII",
-    "br": {
-      "ab": 12.0,
-      "rb": 12.0,
-      "sb": 12.0,
-      "ground_rb": 12.0,
-      "ground_sb": 12.0
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/germ_leopard_2a4m_can_sm.png",
-    "search": "germ_leopard_2a4m_can_sm Leopard 2A4M (Германия) Leopard 2A4M (Germany) Leopard-2a4m-Can-Sm Germany ground СТ Medium tank medium_tank",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
     "availability": "available"
   },
   {
@@ -41846,6 +41793,35 @@
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "II",
     "availability": "available"
+  },
+  {
+    "id": "iar_81c_db_605",
+    "name": "IAR-81C (DB 605)",
+    "nameRu": "IAR-81C (DB 605)",
+    "nameEn": "Iar 81c Db 605",
+    "nation": "Italy",
+    "class": "air",
+    "className": "Авиация",
+    "role": "Истреб.",
+    "roleEn": "Fighter",
+    "rank": "III",
+    "br": {
+      "ab": 3.0,
+      "rb": 3.0,
+      "sb": 3.0,
+      "ground_rb": 2.7,
+      "ground_sb": 2.7
+    },
+    "status": "Пакетная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/iar_81c_db_605.png",
+    "search": "iar_81c_db_605 IAR-81C (DB 605) Iar 81c Db 605 Iar-81c-Db-605 Italy air Истреб. Fighter fighter",
+    "treePlacement": "right",
+    "treePlacementSource": "raw-api-status",
+    "treeRank": "III",
+    "availability": "unavailable",
+    "availability_reason": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
   },
   {
     "id": "me_210ca_1_hungary",
@@ -46905,6 +46881,35 @@
     "availability": "available"
   },
   {
+    "id": "it_fiat_6616_ub",
+    "name": "FIAT 6616UB",
+    "nameRu": "FIAT 6616UB",
+    "nameEn": "FIAT 6616UB",
+    "nation": "Italy",
+    "class": "ground",
+    "className": "Наземка",
+    "role": "ЛТ",
+    "roleEn": "Light tank",
+    "rank": "IV",
+    "br": {
+      "ab": 6.0,
+      "rb": 6.0,
+      "sb": 6.0,
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
+    },
+    "status": "Пакетная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/it_fiat_6616_ub.png",
+    "search": "it_fiat_6616_ub FIAT 6616UB FIAT 6616UB Fiat-6616-Ub Italy ground ЛТ Light tank light_tank",
+    "treePlacement": "right",
+    "treePlacementSource": "raw-api-status",
+    "treeRank": "IV",
+    "availability": "unavailable",
+    "availability_reason": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
+  },
+  {
     "id": "it_leopard_bofors",
     "name": "Leopard 40/70",
     "nameRu": "Leopard 40/70",
@@ -51024,7 +51029,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "IV",
     "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
+    "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
   {
     "id": "j2m5_30mm",
@@ -51936,9 +51941,9 @@
     "roleEn": "Attacker",
     "rank": "VII",
     "br": {
-      "ab": 10.7,
-      "rb": 10.3,
-      "sb": 10.3,
+      "ab": 11.0,
+      "rb": 10.7,
+      "sb": 10.7,
       "ground_rb": 10.7,
       "ground_sb": 10.7
     },
@@ -52989,7 +52994,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "III",
     "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
+    "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
   {
     "id": "jp_cruiser_yubari",
@@ -56470,7 +56475,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "V",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
   },
   {
     "id": "jp_type_87",
@@ -57002,34 +57008,6 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "available"
-  },
-  {
-    "id": "jp_type_90b_sm",
-    "name": "Type 90 (B) (Япония)",
-    "nameRu": "Type 90 (B) (Япония)",
-    "nameEn": "Type 90b Sm",
-    "nation": "Japan",
-    "class": "ground",
-    "className": "Наземка",
-    "role": "СТ",
-    "roleEn": "Medium tank",
-    "rank": "VII",
-    "br": {
-      "ab": 11.7,
-      "rb": 11.7,
-      "sb": 11.7,
-      "ground_rb": 11.7,
-      "ground_sb": 11.7
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/jp_type_90b_sm.png",
-    "search": "jp_type_90b_sm Type 90 (B) (Япония) Type 90b Sm Type-90b-Sm Japan ground СТ Medium tank medium_tank",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
     "availability": "available"
   },
   {
@@ -58963,7 +58941,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
     "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Hidden/old Swedish premium aircraft absent from current client tree."
+    "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
   {
     "id": "hunter_f50_sweden",
@@ -66006,7 +65984,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "V",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
   },
   {
     "id": "f2h-2",
@@ -67208,7 +67187,7 @@
       "ground_rb": 11.7,
       "ground_sb": 11.7
     },
-    "status": "Пакетная",
+    "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
     "url": "",
     "local_image": "assets/vehicles/slots/av_8b_na.png",
@@ -67216,7 +67195,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "available"
+    "availability": "available",
+    "availability_reason": "Returned to sale for the USA 250th anniversary; remains available at full price after the sale."
   },
   {
     "id": "f_111a",
@@ -68254,7 +68234,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "III",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
   },
   {
     "id": "us_destroyer_fletcher_cowell",
@@ -72467,7 +72448,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "IV",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
   },
   {
     "id": "us_m50_ontos",
@@ -73616,7 +73598,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
   },
   {
     "id": "us_xm_803",
@@ -74437,34 +74420,6 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-marker+raw-api-ordinary-guard+raw-api-ordinary-guard",
     "treeRank": "VII",
-    "availability": "available"
-  },
-  {
-    "id": "us_m1a1_hc_usmc_sm",
-    "name": "M1A1 HC (США)",
-    "nameRu": "M1A1 HC (США)",
-    "nameEn": "M1A1 HC (USA)",
-    "nation": "USA",
-    "class": "ground",
-    "className": "Наземка",
-    "role": "СТ",
-    "roleEn": "Medium tank",
-    "rank": "VII",
-    "br": {
-      "ab": 12.0,
-      "rb": 12.0,
-      "sb": 12.0,
-      "ground_rb": 12.0,
-      "ground_sb": 12.0
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/us_m1a1_hc_usmc_sm.png",
-    "search": "us_m1a1_hc_usmc_sm M1A1 HC (США) M1A1 HC (USA) M1a1-Hc-Usmc-Sm USA ground СТ Medium tank medium_tank",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
     "availability": "available"
   },
   {
@@ -79916,7 +79871,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
     "availability": "unavailable",
-    "availability_reason": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
+    "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
   {
     "id": "su-7bkl",
@@ -88376,34 +88331,6 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "available"
-  },
-  {
-    "id": "ussr_t_80ue1_sm",
-    "name": "Т-80У-Е1 (СССР)",
-    "nameRu": "Т-80У-Е1 (СССР)",
-    "nameEn": "T-80U-E1 (SSSR)",
-    "nation": "USSR",
-    "class": "ground",
-    "className": "Наземка",
-    "role": "СТ",
-    "roleEn": "Medium tank",
-    "rank": "VII",
-    "br": {
-      "ab": 12.0,
-      "rb": 12.0,
-      "sb": 12.0,
-      "ground_rb": 12.0,
-      "ground_sb": 12.0
-    },
-    "status": "Пакетная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/ussr_t_80ue1_sm.png",
-    "search": "ussr_t_80ue1_sm Т-80У-Е1 (СССР) T-80U-E1 (SSSR) T-80ue1-Sm USSR ground СТ Medium tank medium_tank",
-    "treePlacement": "right",
-    "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
     "availability": "available"
   },
   {

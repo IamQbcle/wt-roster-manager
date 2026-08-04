@@ -1,14 +1,14 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "Heavy Cavalry partial data update / v3.82",
-  "latest_known_patch": "Heavy Cavalry / 2026-06-24",
-  "latest_public_signal": "Heavy Cavalry released; full new-vehicle import pending external API update",
-  "checked_at": "2026-06-25",
-  "needs_review": true,
+  "manager_data_patch": "v3.83 / post-Heavy-Cavalry data refresh",
+  "latest_known_patch": "2.57.1.60 / 2026-07-31",
+  "latest_public_signal": "Official changelogs and news reviewed through 2026-08-04; no code-critical changes pending.",
+  "checked_at": "2026-08-04",
+  "needs_review": false,
   "notes": {
-    "ru": "Крупное обновление Heavy Cavalry вышло. В v3.82 вручную внесены BR-правки Hawk 209 и Tornado IDS MLU (RET.8), добавлена поддержка отдельных BR авиации для совместных боёв и исправлено отображение таких BR в ростере/дереве. Полный импорт новой техники ожидает стабильного обновления внешнего API.",
-    "en": "Heavy Cavalry has been released. v3.82 manually includes BR corrections for Hawk 209 and Tornado IDS MLU (RET.8), adds support for separate aircraft BR values in combined battles, and fixes how such BR hints are shown in the roster/tree. Full new-vehicle import is pending a stable external API update."
+    "ru": "v3.83 обновляет базу после июльских патчей: добавлены новые машины из API/БП/события, внесены ручные BR/availability-правки и проверены полные changelog за период после Heavy Cavalry. Языки не менялись.",
+    "en": "v3.83 refreshes data after the July patches: new API/Battle Pass/event vehicles are included, manual BR/availability corrections are applied, and full post-Heavy-Cavalry changelogs were reviewed. Language support is unchanged."
   },
-  "data_verified_game_version": "2.55.1.165",
+  "data_verified_game_version": "2.57.1.60",
   "version_check_mode": "official_changelog_version_only"
 }

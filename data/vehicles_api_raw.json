@@ -3421,7 +3421,7 @@
     "event": null,
     "release_date": "2024-09-10",
     "is_premium": 1,
-    "is_pack": 1,
+    "is_pack": 0,
     "on_marketplace": 0,
     "squadron_vehicle": 0,
     "value": 0,
@@ -4226,9 +4226,7 @@
     "identifier": "b_239_finland",
     "country": "sweden",
     "vehicle_type": "fighter",
-    "vehicle_sub_types": [
-      "naval_aircraft"
-    ],
+    "vehicle_sub_types": [],
     "era": 2,
     "arcade_br": 2.7,
     "realistic_br": 2.7,
@@ -8436,47 +8434,6 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/cn_mbt2000.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/cn_mbt2000.png"
-    }
-  },
-  {
-    "identifier": "cn_mbt2000_sm",
-    "country": "china",
-    "vehicle_type": "medium_tank",
-    "vehicle_sub_types": [],
-    "era": 7,
-    "arcade_br": 11.7,
-    "realistic_br": 11.7,
-    "realistic_ground_br": 11.7,
-    "simulator_br": 11.7,
-    "simulator_ground_br": 11.7,
-    "event": null,
-    "release_date": "2026-06-03",
-    "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "value": 0,
-    "req_exp": 300000,
-    "ge_cost": 9450,
-    "sl_mul_arcade": 3,
-    "sl_mul_realistic": 3.75,
-    "sl_mul_simulator": 3.98,
-    "exp_mul": 2.38,
-    "crew_total_count": 3,
-    "visibility": 0,
-    "hull_armor": [
-      100,
-      50,
-      45
-    ],
-    "turret_armor": [
-      220,
-      50,
-      20
-    ],
-    "images": {
-      "image": "https://wtvehiclesapi.duckdns.org/assets/images/cn_mbt2000_sm.png",
-      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/cn_mbt2000_sm.png"
     }
   },
   {
@@ -31259,47 +31216,6 @@
     }
   },
   {
-    "identifier": "germ_leopard_2a4m_can_sm",
-    "country": "germany",
-    "vehicle_type": "medium_tank",
-    "vehicle_sub_types": [],
-    "era": 7,
-    "arcade_br": 12,
-    "realistic_br": 12,
-    "realistic_ground_br": 12,
-    "simulator_br": 12,
-    "simulator_ground_br": 12,
-    "event": null,
-    "release_date": "2025-10-17",
-    "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "value": 0,
-    "req_exp": 350000,
-    "ge_cost": 9620,
-    "sl_mul_arcade": 3.04,
-    "sl_mul_realistic": 3.81,
-    "sl_mul_simulator": 4.12,
-    "exp_mul": 2.44,
-    "crew_total_count": 4,
-    "visibility": 0,
-    "hull_armor": [
-      70,
-      35,
-      25
-    ],
-    "turret_armor": [
-      65,
-      45,
-      52
-    ],
-    "images": {
-      "image": "https://wtvehiclesapi.duckdns.org/assets/images/germ_leopard_2a4m_can_sm.png",
-      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/germ_leopard_2a4m_can_sm.png"
-    }
-  },
-  {
     "identifier": "germ_leopard_2a5",
     "country": "germany",
     "vehicle_type": "medium_tank",
@@ -41361,6 +41277,39 @@
     }
   },
   {
+    "identifier": "iar_81c_db_605",
+    "country": "italy",
+    "vehicle_type": "fighter",
+    "vehicle_sub_types": [],
+    "era": 2,
+    "arcade_br": 2.7,
+    "realistic_br": 2.7,
+    "realistic_ground_br": 2.7,
+    "simulator_br": 2.7,
+    "simulator_ground_br": 2.7,
+    "event": "battlepass_season24",
+    "release_date": "2026-07-22",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 11000,
+    "ge_cost": 1000,
+    "sl_mul_arcade": 0.83,
+    "sl_mul_realistic": 1.98,
+    "sl_mul_simulator": 4.01,
+    "exp_mul": 1.24,
+    "crew_total_count": 1,
+    "visibility": 0,
+    "hull_armor": [],
+    "turret_armor": [],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/iar_81c_db_605.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/iar_81c_db_605.png"
+    }
+  },
+  {
     "identifier": "iar_93b",
     "country": "italy",
     "vehicle_type": "assault",
@@ -46953,6 +46902,47 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/it_fiat_6616_cockerill.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/it_fiat_6616_cockerill.png"
+    }
+  },
+  {
+    "identifier": "it_fiat_6616_ub",
+    "country": "italy",
+    "vehicle_type": "light_tank",
+    "vehicle_sub_types": [],
+    "era": 4,
+    "arcade_br": 6,
+    "realistic_br": 6,
+    "realistic_ground_br": 6,
+    "simulator_br": 6,
+    "simulator_ground_br": 6,
+    "event": "battlepass_season24",
+    "release_date": "2026-07-22",
+    "is_premium": 1,
+    "is_pack": 1,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 0,
+    "req_exp": 71000,
+    "ge_cost": 6090,
+    "sl_mul_arcade": 2.38,
+    "sl_mul_realistic": 3.13,
+    "sl_mul_simulator": 4.03,
+    "exp_mul": 1.78,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [
+      8,
+      8,
+      8
+    ],
+    "turret_armor": [
+      15,
+      8,
+      8
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/it_fiat_6616_ub.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/it_fiat_6616_ub.png"
     }
   },
   {
@@ -57438,39 +57428,6 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_type_90b_camo.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_type_90b_camo.png"
-    }
-  },
-  {
-    "identifier": "jp_type_90b_sm",
-    "country": "japan",
-    "vehicle_type": "medium_tank",
-    "vehicle_sub_types": [],
-    "era": 7,
-    "arcade_br": 11.7,
-    "realistic_br": 11.7,
-    "realistic_ground_br": 11.7,
-    "simulator_br": 11.7,
-    "simulator_ground_br": 11.7,
-    "event": null,
-    "release_date": "2026-06-03",
-    "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "value": 0,
-    "req_exp": 350000,
-    "ge_cost": 9620,
-    "sl_mul_arcade": 3.03,
-    "sl_mul_realistic": 3.88,
-    "sl_mul_simulator": 4.34,
-    "exp_mul": 2.44,
-    "crew_total_count": 3,
-    "visibility": 0,
-    "hull_armor": [],
-    "turret_armor": [],
-    "images": {
-      "image": "https://wtvehiclesapi.duckdns.org/assets/images/jp_type_90b_sm.png",
-      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/jp_type_90b_sm.png"
     }
   },
   {
@@ -88514,47 +88471,6 @@
     }
   },
   {
-    "identifier": "uk_challenger_2_megatron_sm",
-    "country": "britain",
-    "vehicle_type": "medium_tank",
-    "vehicle_sub_types": [],
-    "era": 7,
-    "arcade_br": 11.7,
-    "realistic_br": 11.7,
-    "realistic_ground_br": 11.7,
-    "simulator_br": 11.7,
-    "simulator_ground_br": 11.7,
-    "event": null,
-    "release_date": "2026-06-03",
-    "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "value": 0,
-    "req_exp": 350000,
-    "ge_cost": 9620,
-    "sl_mul_arcade": 3.07,
-    "sl_mul_realistic": 3.84,
-    "sl_mul_simulator": 4.08,
-    "exp_mul": 2.44,
-    "crew_total_count": 4,
-    "visibility": 0,
-    "hull_armor": [
-      130,
-      38,
-      50
-    ],
-    "turret_armor": [
-      270,
-      80,
-      58
-    ],
-    "images": {
-      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_challenger_2_megatron_sm.png",
-      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_challenger_2_megatron_sm.png"
-    }
-  },
-  {
     "identifier": "uk_challenger_2_tes",
     "country": "britain",
     "vehicle_type": "medium_tank",
@@ -91650,6 +91566,47 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_fv107_scimitar.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_fv107_scimitar.png"
+    }
+  },
+  {
+    "identifier": "uk_fv107_scimitar_mk2",
+    "country": "britain",
+    "vehicle_type": "light_tank",
+    "vehicle_sub_types": [],
+    "era": 6,
+    "arcade_br": 8,
+    "realistic_br": 8,
+    "realistic_ground_br": 8,
+    "simulator_br": 8,
+    "simulator_ground_br": 8,
+    "event": null,
+    "release_date": "2026-07-22",
+    "is_premium": 0,
+    "is_pack": 0,
+    "on_marketplace": 0,
+    "squadron_vehicle": 0,
+    "value": 380000,
+    "req_exp": 135000,
+    "ge_cost": 0,
+    "sl_mul_arcade": 1.18,
+    "sl_mul_realistic": 1.65,
+    "sl_mul_simulator": 2.01,
+    "exp_mul": 2.08,
+    "crew_total_count": 3,
+    "visibility": 0,
+    "hull_armor": [
+      35,
+      20,
+      20
+    ],
+    "turret_armor": [
+      41,
+      38,
+      38
+    ],
+    "images": {
+      "image": "https://wtvehiclesapi.duckdns.org/assets/images/uk_fv107_scimitar_mk2.png",
+      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/uk_fv107_scimitar_mk2.png"
     }
   },
   {
@@ -98764,47 +98721,6 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_m1a1_hc_usmc.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_m1a1_hc_usmc.png"
-    }
-  },
-  {
-    "identifier": "us_m1a1_hc_usmc_sm",
-    "country": "usa",
-    "vehicle_type": "medium_tank",
-    "vehicle_sub_types": [],
-    "era": 7,
-    "arcade_br": 12,
-    "realistic_br": 12,
-    "realistic_ground_br": 12,
-    "simulator_br": 12,
-    "simulator_ground_br": 12,
-    "event": null,
-    "release_date": "2025-10-17",
-    "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "value": 0,
-    "req_exp": 350000,
-    "ge_cost": 9620,
-    "sl_mul_arcade": 3.04,
-    "sl_mul_realistic": 3.81,
-    "sl_mul_simulator": 4.12,
-    "exp_mul": 2.44,
-    "crew_total_count": 4,
-    "visibility": 0,
-    "hull_armor": [
-      133,
-      60,
-      32
-    ],
-    "turret_armor": [
-      139,
-      120,
-      13
-    ],
-    "images": {
-      "image": "https://wtvehiclesapi.duckdns.org/assets/images/us_m1a1_hc_usmc_sm.png",
-      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/us_m1a1_hc_usmc_sm.png"
     }
   },
   {
@@ -113351,47 +113267,6 @@
     "images": {
       "image": "https://wtvehiclesapi.duckdns.org/assets/images/ussr_t_80ue1.png",
       "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/ussr_t_80ue1.png"
-    }
-  },
-  {
-    "identifier": "ussr_t_80ue1_sm",
-    "country": "ussr",
-    "vehicle_type": "medium_tank",
-    "vehicle_sub_types": [],
-    "era": 7,
-    "arcade_br": 12,
-    "realistic_br": 12,
-    "realistic_ground_br": 12,
-    "simulator_br": 12,
-    "simulator_ground_br": 12,
-    "event": null,
-    "release_date": "2025-10-17",
-    "is_premium": 1,
-    "is_pack": 1,
-    "on_marketplace": 0,
-    "squadron_vehicle": 0,
-    "value": 0,
-    "req_exp": 350000,
-    "ge_cost": 9620,
-    "sl_mul_arcade": 3.04,
-    "sl_mul_realistic": 3.81,
-    "sl_mul_simulator": 4.12,
-    "exp_mul": 2.44,
-    "crew_total_count": 3,
-    "visibility": 0,
-    "hull_armor": [
-      105,
-      80,
-      50
-    ],
-    "turret_armor": [
-      180,
-      160,
-      65
-    ],
-    "images": {
-      "image": "https://wtvehiclesapi.duckdns.org/assets/images/ussr_t_80ue1_sm.png",
-      "techtree": "https://wtvehiclesapi.duckdns.org/assets/techtrees/ussr_t_80ue1_sm.png"
     }
   },
   {

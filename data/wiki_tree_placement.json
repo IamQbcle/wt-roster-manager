@@ -2805,12 +2805,12 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "bf-109z": {
+    "ia_58a_pucara": {
       "placement": "right",
       "rank": "IV",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Bf 109 Z-1",
+      "visibleName": "IA.58A Pucara",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2823,12 +2823,12 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "ju-388j": {
+    "bf-109z": {
       "placement": "right",
       "rank": "IV",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Ju 388 J",
+      "visibleName": "Bf 109 Z-1",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2841,12 +2841,12 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "fw-190c": {
+    "ju-388j": {
       "placement": "right",
       "rank": "IV",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Fw 190 C",
+      "visibleName": "Ju 388 J",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2859,12 +2859,12 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "fw-190d-13": {
+    "fw-190c": {
       "placement": "right",
       "rank": "IV",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Fw 190 D-13",
+      "visibleName": "Fw 190 C",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2874,6 +2874,15 @@
       "nation": "Germany",
       "class": "air",
       "visibleName": "He 177 A-3",
+      "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "fw-190d-13": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "Fw 190 D-13",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -8827,15 +8836,6 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "re_2001_serie1_ep": {
-      "placement": "right",
-      "rank": "II",
-      "nation": "Italy",
-      "class": "air",
-      "visibleName": "Re.2001 gruppo 22",
-      "source": "api/status+raw-api-status",
-      "page": "aviation"
-    },
     "ro_57_quadriarma": {
       "placement": "right",
       "rank": "II",
@@ -8851,6 +8851,15 @@
       "nation": "Italy",
       "class": "air",
       "visibleName": "C. 202D",
+      "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "re_2001_serie1_ep": {
+      "placement": "right",
+      "rank": "II",
+      "nation": "Italy",
+      "class": "air",
+      "visibleName": "Re.2001 gruppo 22",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -8953,13 +8962,13 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "bf_110g_4_hungary": {
+    "iar_81c_db_605": {
       "placement": "right",
       "rank": "III",
       "nation": "Italy",
       "class": "air",
-      "visibleName": "Bf 110 G-4",
-      "source": "api/status+wiki-tree-marker+raw-api-status",
+      "visibleName": "IAR-81C (DB 605)",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "spitfire_mk5b_italy": {
@@ -8968,6 +8977,15 @@
       "nation": "Italy",
       "class": "air",
       "visibleName": "Spitfire Mk Vb/trop",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
+      "page": "aviation"
+    },
+    "bf_110g_4_hungary": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Italy",
+      "class": "air",
+      "visibleName": "Bf 110 G-4",
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
@@ -13346,7 +13364,7 @@
       "rank": "III",
       "nation": "Germany",
       "class": "ground",
-      "visibleName": "M44",
+      "visibleName": "M44/55",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -16988,13 +17006,13 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "uk_centurion_shot_kal_d": {
-      "placement": "right",
+    "uk_fv107_scimitar_mk2": {
+      "placement": "left",
       "rank": "VI",
       "nation": "Britain",
       "class": "ground",
-      "visibleName": "Sho't Kal Dalet",
-      "source": "api/status+wiki-tree-marker+raw-api-status",
+      "visibleName": "Scimitar Mk.2",
+      "source": "wiki-tree-left",
       "page": "ground"
     },
     "uk_khalid": {
@@ -17006,13 +17024,13 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "uk_shir_2": {
+    "uk_centurion_shot_kal_d": {
       "placement": "right",
       "rank": "VI",
       "nation": "Britain",
       "class": "ground",
-      "visibleName": "FV4030/3",
-      "source": "api/status+raw-api-status",
+      "visibleName": "Sho't Kal Dalet",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "ground"
     },
     "uk_rooikat_105_td": {
@@ -17024,6 +17042,15 @@
       "source": "unit-override-right-v263",
       "page": "ground",
       "status": "Акционная"
+    },
+    "uk_shir_2": {
+      "placement": "right",
+      "rank": "VI",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "FV4030/3",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
     },
     "uk_challenger_1": {
       "placement": "left",
@@ -19390,6 +19417,15 @@
       "nation": "Italy",
       "class": "ground",
       "visibleName": "Tigris",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "it_fiat_6616_ub": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "Italy",
+      "class": "ground",
+      "visibleName": "FIAT 6616UB",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -27087,15 +27123,6 @@
       "placement": "right",
       "source": "raw-api-status"
     },
-    "cn_mbt2000_sm": {
-      "rank": "I",
-      "nation": "China",
-      "class": "ground",
-      "visibleName": "MBT2000-SM",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
     "f_16a_block_5_netherlands": {
       "rank": "I",
       "nation": "France",
@@ -27267,15 +27294,6 @@
       "placement": "right",
       "source": "raw-api-status"
     },
-    "germ_leopard_2a4m_can_sm": {
-      "rank": "I",
-      "nation": "Germany",
-      "class": "ground",
-      "visibleName": "LEOPARD-2a4m-CAN-SM",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
     "germ_pzkpfw_35t_romania_mare": {
       "rank": "I",
       "nation": "Germany",
@@ -27299,15 +27317,6 @@
       "nation": "USSR",
       "class": "air",
       "visibleName": "I-15bis-KRASNOLUTSKY",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
-    "ia_58a_pucara": {
-      "rank": "I",
-      "nation": "Germany",
-      "class": "air",
-      "visibleName": "IA-58A-PUCARA",
       "page": "raw-api",
       "placement": "right",
       "source": "raw-api-status"
@@ -27456,15 +27465,6 @@
       "placement": "right",
       "source": "raw-api-status"
     },
-    "jp_type_90b_sm": {
-      "rank": "I",
-      "nation": "Japan",
-      "class": "ground",
-      "visibleName": "TYPE-90B-SM",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
     "p-47m-1-re_boxted": {
       "rank": "I",
       "nation": "USA",
@@ -27547,15 +27547,6 @@
       "placement": "right",
       "source": "raw-api-status"
     },
-    "uk_challenger_2_megatron_sm": {
-      "rank": "I",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "CHALLENGER-2-MEGATRON-SM",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
     "uk_challenger_II_yt_cup_2019": {
       "rank": "I",
       "nation": "Britain",
@@ -27584,15 +27575,6 @@
       "placement": "right",
       "source": "raw-api-status"
     },
-    "us_m1a1_hc_usmc_sm": {
-      "rank": "I",
-      "nation": "USA",
-      "class": "ground",
-      "visibleName": "M1a1-HC-USMC-SM",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
     "ussr_destroyer_kerch": {
       "rank": "I",
       "nation": "USSR",
@@ -27607,15 +27589,6 @@
       "nation": "USSR",
       "class": "coastal",
       "visibleName": "PR-205pe-K225",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
-    "ussr_t_80ue1_sm": {
-      "rank": "I",
-      "nation": "USSR",
-      "class": "ground",
-      "visibleName": "T-80ue1-SM",
       "page": "raw-api",
       "placement": "right",
       "source": "raw-api-status"

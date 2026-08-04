@@ -28815,6 +28815,27 @@
       "reason": "not found",
       "logic_version": "v2.62-status-tree-unit-supplements",
       "updated_at": "2026-06-25T07:27:48+00:00"
+    },
+    "iar_81c_db_605": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-08-04T07:35:23+00:00"
+    },
+    "uk_fv107_scimitar_mk2": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-08-04T07:35:23+00:00"
+    },
+    "it_fiat_6616_ub": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-08-04T07:35:23+00:00"
     }
   }
 }

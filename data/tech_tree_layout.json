@@ -1,6 +1,6 @@
 {
   "logic_version": "v2.86-i18n-lineup-image-ram-cleanup",
-  "updated_at": "2026-06-25T07:28:41+00:00",
+  "updated_at": "2026-08-04T07:36:19+00:00",
   "items": {
     "USA|air": {
       "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=usa",
@@ -3268,15 +3268,6 @@
             },
             {
               "type": "unit",
-              "id": "us_m1a1_hc_usmc_sm",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/us_m1a1_hc_usmc_sm.png",
-              "label": "◍M1A1 HC",
-              "row": 5,
-              "col": 0
-            },
-            {
-              "type": "unit",
               "id": "us_rdf_lt",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/us_rdf_lt.png",
@@ -5806,10 +5797,10 @@
             },
             {
               "type": "unit",
-              "id": "bf-109z",
+              "id": "ia_58a_pucara",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/bf-109z.png",
-              "label": "Bf 109 Z-1",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/ia_58a_pucara.png",
+              "label": "IA.58A Pucara",
               "row": 0,
               "col": 1
             },
@@ -5824,10 +5815,10 @@
             },
             {
               "type": "unit",
-              "id": "ju-388j",
+              "id": "bf-109z",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/ju-388j.png",
-              "label": "Ju 388 J",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/bf-109z.png",
+              "label": "Bf 109 Z-1",
               "row": 1,
               "col": 1
             },
@@ -5842,10 +5833,10 @@
             },
             {
               "type": "unit",
-              "id": "fw-190c",
+              "id": "ju-388j",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/fw-190c.png",
-              "label": "Fw 190 C",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/ju-388j.png",
+              "label": "Ju 388 J",
               "row": 2,
               "col": 1
             },
@@ -5860,10 +5851,10 @@
             },
             {
               "type": "unit",
-              "id": "fw-190d-13",
+              "id": "fw-190c",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/fw-190d-13.png",
-              "label": "Fw 190 D-13",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/fw-190c.png",
+              "label": "Fw 190 C",
               "row": 3,
               "col": 1
             },
@@ -5875,6 +5866,15 @@
               "label": "He 177 A-3",
               "row": 4,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "fw-190d-13",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/fw-190d-13.png",
+              "label": "Fw 190 D-13",
+              "row": 4,
+              "col": 1
             }
           ]
         },
@@ -7099,8 +7099,8 @@
               {
                 "type": "group",
                 "id": "germ_m44_55_group",
-                "label": "shop/group/germ_m44_55_group",
-                "name": "shop/group/germ_m44_55_group",
+                "label": "M44/55",
+                "name": "M44/55",
                 "ids": [
                   "germ_m44",
                   "germ_m55"
@@ -8033,15 +8033,6 @@
             },
             {
               "type": "unit",
-              "id": "germ_leopard_2a4m_can_sm",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_leopard_2a4m_can_sm.png",
-              "label": "◍Leopard 2A4M",
-              "row": 3,
-              "col": 0
-            },
-            {
-              "type": "unit",
               "id": "germ_schutzenpanzer_puma_vjtf_mod",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/germ_schutzenpanzer_puma_vjtf_mod.png",
@@ -8885,7 +8876,7 @@
       }
     },
     "Germany|coastal": {
-      "source": "HTTP 200 via curl fallback after requests ProxyError: HTTPSConnectionPool(host='wiki.warthunder.ru', port=443): Max retries exceeded with url: /boats?v=t&t_c=germany (Caused by ProxyError('Unable to connect to proxy', NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=10809): Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение\"))) url=https://wiki.warthunder.ru/boats?v=t&t_c=germany",
+      "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=germany",
       "parser": "v2.83 Wiki table DOM parser: all nations/classes; wt-tree_rank/table/tr/td/group + canonical id lookup",
       "safe_dom_geometry": true,
       "safe_table_layout": true,
@@ -12854,15 +12845,6 @@
               "label": "␙Т-80У",
               "row": 4,
               "col": 1
-            },
-            {
-              "type": "unit",
-              "id": "ussr_t_80ue1_sm",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_t_80ue1_sm.png",
-              "label": "◍Т-80У-Е1",
-              "row": 5,
-              "col": 0
             },
             {
               "type": "unit",
@@ -16905,10 +16887,10 @@
             },
             {
               "type": "unit",
-              "id": "uk_centurion_shot_kal_d",
+              "id": "uk_fv107_scimitar_mk2",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_centurion_shot_kal_d.png",
-              "label": "▄Sho't Kal Dalet",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_fv107_scimitar_mk2.png",
+              "label": "Scimitar Mk.2",
               "row": 0,
               "col": 1
             },
@@ -16923,10 +16905,10 @@
             },
             {
               "type": "unit",
-              "id": "uk_shir_2",
+              "id": "uk_centurion_shot_kal_d",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_shir_2.png",
-              "label": "FV4030/3",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_centurion_shot_kal_d.png",
+              "label": "▄Sho't Kal Dalet",
               "row": 1,
               "col": 1
             },
@@ -16938,6 +16920,15 @@
               "label": "Rooikat 105",
               "row": 2,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "uk_shir_2",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_shir_2.png",
+              "label": "FV4030/3",
+              "row": 2,
+              "col": 1
             }
           ]
         },
@@ -17100,15 +17091,6 @@
               "label": "CRV Block 2",
               "row": 1,
               "col": 1
-            },
-            {
-              "type": "unit",
-              "id": "uk_challenger_2_megatron_sm",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_challenger_2_megatron_sm.png",
-              "label": "◍Challenger 2 OES",
-              "row": 2,
-              "col": 0
             },
             {
               "type": "unit",
@@ -20614,15 +20596,6 @@
               "label": "Type 90 (B) \"Fuji\"",
               "row": 1,
               "col": 0
-            },
-            {
-              "type": "unit",
-              "id": "jp_type_90b_sm",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/jp_type_90b_sm.png",
-              "label": "◍Type 90 (B)",
-              "row": 2,
-              "col": 0
             }
           ]
         },
@@ -23715,15 +23688,6 @@
             },
             {
               "type": "unit",
-              "id": "cn_mbt2000_sm",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/cn_mbt2000_sm.png",
-              "label": "◍MBT-2000",
-              "row": 2,
-              "col": 1
-            },
-            {
-              "type": "unit",
               "id": "cn_ztz_96b",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/cn_ztz_96b.png",
@@ -24073,7 +24037,7 @@
       }
     },
     "China|bluewater": {
-      "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=china",
+      "source": "HTTP 200 via curl fallback after requests ChunkedEncodingError: ('Connection broken: IncompleteRead(7546 bytes read, 646 more expected)', IncompleteRead(7546 bytes read, 646 more expected)) url=https://wiki.warthunder.ru/ships?v=t&t_c=china",
       "parser": "v2.83 Wiki table DOM parser: all nations/classes; wt-tree_rank/table/tr/td/group + canonical id lookup",
       "safe_dom_geometry": true,
       "safe_table_layout": true,
@@ -29781,21 +29745,12 @@
             },
             {
               "type": "unit",
-              "id": "re_2001_serie1_ep",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/re_2001_serie1_ep.png",
-              "label": "Re.2001 gruppo 22",
-              "row": 1,
-              "col": 0
-            },
-            {
-              "type": "unit",
               "id": "ro_57_quadriarma",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/ro_57_quadriarma.png",
               "label": "Ro.57 Quadriarma",
               "row": 1,
-              "col": 1
+              "col": 0
             },
             {
               "type": "unit",
@@ -29803,8 +29758,17 @@
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/mc-202_d.png",
               "label": "C. 202D",
-              "row": 2,
+              "row": 1,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "re_2001_serie1_ep",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/re_2001_serie1_ep.png",
+              "label": "Re.2001 gruppo 22",
+              "row": 2,
+              "col": 0
             }
           ]
         },
@@ -29923,10 +29887,10 @@
             },
             {
               "type": "unit",
-              "id": "bf_110g_4_hungary",
+              "id": "iar_81c_db_605",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/bf_110g_4_hungary.png",
-              "label": "◔Bf 110 G-4",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/iar_81c_db_605.png",
+              "label": "IAR-81C (DB 605)",
               "row": 0,
               "col": 1
             },
@@ -29941,11 +29905,20 @@
             },
             {
               "type": "unit",
+              "id": "bf_110g_4_hungary",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/bf_110g_4_hungary.png",
+              "label": "◔Bf 110 G-4",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "type": "unit",
               "id": "bf-109f-4_hungary",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/bf-109f-4_hungary.png",
               "label": "◔Bf 109 F-4",
-              "row": 1,
+              "row": 2,
               "col": 1
             }
           ]
@@ -31109,6 +31082,15 @@
               "label": "Tigris",
               "row": 0,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "it_fiat_6616_ub",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/it_fiat_6616_ub.png",
+              "label": "FIAT 6616UB",
+              "row": 0,
+              "col": 1
             },
             {
               "type": "unit",

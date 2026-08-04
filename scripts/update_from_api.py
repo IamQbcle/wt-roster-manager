@@ -6154,6 +6154,96 @@ def _add_supplemental_wiki_units_v300_network(rows: list[dict[str, Any]]) -> lis
             rows.append(dict(r)); seen.add(r["identifier"])
     return rows
 
+
+# --- v3.83: curated post-Heavy-Cavalry data corrections ---
+# Keep these corrections durable across future API refreshes.  They are intentionally
+# applied after vehicles.json is generated because the public Vehicles API and Wiki
+# can lag behind official news/changelog/store availability.
+BR_OVERRIDES_V383 = {
+    "uk_fv107_scimitar_mk2": {"ab": 8.3, "rb": 8.3, "sb": 8.3, "ground_rb": 8.3, "ground_sb": 8.3},
+    "hawk_209_indonesia": {"ab": 11.0, "rb": 10.7, "sb": 10.7, "ground_rb": 10.7, "ground_sb": 10.7},
+}
+
+AVAILABILITY_CURATED_V383 = {
+    # Permanent return-to-sale vehicles
+    "mig-21_sps_k": ("available", "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."),
+    "mig-21_bison": ("available", "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."),
+    "j_7d": ("available", "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."),
+    "su_22m4_de_wtd61": ("available", "Returned to sale after the Su-17 first-flight event; available at full price after the sale."),
+    "av_8b_na": ("available", "Returned to sale for the USA 250th anniversary; remains available at full price after the sale."),
+
+    # Retired packs / temporary-only sales
+    "germ_pzh_2000": ("unavailable", "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."),
+    "jh_7a_prototype": ("unavailable", "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."),
+    "jp_type_74_red_star": ("unavailable", "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."),
+    "us_m26e1_pershing": ("unavailable", "Temporary USA 250th anniversary sale; normally owner-only/unavailable."),
+    "f-86f-35": ("unavailable", "Temporary USA 250th anniversary sale; normally owner-only/unavailable."),
+    "us_xm1_chrysler": ("unavailable", "Temporary USA 250th anniversary pack; normally owner-only/unavailable."),
+    "us_destroyer_fletcher_bennion": ("unavailable", "Temporary USA 250th anniversary pack; normally owner-only/unavailable."),
+
+    # Event/Battle Pass/current limited-time vehicles: stable DB treats them as owner-only unless the user marks them owned.
+    "uk_fv107_scimitar_mk2": ("unavailable", "Strike of the Scimitar event reward; owner-only/unavailable in the stable database."),
+    "it_fiat_6616_ub": ("unavailable", "Battle Pass Season 24 vehicle; owner-only/unavailable in the stable database."),
+    "iar_81c_db_605": ("unavailable", "Battle Pass Season 24 vehicle; owner-only/unavailable in the stable database."),
+
+    # Known temporary sale vehicles kept owner-only/unavailable by default.
+    "saab_j35a": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
+    "jp_destroyer_kiyoshimo": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
+    "j2m4_kai": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
+    "so_4050_vautour_2n": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
+    "su-7bmk": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
+    "cn_type_69_2a": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
+}
+
+try:
+    AVAILABILITY_OVERRIDES_V336.update(AVAILABILITY_CURATED_V383)
+except Exception:
+    pass
+
+def _apply_v383_curated_item(item: dict[str, Any]) -> bool:
+    vid = str(item.get("id") or item.get("identifier") or "")
+    changed = False
+    br = BR_OVERRIDES_V383.get(vid)
+    if br:
+        old = dict(item.get("br") or {})
+        new = dict(old)
+        new.update(br)
+        if new != old:
+            item["br"] = new
+            changed = True
+    av = AVAILABILITY_CURATED_V383.get(vid)
+    if av:
+        availability, note = av
+        if item.get("availability") != availability:
+            item["availability"] = availability
+            changed = True
+        if note and item.get("availability_reason") != note:
+            item["availability_reason"] = note
+            changed = True
+    if vid == "uk_fv107_scimitar_mk2" and item.get("status") != "Акционная":
+        item["status"] = "Акционная"
+        changed = True
+    return changed
+
+_old_write_lightweight_vehicles_v383 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.83 override
+    _old_write_lightweight_vehicles_v383(rows, image_map)
+    try:
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        changed = 0
+        for item in data:
+            if isinstance(item, dict) and _apply_v383_curated_item(item):
+                changed += 1
+        if changed:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"v3.83 curated data corrections applied: {changed} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.83 curated data corrections failed:", e)
+
+# --- end v3.83 layer ---
+
+
 if __name__ == "__main__":
     try:
         raise SystemExit(main())

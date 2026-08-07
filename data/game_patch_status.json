@@ -1,14 +1,14 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "v3.83 / post-Heavy-Cavalry data refresh",
-  "latest_known_patch": "2.57.1.60 / 2026-07-31",
-  "latest_public_signal": "Official changelogs and news reviewed through 2026-08-04; no code-critical changes pending.",
-  "checked_at": "2026-08-04",
+  "manager_data_patch": "v3.84 / August 2026 BR changes",
+  "latest_known_patch": "2.57.1.70 / 2026-08-07",
+  "latest_public_signal": "August 2026 battle rating changes applied manually from the official spreadsheet export; Ho-Ri retirement and next-major rank/grouping changes recorded for later.",
+  "checked_at": "2026-08-07",
   "needs_review": false,
   "notes": {
-    "ru": "v3.83 обновляет базу после июльских патчей: добавлены новые машины из API/БП/события, внесены ручные BR/availability-правки и проверены полные changelog за период после Heavy Cavalry. Языки не менялись.",
-    "en": "v3.83 refreshes data after the July patches: new API/Battle Pass/event vehicles are included, manual BR/availability corrections are applied, and full post-Heavy-Cavalry changelogs were reviewed. Language support is unchanged."
+    "ru": "v3.84 применяет августовские изменения БР из официальной таблицы и текущие переносы рангов Fw 189 C, VS-10 и Pr.123K. Отложенные изменения Ho-Ri и переносы/группировки следующего крупного обновления не применены, но зафиксированы в заметках.",
+    "en": "v3.84 applies the August 2026 BR changes from the official table and current rank moves for Fw 189 C, VS-10 and Pr.123K. Ho-Ri retirement and next-major rank/grouping changes are not applied yet but are recorded in the notes."
   },
-  "data_verified_game_version": "2.57.1.60",
-  "version_check_mode": "official_changelog_version_only"
+  "data_verified_game_version": "2.57.1.70",
+  "version_check_mode": "official_changelog_version_and_manual_br_table"
 }

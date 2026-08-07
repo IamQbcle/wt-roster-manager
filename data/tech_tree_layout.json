@@ -1,6 +1,6 @@
 {
   "logic_version": "v2.86-i18n-lineup-image-ram-cleanup",
-  "updated_at": "2026-08-04T07:36:19+00:00",
+  "updated_at": "2026-08-07T10:50:00Z / v3.84 manual BR+rank update",
   "items": {
     "USA|air": {
       "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=usa",
@@ -5007,15 +5007,6 @@
               "req": "",
               "row": 4,
               "col": 0
-            },
-            {
-              "type": "unit",
-              "id": "fw_189c_0",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/fw_189c_0.png",
-              "label": "Fw 189 C",
-              "row": 4,
-              "col": 1
             }
           ]
         },
@@ -5374,6 +5365,15 @@
               },
               "req": "",
               "row": 5,
+              "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "fw_189c_0",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/fw_189c_0.png",
+              "label": "Fw 189 C",
+              "row": 11,
               "col": 1
             }
           ]
@@ -9016,6 +9016,15 @@
                 "label": "V-990",
                 "row": 1,
                 "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "germ_vs10_hydrofoil",
+                "req": "germ_pr_131",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_vs10_hydrofoil.png",
+                "label": "VS-10",
+                "row": 2,
+                "col": 0
               }
             ],
             [
@@ -9075,15 +9084,6 @@
         "IV": {
           "leftCols": [
             [
-              {
-                "type": "unit",
-                "id": "germ_vs10_hydrofoil",
-                "req": "germ_pr_131",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_vs10_hydrofoil.png",
-                "label": "VS-10",
-                "row": 0,
-                "col": 0
-              },
               {
                 "type": "unit",
                 "id": "germ_mz_1",
@@ -13825,6 +13825,15 @@
                 "label": "Пр.123-бис",
                 "row": 1,
                 "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "ussr_pr_123k",
+                "req": "ussr_pr_123bis",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_pr_123k.png",
+                "label": "Пр.123К",
+                "row": 2,
+                "col": 0
               }
             ],
             [
@@ -13903,15 +13912,6 @@
         "III": {
           "leftCols": [
             [
-              {
-                "type": "unit",
-                "id": "ussr_pr_123k",
-                "req": "ussr_pr_123bis",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_pr_123k.png",
-                "label": "Пр.123К",
-                "row": 0,
-                "col": 0
-              },
               {
                 "type": "unit",
                 "id": "ussr_pr_1204_late",

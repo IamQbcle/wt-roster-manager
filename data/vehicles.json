@@ -659,7 +659,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 2.0,
       "ground_rb": 2.0,
@@ -1052,10 +1052,10 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.7,
-      "rb": 3.0,
+      "ab": 3.0,
+      "rb": 3.3,
       "sb": 3.0,
-      "ground_rb": 3.0,
+      "ground_rb": 3.3,
       "ground_sb": 3.0
     },
     "status": "Обычная",
@@ -1080,10 +1080,10 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.7,
-      "rb": 3.0,
+      "ab": 3.0,
+      "rb": 3.3,
       "sb": 3.0,
-      "ground_rb": 3.0,
+      "ground_rb": 3.3,
       "ground_sb": 3.0
     },
     "status": "Премиум",
@@ -1448,10 +1448,10 @@
     "roleEn": "Attacker",
     "rank": "II",
     "br": {
-      "ab": 3.3,
+      "ab": 3.0,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -1507,7 +1507,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.3,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 4.3
     },
     "status": "Обычная",
@@ -1563,7 +1563,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.3,
-      "ground_rb": 3.7,
+      "ground_rb": 4.0,
       "ground_sb": 3.3
     },
     "status": "Обычная",
@@ -1730,7 +1730,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Полковая",
@@ -1758,7 +1758,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -1814,7 +1814,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -2009,9 +2009,9 @@
     "rank": "III",
     "br": {
       "ab": 4.3,
-      "rb": 4.3,
+      "rb": 4.7,
       "sb": 4.7,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -2179,7 +2179,7 @@
       "ab": 5.0,
       "rb": 5.0,
       "sb": 5.0,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -2207,7 +2207,7 @@
       "ab": 5.0,
       "rb": 4.7,
       "sb": 4.7,
-      "ground_rb": 4.7,
+      "ground_rb": 5.0,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -2263,7 +2263,7 @@
       "ab": 5.7,
       "rb": 5.0,
       "sb": 5.0,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -2289,7 +2289,7 @@
     "rank": "IV",
     "br": {
       "ab": 4.3,
-      "rb": 5.0,
+      "rb": 5.3,
       "sb": 5.3,
       "ground_rb": 4.7,
       "ground_sb": 5.3
@@ -2487,7 +2487,7 @@
       "ab": 5.0,
       "rb": 5.7,
       "sb": 5.3,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 5.3
     },
     "status": "Обычная",
@@ -2599,7 +2599,7 @@
       "ab": 5.3,
       "rb": 5.3,
       "sb": 5.7,
-      "ground_rb": 5.3,
+      "ground_rb": 5.7,
       "ground_sb": 5.7
     },
     "status": "Обычная",
@@ -2711,7 +2711,7 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 6.0
     },
     "status": "Обычная",
@@ -2767,7 +2767,7 @@
       "ab": 5.7,
       "rb": 6.0,
       "sb": 5.0,
-      "ground_rb": 6.0,
+      "ground_rb": 6.3,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -2795,7 +2795,7 @@
       "ab": 5.7,
       "rb": 6.0,
       "sb": 5.0,
-      "ground_rb": 6.0,
+      "ground_rb": 6.3,
       "ground_sb": 5.0
     },
     "status": "Премиум",
@@ -3328,8 +3328,9 @@
       "ab": 8.7,
       "rb": 8.3,
       "sb": 7.7,
-      "ground_rb": 7.7,
-      "ground_sb": 7.7
+      "ground_rb": 7.3,
+      "ground_sb": 7.7,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -3354,9 +3355,9 @@
     "rank": "V",
     "br": {
       "ab": 8.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Маркет",
@@ -3441,8 +3442,9 @@
       "ab": 9.0,
       "rb": 8.3,
       "sb": 8.0,
-      "ground_rb": 7.7,
-      "ground_sb": 8.0
+      "ground_rb": 7.3,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -3525,7 +3527,7 @@
       "ab": 9.0,
       "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -3581,7 +3583,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Премиум",
@@ -3610,7 +3612,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -3636,7 +3638,7 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 8.7,
+      "rb": 8.3,
       "sb": 9.0,
       "ground_rb": 8.7,
       "ground_sb": 9.0
@@ -3668,7 +3670,7 @@
       "ab": 9.7,
       "rb": 9.7,
       "sb": 10.0,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -3696,7 +3698,7 @@
       "ab": 10.0,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Премиум",
@@ -3722,9 +3724,9 @@
     "rank": "VI",
     "br": {
       "ab": 10.0,
-      "rb": 9.7,
+      "rb": 10.0,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -3752,7 +3754,7 @@
       "ab": 10.3,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -3780,7 +3782,7 @@
       "ab": 10.3,
       "rb": 9.7,
       "sb": 9.3,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -3836,7 +3838,7 @@
       "ab": 10.7,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 10.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -3892,7 +3894,7 @@
       "ab": 11.0,
       "rb": 11.3,
       "sb": 11.3,
-      "ground_rb": 11.0,
+      "ground_rb": 10.7,
       "ground_sb": 11.3
     },
     "status": "Обычная",
@@ -3949,7 +3951,7 @@
       "ab": 11.0,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 10.0,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -4033,7 +4035,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 11.3,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 11.3
     },
     "status": "Полковая",
@@ -4061,7 +4063,7 @@
       "ab": 11.7,
       "rb": 12.0,
       "sb": 12.0,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 12.0
     },
     "status": "Премиум",
@@ -4089,7 +4091,7 @@
       "ab": 11.7,
       "rb": 12.0,
       "sb": 11.3,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 11.3
     },
     "status": "Обычная",
@@ -4117,7 +4119,7 @@
       "ab": 11.7,
       "rb": 12.0,
       "sb": 11.3,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 11.3
     },
     "status": "Обычная",
@@ -4173,7 +4175,7 @@
       "ab": 12.0,
       "rb": 12.0,
       "sb": 12.0,
-      "ground_rb": 11.3,
+      "ground_rb": 11.0,
       "ground_sb": 12.0
     },
     "status": "Обычная",
@@ -4258,7 +4260,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 12.7
     },
     "status": "Пакетная",
@@ -4731,8 +4733,8 @@
     "roleEn": "Destroyer",
     "rank": "I",
     "br": {
-      "ab": 4.3,
-      "rb": 4.3,
+      "ab": 4.0,
+      "rb": 4.0,
       "sb": 4.3,
       "ground_rb": 4.3,
       "ground_sb": 4.3
@@ -4843,8 +4845,8 @@
     "roleEn": "Destroyer",
     "rank": "II",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -4899,8 +4901,8 @@
     "roleEn": "Destroyer",
     "rank": "II",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -4927,8 +4929,8 @@
     "roleEn": "Destroyer",
     "rank": "II",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -4955,8 +4957,8 @@
     "roleEn": "Destroyer",
     "rank": "II",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -4983,8 +4985,8 @@
     "roleEn": "Destroyer",
     "rank": "II",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -5039,8 +5041,8 @@
     "roleEn": "Destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -8045,7 +8047,7 @@
     "rank": "II",
     "br": {
       "ab": 3.0,
-      "rb": 2.7,
+      "rb": 3.0,
       "sb": 2.7,
       "ground_rb": 2.7,
       "ground_sb": 2.7
@@ -8129,8 +8131,8 @@
     "roleEn": "Medium tank",
     "rank": "II",
     "br": {
-      "ab": 3.3,
-      "rb": 3.7,
+      "ab": 3.7,
+      "rb": 4.0,
       "sb": 3.7,
       "ground_rb": 3.7,
       "ground_sb": 3.7
@@ -8157,8 +8159,8 @@
     "roleEn": "Medium tank",
     "rank": "II",
     "br": {
-      "ab": 3.3,
-      "rb": 3.7,
+      "ab": 3.7,
+      "rb": 4.0,
       "sb": 3.7,
       "ground_rb": 3.7,
       "ground_sb": 3.7
@@ -8382,8 +8384,8 @@
     "roleEn": "Heavy tank",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 4.3,
+      "rb": 4.3,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -8410,8 +8412,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -8634,8 +8636,8 @@
     "roleEn": "Heavy tank",
     "rank": "III",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 5.0,
+      "rb": 5.0,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -8662,8 +8664,8 @@
     "roleEn": "Heavy tank",
     "rank": "III",
     "br": {
-      "ab": 4.7,
-      "rb": 4.7,
+      "ab": 5.0,
+      "rb": 5.0,
       "sb": 4.7,
       "ground_rb": 4.7,
       "ground_sb": 4.7
@@ -9056,7 +9058,7 @@
     "rank": "IV",
     "br": {
       "ab": 6.0,
-      "rb": 6.3,
+      "rb": 6.0,
       "sb": 6.0,
       "ground_rb": 6.3,
       "ground_sb": 6.0
@@ -9083,8 +9085,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.7,
       "ground_rb": 6.3,
       "ground_sb": 6.7
@@ -9111,8 +9113,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -9195,8 +9197,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -11390,7 +11392,7 @@
       "ab": 10.7,
       "rb": 12.0,
       "sb": 10.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -11780,7 +11782,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.0,
       "ground_rb": 2.3,
@@ -11808,7 +11810,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 3.0,
       "sb": 2.7,
       "ground_rb": 3.0,
@@ -12312,10 +12314,10 @@
     "roleEn": "Attacker",
     "rank": "III",
     "br": {
-      "ab": 4.0,
+      "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -12455,7 +12457,7 @@
       "ab": 4.3,
       "rb": 4.7,
       "sb": 4.7,
-      "ground_rb": 4.7,
+      "ground_rb": 4.3,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -12621,7 +12623,7 @@
     "rank": "IV",
     "br": {
       "ab": 5.3,
-      "rb": 5.3,
+      "rb": 5.0,
       "sb": 5.7,
       "ground_rb": 5.3,
       "ground_sb": 5.7
@@ -12875,8 +12877,9 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 7.3,
-      "ground_sb": 8.0
+      "ground_rb": 7.0,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -12903,7 +12906,7 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 7.7,
-      "ground_rb": 7.3,
+      "ground_rb": 7.0,
       "ground_sb": 7.7
     },
     "status": "Обычная",
@@ -13043,7 +13046,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Маркет",
@@ -13072,7 +13075,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -13100,7 +13103,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -13128,7 +13131,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -13156,7 +13159,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -13184,7 +13187,7 @@
       "ab": 10.0,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Маркет",
@@ -13213,7 +13216,7 @@
       "ab": 10.0,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -13241,7 +13244,7 @@
       "ab": 10.0,
       "rb": 10.0,
       "sb": 10.3,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -13269,7 +13272,7 @@
       "ab": 10.7,
       "rb": 10.7,
       "sb": 10.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -13297,7 +13300,7 @@
       "ab": 10.7,
       "rb": 10.7,
       "sb": 11.0,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 11.0
     },
     "status": "Премиум",
@@ -13354,7 +13357,7 @@
       "ab": 11.0,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Премиум",
@@ -13410,7 +13413,7 @@
       "ab": 11.3,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -13466,7 +13469,7 @@
       "ab": 11.3,
       "rb": 11.3,
       "sb": 11.7,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 11.7
     },
     "status": "Обычная",
@@ -13579,7 +13582,7 @@
       "ab": 13.0,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.0
     },
     "status": "Обычная",
@@ -13632,7 +13635,7 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 13.3,
+      "ab": 13.7,
       "rb": 13.3,
       "sb": 13.3,
       "ground_rb": 12.7,
@@ -13663,7 +13666,7 @@
       "ab": 13.3,
       "rb": 13.0,
       "sb": 13.3,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.3
     },
     "status": "Обычная",
@@ -14444,8 +14447,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -14919,8 +14922,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -14947,8 +14950,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -14975,8 +14978,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -15059,8 +15062,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -15200,8 +15203,8 @@
     "roleEn": "SPAA",
     "rank": "V",
     "br": {
-      "ab": 7.7,
-      "rb": 7.7,
+      "ab": 8.0,
+      "rb": 8.0,
       "sb": 7.7,
       "ground_rb": 7.7,
       "ground_sb": 7.7
@@ -15482,7 +15485,7 @@
     "rank": "VI",
     "br": {
       "ab": 8.0,
-      "rb": 8.0,
+      "rb": 8.3,
       "sb": 8.0,
       "ground_rb": 8.0,
       "ground_sb": 8.0
@@ -15678,8 +15681,8 @@
     "roleEn": "SPAA",
     "rank": "VI",
     "br": {
-      "ab": 9.0,
-      "rb": 9.0,
+      "ab": 9.3,
+      "rb": 9.3,
       "sb": 9.0,
       "ground_rb": 9.0,
       "ground_sb": 9.0
@@ -16635,7 +16638,7 @@
       "ab": 8.7,
       "rb": 9.0,
       "sb": 8.7,
-      "ground_rb": 9.0,
+      "ground_rb": 9.3,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -16803,7 +16806,7 @@
       "ab": 10.3,
       "rb": 11.3,
       "sb": 10.3,
-      "ground_rb": 11.3,
+      "ground_rb": 11.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -16831,7 +16834,7 @@
       "ab": 10.3,
       "rb": 11.3,
       "sb": 10.3,
-      "ground_rb": 11.3,
+      "ground_rb": 11.7,
       "ground_sb": 10.3
     },
     "status": "Премиум",
@@ -17475,10 +17478,10 @@
     "roleEn": "Attacker",
     "rank": "I",
     "br": {
-      "ab": 2.0,
-      "rb": 1.7,
+      "ab": 2.3,
+      "rb": 2.0,
       "sb": 1.7,
-      "ground_rb": 1.7,
+      "ground_rb": 2.0,
       "ground_sb": 1.7
     },
     "status": "Обычная",
@@ -17531,7 +17534,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 1.7,
       "ground_rb": 2.0,
@@ -17559,7 +17562,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 2.0,
       "ground_rb": 2.0,
@@ -17615,7 +17618,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.3,
       "ground_rb": 2.3,
@@ -17643,10 +17646,10 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.3,
-      "rb": 2.3,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 2.3,
-      "ground_rb": 2.3,
+      "ground_rb": 2.7,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -17699,7 +17702,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.3,
+      "ab": 2.7,
       "rb": 2.7,
       "sb": 2.7,
       "ground_rb": 2.7,
@@ -17811,10 +17814,10 @@
     "roleEn": "Bomber",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 2.7,
       "rb": 2.7,
       "sb": 3.3,
-      "ground_rb": 2.7,
+      "ground_rb": 2.3,
       "ground_sb": 3.3
     },
     "status": "Обычная",
@@ -18035,10 +18038,10 @@
     "roleEn": "Fighter",
     "rank": "III",
     "br": {
-      "ab": 3.3,
-      "rb": 3.3,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 3.3,
-      "ground_rb": 3.3,
+      "ground_rb": 3.7,
       "ground_sb": 3.3
     },
     "status": "Обычная",
@@ -18514,7 +18517,7 @@
       "ab": 5.0,
       "rb": 5.0,
       "sb": 5.0,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -18653,9 +18656,9 @@
     "rank": "IV",
     "br": {
       "ab": 5.7,
-      "rb": 5.7,
+      "rb": 5.3,
       "sb": 5.7,
-      "ground_rb": 5.7,
+      "ground_rb": 5.3,
       "ground_sb": 5.7
     },
     "status": "Премиум",
@@ -18991,7 +18994,7 @@
       "ab": 8.7,
       "rb": 8.3,
       "sb": 8.7,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.7
     },
     "status": "Премиум",
@@ -19048,7 +19051,7 @@
       "ab": 9.0,
       "rb": 8.3,
       "sb": 8.7,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -19076,7 +19079,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.3,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -19132,7 +19135,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -19188,7 +19191,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -19245,7 +19248,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -19271,7 +19274,7 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
       "ground_rb": 8.0,
       "ground_sb": 9.0
@@ -19299,9 +19302,9 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -19327,9 +19330,9 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 9.0
     },
     "status": "Премиум",
@@ -19356,7 +19359,7 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
       "ground_rb": 8.0,
       "ground_sb": 9.0
@@ -19387,7 +19390,7 @@
       "ab": 10.0,
       "rb": 10.0,
       "sb": 10.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -19444,7 +19447,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -19472,7 +19475,7 @@
       "ab": 10.3,
       "rb": 10.0,
       "sb": 10.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -19500,7 +19503,7 @@
       "ab": 10.3,
       "rb": 10.0,
       "sb": 10.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -19528,7 +19531,7 @@
       "ab": 10.3,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Пакетная",
@@ -19584,7 +19587,7 @@
       "ab": 10.7,
       "rb": 11.0,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -19640,7 +19643,7 @@
       "ab": 10.7,
       "rb": 10.7,
       "sb": 11.0,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 11.0
     },
     "status": "Обычная",
@@ -19781,7 +19784,7 @@
       "ab": 12.3,
       "rb": 12.3,
       "sb": 12.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 12.3
     },
     "status": "Маркет",
@@ -19810,7 +19813,7 @@
       "ab": 12.3,
       "rb": 12.3,
       "sb": 12.7,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 12.7
     },
     "status": "Обычная",
@@ -19894,7 +19897,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 12.7
     },
     "status": "Полковая",
@@ -19922,7 +19925,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.7,
+      "ground_rb": 13.0,
       "ground_sb": 12.7
     },
     "status": "Обычная",
@@ -19950,7 +19953,7 @@
       "ab": 12.7,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 13.0
     },
     "status": "Обычная",
@@ -21426,8 +21429,8 @@
     "roleEn": "Boat",
     "rank": "III",
     "br": {
-      "ab": 2.7,
-      "rb": 2.7,
+      "ab": 2.3,
+      "rb": 2.3,
       "sb": 2.7,
       "ground_rb": 2.7,
       "ground_sb": 2.7
@@ -21453,8 +21456,8 @@
     "roleEn": "Frigate",
     "rank": "III",
     "br": {
-      "ab": 3.3,
-      "rb": 3.3,
+      "ab": 3.0,
+      "rb": 3.0,
       "sb": 3.3,
       "ground_rb": 3.3,
       "ground_sb": 3.3
@@ -21536,8 +21539,8 @@
     "roleEn": "Frigate",
     "rank": "III",
     "br": {
-      "ab": 3.3,
-      "rb": 3.3,
+      "ab": 3.0,
+      "rb": 3.0,
       "sb": 3.3,
       "ground_rb": 3.3,
       "ground_sb": 3.3
@@ -21727,8 +21730,8 @@
     "roleEn": "Frigate",
     "rank": "V",
     "br": {
-      "ab": 4.3,
-      "rb": 4.3,
+      "ab": 4.0,
+      "rb": 4.0,
       "sb": 4.3,
       "ground_rb": 4.3,
       "ground_sb": 4.3
@@ -22651,8 +22654,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -22679,8 +22682,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -23240,8 +23243,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 7.0,
-      "rb": 7.0,
+      "ab": 6.7,
+      "rb": 6.7,
       "sb": 7.0,
       "ground_rb": 7.0,
       "ground_sb": 7.0
@@ -24110,8 +24113,8 @@
     "roleEn": "Medium tank",
     "rank": "VI",
     "br": {
-      "ab": 9.3,
-      "rb": 9.3,
+      "ab": 9.0,
+      "rb": 9.0,
       "sb": 9.3,
       "ground_rb": 9.3,
       "ground_sb": 9.3
@@ -24898,7 +24901,7 @@
       "ab": 10.7,
       "rb": 11.7,
       "sb": 10.7,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.7
     },
     "status": "Премиум",
@@ -25653,10 +25656,10 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 1.7,
-      "rb": 1.7,
+      "ab": 2.0,
+      "rb": 2.0,
       "sb": 2.0,
-      "ground_rb": 1.7,
+      "ground_rb": 2.0,
       "ground_sb": 2.0
     },
     "status": "Обычная",
@@ -25681,10 +25684,10 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
-      "rb": 1.7,
+      "ab": 2.3,
+      "rb": 2.0,
       "sb": 1.7,
-      "ground_rb": 1.7,
+      "ground_rb": 2.0,
       "ground_sb": 1.7
     },
     "status": "Обычная",
@@ -25709,10 +25712,10 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
-      "rb": 1.7,
+      "ab": 2.3,
+      "rb": 2.0,
       "sb": 1.7,
-      "ground_rb": 1.7,
+      "ground_rb": 2.0,
       "ground_sb": 1.7
     },
     "status": "Акционная",
@@ -25988,12 +25991,12 @@
     "className": "Авиация",
     "role": "Штурмовик",
     "roleEn": "Attacker",
-    "rank": "I",
+    "rank": "II",
     "br": {
-      "ab": 2.3,
-      "rb": 2.7,
+      "ab": 2.7,
+      "rb": 3.0,
       "sb": 2.3,
-      "ground_rb": 2.7,
+      "ground_rb": 3.0,
       "ground_sb": 2.3
     },
     "status": "Премиум",
@@ -26003,7 +26006,7 @@
     "search": "fw_189c_0 Fw 189 C Fw 189 C Fw-189c-0 Germany air Штурмовик Attacker assault",
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
-    "treeRank": "I",
+    "treeRank": "II",
     "availability": "available"
   },
   {
@@ -26889,7 +26892,7 @@
     "roleEn": "Attacker",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 3.3,
       "rb": 3.0,
       "sb": 3.3,
       "ground_rb": 3.0,
@@ -26917,7 +26920,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 2.7,
       "rb": 2.3,
       "sb": 3.3,
       "ground_rb": 2.3,
@@ -27001,7 +27004,7 @@
     "roleEn": "Bomber",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 3.3,
       "rb": 3.0,
       "sb": 2.7,
       "ground_rb": 3.0,
@@ -27172,7 +27175,7 @@
       "ab": 3.7,
       "rb": 3.0,
       "sb": 3.3,
-      "ground_rb": 3.0,
+      "ground_rb": 3.3,
       "ground_sb": 3.3
     },
     "status": "Обычная",
@@ -27200,7 +27203,7 @@
       "ab": 3.7,
       "rb": 3.3,
       "sb": 3.3,
-      "ground_rb": 3.3,
+      "ground_rb": 3.0,
       "ground_sb": 3.3
     },
     "status": "Обычная",
@@ -27285,7 +27288,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -27425,7 +27428,7 @@
       "ab": 4.0,
       "rb": 4.3,
       "sb": 5.0,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -27478,10 +27481,10 @@
     "roleEn": "Fighter",
     "rank": "III",
     "br": {
-      "ab": 4.0,
+      "ab": 3.7,
       "rb": 3.7,
       "sb": 4.3,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 4.3
     },
     "status": "Обычная",
@@ -27593,7 +27596,7 @@
       "ab": 4.3,
       "rb": 4.7,
       "sb": 5.0,
-      "ground_rb": 4.7,
+      "ground_rb": 4.3,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -27733,7 +27736,7 @@
       "ab": 4.3,
       "rb": 4.3,
       "sb": 5.0,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -27873,7 +27876,7 @@
       "ab": 5.3,
       "rb": 4.3,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.3
     },
     "status": "Пакетная",
@@ -27902,7 +27905,7 @@
       "ab": 5.3,
       "rb": 4.3,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.3
     },
     "status": "Обычная",
@@ -27927,8 +27930,8 @@
     "roleEn": "Attacker",
     "rank": "IV",
     "br": {
-      "ab": 4.3,
-      "rb": 4.3,
+      "ab": 4.7,
+      "rb": 4.7,
       "sb": 4.3,
       "ground_rb": 4.3,
       "ground_sb": 4.3
@@ -27984,9 +27987,9 @@
     "rank": "IV",
     "br": {
       "ab": 4.7,
-      "rb": 4.3,
+      "rb": 4.0,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 4.3
     },
     "status": "Премиум",
@@ -28012,9 +28015,9 @@
     "rank": "IV",
     "br": {
       "ab": 4.7,
-      "rb": 4.3,
+      "rb": 4.0,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 4.3
     },
     "status": "Премиум",
@@ -28402,10 +28405,10 @@
     "roleEn": "Attacker",
     "rank": "IV",
     "br": {
-      "ab": 5.7,
-      "rb": 6.3,
+      "ab": 5.3,
+      "rb": 6.0,
       "sb": 6.7,
-      "ground_rb": 6.7,
+      "ground_rb": 6.3,
       "ground_sb": 6.7
     },
     "status": "Обычная",
@@ -28486,8 +28489,8 @@
     "roleEn": "Bomber",
     "rank": "IV",
     "br": {
-      "ab": 6.0,
-      "rb": 6.0,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -28968,8 +28971,9 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 7.3,
-      "ground_sb": 8.0
+      "ground_rb": 7.0,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -29137,7 +29141,7 @@
       "ab": 9.3,
       "rb": 8.3,
       "sb": 8.3,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.3
     },
     "status": "Обычная",
@@ -29193,7 +29197,7 @@
       "ab": 8.7,
       "rb": 8.3,
       "sb": 8.7,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -29277,7 +29281,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.3,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -29305,7 +29309,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Премиум",
@@ -29389,7 +29393,7 @@
       "ab": 9.3,
       "rb": 9.0,
       "sb": 9.3,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -29445,7 +29449,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -29473,7 +29477,7 @@
       "ab": 9.3,
       "rb": 9.7,
       "sb": 10.0,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 10.0
     },
     "status": "Премиум",
@@ -29502,7 +29506,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -29530,7 +29534,7 @@
       "ab": 10.0,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -29558,7 +29562,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -29586,7 +29590,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.3,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -29614,7 +29618,7 @@
       "ab": 10.7,
       "rb": 11.0,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -29727,7 +29731,7 @@
       "ab": 11.0,
       "rb": 11.3,
       "sb": 11.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 11.3
     },
     "status": "Пакетная",
@@ -29752,7 +29756,7 @@
     "roleEn": "Fighter",
     "rank": "VII",
     "br": {
-      "ab": 11.3,
+      "ab": 11.0,
       "rb": 11.0,
       "sb": 10.7,
       "ground_rb": 10.3,
@@ -29896,7 +29900,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 11.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 11.0
     },
     "status": "Обычная",
@@ -29980,7 +29984,7 @@
       "ab": 11.0,
       "rb": 11.3,
       "sb": 11.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 11.3
     },
     "status": "Маркет",
@@ -30037,7 +30041,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 12.7
     },
     "status": "Пакетная",
@@ -30093,7 +30097,7 @@
       "ab": 12.7,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.0
     },
     "status": "Обычная",
@@ -31945,8 +31949,8 @@
     "roleEn": "Boat",
     "rank": "III",
     "br": {
-      "ab": 2.7,
-      "rb": 2.7,
+      "ab": 2.3,
+      "rb": 2.3,
       "sb": 2.7,
       "ground_rb": 2.7,
       "ground_sb": 2.7
@@ -32111,10 +32115,10 @@
     "className": "Малый флот",
     "role": "Катер",
     "roleEn": "Boat",
-    "rank": "IV",
+    "rank": "III",
     "br": {
-      "ab": 3.0,
-      "rb": 3.0,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 3.0,
       "ground_rb": 3.0,
       "ground_sb": 3.0
@@ -32126,7 +32130,7 @@
     "search": "germ_vs10_hydrofoil VS-10 VS-10 Vs10-Hydrofoil Germany coastal Катер Boat boat",
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
-    "treeRank": "IV",
+    "treeRank": "III",
     "availability": "available"
   },
   {
@@ -33602,8 +33606,8 @@
     "roleEn": "Tank destroyer",
     "rank": "II",
     "br": {
-      "ab": 3.0,
-      "rb": 3.0,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 3.0,
       "ground_rb": 3.0,
       "ground_sb": 3.0
@@ -33940,8 +33944,8 @@
     "roleEn": "Tank destroyer",
     "rank": "II",
     "br": {
-      "ab": 3.7,
-      "rb": 3.7,
+      "ab": 3.3,
+      "rb": 3.3,
       "sb": 3.7,
       "ground_rb": 3.7,
       "ground_sb": 3.7
@@ -34108,7 +34112,7 @@
     "roleEn": "Tank destroyer",
     "rank": "II",
     "br": {
-      "ab": 4.3,
+      "ab": 4.0,
       "rb": 4.0,
       "sb": 4.0,
       "ground_rb": 4.0,
@@ -34193,8 +34197,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -34221,8 +34225,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -35091,8 +35095,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.0,
-      "rb": 6.0,
+      "ab": 5.7,
+      "rb": 5.7,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -35371,8 +35375,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -36334,8 +36338,8 @@
     "roleEn": "Medium tank",
     "rank": "VI",
     "br": {
-      "ab": 9.0,
-      "rb": 9.0,
+      "ab": 8.7,
+      "rb": 8.7,
       "sb": 9.0,
       "ground_rb": 9.0,
       "ground_sb": 9.0
@@ -36447,8 +36451,8 @@
     "roleEn": "Medium tank",
     "rank": "VI",
     "br": {
-      "ab": 9.3,
-      "rb": 9.3,
+      "ab": 9.0,
+      "rb": 9.0,
       "sb": 9.3,
       "ground_rb": 9.3,
       "ground_sb": 9.3
@@ -37741,7 +37745,7 @@
     "roleEn": "Fighter",
     "rank": "IV",
     "br": {
-      "ab": 3.3,
+      "ab": 3.7,
       "rb": 3.3,
       "sb": 3.3,
       "ground_rb": 3.3,
@@ -37798,9 +37802,9 @@
     "rank": "IV",
     "br": {
       "ab": 4.3,
-      "rb": 4.3,
+      "rb": 4.7,
       "sb": 4.7,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -37856,7 +37860,7 @@
       "ab": 5.3,
       "rb": 5.7,
       "sb": 5.0,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 5.0
     },
     "status": "Пакетная",
@@ -37913,7 +37917,7 @@
       "ab": 5.7,
       "rb": 6.0,
       "sb": 5.0,
-      "ground_rb": 6.0,
+      "ground_rb": 6.3,
       "ground_sb": 5.0
     },
     "status": "Премиум",
@@ -38082,7 +38086,7 @@
       "ab": 8.7,
       "rb": 8.3,
       "sb": 8.3,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.3
     },
     "status": "Обычная",
@@ -38110,7 +38114,7 @@
       "ab": 8.7,
       "rb": 8.3,
       "sb": 8.7,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.7
     },
     "status": "Премиум",
@@ -38222,7 +38226,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -38250,7 +38254,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -38276,7 +38280,7 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.7,
+      "rb": 10.0,
       "sb": 9.7,
       "ground_rb": 10.0,
       "ground_sb": 9.7
@@ -38304,9 +38308,9 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -38332,9 +38336,9 @@
     "rank": "VI",
     "br": {
       "ab": 9.7,
-      "rb": 9.0,
+      "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 9.0
     },
     "status": "Обычная",
@@ -38362,7 +38366,7 @@
       "ab": 10.0,
       "rb": 10.0,
       "sb": 10.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -38390,7 +38394,7 @@
       "ab": 10.3,
       "rb": 10.0,
       "sb": 10.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -38446,7 +38450,7 @@
       "ab": 11.3,
       "rb": 11.7,
       "sb": 11.3,
-      "ground_rb": 11.0,
+      "ground_rb": 10.7,
       "ground_sb": 11.3
     },
     "status": "Маркет",
@@ -38529,7 +38533,7 @@
     "rank": "VII",
     "br": {
       "ab": 12.0,
-      "rb": 12.0,
+      "rb": 11.7,
       "sb": 12.0,
       "ground_rb": 11.3,
       "ground_sb": 12.0
@@ -38643,7 +38647,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 12.7
     },
     "status": "Обычная",
@@ -38671,7 +38675,7 @@
       "ab": 13.0,
       "rb": 13.3,
       "sb": 13.0,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 13.0
     },
     "status": "Маркет",
@@ -38865,8 +38869,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.0,
-      "rb": 6.0,
+      "ab": 5.7,
+      "rb": 5.7,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -38949,8 +38953,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -40379,7 +40383,7 @@
       "ab": 8.7,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 8.0,
+      "ground_rb": 7.7,
       "ground_sb": 8.0
     },
     "status": "Обычная",
@@ -40463,7 +40467,7 @@
       "ab": 10.3,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Премиум",
@@ -40547,7 +40551,7 @@
       "ab": 10.7,
       "rb": 12.0,
       "sb": 10.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -41020,7 +41024,7 @@
     "roleEn": "Attacker",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 2.3,
       "ground_rb": 2.0,
@@ -41104,7 +41108,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.0,
       "ground_rb": 2.3,
@@ -41132,7 +41136,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.0,
       "ground_rb": 2.3,
@@ -41160,7 +41164,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.0,
       "ground_rb": 2.3,
@@ -41468,8 +41472,8 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.3,
-      "rb": 2.3,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 2.3,
       "ground_rb": 2.3,
       "ground_sb": 2.3
@@ -41499,7 +41503,7 @@
       "ab": 2.7,
       "rb": 2.7,
       "sb": 2.7,
-      "ground_rb": 2.7,
+      "ground_rb": 3.0,
       "ground_sb": 2.7
     },
     "status": "Премиум",
@@ -41781,7 +41785,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -41978,7 +41982,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.3,
-      "ground_rb": 3.7,
+      "ground_rb": 4.0,
       "ground_sb": 3.3
     },
     "status": "Премиум",
@@ -42255,10 +42259,10 @@
     "roleEn": "Fighter",
     "rank": "IV",
     "br": {
-      "ab": 5.0,
+      "ab": 5.3,
       "rb": 5.0,
       "sb": 5.3,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.3
     },
     "status": "Обычная",
@@ -42286,7 +42290,7 @@
       "ab": 5.3,
       "rb": 4.3,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.3
     },
     "status": "Премиум",
@@ -42592,9 +42596,9 @@
     "rank": "V",
     "br": {
       "ab": 7.3,
-      "rb": 7.7,
+      "rb": 8.0,
       "sb": 7.0,
-      "ground_rb": 7.3,
+      "ground_rb": 7.7,
       "ground_sb": 7.0
     },
     "status": "Обычная",
@@ -42706,8 +42710,9 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 7.3,
-      "ground_sb": 8.0
+      "ground_rb": 7.0,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -42734,7 +42739,7 @@
       "ab": 8.3,
       "rb": 8.7,
       "sb": 8.7,
-      "ground_rb": 8.7,
+      "ground_rb": 8.3,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -42846,7 +42851,7 @@
       "ab": 9.0,
       "rb": 8.3,
       "sb": 8.7,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -42874,7 +42879,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.3,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -43013,7 +43018,7 @@
     "rank": "VI",
     "br": {
       "ab": 9.3,
-      "rb": 9.0,
+      "rb": 9.3,
       "sb": 9.3,
       "ground_rb": 9.0,
       "ground_sb": 9.3
@@ -43071,7 +43076,7 @@
       "ab": 10.7,
       "rb": 11.0,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -43099,7 +43104,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -43155,7 +43160,7 @@
       "ab": 11.0,
       "rb": 11.3,
       "sb": 10.7,
-      "ground_rb": 10.7,
+      "ground_rb": 10.0,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -43183,7 +43188,7 @@
       "ab": 11.0,
       "rb": 11.3,
       "sb": 10.7,
-      "ground_rb": 10.7,
+      "ground_rb": 10.0,
       "ground_sb": 10.7
     },
     "status": "Премиум",
@@ -43239,7 +43244,7 @@
       "ab": 11.0,
       "rb": 11.3,
       "sb": 11.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 11.3
     },
     "status": "Обычная",
@@ -43323,7 +43328,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 11.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 11.0
     },
     "status": "Обычная",
@@ -43435,7 +43440,7 @@
       "ab": 12.0,
       "rb": 12.0,
       "sb": 12.0,
-      "ground_rb": 11.3,
+      "ground_rb": 11.0,
       "ground_sb": 12.0
     },
     "status": "Обычная",
@@ -43572,10 +43577,10 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 13.3,
+      "ab": 13.7,
       "rb": 13.3,
       "sb": 13.3,
-      "ground_rb": 12.7,
+      "ground_rb": 12.3,
       "ground_sb": 13.3
     },
     "status": "Обычная",
@@ -46499,8 +46504,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -46527,8 +46532,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -46864,8 +46869,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.0,
-      "rb": 6.0,
+      "ab": 5.7,
+      "rb": 5.7,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -46949,8 +46954,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.0,
-      "rb": 6.0,
+      "ab": 5.7,
+      "rb": 5.7,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -47622,8 +47627,8 @@
     "roleEn": "Medium tank",
     "rank": "VI",
     "br": {
-      "ab": 9.3,
-      "rb": 9.3,
+      "ab": 9.0,
+      "rb": 9.0,
       "sb": 9.3,
       "ground_rb": 9.3,
       "ground_sb": 9.3
@@ -49191,7 +49196,7 @@
     "roleEn": "Bomber",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 1.7,
       "sb": 1.7,
       "ground_rb": 1.7,
@@ -49278,7 +49283,7 @@
       "ab": 2.0,
       "rb": 2.3,
       "sb": 2.3,
-      "ground_rb": 2.3,
+      "ground_rb": 2.0,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -49306,7 +49311,7 @@
       "ab": 2.0,
       "rb": 2.3,
       "sb": 2.3,
-      "ground_rb": 2.3,
+      "ground_rb": 2.0,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -49387,10 +49392,10 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 2.3,
-      "ground_rb": 2.0,
+      "ground_rb": 2.3,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -49530,7 +49535,7 @@
       "ab": 2.7,
       "rb": 2.7,
       "sb": 2.3,
-      "ground_rb": 2.7,
+      "ground_rb": 3.0,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -49558,7 +49563,7 @@
       "ab": 2.7,
       "rb": 2.7,
       "sb": 2.3,
-      "ground_rb": 2.7,
+      "ground_rb": 3.0,
       "ground_sb": 2.3
     },
     "status": "Премиум",
@@ -49751,7 +49756,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 2.7,
       "rb": 3.3,
       "sb": 3.3,
       "ground_rb": 3.3,
@@ -49810,7 +49815,7 @@
       "ab": 3.0,
       "rb": 3.3,
       "sb": 2.7,
-      "ground_rb": 3.3,
+      "ground_rb": 3.7,
       "ground_sb": 2.7
     },
     "status": "Обычная",
@@ -50115,8 +50120,8 @@
     "roleEn": "Bomber",
     "rank": "III",
     "br": {
-      "ab": 3.7,
-      "rb": 3.7,
+      "ab": 4.0,
+      "rb": 4.0,
       "sb": 4.0,
       "ground_rb": 3.7,
       "ground_sb": 4.0
@@ -50143,8 +50148,8 @@
     "roleEn": "Bomber",
     "rank": "III",
     "br": {
-      "ab": 3.7,
-      "rb": 3.7,
+      "ab": 4.0,
+      "rb": 4.0,
       "sb": 4.0,
       "ground_rb": 3.7,
       "ground_sb": 4.0
@@ -50341,9 +50346,9 @@
     "rank": "III",
     "br": {
       "ab": 4.3,
-      "rb": 4.0,
+      "rb": 4.3,
       "sb": 3.7,
-      "ground_rb": 4.0,
+      "ground_rb": 4.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -50369,9 +50374,9 @@
     "rank": "III",
     "br": {
       "ab": 4.3,
-      "rb": 4.3,
+      "rb": 4.7,
       "sb": 4.0,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -50455,7 +50460,7 @@
       "ab": 4.7,
       "rb": 5.0,
       "sb": 4.3,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 4.3
     },
     "status": "Обычная",
@@ -50483,7 +50488,7 @@
       "ab": 4.7,
       "rb": 5.0,
       "sb": 4.7,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -50509,9 +50514,9 @@
     "rank": "III",
     "br": {
       "ab": 4.7,
-      "rb": 4.0,
+      "rb": 4.3,
       "sb": 3.7,
-      "ground_rb": 4.0,
+      "ground_rb": 4.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -50679,7 +50684,7 @@
       "ab": 5.7,
       "rb": 5.0,
       "sb": 3.7,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -50735,7 +50740,7 @@
       "ab": 5.3,
       "rb": 5.3,
       "sb": 4.7,
-      "ground_rb": 5.3,
+      "ground_rb": 5.7,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -50761,9 +50766,9 @@
     "rank": "IV",
     "br": {
       "ab": 5.3,
-      "rb": 5.7,
+      "rb": 6.0,
       "sb": 5.0,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -50789,9 +50794,9 @@
     "rank": "IV",
     "br": {
       "ab": 5.3,
-      "rb": 5.7,
+      "rb": 6.0,
       "sb": 4.7,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -50818,9 +50823,9 @@
     "rank": "IV",
     "br": {
       "ab": 5.3,
-      "rb": 5.3,
+      "rb": 5.7,
       "sb": 4.7,
-      "ground_rb": 5.3,
+      "ground_rb": 5.7,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -50846,9 +50851,9 @@
     "rank": "IV",
     "br": {
       "ab": 5.3,
-      "rb": 5.3,
+      "rb": 5.7,
       "sb": 4.7,
-      "ground_rb": 5.3,
+      "ground_rb": 5.7,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -50876,7 +50881,7 @@
       "ab": 5.3,
       "rb": 5.7,
       "sb": 4.7,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -50933,7 +50938,7 @@
       "ab": 5.3,
       "rb": 4.7,
       "sb": 4.0,
-      "ground_rb": 4.7,
+      "ground_rb": 5.0,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -50961,7 +50966,7 @@
       "ab": 5.3,
       "rb": 4.7,
       "sb": 4.0,
-      "ground_rb": 4.7,
+      "ground_rb": 5.0,
       "ground_sb": 4.0
     },
     "status": "Премиум",
@@ -51017,7 +51022,7 @@
       "ab": 5.7,
       "rb": 5.0,
       "sb": 4.3,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 4.3
     },
     "status": "Премиум",
@@ -51046,7 +51051,7 @@
       "ab": 5.7,
       "rb": 5.0,
       "sb": 4.7,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -51241,9 +51246,9 @@
     "rank": "IV",
     "br": {
       "ab": 6.0,
-      "rb": 5.7,
+      "rb": 5.3,
       "sb": 6.0,
-      "ground_rb": 5.7,
+      "ground_rb": 5.3,
       "ground_sb": 6.0
     },
     "status": "Премиум",
@@ -51383,7 +51388,7 @@
       "ab": 6.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 6.0
     },
     "status": "Обычная",
@@ -51439,7 +51444,7 @@
       "ab": 6.7,
       "rb": 6.7,
       "sb": 6.3,
-      "ground_rb": 7.3,
+      "ground_rb": 7.7,
       "ground_sb": 6.3
     },
     "status": "Обычная",
@@ -51747,7 +51752,7 @@
       "ab": 9.7,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Премиум",
@@ -51772,10 +51777,10 @@
     "roleEn": "Fighter",
     "rank": "VI",
     "br": {
-      "ab": 10.0,
+      "ab": 10.3,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -51800,10 +51805,10 @@
     "roleEn": "Fighter",
     "rank": "VI",
     "br": {
-      "ab": 10.0,
+      "ab": 10.3,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Премиум",
@@ -51832,7 +51837,7 @@
       "ab": 10.3,
       "rb": 10.0,
       "sb": 10.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -51860,7 +51865,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -51916,7 +51921,7 @@
       "ab": 10.3,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -52001,7 +52006,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 11.3,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 11.3
     },
     "status": "Обычная",
@@ -52029,7 +52034,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 10.7,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 10.7
     },
     "status": "Премиум",
@@ -52057,7 +52062,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 10.7,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -52141,7 +52146,7 @@
       "ab": 12.0,
       "rb": 12.3,
       "sb": 12.3,
-      "ground_rb": 11.3,
+      "ground_rb": 11.0,
       "ground_sb": 12.3
     },
     "status": "Обычная",
@@ -52169,7 +52174,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 12.7
     },
     "status": "Обычная",
@@ -52253,7 +52258,7 @@
       "ab": 13.0,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 13.0
     },
     "status": "Обычная",
@@ -52281,7 +52286,7 @@
       "ab": 13.0,
       "rb": 13.3,
       "sb": 13.3,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 13.3
     },
     "status": "Обычная",
@@ -53036,8 +53041,8 @@
     "roleEn": "Destroyer",
     "rank": "III",
     "br": {
-      "ab": 5.0,
-      "rb": 5.0,
+      "ab": 4.7,
+      "rb": 4.7,
       "sb": 5.0,
       "ground_rb": 5.0,
       "ground_sb": 5.0
@@ -53064,8 +53069,8 @@
     "roleEn": "Destroyer",
     "rank": "III",
     "br": {
-      "ab": 5.0,
-      "rb": 5.0,
+      "ab": 4.7,
+      "rb": 4.7,
       "sb": 5.0,
       "ground_rb": 5.0,
       "ground_sb": 5.0
@@ -53176,8 +53181,8 @@
     "roleEn": "Destroyer",
     "rank": "III",
     "br": {
-      "ab": 5.0,
-      "rb": 5.0,
+      "ab": 4.7,
+      "rb": 4.7,
       "sb": 5.0,
       "ground_rb": 5.0,
       "ground_sb": 5.0
@@ -55649,8 +55654,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -57414,7 +57419,7 @@
       "ab": 10.7,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -57442,7 +57447,7 @@
       "ab": 10.7,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Пакетная",
@@ -57803,10 +57808,10 @@
     "roleEn": "Bomber",
     "rank": "II",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.7,
       "sb": 2.3,
-      "ground_rb": 2.7,
+      "ground_rb": 2.3,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -57945,9 +57950,9 @@
     "rank": "II",
     "br": {
       "ab": 2.7,
-      "rb": 2.7,
+      "rb": 3.0,
       "sb": 2.3,
-      "ground_rb": 2.7,
+      "ground_rb": 3.0,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -58057,7 +58062,7 @@
     "roleEn": "Bomber",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 3.3,
       "rb": 3.0,
       "sb": 2.7,
       "ground_rb": 3.0,
@@ -58228,7 +58233,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -58281,10 +58286,10 @@
     "roleEn": "Bomber",
     "rank": "III",
     "br": {
-      "ab": 3.7,
+      "ab": 4.0,
       "rb": 4.3,
       "sb": 4.0,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -58312,7 +58317,7 @@
       "ab": 3.7,
       "rb": 4.3,
       "sb": 4.0,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -58365,8 +58370,8 @@
     "roleEn": "Fighter",
     "rank": "III",
     "br": {
-      "ab": 4.7,
-      "rb": 4.3,
+      "ab": 5.0,
+      "rb": 4.7,
       "sb": 4.0,
       "ground_rb": 4.3,
       "ground_sb": 4.0
@@ -58424,7 +58429,7 @@
       "ab": 5.3,
       "rb": 4.3,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.3
     },
     "status": "Обычная",
@@ -58816,7 +58821,7 @@
       "ab": 9.0,
       "rb": 8.3,
       "sb": 8.3,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.3
     },
     "status": "Премиум",
@@ -58901,7 +58906,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 8.7,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -58929,7 +58934,7 @@
       "ab": 9.0,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.3
     },
     "status": "Премиум",
@@ -58958,7 +58963,7 @@
       "ab": 9.3,
       "rb": 9.0,
       "sb": 9.3,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -58986,7 +58991,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -59014,7 +59019,7 @@
       "ab": 10.0,
       "rb": 10.0,
       "sb": 10.3,
-      "ground_rb": 10.3,
+      "ground_rb": 10.0,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -59070,7 +59075,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.3,
-      "ground_rb": 10.7,
+      "ground_rb": 10.3,
       "ground_sb": 10.3
     },
     "status": "Полковая",
@@ -59098,7 +59103,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.3,
-      "ground_rb": 10.7,
+      "ground_rb": 10.0,
       "ground_sb": 10.3
     },
     "status": "Премиум",
@@ -59295,7 +59300,7 @@
       "ab": 12.3,
       "rb": 12.0,
       "sb": 11.7,
-      "ground_rb": 11.3,
+      "ground_rb": 11.0,
       "ground_sb": 11.7
     },
     "status": "Обычная",
@@ -59320,10 +59325,10 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 13.0,
+      "ab": 13.3,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.0
     },
     "status": "Обычная",
@@ -59348,10 +59353,10 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 13.0,
+      "ab": 13.3,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.0
     },
     "status": "Пакетная",
@@ -60779,7 +60784,7 @@
     "rank": "IV",
     "br": {
       "ab": 6.0,
-      "rb": 6.3,
+      "rb": 6.0,
       "sb": 6.0,
       "ground_rb": 6.3,
       "ground_sb": 6.0
@@ -60806,8 +60811,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -61506,8 +61511,8 @@
     "roleEn": "Medium tank",
     "rank": "VI",
     "br": {
-      "ab": 9.3,
-      "rb": 9.3,
+      "ab": 9.0,
+      "rb": 9.0,
       "sb": 9.3,
       "ground_rb": 9.3,
       "ground_sb": 9.3
@@ -62350,7 +62355,7 @@
       "ab": 9.7,
       "rb": 9.7,
       "sb": 10.0,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -62406,7 +62411,7 @@
       "ab": 10.3,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -62994,7 +62999,7 @@
       "ab": 2.0,
       "rb": 2.0,
       "sb": 2.0,
-      "ground_rb": 2.0,
+      "ground_rb": 2.3,
       "ground_sb": 2.0
     },
     "status": "Обычная",
@@ -63022,7 +63027,7 @@
       "ab": 2.0,
       "rb": 2.0,
       "sb": 2.0,
-      "ground_rb": 2.0,
+      "ground_rb": 2.3,
       "ground_sb": 2.0
     },
     "status": "Премиум",
@@ -63104,7 +63109,7 @@
     "roleEn": "Bomber",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 2.0,
       "ground_rb": 2.0,
@@ -63273,7 +63278,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.3,
+      "ab": 2.7,
       "rb": 2.7,
       "sb": 2.7,
       "ground_rb": 2.7,
@@ -63333,7 +63338,7 @@
       "ab": 2.7,
       "rb": 2.7,
       "sb": 3.0,
-      "ground_rb": 2.7,
+      "ground_rb": 2.3,
       "ground_sb": 3.0
     },
     "status": "Обычная",
@@ -63782,10 +63787,10 @@
     "roleEn": "Bomber",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 2.7,
       "rb": 3.0,
       "sb": 3.0,
-      "ground_rb": 3.0,
+      "ground_rb": 2.7,
       "ground_sb": 3.0
     },
     "status": "Обычная",
@@ -64206,7 +64211,7 @@
       "ab": 3.7,
       "rb": 4.3,
       "sb": 3.0,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 3.0
     },
     "status": "Премиум",
@@ -64739,7 +64744,7 @@
       "ab": 4.3,
       "rb": 4.7,
       "sb": 4.7,
-      "ground_rb": 4.7,
+      "ground_rb": 4.3,
       "ground_sb": 4.7
     },
     "status": "Обычная",
@@ -64935,7 +64940,7 @@
       "ab": 3.3,
       "rb": 3.7,
       "sb": 4.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -65159,7 +65164,7 @@
       "ab": 5.0,
       "rb": 5.0,
       "sb": 5.0,
-      "ground_rb": 5.0,
+      "ground_rb": 4.7,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -65187,7 +65192,7 @@
       "ab": 5.0,
       "rb": 5.7,
       "sb": 5.7,
-      "ground_rb": 5.7,
+      "ground_rb": 5.3,
       "ground_sb": 5.7
     },
     "status": "Обычная",
@@ -65243,7 +65248,7 @@
       "ab": 5.0,
       "rb": 5.3,
       "sb": 5.0,
-      "ground_rb": 5.3,
+      "ground_rb": 5.0,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -65327,7 +65332,7 @@
       "ab": 5.3,
       "rb": 5.3,
       "sb": 5.7,
-      "ground_rb": 5.3,
+      "ground_rb": 5.0,
       "ground_sb": 5.7
     },
     "status": "Обычная",
@@ -65468,7 +65473,7 @@
       "ab": 5.3,
       "rb": 5.7,
       "sb": 6.7,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 6.7
     },
     "status": "Премиум",
@@ -65665,7 +65670,7 @@
       "ab": 5.7,
       "rb": 6.0,
       "sb": 5.0,
-      "ground_rb": 6.0,
+      "ground_rb": 6.3,
       "ground_sb": 5.0
     },
     "status": "Премиум",
@@ -65970,7 +65975,7 @@
     "roleEn": "Fighter",
     "rank": "V",
     "br": {
-      "ab": 7.3,
+      "ab": 7.7,
       "rb": 8.3,
       "sb": 9.0,
       "ground_rb": 8.3,
@@ -66111,7 +66116,7 @@
     "roleEn": "Fighter",
     "rank": "V",
     "br": {
-      "ab": 7.7,
+      "ab": 8.0,
       "rb": 8.3,
       "sb": 8.7,
       "ground_rb": 8.3,
@@ -66142,7 +66147,7 @@
       "ab": 7.7,
       "rb": 7.0,
       "sb": 7.0,
-      "ground_rb": 7.0,
+      "ground_rb": 6.7,
       "ground_sb": 7.0
     },
     "status": "Обычная",
@@ -66170,8 +66175,9 @@
       "ab": 8.0,
       "rb": 8.3,
       "sb": 7.7,
-      "ground_rb": 7.7,
-      "ground_sb": 7.7
+      "ground_rb": 7.3,
+      "ground_sb": 7.7,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -66198,8 +66204,9 @@
       "ab": 8.3,
       "rb": 8.3,
       "sb": 8.0,
-      "ground_rb": 7.7,
-      "ground_sb": 8.0
+      "ground_rb": 7.3,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -66338,7 +66345,7 @@
       "ab": 9.0,
       "rb": 8.3,
       "sb": 8.7,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.7
     },
     "status": "Обычная",
@@ -66366,7 +66373,7 @@
       "ab": 8.7,
       "rb": 8.7,
       "sb": 8.7,
-      "ground_rb": 8.7,
+      "ground_rb": 8.3,
       "ground_sb": 8.7
     },
     "status": "Акционная",
@@ -66479,8 +66486,9 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 8.7,
-      "ground_sb": 9.0
+      "ground_rb": 8.3,
+      "ground_sb": 9.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -66507,7 +66515,7 @@
       "ab": 9.0,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.3
     },
     "status": "Маркет",
@@ -66564,7 +66572,7 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 8.7,
       "ground_sb": 9.0
     },
     "status": "Маркет",
@@ -66621,7 +66629,7 @@
       "ab": 9.0,
       "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 9.0,
+      "ground_rb": 9.3,
       "ground_sb": 9.0
     },
     "status": "Маркет",
@@ -66647,10 +66655,10 @@
     "roleEn": "Attacker",
     "rank": "VI",
     "br": {
-      "ab": 9.3,
+      "ab": 9.7,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Премиум",
@@ -66678,7 +66686,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -66706,7 +66714,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -66734,8 +66742,9 @@
       "ab": 9.3,
       "rb": 9.0,
       "sb": 9.3,
-      "ground_rb": 9.0,
-      "ground_sb": 9.3
+      "ground_rb": 8.7,
+      "ground_sb": 9.3,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -66791,7 +66800,7 @@
       "ab": 9.7,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -66819,7 +66828,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -66847,7 +66856,7 @@
       "ab": 9.7,
       "rb": 9.7,
       "sb": 9.7,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -66875,7 +66884,7 @@
       "ab": 9.7,
       "rb": 10.3,
       "sb": 10.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -66959,7 +66968,7 @@
       "ab": 10.3,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.7,
+      "ground_rb": 11.0,
       "ground_sb": 10.7
     },
     "status": "Премиум",
@@ -66987,7 +66996,7 @@
       "ab": 10.3,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Маркет",
@@ -67016,7 +67025,7 @@
       "ab": 10.3,
       "rb": 10.7,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Пакетная",
@@ -67044,7 +67053,7 @@
       "ab": 10.3,
       "rb": 10.7,
       "sb": 10.3,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -67069,7 +67078,7 @@
     "roleEn": "Fighter",
     "rank": "VII",
     "br": {
-      "ab": 10.7,
+      "ab": 10.3,
       "rb": 10.0,
       "sb": 10.3,
       "ground_rb": 9.7,
@@ -67156,7 +67165,7 @@
       "ab": 11.0,
       "rb": 10.0,
       "sb": 10.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -67213,7 +67222,7 @@
       "ab": 11.3,
       "rb": 10.7,
       "sb": 10.3,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -67323,7 +67332,7 @@
     "rank": "VII",
     "br": {
       "ab": 11.7,
-      "rb": 11.0,
+      "rb": 10.7,
       "sb": 10.7,
       "ground_rb": 11.0,
       "ground_sb": 10.7
@@ -67548,8 +67557,8 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 12.7,
-      "rb": 13.3,
+      "ab": 13.0,
+      "rb": 13.7,
       "sb": 13.0,
       "ground_rb": 11.7,
       "ground_sb": 13.0
@@ -67577,7 +67586,7 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 12.7,
+      "ab": 12.3,
       "rb": 13.0,
       "sb": 12.7,
       "ground_rb": 11.7,
@@ -67605,10 +67614,10 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 12.7,
+      "ab": 12.3,
       "rb": 13.0,
       "sb": 12.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 12.7
     },
     "status": "Пакетная",
@@ -67636,7 +67645,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 12.7
     },
     "status": "Обычная",
@@ -67664,7 +67673,7 @@
       "ab": 12.7,
       "rb": 12.7,
       "sb": 12.7,
-      "ground_rb": 12.3,
+      "ground_rb": 12.0,
       "ground_sb": 12.7
     },
     "status": "Пакетная",
@@ -67717,10 +67726,10 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 13.3,
+      "ab": 13.7,
       "rb": 13.3,
       "sb": 13.3,
-      "ground_rb": 12.7,
+      "ground_rb": 12.3,
       "ground_sb": 13.3
     },
     "status": "Обычная",
@@ -69962,8 +69971,8 @@
     "roleEn": "Boat",
     "rank": "III",
     "br": {
-      "ab": 3.0,
-      "rb": 3.0,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 3.0,
       "ground_rb": 3.0,
       "ground_sb": 3.0
@@ -70018,8 +70027,8 @@
     "roleEn": "Boat",
     "rank": "III",
     "br": {
-      "ab": 3.0,
-      "rb": 3.0,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 3.0,
       "ground_rb": 3.0,
       "ground_sb": 3.0
@@ -70046,8 +70055,8 @@
     "roleEn": "Boat",
     "rank": "III",
     "br": {
-      "ab": 3.0,
-      "rb": 3.0,
+      "ab": 2.7,
+      "rb": 2.7,
       "sb": 3.0,
       "ground_rb": 3.0,
       "ground_sb": 3.0
@@ -71115,8 +71124,8 @@
     "roleEn": "Light tank",
     "rank": "II",
     "br": {
-      "ab": 2.7,
-      "rb": 2.7,
+      "ab": 3.0,
+      "rb": 3.0,
       "sb": 2.7,
       "ground_rb": 2.7,
       "ground_sb": 2.7
@@ -71482,8 +71491,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -71510,8 +71519,8 @@
     "roleEn": "Tank destroyer",
     "rank": "III",
     "br": {
-      "ab": 4.0,
-      "rb": 4.0,
+      "ab": 3.7,
+      "rb": 3.7,
       "sb": 4.0,
       "ground_rb": 4.0,
       "ground_sb": 4.0
@@ -71650,7 +71659,7 @@
     "roleEn": "Heavy tank",
     "rank": "III",
     "br": {
-      "ab": 4.7,
+      "ab": 5.0,
       "rb": 5.0,
       "sb": 5.0,
       "ground_rb": 5.0,
@@ -71734,7 +71743,7 @@
     "roleEn": "Heavy tank",
     "rank": "III",
     "br": {
-      "ab": 5.0,
+      "ab": 5.3,
       "rb": 5.3,
       "sb": 5.3,
       "ground_rb": 5.3,
@@ -72238,8 +72247,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -72294,8 +72303,8 @@
     "roleEn": "Light tank",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.7,
+      "rb": 6.7,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -72716,7 +72725,7 @@
     "rank": "IV",
     "br": {
       "ab": 7.0,
-      "rb": 6.7,
+      "rb": 7.0,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -73528,8 +73537,8 @@
     "roleEn": "SPAA",
     "rank": "VI",
     "br": {
-      "ab": 9.0,
-      "rb": 9.0,
+      "ab": 9.3,
+      "rb": 9.3,
       "sb": 9.0,
       "ground_rb": 9.0,
       "ground_sb": 9.0
@@ -73584,8 +73593,8 @@
     "roleEn": "Medium tank",
     "rank": "VI",
     "br": {
-      "ab": 9.0,
-      "rb": 9.0,
+      "ab": 9.3,
+      "rb": 9.3,
       "sb": 9.0,
       "ground_rb": 9.0,
       "ground_sb": 9.0
@@ -73783,8 +73792,8 @@
     "roleEn": "Light tank",
     "rank": "VI",
     "br": {
-      "ab": 9.7,
-      "rb": 9.7,
+      "ab": 9.3,
+      "rb": 9.3,
       "sb": 9.7,
       "ground_rb": 9.7,
       "ground_sb": 9.7
@@ -74773,7 +74782,7 @@
       "ab": 8.7,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 8.0,
+      "ground_rb": 7.7,
       "ground_sb": 8.0
     },
     "status": "Обычная",
@@ -75026,7 +75035,7 @@
       "ab": 10.3,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -75054,7 +75063,7 @@
       "ab": 10.3,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Пакетная",
@@ -75082,7 +75091,7 @@
       "ab": 10.3,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Пакетная",
@@ -75195,7 +75204,7 @@
       "ab": 10.7,
       "rb": 12.0,
       "sb": 10.7,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -75668,10 +75677,10 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 1.7,
-      "rb": 2.3,
+      "ab": 2.0,
+      "rb": 2.0,
       "sb": 1.7,
-      "ground_rb": 2.3,
+      "ground_rb": 2.0,
       "ground_sb": 1.7
     },
     "status": "Обычная",
@@ -75723,8 +75732,8 @@
     "roleEn": "Attacker",
     "rank": "I",
     "br": {
-      "ab": 1.7,
-      "rb": 2.0,
+      "ab": 2.0,
+      "rb": 1.7,
       "sb": 1.7,
       "ground_rb": 2.0,
       "ground_sb": 1.7
@@ -75751,7 +75760,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.0,
       "ground_rb": 2.3,
@@ -75779,7 +75788,7 @@
     "roleEn": "Fighter",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.3,
       "sb": 2.0,
       "ground_rb": 2.3,
@@ -75834,7 +75843,7 @@
     "roleEn": "Bomber",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.0,
       "sb": 2.0,
       "ground_rb": 2.0,
@@ -75861,10 +75870,10 @@
     "roleEn": "Attacker",
     "rank": "I",
     "br": {
-      "ab": 2.0,
+      "ab": 2.3,
       "rb": 2.7,
       "sb": 2.7,
-      "ground_rb": 2.7,
+      "ground_rb": 2.3,
       "ground_sb": 2.7
     },
     "status": "Обычная",
@@ -75977,7 +75986,7 @@
       "ab": 2.3,
       "rb": 2.3,
       "sb": 2.3,
-      "ground_rb": 2.3,
+      "ground_rb": 2.7,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -76087,7 +76096,7 @@
     "roleEn": "Attacker",
     "rank": "I",
     "br": {
-      "ab": 2.3,
+      "ab": 2.7,
       "rb": 2.3,
       "sb": 2.7,
       "ground_rb": 2.3,
@@ -76313,7 +76322,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.3,
+      "ab": 2.7,
       "rb": 2.0,
       "sb": 2.3,
       "ground_rb": 2.0,
@@ -76567,8 +76576,8 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 2.7,
-      "rb": 2.7,
+      "ab": 3.0,
+      "rb": 3.0,
       "sb": 2.3,
       "ground_rb": 2.7,
       "ground_sb": 2.3
@@ -76651,7 +76660,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 3.3,
       "rb": 3.0,
       "sb": 3.0,
       "ground_rb": 3.0,
@@ -76682,7 +76691,7 @@
       "ab": 3.0,
       "rb": 2.7,
       "sb": 2.3,
-      "ground_rb": 2.7,
+      "ground_rb": 3.0,
       "ground_sb": 2.3
     },
     "status": "Премиум",
@@ -76845,7 +76854,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 3.0,
+      "ab": 3.3,
       "rb": 3.0,
       "sb": 3.0,
       "ground_rb": 3.0,
@@ -76985,7 +76994,7 @@
     "roleEn": "Fighter",
     "rank": "II",
     "br": {
-      "ab": 3.3,
+      "ab": 3.7,
       "rb": 3.3,
       "sb": 3.3,
       "ground_rb": 3.3,
@@ -77212,7 +77221,7 @@
       "ab": 3.7,
       "rb": 3.3,
       "sb": 4.0,
-      "ground_rb": 3.3,
+      "ground_rb": 3.0,
       "ground_sb": 4.0
     },
     "status": "Обычная",
@@ -77353,7 +77362,7 @@
       "ab": 3.3,
       "rb": 3.3,
       "sb": 3.7,
-      "ground_rb": 3.3,
+      "ground_rb": 3.0,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -77576,7 +77585,7 @@
     "rank": "III",
     "br": {
       "ab": 3.7,
-      "rb": 4.3,
+      "rb": 4.0,
       "sb": 3.7,
       "ground_rb": 4.7,
       "ground_sb": 3.7
@@ -77774,7 +77783,7 @@
       "ab": 4.0,
       "rb": 3.7,
       "sb": 4.3,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 4.3
     },
     "status": "Обычная",
@@ -78026,10 +78035,10 @@
     "roleEn": "Fighter",
     "rank": "III",
     "br": {
-      "ab": 4.3,
+      "ab": 4.7,
       "rb": 4.3,
       "sb": 4.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.7,
       "ground_sb": 4.3
     },
     "status": "Премиум",
@@ -78054,10 +78063,10 @@
     "roleEn": "Fighter",
     "rank": "III",
     "br": {
-      "ab": 4.7,
-      "rb": 4.0,
+      "ab": 5.0,
+      "rb": 4.3,
       "sb": 3.3,
-      "ground_rb": 4.0,
+      "ground_rb": 4.3,
       "ground_sb": 3.3
     },
     "status": "Премиум",
@@ -78082,10 +78091,10 @@
     "roleEn": "Attacker",
     "rank": "III",
     "br": {
-      "ab": 4.7,
-      "rb": 4.3,
+      "ab": 4.3,
+      "rb": 4.0,
       "sb": 5.3,
-      "ground_rb": 4.3,
+      "ground_rb": 4.0,
       "ground_sb": 5.3
     },
     "status": "Обычная",
@@ -78138,10 +78147,10 @@
     "roleEn": "Fighter",
     "rank": "III",
     "br": {
-      "ab": 4.7,
+      "ab": 5.0,
       "rb": 4.7,
       "sb": 5.0,
-      "ground_rb": 4.7,
+      "ground_rb": 5.0,
       "ground_sb": 5.0
     },
     "status": "Обычная",
@@ -78253,9 +78262,9 @@
     "rank": "IV",
     "br": {
       "ab": 4.0,
-      "rb": 4.0,
+      "rb": 3.7,
       "sb": 4.3,
-      "ground_rb": 4.0,
+      "ground_rb": 3.7,
       "ground_sb": 4.3
     },
     "status": "Премиум",
@@ -78365,9 +78374,9 @@
     "rank": "IV",
     "br": {
       "ab": 4.7,
-      "rb": 4.7,
+      "rb": 4.3,
       "sb": 4.7,
-      "ground_rb": 4.7,
+      "ground_rb": 4.3,
       "ground_sb": 4.7
     },
     "status": "Премиум",
@@ -78533,7 +78542,7 @@
     "roleEn": "Attacker",
     "rank": "IV",
     "br": {
-      "ab": 5.0,
+      "ab": 4.7,
       "rb": 4.7,
       "sb": 5.0,
       "ground_rb": 4.7,
@@ -78561,10 +78570,10 @@
     "roleEn": "Fighter",
     "rank": "IV",
     "br": {
-      "ab": 5.0,
+      "ab": 5.3,
       "rb": 5.0,
       "sb": 5.3,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.3
     },
     "status": "Обычная",
@@ -78590,7 +78599,7 @@
     "rank": "IV",
     "br": {
       "ab": 5.3,
-      "rb": 5.3,
+      "rb": 5.0,
       "sb": 5.7,
       "ground_rb": 5.3,
       "ground_sb": 5.7
@@ -78620,7 +78629,7 @@
       "ab": 5.3,
       "rb": 5.0,
       "sb": 5.7,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.7
     },
     "status": "Обычная",
@@ -78648,7 +78657,7 @@
       "ab": 5.3,
       "rb": 5.0,
       "sb": 5.7,
-      "ground_rb": 5.0,
+      "ground_rb": 5.3,
       "ground_sb": 5.7
     },
     "status": "Премиум",
@@ -78677,7 +78686,7 @@
       "ab": 5.7,
       "rb": 6.0,
       "sb": 5.0,
-      "ground_rb": 6.0,
+      "ground_rb": 6.3,
       "ground_sb": 5.0
     },
     "status": "Премиум",
@@ -78732,9 +78741,9 @@
     "rank": "IV",
     "br": {
       "ab": 5.7,
-      "rb": 5.3,
+      "rb": 5.0,
       "sb": 5.7,
-      "ground_rb": 5.3,
+      "ground_rb": 5.0,
       "ground_sb": 5.7
     },
     "status": "Премиум",
@@ -78763,7 +78772,7 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.3,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 6.3
     },
     "status": "Премиум",
@@ -78791,7 +78800,7 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 5.7,
+      "ground_rb": 6.0,
       "ground_sb": 6.0
     },
     "status": "Обычная",
@@ -78875,7 +78884,7 @@
       "ab": 6.0,
       "rb": 5.7,
       "sb": 6.3,
-      "ground_rb": 6.3,
+      "ground_rb": 6.7,
       "ground_sb": 6.3
     },
     "status": "Обычная",
@@ -79184,8 +79193,9 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 7.3,
-      "ground_sb": 8.0
+      "ground_rb": 7.0,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -79325,8 +79335,9 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 8.0,
-      "ground_rb": 7.3,
-      "ground_sb": 8.0
+      "ground_rb": 7.0,
+      "ground_sb": 8.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -79353,7 +79364,7 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 7.7,
-      "ground_rb": 7.3,
+      "ground_rb": 7.0,
       "ground_sb": 7.7
     },
     "status": "Обычная",
@@ -79492,7 +79503,7 @@
       "ab": 8.3,
       "rb": 8.3,
       "sb": 8.3,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.3
     },
     "status": "Акционная",
@@ -79521,7 +79532,7 @@
       "ab": 8.7,
       "rb": 9.3,
       "sb": 10.0,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 10.0
     },
     "status": "Маркет",
@@ -79550,7 +79561,7 @@
       "ab": 8.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -79578,7 +79589,7 @@
       "ab": 8.7,
       "rb": 8.3,
       "sb": 8.0,
-      "ground_rb": 8.3,
+      "ground_rb": 8.0,
       "ground_sb": 8.0
     },
     "status": "Обычная",
@@ -79606,8 +79617,9 @@
       "ab": 9.0,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 10.7,
-      "ground_sb": 9.0
+      "ground_rb": 11.0,
+      "ground_sb": 9.0,
+      "naval_rb": 9.3
     },
     "status": "Пакетная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -79688,7 +79700,7 @@
     "roleEn": "Fighter",
     "rank": "VI",
     "br": {
-      "ab": 9.0,
+      "ab": 9.3,
       "rb": 9.7,
       "sb": 10.0,
       "ground_rb": 9.7,
@@ -79716,11 +79728,12 @@
     "roleEn": "Attacker",
     "rank": "VI",
     "br": {
-      "ab": 9.0,
+      "ab": 9.3,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 9.3,
-      "ground_sb": 9.0
+      "ground_rb": 9.7,
+      "ground_sb": 9.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -79747,7 +79760,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -79775,7 +79788,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.3
     },
     "status": "Премиум",
@@ -79803,7 +79816,7 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.3,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.3
     },
     "status": "Обычная",
@@ -79831,7 +79844,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Обычная",
@@ -79859,7 +79872,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 9.7
     },
     "status": "Премиум",
@@ -79888,7 +79901,7 @@
       "ab": 9.7,
       "rb": 9.3,
       "sb": 10.0,
-      "ground_rb": 9.3,
+      "ground_rb": 9.0,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -79916,8 +79929,9 @@
       "ab": 10.3,
       "rb": 9.0,
       "sb": 9.0,
-      "ground_rb": 8.0,
-      "ground_sb": 9.0
+      "ground_rb": 7.7,
+      "ground_sb": 9.0,
+      "naval_rb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -79944,7 +79958,7 @@
       "ab": 10.7,
       "rb": 10.3,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -79972,7 +79986,7 @@
       "ab": 10.7,
       "rb": 10.3,
       "sb": 10.7,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Пакетная",
@@ -80000,7 +80014,7 @@
       "ab": 10.3,
       "rb": 10.3,
       "sb": 10.7,
-      "ground_rb": 10.3,
+      "ground_rb": 9.7,
       "ground_sb": 10.7
     },
     "status": "Обычная",
@@ -80025,7 +80039,7 @@
     "roleEn": "Fighter",
     "rank": "VII",
     "br": {
-      "ab": 10.7,
+      "ab": 11.0,
       "rb": 11.0,
       "sb": 11.0,
       "ground_rb": 10.3,
@@ -80085,7 +80099,7 @@
       "ab": 11.0,
       "rb": 10.0,
       "sb": 10.0,
-      "ground_rb": 9.7,
+      "ground_rb": 9.3,
       "ground_sb": 10.0
     },
     "status": "Обычная",
@@ -80225,7 +80239,7 @@
       "ab": 11.3,
       "rb": 11.0,
       "sb": 11.0,
-      "ground_rb": 10.0,
+      "ground_rb": 9.7,
       "ground_sb": 11.0
     },
     "status": "Полковая",
@@ -80394,7 +80408,7 @@
       "ab": 11.7,
       "rb": 11.3,
       "sb": 11.7,
-      "ground_rb": 11.3,
+      "ground_rb": 11.7,
       "ground_sb": 11.7
     },
     "status": "Пакетная",
@@ -80478,7 +80492,7 @@
       "ab": 12.7,
       "rb": 13.0,
       "sb": 13.0,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.0
     },
     "status": "Обычная",
@@ -80531,7 +80545,7 @@
     "roleEn": "Fighter",
     "rank": "VIII",
     "br": {
-      "ab": 13.3,
+      "ab": 13.7,
       "rb": 13.3,
       "sb": 13.3,
       "ground_rb": 12.3,
@@ -80562,7 +80576,7 @@
       "ab": 13.3,
       "rb": 13.0,
       "sb": 13.3,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.3
     },
     "status": "Обычная",
@@ -80618,7 +80632,7 @@
       "ab": 13.3,
       "rb": 13.0,
       "sb": 13.3,
-      "ground_rb": 12.0,
+      "ground_rb": 11.7,
       "ground_sb": 13.3
     },
     "status": "Полковая",
@@ -80643,7 +80657,7 @@
     "roleEn": "Attacker",
     "rank": "VIII",
     "br": {
-      "ab": 13.3,
+      "ab": 13.7,
       "rb": 13.7,
       "sb": 13.3,
       "ground_rb": 13.0,
@@ -82471,8 +82485,8 @@
     "roleEn": "Boat",
     "rank": "II",
     "br": {
-      "ab": 2.3,
-      "rb": 2.3,
+      "ab": 2.0,
+      "rb": 2.0,
       "sb": 2.3,
       "ground_rb": 2.3,
       "ground_sb": 2.3
@@ -82499,8 +82513,8 @@
     "roleEn": "Boat",
     "rank": "II",
     "br": {
-      "ab": 2.3,
-      "rb": 2.3,
+      "ab": 2.0,
+      "rb": 2.0,
       "sb": 2.3,
       "ground_rb": 2.3,
       "ground_sb": 2.3
@@ -82553,10 +82567,10 @@
     "className": "Малый флот",
     "role": "Катер",
     "roleEn": "Boat",
-    "rank": "III",
+    "rank": "II",
     "br": {
-      "ab": 2.3,
-      "rb": 2.3,
+      "ab": 2.0,
+      "rb": 2.0,
       "sb": 2.3,
       "ground_rb": 2.3,
       "ground_sb": 2.3
@@ -82568,7 +82582,7 @@
     "search": "ussr_pr_123k Пр.123К Pr.123K Pr-123k USSR coastal Катер Boat boat",
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
-    "treeRank": "III",
+    "treeRank": "II",
     "availability": "available"
   },
   {
@@ -85085,7 +85099,7 @@
     "rank": "III",
     "br": {
       "ab": 4.3,
-      "rb": 4.0,
+      "rb": 3.7,
       "sb": 4.3,
       "ground_rb": 4.0,
       "ground_sb": 4.3
@@ -85760,8 +85774,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.0,
-      "rb": 6.0,
+      "ab": 5.7,
+      "rb": 5.7,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -85817,7 +85831,7 @@
     "rank": "IV",
     "br": {
       "ab": 6.0,
-      "rb": 6.0,
+      "rb": 6.3,
       "sb": 6.0,
       "ground_rb": 6.0,
       "ground_sb": 6.0
@@ -85872,8 +85886,8 @@
     "roleEn": "Tank destroyer",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -85956,8 +85970,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.3,
-      "rb": 6.3,
+      "ab": 6.0,
+      "rb": 6.0,
       "sb": 6.3,
       "ground_rb": 6.3,
       "ground_sb": 6.3
@@ -86181,8 +86195,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -86210,8 +86224,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -86238,8 +86252,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -86266,8 +86280,8 @@
     "roleEn": "Heavy tank",
     "rank": "IV",
     "br": {
-      "ab": 6.7,
-      "rb": 6.7,
+      "ab": 6.3,
+      "rb": 6.3,
       "sb": 6.7,
       "ground_rb": 6.7,
       "ground_sb": 6.7
@@ -86322,8 +86336,8 @@
     "roleEn": "Tank destroyer",
     "rank": "V",
     "br": {
-      "ab": 7.0,
-      "rb": 7.0,
+      "ab": 6.7,
+      "rb": 6.7,
       "sb": 7.0,
       "ground_rb": 7.0,
       "ground_sb": 7.0
@@ -86434,8 +86448,8 @@
     "roleEn": "Tank destroyer",
     "rank": "V",
     "br": {
-      "ab": 7.3,
-      "rb": 7.3,
+      "ab": 7.0,
+      "rb": 7.0,
       "sb": 7.3,
       "ground_rb": 7.3,
       "ground_sb": 7.3
@@ -87641,8 +87655,8 @@
     "roleEn": "Tank destroyer",
     "rank": "VII",
     "br": {
-      "ab": 9.7,
-      "rb": 9.7,
+      "ab": 9.3,
+      "rb": 9.3,
       "sb": 9.7,
       "ground_rb": 9.7,
       "ground_sb": 9.7
@@ -87866,7 +87880,7 @@
     "rank": "VII",
     "br": {
       "ab": 10.7,
-      "rb": 10.7,
+      "rb": 11.0,
       "sb": 10.7,
       "ground_rb": 10.7,
       "ground_sb": 10.7
@@ -88373,8 +88387,8 @@
     "roleEn": "Medium tank",
     "rank": "VIII",
     "br": {
-      "ab": 12.3,
-      "rb": 12.3,
+      "ab": 12.0,
+      "rb": 12.0,
       "sb": 12.3,
       "ground_rb": 12.3,
       "ground_sb": 12.3

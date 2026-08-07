@@ -750,12 +750,14 @@ def br_values(row: dict[str, Any]) -> dict[str, float]:
         b = row["br"]
         ab = to_float(b.get("ab")); rb = to_float(b.get("rb")); sb = to_float(b.get("sb"))
         grb = to_float(b.get("ground_rb") or b.get("realistic_ground_br"))
+        nrb = to_float(b.get("naval_rb") or b.get("realistic_naval_br"))
         gsb = to_float(b.get("ground_sb") or b.get("simulator_ground_br"))
     else:
         ab = to_float(first_defined(row, ["br_ab", "brAB", "arcade_br", "arcadeBattleRating", "battle_rating_arcade", "arcade"], None))
         rb = to_float(first_defined(row, ["br_rb", "brRB", "realistic_br", "realisticBattleRating", "battle_rating_realistic", "realistic"], None))
         sb = to_float(first_defined(row, ["br_sb", "brSB", "simulator_br", "simulatorBattleRating", "battle_rating_simulator", "simulator"], None))
         grb = to_float(first_defined(row, ["ground_rb", "realistic_ground_br", "battle_rating_realistic_ground"], None))
+        nrb = to_float(first_defined(row, ["naval_rb", "realistic_naval_br", "battle_rating_realistic_naval"], None))
         gsb = to_float(first_defined(row, ["ground_sb", "simulator_ground_br", "battle_rating_simulator_ground"], None))
     any_br = to_float(first_defined(row, ["br", "battle_rating", "battleRating"], None))
     ab = ab if ab is not None else any_br if any_br is not None else 1.0
@@ -764,6 +766,8 @@ def br_values(row: dict[str, Any]) -> dict[str, float]:
     out = {"ab": ab, "rb": rb, "sb": sb}
     if grb is not None:
         out["ground_rb"] = grb
+    if nrb is not None:
+        out["naval_rb"] = nrb
     if gsb is not None:
         out["ground_sb"] = gsb
     return out
@@ -6242,6 +6246,1597 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
         print("WARNING: v3.83 curated data corrections failed:", e)
 
 # --- end v3.83 layer ---
+
+
+# --- v3.84: August 2026 BR changes + current rank moves ---
+# Generated from the official Planned BR Changes — August 2026 spreadsheet export.
+# Some spreadsheet notes explicitly say "next major update"; those are documented in patch_history/game_patch_status
+# but intentionally not applied here until the relevant major update is live.
+BR_OVERRIDES_V384 = {
+  "f_14a_iriaf": {
+    "ab": 13.0,
+    "rb": 13.7
+  },
+  "mig_29smt_9_19": {
+    "ab": 13.7
+  },
+  "su_34": {
+    "ab": 13.7
+  },
+  "f_16a_block_20_mlu": {
+    "ab": 13.7
+  },
+  "f_16a_block_15_adf": {
+    "ab": 13.7,
+    "ground_rb": 12.3
+  },
+  "f_16a_block_15_adf_italy": {
+    "ab": 13.7,
+    "ground_rb": 12.3
+  },
+  "saab_ja37di_f21": {
+    "ab": 13.3,
+    "ground_rb": 11.7
+  },
+  "saab_ja37di": {
+    "ab": 13.3,
+    "ground_rb": 11.7
+  },
+  "mirage_2000d_rmv": {
+    "ground_rb": 13.0
+  },
+  "mirage_4000": {
+    "ground_rb": 12.0
+  },
+  "cf_188a_canada": {
+    "ground_rb": 12.0
+  },
+  "fa_18c_early": {
+    "ground_rb": 12.0
+  },
+  "fa_18c_switzerland": {
+    "ground_rb": 12.0
+  },
+  "mig_29n": {
+    "ground_rb": 12.0
+  },
+  "kfir_c10_colombia": {
+    "ground_rb": 12.0
+  },
+  "f-5th_thailand": {
+    "ground_rb": 12.0
+  },
+  "j_8f": {
+    "ground_rb": 11.7
+  },
+  "su_33": {
+    "ground_rb": 11.7
+  },
+  "j_11": {
+    "ground_rb": 11.7
+  },
+  "su_27": {
+    "ground_rb": 11.7
+  },
+  "f_16a_block_15_ocu_belgium": {
+    "ground_rb": 11.7
+  },
+  "f_14b": {
+    "ab": 12.3
+  },
+  "f_14d": {
+    "ab": 12.3,
+    "ground_rb": 11.7
+  },
+  "f_15a": {
+    "ground_rb": 11.7
+  },
+  "f_15a_iaf": {
+    "ground_rb": 11.7
+  },
+  "f_15j": {
+    "ground_rb": 11.7
+  },
+  "mig_29_9_13": {
+    "ground_rb": 11.7
+  },
+  "mig_29_9_12g": {
+    "ground_rb": 11.7
+  },
+  "f-4f_late": {
+    "ab": 11.0
+  },
+  "mirage_2000c_s4": {
+    "ground_rb": 11.3
+  },
+  "mirage_2000c_s5": {
+    "ground_rb": 11.3
+  },
+  "mig_21_2000_iaf": {
+    "rb": 11.7
+  },
+  "su_25tm": {
+    "ground_rb": 11.7
+  },
+  "saab_ja37d": {
+    "ground_rb": 11.0
+  },
+  "f-4ej_kai": {
+    "ground_rb": 11.0
+  },
+  "tornado_f3": {
+    "ground_rb": 11.0
+  },
+  "tornado_adv": {
+    "ground_rb": 11.0
+  },
+  "kfir_c2": {
+    "ground_rb": 10.7
+  },
+  "hawk_200_rda": {
+    "ground_rb": 10.7
+  },
+  "a_7k": {
+    "rb": 10.7
+  },
+  "mig_25pd": {
+    "ab": 11.0
+  },
+  "f-4c": {
+    "ab": 10.3
+  },
+  "j_22m1a": {
+    "ground_rb": 11.0,
+    "naval_rb": 9.3
+  },
+  "a_6e_tram": {
+    "ground_rb": 11.0
+  },
+  "f-4jk": {
+    "ground_rb": 10.3
+  },
+  "f-4k": {
+    "ground_rb": 10.3
+  },
+  "f-4m_fgr2": {
+    "ground_rb": 10.3
+  },
+  "f-4ej_adtw": {
+    "ground_rb": 10.3
+  },
+  "f-4ej": {
+    "ground_rb": 10.3
+  },
+  "saab_j35xs": {
+    "ground_rb": 10.0
+  },
+  "saab_f35_wdns": {
+    "ground_rb": 10.3
+  },
+  "f-104s": {
+    "ground_rb": 10.0
+  },
+  "f-104s_cb": {
+    "ground_rb": 10.0
+  },
+  "j_8b": {
+    "ground_rb": 10.3
+  },
+  "av_8s_late_thailand": {
+    "ground_rb": 10.3
+  },
+  "harrier_frs1": {
+    "ground_rb": 10.3
+  },
+  "buccaneer_s2b": {
+    "ground_rb": 10.7
+  },
+  "mig-21_mf_hungary": {
+    "ground_rb": 9.7
+  },
+  "mig-21_mf": {
+    "ground_rb": 9.7
+  },
+  "mig-21_smt": {
+    "ground_rb": 9.7
+  },
+  "j_7d": {
+    "ground_rb": 9.7
+  },
+  "f-8e": {
+    "ground_rb": 9.7
+  },
+  "harrier_frs1_early": {
+    "ground_rb": 10.0
+  },
+  "saab_j35d": {
+    "ground_rb": 10.0
+  },
+  "mirage_3e": {
+    "ground_rb": 9.7
+  },
+  "mirage_3s_c70_switzerland": {
+    "ground_rb": 9.7
+  },
+  "nf_5a_netherlands": {
+    "ground_rb": 9.7
+  },
+  "f-5a_thailand": {
+    "ground_rb": 9.7
+  },
+  "f-5a_china": {
+    "ground_rb": 9.7
+  },
+  "mirage_5ba": {
+    "ground_rb": 9.7
+  },
+  "mirage_5f": {
+    "ground_rb": 9.7
+  },
+  "mirage_3c": {
+    "ground_rb": 9.7
+  },
+  "mirage_3cj": {
+    "ground_rb": 9.7
+  },
+  "f-8e_fn": {
+    "ground_rb": 9.7
+  },
+  "f8u-2": {
+    "ground_rb": 9.7
+  },
+  "nesher": {
+    "ground_rb": 9.7
+  },
+  "a_5c": {
+    "ground_rb": 9.7
+  },
+  "su_25k": {
+    "ground_rb": 9.7
+  },
+  "su_25": {
+    "ground_rb": 9.7
+  },
+  "tornado_ids_de_wtd61": {
+    "ground_rb": 9.7
+  },
+  "tornado_ids_it": {
+    "ground_rb": 9.7
+  },
+  "tornado_ids_de_mfg": {
+    "ground_rb": 9.7
+  },
+  "su_22m3": {
+    "ground_rb": 9.7
+  },
+  "su_22m3_hungary": {
+    "ground_rb": 9.7
+  },
+  "su_22um3k": {
+    "ground_rb": 9.7
+  },
+  "f_111a": {
+    "ground_rb": 9.7
+  },
+  "f-105d": {
+    "ground_rb": 9.7
+  },
+  "f-104g": {
+    "ground_rb": 9.7
+  },
+  "f-104g_italy": {
+    "ground_rb": 9.7
+  },
+  "f-104j": {
+    "ground_rb": 9.7
+  },
+  "f-104g_belgium": {
+    "ground_rb": 9.7
+  },
+  "f-104g_china": {
+    "ground_rb": 9.7
+  },
+  "f1": {
+    "ground_rb": 9.7
+  },
+  "f-5a": {
+    "ground_rb": 9.7
+  },
+  "f-5c": {
+    "ground_rb": 9.7
+  },
+  "su_17m2": {
+    "ground_rb": 9.3
+  },
+  "mig_23bn": {
+    "ground_rb": 9.3
+  },
+  "a_4n": {
+    "rb": 10.0
+  },
+  "hunter_f6": {
+    "rb": 10.0,
+    "ground_rb": 9.3
+  },
+  "f_6c_pakistan": {
+    "ground_rb": 9.3
+  },
+  "saab_j35a": {
+    "ground_rb": 9.3
+  },
+  "jaguar_gr1": {
+    "ground_rb": 9.3
+  },
+  "t2_early": {
+    "ab": 10.3,
+    "ground_rb": 9.3
+  },
+  "t2": {
+    "ab": 10.3,
+    "ground_rb": 9.3
+  },
+  "av_8s_thailand": {
+    "ground_rb": 9.3
+  },
+  "av_8a": {
+    "ab": 9.7,
+    "ground_rb": 9.3
+  },
+  "av_8c": {
+    "ground_rb": 9.3
+  },
+  "harrier_gr1": {
+    "ground_rb": 9.3
+  },
+  "harrier_gr3": {
+    "ground_rb": 9.3
+  },
+  "f-104c": {
+    "ground_rb": 9.3
+  },
+  "mig-21_s": {
+    "ab": 9.3
+  },
+  "yak_130_early": {
+    "ab": 9.3,
+    "ground_rb": 9.7,
+    "naval_rb": 9.3
+  },
+  "mig-21_f13": {
+    "ground_rb": 9.0
+  },
+  "mig-21_pfm": {
+    "ground_rb": 9.0
+  },
+  "mig-21_sps_k": {
+    "ground_rb": 9.0
+  },
+  "j_7_mk2": {
+    "ground_rb": 9.0
+  },
+  "mig-19j_6a": {
+    "ground_rb": 9.0
+  },
+  "mig-19pt": {
+    "ground_rb": 9.0
+  },
+  "mig-19s": {
+    "ground_rb": 9.0
+  },
+  "saab_j32b": {
+    "ground_rb": 9.0
+  },
+  "f_101c": {
+    "ground_rb": 9.0
+  },
+  "f_106a_1972": {
+    "ground_rb": 9.0
+  },
+  "lightning_f53": {
+    "ground_rb": 9.0
+  },
+  "lightning_f6": {
+    "ground_rb": 9.0
+  },
+  "f_100f_china": {
+    "ground_rb": 9.0
+  },
+  "f-100a_china": {
+    "ground_rb": 9.0
+  },
+  "f-100d": {
+    "ground_rb": 9.0
+  },
+  "f-100d_france": {
+    "ground_rb": 9.0
+  },
+  "yak-38": {
+    "ground_rb": 9.0
+  },
+  "yak-38m": {
+    "ground_rb": 9.0
+  },
+  "su-7b": {
+    "ground_rb": 9.0
+  },
+  "su-7bkl": {
+    "ground_rb": 9.0
+  },
+  "su-7bmk": {
+    "ground_rb": 9.0
+  },
+  "q_5a": {
+    "ground_rb": 9.0
+  },
+  "hunter_f58a_1971_switzerland": {
+    "ground_rb": 9.0
+  },
+  "buccaneer_s2": {
+    "ground_rb": 9.0
+  },
+  "f-104a": {
+    "ground_rb": 9.0
+  },
+  "f-104a_china": {
+    "ground_rb": 9.0
+  },
+  "fiat_g91_y": {
+    "rb": 9.3
+  },
+  "fj_4b_agm_12b": {
+    "ground_rb": 9.3
+  },
+  "f11f_1_late": {
+    "ground_rb": 8.7
+  },
+  "hunter_f6_holland": {
+    "ground_rb": 8.7
+  },
+  "hunter_f50_sweden": {
+    "ground_rb": 8.7
+  },
+  "hunter_f1": {
+    "ground_rb": 8.7
+  },
+  "f-86_cl_13b_mk6": {
+    "ground_rb": 8.7
+  },
+  "f-86k_late_german": {
+    "ground_rb": 8.7
+  },
+  "f-86k_late_italy": {
+    "ground_rb": 8.7
+  },
+  "f-86k_late": {
+    "ground_rb": 8.7
+  },
+  "saab_j29f": {
+    "ground_rb": 8.7
+  },
+  "ffa_p16": {
+    "ground_rb": 8.7
+  },
+  "q_5_early": {
+    "ground_rb": 8.7
+  },
+  "md_460_sambad": {
+    "ground_rb": 8.7
+  },
+  "md_460": {
+    "ground_rb": 8.7
+  },
+  "md_460_saar": {
+    "ground_rb": 8.7
+  },
+  "marut_mk1": {
+    "rb": 8.7,
+    "ground_rb": 8.7
+  },
+  "f3h-2": {
+    "ground_rb": 8.7,
+    "naval_rb": 9.3
+  },
+  "b_66b": {
+    "ground_rb": 8.3,
+    "naval_rb": 9.3
+  },
+  "b_52h": {
+    "ground_rb": 8.3
+  },
+  "buccaneer_s1": {
+    "rb": 8.3
+  },
+  "fiat_g91_r1": {
+    "ground_rb": 8.3
+  },
+  "tu_95m": {
+    "ground_rb": 8.0
+  },
+  "yak-30d": {
+    "ground_rb": 8.0
+  },
+  "me-163b-0": {
+    "ground_rb": 8.0
+  },
+  "so_4050_vautour_2n": {
+    "rb": 8.7,
+    "ground_rb": 8.0
+  },
+  "so_4050_vautour_2b": {
+    "rb": 8.7,
+    "ground_rb": 8.0
+  },
+  "so_4050_vautour_2n_iaf": {
+    "rb": 8.7,
+    "ground_rb": 8.0
+  },
+  "so_4050_vautour_2a_israel_iaf": {
+    "rb": 8.7,
+    "ground_rb": 8.0
+  },
+  "saab_j29d": {
+    "ground_rb": 8.0
+  },
+  "a_4h": {
+    "ground_rb": 8.0
+  },
+  "f-84f": {
+    "ground_rb": 8.0
+  },
+  "f-84f_germany": {
+    "ground_rb": 8.0
+  },
+  "f-84f_france": {
+    "ground_rb": 8.0
+  },
+  "f-84f_italy": {
+    "ground_rb": 8.0
+  },
+  "f-84f_israel_iaf": {
+    "ground_rb": 8.0
+  },
+  "f-84f_iaf": {
+    "ground_rb": 8.0
+  },
+  "so_4050_vautour_2a_iaf": {
+    "rb": 8.7
+  },
+  "so_4050_vautour_2a": {
+    "rb": 8.7
+  },
+  "yak-28b": {
+    "ground_rb": 7.7,
+    "naval_rb": 9.3
+  },
+  "f-86f-25": {
+    "ab": 8.0
+  },
+  "b-57": {
+    "ground_rb": 7.3,
+    "naval_rb": 9.3
+  },
+  "b-57b": {
+    "ground_rb": 7.3,
+    "naval_rb": 9.3
+  },
+  "canberra_bmk2": {
+    "ground_rb": 7.3,
+    "naval_rb": 9.3
+  },
+  "canberra_bimk6": {
+    "ground_rb": 7.3,
+    "naval_rb": 9.3
+  },
+  "f-86f-35": {
+    "ab": 7.7
+  },
+  "mb_326k": {
+    "rb": 8.0,
+    "ground_rb": 7.7
+  },
+  "l_39za_art_thailand": {
+    "ground_rb": 7.7
+  },
+  "tu_4": {
+    "ground_rb": 7.0
+  },
+  "tu_4_china": {
+    "ground_rb": 7.0
+  },
+  "il_28_german": {
+    "ground_rb": 7.0,
+    "naval_rb": 9.3
+  },
+  "il_28_hungary": {
+    "ground_rb": 7.0,
+    "naval_rb": 9.3
+  },
+  "il_28": {
+    "ground_rb": 7.0,
+    "naval_rb": 9.3
+  },
+  "il_28_china": {
+    "ground_rb": 7.0,
+    "naval_rb": 9.3
+  },
+  "tu_14t": {
+    "ground_rb": 7.0,
+    "naval_rb": 9.3
+  },
+  "f3d_1": {
+    "ground_rb": 6.7
+  },
+  "me-262a-1a_u4": {
+    "ab": 5.3,
+    "rb": 6.0,
+    "ground_rb": 6.3
+  },
+  "yak-9ut": {
+    "ground_rb": 6.7
+  },
+  "spitfire_ix": {
+    "ground_rb": 6.3
+  },
+  "spitfire_ix_usa": {
+    "ground_rb": 6.3
+  },
+  "spitfire_ix_ussr": {
+    "ground_rb": 6.3
+  },
+  "spitfire_ix_plagis": {
+    "ground_rb": 6.3
+  },
+  "spitfire_lf_mk9e_weisman": {
+    "ground_rb": 6.3
+  },
+  "ju-288c": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "spitfire_mk18e": {
+    "ground_rb": 6.0
+  },
+  "spitfire_lf_mk9c_cw_greece": {
+    "ground_rb": 6.0
+  },
+  "seafire_fr47": {
+    "ground_rb": 6.0
+  },
+  "yak-3_vk107": {
+    "ground_rb": 6.0
+  },
+  "yak-3u": {
+    "ground_rb": 6.0
+  },
+  "a7m2": {
+    "ground_rb": 6.0
+  },
+  "p-59a": {
+    "ground_rb": 6.0
+  },
+  "ki_84_otsu": {
+    "ground_rb": 6.0
+  },
+  "a6m5ko": {
+    "rb": 6.0,
+    "ground_rb": 6.0
+  },
+  "a6m5otsu": {
+    "rb": 6.0,
+    "ground_rb": 6.0
+  },
+  "ki_87": {
+    "rb": 5.3,
+    "ground_rb": 5.3
+  },
+  "so_8000_narval": {
+    "rb": 5.3,
+    "ground_rb": 5.3
+  },
+  "douglas_ad_2": {
+    "ground_rb": 5.3
+  },
+  "seafire_mk17": {
+    "ground_rb": 5.7
+  },
+  "a6m6c": {
+    "rb": 5.7,
+    "ground_rb": 5.7
+  },
+  "a6m5hei": {
+    "ground_rb": 5.7
+  },
+  "a7m1": {
+    "rb": 5.7,
+    "ground_rb": 5.7
+  },
+  "tu-1": {
+    "rb": 5.0,
+    "ground_rb": 5.0
+  },
+  "la-11_china": {
+    "rb": 5.0
+  },
+  "la-11": {
+    "rb": 5.0
+  },
+  "a-26b": {
+    "ground_rb": 5.0
+  },
+  "f-82e": {
+    "ground_rb": 5.0
+  },
+  "spitfire_mk5c_notrop": {
+    "ground_rb": 5.3
+  },
+  "a6m3_mod22ko_zero": {
+    "ground_rb": 5.3
+  },
+  "a6m5_zero": {
+    "ground_rb": 5.3
+  },
+  "seafire_mk3_france": {
+    "ground_rb": 5.3
+  },
+  "seafire_mk3": {
+    "ground_rb": 5.3
+  },
+  "yak-3t": {
+    "ground_rb": 5.3
+  },
+  "yak-3p": {
+    "ground_rb": 5.3
+  },
+  "j2m5_30mm": {
+    "ground_rb": 5.3
+  },
+  "j2m4_kai": {
+    "ground_rb": 5.3
+  },
+  "j2m2": {
+    "ground_rb": 5.3
+  },
+  "yak-9p_hungary": {
+    "ab": 5.3,
+    "ground_rb": 5.3
+  },
+  "yak-9p": {
+    "ab": 5.3,
+    "ground_rb": 5.3
+  },
+  "su-6_am42": {
+    "ab": 4.7
+  },
+  "a-26b_10": {
+    "ground_rb": 4.7
+  },
+  "wyvern_s4": {
+    "rb": 5.3
+  },
+  "spitfire_mk9c_4cannons": {
+    "ground_rb": 5.0
+  },
+  "yak-9u": {
+    "ab": 5.0,
+    "ground_rb": 5.0
+  },
+  "ki_61_1a_hei": {
+    "ground_rb": 5.0
+  },
+  "ki_61_1a_hei_ep": {
+    "ground_rb": 5.0
+  },
+  "p-38l_1_china_rocaf": {
+    "ground_rb": 4.3
+  },
+  "p-38l": {
+    "ground_rb": 4.3
+  },
+  "do_335a_0": {
+    "ground_rb": 4.3
+  },
+  "su-8": {
+    "rb": 4.3,
+    "ground_rb": 4.3
+  },
+  "pyorremyrsky": {
+    "ab": 5.0,
+    "rb": 4.7
+  },
+  "ia_58a_pucara": {
+    "ab": 4.7,
+    "rb": 4.7
+  },
+  "spitfire_mk9c_iaf": {
+    "rb": 4.7,
+    "ground_rb": 4.7
+  },
+  "spitfire_ix_early": {
+    "rb": 4.7,
+    "ground_rb": 4.7
+  },
+  "a6m3_mod22_zero": {
+    "rb": 4.7,
+    "ground_rb": 4.7
+  },
+  "yak-3_eremin": {
+    "ab": 4.7,
+    "ground_rb": 4.7
+  },
+  "xp-55": {
+    "ground_rb": 4.7
+  },
+  "bf-109g-2": {
+    "ground_rb": 4.7
+  },
+  "bf-109g-2_romania": {
+    "ground_rb": 4.7
+  },
+  "bf-109g-2_hungary": {
+    "ground_rb": 4.7
+  },
+  "bf-109g-2_finland": {
+    "ground_rb": 4.7
+  },
+  "me-410b-1_u2": {
+    "ground_rb": 4.0
+  },
+  "do_335a_1": {
+    "ground_rb": 4.0
+  },
+  "saab_t18b_2": {
+    "ground_rb": 4.0
+  },
+  "saab_t18b_1": {
+    "ab": 4.0,
+    "ground_rb": 4.0
+  },
+  "su-6_m71": {
+    "ab": 4.3,
+    "rb": 4.0,
+    "ground_rb": 4.0
+  },
+  "ju-388j": {
+    "rb": 4.0,
+    "ground_rb": 4.0
+  },
+  "he_219a_7": {
+    "rb": 4.0,
+    "ground_rb": 4.0
+  },
+  "tis_ma": {
+    "rb": 4.0
+  },
+  "a6m3_zero": {
+    "rb": 4.3,
+    "ground_rb": 4.3
+  },
+  "ki_100_early": {
+    "rb": 4.3,
+    "ground_rb": 4.3
+  },
+  "itp_m1": {
+    "ab": 5.0,
+    "rb": 4.3,
+    "ground_rb": 4.3
+  },
+  "su_6_single": {
+    "rb": 3.7,
+    "ground_rb": 3.7
+  },
+  "spitfire_mk5b_italy": {
+    "ground_rb": 4.0
+  },
+  "spitfire_mk5b": {
+    "ground_rb": 4.0
+  },
+  "b7a2_homare_23": {
+    "ab": 4.0,
+    "rb": 4.0
+  },
+  "b7a2": {
+    "ab": 4.0,
+    "rb": 4.0
+  },
+  "pe-2-110": {
+    "ground_rb": 3.3
+  },
+  "firebrand_tf4": {
+    "ground_rb": 3.3
+  },
+  "me-410a-1_u2": {
+    "ab": 3.7,
+    "ground_rb": 3.3
+  },
+  "mosquito_b_mk16": {
+    "ground_rb": 3.3
+  },
+  "mosquito_fb_mk26_china": {
+    "ab": 3.7,
+    "ground_rb": 3.3
+  },
+  "mosquito_fb_mk6_ash_norway": {
+    "ground_rb": 3.3
+  },
+  "mosquito_fb_mk6": {
+    "ground_rb": 3.3
+  },
+  "mosquito_tr_mk33": {
+    "ground_rb": 3.3
+  },
+  "tempest_mkv_vikkers": {
+    "ab": 3.0,
+    "ground_rb": 3.3
+  },
+  "sm_91": {
+    "ground_rb": 3.3
+  },
+  "xa_38": {
+    "ground_rb": 3.3
+  },
+  "bf-110g-2": {
+    "ground_rb": 3.3
+  },
+  "ki_61_1a_ko": {
+    "ground_rb": 3.7
+  },
+  "mb_157": {
+    "ab": 3.7,
+    "rb": 3.7,
+    "ground_rb": 3.7
+  },
+  "ju-87d-5": {
+    "ground_rb": 3.0
+  },
+  "il_2m_1943": {
+    "ground_rb": 3.0
+  },
+  "pe-2-83": {
+    "ground_rb": 3.0
+  },
+  "la-5_type39": {
+    "ab": 3.7
+  },
+  "s_199": {
+    "ab": 3.7
+  },
+  "fw-190a-1": {
+    "ground_rb": 3.3
+  },
+  "ki_102_otsu": {
+    "ab": 2.7
+  },
+  "sb2c_1c": {
+    "ab": 2.7,
+    "ground_rb": 2.7
+  },
+  "do_217n_1": {
+    "ab": 2.7
+  },
+  "ju-88a-4": {
+    "ab": 3.3
+  },
+  "ju-88a-4_finland": {
+    "ab": 3.3
+  },
+  "bf-110f-2": {
+    "ab": 3.3
+  },
+  "hurricanemkii_ussr": {
+    "ab": 3.3
+  },
+  "yak-9b": {
+    "ab": 3.3
+  },
+  "spitfiremkiia": {
+    "ab": 3.0,
+    "rb": 3.3,
+    "ground_rb": 3.3
+  },
+  "spitfiremkiia_ep": {
+    "ab": 3.0,
+    "rb": 3.3,
+    "ground_rb": 3.3
+  },
+  "a-35b": {
+    "ab": 2.7,
+    "ground_rb": 2.3
+  },
+  "i-153p": {
+    "ground_rb": 3.0
+  },
+  "ki_44_1": {
+    "ground_rb": 3.0
+  },
+  "ki_44_1_ep": {
+    "ground_rb": 3.0
+  },
+  "iar_81c": {
+    "ground_rb": 3.0
+  },
+  "fw_189c_0": {
+    "ab": 2.7,
+    "rb": 3.0,
+    "ground_rb": 3.0
+  },
+  "b_239_finland": {
+    "rb": 3.0,
+    "ground_rb": 3.0
+  },
+  "mig_3_series_34": {
+    "ab": 3.0,
+    "rb": 3.0
+  },
+  "saab_b18a": {
+    "ab": 2.3,
+    "ground_rb": 2.3
+  },
+  "su-2_m82": {
+    "ab": 2.3,
+    "ground_rb": 2.3
+  },
+  "a-20g": {
+    "ground_rb": 2.3
+  },
+  "p-40f-5_france_ep": {
+    "ab": 2.7
+  },
+  "p-40f_10": {
+    "ab": 2.7
+  },
+  "lagg-3-11": {
+    "ab": 2.7
+  },
+  "yak_2_kabb": {
+    "ab": 2.7
+  },
+  "i-16_type18": {
+    "ground_rb": 2.7
+  },
+  "fokker_d23": {
+    "ab": 2.7,
+    "rb": 2.7,
+    "ground_rb": 2.7
+  },
+  "wm_23": {
+    "ab": 2.7,
+    "rb": 2.7
+  },
+  "b6n2a": {
+    "ground_rb": 2.0
+  },
+  "b6n2": {
+    "ground_rb": 2.0
+  },
+  "mig_3_series_1_15": {
+    "ab": 2.0,
+    "rb": 2.0,
+    "ground_rb": 2.0
+  },
+  "f2a-1": {
+    "ground_rb": 2.3
+  },
+  "f2a-1_thach": {
+    "ground_rb": 2.3
+  },
+  "j1n1_mod11_early": {
+    "ab": 2.3,
+    "ground_rb": 2.3
+  },
+  "i-153_m62_china": {
+    "ab": 2.3
+  },
+  "i-153_m62": {
+    "ab": 2.3
+  },
+  "i-153_m62_zhukovskiy": {
+    "ab": 2.3
+  },
+  "sb_2m_103c": {
+    "ab": 2.3
+  },
+  "re_2000_heja_2": {
+    "ab": 2.3
+  },
+  "re_2000_ga": {
+    "ab": 2.3
+  },
+  "re_2000_int": {
+    "ab": 2.3
+  },
+  "hurricane_mk1b": {
+    "ab": 2.3
+  },
+  "ms_410c1": {
+    "ab": 2.3
+  },
+  "ms_406c1": {
+    "ab": 2.3
+  },
+  "ms_405c1": {
+    "ab": 2.3
+  },
+  "br_693_ab2": {
+    "ab": 2.3,
+    "rb": 2.0,
+    "ground_rb": 2.0
+  },
+  "fc_20_bis": {
+    "ab": 2.3
+  },
+  "ki_21_1ko": {
+    "ab": 2.3
+  },
+  "ki_43_3_ko": {
+    "ab": 2.3
+  },
+  "pbm_1": {
+    "ab": 2.3
+  },
+  "bf-109c_1": {
+    "ab": 2.3,
+    "rb": 2.0,
+    "ground_rb": 2.0
+  },
+  "bf-109c_1_promo": {
+    "ab": 2.3,
+    "rb": 2.0,
+    "ground_rb": 2.0
+  },
+  "he_112a_0": {
+    "ab": 2.0,
+    "rb": 2.0,
+    "ground_rb": 2.0
+  },
+  "su-2_tss1": {
+    "ab": 2.0,
+    "rb": 1.7
+  },
+  "ah_64d": {
+    "ground_rb": 11.7
+  },
+  "ah_mk1": {
+    "ground_rb": 11.7
+  },
+  "ah_64d_i_saraph": {
+    "ground_rb": 11.7
+  },
+  "ah_64a": {
+    "ground_rb": 11.3
+  },
+  "ahs": {
+    "ground_rb": 11.3
+  },
+  "ah_64a_peten_iaf": {
+    "ground_rb": 11.3
+  },
+  "ah_64a_greece_usa": {
+    "ground_rb": 11.3
+  },
+  "ah_64d_netherlands": {
+    "ground_rb": 11.3
+  },
+  "ah_64d_lightweight_japan": {
+    "ground_rb": 11.3
+  },
+  "ah_64a_peten": {
+    "ground_rb": 11.3
+  },
+  "ah_64d_japan": {
+    "ground_rb": 11.3
+  },
+  "z_19e": {
+    "ground_rb": 11.7
+  },
+  "z_19": {
+    "ground_rb": 11.7
+  },
+  "hkp9a_cb3_fc": {
+    "ground_rb": 9.3
+  },
+  "sa_342l_china": {
+    "ground_rb": 9.3
+  },
+  "ah_1g": {
+    "ground_rb": 7.7
+  },
+  "ah_1g_iaf": {
+    "ground_rb": 7.7
+  },
+  "ussr_t_72b3_arena_m": {
+    "ab": 12.0,
+    "rb": 12.0
+  },
+  "ussr_zprk_2s6": {
+    "rb": 11.0
+  },
+  "us_m1296_dragoon": {
+    "ab": 9.3,
+    "rb": 9.3
+  },
+  "ussr_9p157": {
+    "ab": 9.3,
+    "rb": 9.3
+  },
+  "us_xm1_chrysler": {
+    "ab": 9.3,
+    "rb": 9.3
+  },
+  "germ_leopard_1a5": {
+    "ab": 9.0,
+    "rb": 9.0
+  },
+  "it_leopard_1a5": {
+    "ab": 9.0,
+    "rb": 9.0
+  },
+  "sw_leopard_1a5no": {
+    "ab": 9.0,
+    "rb": 9.0
+  },
+  "fr_leopard_1a5be": {
+    "ab": 9.0,
+    "rb": 9.0
+  },
+  "us_m247": {
+    "ab": 9.3,
+    "rb": 9.3
+  },
+  "cn_pgz_09": {
+    "ab": 9.3,
+    "rb": 9.3
+  },
+  "germ_leopard_I_a1": {
+    "ab": 8.7,
+    "rb": 8.7
+  },
+  "cn_m_41d": {
+    "rb": 8.3
+  },
+  "cn_pgz_88": {
+    "ab": 8.0,
+    "rb": 8.0
+  },
+  "ussr_2s19_m2": {
+    "ab": 7.0,
+    "rb": 7.0
+  },
+  "us_t26e5": {
+    "rb": 7.0
+  },
+  "fr_amx_30_auf_1": {
+    "ab": 6.7,
+    "rb": 6.7
+  },
+  "ussr_2s19_m1": {
+    "ab": 6.7,
+    "rb": 6.7
+  },
+  "us_m18_super_hellcat": {
+    "ab": 6.7,
+    "rb": 6.7
+  },
+  "ussr_is_2_1944": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "ussr_is_2_1944_revenge": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "ussr_is_2_1944_321": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "cn_is_2_1944": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "ussr_object_248": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "germ_pzkpfw_VI_ausf_b_tiger_IIp": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "sw_kungstiger": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "uk_g6_spg": {
+    "ab": 6.3,
+    "rb": 6.3
+  },
+  "ussr_is_2_1943": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "cn_is_2_1943": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "cn_is_2_1943_no402": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "us_m109a1": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "uk_m109a1": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "uk_fv4005": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "cn_plz_83": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "ussr_2s3m": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "il_m109a1": {
+    "ab": 6.0,
+    "rb": 6.0
+  },
+  "uk_charioteer_mk_7": {
+    "rb": 6.0
+  },
+  "sw_charioteer_mk_7": {
+    "rb": 6.0
+  },
+  "ussr_btr_zd": {
+    "rb": 6.3
+  },
+  "germ_m109g": {
+    "ab": 5.7,
+    "rb": 5.7
+  },
+  "it_m109g": {
+    "ab": 5.7,
+    "rb": 5.7
+  },
+  "ussr_2s1": {
+    "ab": 5.7,
+    "rb": 5.7
+  },
+  "it_2s1": {
+    "ab": 5.7,
+    "rb": 5.7
+  },
+  "il_m109": {
+    "ab": 5.7,
+    "rb": 5.7
+  },
+  "us_t1e1": {
+    "ab": 5.3
+  },
+  "us_m6a1": {
+    "ab": 5.0
+  },
+  "uk_a_22f_mk_7_churchill_1944": {
+    "ab": 5.0,
+    "rb": 5.0
+  },
+  "uk_a_22f_mk_7_churchill_crocodile": {
+    "ab": 5.0,
+    "rb": 5.0
+  },
+  "uk_a_33_excelsior": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "germ_stug_III_ausf_G": {
+    "ab": 4.0
+  },
+  "uk_a27m_cromwell_5": {
+    "ab": 3.7,
+    "rb": 4.0
+  },
+  "uk_a27m_cromwell_5_rp3": {
+    "ab": 3.7,
+    "rb": 4.0
+  },
+  "us_m44": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "germ_m44": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "uk_m44": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "jp_m44": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "it_m44": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "fr_m44": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "us_m55": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "germ_m55": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "cn_m55": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "it_m55": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "fr_m55": {
+    "ab": 3.7,
+    "rb": 3.7
+  },
+  "ussr_su_152": {
+    "rb": 3.7
+  },
+  "germ_hummel": {
+    "ab": 3.3,
+    "rb": 3.3
+  },
+  "us_m8a1": {
+    "ab": 3.0,
+    "rb": 3.0
+  },
+  "uk_valentine_mk_11": {
+    "rb": 3.0
+  },
+  "germ_pzkpfw_38t_Marder_III_ausf_H": {
+    "ab": 2.7,
+    "rb": 2.7
+  },
+  "us_elco_80ft_pt_boat_mod02": {
+    "ab": 2.7,
+    "rb": 2.7
+  },
+  "us_elco_80ft_pt_boat_thunderbolt": {
+    "ab": 2.7,
+    "rb": 2.7
+  },
+  "us_flagstaff_pgh1": {
+    "ab": 2.7,
+    "rb": 2.7
+  },
+  "germ_vs8_hydrofoil": {
+    "ab": 2.3,
+    "rb": 2.3
+  },
+  "germ_vs10_hydrofoil": {
+    "ab": 2.7,
+    "rb": 2.7
+  },
+  "ussr_pr_123k_hydrofoils": {
+    "ab": 2.0,
+    "rb": 2.0
+  },
+  "ussr_pr_123k": {
+    "ab": 2.0,
+    "rb": 2.0
+  },
+  "ussr_pr_123bis": {
+    "ab": 2.0,
+    "rb": 2.0
+  },
+  "uk_destroyer_st_class_saumarez": {
+    "ab": 4.0,
+    "rb": 4.0
+  },
+  "uk_destroyer_tribal_mohawk": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "uk_destroyer_tribal": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "uk_destroyer_haida": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "uk_destroyer_k_class": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "uk_destroyer_n_class": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "uk_destroyer_j_class": {
+    "ab": 4.3,
+    "rb": 4.3
+  },
+  "jp_destroyer_akizuki": {
+    "ab": 4.7,
+    "rb": 4.7
+  },
+  "jp_destroyer_hatsuzuki": {
+    "ab": 4.7,
+    "rb": 4.7
+  },
+  "jp_destroyer_suzutsuki": {
+    "ab": 4.7,
+    "rb": 4.7
+  },
+  "fr_lcg_m_l9059": {
+    "ab": 2.3,
+    "rb": 2.3
+  },
+  "fr_marne_class_aisne": {
+    "ab": 3.0,
+    "rb": 3.0
+  },
+  "fr_marne_class_marne": {
+    "ab": 3.0,
+    "rb": 3.0
+  },
+  "fr_frigate_corse_class_brestois": {
+    "ab": 4.0,
+    "rb": 4.0
+  }
+}
+RANK_OVERRIDES_V384 = {
+  "fw_189c_0": "II",
+  "germ_vs10_hydrofoil": "III",
+  "ussr_pr_123k": "II"
+}
+
+def _apply_v384_august_br_item(item: dict[str, Any]) -> bool:
+    vid = str(item.get("id") or item.get("identifier") or "")
+    changed = False
+    br = BR_OVERRIDES_V384.get(vid)
+    if br:
+        old = dict(item.get("br") or {})
+        new = dict(old)
+        new.update(br)
+        if new != old:
+            item["br"] = new
+            changed = True
+    nr = RANK_OVERRIDES_V384.get(vid)
+    if nr:
+        if item.get("rank") != nr:
+            item["rank"] = nr
+            changed = True
+        if item.get("treeRank") != nr:
+            item["treeRank"] = nr
+            changed = True
+    return changed
+
+_old_write_lightweight_vehicles_v384 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.84 override
+    _old_write_lightweight_vehicles_v384(rows, image_map)
+    try:
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        changed = 0
+        for item in data:
+            if isinstance(item, dict) and _apply_v384_august_br_item(item):
+                changed += 1
+        if changed:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"v3.84 August 2026 BR/rank overrides applied: {changed} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.84 August 2026 BR/rank overrides failed:", e)
+
+# --- end v3.84 layer ---
 
 
 if __name__ == "__main__":

@@ -18,7 +18,7 @@ if (window.location.protocol === 'file:') {
   let lastAction=null;
   function actionKeyV384(el){
     if(!el)return '';
-    if(el.matches?.('[data-owned]'))return 'owned:'+el.dataset.owned+':'+el.dataset.ownedVal;
+    if(el.matches?.('[data-owned]'))return 'owned:'+el.dataset.owned;
     if(el.matches?.('[data-add]'))return 'add:'+el.dataset.add;
     if(el.matches?.('[data-talisman]'))return 'talisman:'+el.dataset.talisman+':'+el.dataset.talismanVal;
     return '';
@@ -5048,7 +5048,7 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
   let lastAction=null;
   function actionKeyV384(el){
     if(!el)return '';
-    if(el.matches?.('[data-owned]'))return 'owned:'+el.dataset.owned+':'+el.dataset.ownedVal;
+    if(el.matches?.('[data-owned]'))return 'owned:'+el.dataset.owned;
     if(el.matches?.('[data-add]'))return 'add:'+el.dataset.add;
     if(el.matches?.('[data-talisman]'))return 'talisman:'+el.dataset.talisman+':'+el.dataset.talismanVal;
     return '';

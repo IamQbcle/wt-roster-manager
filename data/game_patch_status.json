@@ -1,14 +1,14 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "v3.84 / August 2026 BR changes",
+  "manager_data_patch": "v3.85 / WWI + Senrai curated supplement",
   "latest_known_patch": "2.57.1.70 / 2026-08-07",
-  "latest_public_signal": "August 2026 battle rating changes applied manually from the official spreadsheet export; Ho-Ri retirement and next-major rank/grouping changes recorded for later.",
-  "checked_at": "2026-08-07",
+  "latest_public_signal": "Curated supplement for missing The Great War event vehicles and separate Senrai Maidens pack variants; no language-system changes.",
+  "checked_at": "2026-08-15",
   "needs_review": false,
   "notes": {
-    "ru": "v3.84 применяет августовские изменения БР из официальной таблицы и текущие переносы рангов Fw 189 C, VS-10 и Pr.123K. Отложенные изменения Ho-Ri и переносы/группировки следующего крупного обновления не применены, но зафиксированы в заметках.",
-    "en": "v3.84 applies the August 2026 BR changes from the official table and current rank moves for Fw 189 C, VS-10 and Pr.123K. Ho-Ri retirement and next-major rank/grouping changes are not applied yet but are recorded in the notes."
+    "ru": "v3.85 вручную добавляет недостающую технику события The Great War и отдельные варианты наборов Senrai Maidens. Отложенные изменения Ho-Ri и переносы/группировки следующего крупного обновления остаются отложенными.",
+    "en": "v3.85 manually adds missing The Great War event vehicles and separate Senrai Maidens pack variants. Ho-Ri retirement and next-major rank/grouping changes remain deferred."
   },
   "data_verified_game_version": "2.57.1.70",
-  "version_check_mode": "official_changelog_version_and_manual_br_table"
+  "version_check_mode": "official_news_wiki_manual_supplement"
 }

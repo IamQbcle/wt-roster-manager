@@ -1,6 +1,6 @@
 {
   "logic_version": "v2.86-i18n-lineup-image-ram-cleanup",
-  "updated_at": "2026-08-07T10:50:00Z / v3.84 manual BR+rank update",
+  "updated_at": "2026-08-15T18:13:00+03:00",
   "items": {
     "USA|air": {
       "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=usa",
@@ -3274,6 +3274,15 @@
               "label": "RDF/LT",
               "row": 6,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "us_m1a1_hc_senrai_maidens",
+              "req": "",
+              "icon": "assets/vehicles/slots/us_m1a1_hc_senrai_maidens.png",
+              "label": "M1A1 HC (Senrai Maidens)",
+              "row": 11,
+              "col": 0
             }
           ]
         },
@@ -6455,7 +6464,7 @@
                 "type": "unit",
                 "id": "germ_garford_putilov",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_garford_putilov.png",
+                "icon": "assets/vehicles/slots/germ_garford_putilov.png",
                 "label": "Garford-Beute",
                 "row": 0,
                 "col": 0
@@ -6502,7 +6511,7 @@
                 "type": "unit",
                 "id": "germ_beutepanzer_mk_iv",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_beutepanzer_mk_iv.png",
+                "icon": "assets/vehicles/slots/germ_beutepanzer_mk_iv.png",
                 "label": "Beutepanzer IV",
                 "row": 0,
                 "col": 1
@@ -6549,7 +6558,7 @@
                 "type": "unit",
                 "id": "germ_a7v",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_a7v.png",
+                "icon": "assets/vehicles/slots/germ_a7v.png",
                 "label": "A7V",
                 "row": 0,
                 "col": 2
@@ -8039,6 +8048,15 @@
               "label": "Puma u14",
               "row": 3,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_leopard_2a4m_senrai_maidens",
+              "req": "",
+              "icon": "assets/vehicles/slots/germ_leopard_2a4m_senrai_maidens.png",
+              "label": "Leopard 2A4M (Senrai Maidens)",
+              "row": 7,
+              "col": 0
             }
           ]
         },
@@ -11256,7 +11274,7 @@
                 "type": "unit",
                 "id": "ussr_garford_putilov",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_garford_putilov.png",
+                "icon": "assets/vehicles/slots/ussr_garford_putilov.png",
                 "label": "Гарфордъ",
                 "row": 0,
                 "col": 3
@@ -12863,6 +12881,15 @@
               "label": "Т-80УК",
               "row": 6,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "ussr_t_80ue1_senrai_maidens",
+              "req": "",
+              "icon": "assets/vehicles/slots/ussr_t_80ue1_senrai_maidens.png",
+              "label": "T-80U-E1 (Senrai Maidens)",
+              "row": 12,
+              "col": 0
             }
           ]
         },
@@ -14356,7 +14383,7 @@
                 "type": "unit",
                 "id": "hp_12",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/hp_12.png",
+                "icon": "assets/vehicles/slots/hp_12.png",
                 "label": "H.P.12",
                 "row": 0,
                 "col": 4
@@ -15891,7 +15918,7 @@
                 "type": "unit",
                 "id": "uk_mark_v",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_mark_v.png",
+                "icon": "assets/vehicles/slots/uk_mark_v.png",
                 "label": "Mark V",
                 "row": 0,
                 "col": 4
@@ -17109,6 +17136,15 @@
               "label": "M1A1",
               "row": 3,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "uk_challenger_2_oes_sm",
+              "req": "",
+              "icon": "assets/vehicles/slots/uk_challenger_2_oes_sm.png",
+              "label": "Challenger 2 OES (SM)",
+              "row": 6,
+              "col": 0
             }
           ]
         },
@@ -20596,6 +20632,15 @@
               "label": "Type 90 (B) \"Fuji\"",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "jp_type_90b_sm",
+              "req": "",
+              "icon": "assets/vehicles/slots/jp_type_90b_sm.png",
+              "label": "Type 90 (B) (SM)",
+              "row": 2,
+              "col": 0
             }
           ]
         },
@@ -23693,6 +23738,15 @@
               "icon": "https://static.encyclopedia.warthunder.com/slots/cn_ztz_96b.png",
               "label": "ZTZ96B",
               "row": 3,
+              "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "cn_mbt2000_sm",
+              "req": "",
+              "icon": "assets/vehicles/slots/cn_mbt2000_sm.png",
+              "label": "MBT-2000 (SM)",
+              "row": 6,
               "col": 0
             }
           ]
@@ -33758,7 +33812,7 @@
                 "type": "unit",
                 "id": "fr_saint_chamond",
                 "req": "",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_saint_chamond.png",
+                "icon": "assets/vehicles/slots/fr_saint_chamond.png",
                 "label": "St-Chamond",
                 "row": 0,
                 "col": 1

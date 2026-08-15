@@ -1,848 +1,895 @@
 {
+  "heuristic": {
+    "en": "v3.41: event vehicles without Market are unavailable by default; legacy hidden folder variants preserve tree geometry but are fully invisible with arrows/folder tabs.",
+    "ru": "v3.41: акционная техника без биржи недоступна по умолчанию; скрытые старые варианты в папках остаются в геометрии дерева, но полностью невидимы вместе со стрелками/папками."
+  },
   "items": {
-    "yp-38": {
-      "availability": "unavailable",
-      "ru": "Скрытая пакетная техника; обычно недоступна, может временно возвращаться в продажу.",
-      "en": "Hidden pack vehicle; normally unavailable, may temporarily return to sale."
-    },
-    "pbm_3": {
-      "availability": "unavailable",
-      "ru": "Старая акционная награда Sea Voyage 2019; не брать в наборы, если не отмечена купленной.",
-      "en": "Old Sea Voyage 2019 event reward; do not use in lineups unless marked owned."
-    },
-    "p-38g_metal": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника; не брать в наборы, если не отмечена купленной.",
-      "en": "Hidden/owner-only premium vehicle; do not use in lineups unless marked owned."
-    },
-    "p-43a-1": {
-      "availability": "market_available",
-      "ru": "Старая акционная техника, доступная через Market при наличии купонов.",
-      "en": "Старая акционная техника, доступная через Market при наличии купонов."
-    },
-    "p-40e_td": {
-      "availability": "unavailable",
-      "ru": "Twitch Drops / gift-награда 2020; API даёт event=null, поэтому ловится через статус Акционная и ручной override. Не брать в наборы, если не отмечена купленной.",
-      "en": "Twitch Drops / gift reward from 2020; API has event=null, so it is caught through Event status and manual override. Do not use in lineups unless marked owned.",
-      "source": "normalized status override + user Wiki check"
-    },
-    "f4u-4b_vmf_214": {
-      "availability": "unavailable",
-      "ru": "Эксклюзивный Xbox-набор; для обычного ПК-пула считается недоступным, пока игрок не отметил технику имеющейся.",
-      "en": "Xbox-exclusive pack; treated as unavailable for the normal PC collection pool unless marked owned."
-    },
-    "us_lvt_a_4": {
-      "availability": "market_available",
-      "ru": "Акционная техника Victory Day; доступна через Market при наличии купонов.",
-      "en": "Акционная техника Victory Day; доступна через Market при наличии купонов."
-    },
-    "us_m5a1_stuart_canadian_5st_arm": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника; временно возвращается во время специальных продаж.",
-      "en": "Normally hidden premium vehicle; may temporarily return during special sales."
-    },
-    "us_elco_80ft_pt109_boat": {
-      "availability": "unavailable",
-      "ru": "Снятый с продажи naval pack; обычно недоступен.",
-      "en": "Discontinued naval pack; normally unavailable."
-    },
-    "germ_s_100_s204_lang": {
-      "availability": "unavailable",
-      "ru": "Предзаказ/ранний набор немецкого флота; обычно недоступен.",
-      "en": "German fleet preorder/early pack; normally unavailable."
-    },
-    "germ_frigate_koln_lubeck": {
-      "availability": "market_available",
-      "ru": "Акционная техника, доступная через Market при наличии купонов.",
-      "en": "Акционная техника, доступная через Market при наличии купонов."
-    },
-    "germ_destroyer_class1936_z20_karlgalster": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника; временно возвращается в специальные naval-продажи.",
-      "en": "Normally hidden premium vehicle; temporarily returns during special naval sales."
-    },
-    "germ_destroyer_class1939_t31": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника; временно возвращается в специальные naval-продажи.",
-      "en": "Normally hidden premium vehicle; temporarily returns during special naval sales."
-    },
-    "germ_cruiser_prinz_eugen": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника; временно возвращается в специальные продажи.",
-      "en": "Normally hidden premium vehicle; temporarily returns during special sales."
-    },
-    "fiat_cr42_marcolin": {
-      "availability": "unavailable",
-      "ru": "Подарочная/старая немецкая версия; не покупается напрямую, только для владельцев/редких акций.",
-      "en": "Gift/legacy German version; not directly purchasable, owner-only/special occasions."
-    },
-    "he_112b_1": {
-      "availability": "unavailable",
-      "ru": "Немецкая версия скрыта/неполучаема; актуальная версия находится в Италии.",
-      "en": "German version hidden/unobtainable; current version belongs to Italy."
-    },
-    "sm_79_1937": {
-      "availability": "unavailable",
-      "ru": "Старая немецкая итальянская версия, отсутствует в актуальной папке клиента; считать только для владельцев.",
-      "en": "Legacy German-Italian version absent from the current client folder; owner-only."
-    },
-    "sm_79_1942": {
-      "availability": "unavailable",
-      "ru": "Старая немецкая итальянская версия, отсутствует в актуальной папке клиента; считать только для владельцев.",
-      "en": "Legacy German-Italian version absent from the current client folder; owner-only."
-    },
-    "hs-129b-2_romania": {
-      "availability": "unavailable",
-      "ru": "Немецкая румынская версия скрыта/неполучаема; актуальная версия переехала в Италию.",
-      "en": "German Romanian version hidden/unobtainable; current version moved to Italy."
-    },
-    "bf-109g-2_romania": {
-      "availability": "unavailable",
-      "ru": "Немецкая румынская версия скрыта/неполучаема; считать только для владельцев.",
-      "en": "German Romanian version hidden/unobtainable; owner-only."
-    },
-    "tempest_mkv_luftwaffe": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая захваченная техника; временно возвращается только во время акций.",
-      "en": "Normally hidden captured vehicle; temporarily returns only during events/sales."
-    },
-    "germ_amd_35_kwk": {
-      "availability": "unavailable",
-      "ru": "Старая/скрытая немецкая премиумная техника; в обычном клиентском дереве не отображается, считать только для владельцев.",
-      "en": "Старая/скрытая немецкая премиумная техника; в обычном клиентском дереве не отображается, считать только для владельцев."
-    },
-    "germ_sdkfz_251_22": {
-      "availability": "unavailable",
-      "ru": "Старая/скрытая немецкая премиумная техника; считать только для владельцев.",
-      "en": "Старая/скрытая немецкая премиумная техника; считать только для владельцев."
-    },
-    "us_m4a2_1944_germ": {
-      "availability": "unavailable",
-      "ru": "Захваченный немецкий Sherman; обычно скрыт/недоступен, считать только для владельцев.",
-      "en": "Захваченный немецкий Sherman; обычно скрыт/недоступен, считать только для владельцев."
-    },
-    "germ_pzkpfw_V_ersatz_m10": {
-      "availability": "unavailable",
-      "ru": "Награда Festive Quest 2017; не обычная покупка, считать только для владельцев.",
-      "en": "Награда Festive Quest 2017; не обычная покупка, считать только для владельцев."
-    },
-    "germ_sturmmorser_sturmtiger": {
-      "availability": "unavailable",
-      "ru": "Награда 10-летнего события Dreams come true; считать только для владельцев.",
-      "en": "Награда 10-летнего события Dreams come true; считать только для владельцев."
-    },
-    "germ_flakpanzer_V_Coelian": {
-      "availability": "unavailable",
-      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
-      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
-    },
-    "germ_pzkpfw_VI_ausf_b_tiger_IIh_sla": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
-      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
-    },
-    "germ_panther_II": {
-      "availability": "unavailable",
-      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
-      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
-    },
-    "germ_pzkpfw_VI_ausf_b_tiger_IIh_kwk46": {
-      "availability": "unavailable",
-      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
-      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
-    },
-    "germ_pzkpfw_Maus": {
-      "availability": "unavailable",
-      "ru": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной.",
-      "en": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной."
-    },
-    "bo_105cb2": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
-      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
-    },
-    "uh_1c_xm_30": {
-      "availability": "unavailable",
-      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
-      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
-    },
-    "ah_64a_peten": {
-      "availability": "unavailable",
-      "ru": "Старый пакет США; обычно не доступен в обычном дереве/магазине, считать только для владельцев.",
-      "en": "Старый пакет США; обычно не доступен в обычном дереве/магазине, считать только для владельцев."
-    },
-    "tb_3_m17_32": {
-      "availability": "unavailable",
-      "ru": "Старая подарочная/акционная техника; считать только для владельцев.",
-      "en": "Старая подарочная/акционная техника; считать только для владельцев."
-    },
-    "tandem_mai": {
-      "availability": "unavailable",
-      "ru": "Старая подарочная/акционная техника; считать только для владельцев.",
-      "en": "Старая подарочная/акционная техника; считать только для владельцев."
-    },
-    "p-39q_15": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "pe-2-205": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "tu-2_early": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "p-63c-5_ussr": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "p-63a-10_ussr": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "fw-190d-9_ussr": {
-      "availability": "unavailable",
-      "ru": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника.",
-      "en": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника."
-    },
-    "spitfire_ix_ussr": {
-      "availability": "unavailable",
-      "ru": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника.",
-      "en": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника."
-    },
-    "yak-3t": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "tu-1": {
-      "availability": "unavailable",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
-    },
-    "su-7bmk": {
-      "availability": "unavailable",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
-      "en": "Temporary event sale; normally hidden / owner-only."
-    },
-    "sb_2m_103u": {
-      "availability": "unavailable",
-      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
-      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
-    },
-    "sb_2m_103_mv3": {
-      "availability": "unavailable",
-      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
-      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
-    },
-    "er-2_m105_tat": {
-      "availability": "unavailable",
-      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
-      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
-    },
-    "er-2_m105r_tat": {
-      "availability": "unavailable",
-      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
-      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
-    },
-    "germ_spz_12_3": {
-      "availability": "market_available",
-      "ru": "Battle Pass техника, доступная через Market при наличии купонов; не скрывать как полностью недоступную.",
-      "en": "Battle Pass техника, доступная через Market при наличии купонов; не скрывать как полностью недоступную."
-    },
-    "sb_2m_103u_mv3": {
-      "availability": "unavailable",
-      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
-      "en": "Legacy Soviet research-tree variant absent from the current client tree; treat as hidden from research."
-    },
-    "germ_leopard_2a5_yt_cup_2019": {
-      "availability": "unavailable",
-      "ru": "Приз YouTube Cup 2019; не доступен обычному игроку, только если техника реально есть на аккаунте.",
-      "en": "YouTube Cup 2019 prize; not normally obtainable, owner-only."
-    },
-    "germ_flakpanzer_v_coelian": {
-      "availability": "unavailable",
-      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
-      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
-    },
-    "germ_panther_ii": {
-      "availability": "unavailable",
-      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
-      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
-    },
-    "germ_pzkpfw_vi_ausf_b_tiger_iih_kwk46": {
-      "availability": "unavailable",
-      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
-      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
-    },
-    "germ_pzkpfw_maus": {
-      "availability": "unavailable",
-      "ru": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной.",
-      "en": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной."
-    },
-    "arado-196a-3": {
-      "availability": "unavailable",
-      "ru": "Operation S.U.M.M.E.R. 2020 / акционная награда; в обычном клиенте не доступна.",
-      "en": "Operation S.U.M.M.E.R. 2020 / акционная награда; в обычном клиенте не доступна."
-    },
-    "sea_hawk_mk100": {
-      "availability": "unavailable",
-      "ru": "Снята из магазина; иногда временно возвращается на событиях.",
-      "en": "Снята из магазина; иногда временно возвращается на событиях."
-    },
-    "mig-21_sps_k": {
-      "availability": "available",
-      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции.",
-      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
-    },
-    "su_22m4_de_wtd61": {
-      "availability": "available",
-      "ru": "Возвращён в продажу после акции к первому полёту Су-17; доступен по полной цене после акции.",
-      "en": "Returned to sale after the Su-17 first-flight event; available at full price after the sale."
-    },
-    "ussr_g5_rct": {
-      "availability": "unavailable",
-      "ru": "Акционная/ивентовая техника; не считать доступной по умолчанию.",
-      "en": "Акционная/ивентовая техника; не считать доступной по умолчанию."
-    },
-    "ussr_ya_5m": {
-      "availability": "unavailable",
-      "ru": "Акционная/ивентовая техника; не считать доступной по умолчанию.",
-      "en": "Акционная/ивентовая техника; не считать доступной по умолчанию."
-    },
-    "ussr_1124_rct": {
-      "availability": "unavailable",
-      "ru": "Старая премиумная/скрытая техника; не считать доступной по умолчанию.",
-      "en": "Старая премиумная/скрытая техника; не считать доступной по умолчанию."
-    },
-    "ussr_pr_183_egypt_bm_21": {
-      "availability": "unavailable",
-      "ru": "Battle Pass reward; только у владельцев/купонов, не обычная доступная база.",
-      "en": "Battle Pass reward; только у владельцев/купонов, не обычная доступная база."
-    },
-    "ussr_destroyer_7y_stroyny": {
-      "availability": "unavailable",
-      "ru": "Снята с продажи; временно возвращалась по событиям.",
-      "en": "Снята с продажи; временно возвращалась по событиям."
-    },
-    "ussr_destroyer_pr41_neustrashimy": {
-      "availability": "unavailable",
-      "ru": "Снята с продажи после изменений флота; временно возвращалась по событиям.",
-      "en": "Снята с продажи после изменений флота; временно возвращалась по событиям."
-    },
-    "lagg-3-4": {
-      "availability": "unavailable",
-      "ru": "Старая скрытая/owner-only техника.",
-      "en": "Старая скрытая/owner-only техника."
-    },
-    "lagg-3-23": {
-      "availability": "unavailable",
-      "ru": "Старая скрытая/owner-only техника.",
-      "en": "Старая скрытая/owner-only техника."
-    },
-    "mig-17_cuba": {
-      "availability": "unavailable",
-      "ru": "Скрытая/временно возвращаемая премиумная техника.",
-      "en": "Скрытая/временно возвращаемая премиумная техника."
-    },
-    "ussr_t_34_1940_l_11": {
-      "availability": "unavailable",
-      "ru": "Старая скрытая/owner-only техника.",
-      "en": "Старая скрытая/owner-only техника."
-    },
-    "ussr_bm_31_12": {
-      "availability": "unavailable",
-      "ru": "Акционная техника Legend of Victory; не считать доступной по умолчанию.",
-      "en": "Акционная техника Legend of Victory; не считать доступной по умолчанию."
-    },
-    "ussr_kv_7_u13": {
-      "availability": "unavailable",
-      "ru": "Акционная техника; не считать доступной по умолчанию.",
-      "en": "Акционная техника; не считать доступной по умолчанию."
-    },
-    "ussr_type_65_aa": {
-      "availability": "unavailable",
-      "ru": "Старая акционная/owner-only техника в СССР.",
-      "en": "Старая акционная/owner-only техника в СССР."
-    },
-    "ussr_t_34_85E": {
-      "availability": "unavailable",
-      "ru": "Снятая с продажи gift/premium техника.",
-      "en": "Снятая с продажи gift/premium техника."
-    },
-    "ussr_t_34_85e": {
-      "availability": "unavailable",
-      "ru": "Снятая с продажи gift/premium техника.",
-      "en": "Снятая с продажи gift/premium техника."
-    },
-    "ussr_su_122P": {
-      "availability": "unavailable",
-      "ru": "Скрытая/временно возвращаемая премиумная техника.",
-      "en": "Скрытая/временно возвращаемая премиумная техника."
-    },
-    "ussr_su_122p": {
-      "availability": "unavailable",
-      "ru": "Скрытая/временно возвращаемая премиумная техника.",
-      "en": "Скрытая/временно возвращаемая премиумная техника."
-    },
-    "ussr_is_2_1944_revenge": {
-      "availability": "unavailable",
-      "ru": "Старая снятая с продажи/owner-only премиумная техника.",
-      "en": "Старая снятая с продажи/owner-only премиумная техника."
-    },
-    "ussr_t_80u_yt_cup_2019": {
-      "availability": "unavailable",
-      "ru": "Приз YouTube Cup 2019; owner-only.",
-      "en": "Приз YouTube Cup 2019; owner-only."
-    },
-    "ussr_t_34_85_zis_53_v80": {
-      "availability": "market_available",
-      "ru": "Акционная техника, доступная через Market при наличии купонов.",
-      "en": "Legend of Victory 2025 event vehicle; coupon can be tradable on Market."
-    },
-    "uk_vijayanta": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; treat as owner-only/hidden by default.",
-      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; treat as owner-only/hidden by default."
-    },
-    "uk_centurion_shot_kal_d": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; old pack/premium, owner-only by default.",
-      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; old pack/premium, owner-only by default."
-    },
-    "uk_centurion_mk_3_ss11": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; old pack/premium, owner-only by default.",
-      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; old pack/premium, owner-only by default."
-    },
-    "uk_tog_2": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; event/owner-only by default.",
-      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; event/owner-only by default."
-    },
-    "uk_ac1_sentinel": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; hidden/owner-only by default.",
-      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; hidden/owner-only by default."
-    },
-    "gladiator_mk2_france": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British event/hidden aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Legacy British event/hidden aircraft absent from current client tree."
-    },
-    "gladiator_mk2_silver": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British event/hidden aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Legacy British event/hidden aircraft absent from current client tree."
-    },
-    "hp_12": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Legacy British aircraft absent from current client tree."
-    },
-    "swordfish_mk2": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "hurricane_mk1_late_ep": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "d_520": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium/event aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium/event aircraft absent from current client tree."
-    },
-    "d_521": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British event aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Legacy British event aircraft absent from current client tree."
-    },
-    "boomerang_mkii": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "typhoon_mk1b": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "attaker_fb2": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "lightning_f53": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "buccaneer_s1": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Event/Market aircraft absent from current client tree; only if owned/market-acquired.",
-      "en": "Owner-only / hidden from the regular client tree. Event/Market aircraft absent from current client tree; only if owned/market-acquired."
-    },
-    "mig-21_bison": {
-      "availability": "available",
-      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции.",
-      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
-    },
-    "uk_gay_class_archer": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree."
-    },
-    "uk_higgins_78ft_mtb422": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree."
-    },
-    "uk_fairmile_d_5001_5029": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "uk_destroyer_haida": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree."
-    },
-    "uk_destroyer_battle_cadiz": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree."
-    },
-    "jp_destroyer_hayanami": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese naval pack absent from current client tree."
-    },
-    "jp_destroyer_kiyoshimo": {
-      "availability": "unavailable",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
-      "en": "Temporary event sale; normally hidden / owner-only."
-    },
-    "jp_destroyer_suzutsuki": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese naval pack absent from current client tree."
-    },
-    "jp_kusen_tei_13_1942": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese coastal pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese coastal pack absent from current client tree."
-    },
-    "jp_t51a": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese coastal pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese coastal pack absent from current client tree."
-    },
-    "ki-96": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
-    },
-    "fw-190a-5_japan": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
-    },
     "a6m5ko": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
-    },
-    "j2m4_kai": {
-      "availability": "unavailable",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
-      "en": "Temporary event sale; normally hidden / owner-only."
-    },
-    "t2_early": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree."
-    },
-    "hawk_209_indonesia": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Pack/platform-limited availability; absent from current PC client.",
-      "en": "Owner-only / hidden from the regular client tree. Pack/platform-limited availability; absent from current PC client."
-    },
-    "jp_type_3_ka_chi": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese event/pack vehicle absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese event/pack vehicle absent from current client tree."
-    },
-    "cn_type_69_2a": {
-      "availability": "unavailable",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
-      "en": "Temporary event sale; normally hidden / owner-only."
-    },
-    "cn_t_62": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Chinese premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Chinese premium absent from current client tree."
-    },
-    "h-75m_china": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Chinese pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Chinese pack absent from current client tree."
-    },
-    "j_7d": {
-      "availability": "available",
-      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции.",
-      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale."
-    },
-    "ro_57_quadriarma": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian pack absent from current client tree."
-    },
-    "mc-202_d": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian pack absent from current client tree."
-    },
-    "it_toldi_II_a": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Hungarian/Italian pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree."
-    },
-    "it_41m_turan_2": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Hungarian/Italian pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree."
-    },
-    "it_semovente_m43_105_leoncello": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree."
-    },
-    "it_44m_zrinyi_1": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Hungarian/Italian pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree."
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree."
     },
     "a_129_a": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree."
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian premium absent from current client tree."
     },
-    "it_destroyer_soldati_serie1": {
+    "ah_64a_peten": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian naval pack absent from current client tree."
+      "en": "Старый пакет США; обычно не доступен в обычном дереве/магазине, считать только для владельцев.",
+      "ru": "Старый пакет США; обычно не доступен в обычном дереве/магазине, считать только для владельцев."
     },
-    "it_destroyer_soldati_serie1_geniere": {
+    "arado-196a-3": {
       "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian premium absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree."
-    },
-    "it_mc_485": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian coastal pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian coastal pack absent from current client tree."
-    },
-    "it_p493_freccia": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian coastal pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian coastal pack absent from current client tree."
-    },
-    "fr_trident_class_glaive_p671": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. 2026 Maritime Gendarme event reward; hide by default outside ownership/event context.",
-      "en": "Owner-only / hidden from the regular client tree. 2026 Maritime Gendarme event reward; hide by default outside ownership/event context."
-    },
-    "fr_destroyer_le_fantasque_class_le_triomphant": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French naval pack absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French naval pack absent from current client tree."
-    },
-    "iar_316b": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium helicopter absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium helicopter absent from current client tree."
-    },
-    "fr_lvt_bofors": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event vehicle absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree."
-    },
-    "fr_lorraine_155": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event vehicle absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree."
-    },
-    "fr_panhard_ebr_1954": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event vehicle absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree."
-    },
-    "late_298d": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree."
-    },
-    "d_371_hs9": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree."
-    },
-    "mb_151c1": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree."
-    },
-    "fw-190a-8_france": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree."
-    },
-    "so_4050_vautour_2n": {
-      "availability": "unavailable",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
-      "en": "Temporary event sale; normally hidden / owner-only."
-    },
-    "f-84f_iaf": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French/Israeli premium aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French/Israeli premium aircraft absent from current client tree."
-    },
-    "mirage_milan": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree."
-    },
-    "so_4050_vautour_2a_iaf": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French/Israeli pack aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French/Israeli pack aircraft absent from current client tree."
-    },
-    "j9_early": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish pack aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish pack aircraft absent from current client tree."
-    },
-    "vl_myrsky_2_late": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish/Finnish pack aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish/Finnish pack aircraft absent from current client tree."
-    },
-    "saab_j29d": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish premium aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish premium aircraft absent from current client tree."
-    },
-    "saab_j35a": {
-      "availability": "unavailable",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев.",
-      "en": "Temporary event sale; normally hidden / owner-only."
-    },
-    "spitfire_lf_mk9c_cw_greece": {
-      "availability": "unavailable",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Israeli pack aircraft absent from current client tree.",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old Israeli pack aircraft absent from current client tree."
+      "en": "Operation S.U.M.M.E.R. 2020 / акционная награда; в обычном клиенте не доступна.",
+      "ru": "Operation S.U.M.M.E.R. 2020 / акционная награда; в обычном клиенте не доступна."
     },
     "attacker_fb2": {
       "availability": "unavailable",
-      "ru": "Alias for Attacker FB.2 owner-only rule.",
-      "en": "Alias for Attacker FB.2 owner-only rule."
+      "en": "Alias for Attacker FB.2 owner-only rule.",
+      "ru": "Alias for Attacker FB.2 owner-only rule."
     },
-    "uk_m4a5_ram_2": {
-      "availability": "available",
-      "ru": "В британском дереве отображать как RAM II; доступная техника текущего дерева по пользовательской сверке.",
-      "en": "Display as RAM II in the British tree; obtainable current-tree vehicle per user audit."
-    },
-    "ussr_kv_8": {
-      "availability": "market_available",
-      "ru": "Награда события Legend of Victory: KV-8 (май 2026); купон может быть доступен через Market. Не считать обычной пакетной техникой.",
-      "en": "Legend of Victory: KV-8 event reward (May 2026); coupon may be available via Market. Do not treat as a regular pack vehicle.",
-      "source": "manual curated check, Gaijin event news 2026-05"
-    },
-    "sw_sav_fm48": {
+    "attaker_fb2": {
       "availability": "unavailable",
-      "ru": "SAV 20.12.48 обычно доступен только во время временных акций; после окончания акции не предлагать в автоподборе, если не отмечен купленным.",
-      "en": "SAV 20.12.48 is normally available only during limited-time promotions; do not offer in autopick unless marked owned.",
-      "source": "manual curated check, Swedish National Security Forces Day sale 2026-05"
-    },
-    "f_20a": {
-      "availability": "unavailable",
-      "ru": "F-20A Tigershark Pack был указан среди наборов, снимаемых с продажи после May Sale 2026; считать owner-only, если техника не отмечена купленной.",
-      "en": "F-20A Tigershark Pack was listed among packs retired after the May Sale 2026; treat as owner-only unless marked owned.",
-      "source": "manual curated check, Gaijin May Sale 2026 retired packs section"
-    },
-    "spitfire_mk5b_float": {
-      "availability": "unavailable",
-      "ru": "Награда события Wings Over Water 2026; событие завершилось 15 июня 2026. Считать доступной только владельцам, пока не подтверждён Market/повторное получение.",
-      "en": "Wings Over Water 2026 event reward; the event ended on 15 June 2026. Treat as owner-only unless Market or another acquisition method is confirmed.",
-      "source": "War Thunder official event news 2026-06-12 + Wiki unit page"
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
     },
     "av_8b_na": {
       "availability": "available",
-      "ru": "Возвращён в продажу к 250-летию США; остаётся доступен по полной цене после акции.",
-      "en": "Returned to sale for the USA 250th anniversary; remains available at full price after the sale."
+      "en": "Returned to sale for the USA 250th anniversary; remains available at full price after the sale.",
+      "ru": "Возвращён в продажу к 250-летию США; остаётся доступен по полной цене после акции."
     },
-    "germ_pzh_2000": {
+    "bf-109g-2_romania": {
       "availability": "unavailable",
-      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев.",
-      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+      "en": "German Romanian version hidden/unobtainable; owner-only.",
+      "ru": "Немецкая румынская версия скрыта/неполучаема; считать только для владельцев."
     },
-    "jh_7a_prototype": {
+    "bo_105cb2": {
       "availability": "unavailable",
-      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев.",
-      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
+      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
     },
-    "jp_type_74_red_star": {
+    "boomerang_mkii": {
       "availability": "unavailable",
-      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев.",
-      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
     },
-    "us_m26e1_pershing": {
+    "buccaneer_s1": {
       "availability": "unavailable",
-      "ru": "Временная продажа к 250-летию США; в постоянной базе считается недоступной / только у владельцев.",
-      "en": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
+      "en": "Owner-only / hidden from the regular client tree. Event/Market aircraft absent from current client tree; only if owned/market-acquired.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Event/Market aircraft absent from current client tree; only if owned/market-acquired."
+    },
+    "cn_mbt2000_sm": {
+      "availability": "available",
+      "reason": "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+    },
+    "cn_t_62": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Chinese premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Chinese premium absent from current client tree."
+    },
+    "cn_type_69_2a": {
+      "availability": "unavailable",
+      "en": "Temporary event sale; normally hidden / owner-only.",
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+    },
+    "d_371_hs9": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event aircraft absent from current client tree."
+    },
+    "d_520": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium/event aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium/event aircraft absent from current client tree."
+    },
+    "d_521": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Legacy British event aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British event aircraft absent from current client tree."
+    },
+    "er-2_m105_tat": {
+      "availability": "unavailable",
+      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
+      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
+    },
+    "er-2_m105r_tat": {
+      "availability": "unavailable",
+      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
+      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
+    },
+    "f-84f_iaf": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French/Israeli premium aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French/Israeli premium aircraft absent from current client tree."
     },
     "f-86f-35": {
       "availability": "unavailable",
-      "ru": "Временная продажа к 250-летию США; в постоянной базе считается недоступной / только у владельцев.",
-      "en": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
+      "en": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database.",
+      "ru": "Временная продажа к 250-летию США; в постоянной базе считается недоступной / только у владельцев."
     },
-    "us_xm1_chrysler": {
+    "f4u-4b_vmf_214": {
       "availability": "unavailable",
-      "ru": "Временный набор к 250-летию США; в постоянной базе считается недоступным / только у владельцев.",
-      "en": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
+      "en": "Xbox-exclusive pack; treated as unavailable for the normal PC collection pool unless marked owned.",
+      "ru": "Эксклюзивный Xbox-набор; для обычного ПК-пула считается недоступным, пока игрок не отметил технику имеющейся."
     },
-    "us_destroyer_fletcher_bennion": {
+    "f_20a": {
       "availability": "unavailable",
-      "ru": "Временный набор к 250-летию США; в постоянной базе считается недоступным / только у владельцев.",
-      "en": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
+      "en": "F-20A Tigershark Pack was listed among packs retired after the May Sale 2026; treat as owner-only unless marked owned.",
+      "ru": "F-20A Tigershark Pack был указан среди наборов, снимаемых с продажи после May Sale 2026; считать owner-only, если техника не отмечена купленной.",
+      "source": "manual curated check, Gaijin May Sale 2026 retired packs section"
     },
-    "uk_fv107_scimitar_mk2": {
+    "fiat_cr42_marcolin": {
       "availability": "unavailable",
-      "ru": "Событийная техника «Удар скимитара»; в стабильной базе считается недоступной / только у владельцев.",
-      "en": "Strike of the Scimitar event reward; treated as owner-only/unavailable in the stable database."
+      "en": "Gift/legacy German version; not directly purchasable, owner-only/special occasions.",
+      "ru": "Подарочная/старая немецкая версия; не покупается напрямую, только для владельцев/редких акций."
     },
-    "it_fiat_6616_ub": {
+    "fr_destroyer_le_fantasque_class_le_triomphant": {
       "availability": "unavailable",
-      "ru": "Техника 24 сезона Боевого пропуска; в стабильной базе считается недоступной / только у владельцев.",
-      "en": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French naval pack absent from current client tree."
+    },
+    "fr_lorraine_155": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event vehicle absent from current client tree."
+    },
+    "fr_lvt_bofors": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event vehicle absent from current client tree."
+    },
+    "fr_panhard_ebr_1954": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event vehicle absent from current client tree."
+    },
+    "fr_saint_chamond": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "fr_trident_class_glaive_p671": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. 2026 Maritime Gendarme event reward; hide by default outside ownership/event context.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. 2026 Maritime Gendarme event reward; hide by default outside ownership/event context."
+    },
+    "fw-190a-5_japan": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree."
+    },
+    "fw-190a-8_france": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree."
+    },
+    "fw-190d-9_ussr": {
+      "availability": "unavailable",
+      "en": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника.",
+      "ru": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника."
+    },
+    "germ_a7v": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "germ_amd_35_kwk": {
+      "availability": "unavailable",
+      "en": "Старая/скрытая немецкая премиумная техника; в обычном клиентском дереве не отображается, считать только для владельцев.",
+      "ru": "Старая/скрытая немецкая премиумная техника; в обычном клиентском дереве не отображается, считать только для владельцев."
+    },
+    "germ_beutepanzer_mk_iv": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "germ_cruiser_prinz_eugen": {
+      "availability": "unavailable",
+      "en": "Normally hidden premium vehicle; temporarily returns during special sales.",
+      "ru": "Обычно скрытая премиумная техника; временно возвращается в специальные продажи."
+    },
+    "germ_destroyer_class1936_z20_karlgalster": {
+      "availability": "unavailable",
+      "en": "Normally hidden premium vehicle; temporarily returns during special naval sales.",
+      "ru": "Обычно скрытая премиумная техника; временно возвращается в специальные naval-продажи."
+    },
+    "germ_destroyer_class1939_t31": {
+      "availability": "unavailable",
+      "en": "Normally hidden premium vehicle; temporarily returns during special naval sales.",
+      "ru": "Обычно скрытая премиумная техника; временно возвращается в специальные naval-продажи."
+    },
+    "germ_flakpanzer_V_Coelian": {
+      "availability": "unavailable",
+      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
+      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
+    },
+    "germ_flakpanzer_v_coelian": {
+      "availability": "unavailable",
+      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
+      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
+    },
+    "germ_frigate_koln_lubeck": {
+      "availability": "market_available",
+      "en": "Акционная техника, доступная через Market при наличии купонов.",
+      "ru": "Акционная техника, доступная через Market при наличии купонов."
+    },
+    "germ_garford_putilov": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "germ_leopard_2a4m_senrai_maidens": {
+      "availability": "available",
+      "reason": "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+    },
+    "germ_leopard_2a5_yt_cup_2019": {
+      "availability": "unavailable",
+      "en": "YouTube Cup 2019 prize; not normally obtainable, owner-only.",
+      "ru": "Приз YouTube Cup 2019; не доступен обычному игроку, только если техника реально есть на аккаунте."
+    },
+    "germ_panther_II": {
+      "availability": "unavailable",
+      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
+      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
+    },
+    "germ_panther_ii": {
+      "availability": "unavailable",
+      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
+      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
+    },
+    "germ_pzh_2000": {
+      "availability": "unavailable",
+      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players.",
+      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев."
+    },
+    "germ_pzkpfw_Maus": {
+      "availability": "unavailable",
+      "en": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной.",
+      "ru": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной."
+    },
+    "germ_pzkpfw_VI_ausf_b_tiger_IIh_kwk46": {
+      "availability": "unavailable",
+      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
+      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
+    },
+    "germ_pzkpfw_VI_ausf_b_tiger_IIh_sla": {
+      "availability": "unavailable",
+      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
+      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
+    },
+    "germ_pzkpfw_V_ersatz_m10": {
+      "availability": "unavailable",
+      "en": "Награда Festive Quest 2017; не обычная покупка, считать только для владельцев.",
+      "ru": "Награда Festive Quest 2017; не обычная покупка, считать только для владельцев."
+    },
+    "germ_pzkpfw_maus": {
+      "availability": "unavailable",
+      "en": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной.",
+      "ru": "Скрыта из обычного исследования; может временно возвращаться, но не считается постоянно доступной."
+    },
+    "germ_pzkpfw_vi_ausf_b_tiger_iih_kwk46": {
+      "availability": "unavailable",
+      "en": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам.",
+      "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
+    },
+    "germ_s_100_s204_lang": {
+      "availability": "unavailable",
+      "en": "German fleet preorder/early pack; normally unavailable.",
+      "ru": "Предзаказ/ранний набор немецкого флота; обычно недоступен."
+    },
+    "germ_sdkfz_251_22": {
+      "availability": "unavailable",
+      "en": "Старая/скрытая немецкая премиумная техника; считать только для владельцев.",
+      "ru": "Старая/скрытая немецкая премиумная техника; считать только для владельцев."
+    },
+    "germ_spz_12_3": {
+      "availability": "market_available",
+      "en": "Battle Pass техника, доступная через Market при наличии купонов; не скрывать как полностью недоступную.",
+      "ru": "Battle Pass техника, доступная через Market при наличии купонов; не скрывать как полностью недоступную."
+    },
+    "germ_sturmmorser_sturmtiger": {
+      "availability": "unavailable",
+      "en": "Награда 10-летнего события Dreams come true; считать только для владельцев.",
+      "ru": "Награда 10-летнего события Dreams come true; считать только для владельцев."
+    },
+    "gladiator_mk2_france": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Legacy British event/hidden aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British event/hidden aircraft absent from current client tree."
+    },
+    "gladiator_mk2_silver": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Legacy British event/hidden aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Legacy British event/hidden aircraft absent from current client tree."
+    },
+    "h-75m_china": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Chinese pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Chinese pack absent from current client tree."
+    },
+    "hawk_209_indonesia": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Pack/platform-limited availability; absent from current PC client.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Pack/platform-limited availability; absent from current PC client."
+    },
+    "he_112b_1": {
+      "availability": "unavailable",
+      "en": "German version hidden/unobtainable; current version belongs to Italy.",
+      "ru": "Немецкая версия скрыта/неполучаема; актуальная версия находится в Италии."
+    },
+    "hp_12": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "hs-129b-2_romania": {
+      "availability": "unavailable",
+      "en": "German Romanian version hidden/unobtainable; current version moved to Italy.",
+      "ru": "Немецкая румынская версия скрыта/неполучаема; актуальная версия переехала в Италию."
+    },
+    "hurricane_mk1_late_ep": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
+    },
+    "iar_316b": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium helicopter absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium helicopter absent from current client tree."
     },
     "iar_81c_db_605": {
       "availability": "unavailable",
-      "ru": "Техника 24 сезона Боевого пропуска; в стабильной базе считается недоступной / только у владельцев.",
-      "en": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
+      "en": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database.",
+      "ru": "Техника 24 сезона Боевого пропуска; в стабильной базе считается недоступной / только у владельцев."
+    },
+    "it_41m_turan_2": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Hungarian/Italian pack absent from current client tree."
+    },
+    "it_44m_zrinyi_1": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Hungarian/Italian pack absent from current client tree."
+    },
+    "it_destroyer_soldati_serie1": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian naval pack absent from current client tree."
+    },
+    "it_destroyer_soldati_serie1_geniere": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian premium absent from current client tree."
+    },
+    "it_fiat_6616_ub": {
+      "availability": "unavailable",
+      "en": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database.",
+      "ru": "Техника 24 сезона Боевого пропуска; в стабильной базе считается недоступной / только у владельцев."
+    },
+    "it_mc_485": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian coastal pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian coastal pack absent from current client tree."
+    },
+    "it_p493_freccia": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian coastal pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian coastal pack absent from current client tree."
+    },
+    "it_semovente_m43_105_leoncello": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian premium absent from current client tree."
+    },
+    "it_toldi_II_a": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Hungarian/Italian pack absent from current client tree."
+    },
+    "j2m4_kai": {
+      "availability": "unavailable",
+      "en": "Temporary event sale; normally hidden / owner-only.",
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+    },
+    "j9_early": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish pack aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish pack aircraft absent from current client tree."
+    },
+    "j_7d": {
+      "availability": "available",
+      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale.",
+      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции."
+    },
+    "jh_7a_prototype": {
+      "availability": "unavailable",
+      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players.",
+      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев."
+    },
+    "jp_destroyer_hayanami": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese naval pack absent from current client tree."
+    },
+    "jp_destroyer_kiyoshimo": {
+      "availability": "unavailable",
+      "en": "Temporary event sale; normally hidden / owner-only.",
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+    },
+    "jp_destroyer_suzutsuki": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese naval pack absent from current client tree."
+    },
+    "jp_kusen_tei_13_1942": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese coastal pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese coastal pack absent from current client tree."
+    },
+    "jp_t51a": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese coastal pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese coastal pack absent from current client tree."
+    },
+    "jp_type_3_ka_chi": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese event/pack vehicle absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese event/pack vehicle absent from current client tree."
+    },
+    "jp_type_74_red_star": {
+      "availability": "unavailable",
+      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players.",
+      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев."
+    },
+    "jp_type_90b_sm": {
+      "availability": "available",
+      "reason": "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+    },
+    "ki-96": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree."
+    },
+    "lagg-3-23": {
+      "availability": "unavailable",
+      "en": "Старая скрытая/owner-only техника.",
+      "ru": "Старая скрытая/owner-only техника."
+    },
+    "lagg-3-4": {
+      "availability": "unavailable",
+      "en": "Старая скрытая/owner-only техника.",
+      "ru": "Старая скрытая/owner-only техника."
+    },
+    "late_298d": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event aircraft absent from current client tree."
+    },
+    "lightning_f53": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
+    },
+    "mb_151c1": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French pack/event aircraft absent from current client tree."
+    },
+    "mc-202_d": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian pack absent from current client tree."
+    },
+    "mig-17_cuba": {
+      "availability": "unavailable",
+      "en": "Скрытая/временно возвращаемая премиумная техника.",
+      "ru": "Скрытая/временно возвращаемая премиумная техника."
+    },
+    "mig-21_bison": {
+      "availability": "available",
+      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale.",
+      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции."
+    },
+    "mig-21_sps_k": {
+      "availability": "available",
+      "en": "Returned to sale after the MiG-21 first-flight event; available at full price after the sale.",
+      "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции."
+    },
+    "mirage_milan": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree."
+    },
+    "p-38g_metal": {
+      "availability": "unavailable",
+      "en": "Hidden/owner-only premium vehicle; do not use in lineups unless marked owned.",
+      "ru": "Скрытая/старовладельческая премиумная техника; не брать в наборы, если не отмечена купленной."
+    },
+    "p-39q_15": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "p-40e_td": {
+      "availability": "unavailable",
+      "en": "Twitch Drops / gift reward from 2020; API has event=null, so it is caught through Event status and manual override. Do not use in lineups unless marked owned.",
+      "ru": "Twitch Drops / gift-награда 2020; API даёт event=null, поэтому ловится через статус Акционная и ручной override. Не брать в наборы, если не отмечена купленной.",
+      "source": "normalized status override + user Wiki check"
+    },
+    "p-43a-1": {
+      "availability": "market_available",
+      "en": "Старая акционная техника, доступная через Market при наличии купонов.",
+      "ru": "Старая акционная техника, доступная через Market при наличии купонов."
+    },
+    "p-63a-10_ussr": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "p-63c-5_ussr": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "pbm_3": {
+      "availability": "unavailable",
+      "en": "Old Sea Voyage 2019 event reward; do not use in lineups unless marked owned.",
+      "ru": "Старая акционная награда Sea Voyage 2019; не брать в наборы, если не отмечена купленной."
+    },
+    "pe-2-205": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "ro_57_quadriarma": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Italian pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Italian pack absent from current client tree."
+    },
+    "saab_j29d": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish premium aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish premium aircraft absent from current client tree."
+    },
+    "saab_j35a": {
+      "availability": "unavailable",
+      "en": "Temporary event sale; normally hidden / owner-only.",
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+    },
+    "sb_2m_103_mv3": {
+      "availability": "unavailable",
+      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
+      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
+    },
+    "sb_2m_103u": {
+      "availability": "unavailable",
+      "en": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования.",
+      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
+    },
+    "sb_2m_103u_mv3": {
+      "availability": "unavailable",
+      "en": "Legacy Soviet research-tree variant absent from the current client tree; treat as hidden from research.",
+      "ru": "Старая версия обычной советской техники, отсутствующая в текущем дереве; считать скрытой из исследования."
+    },
+    "sea_hawk_mk100": {
+      "availability": "unavailable",
+      "en": "Снята из магазина; иногда временно возвращается на событиях.",
+      "ru": "Снята из магазина; иногда временно возвращается на событиях."
+    },
+    "sm_79_1937": {
+      "availability": "unavailable",
+      "en": "Legacy German-Italian version absent from the current client folder; owner-only.",
+      "ru": "Старая немецкая итальянская версия, отсутствует в актуальной папке клиента; считать только для владельцев."
+    },
+    "sm_79_1942": {
+      "availability": "unavailable",
+      "en": "Legacy German-Italian version absent from the current client folder; owner-only.",
+      "ru": "Старая немецкая итальянская версия, отсутствует в актуальной папке клиента; считать только для владельцев."
+    },
+    "so_4050_vautour_2a_iaf": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old French/Israeli pack aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French/Israeli pack aircraft absent from current client tree."
+    },
+    "so_4050_vautour_2n": {
+      "availability": "unavailable",
+      "en": "Temporary event sale; normally hidden / owner-only.",
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+    },
+    "spitfire_ix_ussr": {
+      "availability": "unavailable",
+      "en": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника.",
+      "ru": "Захваченная/ленд-лизная версия СССР; скрытая/старовладельческая премиумная техника."
+    },
+    "spitfire_lf_mk9c_cw_greece": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Israeli pack aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Israeli pack aircraft absent from current client tree."
+    },
+    "spitfire_mk5b_float": {
+      "availability": "unavailable",
+      "en": "Wings Over Water 2026 event reward; the event ended on 15 June 2026. Treat as owner-only unless Market or another acquisition method is confirmed.",
+      "ru": "Награда события Wings Over Water 2026; событие завершилось 15 июня 2026. Считать доступной только владельцам, пока не подтверждён Market/повторное получение.",
+      "source": "War Thunder official event news 2026-06-12 + Wiki unit page"
+    },
+    "su-7bmk": {
+      "availability": "unavailable",
+      "en": "Temporary event sale; normally hidden / owner-only.",
+      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+    },
+    "su_22m4_de_wtd61": {
+      "availability": "available",
+      "en": "Returned to sale after the Su-17 first-flight event; available at full price after the sale.",
+      "ru": "Возвращён в продажу после акции к первому полёту Су-17; доступен по полной цене после акции."
+    },
+    "sw_sav_fm48": {
+      "availability": "unavailable",
+      "en": "SAV 20.12.48 is normally available only during limited-time promotions; do not offer in autopick unless marked owned.",
+      "ru": "SAV 20.12.48 обычно доступен только во время временных акций; после окончания акции не предлагать в автоподборе, если не отмечен купленным.",
+      "source": "manual curated check, Swedish National Security Forces Day sale 2026-05"
+    },
+    "swordfish_mk2": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
+    },
+    "t2_early": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese premium absent from current client tree."
+    },
+    "tandem_mai": {
+      "availability": "unavailable",
+      "en": "Старая подарочная/акционная техника; считать только для владельцев.",
+      "ru": "Старая подарочная/акционная техника; считать только для владельцев."
+    },
+    "tb_3_m17_32": {
+      "availability": "unavailable",
+      "en": "Старая подарочная/акционная техника; считать только для владельцев.",
+      "ru": "Старая подарочная/акционная техника; считать только для владельцев."
+    },
+    "tempest_mkv_luftwaffe": {
+      "availability": "unavailable",
+      "en": "Normally hidden captured vehicle; temporarily returns only during events/sales.",
+      "ru": "Обычно скрытая захваченная техника; временно возвращается только во время акций."
+    },
+    "tu-1": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "tu-2_early": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "typhoon_mk1b": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
+    },
+    "uh_1c_xm_30": {
+      "availability": "unavailable",
+      "en": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной.",
+      "ru": "Обычно скрытая премиумная техника/временная продажа; не считать постоянно доступной."
+    },
+    "uk_ac1_sentinel": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; hidden/owner-only by default.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; hidden/owner-only by default."
+    },
+    "uk_centurion_mk_3_ss11": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; old pack/premium, owner-only by default.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; old pack/premium, owner-only by default."
+    },
+    "uk_centurion_shot_kal_d": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; old pack/premium, owner-only by default.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; old pack/premium, owner-only by default."
+    },
+    "uk_challenger_2_oes_sm": {
+      "availability": "available",
+      "reason": "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+    },
+    "uk_destroyer_battle_cadiz": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British naval pack absent from current client tree."
+    },
+    "uk_destroyer_haida": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
+    },
+    "uk_fairmile_d_5001_5029": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British premium absent from current client tree."
+    },
+    "uk_fv107_scimitar_mk2": {
+      "availability": "unavailable",
+      "en": "Strike of the Scimitar event reward; treated as owner-only/unavailable in the stable database.",
+      "ru": "Событийная техника «Удар скимитара»; в стабильной базе считается недоступной / только у владельцев."
+    },
+    "uk_gay_class_archer": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British naval pack absent from current client tree."
+    },
+    "uk_higgins_78ft_mtb422": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old British naval pack absent from current client tree."
+    },
+    "uk_m4a5_ram_2": {
+      "availability": "available",
+      "en": "Display as RAM II in the British tree; obtainable current-tree vehicle per user audit.",
+      "ru": "В британском дереве отображать как RAM II; доступная техника текущего дерева по пользовательской сверке."
+    },
+    "uk_mark_v": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "uk_tog_2": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; event/owner-only by default.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; event/owner-only by default."
+    },
+    "uk_vijayanta": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; treat as owner-only/hidden by default.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Absent from current client tree in user audit; treat as owner-only/hidden by default."
+    },
+    "us_destroyer_fletcher_bennion": {
+      "availability": "unavailable",
+      "en": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database.",
+      "ru": "Временный набор к 250-летию США; в постоянной базе считается недоступным / только у владельцев."
+    },
+    "us_elco_80ft_pt109_boat": {
+      "availability": "unavailable",
+      "en": "Discontinued naval pack; normally unavailable.",
+      "ru": "Снятый с продажи naval pack; обычно недоступен."
+    },
+    "us_lvt_a_4": {
+      "availability": "market_available",
+      "en": "Акционная техника Victory Day; доступна через Market при наличии купонов.",
+      "ru": "Акционная техника Victory Day; доступна через Market при наличии купонов."
+    },
+    "us_m1a1_hc_senrai_maidens": {
+      "availability": "available",
+      "reason": "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+    },
+    "us_m26e1_pershing": {
+      "availability": "unavailable",
+      "en": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database.",
+      "ru": "Временная продажа к 250-летию США; в постоянной базе считается недоступной / только у владельцев."
+    },
+    "us_m4a2_1944_germ": {
+      "availability": "unavailable",
+      "en": "Захваченный немецкий Sherman; обычно скрыт/недоступен, считать только для владельцев.",
+      "ru": "Захваченный немецкий Sherman; обычно скрыт/недоступен, считать только для владельцев."
+    },
+    "us_m5a1_stuart_canadian_5st_arm": {
+      "availability": "unavailable",
+      "en": "Normally hidden premium vehicle; may temporarily return during special sales.",
+      "ru": "Обычно скрытая премиумная техника; временно возвращается во время специальных продаж."
+    },
+    "us_xm1_chrysler": {
+      "availability": "unavailable",
+      "en": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database.",
+      "ru": "Временный набор к 250-летию США; в постоянной базе считается недоступным / только у владельцев."
+    },
+    "ussr_1124_rct": {
+      "availability": "unavailable",
+      "en": "Старая премиумная/скрытая техника; не считать доступной по умолчанию.",
+      "ru": "Старая премиумная/скрытая техника; не считать доступной по умолчанию."
+    },
+    "ussr_bm_31_12": {
+      "availability": "unavailable",
+      "en": "Акционная техника Legend of Victory; не считать доступной по умолчанию.",
+      "ru": "Акционная техника Legend of Victory; не считать доступной по умолчанию."
+    },
+    "ussr_destroyer_7y_stroyny": {
+      "availability": "unavailable",
+      "en": "Снята с продажи; временно возвращалась по событиям.",
+      "ru": "Снята с продажи; временно возвращалась по событиям."
+    },
+    "ussr_destroyer_pr41_neustrashimy": {
+      "availability": "unavailable",
+      "en": "Снята с продажи после изменений флота; временно возвращалась по событиям.",
+      "ru": "Снята с продажи после изменений флота; временно возвращалась по событиям."
+    },
+    "ussr_g5_rct": {
+      "availability": "unavailable",
+      "en": "Акционная/ивентовая техника; не считать доступной по умолчанию.",
+      "ru": "Акционная/ивентовая техника; не считать доступной по умолчанию."
+    },
+    "ussr_garford_putilov": {
+      "availability": "unavailable",
+      "reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+    },
+    "ussr_is_2_1944_revenge": {
+      "availability": "unavailable",
+      "en": "Старая снятая с продажи/owner-only премиумная техника.",
+      "ru": "Старая снятая с продажи/owner-only премиумная техника."
+    },
+    "ussr_kv_7_u13": {
+      "availability": "unavailable",
+      "en": "Акционная техника; не считать доступной по умолчанию.",
+      "ru": "Акционная техника; не считать доступной по умолчанию."
+    },
+    "ussr_kv_8": {
+      "availability": "market_available",
+      "en": "Legend of Victory: KV-8 event reward (May 2026); coupon may be available via Market. Do not treat as a regular pack vehicle.",
+      "ru": "Награда события Legend of Victory: KV-8 (май 2026); купон может быть доступен через Market. Не считать обычной пакетной техникой.",
+      "source": "manual curated check, Gaijin event news 2026-05"
+    },
+    "ussr_pr_183_egypt_bm_21": {
+      "availability": "unavailable",
+      "en": "Battle Pass reward; только у владельцев/купонов, не обычная доступная база.",
+      "ru": "Battle Pass reward; только у владельцев/купонов, не обычная доступная база."
+    },
+    "ussr_su_122P": {
+      "availability": "unavailable",
+      "en": "Скрытая/временно возвращаемая премиумная техника.",
+      "ru": "Скрытая/временно возвращаемая премиумная техника."
+    },
+    "ussr_su_122p": {
+      "availability": "unavailable",
+      "en": "Скрытая/временно возвращаемая премиумная техника.",
+      "ru": "Скрытая/временно возвращаемая премиумная техника."
+    },
+    "ussr_t_34_1940_l_11": {
+      "availability": "unavailable",
+      "en": "Старая скрытая/owner-only техника.",
+      "ru": "Старая скрытая/owner-only техника."
+    },
+    "ussr_t_34_85E": {
+      "availability": "unavailable",
+      "en": "Снятая с продажи gift/premium техника.",
+      "ru": "Снятая с продажи gift/premium техника."
+    },
+    "ussr_t_34_85_zis_53_v80": {
+      "availability": "market_available",
+      "en": "Legend of Victory 2025 event vehicle; coupon can be tradable on Market.",
+      "ru": "Акционная техника, доступная через Market при наличии купонов."
+    },
+    "ussr_t_34_85e": {
+      "availability": "unavailable",
+      "en": "Снятая с продажи gift/premium техника.",
+      "ru": "Снятая с продажи gift/premium техника."
+    },
+    "ussr_t_80u_yt_cup_2019": {
+      "availability": "unavailable",
+      "en": "Приз YouTube Cup 2019; owner-only.",
+      "ru": "Приз YouTube Cup 2019; owner-only."
+    },
+    "ussr_t_80ue1_senrai_maidens": {
+      "availability": "available",
+      "reason": "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+    },
+    "ussr_type_65_aa": {
+      "availability": "unavailable",
+      "en": "Старая акционная/owner-only техника в СССР.",
+      "ru": "Старая акционная/owner-only техника в СССР."
+    },
+    "ussr_ya_5m": {
+      "availability": "unavailable",
+      "en": "Акционная/ивентовая техника; не считать доступной по умолчанию.",
+      "ru": "Акционная/ивентовая техника; не считать доступной по умолчанию."
+    },
+    "vl_myrsky_2_late": {
+      "availability": "unavailable",
+      "en": "Owner-only / hidden from the regular client tree. Hidden/old Swedish/Finnish pack aircraft absent from current client tree.",
+      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish/Finnish pack aircraft absent from current client tree."
+    },
+    "yak-3t": {
+      "availability": "unavailable",
+      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
+      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+    },
+    "yp-38": {
+      "availability": "unavailable",
+      "en": "Hidden pack vehicle; normally unavailable, may temporarily return to sale.",
+      "ru": "Скрытая пакетная техника; обычно недоступна, может временно возвращаться в продажу."
     }
-  },
-  "heuristic": {
-    "ru": "v3.41: акционная техника без биржи недоступна по умолчанию; скрытые старые варианты в папках остаются в геометрии дерева, но полностью невидимы вместе со стрелками/папками.",
-    "en": "v3.41: event vehicles without Market are unavailable by default; legacy hidden folder variants preserve tree geometry but are fully invisible with arrows/folder tabs."
   }
 }

@@ -7839,6 +7839,152 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
 # --- end v3.84 layer ---
 
 
+
+
+# --- v3.85: WWI + Senrai curated supplements ---
+# Manual supplement for vehicles not reliably emitted by the normal API/Wiki lightweight export.
+# Sources:
+# - The Great War official event / Wiki pages
+# - Senrai Maidens official pack announcements
+WWI_EVENT_IDS_V385 = {
+    "uk_mark_v": ("Mark V", "britain", "medium_tank"),
+    "fr_saint_chamond": ("St-Chamond", "france", "medium_tank"),
+    "hp_12": ("H.P.12", "britain", "bomber"),
+    "ussr_garford_putilov": ("Garford", "ussr", "light_tank"),
+    "germ_a7v": ("A7V", "germany", "medium_tank"),
+    "germ_beutepanzer_mk_iv": ("Beutepanzer IV", "germany", "medium_tank"),
+    "germ_garford_putilov": ("Garford-Beute", "germany", "light_tank"),
+}
+SENRAI_PACKS_V385 = [
+    ("us_m1a1_hc_senrai_maidens", "us_m1a1_hc_abrams", "M1A1 HC (Senrai Maidens)", "USA"),
+    ("germ_leopard_2a4m_senrai_maidens", "germ_leopard_2a4m_can", "Leopard 2A4M (Senrai Maidens)", "Germany"),
+    ("ussr_t_80ue1_senrai_maidens", "ussr_t_80ue1", "T-80U-E1 (Senrai Maidens)", "USSR"),
+    ("uk_challenger_2_oes_sm", "uk_challenger_2_megatron", "Challenger 2 OES (SM)", "Britain"),
+    ("cn_mbt2000_sm", "cn_mbt2000", "MBT-2000 (SM)", "China"),
+    ("jp_type_90b_sm", "jp_type_90b", "Type 90 (B) (SM)", "Japan"),
+]
+WWI_EVENT_REASON_V385 = "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
+SENRAI_REASON_V385 = "Senrai Maidens thematic pack; visible as a separate collector/pack variant."
+
+def _rank_roman_v385(era):
+    return {1:"I",2:"II",3:"III",4:"IV",5:"V",6:"VI",7:"VII",8:"VIII"}.get(int(era or 1), str(era or "I"))
+
+def _country_to_nation_v385(country):
+    return {"usa":"USA","germany":"Germany","ussr":"USSR","britain":"Britain","japan":"Japan","china":"China","italy":"Italy","france":"France","sweden":"Sweden","israel":"Israel"}.get(str(country).lower(), str(country))
+
+def _class_from_type_v385(vt):
+    return {"medium_tank":"ground","light_tank":"ground","heavy_tank":"ground","tank_destroyer":"ground","spaa":"ground","bomber":"air","fighter":"air","attacker":"air","strike_aircraft":"air","helicopter":"heli","ship":"bluewater","boat":"coastal"}.get(str(vt), "ground")
+
+def _role_pair_v385(vt):
+    m={"medium_tank":("СТ","Medium tank"),"light_tank":("ЛТ","Light tank"),"bomber":("Бомбер","Bomber")}
+    return m.get(str(vt), (str(vt), str(vt).replace("_", " ").title()))
+
+def _search_v385(v):
+    import re as _re
+    def slug(s): return _re.sub(r"[^a-z0-9]+", "-", str(s).lower()).strip("-")
+    return " ".join(str(x) for x in [v.get("id"), v.get("name"), v.get("nameRu"), v.get("nameEn"), slug(v.get("name","")), v.get("nation"), v.get("class"), v.get("role"), v.get("roleEn"), slug(v.get("roleEn",""))] if x)
+
+def _make_wwi_vehicle_v385(raw_row):
+    vid = row_identifier(raw_row)
+    name, country, vt = WWI_EVENT_IDS_V385.get(vid, (vid, raw_row.get("country"), raw_row.get("vehicle_type")))
+    cls = _class_from_type_v385(vt)
+    role_ru, role_en = _role_pair_v385(vt)
+    br = {
+        "ab": float(raw_row.get("arcade_br") or 1.0),
+        "rb": float(raw_row.get("realistic_br") or 1.0),
+        "sb": float(raw_row.get("simulator_br") or 1.0),
+        "ground_rb": float(raw_row.get("realistic_ground_br") or raw_row.get("realistic_br") or 1.0),
+        "ground_sb": float(raw_row.get("simulator_ground_br") or raw_row.get("simulator_br") or 1.0),
+    }
+    item = {
+        "id": vid, "name": name, "nameRu": name, "nameEn": name,
+        "nation": _country_to_nation_v385(country), "class": cls,
+        "className": {"ground":"Наземка","air":"Авиация","heli":"Вертолёты","bluewater":"Большой флот","coastal":"Малый флот"}.get(cls, cls),
+        "role": role_ru, "roleEn": role_en, "rank": _rank_roman_v385(raw_row.get("era")),
+        "br": br, "status": "Акционная",
+        "source": "Curated v3.85 supplement: WT Vehicles API raw data + official War Thunder news/Wiki verification",
+        "url": "", "local_image": f"assets/vehicles/slots/{vid}.png",
+        "search": "", "treePlacement": "right", "treePlacementSource": "v3.85-curated-supplement", "treeRank": _rank_roman_v385(raw_row.get("era")),
+        "availability": "unavailable", "availability_reason": WWI_EVENT_REASON_V385,
+    }
+    item["search"] = _search_v385(item)
+    return item
+
+def _clone_senrai_vehicle_v385(base, new_id, name, nation):
+    import copy as _copy
+    item = _copy.deepcopy(base)
+    item.update({
+        "id": new_id, "name": name, "nameRu": name, "nameEn": name, "nation": nation,
+        "status": "Пакетная",
+        "source": "Curated v3.85 supplement: official Senrai Maidens pack announcement; stats cloned from the corresponding base vehicle where API entry is absent",
+        "url": "", "local_image": f"assets/vehicles/slots/{new_id}.png",
+        "treePlacement": "right", "treePlacementSource": "v3.85-curated-supplement", "treeRank": item.get("rank", "VII"),
+        "availability": "available", "availability_reason": SENRAI_REASON_V385,
+    })
+    item["search"] = _search_v385(item)
+    return item
+
+def _ensure_curated_slot_images_v385():
+    # These manually-added collector variants often do not have stable API image rows.
+    # Copy the closest/base slot thumbnail so the app remains fully portable.
+    import shutil as _shutil
+    slots = VEH_DIR / "slots"
+    pairs = [
+        ("us_m1a1_hc_senrai_maidens", "us_m1a1_hc_abrams"),
+        ("germ_leopard_2a4m_senrai_maidens", "germ_leopard_2a4m_can"),
+        ("ussr_t_80ue1_senrai_maidens", "ussr_t_80ue1"),
+        ("uk_challenger_2_oes_sm", "uk_challenger_2_megatron"),
+        ("cn_mbt2000_sm", "cn_mbt2000"),
+        ("jp_type_90b_sm", "jp_type_90b"),
+    ]
+    for dst_id, src_id in pairs:
+        dst = slots / f"{dst_id}.png"
+        src = slots / f"{src_id}.png"
+        if src.exists() and (not dst.exists() or dst.stat().st_size < 500):
+            try:
+                _shutil.copyfile(src, dst)
+            except Exception:
+                pass
+
+def _apply_v385_postwrite_supplements(data, raw_rows):
+    by_id = {str(x.get("id") or ""): x for x in data if isinstance(x, dict)}
+    raw_by_id = {row_identifier(r): r for r in raw_rows if row_identifier(r)}
+    changed = 0
+    for vid in WWI_EVENT_IDS_V385:
+        if vid in by_id:
+            item = by_id[vid]
+            before = json.dumps(item, sort_keys=True, ensure_ascii=False)
+            item["status"] = "Акционная"
+            item["availability"] = "unavailable"
+            item["availability_reason"] = WWI_EVENT_REASON_V385
+            item["treePlacement"] = "right"
+            item["treePlacementSource"] = "v3.85-curated-supplement"
+            item["treeRank"] = item.get("rank", "I")
+            item["search"] = _search_v385(item)
+            if json.dumps(item, sort_keys=True, ensure_ascii=False) != before: changed += 1
+        elif vid in raw_by_id:
+            data.append(_make_wwi_vehicle_v385(raw_by_id[vid])); changed += 1
+    by_id = {str(x.get("id") or ""): x for x in data if isinstance(x, dict)}
+    for new_id, base_id, name, nation in SENRAI_PACKS_V385:
+        if new_id not in by_id and base_id in by_id:
+            data.append(_clone_senrai_vehicle_v385(by_id[base_id], new_id, name, nation)); changed += 1
+    return changed
+
+_old_write_lightweight_vehicles_v385 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.85 override
+    _old_write_lightweight_vehicles_v385(rows, image_map)
+    try:
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        changed = _apply_v385_postwrite_supplements(data, rows)
+        _ensure_curated_slot_images_v385()
+        if changed:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"v3.85 WWI/Senrai curated supplements applied: {changed} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.85 WWI/Senrai curated supplements failed:", e)
+# --- end v3.85 layer ---
+
 if __name__ == "__main__":
     try:
         raise SystemExit(main())

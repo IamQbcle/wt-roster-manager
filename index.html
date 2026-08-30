@@ -88,7 +88,7 @@ if (window.location.protocol === 'file:') {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="shortcut icon" href="assets/favicon.ico">
-<title>War Thunder Roster Manager v3.85</title>
+<title>War Thunder Roster Manager v3.86</title>
 <style>
 :root{--bg:#0b0f16;--panel:#121a26;--panel2:#172132;--panel3:#0f1622;--line:#2b3546;--ink:#ecf3ff;--muted:#94a3b8;--accent:#d8a22d;--good:#36b97d;--bad:#d45b65;--warn:#e4b33b;--chip:#233149;--blue:#6da8ff}*{box-sizing:border-box}body{margin:0;background:#0b0f16;color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;font-size:15px}button,input,select,textarea{font:inherit}button{border:0;border-radius:10px;min-height:32px;padding:7px 12px;font-weight:900;cursor:pointer;background:var(--accent);color:#191104}button.secondary{background:#26344c;color:var(--ink)}button.ghost{background:#0e141e;color:var(--muted);border:1px solid var(--line)}button.danger{background:#76323d;color:#fff}button.buy{background:#2d7a57;color:#eafff3}button.unset{background:#b98b22;color:#15100a}input,select,textarea{background:#0d131d;border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:8px 10px;min-height:36px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent)}label{font-size:12px;color:var(--muted)}header{position:sticky;top:0;z-index:100;background:rgba(8,12,18,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.top{display:flex;gap:12px;align-items:center;padding:10px 16px}.logo{width:38px;height:38px;border-radius:10px;border:1px solid #536881;display:grid;place-items:center;font-weight:1000;font-size:18px;background:#162131}.brand h1{font-size:20px;margin:0}.brand .ver{font-size:13px;color:var(--muted);margin-left:4px}.tabs{display:flex;gap:8px;padding:0 16px 10px}.tab{background:#1a2638;color:#e8f0fb;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:900}.tab.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px rgba(216,162,45,.25)}main{padding:14px;max-width:1900px;margin:0 auto}.view{display:none}.view.active{display:block}.card{background:rgba(17,25,37,.9);border:1px solid var(--line);border-radius:16px;padding:14px}.grid2{display:grid;grid-template-columns:440px minmax(0,1fr);gap:14px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:end}.field{display:flex;flex-direction:column;gap:4px}.filter-grid{display:grid;grid-template-columns:210px 150px 170px 150px 140px 140px 130px 130px 130px;gap:7px;align-items:end}.type-line{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}.check-mini{display:flex;gap:5px;align-items:center;border:1px solid var(--line);background:#182337;border-radius:8px;min-height:26px;padding:2px 8px;color:var(--muted);font-size:12px;white-space:nowrap}.check-mini input{min-height:auto}.found{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--accent);border-radius:999px;padding:5px 14px;font-weight:1000;font-size:17px;background:#233047;min-width:136px}.reset-inline{background:#24334d;color:#fff;min-height:30px;padding:5px 12px}.notice{border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.025);padding:12px;color:var(--muted);line-height:1.4}.roster-sticky{position:sticky;top:54px;z-index:50;background:#0d141f;border:1px solid var(--line);border-radius:14px;padding:8px;margin-bottom:8px}.roster-actions{display:flex;gap:8px;margin:8px 0 0}.view-toggle{background:#1b2940;color:#e8f0fb;border:1px solid #3a4b67;border-radius:10px;min-height:34px;padding:7px 16px;font-weight:1000}.view-toggle.active{background:#d8a22d;color:#191104;border-color:#d8a22d}.table-wrap{border:1px solid var(--line);border-radius:14px;overflow:auto;background:#0e151f}.veh-table{width:100%;border-collapse:separate;border-spacing:0}.veh-table th,.veh-table td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:left}.veh-table th{position:sticky;top:0;background:#141d2b;color:#cbd6e6;font-size:12px;z-index:4}.veh-cell{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;align-items:center}.thumb{width:96px;height:58px;border-radius:9px;background:#08101a;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}.thumb img{max-width:100%;max-height:100%;object-fit:contain}.thumb.small{width:82px;height:52px}.id{font-size:11px;color:var(--muted);font-family:Consolas,monospace;margin-top:3px}.pill{display:inline-flex;align-items:center;border-radius:999px;background:var(--chip);border:1px solid var(--line);padding:3px 8px;font-size:12px}.pill.good{background:rgba(54,185,125,.15);border-color:rgba(54,185,125,.55)}.pill.warn{background:rgba(228,179,59,.14);border-color:rgba(228,179,59,.55)}.role-img{display:inline-block;width:18px;height:18px;vertical-align:-4px;margin-right:7px}.role-img img{max-width:18px;max-height:18px;display:block}.role-shape{display:inline-block;width:15px;height:15px;margin-right:7px;vertical-align:-3px;background:#91a0b5;border-radius:50%}.role-shape.fighter{background:#ec9449;transform:rotate(45deg);border-radius:3px}.role-shape.bomber{width:0;height:0;background:transparent;border-left:8px solid transparent;border-right:8px solid transparent;border-top:16px solid #89a3ff}.role-shape.attacker{background:#a9dea1;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);border-radius:0}.role-shape.spaa{background:#c596ff;clip-path:polygon(20% 100%,45% 0,55% 0,80% 100%,65% 100%,50% 35%,35% 100%)}.tree-wrap{display:flex;flex-direction:column;gap:14px}.rank-block{border:1px solid var(--line);border-radius:16px;padding:12px;background:#111925}.rank-block h3{margin:0 0 12px}.tree-columns{display:grid;grid-template-columns:minmax(0,5fr) minmax(320px,2fr);gap:18px}.tree-title{font-weight:900;color:#c8d4e5;margin:0 0 8px}.tree-grid-left{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:10px}.tree-grid-right{display:grid;grid-template-columns:repeat(2,minmax(190px,1fr));gap:10px}.tree-card{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:13px;background:#122034;min-height:96px;padding:8px;overflow:hidden}.tree-card.special{background:rgba(92,78,29,.6);border-color:#795e1d}.tree-card.owned{border-color:#28a96d;box-shadow:inset 0 0 0 1px rgba(40,169,109,.45)}.tree-name{font-weight:1000;white-space:normal;line-height:1.16;overflow-wrap:anywhere}.tree-meta{color:#bdd0e8;font-size:13px;line-height:1.35;margin-top:2px}.tree-buttons{display:flex;gap:6px;flex-wrap:nowrap}.lineup-layout{display:grid;grid-template-columns:420px minmax(0,1fr);gap:14px}.lineup-filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.lineup-list{display:flex;flex-direction:column;gap:9px;max-height:68vh;overflow:auto}.lineup-item{border:1px solid var(--line);background:#172133;border-radius:12px;padding:10px;cursor:pointer}.lineup-item.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px rgba(216,162,45,.22)}.meta{color:var(--muted);font-size:12px}.editor-head{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}.editor-filters{display:grid;grid-template-columns:170px 170px 120px 120px 110px 110px;gap:8px;margin-bottom:10px}.slots{display:grid;grid-template-columns:repeat(2,minmax(520px,1fr));gap:10px}.slot{border:1px solid var(--line);background:#101823;border-radius:14px;padding:8px}.slot-top{display:grid;grid-template-columns:180px minmax(180px,1fr) 160px 145px;gap:8px;align-items:center;margin-bottom:7px}.slot-title{font-weight:1000;display:flex;gap:8px;align-items:center}.drag-handle{width:22px;height:22px;display:inline-grid;place-items:center;cursor:grab;flex:0 0 auto}.slot.dragging,.slot.drop-target{border-color:var(--accent);box-shadow:0 0 0 2px rgba(216,162,45,.25)}.slot-result{min-height:80px;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;background:rgba(255,255,255,.025)}.slot-result.good{border-color:rgba(54,185,125,.7);background:rgba(54,185,125,.08)}.slot-result.missing{border-color:rgba(228,179,59,.65);background:rgba(228,179,59,.08)}.slot-card{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:10px;align-items:center}.slot-name{font-weight:1000;font-size:18px;line-height:1.1}.slot-meta{font-size:14px;color:#c3d1e4;margin-top:2px}.chipline{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}.suggest-wrap{position:relative}.suggest{display:none;position:absolute;z-index:80;top:39px;left:0;right:0;max-height:250px;overflow:auto;background:#0b111a;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 45px rgba(0,0,0,.45)}.suggest.open{display:block}.suggest div{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}.suggest div:hover{background:#182335}.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.65);padding:18px}.modal.open{display:flex}.modal-box{width:min(980px,96vw);max-height:92vh;overflow:auto;background:#121a26;border:1px solid var(--line);border-radius:18px;padding:18px}.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.big-check{display:flex;align-items:center;gap:10px;background:#172133;border:1px solid var(--line);border-radius:12px;padding:10px}.magic-warning{border:1px solid var(--bad);background:rgba(212,91,101,.16);border-radius:13px;padding:12px;margin:12px 0;font-weight:900;color:#ffe7e7}.magic-warning .nums{font-weight:700;margin-top:6px}.footer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.settings-grid{display:grid;grid-template-columns:repeat(2,minmax(280px,1fr));gap:12px}.hidden{display:none!important}@media(max-width:1200px){.filter-grid{grid-template-columns:repeat(4,1fr)}.slots{grid-template-columns:1fr}.tree-grid-left{grid-template-columns:repeat(3,1fr)}.tree-columns{grid-template-columns:1fr}.lineup-layout{grid-template-columns:1fr}.editor-filters{grid-template-columns:repeat(3,1fr)}}
 
@@ -621,7 +621,7 @@ main{padding:0 10px 10px!important;max-width:1920px!important}
 </style>
 </head>
 <body>
-<header><div class="top one-line"><nav class="tabs"><button class="tab" data-view="dashboard">Обзор</button><button class="tab" data-view="lineups">Наборы</button><button class="tab active" data-view="roster">Ростер</button><button class="tab" data-view="changes">Изменения</button><button class="tab" data-view="squad">Отряд</button><span id="topLangMount" class="top-lang-mount"></span></nav><div class="brand"><h1><span class="logo mini">WT</span> War Thunder Roster Manager <span class="ver">v3.85</span></h1></div></div></header>
+<header><div class="top one-line"><nav class="tabs"><button class="tab" data-view="dashboard">Обзор</button><button class="tab" data-view="lineups">Наборы</button><button class="tab active" data-view="roster">Ростер</button><button class="tab" data-view="changes">Изменения</button><button class="tab" data-view="squad">Отряд</button><span id="topLangMount" class="top-lang-mount"></span></nav><div class="brand"><h1><span class="logo mini">WT</span> War Thunder Roster Manager <span class="ver">v3.86</span></h1></div></div></header>
 <main>
 <section id="dashboard" class="view"><div class="card"><h2>Обзор</h2><div id="overviewStats" class="stats"></div></div></section>
 <section id="lineups" class="view"><div class="lineup-layout"><aside class="card"><div id="lineupFilters" class="lineup-filters"></div><div class="toolbar lineup-toolbar"><button id="newLineup">Новый</button><button id="copyLineup" class="secondary">Копия</button><button id="deleteLineup" class="danger">Удалить</button><button id="autopickBtn" style="width:100%;background:#7a47df;color:#fff">Автоподбор</button><button id="rouletteBtn" class="secondary" style="width:100%;background:#38506f;color:#fff">🎲🎲 Рулетка</button><button id="sortLineups" class="secondary" style="width:100%">Автосортировка</button></div><div id="lineupList" class="lineup-list"></div></aside><section class="card lineup-editor-card"><h2>Редактор набора</h2><div class="editor-head"><div class="field"><label>Название</label><input id="pName" placeholder="Название набора"></div><div class="field"><label>Комментарий</label><input id="pComment" placeholder="Комментарий к набору"></div></div><div class="editor-filters"><div class="field"><label>Нация</label><select id="pNation"></select></div><div class="field"><label>Режим</label><select id="pMode"></select></div><div class="field"><label>BR от</label><select id="pBrMin"></select></div><div class="field"><label>BR до</label><select id="pBrMax"></select></div><div class="field"><label>Ранг от</label><select id="pRankMin"></select></div><div class="field"><label>Ранг до</label><select id="pRankMax"></select></div></div><div id="slots" class="slots"></div></section></div></section>
@@ -5266,7 +5266,850 @@ groupChanges = function(changes){
   return [...m.values()].map(g=>({...g,_reviewed:isGroupReviewed(g)}));
 };
 
+
+
+/* v3.86: Crew Training Memory + trained-crew-aware autofill.
+   A vehicle is treated as probably trained for a crew only when it is marked as owned
+   and currently stands in that exact crew slot in any saved lineup. Deleted lineups do
+   not leave stale records because the index is rebuilt from current state every time.
+   Autopick now strongly prefers owned vehicles already seen on the same crew, and a new
+   "keep all filled slots" option allows the user to lock planned lineups before autofill. */
+const WT_APP_VERSION_V386='v3.86';
+const WT_APP_BUILD_DATE_V386='2026-08-30';
+Object.assign(I18N.ru,{
+  keepAllFilled:'не трогать все заполненные слоты',
+  trainedCrewMemory:'Память обученности экипажей',
+  trainedSameCrew:'экипаж обучен',
+  trainedOtherCrew:'обучено на экип.',
+  autopickCrewTrainingNote:'Автоподбор автоматически отдаёт приоритет купленной технике, которая уже стоит на этом же экипаже в сохранённых наборах.',
+  crewTrainingSource:'источник'
+});
+Object.assign(I18N.en,{
+  keepAllFilled:'keep all filled slots',
+  trainedCrewMemory:'Crew training memory',
+  trainedSameCrew:'trained crew',
+  trainedOtherCrew:'trained on crew',
+  autopickCrewTrainingNote:'Autopick automatically prioritizes owned vehicles already used on the same crew in saved lineups.',
+  crewTrainingSource:'source'
+});
+(function addV386Style(){
+  const st=document.createElement('style');
+  st.textContent=`
+    .trained-pill{display:inline-flex;align-items:center;border-radius:999px;border:1px solid rgba(54,185,125,.55);background:rgba(54,185,125,.13);color:#dfffee;padding:2px 6px;font-size:11px;font-weight:900;margin-left:5px;white-space:nowrap}
+    .trained-pill.other{border-color:rgba(228,179,59,.55);background:rgba(228,179,59,.13);color:#ffe7a6}
+    .autopick-keep-row{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+    .modal-box.autopick-compact .autopick-keep-row .big-check{margin:0!important}
+    @media(max-width:1100px){.autopick-keep-row{grid-template-columns:1fr}}
+  `;
+  document.head.appendChild(st);
+})();
+function exactSlotVehicleForTrainingV386(slot,p){
+  if(!slot)return null;
+  const sid=String(slot.vehicleId||'').trim();
+  if(sid&&byId.has(sid))return byId.get(sid);
+  const q=norm(slot.query||'');
+  if(!q)return null;
+  let found=null;
+  for(const v of vehicles){
+    if(p&&v.nation!==p.nation)continue;
+    const vals=[idOf(v),nameOf(v),v.nameRu,v.nameEn,v.display_name,v.displayName,v.wiki_title,v.title].map(x=>norm(x||'')).filter(Boolean);
+    if(vals.includes(q)){
+      if(found)return null; // ambiguous legacy free-text slot: do not infer training
+      found=v;
+    }
+  }
+  return found;
+}
+function buildCrewTrainingIndexV386(){
+  const byCrew=new Map();
+  const byVehicle=new Map();
+  const max=typeof crewSlotsMaxV354==='function'?crewSlotsMaxV354():10;
+  for(const p of state.lineups||[]){
+    const slots=p.slots||[];
+    for(let i=0;i<max;i++){
+      const slot=slots[i]||{};
+      const v=exactSlotVehicleForTrainingV386(slot,p);
+      if(!v||!isOwned(v))continue;
+      const id=idOf(v), nation=p.nation||v.nation;
+      if(!id||!nation)continue;
+      const rec={vehicleId:id,nation,crewIndex:i,lineupId:p.id,lineupName:p.name||p.id,mode:p.mode||'',activeInGame:!!p.activeInGame};
+      const ck=`${nation}|${i}`;
+      if(!byCrew.has(ck))byCrew.set(ck,new Map());
+      if(!byCrew.get(ck).has(id))byCrew.get(ck).set(id,[]);
+      byCrew.get(ck).get(id).push(rec);
+      if(!byVehicle.has(id))byVehicle.set(id,[]);
+      byVehicle.get(id).push(rec);
+    }
+  }
+  return {byCrew,byVehicle};
+}
+function crewTrainingRecordsV386(v,p=null,crewIndex=null){
+  if(!v||!isOwned(v))return {same:[],sameNation:[],all:[]};
+  const idx=buildCrewTrainingIndexV386();
+  const id=idOf(v);
+  const all=idx.byVehicle.get(id)||[];
+  const nation=p?.nation||v.nation;
+  const sameNation=all.filter(r=>!nation||r.nation===nation);
+  const same=(crewIndex===null||crewIndex===undefined)?[]:sameNation.filter(r=>r.crewIndex===Number(crewIndex));
+  return {same,sameNation,all};
+}
+function trainingTitleV386(records){
+  const r=(records||[])[0];
+  if(!r)return '';
+  return `${t('crewTrainingSource')}: ${r.lineupName}`;
+}
+function trainingBadgeV386(v,p,i){
+  const rec=crewTrainingRecordsV386(v,p,i);
+  if(rec.same.length)return `<span class="trained-pill" title="${esc(trainingTitleV386(rec.same))}">✓ ${esc(t('trainedSameCrew'))}</span>`;
+  const others=[...new Set(rec.sameNation.map(r=>r.crewIndex+1))].sort((a,b)=>a-b);
+  if(others.length)return `<span class="trained-pill other" title="${esc(rec.sameNation.map(r=>`${t('crew')} ${r.crewIndex+1}: ${r.lineupName}`).slice(0,5).join('\n'))}">${esc(t('trainedOtherCrew'))} ${others.slice(0,3).join(',')}</span>`;
+  return '';
+}
+function autopickTrainingScoreV386(v,slot){
+  if(!v||!slot||!isOwned(v))return 0;
+  const p=slot._lineup||currentLineup();
+  const i=Number.isInteger(slot._crewIndex)?slot._crewIndex:null;
+  if(i===null)return 0;
+  const rec=crewTrainingRecordsV386(v,p,i);
+  return rec.same.length?10000:0;
+}
+const _autopickRoleScore_v386 = autopickRoleScore;
+autopickRoleScore = function(v,slot){
+  return (_autopickRoleScore_v386? _autopickRoleScore_v386(v,slot):0) + autopickTrainingScoreV386(v,slot);
+};
+const _showSuggest_v386_base = showSuggest;
+showSuggest = function(i){
+  const p=saveLineupFromForm(), inp=document.querySelector(`[data-q="${i}"]`), box=document.getElementById('sg'+i), q=norm(inp?.value||'');
+  if(!box||!q){box?.classList.remove('open');return}
+  const mode=modeKey(p.mode);
+  const allowed=modeAllowedClasses(p.mode);
+  let list=vehicles.filter(v=>v.nation===p.nation&&allowed.includes(classOf(v)));
+  list=list.filter(v=>brVal(v,mode)>=Number(p.brMin)&&brVal(v,mode)<=Number(p.brMax)&&rankIdx(guardedRank(v))>=rankIdx(p.rankMin)&&rankIdx(guardedRank(v))<=rankIdx(p.rankMax));
+  list=list.map(v=>{
+    const n=norm(nameOf(v)),id=norm(idOf(v));
+    let sc=-1;
+    if(n===q||id===q)sc=1000;
+    else if(n.startsWith(q)||id.startsWith(q))sc=700;
+    else if(v._search.includes(q))sc=300;
+    const rec=crewTrainingRecordsV386(v,p,i);
+    const trained=rec.same.length?2:(rec.sameNation.length?1:0);
+    return [sc,trained,v];
+  }).filter(x=>x[0]>=0).sort((a,b)=>b[0]-a[0]||b[1]-a[1]||brVal(a[2],mode)-brVal(b[2],mode)||nameOf(a[2]).localeCompare(nameOf(b[2]),'ru')).slice(0,30).map(x=>x[2]);
+  box.innerHTML=list.map(v=>`<div data-pick="${esc(idOf(v))}"><b>${roleIcon(v)}${esc(nameOf(v))}</b> <span class="meta">${brFmt(brVal(v,mode))} · ${guardedRank(v)} · ${esc(roleLabel(v))} · ${esc(statusDisplay(statusOf(v)))}</span>${trainingBadgeV386(v,p,i)}</div>`).join('');
+  box.classList.toggle('open',list.length>0);
+  if(list.length){const r=inp.getBoundingClientRect();box.classList.add('fixed');box.style.left=Math.max(8,r.left)+'px';box.style.top=(r.bottom+4)+'px';box.style.width=Math.max(330,r.width)+'px'}
+  box.querySelectorAll('[data-pick]').forEach(d=>d.onclick=e=>{e.stopPropagation();const v=byId.get(d.dataset.pick);const p=currentLineup();p.slots[i]={...p.slots[i],vehicleId:idOf(v),query:nameOf(v),class:'auto'};inp.value=nameOf(v);inp.dataset.vehicleId=idOf(v);box.classList.remove('open');box.classList.remove('fixed');saveState();renderLineupEditor()});
+};
+function selectedKeepAllFilledV386(p){
+  const per=savedLineupAutopickV359(p||currentLineup());
+  return typeof per.keepAllFilled==='boolean'?per.keepAllFilled:false;
+}
+const _saveAutopickSettings_v386_base = saveAutopickSettingsV359;
+saveAutopickSettingsV359 = function(p,quiet=false){
+  _saveAutopickSettings_v386_base(p,true);
+  const per=savedLineupAutopickV359(p||currentLineup());
+  const all=document.getElementById('mgKeepAll');
+  if(all)per.keepAllFilled=!!all.checked;
+  if(!quiet)saveState();
+};
+fillLineup = function(p,pool,count,used=new Set(),keep=false){
+  ensureSlots(p);
+  const max=crewSlotsMaxV354();
+  const targetCount=Math.max(1,Math.min(max,Number(count)||max));
+  const keepAll=!!document.getElementById('mgKeepAll')?.checked;
+  const protectedIdx=[];
+  const lineupUsed=new Set();
+  for(const i of crewSlotIndicesV354()){
+    const slot=p.slots[i]||{};
+    const current=slotVehicle(slot,p);
+    const currentId=current?idOf(current):'';
+    const shouldProtect=keepAll ? !!current : (!!keep && current && isOwned(current));
+    if(shouldProtect&&currentId&&!used.has(currentId)&&!lineupUsed.has(currentId)){
+      protectedIdx.push(i);
+      used.add(currentId);
+      lineupUsed.add(currentId);
+      const idx=pool.findIndex(v=>idOf(v)===currentId);
+      if(idx>=0)pool.splice(idx,1);
+    }
+  }
+  const fillOrder=crewSlotPlan(targetCount,protectedIdx);
+  const targetSet=new Set(fillOrder);
+  for(const i of crewSlotIndicesV354()){
+    if(protectedIdx.includes(i))continue;
+    if(!targetSet.has(i)){
+      const slot=p.slots[i]||{};
+      p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};
+    }
+  }
+  for(const i of fillOrder){
+    if(protectedIdx.includes(i))continue;
+    const slot=roleAwareSlotForAutopickV361(p,i);
+    slot._crewIndex=i;
+    slot._lineup=p;
+    const v=takeAutopickVehicle(pool,used,slot,lineupUsed,new Set());
+    delete slot._crewIndex; delete slot._lineup;
+    if(!v){p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};continue}
+    p.slots[i]={...slot,vehicleId:idOf(v),query:nameOf(v),class:'auto'};
+  }
+  return p;
+};
+openAutopick = function(){
+  const p=saveLineupFromForm();
+  const policy=autopickClassPolicy(p.mode);
+  const def=selectedClassesV359(p);
+  const count=selectedAutopickCountV359(p);
+  const keep=selectedKeepBoughtV361(p);
+  const keepAll=selectedKeepAllFilledV386(p);
+  const classChecks=CLASS_KEYS.map(c=>{
+    const allowed=policy.allowed.includes(c);
+    const available=allowed&&classAvailableForAutopick(p,c);
+    const primary=policy.primary.includes(c);
+    const disabled=!allowed||!available;
+    return `<label class="big-check class-check ${primary?'primary':''} ${disabled?'disabled':''}"><input type="checkbox" name="mgClass" value="${esc(c)}" ${def.includes(c)&&available?'checked':''} ${disabled?'disabled':''}>${esc(classLabel(c))}</label>`;
+  }).join('');
+  openModal(`
+    <div class="modal-grid"><div class="field"><label>${t('autopickCount')}</label><select id="mgCount">${crewSlotIndicesV354().map(i=>opt(i+1,i+1,i+1===count?count:null)).join('')}</select></div><div class="notice">${t('crewSlotCountNote')}</div></div>
+    <div class="autopick-keep-row"><label class="big-check compact-check"><input type="checkbox" id="mgKeep" ${keep?'checked':''}> ${t('keepBought')}</label><label class="big-check compact-check"><input type="checkbox" id="mgKeepAll" ${keepAll?'checked':''}> ${t('keepAllFilled')}</label></div>
+    <div class="notice">${t('autopickCrewTrainingNote')}</div>
+    <h3>${t('vehicleClasses')}</h3><div class="autopick-class-row">${classChecks}</div>
+    <h3>${t('acquisitionUsePolicy')}</h3>${autopickPolicyTableV356()}
+    ${autopickOwnershipBoxV358(p)}
+    <div id="mgStatus"></div>
+    <div class="footer-actions"><button type="button" id="mgRun" data-modal-action="autopick-run" onpointerdown="return window.WTModalAction&&window.WTModalAction('autopick-run',event)" onclick="return window.WTModalAction&&window.WTModalAction('autopick-run',event)">${t('autopick')}</button><button class="ghost" onclick="closeModal()">${t('cancel')}</button></div>`);
+  document.getElementById('modalBox')?.classList.add('autopick-compact');
+  setTimeout(()=>{
+    document.querySelectorAll('#modal input,#modal select').forEach(el=>{
+      el.addEventListener('change',()=>saveAutopickSettingsV359(p));
+    });
+  },0);
+};
+exportSquadProfile = function(){const payload={schema:'wt-roster-squad-profile',schema_version:1,app_version:WT_APP_VERSION_V386,app_build_date:WT_APP_BUILD_DATE_V386,profile_id:'profile-'+Date.now(),profile_name:(state&&state.squadProfileName)||'Player',exported_at:new Date().toISOString(),lineups:(state.lineups||[]).map(normalizeSquadLineup)};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='wt_roster_squad_profile_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-profile-meta">${t('profileVersion')}: ${WT_APP_VERSION_V386} · ${WT_APP_BUILD_DATE_V386}</div>`;const prof=pl.profile||{};const notImported=lang()==='en'?'Profile is not imported':'Профиль не импортирован';if(!prof.app_version&&!prof.exported_at)return `<div class="squad-profile-meta warn">${notImported}</div>`;const old=prof.app_version&&prof.app_version!==WT_APP_VERSION_V386;const warn=lang()==='en'?'Profile was exported from another version; data may be outdated.':'Профиль экспортирован из другой версии, возможны устаревшие данные.';return `<div class="squad-profile-meta ${old?'warn':''}">${t('profileVersion')}: ${esc(prof.app_version||'?')} ${prof.app_build_date?'· '+esc(prof.app_build_date):''}<br>${t('profileExported')}: ${esc((prof.exported_at||'?').slice(0,10))}${old?'<br>'+warn:''}</div>`};
+
+
+/* v3.86 hotfix: crew-training suggestions, exact slot matching, deterministic trained-aware autopick.
+   Version stays v3.86 because this is an experimental feature bugfix pass. */
+(function(){
+  if(window.__wtV386Hotfix2Applied)return;
+  window.__wtV386Hotfix2Applied=true;
+  Object.assign(I18N.ru,{
+    keepBought:'не трогать только купленную заполненную технику',
+    keepAllFilled:'не трогать все заполненные слоты',
+    protectFilledSlots:'Защита заполненных слотов',
+    trainedSuggestionsEmpty:'обученная техника по фильтру набора'
+  });
+  Object.assign(I18N.en,{
+    keepBought:'keep only owned filled vehicles',
+    keepAllFilled:'keep all filled slots',
+    protectFilledSlots:'Filled slot protection',
+    trainedSuggestionsEmpty:'trained vehicles matching lineup filters'
+  });
+  const st=document.createElement('style');
+  st.textContent=`
+    .autopick-protect-row{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}
+    .autopick-protect-row label{display:flex;align-items:center;gap:6px}
+    .suggest .suggest-hint{cursor:default!important;color:var(--muted);font-size:11px;font-weight:900;text-transform:none;background:#101823!important}
+    @media(max-width:1100px){.autopick-protect-row{grid-template-columns:1fr}}
+  `;
+  document.head.appendChild(st);
+
+  let crewTrainingCacheV3862=null;
+  const _saveState_v3862=saveState;
+  saveState=function(){crewTrainingCacheV3862=null;return _saveState_v3862.apply(this,arguments)};
+
+  function buildCrewTrainingIndexFreshV3862(){
+    const byCrew=new Map(), byVehicle=new Map();
+    const max=typeof crewSlotsMaxV354==='function'?crewSlotsMaxV354():10;
+    for(const p of state.lineups||[]){
+      const slots=p.slots||[];
+      for(let i=0;i<max;i++){
+        const slot=slots[i]||{};
+        const v=exactSlotVehicleForTrainingV386(slot,p);
+        if(!v||!isOwned(v))continue;
+        const id=idOf(v), nation=p.nation||v.nation;
+        if(!id||!nation)continue;
+        const rec={vehicleId:id,nation,crewIndex:i,lineupId:p.id,lineupName:p.name||p.id,mode:p.mode||'',activeInGame:!!p.activeInGame};
+        const ck=`${nation}|${i}`;
+        if(!byCrew.has(ck))byCrew.set(ck,new Map());
+        if(!byCrew.get(ck).has(id))byCrew.get(ck).set(id,[]);
+        byCrew.get(ck).get(id).push(rec);
+        if(!byVehicle.has(id))byVehicle.set(id,[]);
+        byVehicle.get(id).push(rec);
+      }
+    }
+    return {byCrew,byVehicle};
+  }
+  buildCrewTrainingIndexV386=function(){
+    if(!crewTrainingCacheV3862)crewTrainingCacheV3862=buildCrewTrainingIndexFreshV3862();
+    return crewTrainingCacheV3862;
+  };
+  function crewTrainingRecordsFromIndexV3862(idx,v,p=null,crewIndex=null){
+    if(!v||!isOwned(v))return {same:[],sameNation:[],all:[]};
+    const id=idOf(v);
+    const all=idx.byVehicle.get(id)||[];
+    const nation=p?.nation||v.nation;
+    const sameNation=all.filter(r=>!nation||r.nation===nation);
+    const same=(crewIndex===null||crewIndex===undefined)?[]:sameNation.filter(r=>r.crewIndex===Number(crewIndex));
+    return {same,sameNation,all};
+  }
+  crewTrainingRecordsV386=function(v,p=null,crewIndex=null){return crewTrainingRecordsFromIndexV3862(buildCrewTrainingIndexV386(),v,p,crewIndex)};
+  function trainingBadgeWithIndexV3862(idx,v,p,i){
+    const rec=crewTrainingRecordsFromIndexV3862(idx,v,p,i);
+    if(rec.same.length)return `<span class="trained-pill" title="${esc(trainingTitleV386(rec.same))}">✓ ${esc(t('trainedSameCrew'))}</span>`;
+    const others=[...new Set(rec.sameNation.map(r=>r.crewIndex+1))].sort((a,b)=>a-b);
+    if(others.length)return `<span class="trained-pill other" title="${esc(rec.sameNation.map(r=>`${t('crew')} ${r.crewIndex+1}: ${r.lineupName}`).slice(0,5).join('\n'))}">${esc(t('trainedOtherCrew'))} ${others.slice(0,3).join(',')}</span>`;
+    return '';
+  }
+
+  function exactVehicleByQueryV3862(q,p=null){
+    q=norm(q||'');
+    if(!q)return null;
+    let found=null;
+    for(const v of vehicles){
+      if(p&&!vehicleMatchesLineup(v,p))continue;
+      const vals=[idOf(v),nameOf(v),v.nameRu,v.nameEn,v.display_name,v.displayName,v.wiki_title,v.title].map(x=>norm(x||'')).filter(Boolean);
+      if(vals.includes(q)){
+        if(found&&idOf(found)!==idOf(v))return null;
+        found=v;
+      }
+    }
+    return found;
+  }
+  slotVehicle=function(s,p=null){
+    if(!s)return null;
+    const sid=String(s.vehicleId||'').trim();
+    if(sid&&byId.has(sid)){
+      const v=byId.get(sid);
+      return vehicleMatchesLineup(v,p)?v:null;
+    }
+    return exactVehicleByQueryV3862(s.query||'',p);
+  };
+
+  function slotCandidatePassV3862(v,p){
+    if(!v||!p)return false;
+    if(typeof canUseInLineup==='function'&&!canUseInLineup(v))return false;
+    return vehicleMatchesLineup(v,p);
+  }
+  function selectedSlotRolePrefV3862(p,i){
+    const slot=(p.slots&&p.slots[i])||{};
+    return (typeof effectiveRolePrefV353==='function'?effectiveRolePrefV353(p,i):'')||slot.rolePref||'';
+  }
+  function classPriorityForLineupV3862(v,p){
+    const policy=autopickClassPolicy(p.mode);
+    return policy.primary.includes(classOf(v))?2:(policy.allowed.includes(classOf(v))?1:0);
+  }
+  function suggestionSortScoreV3862(idx,v,p,i,q){
+    const n=norm(nameOf(v)), id=norm(idOf(v));
+    let textScore=0;
+    if(q){
+      if(n===q||id===q)textScore=10000;
+      else if(n.startsWith(q)||id.startsWith(q))textScore=7000;
+      else if((v._search||'').includes(q))textScore=3000;
+      else return null;
+    }
+    const rec=crewTrainingRecordsFromIndexV3862(idx,v,p,i);
+    const same=rec.same.length?1:0;
+    const other=rec.sameNation.length?1:0;
+    const rolePref=selectedSlotRolePrefV3862(p,i);
+    const roleScore=rolePref&&rolePrefState(v,rolePref)==='match'?80:0;
+    const cp=classPriorityForLineupV3862(v,p)*40;
+    return textScore + same*2000 + other*500 + cp + roleScore + (isOwned(v)?20:0);
+  }
+  function setSuggestRowsV3862(box,inp,i,list,p,idx,withHint=false){
+    const hint=withHint?`<div class="suggest-hint">${esc(t('trainedSuggestionsEmpty'))}</div>`:'';
+    box.innerHTML=hint+list.map(v=>`<div data-pick="${esc(idOf(v))}"><b>${roleIcon(v)}${esc(nameOf(v))}</b> <span class="meta">${brFmt(brVal(v,modeKey(p.mode)))} · ${guardedRank(v)} · ${esc(roleLabel(v))} · ${esc(statusDisplay(statusOf(v)))}${isUnavailableVehicle(v)?' · '+esc(availabilityLabel('unavailable')):''}</span>${trainingBadgeWithIndexV3862(idx,v,p,i)}</div>`).join('');
+    box.classList.toggle('open',list.length>0);
+    if(list.length){
+      const r=inp.getBoundingClientRect();
+      box.classList.add('fixed');box.style.left=Math.max(8,r.left)+'px';box.style.top=(r.bottom+4)+'px';box.style.width=Math.max(330,r.width)+'px';
+      box.dataset.activeIndex='0';
+      if(typeof setSuggestActiveV352==='function')setSuggestActiveV352(box,0);
+    }else{
+      box.classList.remove('fixed');box.style.cssText='';delete box.dataset.activeIndex;
+    }
+    box.querySelectorAll('[data-pick]').forEach(d=>d.onclick=e=>{e.stopPropagation();const v=byId.get(d.dataset.pick);if(!v)return;const p=currentLineup();p.slots[i]={...p.slots[i],vehicleId:idOf(v),query:nameOf(v),class:'auto'};inp.value=nameOf(v);inp.dataset.vehicleId=idOf(v);box.classList.remove('open');box.classList.remove('fixed');saveState();renderLineupEditor()});
+  }
+  showSuggest=function(i){
+    const p=saveLineupFromForm();
+    const inp=document.querySelector(`[data-q="${i}"]`), box=document.getElementById('sg'+i);
+    if(!box||!inp)return;
+    document.querySelectorAll('.suggest.open').forEach(x=>{if(x!==box){x.classList.remove('open');x.classList.remove('fixed');x.style.cssText='';}});
+    const q=norm(inp.value||'');
+    const idx=buildCrewTrainingIndexV386();
+    let candidates=[];
+    if(!q){
+      const sameMap=idx.byCrew.get(`${p.nation}|${Number(i)}`)||new Map();
+      const ids=new Set([...sameMap.keys()]);
+      // Same crew first; then other crews in same nation. This keeps empty-field help useful without dumping the entire roster.
+      for(const recs of idx.byVehicle.values()){
+        for(const r of recs){if(r.nation===p.nation)ids.add(r.vehicleId)}
+      }
+      candidates=[...ids].map(id=>byId.get(id)).filter(v=>slotCandidatePassV3862(v,p));
+    }else{
+      candidates=vehicles.filter(v=>slotCandidatePassV3862(v,p));
+    }
+    const scored=[];
+    for(const v of candidates){
+      const sc=suggestionSortScoreV3862(idx,v,p,Number(i),q);
+      if(sc!==null)scored.push([sc,v]);
+    }
+    const list=scored.sort((a,b)=>b[0]-a[0]||brVal(a[1],modeKey(p.mode))-brVal(b[1],modeKey(p.mode))||nameOf(a[1]).localeCompare(nameOf(b[1]),'ru')).slice(0,30).map(x=>x[1]);
+    setSuggestRowsV3862(box,inp,Number(i),list,p,idx,!q);
+  };
+
+  bindSlots=function(){
+    document.querySelectorAll('[data-q]').forEach(inp=>{
+      inp.onfocus=()=>{const p=currentLineup(),i=Number(inp.dataset.q);inp.dataset.origValue=p.slots[i]?.query||inp.value||'';inp.dataset.origVehicleId=p.slots[i]?.vehicleId||inp.dataset.vehicleId||'';showSuggest(i)};
+      inp.onkeydown=e=>{const i=Number(inp.dataset.q), box=document.getElementById('sg'+i);if(['ArrowDown','ArrowUp','Enter'].includes(e.key)&&box?.classList.contains('open')){e.preventDefault();const rows=[...box.querySelectorAll('[data-pick]')];if(!rows.length)return;let idx=Number(box.dataset.activeIndex||0);if(e.key==='ArrowDown')idx=Math.min(rows.length-1,idx+1);else if(e.key==='ArrowUp')idx=Math.max(0,idx-1);else if(e.key==='Enter'){pickSlotSuggestionV352(i,rows[idx]?.dataset.pick);return;}setSuggestActiveV352(box,idx);return;}if(e.key==='Escape'){e.preventDefault();restoreSlotInput(inp)}};
+      inp.oninput=()=>{const p=currentLineup(),i=Number(inp.dataset.q);p.slots[i].query=inp.value;p.slots[i].vehicleId='';inp.dataset.vehicleId='';saveState();showSuggest(i);renderSlots()};
+    });
+    document.querySelectorAll('[data-r]').forEach(sel=>sel.onchange=()=>{saveLineupFromForm();renderLineupList();renderSlots()});
+    document.querySelectorAll('.drag-handle').forEach(h=>{h.draggable=true;h.ondragstart=e=>{const el=h.closest('.slot');e.dataTransfer.setData('text/plain',el.dataset.slot);el.classList.add('dragging')};h.ondragend=()=>h.closest('.slot')?.classList.remove('dragging')});
+    document.querySelectorAll('.slot').forEach(el=>{el.ondragover=e=>{e.preventDefault();el.classList.add('drop-target')};el.ondragleave=e=>{if(!e.relatedTarget||!el.contains(e.relatedTarget))el.classList.remove('drop-target')};el.ondrop=e=>{e.preventDefault();el.classList.remove('drop-target');const a=Number(e.dataTransfer.getData('text/plain')),b=Number(el.dataset.slot);if(!Number.isInteger(a)||a===b)return;const p=saveLineupFromForm();const A=p.slots[a]||{},B=p.slots[b]||{};const moveKeys=['query','vehicleId','class'];for(const k of moveKeys){const tmp=A[k];A[k]=B[k];B[k]=tmp}p.slots[a]=A;p.slots[b]=B;saveState();renderLineupEditor()}});
+  };
+
+  function selectedProtectModeV3862(p){
+    const per=savedLineupAutopickV359(p||currentLineup());
+    if(['owned','all'].includes(per.protectFilledMode))return per.protectFilledMode;
+    if(per.keepAllFilled===true)return 'all';
+    return 'owned';
+  }
+  function readProtectModeV3862(){return [...document.getElementsByName('mgProtectMode')].find(x=>x.checked)?.value||'owned'}
+  const _saveAutopickSettings_v3862_prev=saveAutopickSettingsV359;
+  saveAutopickSettingsV359=function(p,quiet=false){
+    _saveAutopickSettings_v3862_prev(p,true);
+    const per=savedLineupAutopickV359(p||currentLineup());
+    const mode=readProtectModeV3862();
+    per.protectFilledMode=mode;
+    per.keepBought=mode==='owned';
+    per.keepAllFilled=mode==='all';
+    if(!quiet)saveState();
+  };
+
+  function sameCrewTrainingScoreV3862(idx,v,p,i){return crewTrainingRecordsFromIndexV3862(idx,v,p,i).same.length?1:0}
+  function otherCrewTrainingScoreV3862(idx,v,p,i){return crewTrainingRecordsFromIndexV3862(idx,v,p,i).sameNation.length?1:0}
+  function vehicleAutopickScoreV3862(idx,v,p,i,slot){
+    const primary=classPriorityForLineupV3862(v,p)===2?1:0;
+    const same=sameCrewTrainingScoreV3862(idx,v,p,i);
+    const other=otherCrewTrainingScoreV3862(idx,v,p,i);
+    const roleScore=autopickRoleScore(v,slot);
+    return primary*10000000 + same*1000000 + other*100000 + roleScore*100 + (isOwned(v)?10:0) - Math.abs(brVal(v,modeKey(p.mode))-Number(p.brMax));
+  }
+  function slotPotentialScoreV3862(idx,pool,p,i,used,lineupUsed){
+    const slot=roleAwareSlotForAutopickV361(p,i);slot._crewIndex=i;slot._lineup=p;
+    let best=-Infinity;
+    for(const v of pool){
+      const id=idOf(v);if(!id||used.has(id)||lineupUsed.has(id))continue;
+      const sc=vehicleAutopickScoreV3862(idx,v,p,i,slot);
+      if(sc>best)best=sc;
+    }
+    return best;
+  }
+  takeAutopickVehicle=function(pool,used,slot,lineupUsed=new Set(),avoidIds=new Set()){
+    const p=slot?._lineup||currentLineup();
+    const i=Number.isInteger(slot?._crewIndex)?slot._crewIndex:0;
+    const idx=buildCrewTrainingIndexV386();
+    const pick=(respectAvoid)=>{
+      let bestIdx=-1,bestScore=-Infinity;
+      for(let j=0;j<pool.length;j++){
+        const v=pool[j], id=idOf(v);
+        if(!id||used.has(id)||lineupUsed.has(id))continue;
+        if(respectAvoid&&avoidIds&&avoidIds.has(id))continue;
+        const score=vehicleAutopickScoreV3862(idx,v,p,i,slot);
+        if(score>bestScore){bestIdx=j;bestScore=score}
+      }
+      return bestIdx;
+    };
+    let bestIdx=pick(true);if(bestIdx<0)bestIdx=pick(false);if(bestIdx<0)return null;
+    const [best]=pool.splice(bestIdx,1);const id=idOf(best);used.add(id);lineupUsed.add(id);return best;
+  };
+  fillLineup=function(p,pool,count,used=new Set(),keep=false){
+    ensureSlots(p);
+    const max=crewSlotsMaxV354();
+    const targetCount=Math.max(1,Math.min(max,Number(count)||max));
+    const protect=readProtectModeV3862();
+    const protectedIdx=[], lineupUsed=new Set();
+    for(const i of crewSlotIndicesV354()){
+      const slot=p.slots[i]||{};
+      const current=slotVehicle(slot,p);
+      const currentId=current?idOf(current):'';
+      const filled=!!(String(slot.vehicleId||'').trim()||String(slot.query||'').trim());
+      const shouldProtect=protect==='all'?filled:(current&&isOwned(current));
+      if(shouldProtect){
+        protectedIdx.push(i);
+        if(currentId&&!used.has(currentId)&&!lineupUsed.has(currentId)){
+          used.add(currentId);lineupUsed.add(currentId);
+          const idx=pool.findIndex(v=>idOf(v)===currentId);if(idx>=0)pool.splice(idx,1);
+        }
+      }
+    }
+    const protectedSet=new Set(protectedIdx);
+    const targetSlots=crewSlotIndicesV354().filter(i=>protectedSet.has(i)||i<targetCount);
+    const idx=buildCrewTrainingIndexV386();
+    const open=targetSlots.filter(i=>!protectedSet.has(i));
+    const fillOrder=[...protectedIdx,...open.sort((a,b)=>slotPotentialScoreV3862(idx,pool,p,b,used,lineupUsed)-slotPotentialScoreV3862(idx,pool,p,a,used,lineupUsed)||a-b)];
+    const targetSet=new Set(fillOrder);
+    for(const i of crewSlotIndicesV354()){
+      if(protectedSet.has(i))continue;
+      if(!targetSet.has(i)){const slot=p.slots[i]||{};p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};}
+    }
+    for(const i of fillOrder){
+      if(protectedSet.has(i))continue;
+      const slot=roleAwareSlotForAutopickV361(p,i);slot._crewIndex=i;slot._lineup=p;
+      const v=takeAutopickVehicle(pool,used,slot,lineupUsed,new Set());
+      delete slot._crewIndex;delete slot._lineup;
+      if(!v){p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};continue}
+      p.slots[i]={...slot,vehicleId:idOf(v),query:nameOf(v),class:'auto'};
+    }
+    return p;
+  };
+
+  openAutopick=function(){
+    const p=saveLineupFromForm();
+    const policy=autopickClassPolicy(p.mode);
+    const def=selectedClassesV359(p);
+    const count=selectedAutopickCountV359(p);
+    const protect=selectedProtectModeV3862(p);
+    const checked=v=>protect===v?'checked':'';
+    const classChecks=CLASS_KEYS.map(c=>{
+      const allowed=policy.allowed.includes(c);
+      const available=allowed&&classAvailableForAutopick(p,c);
+      const primary=policy.primary.includes(c);
+      const disabled=!allowed||!available;
+      return `<label class="big-check class-check ${primary?'primary':''} ${disabled?'disabled':''}"><input type="checkbox" name="mgClass" value="${esc(c)}" ${def.includes(c)&&available?'checked':''} ${disabled?'disabled':''}>${esc(classLabel(c))}</label>`;
+    }).join('');
+    openModal(`
+      <div class="modal-grid"><div class="field"><label>${t('autopickCount')}</label><select id="mgCount">${crewSlotIndicesV354().map(i=>opt(i+1,i+1,i+1===count?count:null)).join('')}</select></div><div class="notice">${t('crewSlotCountNote')}</div></div>
+      <h3>${t('protectFilledSlots')}</h3><div class="autopick-protect-row"><label class="big-check compact-check"><input type="radio" name="mgProtectMode" value="owned" ${checked('owned')}> ${t('keepBought')}</label><label class="big-check compact-check"><input type="radio" name="mgProtectMode" value="all" ${checked('all')}> ${t('keepAllFilled')}</label></div>
+      <div class="notice">${t('autopickCrewTrainingNote')}</div>
+      <h3>${t('vehicleClasses')}</h3><div class="autopick-class-row">${classChecks}</div>
+      <h3>${t('acquisitionUsePolicy')}</h3>${autopickPolicyTableV356()}
+      ${autopickOwnershipBoxV358(p)}
+      <div id="mgStatus"></div>
+      <div class="footer-actions"><button type="button" id="mgRun" data-modal-action="autopick-run" onpointerdown="return window.WTModalAction&&window.WTModalAction('autopick-run',event)" onclick="return window.WTModalAction&&window.WTModalAction('autopick-run',event)">${t('autopick')}</button><button class="ghost" onclick="closeModal()">${t('cancel')}</button></div>`);
+    document.getElementById('modalBox')?.classList.add('autopick-compact');
+    setTimeout(()=>{document.querySelectorAll('#modal input,#modal select').forEach(el=>el.addEventListener('change',()=>saveAutopickSettingsV359(p)));},0);
+  };
+  runAutopick=function(mode){
+    const p=saveLineupFromForm();
+    saveAutopickSettingsV359(p,true);
+    const count=Number(document.getElementById('mgCount')?.value||crewSlotsMaxV354());
+    const pool=autopickPool(p);
+    const box=document.getElementById('mgStatus');
+    if(!pool.length){if(box)box.innerHTML=`<div class="magic-warning">${t('autopickNoVehicles')}</div>`;return}
+    const packs=Math.ceil(pool.length/count);
+    if(mode==='ask'&&pool.length>count){if(box)box.innerHTML=`<div class="magic-warning"><div>${t('autopickConfirm')}</div><div class="nums">${t('found')}: ${pool.length}. ${t('crew')}: ${count}. ${lang()==='en'?'Creating all will create':'При создании всех будет создано'} ${packs} ${lang()==='en'?'lineup(s)':'набор(ов)'}.</div><div class="footer-actions"><button type="button" id="mgOne" data-modal-action="autopick-one" onpointerdown="return window.WTModalAction&&window.WTModalAction('autopick-one',event)" onclick="return window.WTModalAction&&window.WTModalAction('autopick-one',event)">${t('createOneRandom')}</button><button type="button" class="secondary" id="mgAll" data-modal-action="autopick-all" onpointerdown="return window.WTModalAction&&window.WTModalAction('autopick-all',event)" onclick="return window.WTModalAction&&window.WTModalAction('autopick-all',event)">${t('createAll')} ${packs}</button></div></div>`;bindModalActions();return}
+    const used=new Set();
+    fillLineup(p,pool,count,used,false);
+    if(mode==='all'){
+      let idx=2;
+      while(pool.length>0){
+        const cp={...JSON.parse(JSON.stringify(p)),id:'lineup-'+Date.now()+'-'+idx,name:(p.name||(lang()==='en'?'Lineup':'Набор'))+' автоподбор '+idx,slots:[]};
+        fillLineup(cp,pool,count,used,false);state.lineups.push(cp);idx++;
+        if(idx>200)break;
+      }
+    }
+    saveState();closeModal();renderLineups();
+  };
+})();
+
 </script>
 </body></html>
 
 <!-- v3.75 lineup list range filter fix. v3.74 curated availability update: KV-8 market/event, SAV 20.12.48 owner-only, F-20A retired pack. -->
+
+<!-- v3.86 hotfix 3.1: safe suggestion helpers, out-of-filter manual slots, three-way autopick protection, and pool-aware crew assignment. -->
+<script>
+(function(){
+  if(window.__wtV386Hotfix3Applied)return;
+  window.__wtV386Hotfix3Applied=true;
+
+  Object.assign(I18N.ru,{
+    ignoreFilledSlots:'игнорировать заполненные слоты',
+    keepBought:'не трогать только купленную заполненную технику',
+    keepAllFilled:'не трогать все заполненные слоты'
+  });
+  Object.assign(I18N.en,{
+    ignoreFilledSlots:'ignore filled slots',
+    keepBought:'keep only owned filled vehicles',
+    keepAllFilled:'keep all filled slots'
+  });
+
+  function classPriorityForLineupV3863Local(v,p){
+    const policy=autopickClassPolicy(p.mode);
+    return policy.primary.includes(classOf(v))?2:(policy.allowed.includes(classOf(v))?1:0);
+  }
+  function crewTrainingRecordsSafeV3863(idx,v,p,i){
+    return (typeof crewTrainingRecordsFromIndexV3862==='function')
+      ? crewTrainingRecordsFromIndexV3862(idx,v,p,i)
+      : crewTrainingRecordsV386(v,p,i);
+  }
+  function trainingBadgeSafeV3863(idx,v,p,i){
+    return (typeof trainingBadgeWithIndexV3862==='function')
+      ? trainingBadgeWithIndexV3862(idx,v,p,i)
+      : trainingBadgeV386(v,p,i);
+  }
+  function idsInLineupSafeV3863(p,i){
+    return (typeof idsInLineupV352==='function') ? idsInLineupV352(p,i) : new Set();
+  }
+
+  function exactVehicleByAnyNameV3863(q){
+    q=norm(q||'');
+    if(!q)return null;
+    let found=null;
+    for(const v of vehicles){
+      const vals=[idOf(v),nameOf(v),v.nameRu,v.nameEn,v.display_name,v.displayName,v.wiki_title,v.title].map(x=>norm(x||'')).filter(Boolean);
+      if(vals.includes(q)){
+        if(found&&idOf(found)!==idOf(v))return null;
+        found=v;
+      }
+    }
+    return found;
+  }
+
+  // Important: a slot may intentionally contain a vehicle outside the lineup filters.
+  // Display it with FILTER- instead of hiding it as an empty slot.
+  slotVehicle=function(s,p=null){
+    if(!s)return null;
+    const sid=String(s.vehicleId||'').trim();
+    if(sid&&byId.has(sid))return byId.get(sid);
+    return exactVehicleByAnyNameV3863(s.query||'');
+  };
+
+  function readProtectModeV3863(){
+    const v=[...document.getElementsByName('mgProtectMode')].find(x=>x.checked)?.value;
+    return ['none','owned','all'].includes(v)?v:'owned';
+  }
+  function selectedProtectModeV3863(p){
+    const per=savedLineupAutopickV359(p||currentLineup());
+    if(['none','owned','all'].includes(per.protectFilledMode))return per.protectFilledMode;
+    if(per.keepAllFilled===true)return 'all';
+    return 'owned';
+  }
+  const _saveAutopickSettings_v3863_prev=saveAutopickSettingsV359;
+  saveAutopickSettingsV359=function(p,quiet=false){
+    if(_saveAutopickSettings_v3863_prev)_saveAutopickSettings_v3863_prev(p,true);
+    const per=savedLineupAutopickV359(p||currentLineup());
+    const mode=readProtectModeV3863();
+    per.protectFilledMode=mode;
+    per.keepBought=mode==='owned';
+    per.keepAllFilled=mode==='all';
+    if(!quiet)saveState();
+  };
+
+  function suggestionFilterOkV3863(v,p){
+    return vehicleMatchesLineup(v,p);
+  }
+  function suggestionAllowedForTypingV3863(v,p){
+    if(!v||!p)return false;
+    // Manual slot search should allow out-of-BR/rank picks, but still stay in the nation and plausible class family.
+    return v.nation===p.nation && modeAllowedClasses(p.mode).includes(classOf(v));
+  }
+  function suggestionScoreV3863(idx,v,p,i,q,dupIds){
+    const n=norm(nameOf(v)), id=norm(idOf(v));
+    let textScore=0;
+    if(q){
+      if(n===q||id===q)textScore=10000;
+      else if(n.startsWith(q)||id.startsWith(q))textScore=7000;
+      else if((v._search||'').includes(q))textScore=3000;
+      else return null;
+    }
+    const rec=crewTrainingRecordsSafeV3863(idx,v,p,i);
+    const same=rec.same?.length?1:0;
+    const other=rec.sameNation?.length?1:0;
+    const filterOk=suggestionFilterOkV3863(v,p)?1:0;
+    const duplicate=dupIds?.has?.(idOf(v))?1:0;
+    const rolePref=typeof selectedSlotRolePrefV3862==='function'?selectedSlotRolePrefV3862(p,i):((p.slots?.[i]||{}).rolePref||'');
+    const roleScore=rolePref&&rolePrefState(v,rolePref)==='match'?80:0;
+    return textScore + same*2500 + other*600 + filterOk*200 - duplicate*100 + roleScore + (isOwned(v)?20:0);
+  }
+  function renderSuggestRowsV3863(box,inp,i,list,p,idx,showHint){
+    const mode=modeKey(p.mode), dupIds=idsInLineupSafeV3863(p,i);
+    const hint=showHint?`<div class="suggest-hint">${esc(t('trainedSuggestionsEmpty'))}</div>`:'';
+    box.innerHTML=hint+list.map(v=>{
+      const filterOk=suggestionFilterOkV3863(v,p);
+      const duplicate=dupIds.has(idOf(v));
+      return `<div data-pick="${esc(idOf(v))}" class="${duplicate?'duplicate-in-lineup':''} ${!filterOk?'filter-mismatch':''}"><b>${roleIcon(v)}${esc(nameOf(v))}</b> <span class="meta">${brFmt(brVal(v,mode))} · ${guardedRank(v)} · ${esc(roleLabel(v))} · ${esc(statusDisplay(statusOf(v)))}${!filterOk?` <span class="filter-tag">${t('filterMinus')}</span>`:''}${duplicate?` <span class="filter-tag">${t('alreadyInLineup')}</span>`:''}</span>${trainingBadgeSafeV3863(idx,v,p,i)}</div>`;
+    }).join('');
+    box.classList.toggle('open',list.length>0);
+    if(list.length){
+      const r=inp.getBoundingClientRect();
+      box.classList.add('fixed');box.style.left=Math.max(8,r.left)+'px';box.style.top=(r.bottom+4)+'px';box.style.width=Math.max(330,r.width)+'px';
+      box.dataset.activeIndex='0';
+      if(typeof setSuggestActiveV352==='function')setSuggestActiveV352(box,0);
+    }else{
+      box.classList.remove('fixed');box.style.cssText='';delete box.dataset.activeIndex;
+    }
+    box.querySelectorAll('[data-pick]').forEach(d=>d.onclick=e=>{e.stopPropagation();pickSlotSuggestionV352(i,d.dataset.pick)});
+  }
+
+  let slotTypingTimerV3863=null;
+  function scheduleSlotTypingRenderV3863(){
+    clearTimeout(slotTypingTimerV3863);
+    slotTypingTimerV3863=setTimeout(()=>{try{saveState();renderSlots();}catch(e){console.warn(e)}},160);
+  }
+
+  showSuggest=function(i){
+    const p=saveLineupFromForm();
+    const inp=document.querySelector(`[data-q="${i}"]`), box=document.getElementById('sg'+i);
+    if(!box||!inp)return;
+    document.querySelectorAll('.suggest.open').forEach(x=>{if(x!==box){x.classList.remove('open');x.classList.remove('fixed');x.style.cssText='';}});
+    const q=norm(inp.value||'');
+    const idx=buildCrewTrainingIndexV386();
+    const dupIds=idsInLineupSafeV3863(p,i);
+    let candidates=[];
+    if(!q){
+      const ids=new Set();
+      const sameMap=idx.byCrew.get(`${p.nation}|${Number(i)}`)||new Map();
+      for(const id of sameMap.keys())ids.add(id);
+      // Empty-field helper is deliberately narrower: trained vehicles only, and matching the current lineup filters.
+      candidates=[...ids].map(id=>byId.get(id)).filter(v=>v&&suggestionFilterOkV3863(v,p));
+    }else{
+      candidates=vehicles.filter(v=>suggestionAllowedForTypingV3863(v,p));
+    }
+    const scored=[];
+    for(const v of candidates){
+      const sc=suggestionScoreV3863(idx,v,p,Number(i),q,dupIds);
+      if(sc!==null)scored.push([sc,v]);
+    }
+    const mode=modeKey(p.mode);
+    const list=scored.sort((a,b)=>b[0]-a[0]||brVal(a[1],mode)-brVal(b[1],mode)||nameOf(a[1]).localeCompare(nameOf(b[1]),'ru')).slice(0,q?50:30).map(x=>x[1]);
+    renderSuggestRowsV3863(box,inp,Number(i),list,p,idx,!q);
+  };
+
+  bindSlots=function(){
+    document.querySelectorAll('[data-q]').forEach(inp=>{
+      inp.onfocus=()=>{const p=currentLineup(),i=Number(inp.dataset.q);inp.dataset.origValue=p.slots[i]?.query||inp.value||'';inp.dataset.origVehicleId=p.slots[i]?.vehicleId||inp.dataset.vehicleId||'';showSuggest(i)};
+      inp.onkeydown=e=>{const i=Number(inp.dataset.q), box=document.getElementById('sg'+i);if(['ArrowDown','ArrowUp','Enter'].includes(e.key)&&box?.classList.contains('open')){e.preventDefault();const rows=[...box.querySelectorAll('[data-pick]')];if(!rows.length)return;let idx=Number(box.dataset.activeIndex||0);if(e.key==='ArrowDown')idx=Math.min(rows.length-1,idx+1);else if(e.key==='ArrowUp')idx=Math.max(0,idx-1);else if(e.key==='Enter'){pickSlotSuggestionV352(i,rows[idx]?.dataset.pick);return;}setSuggestActiveV352(box,idx);return;}if(e.key==='Escape'){e.preventDefault();restoreSlotInput(inp)}};
+      inp.oninput=()=>{const p=currentLineup(),i=Number(inp.dataset.q);p.slots[i]=p.slots[i]||{};p.slots[i].query=inp.value;p.slots[i].vehicleId='';inp.dataset.vehicleId='';if(typeof crewTrainingCacheV3862!=='undefined')crewTrainingCacheV3862=null;showSuggest(i);scheduleSlotTypingRenderV3863()};
+    });
+    document.querySelectorAll('[data-r]').forEach(sel=>sel.onchange=()=>{saveLineupFromForm();renderLineupList();renderSlots()});
+    document.querySelectorAll('.drag-handle').forEach(h=>{h.draggable=true;h.ondragstart=e=>{const el=h.closest('.slot');e.dataTransfer.setData('text/plain',el.dataset.slot);el.classList.add('dragging')};h.ondragend=()=>h.closest('.slot')?.classList.remove('dragging')});
+    document.querySelectorAll('.slot').forEach(el=>{el.ondragover=e=>{e.preventDefault();el.classList.add('drop-target')};el.ondragleave=e=>{if(!e.relatedTarget||!el.contains(e.relatedTarget))el.classList.remove('drop-target')};el.ondrop=e=>{e.preventDefault();el.classList.remove('drop-target');const a=Number(e.dataTransfer.getData('text/plain')),b=Number(el.dataset.slot);if(!Number.isInteger(a)||a===b)return;const p=saveLineupFromForm();const A=p.slots[a]||{},B=p.slots[b]||{};const moveKeys=['query','vehicleId','class'];for(const k of moveKeys){const tmp=A[k];A[k]=B[k];B[k]=tmp}p.slots[a]=A;p.slots[b]=B;saveState();renderLineupEditor()}});
+  };
+
+  function sameCrewForPoolV3863(idx,v,p,i){return crewTrainingRecordsSafeV3863(idx,v,p,i).same?.length?1:0}
+  function vehiclePickScoreV3863(idx,v,p,i,slot,preferPrimary=true){
+    const cp=classPriorityForLineupV3863Local(v,p);
+    const same=sameCrewForPoolV3863(idx,v,p,i);
+    const other=crewTrainingRecordsSafeV3863(idx,v,p,i).sameNation?.length?1:0;
+    const role=typeof autopickRoleScore==='function'?autopickRoleScore(v,slot):0;
+    const primaryScore=preferPrimary?(cp===2?100000:0):0;
+    return same*10000000 + other*200000 + primaryScore + role*100 + (isOwned(v)?10:0) - Math.abs(brVal(v,modeKey(p.mode))-Number(p.brMax));
+  }
+  function takeBestFromRemainingV3863(remaining,used,lineupUsed,p,i,filterFn){
+    const slot=roleAwareSlotForAutopickV361(p,i);slot._crewIndex=i;slot._lineup=p;
+    const idx=buildCrewTrainingIndexV386();
+    let bestIdx=-1,best=-Infinity;
+    for(let j=0;j<remaining.length;j++){
+      const v=remaining[j], id=idOf(v);
+      if(!id||used.has(id)||lineupUsed.has(id))continue;
+      if(filterFn&&!filterFn(v))continue;
+      const sc=vehiclePickScoreV3863(idx,v,p,i,slot,true);
+      if(sc>best){best=sc;bestIdx=j;}
+    }
+    delete slot._crewIndex;delete slot._lineup;
+    if(bestIdx<0)return null;
+    const [v]=remaining.splice(bestIdx,1);used.add(idOf(v));lineupUsed.add(idOf(v));return v;
+  }
+  function hasSameCandidateV3863(idx,arr,p,i){return arr.some(v=>sameCrewForPoolV3863(idx,v,p,i));}
+  function bestSameCandidateScoreV3863(idx,arr,p,i){let best=0;for(const v of arr){if(sameCrewForPoolV3863(idx,v,p,i))best=Math.max(best,1000+(typeof autopickRoleScore==='function'?autopickRoleScore(v,{_crewIndex:i,_lineup:p}):0));}return best;}
+  function slotOrderForPrimaryV3863(open,idx,primary,secondary,p){
+    return [...open].sort((a,b)=>{
+      const aSameP=hasSameCandidateV3863(idx,primary,p,a), bSameP=hasSameCandidateV3863(idx,primary,p,b);
+      if(aSameP!==bSameP)return bSameP-aSameP; // crews already trained for primary vehicles first
+      const aSameS=hasSameCandidateV3863(idx,secondary,p,a), bSameS=hasSameCandidateV3863(idx,secondary,p,b);
+      if(aSameS!==bSameS)return aSameS-bSameS; // preserve crews trained for aircraft/secondary vehicles when possible
+      return b-a < 0 ? -1 : a-b;
+    });
+  }
+  function slotOrderForSecondaryV3863(open,idx,secondary,p){
+    return [...open].sort((a,b)=>bestSameCandidateScoreV3863(idx,secondary,p,b)-bestSameCandidateScoreV3863(idx,secondary,p,a)||a-b);
+  }
+
+  fillLineup=function(p,pool,count,used=new Set(),keep=false){
+    ensureSlots(p);
+    const max=crewSlotsMaxV354();
+    const targetCount=Math.max(1,Math.min(max,Number(count)||max));
+    const protect=readProtectModeV3863();
+    const protectedIdx=[];const lineupUsed=new Set();
+    for(const i of crewSlotIndicesV354()){
+      const slot=p.slots[i]||{};
+      const current=slotVehicle(slot,null);
+      const currentId=current?idOf(current):'';
+      const filled=!!(String(slot.vehicleId||'').trim()||String(slot.query||'').trim());
+      const shouldProtect=protect==='all'?filled:(protect==='owned'?(current&&isOwned(current)):false);
+      if(shouldProtect){
+        protectedIdx.push(i);
+        if(currentId&&!used.has(currentId)&&!lineupUsed.has(currentId)){
+          used.add(currentId);lineupUsed.add(currentId);
+          const idx=pool.findIndex(v=>idOf(v)===currentId);if(idx>=0)pool.splice(idx,1);
+        }
+      }
+    }
+    const protectedSet=new Set(protectedIdx);
+    const targetSlots=crewSlotIndicesV354().filter(i=>protectedSet.has(i)||i<targetCount);
+    const open=targetSlots.filter(i=>!protectedSet.has(i));
+    const targetSet=new Set(targetSlots);
+    for(const i of crewSlotIndicesV354()){
+      if(protectedSet.has(i))continue;
+      if(!targetSet.has(i)){const slot=p.slots[i]||{};p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};}
+    }
+    const idx=buildCrewTrainingIndexV386();
+    const remaining=[...pool];
+    pool.length=0;
+    const primary=remaining.filter(v=>classPriorityForLineupV3863Local(v,p)===2);
+    const secondary=remaining.filter(v=>classPriorityForLineupV3863Local(v,p)!==2);
+    const assigned=new Set();
+    function assign(i,v){if(!v)return false;const slot=roleAwareSlotForAutopickV361(p,i);p.slots[i]={...slot,vehicleId:idOf(v),query:nameOf(v),class:'auto'};assigned.add(i);return true;}
+    const primarySlots=slotOrderForPrimaryV3863(open,idx,primary,secondary,p).slice(0,Math.min(primary.length,open.length));
+    for(const i of primarySlots){
+      const v=takeBestFromRemainingV3863(remaining,used,lineupUsed,p,i,x=>classPriorityForLineupV3863Local(x,p)===2);
+      if(v)assign(i,v);
+    }
+    const secondarySlots=slotOrderForSecondaryV3863(open.filter(i=>!assigned.has(i)),idx,secondary,p);
+    for(const i of secondarySlots){
+      let v=takeBestFromRemainingV3863(remaining,used,lineupUsed,p,i,x=>classPriorityForLineupV3863Local(x,p)!==2);
+      if(!v)v=takeBestFromRemainingV3863(remaining,used,lineupUsed,p,i,null);
+      if(v)assign(i,v);
+      else {const slot=p.slots[i]||{};p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};}
+    }
+    // If primary vehicles exceeded open slots or phase ordering left holes, fill any still-open target slots.
+    for(const i of open){
+      if(assigned.has(i))continue;
+      const v=takeBestFromRemainingV3863(remaining,used,lineupUsed,p,i,null);
+      if(v)assign(i,v);else {const slot=p.slots[i]||{};p.slots[i]={...slot,vehicleId:'',query:'',class:'auto'};}
+    }
+    // put unused vehicles back for create-all mode
+    remaining.forEach(v=>pool.push(v));
+    return p;
+  };
+
+  openAutopick=function(){
+    const p=saveLineupFromForm();
+    const policy=autopickClassPolicy(p.mode);
+    const def=selectedClassesV359(p);
+    const count=selectedAutopickCountV359(p);
+    const protect=selectedProtectModeV3863(p);
+    const checked=v=>protect===v?'checked':'';
+    const classChecks=CLASS_KEYS.map(c=>{
+      const allowed=policy.allowed.includes(c);
+      const available=allowed&&classAvailableForAutopick(p,c);
+      const primary=policy.primary.includes(c);
+      const disabled=!allowed||!available;
+      return `<label class="big-check class-check ${primary?'primary':''} ${disabled?'disabled':''}"><input type="checkbox" name="mgClass" value="${esc(c)}" ${def.includes(c)&&available?'checked':''} ${disabled?'disabled':''}>${esc(classLabel(c))}</label>`;
+    }).join('');
+    openModal(`
+      <div class="modal-grid"><div class="field"><label>${t('autopickCount')}</label><select id="mgCount">${crewSlotIndicesV354().map(i=>opt(i+1,i+1,i+1===count?count:null)).join('')}</select></div><div class="notice">${t('crewSlotCountNote')}</div></div>
+      <h3>${t('protectFilledSlots')}</h3><div class="autopick-protect-row"><label class="big-check compact-check"><input type="radio" name="mgProtectMode" value="none" ${checked('none')}> ${t('ignoreFilledSlots')}</label><label class="big-check compact-check"><input type="radio" name="mgProtectMode" value="owned" ${checked('owned')}> ${t('keepBought')}</label><label class="big-check compact-check"><input type="radio" name="mgProtectMode" value="all" ${checked('all')}> ${t('keepAllFilled')}</label></div>
+      <div class="notice">${t('autopickCrewTrainingNote')}</div>
+      <h3>${t('vehicleClasses')}</h3><div class="autopick-class-row">${classChecks}</div>
+      <h3>${t('acquisitionUsePolicy')}</h3>${autopickPolicyTableV356()}
+      ${autopickOwnershipBoxV358(p)}
+      <div id="mgStatus"></div>
+      <div class="footer-actions"><button type="button" id="mgRun" data-modal-action="autopick-run" onpointerdown="return window.WTModalAction&&window.WTModalAction('autopick-run',event)" onclick="return window.WTModalAction&&window.WTModalAction('autopick-run',event)">${t('autopick')}</button><button class="ghost" onclick="closeModal()">${t('cancel')}</button></div>`);
+    document.getElementById('modalBox')?.classList.add('autopick-compact');
+    setTimeout(()=>{document.querySelectorAll('#modal input,#modal select').forEach(el=>el.addEventListener('change',()=>saveAutopickSettingsV359(p)));},0);
+  };
+})();
+</script>

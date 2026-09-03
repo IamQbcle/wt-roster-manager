@@ -114,10 +114,10 @@
       "ru": "Эксклюзивный Xbox-набор; для обычного ПК-пула считается недоступным, пока игрок не отметил технику имеющейся."
     },
     "f_20a": {
-      "availability": "unavailable",
-      "en": "F-20A Tigershark Pack was listed among packs retired after the May Sale 2026; treat as owner-only unless marked owned.",
-      "ru": "F-20A Tigershark Pack был указан среди наборов, снимаемых с продажи после May Sale 2026; считать owner-only, если техника не отмечена купленной.",
-      "source": "manual curated check, Gaijin May Sale 2026 retired packs section"
+      "availability": "available",
+      "en": "Returned to sale after the F-20A first-flight event and remains available at full price.",
+      "ru": "Вернулся в продажу после акции к первому полёту F-20A и остаётся доступен по полной цене.",
+      "source": "official F-20A first-flight sale news"
     },
     "fiat_cr42_marcolin": {
       "availability": "unavailable",
@@ -235,9 +235,10 @@
       "ru": "Скрыта из исследования после изменений немецкой ветки; доступна только старым владельцам."
     },
     "germ_pzh_2000": {
-      "availability": "unavailable",
-      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players.",
-      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев."
+      "availability": "available",
+      "en": "v3.87 correction: German PzH 2000 is a regular researchable vehicle, not the PzH 2000HU pack.",
+      "ru": "v3.87: немецкая PzH 2000 является обычной исследуемой техникой, а не пакетом PzH 2000HU.",
+      "source": "manual curated check, Wiki/research tree"
     },
     "germ_pzkpfw_Maus": {
       "availability": "unavailable",
@@ -305,9 +306,10 @@
       "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Chinese pack absent from current client tree."
     },
     "hawk_209_indonesia": {
-      "availability": "unavailable",
-      "en": "Owner-only / hidden from the regular client tree. Pack/platform-limited availability; absent from current PC client.",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Pack/platform-limited availability; absent from current PC client."
+      "availability": "available",
+      "en": "Returned to sale after the Hawk first-flight event and remains available at full price.",
+      "ru": "Вернулся в продажу после акции к первому полёту Hawk и остаётся доступен по полной цене.",
+      "source": "official Hawk first-flight sale news"
     },
     "he_112b_1": {
       "availability": "unavailable",
@@ -890,6 +892,24 @@
       "availability": "unavailable",
       "en": "Hidden pack vehicle; normally unavailable, may temporarily return to sale.",
       "ru": "Скрытая пакетная техника; обычно недоступна, может временно возвращаться в продажу."
+    },
+    "jp_type_5_ho_ri_production": {
+      "availability": "unavailable",
+      "en": "Removed from the Japanese research tree on 2026-09-01; kept only for owners / players with research progress.",
+      "ru": "Выведена из ветки исследования Японии 2026-09-01; остаётся только у владельцев / игроков с прогрессом исследования.",
+      "source": "official Ho-Ri removal news"
+    },
+    "jp_type_5_ho_ri_prototype": {
+      "availability": "unavailable",
+      "en": "No longer available for purchase from 2026-09-01; owner-only.",
+      "ru": "Больше не доступна для покупки с 2026-09-01; только у владельцев.",
+      "source": "official Ho-Ri removal news"
+    },
+    "ussr_battleship_oktyabrskaya_revolutsiya": {
+      "availability": "unavailable",
+      "en": "Guardian of the Baltic Sea event reward; owner-only/unavailable by default.",
+      "ru": "Награда события «Защитник Балтийского моря»; по умолчанию считается недоступной / только у владельцев.",
+      "source": "official Guardian of the Baltic Sea event news"
     }
   }
 }

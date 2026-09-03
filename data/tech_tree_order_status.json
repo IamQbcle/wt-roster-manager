@@ -4,252 +4,252 @@
     "USA|air": {
       "count": 189,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=usa&v=t; matched ids=189",
-      "updated_at": "2026-08-04T07:35:29+00:00"
+      "updated_at": "2026-09-03T09:20:30+00:00"
     },
     "Germany|air": {
       "count": 170,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=germany&v=t; matched ids=170",
-      "updated_at": "2026-08-04T07:35:30+00:00"
+      "updated_at": "2026-09-03T09:20:31+00:00"
     },
     "USSR|air": {
       "count": 163,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=ussr&v=t; matched ids=163",
-      "updated_at": "2026-08-04T07:35:30+00:00"
+      "updated_at": "2026-09-03T09:20:31+00:00"
     },
     "Britain|air": {
       "count": 157,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=britain&v=t; matched ids=157",
-      "updated_at": "2026-08-04T07:35:30+00:00"
+      "updated_at": "2026-09-03T09:20:31+00:00"
     },
     "Japan|air": {
       "count": 129,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=japan&v=t; matched ids=129",
-      "updated_at": "2026-08-04T07:35:31+00:00"
+      "updated_at": "2026-09-03T09:20:32+00:00"
     },
     "China|air": {
       "count": 82,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=china&v=t; matched ids=82",
-      "updated_at": "2026-08-04T07:35:31+00:00"
+      "updated_at": "2026-09-03T09:20:32+00:00"
     },
     "Italy|air": {
       "count": 102,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=italy&v=t; matched ids=102",
-      "updated_at": "2026-08-04T07:35:31+00:00"
+      "updated_at": "2026-09-03T09:20:32+00:00"
     },
     "France|air": {
-      "count": 104,
-      "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=france&v=t; matched ids=104",
-      "updated_at": "2026-08-04T07:35:31+00:00"
+      "count": 103,
+      "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=france&v=t; matched ids=103",
+      "updated_at": "2026-09-03T09:20:33+00:00"
     },
     "Sweden|air": {
       "count": 69,
       "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=sweden&v=t; matched ids=69",
-      "updated_at": "2026-08-04T07:35:32+00:00"
+      "updated_at": "2026-09-03T09:20:33+00:00"
     },
     "Israel|air": {
-      "count": 36,
-      "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=israel&v=t; matched ids=36",
-      "updated_at": "2026-08-04T07:35:32+00:00"
+      "count": 35,
+      "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?t_c=israel&v=t; matched ids=35",
+      "updated_at": "2026-09-03T09:20:33+00:00"
     },
     "USA|ground": {
       "count": 146,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=usa&v=t; matched ids=146",
-      "updated_at": "2026-08-04T07:35:32+00:00"
+      "updated_at": "2026-09-03T09:20:33+00:00"
     },
     "Germany|ground": {
       "count": 172,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=germany&v=t; matched ids=172",
-      "updated_at": "2026-08-04T07:35:32+00:00"
+      "updated_at": "2026-09-03T09:20:34+00:00"
     },
     "USSR|ground": {
       "count": 150,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=ussr&v=t; matched ids=150",
-      "updated_at": "2026-08-04T07:35:32+00:00"
+      "updated_at": "2026-09-03T09:20:34+00:00"
     },
     "Britain|ground": {
       "count": 139,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=britain&v=t; matched ids=139",
-      "updated_at": "2026-08-04T07:35:33+00:00"
+      "updated_at": "2026-09-03T09:20:34+00:00"
     },
     "Japan|ground": {
       "count": 79,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=japan&v=t; matched ids=79",
-      "updated_at": "2026-08-04T07:35:33+00:00"
+      "updated_at": "2026-09-03T09:20:35+00:00"
     },
     "China|ground": {
       "count": 86,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=china&v=t; matched ids=86",
-      "updated_at": "2026-08-04T07:35:33+00:00"
+      "updated_at": "2026-09-03T09:20:35+00:00"
     },
     "Italy|ground": {
       "count": 103,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=italy&v=t; matched ids=103",
-      "updated_at": "2026-08-04T07:35:33+00:00"
+      "updated_at": "2026-09-03T09:20:35+00:00"
     },
     "France|ground": {
       "count": 101,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=france&v=t; matched ids=101",
-      "updated_at": "2026-08-04T07:35:34+00:00"
+      "updated_at": "2026-09-03T09:20:35+00:00"
     },
     "Sweden|ground": {
       "count": 91,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=sweden&v=t; matched ids=91",
-      "updated_at": "2026-08-04T07:35:34+00:00"
+      "updated_at": "2026-09-03T09:20:36+00:00"
     },
     "Israel|ground": {
       "count": 53,
       "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?t_c=israel&v=t; matched ids=53",
-      "updated_at": "2026-08-04T07:35:34+00:00"
+      "updated_at": "2026-09-03T09:20:36+00:00"
     },
     "USA|heli": {
       "count": 19,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=usa&v=t; matched ids=19",
-      "updated_at": "2026-08-04T07:35:34+00:00"
+      "updated_at": "2026-09-03T09:20:36+00:00"
     },
     "Germany|heli": {
       "count": 10,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=germany&v=t; matched ids=10",
-      "updated_at": "2026-08-04T07:35:35+00:00"
+      "updated_at": "2026-09-03T09:20:36+00:00"
     },
     "USSR|heli": {
       "count": 15,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=ussr&v=t; matched ids=15",
-      "updated_at": "2026-08-04T07:35:35+00:00"
+      "updated_at": "2026-09-03T09:20:37+00:00"
     },
     "Britain|heli": {
       "count": 9,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=britain&v=t; matched ids=9",
-      "updated_at": "2026-08-04T07:35:35+00:00"
+      "updated_at": "2026-09-03T09:20:37+00:00"
     },
     "Japan|heli": {
       "count": 7,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=japan&v=t; matched ids=7",
-      "updated_at": "2026-08-04T07:35:35+00:00"
+      "updated_at": "2026-09-03T09:20:37+00:00"
     },
     "China|heli": {
       "count": 13,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=china&v=t; matched ids=13",
-      "updated_at": "2026-08-04T07:35:35+00:00"
+      "updated_at": "2026-09-03T09:20:37+00:00"
     },
     "Italy|heli": {
       "count": 9,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=italy&v=t; matched ids=9",
-      "updated_at": "2026-08-04T07:35:35+00:00"
+      "updated_at": "2026-09-03T09:20:37+00:00"
     },
     "France|heli": {
       "count": 11,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=france&v=t; matched ids=11",
-      "updated_at": "2026-08-04T07:35:36+00:00"
+      "updated_at": "2026-09-03T09:20:37+00:00"
     },
     "Sweden|heli": {
       "count": 6,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=sweden&v=t; matched ids=6",
-      "updated_at": "2026-08-04T07:35:36+00:00"
+      "updated_at": "2026-09-03T09:20:38+00:00"
     },
     "Israel|heli": {
       "count": 8,
       "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?t_c=israel&v=t; matched ids=8",
-      "updated_at": "2026-08-04T07:35:36+00:00"
+      "updated_at": "2026-09-03T09:20:38+00:00"
     },
     "USA|bluewater": {
       "count": 54,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=usa&v=t; matched ids=54",
-      "updated_at": "2026-08-04T07:35:36+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=usa&v=t; matched ids=54",
+      "updated_at": "2026-09-03T09:20:38+00:00"
     },
     "Germany|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=germany&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:36+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=germany&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:39+00:00"
     },
     "USSR|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=ussr&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:37+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=ussr&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:39+00:00"
     },
     "Britain|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=britain&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:37+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=britain&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:40+00:00"
     },
     "Japan|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=japan&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:38+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=japan&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:40+00:00"
     },
     "China|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=china&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:38+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=china&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:40+00:00"
     },
     "Italy|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=italy&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:38+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=italy&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:41+00:00"
     },
     "France|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=france&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:39+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=france&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:42+00:00"
     },
     "Sweden|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=sweden&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:39+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=sweden&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:42+00:00"
     },
     "Israel|bluewater": {
       "count": 0,
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?t_c=israel&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:40+00:00"
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?t_c=israel&v=t; matched ids=0; all-page fallback: HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t; matched ids=0",
+      "updated_at": "2026-09-03T09:20:43+00:00"
     },
     "USA|coastal": {
       "count": 35,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=usa&v=t; matched ids=35",
-      "updated_at": "2026-08-04T07:35:40+00:00"
+      "updated_at": "2026-09-03T09:20:43+00:00"
     },
     "Germany|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=germany&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:40+00:00"
+      "updated_at": "2026-09-03T09:20:43+00:00"
     },
     "USSR|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=ussr&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:41+00:00"
+      "updated_at": "2026-09-03T09:20:44+00:00"
     },
     "Britain|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=britain&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:41+00:00"
+      "updated_at": "2026-09-03T09:20:44+00:00"
     },
     "Japan|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=japan&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:42+00:00"
+      "updated_at": "2026-09-03T09:20:45+00:00"
     },
     "China|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=china&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:42+00:00"
+      "updated_at": "2026-09-03T09:20:46+00:00"
     },
     "Italy|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=italy&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:43+00:00"
+      "updated_at": "2026-09-03T09:20:46+00:00"
     },
     "France|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=france&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:43+00:00"
+      "updated_at": "2026-09-03T09:20:47+00:00"
     },
     "Sweden|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=sweden&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:44+00:00"
+      "updated_at": "2026-09-03T09:20:47+00:00"
     },
     "Israel|coastal": {
       "count": 0,
       "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?t_c=israel&v=t; matched ids=0; all-page fallback: HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t; matched ids=0",
-      "updated_at": "2026-08-04T07:35:44+00:00"
+      "updated_at": "2026-09-03T09:20:47+00:00"
     }
   }
 }

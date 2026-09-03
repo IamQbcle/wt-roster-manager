@@ -2049,15 +2049,6 @@
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
-    "fw_189c_0": {
-      "placement": "right",
-      "rank": "I",
-      "nation": "Germany",
-      "class": "air",
-      "visibleName": "Fw 189 C",
-      "source": "api/status+raw-api-status",
-      "page": "aviation"
-    },
     "bf-109e-1": {
       "placement": "left",
       "rank": "II",
@@ -2247,24 +2238,6 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
-    "he-111h-6": {
-      "placement": "left",
-      "rank": "II",
-      "nation": "Germany",
-      "class": "air",
-      "visibleName": "He 111 H-6",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "he-111h-16_winter": {
-      "placement": "left",
-      "rank": "II",
-      "nation": "Germany",
-      "class": "air",
-      "visibleName": "He 111 H-16",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
     "me-410a-1_u4": {
       "placement": "left",
       "rank": "II",
@@ -2283,6 +2256,24 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "he-111h-6": {
+      "placement": "left",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "He 111 H-6",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "he-111h-16_winter": {
+      "placement": "left",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "He 111 H-16",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
     "he_112b_1": {
       "placement": "right",
       "rank": "II",
@@ -2292,13 +2283,13 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "wellington_mk1c_luftwaffe": {
+    "fw_189c_0": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Wellington Mk Ic",
-      "source": "api/status+wiki-tree-marker+raw-api-status",
+      "visibleName": "Fw 189 C",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "il_2_1942_luftwaffe": {
@@ -2310,13 +2301,13 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "he_112b_2": {
+    "wellington_mk1c_luftwaffe": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "He 112 B-2/U2",
-      "source": "api/status+raw-api-status",
+      "visibleName": "Wellington Mk Ic",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
     "bf_109t_2": {
@@ -2328,13 +2319,13 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "h-75a-2_finland": {
+    "he_112b_2": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Hawk H-75A-2",
-      "source": "api/status+wiki-tree-marker+raw-api-status",
+      "visibleName": "He 112 B-2/U2",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "yak-1b_luftwaffe": {
@@ -2346,13 +2337,13 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "bf-109e-7": {
+    "h-75a-2_finland": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Bf 109 E-7/U2",
-      "source": "api/status+raw-api-status",
+      "visibleName": "Hawk H-75A-2",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
     "bv-238": {
@@ -2361,6 +2352,15 @@
       "nation": "Germany",
       "class": "air",
       "visibleName": "BV 238",
+      "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "bf-109e-7": {
+      "placement": "right",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "Bf 109 E-7/U2",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -10051,15 +10051,6 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
-    "so_4050_vautour_2n_late": {
-      "placement": "left",
-      "rank": "V",
-      "nation": "France",
-      "class": "air",
-      "visibleName": "S.O.4050 Vautour IIN (Late)",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
     "f-84g_france": {
       "placement": "left",
       "rank": "V",
@@ -10193,15 +10184,6 @@
       "class": "air",
       "visibleName": "Etendard IVM",
       "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "so_4050_vautour_2n": {
-      "placement": "right",
-      "rank": "VI",
-      "nation": "France",
-      "class": "air",
-      "visibleName": "S.O.4050 Vautour IIN",
-      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "f-84f_iaf": {
@@ -11254,15 +11236,6 @@
       "nation": "Israel",
       "class": "air",
       "visibleName": "Vautour IIA",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "so_4050_vautour_2n_iaf": {
-      "placement": "left",
-      "rank": "VI",
-      "nation": "Israel",
-      "class": "air",
-      "visibleName": "Vautour IIN",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -17007,12 +16980,12 @@
       "page": "ground"
     },
     "uk_fv107_scimitar_mk2": {
-      "placement": "left",
+      "placement": "right",
       "rank": "VI",
       "nation": "Britain",
       "class": "ground",
       "visibleName": "Scimitar Mk.2",
-      "source": "wiki-tree-left",
+      "source": "api/status+raw-api-status",
       "page": "ground"
     },
     "uk_khalid": {
@@ -17764,15 +17737,6 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "jp_type_5_ho_ri_production": {
-      "placement": "left",
-      "rank": "V",
-      "nation": "Japan",
-      "class": "ground",
-      "visibleName": "Ho-Ri Production",
-      "source": "wiki-tree-left",
-      "page": "ground"
-    },
     "jp_type_75_mlrs": {
       "placement": "right",
       "rank": "V",
@@ -17780,6 +17744,15 @@
       "class": "ground",
       "visibleName": "Type 75 MLRS",
       "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "jp_type_5_ho_ri_production": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Japan",
+      "class": "ground",
+      "visibleName": "Ho-Ri Production",
+      "source": "wiki-tree-left",
       "page": "ground"
     },
     "jp_type_74_red_star": {
@@ -24327,6 +24300,15 @@
       "source": "api/status+raw-api-status",
       "page": "ships"
     },
+    "ussr_battleship_oktyabrskaya_revolutsiya": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "USSR",
+      "class": "bluewater",
+      "visibleName": "Oktyabrskaya Revolutsiya",
+      "source": "wiki-tree-left",
+      "page": "ships"
+    },
     "ussr_battleship_novorossiysk": {
       "placement": "left",
       "rank": "VI",
@@ -25794,6 +25776,15 @@
       "source": "wiki-tree-left",
       "page": "boats"
     },
+    "germ_vs10_hydrofoil": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "Germany",
+      "class": "coastal",
+      "visibleName": "VS-10",
+      "source": "wiki-tree-left",
+      "page": "boats"
+    },
     "germ_pr_131": {
       "placement": "left",
       "rank": "III",
@@ -25839,12 +25830,12 @@
       "source": "api/status+raw-api-status",
       "page": "boats"
     },
-    "germ_vs10_hydrofoil": {
+    "germ_mz_1": {
       "placement": "left",
       "rank": "IV",
       "nation": "Germany",
       "class": "coastal",
-      "visibleName": "VS-10",
+      "visibleName": "MZ1",
       "source": "wiki-tree-left",
       "page": "boats"
     },
@@ -25866,12 +25857,12 @@
       "source": "wiki-tree-left",
       "page": "boats"
     },
-    "germ_mz_1": {
+    "germ_minelayer_drache": {
       "placement": "left",
       "rank": "IV",
       "nation": "Germany",
       "class": "coastal",
-      "visibleName": "MZ1",
+      "visibleName": "Drache",
       "source": "wiki-tree-left",
       "page": "boats"
     },
@@ -25890,15 +25881,6 @@
       "nation": "Germany",
       "class": "coastal",
       "visibleName": "Schütze",
-      "source": "wiki-tree-left",
-      "page": "boats"
-    },
-    "germ_minelayer_drache": {
-      "placement": "left",
-      "rank": "IV",
-      "nation": "Germany",
-      "class": "coastal",
-      "visibleName": "Drache",
       "source": "wiki-tree-left",
       "page": "boats"
     },
@@ -26145,6 +26127,15 @@
       "source": "wiki-tree-left",
       "page": "boats"
     },
+    "ussr_pr_123k": {
+      "placement": "left",
+      "rank": "II",
+      "nation": "USSR",
+      "class": "coastal",
+      "visibleName": "Pr.123K",
+      "source": "wiki-tree-left",
+      "page": "boats"
+    },
     "ussr_pr_123k_hydrofoils": {
       "placement": "right",
       "rank": "II",
@@ -26181,12 +26172,12 @@
       "source": "api/status+raw-api-status",
       "page": "boats"
     },
-    "ussr_pr_123k": {
+    "ussr_pr_1204_late": {
       "placement": "left",
       "rank": "III",
       "nation": "USSR",
       "class": "coastal",
-      "visibleName": "Pr.123K",
+      "visibleName": "Pr.1204 late",
       "source": "wiki-tree-left",
       "page": "boats"
     },
@@ -26205,15 +26196,6 @@
       "nation": "USSR",
       "class": "coastal",
       "visibleName": "Pr.191",
-      "source": "wiki-tree-left",
-      "page": "boats"
-    },
-    "ussr_pr_1204_late": {
-      "placement": "left",
-      "rank": "III",
-      "nation": "USSR",
-      "class": "coastal",
-      "visibleName": "Pr.1204 late",
       "source": "wiki-tree-left",
       "page": "boats"
     },
@@ -27488,6 +27470,15 @@
       "nation": "Italy",
       "class": "air",
       "visibleName": "RE-2000-GA-EP",
+      "page": "raw-api",
+      "placement": "right",
+      "source": "raw-api-status"
+    },
+    "so_4050_vautour_2n": {
+      "rank": "I",
+      "nation": "France",
+      "class": "air",
+      "visibleName": "SO-4050-VAUTOUR-2N",
       "page": "raw-api",
       "placement": "right",
       "source": "raw-api-status"

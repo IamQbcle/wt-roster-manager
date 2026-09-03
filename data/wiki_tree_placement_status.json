@@ -17,8 +17,8 @@
       "blocks": 10
     },
     "ships": {
-      "reason": "HTTP 200 lines=1111 via requests url=https://wiki.warthunder.com/ships?v=t",
-      "lines": 1111,
+      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t",
+      "lines": 1112,
       "blocks": 7
     },
     "boats": {
@@ -28,5 +28,5 @@
     }
   },
   "oldWikiSpecialCount": 0,
-  "updated_at": "2026-08-04T07:35:14+00:00"
+  "updated_at": "2026-09-03T09:20:19+00:00"
 }

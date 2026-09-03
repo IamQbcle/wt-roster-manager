@@ -87,7 +87,7 @@ class Handler(SimpleHTTPRequestHandler):
         url = 'https://warthunder.com/en/game/changelog/'
         try:
             req = urllib.request.Request(url, headers={
-                'User-Agent': 'WT-Roster-Manager/3.86 (+local version check)',
+                'User-Agent': 'WT-Roster-Manager/3.87 (+local version check)',
                 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             })
             with urllib.request.urlopen(req, timeout=12) as resp:

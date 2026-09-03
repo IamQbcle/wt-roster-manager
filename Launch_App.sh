@@ -12,7 +12,7 @@ if [ $? -ne 0 ]; then echo "Python 3.9+ is required."; exit 1; fi
 $PYTHON_CMD scripts/local_server.py &
 SERVER_PID=$!
 sleep 2
-URL="http://127.0.0.1:8765/index.html?v=3.86"
+URL="http://127.0.0.1:8765/index.html?v=3.87"
 if command -v xdg-open >/dev/null 2>&1; then xdg-open "$URL" >/dev/null 2>&1 || true; elif command -v open >/dev/null 2>&1; then open "$URL" >/dev/null 2>&1 || true; else echo "Open: $URL"; fi
 echo "WT Roster Local Server PID: $SERVER_PID"
 echo "Press Ctrl+C to stop the server."

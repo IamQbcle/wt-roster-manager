@@ -1,6 +1,0 @@
-{
-  "schema": "wt-roster-availability-candidates",
-  "disabled": true,
-  "items": [],
-  "notes": "News/store availability scanner removed in v3.52; availability changes are curated manually in availability_overrides.json."
-}

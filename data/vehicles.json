@@ -4735,9 +4735,9 @@
     "br": {
       "ab": 4.0,
       "rb": 4.0,
-      "sb": 4.3,
-      "ground_rb": 4.3,
-      "ground_sb": 4.3
+      "sb": 4.0,
+      "ground_rb": 4.0,
+      "ground_sb": 4.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -4847,9 +4847,9 @@
     "br": {
       "ab": 4.3,
       "rb": 4.3,
-      "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -4903,9 +4903,9 @@
     "br": {
       "ab": 4.3,
       "rb": 4.3,
-      "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -4931,9 +4931,9 @@
     "br": {
       "ab": 4.3,
       "rb": 4.3,
-      "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -4959,9 +4959,9 @@
     "br": {
       "ab": 4.3,
       "rb": 4.3,
-      "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -4987,9 +4987,9 @@
     "br": {
       "ab": 4.3,
       "rb": 4.3,
-      "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -5043,9 +5043,9 @@
     "br": {
       "ab": 4.3,
       "rb": 4.3,
-      "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "sb": 4.3,
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8049,8 +8049,8 @@
       "ab": 3.0,
       "rb": 3.0,
       "sb": 2.7,
-      "ground_rb": 2.7,
-      "ground_sb": 2.7
+      "ground_rb": 3.0,
+      "ground_sb": 3.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8134,8 +8134,8 @@
       "ab": 3.7,
       "rb": 4.0,
       "sb": 3.7,
-      "ground_rb": 3.7,
-      "ground_sb": 3.7
+      "ground_rb": 4.0,
+      "ground_sb": 4.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8162,8 +8162,8 @@
       "ab": 3.7,
       "rb": 4.0,
       "sb": 3.7,
-      "ground_rb": 3.7,
-      "ground_sb": 3.7
+      "ground_rb": 4.0,
+      "ground_sb": 4.0
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8387,8 +8387,8 @@
       "ab": 4.3,
       "rb": 4.3,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 4.3,
+      "ground_sb": 4.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8415,8 +8415,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8639,8 +8639,8 @@
       "ab": 5.0,
       "rb": 5.0,
       "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "ground_rb": 5.0,
+      "ground_sb": 5.0
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -8667,8 +8667,8 @@
       "ab": 5.0,
       "rb": 5.0,
       "sb": 4.7,
-      "ground_rb": 4.7,
-      "ground_sb": 4.7
+      "ground_rb": 5.0,
+      "ground_sb": 5.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -9060,7 +9060,7 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.0,
-      "ground_rb": 6.3,
+      "ground_rb": 6.0,
       "ground_sb": 6.0
     },
     "status": "Обычная",
@@ -9088,8 +9088,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.7,
-      "ground_rb": 6.3,
-      "ground_sb": 6.7
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -9116,8 +9116,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -9200,8 +9200,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -9797,11 +9797,12 @@
     "url": "",
     "local_image": "assets/vehicles/slots/uk_fv107_scimitar_mk2.png",
     "search": "uk_fv107_scimitar_mk2 Scimitar Mk.2 Scimitar Mk.2 Fv107-Scimitar-Mk2 Britain ground ЛТ Light tank light_tank",
-    "treePlacement": "left",
-    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
+    "treePlacement": "right",
+    "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
+    "market_available": true,
     "availability": "unavailable",
-    "availability_reason": "Strike of the Scimitar event reward; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Strike of the Scimitar event reward; owner-only/unavailable in the stable database."
   },
   {
     "id": "uk_chieftain_marksman",
@@ -13565,7 +13566,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "VIII",
     "availability": "unavailable",
-    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."
   },
   {
     "id": "j_8f",
@@ -14450,8 +14451,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -14925,8 +14926,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -14953,8 +14954,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -14981,8 +14982,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -15065,8 +15066,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -15206,8 +15207,8 @@
       "ab": 8.0,
       "rb": 8.0,
       "sb": 7.7,
-      "ground_rb": 7.7,
-      "ground_sb": 7.7
+      "ground_rb": 8.0,
+      "ground_sb": 8.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -15487,8 +15488,8 @@
       "ab": 8.0,
       "rb": 8.3,
       "sb": 8.0,
-      "ground_rb": 8.0,
-      "ground_sb": 8.0
+      "ground_rb": 8.3,
+      "ground_sb": 8.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -15684,8 +15685,8 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.0,
-      "ground_rb": 9.0,
-      "ground_sb": 9.0
+      "ground_rb": 9.3,
+      "ground_sb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -17650,7 +17651,7 @@
       "rb": 2.7,
       "sb": 2.3,
       "ground_rb": 2.7,
-      "ground_sb": 2.3
+      "ground_sb": 2.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -18975,8 +18976,7 @@
     "local_image": "assets/vehicles/slots/so_4050_vautour_2n_late.png",
     "search": "so_4050_vautour_2n_late S.O.4050 Vautour IIN (Late) S.O.4050 Vautour IIN (Late) So-4050-Vautour-2n-Late France air Истреб. Fighter fighter",
     "treePlacement": "left",
-    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
-    "treeRank": "V",
+    "treePlacementSource": "+raw-api-ordinary-guard",
     "availability": "available"
   },
   {
@@ -19342,7 +19342,7 @@
     "search": "so_4050_vautour_2n S.O.4050 Vautour IIN S.O.4050 Vautour IIN So-4050-Vautour-2n France air Бомбер Bomber bomber",
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
-    "treeRank": "VI",
+    "treeRank": "I",
     "availability": "unavailable",
     "availability_reason": "Temporary event sale; normally hidden / owner-only."
   },
@@ -21431,9 +21431,9 @@
     "br": {
       "ab": 2.3,
       "rb": 2.3,
-      "sb": 2.7,
-      "ground_rb": 2.7,
-      "ground_sb": 2.7
+      "sb": 2.3,
+      "ground_rb": 2.3,
+      "ground_sb": 2.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -21458,9 +21458,9 @@
     "br": {
       "ab": 3.0,
       "rb": 3.0,
-      "sb": 3.3,
-      "ground_rb": 3.3,
-      "ground_sb": 3.3
+      "sb": 3.0,
+      "ground_rb": 3.0,
+      "ground_sb": 3.0
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -21541,9 +21541,9 @@
     "br": {
       "ab": 3.0,
       "rb": 3.0,
-      "sb": 3.3,
-      "ground_rb": 3.3,
-      "ground_sb": 3.3
+      "sb": 3.0,
+      "ground_rb": 3.0,
+      "ground_sb": 3.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -21732,9 +21732,9 @@
     "br": {
       "ab": 4.0,
       "rb": 4.0,
-      "sb": 4.3,
-      "ground_rb": 4.3,
-      "ground_sb": 4.3
+      "sb": 4.0,
+      "ground_rb": 4.0,
+      "ground_sb": 4.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -22658,8 +22658,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -22686,8 +22686,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -23247,8 +23247,8 @@
       "ab": 6.7,
       "rb": 6.7,
       "sb": 7.0,
-      "ground_rb": 7.0,
-      "ground_sb": 7.0
+      "ground_rb": 6.7,
+      "ground_sb": 6.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -29875,7 +29875,7 @@
       "ground_rb": 11.0,
       "ground_sb": 11.0
     },
-    "status": "Пакетная",
+    "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
     "url": "",
     "local_image": "assets/vehicles/slots/su_22m4_de_wtd61.png",
@@ -31952,9 +31952,9 @@
     "br": {
       "ab": 2.3,
       "rb": 2.3,
-      "sb": 2.7,
-      "ground_rb": 2.7,
-      "ground_sb": 2.7
+      "sb": 2.3,
+      "ground_rb": 2.3,
+      "ground_sb": 2.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -31989,6 +31989,34 @@
     "url": "",
     "local_image": "assets/vehicles/slots/germ_pr_131.png",
     "search": "germ_pr_131 V-990 V-990 Pr-131 Germany coastal Катер Boat boat",
+    "treePlacement": "left",
+    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
+    "treeRank": "III",
+    "availability": "available"
+  },
+  {
+    "id": "germ_vs10_hydrofoil",
+    "name": "VS-10",
+    "nameRu": "VS-10",
+    "nameEn": "VS-10",
+    "nation": "Germany",
+    "class": "coastal",
+    "className": "Малый флот",
+    "role": "Катер",
+    "roleEn": "Boat",
+    "rank": "III",
+    "br": {
+      "ab": 2.7,
+      "rb": 2.7,
+      "sb": 2.7,
+      "ground_rb": 2.7,
+      "ground_sb": 2.7
+    },
+    "status": "Обычная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/germ_vs10_hydrofoil.png",
+    "search": "germ_vs10_hydrofoil VS-10 VS-10 Vs10-Hydrofoil Germany coastal Катер Boat boat",
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "III",
@@ -32104,34 +32132,6 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "IV",
-    "availability": "available"
-  },
-  {
-    "id": "germ_vs10_hydrofoil",
-    "name": "VS-10",
-    "nameRu": "VS-10",
-    "nameEn": "VS-10",
-    "nation": "Germany",
-    "class": "coastal",
-    "className": "Малый флот",
-    "role": "Катер",
-    "roleEn": "Boat",
-    "rank": "III",
-    "br": {
-      "ab": 2.7,
-      "rb": 2.7,
-      "sb": 3.0,
-      "ground_rb": 3.0,
-      "ground_sb": 3.0
-    },
-    "status": "Обычная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/germ_vs10_hydrofoil.png",
-    "search": "germ_vs10_hydrofoil VS-10 VS-10 Vs10-Hydrofoil Germany coastal Катер Boat boat",
-    "treePlacement": "left",
-    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
-    "treeRank": "III",
     "availability": "available"
   },
   {
@@ -33610,8 +33610,8 @@
       "ab": 2.7,
       "rb": 2.7,
       "sb": 3.0,
-      "ground_rb": 3.0,
-      "ground_sb": 3.0
+      "ground_rb": 2.7,
+      "ground_sb": 2.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -33948,8 +33948,8 @@
       "ab": 3.3,
       "rb": 3.3,
       "sb": 3.7,
-      "ground_rb": 3.7,
-      "ground_sb": 3.7
+      "ground_rb": 3.3,
+      "ground_sb": 3.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -34201,8 +34201,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -34229,8 +34229,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -35099,8 +35099,8 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 6.0,
-      "ground_sb": 6.0
+      "ground_rb": 5.7,
+      "ground_sb": 5.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -35379,8 +35379,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -36042,8 +36042,8 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "V",
-    "availability": "unavailable",
-    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+    "availability": "available",
+    "availability_reason": "v3.87 correction: German PzH 2000 is a regular researchable vehicle; do not confuse it with the PzH 2000HU pack."
   },
   {
     "id": "germ_raketenjagdpanzer_2",
@@ -36342,8 +36342,8 @@
       "ab": 8.7,
       "rb": 8.7,
       "sb": 9.0,
-      "ground_rb": 9.0,
-      "ground_sb": 9.0
+      "ground_rb": 8.7,
+      "ground_sb": 8.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -38348,8 +38348,7 @@
     "local_image": "assets/vehicles/slots/so_4050_vautour_2n_iaf.png",
     "search": "so_4050_vautour_2n_iaf Vautour IIN (Израиль) Vautour IIN (Israel) So-4050-Vautour-2n-Iaf Israel air Бомбер Bomber bomber",
     "treePlacement": "left",
-    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
-    "treeRank": "VI",
+    "treePlacementSource": "+raw-api-ordinary-guard",
     "availability": "available"
   },
   {
@@ -38873,8 +38872,8 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 6.0,
-      "ground_sb": 6.0
+      "ground_rb": 5.7,
+      "ground_sb": 5.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -38957,8 +38956,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -40496,7 +40495,7 @@
       "ab": 10.3,
       "rb": 11.7,
       "sb": 10.3,
-      "ground_rb": 11.7,
+      "ground_rb": 11.3,
       "ground_sb": 10.3
     },
     "status": "Обычная",
@@ -41476,7 +41475,7 @@
       "ab": 2.7,
       "rb": 2.7,
       "sb": 2.3,
-      "ground_rb": 2.3,
+      "ground_rb": 2.7,
       "ground_sb": 2.3
     },
     "status": "Обычная",
@@ -41814,8 +41813,8 @@
       "ab": 3.0,
       "rb": 3.0,
       "sb": 3.0,
-      "ground_rb": 2.7,
-      "ground_sb": 2.7
+      "ground_rb": 3.0,
+      "ground_sb": 3.0
     },
     "status": "Пакетная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -41826,7 +41825,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "III",
     "availability": "unavailable",
-    "availability_reason": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Battle Pass Season 24 vehicle; owner-only/unavailable in the stable database."
   },
   {
     "id": "me_210ca_1_hungary",
@@ -46508,8 +46507,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -46536,8 +46535,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -46873,8 +46872,8 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 6.0,
-      "ground_sb": 6.0
+      "ground_rb": 5.7,
+      "ground_sb": 5.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -46913,7 +46912,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "IV",
     "availability": "unavailable",
-    "availability_reason": "Battle Pass Season 24 vehicle; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Battle Pass Season 24 vehicle; owner-only/unavailable in the stable database."
   },
   {
     "id": "it_leopard_bofors",
@@ -46958,8 +46957,8 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 6.0,
-      "ground_sb": 6.0
+      "ground_rb": 5.7,
+      "ground_sb": 5.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -47438,7 +47437,7 @@
       "ground_rb": 7.7,
       "ground_sb": 7.7
     },
-    "status": "Пакетная",
+    "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
     "url": "",
     "local_image": "assets/vehicles/slots/it_pzh_2000_hu.png",
@@ -51953,7 +51952,7 @@
       "ground_rb": 10.7,
       "ground_sb": 10.7
     },
-    "status": "Пакетная",
+    "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
     "url": "",
     "local_image": "assets/vehicles/slots/hawk_209_indonesia.png",
@@ -51961,8 +51960,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VII",
-    "availability": "unavailable",
-    "availability_reason": "Owner-only / hidden from the regular client tree. Pack/platform-limited availability; absent from current PC client."
+    "availability": "available",
+    "availability_reason": "v3.87: returned to sale after the Hawk first-flight event and remains available at full price."
   },
   {
     "id": "a_7e_thailand",
@@ -53044,9 +53043,9 @@
     "br": {
       "ab": 4.7,
       "rb": 4.7,
-      "sb": 5.0,
-      "ground_rb": 5.0,
-      "ground_sb": 5.0
+      "sb": 4.7,
+      "ground_rb": 4.7,
+      "ground_sb": 4.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -53072,9 +53071,9 @@
     "br": {
       "ab": 4.7,
       "rb": 4.7,
-      "sb": 5.0,
-      "ground_rb": 5.0,
-      "ground_sb": 5.0
+      "sb": 4.7,
+      "ground_rb": 4.7,
+      "ground_sb": 4.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -53184,9 +53183,9 @@
     "br": {
       "ab": 4.7,
       "rb": 4.7,
-      "sb": 5.0,
-      "ground_rb": 5.0,
-      "ground_sb": 5.0
+      "sb": 4.7,
+      "ground_rb": 4.7,
+      "ground_sb": 4.7
     },
     "status": "Пакетная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -55658,8 +55657,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -56229,7 +56228,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "IV",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "v3.87: no longer available for purchase from 2026-09-01; owner-only."
   },
   {
     "id": "jp_type_75_mlrs",
@@ -56285,7 +56285,8 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "V",
-    "availability": "available"
+    "availability": "unavailable",
+    "availability_reason": "v3.87: removed from the Japanese research tree on 2026-09-01; kept only for owners / players with research progress."
   },
   {
     "id": "jp_m47_patton_II",
@@ -56482,7 +56483,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "V",
     "availability": "unavailable",
-    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players."
+    "availability_reason": "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."
   },
   {
     "id": "jp_type_87",
@@ -58206,7 +58207,7 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 3.7,
-      "ground_rb": 3.7,
+      "ground_rb": 3.3,
       "ground_sb": 3.7
     },
     "status": "Обычная",
@@ -60787,7 +60788,7 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.0,
-      "ground_rb": 6.3,
+      "ground_rb": 6.0,
       "ground_sb": 6.0
     },
     "status": "Обычная",
@@ -60815,8 +60816,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -65991,7 +65992,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "V",
     "availability": "unavailable",
-    "availability_reason": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Temporary USA 250th anniversary sale; normally owner-only/unavailable."
   },
   {
     "id": "f2h-2",
@@ -67507,7 +67508,7 @@
       "ground_rb": 11.7,
       "ground_sb": 12.7
     },
-    "status": "Пакетная",
+    "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
     "url": "",
     "local_image": "assets/vehicles/slots/f_20a.png",
@@ -67515,8 +67516,8 @@
     "treePlacement": "right",
     "treePlacementSource": "raw-api-status",
     "treeRank": "VIII",
-    "availability": "unavailable",
-    "availability_reason": "F-20A Tigershark Pack was listed among packs retired after the May Sale 2026; treat as owner-only unless marked owned."
+    "availability": "available",
+    "availability_reason": "v3.87: returned to sale after the F-20A first-flight event and remains available at full price."
   },
   {
     "id": "fa_18a",
@@ -68245,7 +68246,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "III",
     "availability": "unavailable",
-    "availability_reason": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Temporary USA 250th anniversary pack; normally owner-only/unavailable."
   },
   {
     "id": "us_destroyer_fletcher_cowell",
@@ -69974,9 +69975,9 @@
     "br": {
       "ab": 2.7,
       "rb": 2.7,
-      "sb": 3.0,
-      "ground_rb": 3.0,
-      "ground_sb": 3.0
+      "sb": 2.7,
+      "ground_rb": 2.7,
+      "ground_sb": 2.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -70030,9 +70031,9 @@
     "br": {
       "ab": 2.7,
       "rb": 2.7,
-      "sb": 3.0,
-      "ground_rb": 3.0,
-      "ground_sb": 3.0
+      "sb": 2.7,
+      "ground_rb": 2.7,
+      "ground_sb": 2.7
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -70058,9 +70059,9 @@
     "br": {
       "ab": 2.7,
       "rb": 2.7,
-      "sb": 3.0,
-      "ground_rb": 3.0,
-      "ground_sb": 3.0
+      "sb": 2.7,
+      "ground_rb": 2.7,
+      "ground_sb": 2.7
     },
     "status": "Пакетная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -71128,8 +71129,8 @@
       "ab": 3.0,
       "rb": 3.0,
       "sb": 2.7,
-      "ground_rb": 2.7,
-      "ground_sb": 2.7
+      "ground_rb": 3.0,
+      "ground_sb": 3.0
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -71495,8 +71496,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -71523,8 +71524,8 @@
       "ab": 3.7,
       "rb": 3.7,
       "sb": 4.0,
-      "ground_rb": 4.0,
-      "ground_sb": 4.0
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -72251,8 +72252,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -72307,8 +72308,8 @@
       "ab": 6.7,
       "rb": 6.7,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.7,
+      "ground_sb": 6.7
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -72459,7 +72460,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "IV",
     "availability": "unavailable",
-    "availability_reason": "Temporary USA 250th anniversary sale; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Temporary USA 250th anniversary sale; normally owner-only/unavailable."
   },
   {
     "id": "us_m50_ontos",
@@ -73541,8 +73542,8 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.0,
-      "ground_rb": 9.0,
-      "ground_sb": 9.0
+      "ground_rb": 9.3,
+      "ground_sb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -73597,8 +73598,8 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.0,
-      "ground_rb": 9.0,
-      "ground_sb": 9.0
+      "ground_rb": 9.3,
+      "ground_sb": 9.3
     },
     "status": "Пакетная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -73609,7 +73610,7 @@
     "treePlacementSource": "raw-api-status",
     "treeRank": "VI",
     "availability": "unavailable",
-    "availability_reason": "Temporary USA 250th anniversary pack; treated as owner-only/unavailable in the stable database."
+    "availability_reason": "Temporary USA 250th anniversary pack; normally owner-only/unavailable."
   },
   {
     "id": "us_xm_803",
@@ -73796,8 +73797,8 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.7,
-      "ground_sb": 9.7
+      "ground_rb": 9.3,
+      "ground_sb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -75736,7 +75737,7 @@
       "ab": 2.0,
       "rb": 1.7,
       "sb": 1.7,
-      "ground_rb": 2.0,
+      "ground_rb": 1.7,
       "ground_sb": 1.7
     },
     "status": "Обычная",
@@ -81800,6 +81801,35 @@
     "availability": "available"
   },
   {
+    "id": "ussr_battleship_oktyabrskaya_revolutsiya",
+    "name": "Октябрьская Революция",
+    "nameRu": "Октябрьская Революция",
+    "nameEn": "Oktyabrskaya Revolutsiya",
+    "nation": "USSR",
+    "class": "bluewater",
+    "className": "Большой флот",
+    "role": "ЛК",
+    "roleEn": "Battleship",
+    "rank": "V",
+    "br": {
+      "ab": 6.7,
+      "rb": 6.7,
+      "sb": 6.7,
+      "ground_rb": 6.7,
+      "ground_sb": 6.7
+    },
+    "status": "Акционная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/ussr_battleship_oktyabrskaya_revolutsiya.png",
+    "search": "ussr_battleship_oktyabrskaya_revolutsiya Октябрьская Революция Октябрьская Революция Oktyabrskaya Revolutsiya Battleship USSR bluewater ЛК Battleship Акционная",
+    "treePlacement": "right",
+    "treePlacementSource": "v3.87-curated-event",
+    "treeRank": "V",
+    "availability": "unavailable",
+    "availability_reason": "v3.87: Guardian of the Baltic Sea event reward; treated as owner-only/unavailable by default."
+  },
+  {
     "id": "ussr_battleship_parizhskaya_kommuna",
     "name": "Парижская коммуна",
     "nameRu": "Парижская коммуна",
@@ -82488,15 +82518,43 @@
     "br": {
       "ab": 2.0,
       "rb": 2.0,
-      "sb": 2.3,
-      "ground_rb": 2.3,
-      "ground_sb": 2.3
+      "sb": 2.0,
+      "ground_rb": 2.0,
+      "ground_sb": 2.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
     "url": "",
     "local_image": "assets/vehicles/slots/ussr_pr_123bis.png",
     "search": "ussr_pr_123bis Пр.123 бис Pr.123-bis Pr-123bis USSR coastal Катер Boat boat",
+    "treePlacement": "left",
+    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
+    "treeRank": "II",
+    "availability": "available"
+  },
+  {
+    "id": "ussr_pr_123k",
+    "name": "Пр.123К",
+    "nameRu": "Пр.123К",
+    "nameEn": "Pr.123K",
+    "nation": "USSR",
+    "class": "coastal",
+    "className": "Малый флот",
+    "role": "Катер",
+    "roleEn": "Boat",
+    "rank": "II",
+    "br": {
+      "ab": 2.0,
+      "rb": 2.0,
+      "sb": 2.0,
+      "ground_rb": 2.0,
+      "ground_sb": 2.0
+    },
+    "status": "Обычная",
+    "source": "WT Vehicles API + RU/EN Wiki unit pages",
+    "url": "",
+    "local_image": "assets/vehicles/slots/ussr_pr_123k.png",
+    "search": "ussr_pr_123k Пр.123К Pr.123K Pr-123k USSR coastal Катер Boat boat",
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "II",
@@ -82516,9 +82574,9 @@
     "br": {
       "ab": 2.0,
       "rb": 2.0,
-      "sb": 2.3,
-      "ground_rb": 2.3,
-      "ground_sb": 2.3
+      "sb": 2.0,
+      "ground_rb": 2.0,
+      "ground_sb": 2.0
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -82556,34 +82614,6 @@
     "treePlacement": "left",
     "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
     "treeRank": "III",
-    "availability": "available"
-  },
-  {
-    "id": "ussr_pr_123k",
-    "name": "Пр.123К",
-    "nameRu": "Пр.123К",
-    "nameEn": "Pr.123K",
-    "nation": "USSR",
-    "class": "coastal",
-    "className": "Малый флот",
-    "role": "Катер",
-    "roleEn": "Boat",
-    "rank": "II",
-    "br": {
-      "ab": 2.0,
-      "rb": 2.0,
-      "sb": 2.3,
-      "ground_rb": 2.3,
-      "ground_sb": 2.3
-    },
-    "status": "Обычная",
-    "source": "WT Vehicles API + RU/EN Wiki unit pages",
-    "url": "",
-    "local_image": "assets/vehicles/slots/ussr_pr_123k.png",
-    "search": "ussr_pr_123k Пр.123К Pr.123K Pr-123k USSR coastal Катер Boat boat",
-    "treePlacement": "left",
-    "treePlacementSource": "wiki-tree-left+raw-api-ordinary-guard",
-    "treeRank": "II",
     "availability": "available"
   },
   {
@@ -85102,8 +85132,8 @@
       "ab": 4.3,
       "rb": 3.7,
       "sb": 4.3,
-      "ground_rb": 4.0,
-      "ground_sb": 4.3
+      "ground_rb": 3.7,
+      "ground_sb": 3.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -85778,8 +85808,8 @@
       "ab": 5.7,
       "rb": 5.7,
       "sb": 6.0,
-      "ground_rb": 6.0,
-      "ground_sb": 6.0
+      "ground_rb": 5.7,
+      "ground_sb": 5.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -85834,8 +85864,8 @@
       "ab": 6.0,
       "rb": 6.3,
       "sb": 6.0,
-      "ground_rb": 6.0,
-      "ground_sb": 6.0
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -85890,8 +85920,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -85974,8 +86004,8 @@
       "ab": 6.0,
       "rb": 6.0,
       "sb": 6.3,
-      "ground_rb": 6.3,
-      "ground_sb": 6.3
+      "ground_rb": 6.0,
+      "ground_sb": 6.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -86199,8 +86229,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -86228,8 +86258,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -86256,8 +86286,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -86284,8 +86314,8 @@
       "ab": 6.3,
       "rb": 6.3,
       "sb": 6.7,
-      "ground_rb": 6.7,
-      "ground_sb": 6.7
+      "ground_rb": 6.3,
+      "ground_sb": 6.3
     },
     "status": "Премиум",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -86340,8 +86370,8 @@
       "ab": 6.7,
       "rb": 6.7,
       "sb": 7.0,
-      "ground_rb": 7.0,
-      "ground_sb": 7.0
+      "ground_rb": 6.7,
+      "ground_sb": 6.7
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -86452,8 +86482,8 @@
       "ab": 7.0,
       "rb": 7.0,
       "sb": 7.3,
-      "ground_rb": 7.3,
-      "ground_sb": 7.3
+      "ground_rb": 7.0,
+      "ground_sb": 7.0
     },
     "status": "Полковая",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -87659,8 +87689,8 @@
       "ab": 9.3,
       "rb": 9.3,
       "sb": 9.7,
-      "ground_rb": 9.7,
-      "ground_sb": 9.7
+      "ground_rb": 9.3,
+      "ground_sb": 9.3
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -87883,8 +87913,8 @@
       "ab": 10.7,
       "rb": 11.0,
       "sb": 10.7,
-      "ground_rb": 10.7,
-      "ground_sb": 10.7
+      "ground_rb": 11.0,
+      "ground_sb": 11.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -88391,8 +88421,8 @@
       "ab": 12.0,
       "rb": 12.0,
       "sb": 12.3,
-      "ground_rb": 12.3,
-      "ground_sb": 12.3
+      "ground_rb": 12.0,
+      "ground_sb": 12.0
     },
     "status": "Обычная",
     "source": "WT Vehicles API + RU/EN Wiki unit pages",
@@ -89012,12 +89042,12 @@
     "source": "Curated v3.85 supplement: WT Vehicles API raw data + official War Thunder news/Wiki verification",
     "url": "",
     "local_image": "assets/vehicles/slots/uk_mark_v.png",
+    "search": "uk_mark_v Mark V Mark V Mark V mark-v Britain ground СТ Medium tank medium-tank",
     "treePlacement": "right",
     "treePlacementSource": "v3.85-curated-supplement",
     "treeRank": "I",
     "availability": "unavailable",
-    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event.",
-    "search": "uk_mark_v Mark V Mark V Mark V mark-v Britain ground СТ Medium tank medium-tank"
+    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
   },
   {
     "id": "ussr_garford_putilov",
@@ -89041,12 +89071,12 @@
     "source": "Curated v3.85 supplement: WT Vehicles API raw data + official War Thunder news/Wiki verification",
     "url": "",
     "local_image": "assets/vehicles/slots/ussr_garford_putilov.png",
+    "search": "ussr_garford_putilov Garford Garford Garford garford USSR ground ЛТ Light tank light-tank",
     "treePlacement": "right",
     "treePlacementSource": "v3.85-curated-supplement",
     "treeRank": "I",
     "availability": "unavailable",
-    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event.",
-    "search": "ussr_garford_putilov Garford Garford Garford garford USSR ground ЛТ Light tank light-tank"
+    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
   },
   {
     "id": "germ_a7v",
@@ -89070,12 +89100,12 @@
     "source": "Curated v3.85 supplement: WT Vehicles API raw data + official War Thunder news/Wiki verification",
     "url": "",
     "local_image": "assets/vehicles/slots/germ_a7v.png",
+    "search": "germ_a7v A7V A7V A7V a7v Germany ground СТ Medium tank medium-tank",
     "treePlacement": "right",
     "treePlacementSource": "v3.85-curated-supplement",
     "treeRank": "I",
     "availability": "unavailable",
-    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event.",
-    "search": "germ_a7v A7V A7V A7V a7v Germany ground СТ Medium tank medium-tank"
+    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
   },
   {
     "id": "germ_beutepanzer_mk_iv",
@@ -89099,12 +89129,12 @@
     "source": "Curated v3.85 supplement: WT Vehicles API raw data + official War Thunder news/Wiki verification",
     "url": "",
     "local_image": "assets/vehicles/slots/germ_beutepanzer_mk_iv.png",
+    "search": "germ_beutepanzer_mk_iv Beutepanzer IV Beutepanzer IV Beutepanzer IV beutepanzer-iv Germany ground СТ Medium tank medium-tank",
     "treePlacement": "right",
     "treePlacementSource": "v3.85-curated-supplement",
     "treeRank": "I",
     "availability": "unavailable",
-    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event.",
-    "search": "germ_beutepanzer_mk_iv Beutepanzer IV Beutepanzer IV Beutepanzer IV beutepanzer-iv Germany ground СТ Medium tank medium-tank"
+    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
   },
   {
     "id": "germ_garford_putilov",
@@ -89128,12 +89158,12 @@
     "source": "Curated v3.85 supplement: WT Vehicles API raw data + official War Thunder news/Wiki verification",
     "url": "",
     "local_image": "assets/vehicles/slots/germ_garford_putilov.png",
+    "search": "germ_garford_putilov Garford-Beute Garford-Beute Garford-Beute garford-beute Germany ground ЛТ Light tank light-tank",
     "treePlacement": "right",
     "treePlacementSource": "v3.85-curated-supplement",
     "treeRank": "I",
     "availability": "unavailable",
-    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event.",
-    "search": "germ_garford_putilov Garford-Beute Garford-Beute Garford-Beute garford-beute Germany ground ЛТ Light tank light-tank"
+    "availability_reason": "The Great War 2025 event reward; owner-only/unavailable for new players after the event."
   },
   {
     "id": "us_m1a1_hc_senrai_maidens",

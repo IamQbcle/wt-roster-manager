@@ -1,6 +1,111 @@
 {
-  "current_version": "v3.85 / WWI + Senrai curated supplement",
+  "current_version": "v3.87-data-hotfix-2026-09-03",
   "patches": [
+    {
+      "version": "v3.87-data-hotfix-2026-09-03",
+      "date": "2026-09-03",
+      "title_i18n": {
+        "en": "v3.87: September data refresh and availability fixes",
+        "ru": "v3.87: сентябрьское обновление данных и правки доступности"
+      },
+      "source_url": "https://warthunder.ru/ru/news/17824-sobytie-polucite-linkor-oktabrskaa-revolucia-v-sobytii-zasitnik-baltijskogo-mora-ru ; https://warthunder.ru/ru/news/17822-vyvod-aponskikh-sau-ho-ri-iz-vetki-issledovania-i-iz-prodazi-ru ; https://warthunder.ru/ru/news/17852-akcia-skidka-na-f-20a-k-godovsine-ego-pervogo-poleta-ru ; https://warthunder.ru/ru/news/17843-akcia-pervyj-polet-hawk-indonezijskij-hawk-209-vozvrasaetsa-so-skidkoj-ru",
+      "notes_i18n": {
+        "en": "Adds Oktyabrskaya Revolutsiya from the latest API/Wiki refresh and applies curated availability corrections for PzH 2000, Ho-Ri, F-20A and Hawk 209. Preorder and next-major-update vehicles are intentionally not added yet.",
+        "ru": "Добавлена «Октябрьская революция» из свежего API/Wiki-обновления и применены ручные правки доступности для PzH 2000, Ho-Ri, F-20A и Hawk 209. Предзаказы и техника следующего крупного обновления пока намеренно не добавлялись."
+      },
+      "vehicle_changes": [
+        {
+          "unit_id": "ussr_battleship_oktyabrskaya_revolutsiya",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Акционная, unavailable)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USSR",
+          "class": "bluewater",
+          "rank": "V",
+          "status": "Акционная",
+          "name": "Октябрьская Революция",
+          "note": "Added by the latest API/Wiki refresh, then normalized as an event reward / owner-only by default."
+        },
+        {
+          "unit_id": "germ_pzh_2000",
+          "change_type": "availability",
+          "old": "unavailable",
+          "new": "available",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Germany",
+          "class": "ground",
+          "rank": "V",
+          "status": "Обычная",
+          "name": "PzH 2000",
+          "note": "German PzH 2000 is a regular researchable vehicle; corrected after confusing it with the PzH 2000HU pack."
+        },
+        {
+          "unit_id": "jp_type_5_ho_ri_production",
+          "change_type": "availability",
+          "old": "available",
+          "new": "unavailable",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "ground",
+          "rank": "V",
+          "status": "Обычная",
+          "name": "Ho-Ri Production",
+          "note": "Removed from the Japanese research tree on 2026-09-01; kept for owners / players with research progress."
+        },
+        {
+          "unit_id": "jp_type_5_ho_ri_prototype",
+          "change_type": "availability",
+          "old": "available",
+          "new": "unavailable",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "ground",
+          "rank": "IV",
+          "status": "Премиум",
+          "name": "Ho-Ri Prototype",
+          "note": "No longer available for purchase from 2026-09-01; owner-only."
+        },
+        {
+          "unit_id": "f_20a",
+          "change_type": "availability",
+          "old": "unavailable",
+          "new": "available",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USA",
+          "class": "air",
+          "rank": "VIII",
+          "status": "Премиум",
+          "name": "F-20A",
+          "note": "Returned to sale and remains available after the first-flight sale."
+        },
+        {
+          "unit_id": "hawk_209_indonesia",
+          "change_type": "availability",
+          "old": "unavailable",
+          "new": "available",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "air",
+          "rank": "VII",
+          "status": "Премиум",
+          "name": "Hawk 209 (Япония)",
+          "note": "Returned to sale and remains available after the Hawk first-flight sale."
+        }
+      ]
+    },
     {
       "version": "v3.85-curated-wwi-senrai-supplement",
       "date": "2026-08-15",
@@ -10038,806 +10143,6 @@
           "rank": "IV",
           "status": "Пакетная",
           "name": "IA.58A Pucara"
-        }
-      ]
-    },
-    {
-      "version": "heavy-cavalry-2026-06-24-manual-br",
-      "date": "2026-06-24",
-      "title": "Heavy Cavalry manual BR/data status update",
-      "source_url": "https://warthunder.ru/ru/game/changelog/current/3150",
-      "notes": "Manual partial data update: matching BR changes for Hawk 209 and Tornado IDS MLU (RET.8); full new-vehicle import pending external API update.",
-      "vehicle_changes": [
-        {
-          "unit_id": "hawk_209_indonesia",
-          "change_type": "br",
-          "old": {
-            "ab": 10.7,
-            "rb": 10.3,
-            "sb": 10.3
-          },
-          "new": {
-            "ab": 11.0,
-            "rb": 10.7,
-            "sb": 10.7,
-            "ground_rb": 10.7,
-            "ground_sb": 10.7
-          },
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "tornado_ids_it_ret8",
-          "change_type": "br",
-          "old": {
-            "ground_rb": 11.3
-          },
-          "new": {
-            "ground_rb": 11.7
-          },
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        }
-      ]
-    },
-    {
-      "version": "unknown-2026-06-04",
-      "date": "2026-06-04",
-      "title": "Update unknown-2026-06-04",
-      "source_url": "",
-      "notes": "",
-      "vehicle_changes": [
-        {
-          "unit_id": "fr_trident_class_glaive_p671",
-          "change_type": "removed",
-          "old": "present",
-          "new": "missing",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "ussr_kv_8",
-          "change_type": "status",
-          "old": "Пакетная",
-          "new": "Акционная",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "a6m5ko",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "a_129_a",
-          "change_type": "availability",
-          "old": "Hidden/old Italian premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "attaker_fb2",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "boomerang_mkii",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "buccaneer_s1",
-          "change_type": "availability",
-          "old": "Event/Market aircraft absent from current client tree; only if owned/market-acquired.",
-          "new": "Owner-only / hidden from the regular client tree. Event/Market aircraft absent from current client tree; only if owned/market-acquired.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "cn_t_62",
-          "change_type": "availability",
-          "old": "Hidden/old Chinese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Chinese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "cn_type_69_2a",
-          "change_type": "availability",
-          "old": "Hidden/old Chinese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Chinese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "d_371_hs9",
-          "change_type": "availability",
-          "old": "Hidden/old French pack/event aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "d_520",
-          "change_type": "availability",
-          "old": "Hidden/old British premium/event aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium/event aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "d_521",
-          "change_type": "availability",
-          "old": "Legacy British event aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Legacy British event aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "f-84f_iaf",
-          "change_type": "availability",
-          "old": "Hidden/old French/Israeli premium aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French/Israeli premium aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "f_20a",
-          "change_type": "availability",
-          "old": "available",
-          "new": "unavailable",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "f_20a",
-          "change_type": "availability",
-          "old": null,
-          "new": "F-20A Tigershark Pack was listed among packs retired after the May Sale 2026; treat as owner-only unless marked owned.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "fr_destroyer_le_fantasque_class_le_triomphant",
-          "change_type": "availability",
-          "old": "Hidden/old French naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "fr_lorraine_155",
-          "change_type": "availability",
-          "old": "Hidden/old French pack/event vehicle absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "fr_lvt_bofors",
-          "change_type": "availability",
-          "old": "Hidden/old French pack/event vehicle absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "fr_panhard_ebr_1954",
-          "change_type": "availability",
-          "old": "Hidden/old French pack/event vehicle absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event vehicle absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "fw-190a-5_japan",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "fw-190a-8_france",
-          "change_type": "availability",
-          "old": "Hidden/old French premium aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "germ_pzkpfw_VI_ausf_b_tiger_IIh_sla",
-          "change_type": "availability",
-          "old": "available",
-          "new": "unavailable",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "germ_pzkpfw_VI_ausf_b_tiger_IIh_sla",
-          "change_type": "availability",
-          "old": null,
-          "new": "Normally hidden / temporary-sale premium",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "germ_pzkpfw_V_ersatz_m10",
-          "change_type": "availability",
-          "old": "available",
-          "new": "unavailable",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "germ_pzkpfw_V_ersatz_m10",
-          "change_type": "availability",
-          "old": null,
-          "new": "Festive Quest 2017 event reward / owner-only",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "gladiator_mk2_france",
-          "change_type": "availability",
-          "old": "Legacy British event/hidden aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Legacy British event/hidden aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "gladiator_mk2_silver",
-          "change_type": "availability",
-          "old": "Legacy British event/hidden aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Legacy British event/hidden aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "h-75m_china",
-          "change_type": "availability",
-          "old": "Hidden/old Chinese pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Chinese pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "hawk_209_indonesia",
-          "change_type": "availability",
-          "old": "Pack/platform-limited availability; absent from current PC client.",
-          "new": "Owner-only / hidden from the regular client tree. Pack/platform-limited availability; absent from current PC client.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "hp_12",
-          "change_type": "availability",
-          "old": "Legacy British aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Legacy British aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "hurricane_mk1_late_ep",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "iar_316b",
-          "change_type": "availability",
-          "old": "Hidden/old French premium helicopter absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French premium helicopter absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_41m_turan_2",
-          "change_type": "availability",
-          "old": "Hidden/old Hungarian/Italian pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_44m_zrinyi_1",
-          "change_type": "availability",
-          "old": "Hidden/old Hungarian/Italian pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Hungarian/Italian pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_destroyer_soldati_serie1",
-          "change_type": "availability",
-          "old": "Hidden/old Italian naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_destroyer_soldati_serie1_geniere",
-          "change_type": "availability",
-          "old": "Hidden/old Italian premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_mc_485",
-          "change_type": "availability",
-          "old": "Hidden/old Italian coastal pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian coastal pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_p493_freccia",
-          "change_type": "availability",
-          "old": "Hidden/old Italian coastal pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian coastal pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "it_semovente_m43_105_leoncello",
-          "change_type": "availability",
-          "old": "Hidden/old Italian premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "j2m4_kai",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "j9_early",
-          "change_type": "availability",
-          "old": "Hidden/old Swedish pack aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Swedish pack aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "j_7d",
-          "change_type": "availability",
-          "old": "Pack/premium absent from current client tree; owner-only by default.",
-          "new": "Owner-only / hidden from the regular client tree. Pack/premium absent from current client tree; owner-only by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "jp_destroyer_hayanami",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "jp_destroyer_kiyoshimo",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "jp_destroyer_suzutsuki",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "jp_kusen_tei_13_1942",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese coastal pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese coastal pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "jp_t51a",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese coastal pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese coastal pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "jp_type_3_ka_chi",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese event/pack vehicle absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese event/pack vehicle absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "ki-96",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "late_298d",
-          "change_type": "availability",
-          "old": "Hidden/old French pack/event aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "lightning_f53",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "mb_151c1",
-          "change_type": "availability",
-          "old": "Hidden/old French pack/event aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French pack/event aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "mc-202_d",
-          "change_type": "availability",
-          "old": "Hidden/old Italian pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "mig-21_bison",
-          "change_type": "availability",
-          "old": "Pack/premium absent from current client tree; owner-only by default.",
-          "new": "Owner-only / hidden from the regular client tree. Pack/premium absent from current client tree; owner-only by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "mirage_milan",
-          "change_type": "availability",
-          "old": "Hidden/old French premium aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "ro_57_quadriarma",
-          "change_type": "availability",
-          "old": "Hidden/old Italian pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Italian pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "saab_j29d",
-          "change_type": "availability",
-          "old": "Hidden/old Swedish premium aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Swedish premium aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "saab_j35a",
-          "change_type": "availability",
-          "old": "Hidden/old Swedish premium aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Swedish premium aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "so_4050_vautour_2a_iaf",
-          "change_type": "availability",
-          "old": "Hidden/old French/Israeli pack aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French/Israeli pack aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "so_4050_vautour_2n",
-          "change_type": "availability",
-          "old": "Hidden/old French premium aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "spitfire_lf_mk9c_cw_greece",
-          "change_type": "availability",
-          "old": "Hidden/old Israeli pack aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Israeli pack aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "sw_sav_fm48",
-          "change_type": "availability",
-          "old": "available",
-          "new": "unavailable",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "sw_sav_fm48",
-          "change_type": "availability",
-          "old": null,
-          "new": "SAV 20.12.48 is normally available only during limited-time promotions; do not offer in autopick unless marked owned.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "swordfish_mk2",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "t2_early",
-          "change_type": "availability",
-          "old": "Hidden/old Japanese premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Japanese premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "typhoon_mk1b",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_ac1_sentinel",
-          "change_type": "availability",
-          "old": "Absent from current client tree in user audit; hidden/owner-only by default.",
-          "new": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; hidden/owner-only by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_centurion_mk_3_ss11",
-          "change_type": "availability",
-          "old": "Absent from current client tree in user audit; old pack/premium, owner-only by default.",
-          "new": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; old pack/premium, owner-only by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_centurion_shot_kal_d",
-          "change_type": "availability",
-          "old": "Absent from current client tree in user audit; old pack/premium, owner-only by default.",
-          "new": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; old pack/premium, owner-only by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_destroyer_battle_cadiz",
-          "change_type": "availability",
-          "old": "Hidden/old British naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_destroyer_haida",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_fairmile_d_5001_5029",
-          "change_type": "availability",
-          "old": "Hidden/old British premium absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British premium absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_gay_class_archer",
-          "change_type": "availability",
-          "old": "Hidden/old British naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_higgins_78ft_mtb422",
-          "change_type": "availability",
-          "old": "Hidden/old British naval pack absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old British naval pack absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_m4a5_ram_2",
-          "change_type": "availability",
-          "old": null,
-          "new": "Display as RAM II in the British tree; obtainable current-tree vehicle per user audit.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_tog_2",
-          "change_type": "availability",
-          "old": "Absent from current client tree in user audit; event/owner-only by default.",
-          "new": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; event/owner-only by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "uk_vijayanta",
-          "change_type": "availability",
-          "old": "Absent from current client tree in user audit; treat as owner-only/hidden by default.",
-          "new": "Owner-only / hidden from the regular client tree. Absent from current client tree in user audit; treat as owner-only/hidden by default.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "ussr_kv_8",
-          "change_type": "market_status",
-          "old": null,
-          "new": true,
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "ussr_kv_8",
-          "change_type": "availability",
-          "old": null,
-          "new": "Legend of Victory: KV-8 event reward (May 2026); coupon may be available via Market. Do not treat as a regular pack vehicle.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        },
-        {
-          "unit_id": "vl_myrsky_2_late",
-          "change_type": "availability",
-          "old": "Hidden/old Swedish/Finnish pack aircraft absent from current client tree.",
-          "new": "Owner-only / hidden from the regular client tree. Hidden/old Swedish/Finnish pack aircraft absent from current client tree.",
-          "affected_user": false,
-          "owned": false,
-          "lineups": []
-        }
-      ]
-    },
-    {
-      "version": "v3.73 curated availability update",
-      "date": "2026-06-04",
-      "title": "Manual availability update: KV-8, SAV 20.12.48, F-20A Tigershark",
-      "source_url": "",
-      "notes": "Curated manual check of recent Gaijin news and stores; no automatic news scanner used.",
-      "vehicle_changes": [
-        {
-          "unit_id": "ussr_kv_8",
-          "change_type": "availability",
-          "old": "available / pack",
-          "new": "market_available / event reward",
-          "note": "Legend of Victory: KV-8 event reward; coupon may be available through Market."
-        },
-        {
-          "unit_id": "sw_sav_fm48",
-          "change_type": "availability",
-          "old": "available",
-          "new": "unavailable",
-          "note": "Limited-time sale premium; normally owner-only unless already owned."
-        },
-        {
-          "unit_id": "f_20a",
-          "change_type": "availability",
-          "old": "available",
-          "new": "unavailable",
-          "note": "F-20A Tigershark Pack was listed among packs retired after May Sale 2026."
         }
       ]
     }

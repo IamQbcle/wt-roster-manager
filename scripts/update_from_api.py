@@ -7985,6 +7985,74 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
         print("WARNING: v3.85 WWI/Senrai curated supplements failed:", e)
 # --- end v3.85 layer ---
 
+
+
+# --- v3.87: September 2026 data hotfix / curated availability corrections ---
+# Keep these corrections durable across future API refreshes.
+# - German PzH 2000 is a normal researchable vehicle; do not confuse it with the PzH 2000HU pack.
+# - Ho-Ri Production/Prototype were retired on 2026-09-01.
+# - F-20A and Hawk 209 returned to sale and remain available at full price.
+# - Oktyabrskaya Revolutsiya is an event reward and should be owner-only/unavailable by default.
+AVAILABILITY_CURATED_V387 = {
+    "germ_pzh_2000": ("available", "German PzH 2000 is a regular researchable vehicle; not the PzH 2000HU pack."),
+    "jp_type_5_ho_ri_production": ("unavailable", "Removed from the Japanese research tree on 2026-09-01; kept for owners / players with research progress."),
+    "jp_type_5_ho_ri_prototype": ("unavailable", "No longer available for purchase from 2026-09-01; owner-only."),
+    "f_20a": ("available", "Returned to sale after the F-20A first-flight event and remains available at full price."),
+    "hawk_209_indonesia": ("available", "Returned to sale after the Hawk first-flight event and remains available at full price."),
+    "ussr_battleship_oktyabrskaya_revolutsiya": ("unavailable", "Guardian of the Baltic Sea event reward; owner-only/unavailable by default."),
+}
+STATUS_CURATED_V387 = {
+    "ussr_battleship_oktyabrskaya_revolutsiya": "Акционная",
+}
+TREE_PLACEMENT_CURATED_V387 = {
+    "ussr_battleship_oktyabrskaya_revolutsiya": ("right", "v3.87-curated-event"),
+}
+
+def _apply_v387_curated_item(item: dict[str, Any]) -> bool:
+    vid = str(item.get("id") or item.get("identifier") or "")
+    changed = False
+    status = STATUS_CURATED_V387.get(vid)
+    if status and item.get("status") != status:
+        item["status"] = status
+        changed = True
+    av = AVAILABILITY_CURATED_V387.get(vid)
+    if av:
+        availability, note = av
+        if item.get("availability") != availability:
+            item["availability"] = availability
+            changed = True
+        if note and item.get("availability_reason") != note:
+            item["availability_reason"] = note
+            changed = True
+    placement = TREE_PLACEMENT_CURATED_V387.get(vid)
+    if placement:
+        place, source = placement
+        if item.get("treePlacement") != place:
+            item["treePlacement"] = place
+            changed = True
+        if source and item.get("treePlacementSource") != source:
+            item["treePlacementSource"] = source
+            changed = True
+    return changed
+
+_old_write_lightweight_vehicles_v387 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.87 override
+    _old_write_lightweight_vehicles_v387(rows, image_map)
+    try:
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        changed = 0
+        for item in data:
+            if isinstance(item, dict) and _apply_v387_curated_item(item):
+                changed += 1
+        if changed:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"v3.87 September data hotfix applied: {changed} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.87 September data hotfix failed:", e)
+
+# --- end v3.87 layer ---
+
 if __name__ == "__main__":
     try:
         raise SystemExit(main())

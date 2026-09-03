@@ -7,7 +7,7 @@
     "groups": 34,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=usa",
     "raw_html": "data/wiki_tree_raw\\USA_air_aviation.html",
-    "updated_at": "2026-08-04T07:35:45+00:00"
+    "updated_at": "2026-09-03T09:20:48+00:00"
   },
   "USA|ground": {
     "ok": true,
@@ -17,7 +17,7 @@
     "groups": 19,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=usa",
     "raw_html": "data/wiki_tree_raw\\USA_ground_ground.html",
-    "updated_at": "2026-08-04T07:35:46+00:00"
+    "updated_at": "2026-09-03T09:20:49+00:00"
   },
   "USA|heli": {
     "ok": true,
@@ -27,7 +27,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=usa",
     "raw_html": "data/wiki_tree_raw\\USA_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:35:46+00:00"
+    "updated_at": "2026-09-03T09:20:49+00:00"
   },
   "USA|bluewater": {
     "ok": true,
@@ -37,7 +37,7 @@
     "groups": 2,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=usa",
     "raw_html": "data/wiki_tree_raw\\USA_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:35:47+00:00"
+    "updated_at": "2026-09-03T09:20:50+00:00"
   },
   "USA|coastal": {
     "ok": true,
@@ -47,7 +47,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=usa",
     "raw_html": "data/wiki_tree_raw\\USA_coastal_boats.html",
-    "updated_at": "2026-08-04T07:35:48+00:00"
+    "updated_at": "2026-09-03T09:20:50+00:00"
   },
   "Germany|air": {
     "ok": true,
@@ -57,7 +57,7 @@
     "groups": 37,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=germany",
     "raw_html": "data/wiki_tree_raw\\Germany_air_aviation.html",
-    "updated_at": "2026-08-04T07:35:48+00:00"
+    "updated_at": "2026-09-03T09:20:51+00:00"
   },
   "Germany|ground": {
     "ok": true,
@@ -67,7 +67,7 @@
     "groups": 33,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=germany",
     "raw_html": "data/wiki_tree_raw\\Germany_ground_ground.html",
-    "updated_at": "2026-08-04T07:35:49+00:00"
+    "updated_at": "2026-09-03T09:20:51+00:00"
   },
   "Germany|heli": {
     "ok": true,
@@ -77,7 +77,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=germany",
     "raw_html": "data/wiki_tree_raw\\Germany_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:35:50+00:00"
+    "updated_at": "2026-09-03T09:20:52+00:00"
   },
   "Germany|bluewater": {
     "ok": true,
@@ -87,7 +87,7 @@
     "groups": 2,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=germany",
     "raw_html": "data/wiki_tree_raw\\Germany_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:35:50+00:00"
+    "updated_at": "2026-09-03T09:20:52+00:00"
   },
   "Germany|coastal": {
     "ok": true,
@@ -97,7 +97,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=germany",
     "raw_html": "data/wiki_tree_raw\\Germany_coastal_boats.html",
-    "updated_at": "2026-08-04T07:35:51+00:00"
+    "updated_at": "2026-09-03T09:20:53+00:00"
   },
   "USSR|air": {
     "ok": true,
@@ -107,7 +107,7 @@
     "groups": 36,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=ussr",
     "raw_html": "data/wiki_tree_raw\\USSR_air_aviation.html",
-    "updated_at": "2026-08-04T07:35:52+00:00"
+    "updated_at": "2026-09-03T09:20:53+00:00"
   },
   "USSR|ground": {
     "ok": true,
@@ -117,7 +117,7 @@
     "groups": 25,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=ussr",
     "raw_html": "data/wiki_tree_raw\\USSR_ground_ground.html",
-    "updated_at": "2026-08-04T07:35:52+00:00"
+    "updated_at": "2026-09-03T09:20:54+00:00"
   },
   "USSR|heli": {
     "ok": true,
@@ -127,17 +127,17 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=ussr",
     "raw_html": "data/wiki_tree_raw\\USSR_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:35:53+00:00"
+    "updated_at": "2026-09-03T09:20:54+00:00"
   },
   "USSR|bluewater": {
     "ok": true,
     "safe_dom_geometry": true,
     "safe_table_layout": true,
-    "placedUnits": 43,
+    "placedUnits": 44,
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=ussr",
     "raw_html": "data/wiki_tree_raw\\USSR_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:35:54+00:00"
+    "updated_at": "2026-09-03T09:20:55+00:00"
   },
   "USSR|coastal": {
     "ok": true,
@@ -147,7 +147,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=ussr",
     "raw_html": "data/wiki_tree_raw\\USSR_coastal_boats.html",
-    "updated_at": "2026-08-04T07:35:54+00:00"
+    "updated_at": "2026-09-03T09:20:55+00:00"
   },
   "Britain|air": {
     "ok": true,
@@ -157,7 +157,7 @@
     "groups": 28,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=britain",
     "raw_html": "data/wiki_tree_raw\\Britain_air_aviation.html",
-    "updated_at": "2026-08-04T07:35:55+00:00"
+    "updated_at": "2026-09-03T09:20:56+00:00"
   },
   "Britain|ground": {
     "ok": true,
@@ -167,7 +167,7 @@
     "groups": 25,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=britain",
     "raw_html": "data/wiki_tree_raw\\Britain_ground_ground.html",
-    "updated_at": "2026-08-04T07:35:56+00:00"
+    "updated_at": "2026-09-03T09:20:56+00:00"
   },
   "Britain|heli": {
     "ok": true,
@@ -177,7 +177,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=britain",
     "raw_html": "data/wiki_tree_raw\\Britain_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:35:56+00:00"
+    "updated_at": "2026-09-03T09:20:57+00:00"
   },
   "Britain|bluewater": {
     "ok": true,
@@ -187,7 +187,7 @@
     "groups": 3,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=britain",
     "raw_html": "data/wiki_tree_raw\\Britain_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:35:56+00:00"
+    "updated_at": "2026-09-03T09:20:57+00:00"
   },
   "Britain|coastal": {
     "ok": true,
@@ -197,7 +197,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=britain",
     "raw_html": "data/wiki_tree_raw\\Britain_coastal_boats.html",
-    "updated_at": "2026-08-04T07:35:57+00:00"
+    "updated_at": "2026-09-03T09:20:58+00:00"
   },
   "Japan|air": {
     "ok": true,
@@ -207,7 +207,7 @@
     "groups": 23,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=japan",
     "raw_html": "data/wiki_tree_raw\\Japan_air_aviation.html",
-    "updated_at": "2026-08-04T07:35:58+00:00"
+    "updated_at": "2026-09-03T09:20:58+00:00"
   },
   "Japan|ground": {
     "ok": true,
@@ -217,7 +217,7 @@
     "groups": 12,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=japan",
     "raw_html": "data/wiki_tree_raw\\Japan_ground_ground.html",
-    "updated_at": "2026-08-04T07:35:58+00:00"
+    "updated_at": "2026-09-03T09:20:59+00:00"
   },
   "Japan|heli": {
     "ok": true,
@@ -227,7 +227,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=japan",
     "raw_html": "data/wiki_tree_raw\\Japan_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:35:59+00:00"
+    "updated_at": "2026-09-03T09:20:59+00:00"
   },
   "Japan|bluewater": {
     "ok": true,
@@ -237,7 +237,7 @@
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=japan",
     "raw_html": "data/wiki_tree_raw\\Japan_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:36:00+00:00"
+    "updated_at": "2026-09-03T09:21:00+00:00"
   },
   "Japan|coastal": {
     "ok": true,
@@ -247,7 +247,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=japan",
     "raw_html": "data/wiki_tree_raw\\Japan_coastal_boats.html",
-    "updated_at": "2026-08-04T07:36:00+00:00"
+    "updated_at": "2026-09-03T09:21:00+00:00"
   },
   "China|air": {
     "ok": true,
@@ -257,7 +257,7 @@
     "groups": 12,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=china",
     "raw_html": "data/wiki_tree_raw\\China_air_aviation.html",
-    "updated_at": "2026-08-04T07:36:01+00:00"
+    "updated_at": "2026-09-03T09:21:01+00:00"
   },
   "China|ground": {
     "ok": true,
@@ -267,7 +267,7 @@
     "groups": 14,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=china",
     "raw_html": "data/wiki_tree_raw\\China_ground_ground.html",
-    "updated_at": "2026-08-04T07:36:02+00:00"
+    "updated_at": "2026-09-03T09:21:01+00:00"
   },
   "China|heli": {
     "ok": true,
@@ -277,17 +277,17 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=china",
     "raw_html": "data/wiki_tree_raw\\China_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:36:02+00:00"
+    "updated_at": "2026-09-03T09:21:05+00:00"
   },
   "China|bluewater": {
     "ok": true,
     "safe_dom_geometry": true,
     "safe_table_layout": true,
-    "placedUnits": 325,
+    "placedUnits": 326,
     "groups": 9,
-    "reason": "HTTP 200 via curl fallback after requests ChunkedEncodingError: ('Connection broken: IncompleteRead(7546 bytes read, 646 more expected)', IncompleteRead(7546 bytes read, 646 more expected)) url=https://wiki.warthunder.ru/ships?v=t&t_c=china",
+    "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=china",
     "raw_html": "data/wiki_tree_raw\\China_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:36:05+00:00"
+    "updated_at": "2026-09-03T09:21:05+00:00"
   },
   "China|coastal": {
     "ok": true,
@@ -297,7 +297,7 @@
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=china",
     "raw_html": "data/wiki_tree_raw\\China_coastal_boats.html",
-    "updated_at": "2026-08-04T07:36:06+00:00"
+    "updated_at": "2026-09-03T09:21:06+00:00"
   },
   "Italy|air": {
     "ok": true,
@@ -307,7 +307,7 @@
     "groups": 19,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=italy",
     "raw_html": "data/wiki_tree_raw\\Italy_air_aviation.html",
-    "updated_at": "2026-08-04T07:36:07+00:00"
+    "updated_at": "2026-09-03T09:21:07+00:00"
   },
   "Italy|ground": {
     "ok": true,
@@ -317,7 +317,7 @@
     "groups": 12,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=italy",
     "raw_html": "data/wiki_tree_raw\\Italy_ground_ground.html",
-    "updated_at": "2026-08-04T07:36:08+00:00"
+    "updated_at": "2026-09-03T09:21:07+00:00"
   },
   "Italy|heli": {
     "ok": true,
@@ -327,7 +327,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=italy",
     "raw_html": "data/wiki_tree_raw\\Italy_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:36:08+00:00"
+    "updated_at": "2026-09-03T09:21:08+00:00"
   },
   "Italy|bluewater": {
     "ok": true,
@@ -337,7 +337,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=italy",
     "raw_html": "data/wiki_tree_raw\\Italy_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:36:09+00:00"
+    "updated_at": "2026-09-03T09:21:08+00:00"
   },
   "Italy|coastal": {
     "ok": true,
@@ -347,7 +347,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=italy",
     "raw_html": "data/wiki_tree_raw\\Italy_coastal_boats.html",
-    "updated_at": "2026-08-04T07:36:09+00:00"
+    "updated_at": "2026-09-03T09:21:09+00:00"
   },
   "France|air": {
     "ok": true,
@@ -357,7 +357,7 @@
     "groups": 13,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=france",
     "raw_html": "data/wiki_tree_raw\\France_air_aviation.html",
-    "updated_at": "2026-08-04T07:36:10+00:00"
+    "updated_at": "2026-09-03T09:21:09+00:00"
   },
   "France|ground": {
     "ok": true,
@@ -367,7 +367,7 @@
     "groups": 13,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=france",
     "raw_html": "data/wiki_tree_raw\\France_ground_ground.html",
-    "updated_at": "2026-08-04T07:36:11+00:00"
+    "updated_at": "2026-09-03T09:21:10+00:00"
   },
   "France|heli": {
     "ok": true,
@@ -377,7 +377,7 @@
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=france",
     "raw_html": "data/wiki_tree_raw\\France_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:36:11+00:00"
+    "updated_at": "2026-09-03T09:21:10+00:00"
   },
   "France|bluewater": {
     "ok": true,
@@ -387,7 +387,7 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=france",
     "raw_html": "data/wiki_tree_raw\\France_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:36:12+00:00"
+    "updated_at": "2026-09-03T09:21:11+00:00"
   },
   "France|coastal": {
     "ok": true,
@@ -397,7 +397,7 @@
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=france",
     "raw_html": "data/wiki_tree_raw\\France_coastal_boats.html",
-    "updated_at": "2026-08-04T07:36:13+00:00"
+    "updated_at": "2026-09-03T09:21:11+00:00"
   },
   "Sweden|air": {
     "ok": true,
@@ -407,7 +407,7 @@
     "groups": 9,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=sweden",
     "raw_html": "data/wiki_tree_raw\\Sweden_air_aviation.html",
-    "updated_at": "2026-08-04T07:36:13+00:00"
+    "updated_at": "2026-09-03T09:21:12+00:00"
   },
   "Sweden|ground": {
     "ok": true,
@@ -417,7 +417,7 @@
     "groups": 11,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=sweden",
     "raw_html": "data/wiki_tree_raw\\Sweden_ground_ground.html",
-    "updated_at": "2026-08-04T07:36:14+00:00"
+    "updated_at": "2026-09-03T09:21:12+00:00"
   },
   "Sweden|heli": {
     "ok": true,
@@ -427,17 +427,17 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=sweden",
     "raw_html": "data/wiki_tree_raw\\Sweden_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:36:14+00:00"
+    "updated_at": "2026-09-03T09:21:13+00:00"
   },
   "Sweden|bluewater": {
     "ok": true,
     "safe_dom_geometry": true,
     "safe_table_layout": true,
-    "placedUnits": 325,
+    "placedUnits": 326,
     "groups": 9,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=sweden",
     "raw_html": "data/wiki_tree_raw\\Sweden_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:36:15+00:00"
+    "updated_at": "2026-09-03T09:21:13+00:00"
   },
   "Sweden|coastal": {
     "ok": true,
@@ -447,7 +447,7 @@
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=sweden",
     "raw_html": "data/wiki_tree_raw\\Sweden_coastal_boats.html",
-    "updated_at": "2026-08-04T07:36:16+00:00"
+    "updated_at": "2026-09-03T09:21:14+00:00"
   },
   "Israel|air": {
     "ok": true,
@@ -457,7 +457,7 @@
     "groups": 5,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=israel",
     "raw_html": "data/wiki_tree_raw\\Israel_air_aviation.html",
-    "updated_at": "2026-08-04T07:36:16+00:00"
+    "updated_at": "2026-09-03T09:21:14+00:00"
   },
   "Israel|ground": {
     "ok": true,
@@ -467,7 +467,7 @@
     "groups": 12,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ground?v=t&t_c=israel",
     "raw_html": "data/wiki_tree_raw\\Israel_ground_ground.html",
-    "updated_at": "2026-08-04T07:36:17+00:00"
+    "updated_at": "2026-09-03T09:21:15+00:00"
   },
   "Israel|heli": {
     "ok": true,
@@ -477,17 +477,17 @@
     "groups": 0,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=israel",
     "raw_html": "data/wiki_tree_raw\\Israel_heli_helicopters.html",
-    "updated_at": "2026-08-04T07:36:18+00:00"
+    "updated_at": "2026-09-03T09:21:15+00:00"
   },
   "Israel|bluewater": {
     "ok": true,
     "safe_dom_geometry": true,
     "safe_table_layout": true,
-    "placedUnits": 325,
+    "placedUnits": 326,
     "groups": 9,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/ships?v=t&t_c=israel",
     "raw_html": "data/wiki_tree_raw\\Israel_bluewater_ships.html",
-    "updated_at": "2026-08-04T07:36:18+00:00"
+    "updated_at": "2026-09-03T09:21:16+00:00"
   },
   "Israel|coastal": {
     "ok": true,
@@ -497,6 +497,6 @@
     "groups": 1,
     "reason": "HTTP 200 via requests url=https://wiki.warthunder.ru/boats?v=t&t_c=israel",
     "raw_html": "data/wiki_tree_raw\\Israel_coastal_boats.html",
-    "updated_at": "2026-08-04T07:36:19+00:00"
+    "updated_at": "2026-09-03T09:21:16+00:00"
   }
 }

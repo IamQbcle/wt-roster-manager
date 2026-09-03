@@ -1,14 +1,29 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "v3.85 / WWI + Senrai curated supplement",
-  "latest_known_patch": "2.57.1.70 / 2026-08-07",
-  "latest_public_signal": "Curated supplement for missing The Great War event vehicles and separate Senrai Maidens pack variants; no language-system changes.",
-  "checked_at": "2026-08-15",
+  "manager_data_patch": "v3.87 / September data hotfix",
+  "latest_known_patch": "2.57.1.126 / 2026-09-02",
+  "latest_public_signal": "September data refresh: Oktyabrskaya Revolutsiya added by API/Wiki; curated availability fixes for PzH 2000, Ho-Ri, F-20A and Hawk 209. Major update 2.59 preorder vehicles are not applied yet.",
+  "checked_at": "2026-09-03",
   "needs_review": false,
   "notes": {
-    "ru": "v3.85 вручную добавляет недостающую технику события The Great War и отдельные варианты наборов Senrai Maidens. Отложенные изменения Ho-Ri и переносы/группировки следующего крупного обновления остаются отложенными.",
-    "en": "v3.85 manually adds missing The Great War event vehicles and separate Senrai Maidens pack variants. Ho-Ri retirement and next-major rank/grouping changes remain deferred."
+    "ru": "v3.87 применяет свежие данные API/Wiki и ручные правки доступности: немецкая PzH 2000 снова доступна как обычная исследуемая техника; Ho-Ri Production/Prototype переведены в owner-only после вывода 1 сентября; F-20A и Hawk 209 снова доступны; «Октябрьская революция» добавлена как акционная owner-only техника. Предзаказы/техника 2.59 и перестановки следующего мажора пока не применялись.",
+    "en": "v3.87 applies the latest API/Wiki refresh and curated availability fixes: German PzH 2000 is available as a regular researchable vehicle again; Ho-Ri Production/Prototype are owner-only after the September 1 removal; F-20A and Hawk 209 are available again; Oktyabrskaya Revolutsiya is added as an event owner-only vehicle. 2.59 preorder vehicles and next-major tree reshuffles are not applied yet."
   },
-  "data_verified_game_version": "2.57.1.70",
-  "version_check_mode": "official_news_wiki_manual_supplement"
+  "data_verified_game_version": "2.57.1.126",
+  "version_check_mode": "official_news_wiki_manual_supplement",
+  "deferred": {
+    "next_major_2_59": [
+      "PLZ45",
+      "RN Giulio Cesare",
+      "AW159 Wildcat HMA2",
+      "M7",
+      "Ki-93-I Ko",
+      "CA-27",
+      "possible researchable F-14D separate from premium/event F-14D",
+      "ground tech-tree reshuffles announced for the next major update"
+    ],
+    "current_event_pending_api_data": [
+      "F-16XL — official event vehicle, but not in current API/Wiki export used by the app; add after stable data appears"
+    ]
+  }
 }

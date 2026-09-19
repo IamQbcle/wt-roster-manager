@@ -2,39 +2,41 @@
 
 A free local roster, lineup and collection-planning tool for **War Thunder**.
 
-War Thunder now supports up to **25 in-game presets**, which is enough for most players. WT Roster Manager is therefore not mainly about adding more preset slots. Its main purpose is to provide the planning, memory and collection tools that are difficult to keep inside the game itself: crew-training memory, future lineup planning, smart auto-pick, correct mixed-mode aircraft BRs, patch-change tracking and squad compatibility.
+WT Roster Manager runs locally in your browser and helps organize your vehicle collection, build and archive lineups, remember crew training, track Battle Rating changes and plan compatible squad setups. War Thunder supports up to **25 in-game presets**; WT Roster Manager works as a separate planning and collection-management layer alongside them.
 
 ## EN — English
 
-### What the app adds beyond in-game presets
+### What the app does
 
-- **Crew Training Memory** — remembers which owned vehicles have appeared on each crew in your saved lineups and uses that history for slot hints and auto-pick priorities.
-- **Personal roster and collection tracking** — mark owned vehicles and talismans, plan future purchases/research, and find owned vehicles that are not used in any lineup.
-- **Smart lineup planning and auto-pick** — build lineups by nation, mode, BR, rank, ownership, acquisition type and crew role. Planned/unowned vehicles can be used for future setups without being treated as already trained.
-- **Correct aircraft BR handling for mixed modes** — Ground/Naval RB and Ground SB can use the aircraft's combined-mode BR instead of blindly reusing Air RB/SB values.
-- **Patch change tracking** — BR changes are treated as actionable and can show affected lineups; rank, availability, added vehicles and tree changes remain available as informational history.
-- **Squad planning** — import a friend's exported lineup profile and find compatible lineups without accounts, servers or online sync.
-- **Unlimited external archive and future plans** — keep extra, experimental or historical lineups beyond the game's 25 presets without constantly rebuilding them in War Thunder.
-- **Lineup roulette** — randomly choose a ready lineup, including compatible squad combinations, when you want variety.
+- **Personal roster and collection tracking** — mark owned vehicles and talismans, filter the full vehicle database, plan future purchases/research, and find owned vehicles that are not used in any saved lineup.
+- **Lineup planning and archive** — create as many external lineups as you need for different nations, modes, BR ranges or ideas, including future lineups with vehicles you do not own yet.
+- **Crew Training Memory** — uses your saved lineups as local memory of which owned vehicles have probably been trained on each crew. The app shows crew hints and uses that information when filling slots.
+- **Smart auto-pick** — fills lineup slots while respecting mode, BR, vehicle class, ownership and crew-training history, with protection options for already filled slots.
+- **Correct aircraft BRs in mixed modes** — Ground/Naval RB and Ground SB can use the aircraft BR values relevant to those modes instead of blindly reusing Air RB/SB values.
+- **Changes tab** — keeps patch history and highlights Battle Rating changes that may affect your saved lineups. Affected lineups are shown directly, BR changes can be marked as checked, and unowned vehicles can be cleared in bulk. Rank, availability, added vehicles and tree changes remain as informational history.
+- **Squad planning** — import a friend's exported lineup profile and find compatible lineup combinations without accounts, servers or online synchronization.
+- **Lineup roulette** — randomly choose one of your ready lineups or a compatible squad combination when you want variety.
 
 The app is local and does **not** read your War Thunder account or game client. Owned vehicles are marked manually.
 
 ## RU — Русский
 
-### Что программа даёт сверх игровых пресетов
+### Что умеет программа
 
-В самой War Thunder теперь доступно до **25 игровых пресетов**, и для большинства игроков этого количества вполне достаточно. Поэтому главный смысл WT Roster Manager уже не в том, чтобы просто дать «ещё больше наборов». Программа полезна как отдельный слой планирования, памяти и работы с коллекцией.
+WT Roster Manager — локальный планировщик наборов, ростера и коллекции для **War Thunder**. Он работает в браузере через локальный Python-сервер и хранит пользовательские данные на компьютере.
 
-- **Память обученности экипажей** — программа запоминает, какая купленная техника стояла на конкретных экипажах в сохранённых наборах, показывает подсказки и учитывает это при автоподборе.
-- **Личный ростер и коллекция** — можно отмечать купленную технику и талисманы, планировать будущие покупки/исследование и находить купленные машины, которые не используются ни в одном наборе.
-- **Умное планирование и автоподбор** — наборы собираются с учётом нации, режима, БР, ранга, наличия техники, типа получения и ролей экипажей. Можно заранее собирать будущие наборы из ещё не исследованной техники.
-- **Корректные БР авиации в смешанных режимах** — для наземных/морских РБ и наземных СБ учитываются соответствующие комбинированные БР самолётов, а не только значения воздушных режимов.
-- **История изменений после патчей** — изменения БР считаются требующими внимания и могут показывать затронутые наборы; изменения ранга, доступности, добавление техники и перестановки дерева остаются информационной историей.
-- **Планирование игры отрядом** — можно импортировать профиль наборов друга и найти совместимые варианты без аккаунтов, серверов и регистрации.
-- **Неограниченный внешний архив и будущие планы** — дополнительные, экспериментальные и старые наборы можно хранить вне игры сверх 25 игровых пресетов и восстанавливать при необходимости.
-- **Рулетка наборов** — случайный выбор готового набора или совместимого варианта для отряда, если хочется разнообразия.
+В War Thunder доступно до **25 игровых пресетов**. WT Roster Manager используется рядом с ними как отдельный инструмент для планирования коллекции и будущих наборов, памяти экипажей, контроля изменений БР и подбора совместимых наборов для отряда.
 
-Программа работает локально и **не читает** ваш аккаунт или клиент War Thunder. Купленную технику пользователь отмечает вручную.
+- **Личный ростер и коллекция** — можно отмечать купленную технику и талисманы, фильтровать полную базу, планировать будущие покупки/исследование и находить купленные машины, которые не используются ни в одном сохранённом наборе.
+- **Планирование и архив наборов** — можно создавать сколько угодно внешних наборов для разных наций, режимов, диапазонов БР и идей, в том числе заранее собирать будущие наборы из ещё не купленной техники.
+- **Память обученности экипажей** — программа использует сохранённые наборы как локальную память о том, какая купленная техника, вероятно, уже обучена на конкретном экипаже. Эти данные используются в подсказках и автоподборе.
+- **Умный автоподбор** — заполняет слоты с учётом режима, БР, класса техники, наличия машины и истории обученности экипажей. Для уже заполненных слотов доступны разные режимы защиты.
+- **Корректные БР авиации в смешанных режимах** — для наземных/морских РБ и наземных СБ могут использоваться соответствующие БР самолётов, а не значения воздушных режимов.
+- **Вкладка «Изменения»** — хранит историю обновлений и выделяет изменения БР, которые могут затронуть сохранённые наборы. Программа сразу показывает связанные наборы, позволяет отмечать изменения БР как проверенные и массово убирать из проверки некупленную технику. Изменения ранга, доступности, добавление техники и перестановки дерева остаются информационной историей.
+- **Планирование игры отрядом** — можно импортировать экспортированный профиль наборов друга и подобрать совместимые варианты без аккаунтов, серверов и онлайн-синхронизации.
+- **Рулетка наборов** — случайный выбор одного из готовых наборов или совместимой комбинации для отряда.
+
+Программа работает локально и **не читает** аккаунт или клиент War Thunder. Купленную технику пользователь отмечает вручную.
 
 ## Contents / Оглавление
 

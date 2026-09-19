@@ -2,31 +2,31 @@
   "logic_version": "v2.45",
   "pages": {
     "aviation": {
-      "reason": "HTTP 200 lines=3207 via requests url=https://wiki.warthunder.com/aviation?v=t",
-      "lines": 3207,
+      "reason": "HTTP 200 lines=3240 via requests url=https://wiki.warthunder.com/aviation?v=t",
+      "lines": 3240,
       "blocks": 10
     },
     "ground": {
-      "reason": "HTTP 200 lines=2759 via requests url=https://wiki.warthunder.com/ground?v=t",
-      "lines": 2759,
+      "reason": "HTTP 200 lines=2783 via requests url=https://wiki.warthunder.com/ground?v=t",
+      "lines": 2783,
       "blocks": 10
     },
     "helicopters": {
-      "reason": "HTTP 200 lines=621 via requests url=https://wiki.warthunder.com/helicopters?v=t",
-      "lines": 621,
+      "reason": "HTTP 200 lines=625 via requests url=https://wiki.warthunder.com/helicopters?v=t",
+      "lines": 625,
       "blocks": 10
     },
     "ships": {
-      "reason": "HTTP 200 lines=1112 via requests url=https://wiki.warthunder.com/ships?v=t",
-      "lines": 1112,
+      "reason": "HTTP 200 lines=1118 via requests url=https://wiki.warthunder.com/ships?v=t",
+      "lines": 1118,
       "blocks": 7
     },
     "boats": {
-      "reason": "HTTP 200 lines=902 via requests url=https://wiki.warthunder.com/boats?v=t",
-      "lines": 902,
+      "reason": "HTTP 200 lines=908 via requests url=https://wiki.warthunder.com/boats?v=t",
+      "lines": 908,
       "blocks": 7
     }
   },
   "oldWikiSpecialCount": 0,
-  "updated_at": "2026-09-03T09:20:19+00:00"
+  "updated_at": "2026-09-18T16:29:56+00:00"
 }

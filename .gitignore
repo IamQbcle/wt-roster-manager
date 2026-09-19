@@ -13,3 +13,6 @@ tmp/
 
 README_NEW_CHAT_CONTEXT.txt
 GITHUB_AND_FORUM_PUBLISHING_RU*.txt
+data/availability_candidates.json
+data/suspicious_display_names.json
+data/vehicle_data_conflicts.json

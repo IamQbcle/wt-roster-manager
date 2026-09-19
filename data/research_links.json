@@ -1,6 +1,6 @@
 {
   "logic_version": "v2.62-status-tree-unit-supplements",
-  "updated_at": "2026-09-03T09:20:26+00:00",
+  "updated_at": "2026-09-18T16:30:08+00:00",
   "links": {
     "a6m2_mod11": [
       "a6m2_n_zero",
@@ -8483,6 +8483,144 @@
     "saab_ajs37_early": [
       "saab_aj37",
       "f_16a_block_10_norway"
+    ],
+    "ca_27_mk32_raaf": [
+      "scimitar_f1",
+      "harrier_frs1_early"
+    ],
+    "cn_fk_2000": [
+      "cn_pgz_625_fb10",
+      "cn_hq_11"
+    ],
+    "fr_lcm_monitor": [
+      "fr_vtb13",
+      "fr_mtb96_vosper"
+    ],
+    "a_4ptm_malaysia": [
+      "ca_27_mk32_malaysia",
+      "mig_29n"
+    ],
+    "f_102a_late": [
+      "f-80",
+      "f_101c"
+    ],
+    "f-84g_greece": [
+      "sb2c_5_greece",
+      "f_102a_greece"
+    ],
+    "fr_embt": [
+      "fr_leopard_2a6nl"
+    ],
+    "germ_embt": [
+      "germ_leopard_2k"
+    ],
+    "fr_cruiser_algerie_class": [
+      "fr_cruiser_la_galissoniere_class_gloire",
+      "fr_battleship_bretagne_class_bretagne"
+    ],
+    "h145m": [
+      "bo_105pah1_a1"
+    ],
+    "it_pzh_2000": [
+      "it_palmaria",
+      "it_m113a1_tow"
+    ],
+    "ca_27_mk32_malaysia": [
+      "g8n1",
+      "a_4ptm_malaysia"
+    ],
+    "f_102a_greece": [
+      "f-84g_greece",
+      "f_86em_greece"
+    ],
+    "f_86em_greece": [
+      "f_102a_greece",
+      "a_7h_greece"
+    ],
+    "f_4e_aup_greece": [
+      "mirage_f1cg_greece",
+      "mirage_2000_5eg_mk2_greece"
+    ],
+    "il_9a33bm3": [
+      "il_mim_72_chaparral",
+      "il_tor_m1"
+    ],
+    "a_7h_greece": [
+      "f_86em_greece",
+      "mirage_f1cg_greece"
+    ],
+    "hawk_t1a_early": [
+      "hornet_mk3",
+      "swift_f1"
+    ],
+    "il_leopard_2a6_hel": [
+      "il_sabra_mk1"
+    ],
+    "il_tor_m1": [
+      "il_9a33bm3",
+      "il_spyder_aio"
+    ],
+    "f_14d_vf_11": [
+      "f_14b"
+    ],
+    "ki_93_1_ko": [
+      "b7a2"
+    ],
+    "jp_harimau": [
+      "jp_type_16"
+    ],
+    "us_m7": [
+      "us_m22_locust",
+      "us_m6a1"
+    ],
+    "aw_159": [
+      "ah_mk1"
+    ],
+    "mig_35": [
+      "mig_29smt_9_19"
+    ],
+    "j_16": [
+      "jh_7a2"
+    ],
+    "uk_arjun_mk1": [
+      "uk_vickers_mk7",
+      "uk_m1a2_sep3_abrams"
+    ],
+    "uk_battleship_lion_class": [
+      "uk_battleship_prince_of_wales"
+    ],
+    "ussr_fugas_t1_strela": [
+      "ussr_1124_ack",
+      "ussr_skr_groza_1943"
+    ],
+    "rafale_eg_greece": [
+      "mirage_2000_5eg_mk2_greece"
+    ],
+    "se_203": [
+      "f-84g_france",
+      "f-84f_france"
+    ],
+    "saab_j35j": [
+      "saab_j35d"
+    ],
+    "sb2c_5_greece": [
+      "f-84g_greece"
+    ],
+    "us_destroyer_mahan_class": [
+      "us_destroyer_farragut_1942",
+      "us_destroyer_fletcher"
+    ],
+    "ussr_object_416": [
+      "ussr_2s19_m1",
+      "ussr_it_1"
+    ],
+    "mirage_2000_5eg_mk2_greece": [
+      "f_4e_aup_greece",
+      "rafale_eg_greece"
+    ],
+    "mirage_f1cg_greece": [
+      "a_7h_greece",
+      "f_4e_aup_greece"
     ]
   },
   "note": "Parsed from Wiki unit Research order / Порядок исследования where available. Group/folder thumbnails can use assets/vehicles/slots/<group_id>.png or static.encyclopedia.warthunder.com/slots/<group_id>.png."

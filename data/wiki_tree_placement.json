@@ -1247,12 +1247,12 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "f_101c": {
+    "f_102a_late": {
       "placement": "left",
       "rank": "VI",
       "nation": "USA",
       "class": "air",
-      "visibleName": "F-101C",
+      "visibleName": "F-102A",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -1301,21 +1301,12 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
-    "f-104a": {
+    "f_101c": {
       "placement": "left",
       "rank": "VI",
       "nation": "USA",
       "class": "air",
-      "visibleName": "F-104A",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "f-104c": {
-      "placement": "left",
-      "rank": "VI",
-      "nation": "USA",
-      "class": "air",
-      "visibleName": "F-104C",
+      "visibleName": "F-101C",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -1343,6 +1334,24 @@
       "nation": "USA",
       "class": "air",
       "visibleName": "AV-8C",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "f-104a": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "USA",
+      "class": "air",
+      "visibleName": "F-104A",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "f-104c": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "USA",
+      "class": "air",
+      "visibleName": "F-104C",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -1680,12 +1689,39 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "f_14d_vf_11": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "USA",
+      "class": "air",
+      "visibleName": "F-14D (VF-11)",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
     "f_20a": {
       "placement": "right",
       "rank": "VIII",
       "nation": "USA",
       "class": "air",
       "visibleName": "F-20A",
+      "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "f_16xl": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "USA",
+      "class": "air",
+      "visibleName": "F-16XL",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "fa_18c_early": {
+      "placement": "right",
+      "rank": "VIII",
+      "nation": "USA",
+      "class": "air",
+      "visibleName": "F/A-18C Early",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -1696,15 +1732,6 @@
       "class": "air",
       "visibleName": "F-14A IRIAF",
       "source": "api/status+wiki-tree-marker+raw-api-status",
-      "page": "aviation"
-    },
-    "fa_18c_early": {
-      "placement": "right",
-      "rank": "VIII",
-      "nation": "USA",
-      "class": "air",
-      "visibleName": "F/A-18C Early",
-      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "f_14d": {
@@ -3021,12 +3048,12 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "me-262a-2a": {
+    "arado_234b_2_mt": {
       "placement": "right",
       "rank": "V",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Me 262 A-2a",
+      "visibleName": "Ar 234 B-2 (WB 151)",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -3037,6 +3064,15 @@
       "class": "air",
       "visibleName": "G.91 R/4",
       "source": "api/status+wiki-tree-marker+raw-api-status",
+      "page": "aviation"
+    },
+    "me-262a-2a": {
+      "placement": "right",
+      "rank": "V",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "Me 262 A-2a",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "f-86_canadair_german": {
@@ -4205,7 +4241,7 @@
       "rank": "III",
       "nation": "USSR",
       "class": "air",
-      "visibleName": "Tu-2",
+      "visibleName": "Tu-2 (5)",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -4314,24 +4350,6 @@
       "nation": "USSR",
       "class": "air",
       "visibleName": "IL-10 (1946)",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "tu-2_postwar": {
-      "placement": "left",
-      "rank": "IV",
-      "nation": "USSR",
-      "class": "air",
-      "visibleName": "Tu-2S-44",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "tu-2_postwar_late": {
-      "placement": "left",
-      "rank": "IV",
-      "nation": "USSR",
-      "class": "air",
-      "visibleName": "Tu-2S-59",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -5011,6 +5029,15 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
+    "mig_35": {
+      "placement": "left",
+      "rank": "IX",
+      "nation": "USSR",
+      "class": "air",
+      "visibleName": "MiG-35",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
     "su_30sm": {
       "placement": "left",
       "rank": "IX",
@@ -5430,7 +5457,7 @@
       "rank": "II",
       "nation": "Britain",
       "class": "air",
-      "visibleName": "Beaufighter Mk I (40-mm)",
+      "visibleName": "Beaufighter Mk I (40 mm)",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -5974,13 +6001,13 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
-    "swift_f1": {
-      "placement": "left",
+    "hawk_t1a": {
+      "placement": "right",
       "rank": "V",
       "nation": "Britain",
       "class": "air",
-      "visibleName": "Swift F.1",
-      "source": "wiki-tree-left",
+      "visibleName": "Hawk T Mk 1A",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "washington_b1": {
@@ -6046,12 +6073,12 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
-    "swift_f7": {
+    "swift_f1": {
       "placement": "left",
       "rank": "V",
       "nation": "Britain",
       "class": "air",
-      "visibleName": "Swift F.7",
+      "visibleName": "Swift F.1",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -6070,6 +6097,15 @@
       "nation": "Britain",
       "class": "air",
       "visibleName": "Canberra B (I) Mk 6",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "swift_f7": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Britain",
+      "class": "air",
+      "visibleName": "Swift F.7",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -6170,6 +6206,15 @@
       "class": "air",
       "visibleName": "Lightning F.6",
       "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "ca_27_mk32_raaf": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Britain",
+      "class": "air",
+      "visibleName": "CA-27 Mk.32",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
     "harrier_gr3": {
@@ -6295,7 +6340,7 @@
       "nation": "Britain",
       "class": "air",
       "visibleName": "F-111C",
-      "source": "wiki-tree-left",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
     "tornado_gr1": {
@@ -7045,6 +7090,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "ki_93_1_ko": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "Ki-93-I Ko",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
     "ki_67_1_ko": {
       "placement": "left",
       "rank": "III",
@@ -7106,6 +7160,15 @@
       "class": "air",
       "visibleName": "SB2C-5",
       "source": "api/status+wiki-tree-marker+raw-api-status",
+      "page": "aviation"
+    },
+    "b_26b_indonesia_kalong": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "B-26B",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "a6m5otsu": {
@@ -7369,33 +7432,6 @@
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
-    "r2y2_v1": {
-      "placement": "left",
-      "rank": "V",
-      "nation": "Japan",
-      "class": "air",
-      "visibleName": "R2Y2 Kai V1",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "r2y2_v2": {
-      "placement": "left",
-      "rank": "V",
-      "nation": "Japan",
-      "class": "air",
-      "visibleName": "R2Y2 Kai V2",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
-    "r2y2_kai": {
-      "placement": "left",
-      "rank": "V",
-      "nation": "Japan",
-      "class": "air",
-      "visibleName": "R2Y2 Kai V3",
-      "source": "wiki-tree-left",
-      "page": "aviation"
-    },
     "f-86f-30_japan": {
       "placement": "left",
       "rank": "V",
@@ -7432,6 +7468,33 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
+    "r2y2_v1": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "R2Y2 Kai V1",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "r2y2_v2": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "R2Y2 Kai V2",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "r2y2_kai": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "R2Y2 Kai V3",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
     "f-104j": {
       "placement": "left",
       "rank": "VI",
@@ -7459,6 +7522,15 @@
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
+    "ca_27_mk32_malaysia": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "CA-27 Mk.32",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
     "f1": {
       "placement": "left",
       "rank": "VI",
@@ -7474,6 +7546,15 @@
       "nation": "Japan",
       "class": "air",
       "visibleName": "Alpha Jet TH",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
+    "a_4ptm_malaysia": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Japan",
+      "class": "air",
+      "visibleName": "A-4PTM",
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
@@ -8053,15 +8134,6 @@
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
-    "tu-2_postwar_china": {
-      "placement": "left",
-      "rank": "IV",
-      "nation": "China",
-      "class": "air",
-      "visibleName": "Tu-2S-44",
-      "source": "wiki-tree-marker+raw-api-ordinary-guard",
-      "page": "aviation"
-    },
     "quing_6": {
       "placement": "right",
       "rank": "IV",
@@ -8455,6 +8527,15 @@
       "nation": "China",
       "class": "air",
       "visibleName": "J-10C",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "j_16": {
+      "placement": "left",
+      "rank": "IX",
+      "nation": "China",
+      "class": "air",
+      "visibleName": "J-16",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -9040,15 +9121,6 @@
       "nation": "Italy",
       "class": "air",
       "visibleName": "IL-10",
-      "source": "wiki-tree-marker+raw-api-ordinary-guard",
-      "page": "aviation"
-    },
-    "tu-2_postwar_late_hungary": {
-      "placement": "left",
-      "rank": "IV",
-      "nation": "Italy",
-      "class": "air",
-      "visibleName": "Tu-2S-59",
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
@@ -9768,7 +9840,7 @@
       "rank": "II",
       "nation": "France",
       "class": "air",
-      "visibleName": "LeO 451 late",
+      "visibleName": "LeO 451 Late",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -10084,6 +10156,15 @@
       "nation": "France",
       "class": "air",
       "visibleName": "M.D.452 IIC",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "se_203": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "France",
+      "class": "air",
+      "visibleName": "SE.203 Aquilon 203",
       "source": "wiki-tree-left",
       "page": "aviation"
     },
@@ -10924,6 +11005,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "saab_j35j": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Sweden",
+      "class": "air",
+      "visibleName": "J35J",
+      "source": "wiki-tree-left",
+      "page": "aviation"
+    },
     "saab_aj37": {
       "placement": "left",
       "rank": "VII",
@@ -11122,6 +11212,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "sb2c_5_greece": {
+      "placement": "left",
+      "rank": "IV",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "SB2C-5",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
     "spitfire_lf_mk9e_iaf": {
       "placement": "left",
       "rank": "IV",
@@ -11174,6 +11273,15 @@
       "class": "air",
       "visibleName": "M.D.450B Ouragan",
       "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "f-84g_greece": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "F-84G-16-RE",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
     "meteor_fmk8_iaf": {
@@ -11239,6 +11347,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "f_102a_greece": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "F-102A",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
     "md_460_sambad": {
       "placement": "left",
       "rank": "VI",
@@ -11264,6 +11381,15 @@
       "class": "air",
       "visibleName": "Ayit",
       "source": "wiki-tree-left",
+      "page": "aviation"
+    },
+    "f_86em_greece": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "F-86E(M)",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
     "f-84f_israel_iaf": {
@@ -11311,6 +11437,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "a_7h_greece": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "A-7H",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
     "kfir_c7": {
       "placement": "left",
       "rank": "VII",
@@ -11320,13 +11455,22 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
-    "kfir_canard": {
+    "mirage_f1cg_greece": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "Mirage F1CG",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
+    "a_7e_greece": {
       "placement": "right",
       "rank": "VII",
       "nation": "Israel",
       "class": "air",
-      "visibleName": "Kfir Canard",
-      "source": "api/status+raw-api-status",
+      "visibleName": "A-7E",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
     "kfir_c2": {
@@ -11335,6 +11479,15 @@
       "nation": "Israel",
       "class": "air",
       "visibleName": "Kfir C.2",
+      "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "kfir_canard": {
+      "placement": "right",
+      "rank": "VII",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "Kfir Canard",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -11392,6 +11545,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "f_4e_aup_greece": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "F-4E AUP Phantom II",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
     "f_16c_block_40_barak_2": {
       "placement": "left",
       "rank": "VIII",
@@ -11419,6 +11581,15 @@
       "source": "wiki-tree-left",
       "page": "aviation"
     },
+    "mirage_2000_5eg_mk2_greece": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "Mirage 2000-5EG",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "aviation"
+    },
     "f_16a_block_10_netz_mod": {
       "placement": "right",
       "rank": "VIII",
@@ -11435,6 +11606,15 @@
       "class": "air",
       "visibleName": "Kfir C.10",
       "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "rafale_eg_greece": {
+      "placement": "left",
+      "rank": "IX",
+      "nation": "Israel",
+      "class": "air",
+      "visibleName": "Rafale EG",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "aviation"
     },
     "us_m2a4": {
@@ -11587,6 +11767,15 @@
       "nation": "USA",
       "class": "ground",
       "visibleName": "M3 Lee",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "us_m7": {
+      "placement": "left",
+      "rank": "II",
+      "nation": "USA",
+      "class": "ground",
+      "visibleName": "M7",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -12654,15 +12843,6 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "us_m1a1_aim_abrams": {
-      "placement": "right",
-      "rank": "VII",
-      "nation": "USA",
-      "class": "ground",
-      "visibleName": "M1A1 AIM",
-      "source": "api/status+raw-api-status",
-      "page": "ground"
-    },
     "us_ags_teledyne": {
       "placement": "right",
       "rank": "VII",
@@ -12722,7 +12902,7 @@
       "rank": "VIII",
       "nation": "USA",
       "class": "ground",
-      "visibleName": "M1A2 SEP V2",
+      "visibleName": "M1A2 SEPv2",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -13213,13 +13393,22 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "germ_stug_III_ausf_G": {
+    "germ_m44": {
       "placement": "left",
       "rank": "II",
       "nation": "Germany",
       "class": "ground",
-      "visibleName": "StuG III G",
+      "visibleName": "M44/55",
       "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "germ_m55": {
+      "placement": "left",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "ground",
+      "visibleName": "M55",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "ground"
     },
     "germ_panzerwerfer_42": {
@@ -13332,22 +13521,13 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "germ_m44": {
+    "germ_stug_III_ausf_G": {
       "placement": "left",
       "rank": "III",
       "nation": "Germany",
       "class": "ground",
-      "visibleName": "M44/55",
+      "visibleName": "StuG III G",
       "source": "wiki-tree-left",
-      "page": "ground"
-    },
-    "germ_m55": {
-      "placement": "left",
-      "rank": "III",
-      "nation": "Germany",
-      "class": "ground",
-      "visibleName": "M55",
-      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "ground"
     },
     "germ_panzerjager_nashorn": {
@@ -14070,15 +14250,6 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "germ_leopard_a1a1_120": {
-      "placement": "right",
-      "rank": "VI",
-      "nation": "Germany",
-      "class": "ground",
-      "visibleName": "Leopard A1A1 (L/44)",
-      "source": "api/status+raw-api-status",
-      "page": "ground"
-    },
     "germ_th_800_bismark": {
       "placement": "right",
       "rank": "VI",
@@ -14266,6 +14437,15 @@
       "class": "ground",
       "visibleName": "Puma u14",
       "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "germ_embt": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "Germany",
+      "class": "ground",
+      "visibleName": "EMBT",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "ground"
     },
     "germ_leopard_2a5": {
@@ -15296,6 +15476,33 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
+    "ussr_t_44_kit_4rank": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "USSR",
+      "class": "ground",
+      "visibleName": "T-44 (Be Prepared!)",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "ussr_is_2m_kit_4rank": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "USSR",
+      "class": "ground",
+      "visibleName": "IS-2M (Be Prepared!)",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "ussr_m53_59_kit_4rank": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "USSR",
+      "class": "ground",
+      "visibleName": "M53/59 (Be Prepared!)",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
     "ussr_type_62": {
       "placement": "right",
       "rank": "IV",
@@ -15428,6 +15635,15 @@
       "nation": "USSR",
       "class": "ground",
       "visibleName": "ZSU-23-4M2",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "ussr_object_416": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "USSR",
+      "class": "ground",
+      "visibleName": "Object 416",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -15656,6 +15872,15 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
+    "ussr_9p157": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "USSR",
+      "class": "ground",
+      "visibleName": "775/9P157",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
     "ussr_object_775": {
       "placement": "left",
       "rank": "VI",
@@ -15764,12 +15989,12 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "ussr_9p157": {
+    "ussr_bmpt": {
       "placement": "left",
       "rank": "VII",
       "nation": "USSR",
       "class": "ground",
-      "visibleName": "Khrizantema-S",
+      "visibleName": "BMPT",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -15807,15 +16032,6 @@
       "class": "ground",
       "visibleName": "T-80U",
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
-      "page": "ground"
-    },
-    "ussr_bmpt": {
-      "placement": "left",
-      "rank": "VII",
-      "nation": "USSR",
-      "class": "ground",
-      "visibleName": "BMPT",
-      "source": "wiki-tree-left",
       "page": "ground"
     },
     "ussr_t_72b3_2011": {
@@ -16232,15 +16448,6 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "uk_a27m_cromwell_5": {
-      "placement": "left",
-      "rank": "II",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "Cromwell V",
-      "source": "wiki-tree-left",
-      "page": "ground"
-    },
     "uk_a27m_cromwell_1": {
       "placement": "left",
       "rank": "II",
@@ -16322,15 +16529,6 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "uk_a27m_cromwell_5_rp3": {
-      "placement": "right",
-      "rank": "II",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "Cromwell V (RP-3)",
-      "source": "api/status+raw-api-status",
-      "page": "ground"
-    },
     "uk_churchill_avre": {
       "placement": "right",
       "rank": "II",
@@ -16349,12 +16547,12 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "uk_sherman_vc_firefly": {
+    "uk_a27m_cromwell_5": {
       "placement": "left",
       "rank": "III",
       "nation": "Britain",
       "class": "ground",
-      "visibleName": "Sherman Firefly",
+      "visibleName": "Cromwell V",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -16412,21 +16610,12 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "uk_a30_challenger": {
+    "uk_sherman_vc_firefly": {
       "placement": "left",
       "rank": "III",
       "nation": "Britain",
       "class": "ground",
-      "visibleName": "Challenger/Comet",
-      "source": "wiki-tree-left",
-      "page": "ground"
-    },
-    "uk_a_34_comet": {
-      "placement": "left",
-      "rank": "III",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "Comet I",
+      "visibleName": "Sherman Firefly",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -16457,12 +16646,30 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "uk_17_pdr_m10_achilles_norfolk_yeomanry": {
+    "uk_a30_challenger": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "Challenger/Comet",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "uk_a_34_comet": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "Comet I",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "uk_a27m_cromwell_5_rp3": {
       "placement": "right",
       "rank": "III",
       "nation": "Britain",
       "class": "ground",
-      "visibleName": "Achilles (65 Rg.)",
+      "visibleName": "Cromwell V (RP-3)",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -16472,6 +16679,24 @@
       "nation": "Britain",
       "class": "ground",
       "visibleName": "Excelsior",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "uk_17_pdr_m10_achilles_norfolk_yeomanry": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "Achilles (65 Rg.)",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "uk_a_22f_mk_7_churchill_crocodile": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "Churchill Crocodile",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -16502,15 +16727,6 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "uk_a_22f_mk_7_churchill_crocodile": {
-      "placement": "right",
-      "rank": "III",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "Churchill Crocodile",
-      "source": "api/status+raw-api-status",
-      "page": "ground"
-    },
     "uk_sherman_ic_firefly": {
       "placement": "right",
       "rank": "III",
@@ -16520,21 +16736,21 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "uk_ac4_thunderbolt": {
-      "placement": "right",
-      "rank": "III",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "A.C.IV",
-      "source": "api/status+raw-api-status",
-      "page": "ground"
-    },
     "uk_tog_2": {
       "placement": "right",
       "rank": "III",
       "nation": "Britain",
       "class": "ground",
       "visibleName": "TOG II",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "uk_ac4_thunderbolt": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "A.C.IV",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -17142,6 +17358,15 @@
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "ground"
     },
+    "uk_arjun_mk1": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "Arjun Mk 1",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
     "uk_challenger_1_mk_3_gulf": {
       "placement": "right",
       "rank": "VII",
@@ -17175,15 +17400,6 @@
       "nation": "Britain",
       "class": "ground",
       "visibleName": "CRV Block 2",
-      "source": "api/status+raw-api-status",
-      "page": "ground"
-    },
-    "uk_m1a1_aim_abrams": {
-      "placement": "right",
-      "rank": "VII",
-      "nation": "Britain",
-      "class": "ground",
-      "visibleName": "M1A1",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -17917,6 +18133,15 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
+    "jp_harimau": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Japan",
+      "class": "ground",
+      "visibleName": "Harimau",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
     "jp_type_81_tansam": {
       "placement": "left",
       "rank": "VII",
@@ -18349,12 +18574,12 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
-    "cn_wz_141": {
+    "cn_plz_45": {
       "placement": "right",
       "rank": "IV",
       "nation": "China",
       "class": "ground",
-      "visibleName": "WZ141-1",
+      "visibleName": "PLZ45",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -18364,6 +18589,15 @@
       "nation": "China",
       "class": "ground",
       "visibleName": "T-34-85 No.215",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "cn_wz_141": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "China",
+      "class": "ground",
+      "visibleName": "WZ141-1",
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
@@ -18678,7 +18912,7 @@
       "rank": "VII",
       "nation": "China",
       "class": "ground",
-      "visibleName": "ZTL11",
+      "visibleName": "ZLT11",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -18697,6 +18931,24 @@
       "nation": "China",
       "class": "ground",
       "visibleName": "ZTZ99-III",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "cn_tor_m1": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "China",
+      "class": "ground",
+      "visibleName": "Tor-M1",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "cn_hq_17": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "China",
+      "class": "ground",
+      "visibleName": "HQ17",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -18781,21 +19033,12 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "cn_tor_m1": {
+    "cn_pgz_625_fb10": {
       "placement": "left",
       "rank": "VIII",
       "nation": "China",
       "class": "ground",
-      "visibleName": "Tor-M1",
-      "source": "wiki-tree-left",
-      "page": "ground"
-    },
-    "cn_hq_17": {
-      "placement": "left",
-      "rank": "VIII",
-      "nation": "China",
-      "class": "ground",
-      "visibleName": "HQ17",
+      "visibleName": "CS/SA5",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -18817,12 +19060,12 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "cn_pgz_625_fb10": {
+    "cn_fk_2000": {
       "placement": "left",
       "rank": "VIII",
       "nation": "China",
       "class": "ground",
-      "visibleName": "CS/SA5",
+      "visibleName": "FK-2000",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -19168,6 +19411,15 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
+    "it_m44": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "Italy",
+      "class": "ground",
+      "visibleName": "M44",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "ground"
+    },
     "it_m55": {
       "placement": "left",
       "rank": "III",
@@ -19186,13 +19438,13 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "it_m44": {
+    "it_semovente_breda_501": {
       "placement": "left",
       "rank": "III",
       "nation": "Italy",
       "class": "ground",
-      "visibleName": "M44",
-      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "visibleName": "Breda 501",
+      "source": "wiki-tree-left",
       "page": "ground"
     },
     "it_sherman_VII": {
@@ -19220,15 +19472,6 @@
       "class": "ground",
       "visibleName": "StuG III G",
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
-      "page": "ground"
-    },
-    "it_semovente_breda_501": {
-      "placement": "left",
-      "rank": "III",
-      "nation": "Italy",
-      "class": "ground",
-      "visibleName": "Breda 501",
-      "source": "wiki-tree-left",
       "page": "ground"
     },
     "it_semovente_m43_75_46": {
@@ -19435,6 +19678,15 @@
       "nation": "Italy",
       "class": "ground",
       "visibleName": "ZSU-57-2",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
+      "page": "ground"
+    },
+    "it_pzh_2000": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Italy",
+      "class": "ground",
+      "visibleName": "PzH 2000",
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "ground"
     },
@@ -20212,6 +20464,15 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
+    "fr_arl_44_mod": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "France",
+      "class": "ground",
+      "visibleName": "ARL-44 Bayard",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
     "fr_amx_elc_bis": {
       "placement": "left",
       "rank": "IV",
@@ -20759,6 +21020,15 @@
       "class": "ground",
       "visibleName": "Leclerc AZUR",
       "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "fr_embt": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "France",
+      "class": "ground",
+      "visibleName": "EMBT",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "ground"
     },
     "sw_strv_m31": {
@@ -21914,6 +22184,15 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
+    "il_mim_72_chaparral": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Israel",
+      "class": "ground",
+      "visibleName": "Imp.Chaparral",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
     "il_magach_6b_gal_batash": {
       "placement": "left",
       "rank": "VI",
@@ -22004,12 +22283,12 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "il_mim_72_chaparral": {
+    "il_9a33bm3": {
       "placement": "left",
       "rank": "VII",
       "nation": "Israel",
       "class": "ground",
-      "visibleName": "Imp.Chaparral",
+      "visibleName": "Osa-AKM",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -22022,12 +22301,12 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
-    "il_namer_rcws_30": {
+    "il_tor_m1": {
       "placement": "left",
       "rank": "VII",
       "nation": "Israel",
       "class": "ground",
-      "visibleName": "Namer 30",
+      "visibleName": "Tor-M1",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -22040,6 +22319,24 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
+    "il_namer_rcws_30": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Israel",
+      "class": "ground",
+      "visibleName": "Namer 30",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
+    "il_namer_tsrikhon": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Israel",
+      "class": "ground",
+      "visibleName": "Namer Tsrikhon",
+      "source": "wiki-tree-left",
+      "page": "ground"
+    },
     "il_merkava_mk_3_raam_segol": {
       "placement": "right",
       "rank": "VII",
@@ -22047,6 +22344,15 @@
       "class": "ground",
       "visibleName": "Ra'am Sagol",
       "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
+    "il_leopard_2a6_hel": {
+      "placement": "left",
+      "rank": "VIII",
+      "nation": "Israel",
+      "class": "ground",
+      "visibleName": "Leopard 2HEL",
+      "source": "wiki-tree-left",
       "page": "ground"
     },
     "il_merkava_mk_4b": {
@@ -22073,15 +22379,6 @@
       "nation": "Israel",
       "class": "ground",
       "visibleName": "SPYDER",
-      "source": "wiki-tree-left",
-      "page": "ground"
-    },
-    "il_namer_tsrikhon": {
-      "placement": "left",
-      "rank": "VIII",
-      "nation": "Israel",
-      "class": "ground",
-      "visibleName": "Namer Tsrikhon",
       "source": "wiki-tree-left",
       "page": "ground"
     },
@@ -22208,7 +22505,7 @@
       "nation": "USA",
       "class": "heli",
       "visibleName": "AH-64A (GR)",
-      "source": "api/status+raw-api-status",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "helicopters"
     },
     "yah_64": {
@@ -22274,15 +22571,6 @@
       "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "helicopters"
     },
-    "uh_1d": {
-      "placement": "left",
-      "rank": "V",
-      "nation": "Germany",
-      "class": "heli",
-      "visibleName": "UH-1D",
-      "source": "wiki-tree-marker+raw-api-ordinary-guard",
-      "page": "helicopters"
-    },
     "mi_8tb": {
       "placement": "left",
       "rank": "V",
@@ -22290,6 +22578,15 @@
       "class": "heli",
       "visibleName": "Mi-8TB",
       "source": "wiki-tree-left",
+      "page": "helicopters"
+    },
+    "uh_1d": {
+      "placement": "left",
+      "rank": "V",
+      "nation": "Germany",
+      "class": "heli",
+      "visibleName": "UH-1D",
+      "source": "wiki-tree-marker+raw-api-ordinary-guard",
       "page": "helicopters"
     },
     "bo_105cb2": {
@@ -22301,15 +22598,6 @@
       "source": "api/status+raw-api-status",
       "page": "helicopters"
     },
-    "bo_105pah1": {
-      "placement": "left",
-      "rank": "VI",
-      "nation": "Germany",
-      "class": "heli",
-      "visibleName": "BO 105 PAH-1",
-      "source": "wiki-tree-left",
-      "page": "helicopters"
-    },
     "mi_24d_german": {
       "placement": "left",
       "rank": "VI",
@@ -22319,12 +22607,12 @@
       "source": "wiki-tree-left",
       "page": "helicopters"
     },
-    "bo_105pah1_a1": {
+    "bo_105pah1": {
       "placement": "left",
       "rank": "VI",
       "nation": "Germany",
       "class": "heli",
-      "visibleName": "BO 105 PAH-1A1",
+      "visibleName": "BO 105 PAH-1",
       "source": "wiki-tree-left",
       "page": "helicopters"
     },
@@ -22337,6 +22625,15 @@
       "source": "wiki-tree-left",
       "page": "helicopters"
     },
+    "bo_105pah1_a1": {
+      "placement": "left",
+      "rank": "VI",
+      "nation": "Germany",
+      "class": "heli",
+      "visibleName": "BO 105 PAH-1A1",
+      "source": "wiki-tree-left",
+      "page": "helicopters"
+    },
     "mi_24p_german_hfs80": {
       "placement": "right",
       "rank": "VI",
@@ -22344,6 +22641,15 @@
       "class": "heli",
       "visibleName": "Mi-24P HFS 80",
       "source": "api/status+wiki-tree-marker+raw-api-status",
+      "page": "helicopters"
+    },
+    "h145m": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Germany",
+      "class": "heli",
+      "visibleName": "H145M",
+      "source": "wiki-tree-left",
       "page": "helicopters"
     },
     "tiger_uht": {
@@ -22568,6 +22874,15 @@
       "nation": "Britain",
       "class": "heli",
       "visibleName": "AH Mk.1 Apache",
+      "source": "wiki-tree-left",
+      "page": "helicopters"
+    },
+    "aw_159": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Britain",
+      "class": "heli",
+      "visibleName": "Wildcat HMA2",
       "source": "wiki-tree-left",
       "page": "helicopters"
     },
@@ -23111,12 +23426,12 @@
       "source": "api/status+raw-api-status",
       "page": "ships"
     },
-    "us_destroyer_fletcher": {
+    "us_destroyer_mahan_class": {
       "placement": "left",
       "rank": "II",
       "nation": "USA",
       "class": "bluewater",
-      "visibleName": "USS Fletcher",
+      "visibleName": "USS Mahan",
       "source": "wiki-tree-left",
       "page": "ships"
     },
@@ -23126,6 +23441,15 @@
       "nation": "USA",
       "class": "bluewater",
       "visibleName": "USS Gridley",
+      "source": "wiki-tree-left",
+      "page": "ships"
+    },
+    "us_destroyer_fletcher": {
+      "placement": "left",
+      "rank": "II",
+      "nation": "USA",
+      "class": "bluewater",
+      "visibleName": "USS Fletcher",
       "source": "wiki-tree-left",
       "page": "ships"
     },
@@ -23651,21 +23975,21 @@
       "source": "wiki-tree-left",
       "page": "ships"
     },
-    "germ_destroyer_fletcher_zerstorer4": {
-      "placement": "right",
-      "rank": "II",
-      "nation": "Germany",
-      "class": "bluewater",
-      "visibleName": "Z4 Zerstörer",
-      "source": "api/status+raw-api-status",
-      "page": "ships"
-    },
     "germ_destroyer_class1924_jaguar1941": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "bluewater",
       "visibleName": "Jaguar",
+      "source": "api/status+raw-api-status",
+      "page": "ships"
+    },
+    "germ_destroyer_fletcher_zerstorer4": {
+      "placement": "right",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "bluewater",
+      "visibleName": "Z4 Zerstörer",
       "source": "api/status+raw-api-status",
       "page": "ships"
     },
@@ -24301,12 +24625,12 @@
       "page": "ships"
     },
     "ussr_battleship_oktyabrskaya_revolutsiya": {
-      "placement": "left",
+      "placement": "right",
       "rank": "V",
       "nation": "USSR",
       "class": "bluewater",
       "visibleName": "Oktyabrskaya Revolutsiya",
-      "source": "wiki-tree-left",
+      "source": "api/status+raw-api-status",
       "page": "ships"
     },
     "ussr_battleship_novorossiysk": {
@@ -24864,6 +25188,15 @@
       "nation": "Britain",
       "class": "bluewater",
       "visibleName": "HMS Vanguard",
+      "source": "wiki-tree-left",
+      "page": "ships"
+    },
+    "uk_battleship_lion_class": {
+      "placement": "left",
+      "rank": "VII",
+      "nation": "Britain",
+      "class": "bluewater",
+      "visibleName": "HMS Lion",
       "source": "wiki-tree-left",
       "page": "ships"
     },
@@ -25758,6 +26091,15 @@
       "source": "wiki-tree-left",
       "page": "boats"
     },
+    "germ_rboot_r310": {
+      "placement": "right",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "coastal",
+      "visibleName": "R-310",
+      "source": "api/status+raw-api-status",
+      "page": "boats"
+    },
     "germ_s_100_s_174_class": {
       "placement": "left",
       "rank": "III",
@@ -26196,6 +26538,15 @@
       "nation": "USSR",
       "class": "coastal",
       "visibleName": "Pr.191",
+      "source": "wiki-tree-left",
+      "page": "boats"
+    },
+    "ussr_fugas_t1_strela": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "USSR",
+      "class": "coastal",
+      "visibleName": "Strela",
       "source": "wiki-tree-left",
       "page": "boats"
     },
@@ -26939,6 +27290,15 @@
       "source": "wiki-tree-left",
       "page": "boats"
     },
+    "jp_type9_pt809": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Japan",
+      "class": "coastal",
+      "visibleName": "PT-809",
+      "source": "api/status+raw-api-status",
+      "page": "boats"
+    },
     "jp_t51a": {
       "placement": "right",
       "rank": "III",
@@ -27276,6 +27636,15 @@
       "placement": "right",
       "source": "raw-api-status"
     },
+    "germ_leopard_a1a1_120": {
+      "rank": "I",
+      "nation": "Germany",
+      "class": "ground",
+      "visibleName": "LEOPARD-A1a1-120",
+      "page": "raw-api",
+      "placement": "right",
+      "source": "raw-api-status"
+    },
     "germ_pzkpfw_35t_romania_mare": {
       "rank": "I",
       "nation": "Germany",
@@ -27308,6 +27677,15 @@
       "nation": "USSR",
       "class": "air",
       "visibleName": "2M-MSTITEL",
+      "page": "raw-api",
+      "placement": "right",
+      "source": "raw-api-status"
+    },
+    "it_battleship_giulio_cesare": {
+      "rank": "I",
+      "nation": "Italy",
+      "class": "bluewater",
+      "visibleName": "BATTLESHIP-GIULIO-CESARE",
       "page": "raw-api",
       "placement": "right",
       "source": "raw-api-status"
@@ -27548,6 +27926,15 @@
       "source": "unit-override-right-v263",
       "status": "Акционная"
     },
+    "uk_m1a1_aim_abrams": {
+      "rank": "I",
+      "nation": "Britain",
+      "class": "ground",
+      "visibleName": "M1a1-AIM-ABRAMS",
+      "page": "raw-api",
+      "placement": "right",
+      "source": "raw-api-status"
+    },
     "uk_m4a5_ram_2": {
       "rank": "I",
       "nation": "Britain",
@@ -27562,6 +27949,15 @@
       "nation": "USA",
       "class": "bluewater",
       "visibleName": "CRUISER-DES-MOINES-CLASS-NEWPORT-NEWS",
+      "page": "raw-api",
+      "placement": "right",
+      "source": "raw-api-status"
+    },
+    "us_m1a1_aim_abrams": {
+      "rank": "I",
+      "nation": "USA",
+      "class": "ground",
+      "visibleName": "M1a1-AIM-ABRAMS",
       "page": "raw-api",
       "placement": "right",
       "source": "raw-api-status"

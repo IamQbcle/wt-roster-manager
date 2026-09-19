@@ -28843,6 +28843,463 @@
       "reason": "not found",
       "logic_version": "v2.62-status-tree-unit-supplements",
       "updated_at": "2026-09-03T09:20:26+00:00"
+    },
+    "ca_27_mk32_raaf": {
+      "status": "ok",
+      "links": [
+        "scimitar_f1",
+        "harrier_frs1_early"
+      ],
+      "reason": "ca_27_mk32_raaf; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:05+00:00"
+    },
+    "cn_fk_2000": {
+      "status": "ok",
+      "links": [
+        "cn_pgz_625_fb10",
+        "cn_hq_11"
+      ],
+      "reason": "cn_fk_2000; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:05+00:00"
+    },
+    "fr_lcm_monitor": {
+      "status": "ok",
+      "links": [
+        "fr_vtb13",
+        "fr_mtb96_vosper"
+      ],
+      "reason": "fr_lcm_monitor; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:05+00:00"
+    },
+    "a_4ptm_malaysia": {
+      "status": "ok",
+      "links": [
+        "ca_27_mk32_malaysia",
+        "mig_29n"
+      ],
+      "reason": "a_4ptm_malaysia; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:05+00:00"
+    },
+    "f_102a_late": {
+      "status": "ok",
+      "links": [
+        "f-80",
+        "f_101c"
+      ],
+      "reason": "f_102a_late; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:05+00:00"
+    },
+    "f-84g_greece": {
+      "status": "ok",
+      "links": [
+        "sb2c_5_greece",
+        "f_102a_greece"
+      ],
+      "reason": "f-84g_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:05+00:00"
+    },
+    "fr_embt": {
+      "status": "ok",
+      "links": [
+        "fr_leopard_2a6nl"
+      ],
+      "reason": "fr_embt; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "germ_embt": {
+      "status": "ok",
+      "links": [
+        "germ_leopard_2k"
+      ],
+      "reason": "germ_embt; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "fr_cruiser_algerie_class": {
+      "status": "ok",
+      "links": [
+        "fr_cruiser_la_galissoniere_class_gloire",
+        "fr_battleship_bretagne_class_bretagne"
+      ],
+      "reason": "fr_cruiser_algerie_class; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "h145m": {
+      "status": "ok",
+      "links": [
+        "bo_105pah1_a1"
+      ],
+      "reason": "h145m; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "it_pzh_2000": {
+      "status": "ok",
+      "links": [
+        "it_palmaria",
+        "it_m113a1_tow"
+      ],
+      "reason": "it_pzh_2000; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "ca_27_mk32_malaysia": {
+      "status": "ok",
+      "links": [
+        "g8n1",
+        "a_4ptm_malaysia"
+      ],
+      "reason": "ca_27_mk32_malaysia; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "f_102a_greece": {
+      "status": "ok",
+      "links": [
+        "f-84g_greece",
+        "f_86em_greece"
+      ],
+      "reason": "f_102a_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "f_86em_greece": {
+      "status": "ok",
+      "links": [
+        "f_102a_greece",
+        "a_7h_greece"
+      ],
+      "reason": "f_86em_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "f_4e_aup_greece": {
+      "status": "ok",
+      "links": [
+        "mirage_f1cg_greece",
+        "mirage_2000_5eg_mk2_greece"
+      ],
+      "reason": "f_4e_aup_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "il_9a33bm3": {
+      "status": "ok",
+      "links": [
+        "il_mim_72_chaparral",
+        "il_tor_m1"
+      ],
+      "reason": "il_9a33bm3; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "a_7h_greece": {
+      "status": "ok",
+      "links": [
+        "f_86em_greece",
+        "mirage_f1cg_greece"
+      ],
+      "reason": "a_7h_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "hawk_t1a_early": {
+      "status": "ok",
+      "links": [
+        "hornet_mk3",
+        "swift_f1"
+      ],
+      "reason": "hawk_t1a_early; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "il_leopard_2a6_hel": {
+      "status": "ok",
+      "links": [
+        "il_sabra_mk1"
+      ],
+      "reason": "il_leopard_2a6_hel; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "il_tor_m1": {
+      "status": "ok",
+      "links": [
+        "il_9a33bm3",
+        "il_spyder_aio"
+      ],
+      "reason": "il_tor_m1; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "f_14d_vf_11": {
+      "status": "ok",
+      "links": [
+        "f_14b"
+      ],
+      "reason": "f_14d_vf_11; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "ki_93_1_ko": {
+      "status": "ok",
+      "links": [
+        "b7a2"
+      ],
+      "reason": "ki_93_1_ko; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:06+00:00"
+    },
+    "germ_rboot_r310": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "jp_harimau": {
+      "status": "ok",
+      "links": [
+        "jp_type_16"
+      ],
+      "reason": "jp_harimau; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "us_m7": {
+      "status": "ok",
+      "links": [
+        "us_m22_locust",
+        "us_m6a1"
+      ],
+      "reason": "us_m7; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "aw_159": {
+      "status": "ok",
+      "links": [
+        "ah_mk1"
+      ],
+      "reason": "aw_159; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "b_26b_indonesia_kalong": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "arado_234b_2_mt": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "mig_35": {
+      "status": "ok",
+      "links": [
+        "mig_29smt_9_19"
+      ],
+      "reason": "mig_35; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "j_16": {
+      "status": "ok",
+      "links": [
+        "jh_7a2"
+      ],
+      "reason": "j_16; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "uk_arjun_mk1": {
+      "status": "ok",
+      "links": [
+        "uk_vickers_mk7",
+        "uk_m1a2_sep3_abrams"
+      ],
+      "reason": "uk_arjun_mk1; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "uk_battleship_lion_class": {
+      "status": "ok",
+      "links": [
+        "uk_battleship_prince_of_wales"
+      ],
+      "reason": "uk_battleship_lion_class; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "cn_plz_45": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "ussr_fugas_t1_strela": {
+      "status": "ok",
+      "links": [
+        "ussr_1124_ack",
+        "ussr_skr_groza_1943"
+      ],
+      "reason": "ussr_fugas_t1_strela; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "rafale_eg_greece": {
+      "status": "ok",
+      "links": [
+        "mirage_2000_5eg_mk2_greece"
+      ],
+      "reason": "rafale_eg_greece; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "se_203": {
+      "status": "ok",
+      "links": [
+        "f-84g_france",
+        "f-84f_france"
+      ],
+      "reason": "se_203; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "saab_j35j": {
+      "status": "ok",
+      "links": [
+        "saab_j35d"
+      ],
+      "reason": "saab_j35j; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "sb2c_5_greece": {
+      "status": "ok",
+      "links": [
+        "f-84g_greece"
+      ],
+      "reason": "sb2c_5_greece; raw=1 resolved=1",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "us_destroyer_mahan_class": {
+      "status": "ok",
+      "links": [
+        "us_destroyer_farragut_1942",
+        "us_destroyer_fletcher"
+      ],
+      "reason": "us_destroyer_mahan_class; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "fr_arl_44_mod": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "ussr_object_416": {
+      "status": "ok",
+      "links": [
+        "ussr_2s19_m1",
+        "ussr_it_1"
+      ],
+      "reason": "ussr_object_416; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "mirage_2000_5eg_mk2_greece": {
+      "status": "ok",
+      "links": [
+        "f_4e_aup_greece",
+        "rafale_eg_greece"
+      ],
+      "reason": "mirage_2000_5eg_mk2_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "it_battleship_giulio_cesare": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "mirage_f1cg_greece": {
+      "status": "ok",
+      "links": [
+        "a_7h_greece",
+        "f_4e_aup_greece"
+      ],
+      "reason": "mirage_f1cg_greece; raw=2 resolved=2",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "jp_type9_pt809": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "a_7e_greece": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:07+00:00"
+    },
+    "f_16xl": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:08+00:00"
+    },
+    "ussr_m53_59_kit_4rank": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:08+00:00"
+    },
+    "hawk_t1a": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:08+00:00"
+    },
+    "ussr_t_44_kit_4rank": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:08+00:00"
+    },
+    "ussr_is_2m_kit_4rank": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-09-18T16:30:08+00:00"
     }
   }
 }

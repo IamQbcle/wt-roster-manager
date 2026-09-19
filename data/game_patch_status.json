@@ -1,29 +1,29 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "v3.87 / September data hotfix",
-  "latest_known_patch": "2.57.1.126 / 2026-09-02",
-  "latest_public_signal": "September data refresh: Oktyabrskaya Revolutsiya added by API/Wiki; curated availability fixes for PzH 2000, Ho-Ri, F-20A and Hawk 209. Major update 2.59 preorder vehicles are not applied yet.",
-  "checked_at": "2026-09-03",
+  "manager_data_patch": "v3.89 / Sky Odyssey 2.59 data update",
+  "latest_known_patch": "2.59.0.11 / 2026-09-17",
+  "latest_public_signal": "Sky Odyssey is live. The API/Wiki refresh imported the new 2.59 vehicle set; curated fixes cover live BR/rank/tree changes and current permanent/temporary availability.",
+  "checked_at": "2026-09-18",
   "needs_review": false,
   "notes": {
-    "ru": "v3.87 применяет свежие данные API/Wiki и ручные правки доступности: немецкая PzH 2000 снова доступна как обычная исследуемая техника; Ho-Ri Production/Prototype переведены в owner-only после вывода 1 сентября; F-20A и Hawk 209 снова доступны; «Октябрьская революция» добавлена как акционная owner-only техника. Предзаказы/техника 2.59 и перестановки следующего мажора пока не применялись.",
-    "en": "v3.87 applies the latest API/Wiki refresh and curated availability fixes: German PzH 2000 is available as a regular researchable vehicle again; Ho-Ri Production/Prototype are owner-only after the September 1 removal; F-20A and Hawk 209 are available again; Oktyabrskaya Revolutsiya is added as an event owner-only vehicle. 2.59 preorder vehicles and next-major tree reshuffles are not applied yet."
+    "ru": "v3.89 синхронизирована с крупным обновлением «Небесная одиссея»: импортирована новая техника 2.59, применены перестановки рангов/групп, исправлен БР Saraph, статус F-16XL и актуальная доступность техники. Временные юбилейные продажи по умолчанию не считаются постоянной доступностью.",
+    "en": "v3.89 is synchronized with the Sky Odyssey major update: the new 2.59 vehicles are imported, live rank/group moves are applied, Saraph BR and F-16XL classification are corrected, and current vehicle availability is curated. Temporary anniversary sales are not treated as permanently available."
   },
-  "data_verified_game_version": "2.57.1.126",
-  "version_check_mode": "official_news_wiki_manual_supplement",
+  "data_verified_game_version": "2.59.0.11",
+  "version_check_mode": "official_changelog_news_wiki_api_manual_review",
   "deferred": {
-    "next_major_2_59": [
-      "PLZ45",
-      "RN Giulio Cesare",
-      "AW159 Wildcat HMA2",
-      "M7",
-      "Ki-93-I Ko",
-      "CA-27",
-      "possible researchable F-14D separate from premium/event F-14D",
-      "ground tech-tree reshuffles announced for the next major update"
+    "current_event_tracking": [
+      "F-16XL — Space Program event reward; currently treated as event / owner-only in the stable database."
     ],
-    "current_event_pending_api_data": [
-      "F-16XL — official event vehicle, but not in current API/Wiki export used by the app; add after stable data appears"
+    "temporary_sales_not_persistent": [
+      "YP-38",
+      "La-11",
+      "Dolgushin’s La-7",
+      "Plagis’ Spitfire LF Mk.IXc",
+      "Prendergast’s Spitfire FR Mk.XIVe",
+      "Mi-24D",
+      "Bostwick’s P-47M-1-RE",
+      "Wetmore’s P-51D-10"
     ]
   }
 }

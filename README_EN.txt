@@ -3,7 +3,7 @@ War Thunder Roster Manager
 
 A free local utility for War Thunder players. It adds an external planning layer on top of the game: track your hangar, store unlimited lineups, rebuild setups more easily, plan progression, and compare compatible lineups with a friend.
 
-War Thunder itself limits the number of in-game presets. When you play many BRs, nations and modes, it becomes easy to forget which crew was trained for which vehicle and what exactly an old setup looked like. War Thunder Roster Manager helps you keep those plans outside the game and restore them later without guessing where each vehicle should go.
+War Thunder now supports up to 25 in-game presets. When you play many BRs, nations and modes, it can still be useful to keep more plans outside the game and remember which crew was trained for which vehicle. War Thunder Roster Manager provides that unlimited external planning layer and helps restore old setups without guessing where each vehicle should go.
 
 This project is not affiliated with Gaijin Entertainment and is not an official War Thunder tool. It does not modify the game client, automate battles, or access your War Thunder account.
 
@@ -29,7 +29,7 @@ Most users do not need to touch the user_data folder manually: the browser and t
 Why this exists
 ---------------
 
-The game has lineups, but the number of in-game presets is limited, and rebuilding old setups can be painful: which crew was trained for which vehicle, what was in each slot, what BR the lineup used, and how to restore everything after experimenting. War Thunder Roster Manager solves this by letting you keep as many lineup plans as you want and quickly understand where each vehicle should go.
+The game now allows up to 25 in-game presets, but rebuilding and archiving many old setups can still be painful: which crew was trained for which vehicle, what was in each slot, what BR the lineup used, and how to restore everything after experimenting. War Thunder Roster Manager lets you keep as many external lineup plans as you want and quickly understand where each vehicle should go.
 
 It is especially useful if you do not simply rush top tier, but return to different ranks, BRs and modes, build themed lineups, play with friends, or want to use owned vehicles that have been sitting unused.
 
@@ -37,7 +37,7 @@ Main features
 -------------
 
 - Personal roster: mark owned vehicles, talismans and planned purchases.
-- Unlimited external lineups: store setups for different BRs, modes, nations, events, friends and moods without the in-game preset limit.
+- Unlimited external lineups: keep additional and archived setups for different BRs, modes, nations, events, friends and moods beyond the game’s 25 in-game presets.
 - Auto-pick lineups: fill crew slots by rules, considering BR, rank, ownership, acquisition type and crew roles.
 - Progression planning: auto-pick can show which vehicles are missing for current or future lineups, helping you decide what to research next instead of grinding everything blindly.
 - Premium and rare vehicle control: premium, pack, event, squadron and market vehicles are used by default only if you marked them as owned.
@@ -45,7 +45,7 @@ Main features
 - Crew roles: dedicate crews to bombers, attackers, SPAA, heavy tanks and other roles.
 - Random lineup choice: “Roulette” chooses a ready lineup for battle when you want variety.
 - Squad planning with a friend: import your friend's lineup profile and find compatible lineups without servers, accounts or registration.
-- Change history: after updating the database, review BR, rank, class and tree-placement changes.
+- Change history: after updating the database, see BR, rank, availability, class and tree-placement changes. Only BR changes require manual review; the rest remain informational.
 
 Roster
 ------
@@ -163,7 +163,8 @@ Changes
 
 The “Changes” tab shows what changed after a database update: BR, rank, class, tree placement, added vehicles or missing vehicles.
 
-If a change affects a vehicle used in your lineups, it helps you quickly review the affected lineup.
+Only BR changes are treated as actionable: for them the app shows ownership, affected lineups and the reviewed checkbox. Rank, availability, added vehicles and other changes remain purely informational.
+For a whole update block, you can mark all BR changes as reviewed or mark BR changes for unowned vehicles as reviewed in one action. Reviewed BR changes move below unreviewed ones, so the remaining lineup checks stay at the top.
 
 Updating data
 -------------

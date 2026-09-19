@@ -1,6 +1,6 @@
 {
-  "logic_version": "v2.86-i18n-lineup-image-ram-cleanup",
-  "updated_at": "2026-09-03T09:21:16+00:00",
+  "logic_version": "v3.89-wiki-table-plus-curated-specials",
+  "updated_at": "2026-09-18T16:31:26+00:00",
   "items": {
     "USA|air": {
       "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=usa",
@@ -1325,11 +1325,20 @@
             [
               {
                 "type": "unit",
-                "id": "f_101c",
+                "id": "f_102a_late",
                 "req": "f-80",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/f_102a_late.png",
+                "label": "F-102A",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "f_101c",
+                "req": "f_102a_late",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/f_101c.png",
                 "label": "F-101C",
-                "row": 0,
+                "row": 1,
                 "col": 0
               },
               {
@@ -1347,7 +1356,7 @@
                   "f-104c": "https://static.encyclopedia.warthunder.com/slots/f-104c.png"
                 },
                 "req": "f_101c",
-                "row": 1,
+                "row": 2,
                 "col": 0
               }
             ],
@@ -1771,12 +1780,14 @@
                 "name": "F-14",
                 "ids": [
                   "f_14a_early",
-                  "f_14b"
+                  "f_14b",
+                  "f_14d_vf_11"
                 ],
                 "icon": "https://static.encyclopedia.warthunder.com/slots/f_14_group.png",
                 "memberIcons": {
                   "f_14a_early": "https://static.encyclopedia.warthunder.com/slots/f_14a_early.png",
-                  "f_14b": "https://static.encyclopedia.warthunder.com/slots/f_14b.png"
+                  "f_14b": "https://static.encyclopedia.warthunder.com/slots/f_14b.png",
+                  "f_14d_vf_11": "https://static.encyclopedia.warthunder.com/slots/f_14d_vf_11.png"
                 },
                 "req": "f_18_group",
                 "row": 1,
@@ -1818,10 +1829,10 @@
             },
             {
               "type": "unit",
-              "id": "f_14a_iriaf",
+              "id": "f_16xl",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/f_14a_iriaf.png",
-              "label": "▄F-14A IRIAF",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/f_16xl.png",
+              "label": "F-16XL",
               "row": 0,
               "col": 1
             },
@@ -1836,12 +1847,21 @@
             },
             {
               "type": "unit",
+              "id": "f_14a_iriaf",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/f_14a_iriaf.png",
+              "label": "▄F-14A IRIAF",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "type": "unit",
               "id": "f_14d",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/f_14d.png",
               "label": "F-14D",
-              "row": 1,
-              "col": 1
+              "row": 2,
+              "col": 0
             }
           ]
         },
@@ -2097,7 +2117,17 @@
                 "col": 1
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "us_m7",
+                "req": "us_m22_locust",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/us_m7.png",
+                "label": "M7",
+                "row": 0,
+                "col": 2
+              }
+            ],
             [
               {
                 "type": "unit",
@@ -2289,7 +2319,7 @@
                   "us_m6a1": "https://static.encyclopedia.warthunder.com/slots/us_m6a1.png",
                   "us_t1e1": "https://static.encyclopedia.warthunder.com/slots/us_t1e1.png"
                 },
-                "req": "",
+                "req": "us_m7",
                 "row": 0,
                 "col": 2
               },
@@ -2835,8 +2865,8 @@
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/us_t58.png",
               "label": "T58",
-              "row": 3,
-              "col": 0
+              "row": 2,
+              "col": 1
             }
           ]
         },
@@ -3235,7 +3265,7 @@
               "id": "us_m1a1_aim_abrams",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/us_m1a1_aim_abrams.png",
-              "label": "M1A1 AIM",
+              "label": "M1A1 SA",
               "row": 3,
               "col": 0
             },
@@ -3274,6 +3304,16 @@
               "label": "RDF/LT",
               "row": 6,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "us_m1a1_hc_senrai_maidens",
+              "req": "",
+              "icon": "assets/vehicles/slots/us_m1a1_hc_senrai_maidens.png",
+              "label": "M1A1 HC (Senrai Maidens)",
+              "row": 5,
+              "col": 0,
+              "source": "v3.89-curated-senrai-layout"
             }
           ]
         },
@@ -3566,7 +3606,7 @@
               "id": "ah_64a_greece_usa",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/ah_64a_greece_usa.png",
-              "label": "AH-64A (GR)",
+              "label": "▃AH-64A (GR)",
               "row": 1,
               "col": 0
             },
@@ -3721,11 +3761,20 @@
             [
               {
                 "type": "unit",
-                "id": "us_destroyer_fletcher",
+                "id": "us_destroyer_mahan_class",
                 "req": "us_destroyer_farragut_1942",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_mahan_class.png",
+                "label": "USS Mahan",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "us_destroyer_fletcher",
+                "req": "us_destroyer_mahan_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_fletcher.png",
                 "label": "USS Fletcher",
-                "row": 0,
+                "row": 1,
                 "col": 0
               }
             ],
@@ -6015,10 +6064,10 @@
             },
             {
               "type": "unit",
-              "id": "me-262a-2a",
+              "id": "arado_234b_2_mt",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/me-262a-2a.png",
-              "label": "Me 262 A-2a",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/arado_234b_2_mt.png",
+              "label": "Ar 234 B-2 (WB 151)",
               "row": 1,
               "col": 1
             },
@@ -6030,6 +6079,15 @@
               "label": "◄G.91 R/4",
               "row": 2,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "me-262a-2a",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/me-262a-2a.png",
+              "label": "Me 262 A-2a",
+              "row": 2,
+              "col": 1
             }
           ]
         },
@@ -6207,7 +6265,7 @@
                   "mig-21_mf",
                   "mig-21_bis_sau"
                 ],
-                "icon": "https://static.encyclopedia.warthunder.com/slots/mig-21_mf.png",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/mig_21_germany_group.png",
                 "memberIcons": {
                   "mig-21_mf": "https://static.encyclopedia.warthunder.com/slots/mig-21_mf.png",
                   "mig-21_bis_sau": "https://static.encyclopedia.warthunder.com/slots/mig-21_bis_sau.png"
@@ -6912,11 +6970,20 @@
                 "col": 4
               },
               {
-                "type": "unit",
-                "id": "germ_stug_III_ausf_G",
+                "type": "group",
+                "id": "germ_m44_55_group",
+                "label": "M44/55",
+                "name": "M44/55",
+                "ids": [
+                  "germ_m44",
+                  "germ_m55"
+                ],
+                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_m44_55_group.png",
+                "memberIcons": {
+                  "germ_m44": "https://static.encyclopedia.warthunder.com/slots/germ_m44.png",
+                  "germ_m55": "https://static.encyclopedia.warthunder.com/slots/germ_m55.png"
+                },
                 "req": "germ_hummel",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_stug_iii_ausf_g.png",
-                "label": "StuG III G",
                 "row": 2,
                 "col": 4
               }
@@ -7090,20 +7157,11 @@
             ],
             [
               {
-                "type": "group",
-                "id": "germ_m44_55_group",
-                "label": "M44/55",
-                "name": "M44/55",
-                "ids": [
-                  "germ_m44",
-                  "germ_m55"
-                ],
-                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_m44_55_group.png",
-                "memberIcons": {
-                  "germ_m44": "https://static.encyclopedia.warthunder.com/slots/germ_m44.png",
-                  "germ_m55": "https://static.encyclopedia.warthunder.com/slots/germ_m55.png"
-                },
-                "req": "germ_stug_III_ausf_G",
+                "type": "unit",
+                "id": "germ_stug_III_ausf_G",
+                "req": "germ_m44_55_group",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_stug_iii_ausf_g.png",
+                "label": "StuG III G",
                 "row": 0,
                 "col": 4
               },
@@ -7121,7 +7179,7 @@
                   "germ_jgdpz_IV_L48": "https://static.encyclopedia.warthunder.com/slots/germ_jgdpz_iv_l48.png",
                   "germ_jgdpz_38t": "https://static.encyclopedia.warthunder.com/slots/germ_jgdpz_38t.png"
                 },
-                "req": "germ_m44_55_group",
+                "req": "germ_stug_III_ausf_G",
                 "row": 1,
                 "col": 4
               },
@@ -7824,7 +7882,7 @@
               "id": "germ_leopard_a1a1_120",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/germ_leopard_a1a1_120.png",
-              "label": "Leopard A1A1 (L/44)",
+              "label": "Leopard 1 MPI",
               "row": 1,
               "col": 0
             },
@@ -8032,13 +8090,33 @@
               "label": "Puma u14",
               "row": 3,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_leopard_2a4m_senrai_maidens",
+              "req": "",
+              "icon": "assets/vehicles/slots/germ_leopard_2a4m_senrai_maidens.png",
+              "label": "Leopard 2A4M (Senrai Maidens)",
+              "row": 4,
+              "col": 0,
+              "source": "v3.89-curated-senrai-layout"
             }
           ]
         },
         "VIII": {
           "leftCols": [
             [],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "germ_embt",
+                "req": "germ_leopard_2k",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/germ_embt.png",
+                "label": "◄EMBT",
+                "row": 0,
+                "col": 1
+              }
+            ],
             [
               {
                 "type": "group",
@@ -8183,10 +8261,10 @@
             [
               {
                 "type": "unit",
-                "id": "uh_1d",
+                "id": "mi_8tb",
                 "req": "sa_313b",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/uh_1d.png",
-                "label": "◄UH-1D",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/mi_8tb.png",
+                "label": "◊Mi-8TB",
                 "row": 1,
                 "col": 0
               }
@@ -8203,10 +8281,10 @@
               },
               {
                 "type": "unit",
-                "id": "mi_8tb",
+                "id": "uh_1d",
                 "req": "sa_313b",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/mi_8tb.png",
-                "label": "◊Mi-8TB",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uh_1d.png",
+                "label": "◄UH-1D",
                 "row": 1,
                 "col": 1
               }
@@ -8232,32 +8310,12 @@
             [
               {
                 "type": "unit",
-                "id": "bo_105pah1",
-                "req": "uh_1d",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/bo_105pah1.png",
-                "label": "BO 105 PAH-1",
-                "row": 0,
-                "col": 0
-              },
-              {
-                "type": "unit",
-                "id": "bo_105pah1_a1",
-                "req": "bo_105pah1",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/bo_105pah1_a1.png",
-                "label": "BO 105 PAH-1A1",
-                "row": 1,
-                "col": 0
-              }
-            ],
-            [
-              {
-                "type": "unit",
                 "id": "mi_24d_german",
                 "req": "mi_8tb",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/mi_24d_german.png",
                 "label": "◊Mi-24D",
                 "row": 0,
-                "col": 1
+                "col": 0
               },
               {
                 "type": "unit",
@@ -8265,6 +8323,26 @@
                 "req": "mi_24d_german",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/mi_24p_german.png",
                 "label": "◊Mi-24P",
+                "row": 1,
+                "col": 0
+              }
+            ],
+            [
+              {
+                "type": "unit",
+                "id": "bo_105pah1",
+                "req": "uh_1d",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/bo_105pah1.png",
+                "label": "BO 105 PAH-1",
+                "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "bo_105pah1_a1",
+                "req": "bo_105pah1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/bo_105pah1_a1.png",
+                "label": "BO 105 PAH-1A1",
                 "row": 1,
                 "col": 1
               }
@@ -8290,15 +8368,25 @@
             [
               {
                 "type": "unit",
+                "id": "h145m",
+                "req": "bo_105pah1_a1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/h145m.png",
+                "label": "H145M",
+                "row": 0,
+                "col": 0
+              }
+            ],
+            [
+              {
+                "type": "unit",
                 "id": "tiger_uht",
                 "req": "bo_105pah1_a1",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/tiger_uht.png",
                 "label": "EC-665 Tiger UHT",
                 "row": 0,
-                "col": 0
+                "col": 1
               }
             ],
-            [],
             [],
             [],
             []
@@ -8459,19 +8547,19 @@
           "right": [
             {
               "type": "unit",
-              "id": "germ_destroyer_fletcher_zerstorer4",
+              "id": "germ_destroyer_class1924_jaguar1941",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
-              "label": "Z4 Zerstörer",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
+              "label": "Jaguar",
               "row": 0,
               "col": 0
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_class1924_jaguar1941",
+              "id": "germ_destroyer_fletcher_zerstorer4",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
-              "label": "Jaguar",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
+              "label": "Z4 Zerstörer",
               "row": 1,
               "col": 0
             }
@@ -8987,7 +9075,17 @@
             [],
             []
           ],
-          "right": []
+          "right": [
+            {
+              "type": "unit",
+              "id": "germ_rboot_r310",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_rboot_r310.png",
+              "label": "R-310",
+              "row": 0,
+              "col": 0
+            }
+          ]
         },
         "III": {
           "leftCols": [
@@ -9867,7 +9965,7 @@
               "id": "il_2_m82",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/il_2_m82.png",
-              "label": "Ил-2 M-82",
+              "label": "Ил-2 М-82",
               "row": 2,
               "col": 1
             },
@@ -10220,7 +10318,7 @@
               "id": "tu-2_early",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/tu-2_early.png",
-              "label": "Ту-2",
+              "label": "Ту-2 (5)",
               "row": 6,
               "col": 1
             }
@@ -11072,7 +11170,7 @@
                 "id": "su_25sm3",
                 "req": "su_25t",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/su_25sm3.png",
-                "label": "Су-25CM3",
+                "label": "Су-25СМ3",
                 "row": 0,
                 "col": 3
               }
@@ -11122,7 +11220,17 @@
         "IX": {
           "leftCols": [
             [],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "mig_35",
+                "req": "mig_29smt_9_19",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/mig_35.png",
+                "label": "МиГ-35",
+                "row": 0,
+                "col": 1
+              }
+            ],
             [
               {
                 "type": "unit",
@@ -12161,6 +12269,26 @@
               "col": 1
             },
             {
+              "type": "group",
+              "id": "ussr_kit_4rank_group",
+              "label": "Будь Готов!",
+              "name": "Будь Готов!",
+              "ids": [
+                "ussr_t_44_kit_4rank",
+                "ussr_is_2m_kit_4rank",
+                "ussr_m53_59_kit_4rank"
+              ],
+              "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_kit_4rank_group.png",
+              "memberIcons": {
+                "ussr_t_44_kit_4rank": "https://static.encyclopedia.warthunder.com/slots/ussr_t_44_kit_4rank.png",
+                "ussr_is_2m_kit_4rank": "https://static.encyclopedia.warthunder.com/slots/ussr_is_2m_kit_4rank.png",
+                "ussr_m53_59_kit_4rank": "https://static.encyclopedia.warthunder.com/slots/ussr_m53_59_kit_4rank.png"
+              },
+              "req": "",
+              "row": 5,
+              "col": 0
+            },
+            {
               "type": "unit",
               "id": "ussr_type_62",
               "req": "",
@@ -12280,6 +12408,15 @@
                 "label": "2С19М1",
                 "row": 1,
                 "col": 3
+              },
+              {
+                "type": "unit",
+                "id": "ussr_object_416",
+                "req": "ussr_2s19_m1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_object_416.png",
+                "label": "Объект 416",
+                "row": 2,
+                "col": 3
               }
             ],
             [
@@ -12345,7 +12482,7 @@
               "id": "ussr_t_10a",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_t_10a.png",
-              "label": "Т-10A",
+              "label": "Т-10А",
               "row": 1,
               "col": 1
             },
@@ -12489,7 +12626,7 @@
                 "id": "ussr_bmd_4m2",
                 "req": "ussr_bmp_3_group",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_bmd_4m2.png",
-                "label": "БМД-4M2",
+                "label": "БМД-4М2",
                 "row": 2,
                 "col": 2
               }
@@ -12509,7 +12646,7 @@
                   "ussr_it_1": "https://static.encyclopedia.warthunder.com/slots/ussr_it_1.png",
                   "ussr_9p149": "https://static.encyclopedia.warthunder.com/slots/ussr_9p149.png"
                 },
-                "req": "ussr_2s19_m1",
+                "req": "ussr_object_416",
                 "row": 0,
                 "col": 3
               },
@@ -12523,11 +12660,20 @@
                 "col": 3
               },
               {
-                "type": "unit",
-                "id": "ussr_object_775",
+                "type": "group",
+                "id": "ussr_775_157_group",
+                "label": "775/9П157",
+                "name": "775/9П157",
+                "ids": [
+                  "ussr_object_775",
+                  "ussr_9p157"
+                ],
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_775_157_group.png",
+                "memberIcons": {
+                  "ussr_object_775": "https://static.encyclopedia.warthunder.com/slots/ussr_object_775.png",
+                  "ussr_9p157": "https://static.encyclopedia.warthunder.com/slots/ussr_9p157.png"
+                },
                 "req": "ussr_btr_82at",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_object_775.png",
-                "label": "Объект 775",
                 "row": 2,
                 "col": 3
               }
@@ -12595,7 +12741,7 @@
               "id": "ussr_bmd_4m",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_bmd_4m.png",
-              "label": "БМД-4M",
+              "label": "БМД-4М",
               "row": 2,
               "col": 0
             },
@@ -12693,20 +12839,11 @@
             [
               {
                 "type": "unit",
-                "id": "ussr_9p157",
-                "req": "ussr_object_775",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_9p157.png",
-                "label": "Хризантема-С",
-                "row": 0,
-                "col": 3
-              },
-              {
-                "type": "unit",
                 "id": "ussr_bmpt",
-                "req": "ussr_9p157",
+                "req": "ussr_775_157_group",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_bmpt.png",
                 "label": "БМПТ",
-                "row": 1,
+                "row": 0,
                 "col": 3
               }
             ],
@@ -12857,6 +12994,16 @@
               "label": "Т-80УК",
               "row": 6,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "ussr_t_80ue1_senrai_maidens",
+              "req": "",
+              "icon": "assets/vehicles/slots/ussr_t_80ue1_senrai_maidens.png",
+              "label": "T-80U-E1 (Senrai Maidens)",
+              "row": 7,
+              "col": 0,
+              "source": "v3.89-curated-senrai-layout"
             }
           ]
         },
@@ -13934,6 +14081,15 @@
                 "label": "Пр.1124 поздний",
                 "row": 0,
                 "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "ussr_fugas_t1_strela",
+                "req": "ussr_1124_ack",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_fugas_t1_strela.png",
+                "label": "Стрела",
+                "row": 1,
+                "col": 1
               }
             ],
             [
@@ -14006,7 +14162,7 @@
               {
                 "type": "unit",
                 "id": "ussr_skr_groza_1943",
-                "req": "ussr_1124_ack",
+                "req": "ussr_fugas_t1_strela",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_skr_groza_1943.png",
                 "label": "Гроза",
                 "row": 0,
@@ -14669,7 +14825,7 @@
               "id": "beaufighter_mk1_40mm",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/beaufighter_mk1_40mm.png",
-              "label": "Beaufighter Mk I (40-mm)",
+              "label": "Beaufighter Mk I (40 mm)",
               "row": 1,
               "col": 1
             },
@@ -15311,11 +15467,20 @@
             [
               {
                 "type": "unit",
-                "id": "swift_f1",
+                "id": "hawk_t1a_early",
                 "req": "hornet_mk3",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/hawk_t1a_early.png",
+                "label": "Hawk T Mk 1A",
+                "row": 0,
+                "col": 3
+              },
+              {
+                "type": "unit",
+                "id": "swift_f1",
+                "req": "hawk_t1a_early",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/swift_f1.png",
                 "label": "Swift F.1",
-                "row": 0,
+                "row": 1,
                 "col": 3
               },
               {
@@ -15324,7 +15489,7 @@
                 "req": "swift_f1",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/swift_f7.png",
                 "label": "Swift F.7",
-                "row": 1,
+                "row": 2,
                 "col": 3
               }
             ],
@@ -15388,11 +15553,20 @@
             },
             {
               "type": "unit",
+              "id": "hawk_t1a",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/hawk_t1a.png",
+              "label": "Hawk T Mk 1A (FRP)",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "type": "unit",
               "id": "marut_mk1",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/marut_mk1.png",
               "label": "▄HF-24",
-              "row": 1,
+              "row": 2,
               "col": 1
             }
           ]
@@ -15447,6 +15621,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/scimitar_f1.png",
                 "label": "Scimitar F Mk.1",
                 "row": 0,
+                "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "ca_27_mk32_raaf",
+                "req": "scimitar_f1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ca_27_mk32_raaf.png",
+                "label": "▄CA-27 Mk.32",
+                "row": 1,
                 "col": 2
               }
             ],
@@ -15549,7 +15732,7 @@
               {
                 "type": "unit",
                 "id": "harrier_frs1_early",
-                "req": "scimitar_f1",
+                "req": "ca_27_mk32_raaf",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/harrier_frs1_early.png",
                 "label": "Sea Harrier FRS.1 (e)",
                 "row": 0,
@@ -15985,13 +16168,11 @@
                 "label": "Cromwell/Sherman",
                 "name": "Cromwell/Sherman",
                 "ids": [
-                  "uk_a27m_cromwell_5",
                   "uk_a27m_cromwell_1",
                   "uk_sherman_II"
                 ],
                 "icon": "https://static.encyclopedia.warthunder.com/slots/uk_cromwell_sherman_group.png",
                 "memberIcons": {
-                  "uk_a27m_cromwell_5": "https://static.encyclopedia.warthunder.com/slots/uk_a27m_cromwell_5.png",
                   "uk_a27m_cromwell_1": "https://static.encyclopedia.warthunder.com/slots/uk_a27m_cromwell_1.png",
                   "uk_sherman_II": "https://static.encyclopedia.warthunder.com/slots/uk_sherman_ii.png"
                 },
@@ -16158,10 +16339,10 @@
             },
             {
               "type": "unit",
-              "id": "uk_a27m_cromwell_5_rp3",
+              "id": "uk_m4a5_ram_2",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_a27m_cromwell_5_rp3.png",
-              "label": "Cromwell V (RP-3)",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_m4a5_ram_2.png",
+              "label": "Ram II",
               "row": 2,
               "col": 0
             },
@@ -16173,15 +16354,6 @@
               "label": "Churchill AVRE Petard",
               "row": 2,
               "col": 1
-            },
-            {
-              "type": "unit",
-              "id": "uk_m4a5_ram_2",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_m4a5_ram_2.png",
-              "label": "Ram II",
-              "row": 3,
-              "col": 0
             },
             {
               "type": "unit",
@@ -16199,11 +16371,20 @@
             [
               {
                 "type": "unit",
-                "id": "uk_sherman_vc_firefly",
+                "id": "uk_a27m_cromwell_5",
                 "req": "uk_cromwell_sherman_group",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_a27m_cromwell_5.png",
+                "label": "Cromwell V",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "uk_sherman_vc_firefly",
+                "req": "uk_a27m_cromwell_5",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/uk_sherman_vc_firefly.png",
                 "label": "Sherman Firefly",
-                "row": 0,
+                "row": 1,
                 "col": 0
               },
               {
@@ -16221,7 +16402,7 @@
                   "uk_a_34_comet": "https://static.encyclopedia.warthunder.com/slots/uk_a_34_comet.png"
                 },
                 "req": "uk_sherman_vc_firefly",
-                "row": 1,
+                "row": 2,
                 "col": 0
               }
             ],
@@ -16318,10 +16499,10 @@
           "right": [
             {
               "type": "unit",
-              "id": "uk_17_pdr_m10_achilles_norfolk_yeomanry",
+              "id": "uk_a27m_cromwell_5_rp3",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_17_pdr_m10_achilles_norfolk_yeomanry.png",
-              "label": "Achilles (65 Rg.)",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_a27m_cromwell_5_rp3.png",
+              "label": "Cromwell V (RP-3)",
               "row": 0,
               "col": 0
             },
@@ -16332,6 +16513,24 @@
               "icon": "https://static.encyclopedia.warthunder.com/slots/uk_a_33_excelsior.png",
               "label": "Excelsior",
               "row": 0,
+              "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "uk_17_pdr_m10_achilles_norfolk_yeomanry",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_17_pdr_m10_achilles_norfolk_yeomanry.png",
+              "label": "Achilles (65 Rg.)",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "uk_a_22f_mk_7_churchill_crocodile",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_a_22f_mk_7_churchill_crocodile.png",
+              "label": "Churchill Crocodile",
+              "row": 1,
               "col": 1
             },
             {
@@ -16351,24 +16550,6 @@
                 "uk_crusader_aa_mk_2_kit_3rank": "https://static.encyclopedia.warthunder.com/slots/uk_crusader_aa_mk_2_kit_3rank.png"
               },
               "req": "",
-              "row": 1,
-              "col": 0
-            },
-            {
-              "type": "unit",
-              "id": "uk_a_22f_mk_7_churchill_crocodile",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_a_22f_mk_7_churchill_crocodile.png",
-              "label": "Churchill Crocodile",
-              "row": 1,
-              "col": 1
-            },
-            {
-              "type": "unit",
-              "id": "uk_sherman_ic_firefly",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_sherman_ic_firefly.png",
-              "label": "Sherman IC \"Trzyniec\"",
               "row": 2,
               "col": 0
             },
@@ -16383,10 +16564,10 @@
             },
             {
               "type": "unit",
-              "id": "uk_ac4_thunderbolt",
+              "id": "uk_sherman_ic_firefly",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_ac4_thunderbolt.png",
-              "label": "A.C.IV",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_sherman_ic_firefly.png",
+              "label": "Sherman IC \"Trzyniec\"",
               "row": 3,
               "col": 0
             },
@@ -16401,11 +16582,20 @@
             },
             {
               "type": "unit",
+              "id": "uk_ac4_thunderbolt",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/uk_ac4_thunderbolt.png",
+              "label": "A.C.IV",
+              "row": 4,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "uk_ram_90mm_aa",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/uk_ram_90mm_aa.png",
               "label": "QF 3.7 Ram",
-              "row": 4,
+              "row": 5,
               "col": 0
             }
           ]
@@ -16995,6 +17185,15 @@
                 "label": "Vickers Mk.7",
                 "row": 1,
                 "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "uk_arjun_mk1",
+                "req": "uk_vickers_mk7",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_arjun_mk1.png",
+                "label": "Arjun Mk 1",
+                "row": 2,
+                "col": 1
               }
             ],
             [
@@ -17109,9 +17308,19 @@
               "id": "uk_m1a1_aim_abrams",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/uk_m1a1_aim_abrams.png",
-              "label": "M1A1",
+              "label": "▄M1A1 SA",
               "row": 3,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "uk_challenger_2_oes_sm",
+              "req": "",
+              "icon": "assets/vehicles/slots/uk_challenger_2_oes_sm.png",
+              "label": "Challenger 2 OES (SM)",
+              "row": 2,
+              "col": 0,
+              "source": "v3.89-curated-senrai-layout"
             }
           ]
         },
@@ -17150,7 +17359,7 @@
               {
                 "type": "unit",
                 "id": "uk_m1a2_sep3_abrams",
-                "req": "uk_vickers_mk7",
+                "req": "uk_arjun_mk1",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/uk_m1a2_sep3_abrams.png",
                 "label": "M1A2",
                 "row": 0,
@@ -17357,7 +17566,17 @@
                 "col": 0
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "aw_159",
+                "req": "ah_mk1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/aw_159.png",
+                "label": "Wildcat HMA2",
+                "row": 0,
+                "col": 1
+              }
+            ],
             [],
             [],
             []
@@ -17977,7 +18196,17 @@
                 "col": 0
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "uk_battleship_lion_class",
+                "req": "uk_battleship_prince_of_wales",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_battleship_lion_class.png",
+                "label": "HMS Lion",
+                "row": 0,
+                "col": 1
+              }
+            ],
             [],
             [],
             []
@@ -18989,8 +19218,8 @@
               {
                 "type": "group",
                 "id": "ki_61_late_group",
-                "label": "Ki-61-I late",
-                "name": "Ki-61-I late",
+                "label": "Ki-61-I Late",
+                "name": "Ki-61-I Late",
                 "ids": [
                   "ki_61_1a_tei",
                   "ki_61_2_early"
@@ -19060,6 +19289,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/b7a2.png",
                 "label": "B7A2",
                 "row": 1,
+                "col": 3
+              },
+              {
+                "type": "unit",
+                "id": "ki_93_1_ko",
+                "req": "b7a2",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ki_93_1_ko.png",
+                "label": "Ki-93-I Ko",
+                "row": 2,
                 "col": 3
               }
             ],
@@ -19156,6 +19394,15 @@
               "label": "▄SB2C-5",
               "row": 2,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "b_26b_indonesia_kalong",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/b_26b_indonesia_kalong.png",
+              "label": "◥B-26B",
+              "row": 2,
+              "col": 1
             }
           ]
         },
@@ -19463,28 +19710,7 @@
                 "col": 2
               }
             ],
-            [
-              {
-                "type": "group",
-                "id": "r2y2_group",
-                "label": "R2Y2",
-                "name": "R2Y2",
-                "ids": [
-                  "r2y2_v1",
-                  "r2y2_v2",
-                  "r2y2_kai"
-                ],
-                "icon": "https://static.encyclopedia.warthunder.com/slots/r2y2_group.png",
-                "memberIcons": {
-                  "r2y2_v1": "https://static.encyclopedia.warthunder.com/slots/r2y2_v1.png",
-                  "r2y2_v2": "https://static.encyclopedia.warthunder.com/slots/r2y2_v2.png",
-                  "r2y2_kai": "https://static.encyclopedia.warthunder.com/slots/r2y2_kai.png"
-                },
-                "req": "b7a2",
-                "row": 0,
-                "col": 3
-              }
-            ],
+            [],
             []
           ],
           "right": [
@@ -19496,6 +19722,26 @@
               "label": "F-86F-40 JASDF▅",
               "row": 0,
               "col": 0
+            },
+            {
+              "type": "group",
+              "id": "r2y2_group",
+              "label": "R2Y2",
+              "name": "R2Y2",
+              "ids": [
+                "r2y2_v1",
+                "r2y2_v2",
+                "r2y2_kai"
+              ],
+              "icon": "https://static.encyclopedia.warthunder.com/slots/r2y2_group.png",
+              "memberIcons": {
+                "r2y2_v1": "https://static.encyclopedia.warthunder.com/slots/r2y2_v1.png",
+                "r2y2_v2": "https://static.encyclopedia.warthunder.com/slots/r2y2_v2.png",
+                "r2y2_kai": "https://static.encyclopedia.warthunder.com/slots/r2y2_kai.png"
+              },
+              "req": "",
+              "row": 0,
+              "col": 1
             }
           ]
         },
@@ -19553,7 +19799,26 @@
               }
             ],
             [],
-            []
+            [
+              {
+                "type": "unit",
+                "id": "ca_27_mk32_malaysia",
+                "req": "g8n1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ca_27_mk32_malaysia.png",
+                "label": "▄CA-27 Mk.32",
+                "row": 0,
+                "col": 4
+              },
+              {
+                "type": "unit",
+                "id": "a_4ptm_malaysia",
+                "req": "ca_27_mk32_malaysia",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/a_4ptm_malaysia.png",
+                "label": "▄A-4PTM",
+                "row": 1,
+                "col": 4
+              }
+            ]
           ],
           "right": [
             {
@@ -19747,7 +20012,7 @@
               {
                 "type": "unit",
                 "id": "mig_29n",
-                "req": "g8n1",
+                "req": "a_4ptm_malaysia",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/mig_29n.png",
                 "label": "▄MiG-29N",
                 "row": 0,
@@ -20557,6 +20822,15 @@
                 "label": "Type 16",
                 "row": 0,
                 "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "jp_harimau",
+                "req": "jp_type_16",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/jp_harimau.png",
+                "label": "Harimau",
+                "row": 1,
+                "col": 2
               }
             ],
             [
@@ -20599,6 +20873,16 @@
               "label": "Type 90 (B) \"Fuji\"",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "jp_type_90b_sm",
+              "req": "",
+              "icon": "assets/vehicles/slots/jp_type_90b_sm.png",
+              "label": "Type 90 (B) (SM)",
+              "row": 2,
+              "col": 0,
+              "source": "v3.89-curated-senrai-layout"
             }
           ]
         },
@@ -21709,11 +21993,20 @@
           "right": [
             {
               "type": "unit",
+              "id": "jp_type9_pt809",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/jp_type9_pt809.png",
+              "label": "PT-809",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "jp_t51a",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/jp_t51a.png",
               "label": "Type T-51a",
-              "row": 0,
+              "row": 1,
               "col": 0
             }
           ]
@@ -22327,7 +22620,7 @@
                 "id": "tu-2_postwar_china",
                 "req": "pb4y-2_china",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/tu-2_postwar_china.png",
-                "label": "␗Tu-2S-44",
+                "label": "␗Tu-2S (1)",
                 "row": 1,
                 "col": 3
               }
@@ -22797,7 +23090,17 @@
                 "col": 1
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "j_16",
+                "req": "jh_7a2",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/j_16.png",
+                "label": "J-16",
+                "row": 0,
+                "col": 2
+              }
+            ],
             [
               {
                 "type": "unit",
@@ -23241,10 +23544,10 @@
             },
             {
               "type": "unit",
-              "id": "cn_wz_141",
+              "id": "cn_plz_45",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/cn_wz_141.png",
-              "label": "WZ141-1",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/cn_plz_45.png",
+              "label": "PLZ45",
               "row": 0,
               "col": 1
             },
@@ -23256,6 +23559,15 @@
               "label": "Т-34-85 №215",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "cn_wz_141",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/cn_wz_141.png",
+              "label": "WZ141-1",
+              "row": 1,
+              "col": 1
             },
             {
               "type": "unit",
@@ -23619,6 +23931,24 @@
                 "label": "Antelope",
                 "row": 0,
                 "col": 2
+              },
+              {
+                "type": "group",
+                "id": "cn_tor_hq_group",
+                "label": "Tor/HQ",
+                "name": "Tor/HQ",
+                "ids": [
+                  "cn_tor_m1",
+                  "cn_hq_17"
+                ],
+                "icon": "https://static.encyclopedia.warthunder.com/slots/cn_tor_hq_group.png",
+                "memberIcons": {
+                  "cn_tor_m1": "https://static.encyclopedia.warthunder.com/slots/cn_tor_m1.png",
+                  "cn_hq_17": "https://static.encyclopedia.warthunder.com/slots/cn_hq_17.png"
+                },
+                "req": "cn_antelope_tc_1l_ads",
+                "row": 1,
+                "col": 2
               }
             ],
             [
@@ -23627,7 +23957,7 @@
                 "id": "cn_ztl_11",
                 "req": "cn_cm_34",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/cn_ztl_11.png",
-                "label": "ZTL11",
+                "label": "ZLT11",
                 "row": 0,
                 "col": 3
               },
@@ -23697,6 +24027,16 @@
               "label": "ZTZ96B",
               "row": 3,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "cn_mbt2000_sm",
+              "req": "",
+              "icon": "assets/vehicles/slots/cn_mbt2000_sm.png",
+              "label": "MBT-2000 (SM)",
+              "row": 4,
+              "col": 0,
+              "source": "v3.89-curated-senrai-layout"
             }
           ]
         },
@@ -23753,36 +24093,27 @@
             ],
             [
               {
-                "type": "group",
-                "id": "cn_tor_hq_group",
-                "label": "Tor/HQ",
-                "name": "Tor/HQ",
-                "ids": [
-                  "cn_tor_m1",
-                  "cn_hq_17"
-                ],
-                "icon": "https://static.encyclopedia.warthunder.com/slots/cn_tor_hq_group.png",
-                "memberIcons": {
-                  "cn_tor_m1": "https://static.encyclopedia.warthunder.com/slots/cn_tor_m1.png",
-                  "cn_hq_17": "https://static.encyclopedia.warthunder.com/slots/cn_hq_17.png"
-                },
-                "req": "cn_antelope_tc_1l_ads",
-                "row": 0,
-                "col": 2
-              },
-              {
                 "type": "unit",
                 "id": "cn_pgz_625_fb10",
                 "req": "cn_tor_hq_group",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/cn_pgz_625_fb10.png",
                 "label": "CS/SA5",
+                "row": 0,
+                "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "cn_fk_2000",
+                "req": "cn_pgz_625_fb10",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/cn_fk_2000.png",
+                "label": "FK-2000",
                 "row": 1,
                 "col": 2
               },
               {
                 "type": "unit",
                 "id": "cn_hq_11",
-                "req": "cn_pgz_625_fb10",
+                "req": "cn_fk_2000",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/cn_hq_11.png",
                 "label": "HQ11",
                 "row": 2,
@@ -23817,7 +24148,7 @@
       }
     },
     "China|heli": {
-      "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=china",
+      "source": "HTTP 200 via curl fallback after requests ChunkedEncodingError: (\"Connection broken: ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)\", ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)) url=https://wiki.warthunder.ru/helicopters?v=t&t_c=china",
       "parser": "v2.83 Wiki table DOM parser: all nations/classes; wt-tree_rank/table/tr/td/group + canonical id lookup",
       "safe_dom_geometry": true,
       "safe_table_layout": true,
@@ -24442,11 +24773,20 @@
             [
               {
                 "type": "unit",
-                "id": "us_destroyer_fletcher",
+                "id": "us_destroyer_mahan_class",
                 "req": "us_destroyer_farragut_1942",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_mahan_class.png",
+                "label": "USS Mahan",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "us_destroyer_fletcher",
+                "req": "us_destroyer_mahan_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_fletcher.png",
                 "label": "USS Fletcher",
-                "row": 0,
+                "row": 1,
                 "col": 0
               },
               {
@@ -24775,19 +25115,19 @@
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_fletcher_zerstorer4",
+              "id": "germ_destroyer_class1924_jaguar1941",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
-              "label": "Z4 Zerstörer",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
+              "label": "Jaguar",
               "row": 0,
               "col": 0
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_class1924_jaguar1941",
+              "id": "germ_destroyer_fletcher_zerstorer4",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
-              "label": "Jaguar",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
+              "label": "Z4 Zerstörer",
               "row": 1,
               "col": 0
             },
@@ -26310,11 +26650,20 @@
               },
               {
                 "type": "unit",
-                "id": "fr_battleship_bretagne_class_bretagne",
+                "id": "fr_cruiser_algerie_class",
                 "req": "fr_cruiser_la_galissoniere_class_gloire",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_cruiser_algerie_class.png",
+                "label": "Algerie",
+                "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_battleship_bretagne_class_bretagne",
+                "req": "fr_cruiser_algerie_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_bretagne_class_bretagne.png",
                 "label": "Bretagne",
-                "row": 0,
+                "row": 1,
                 "col": 1
               }
             ],
@@ -26916,6 +27265,15 @@
             },
             {
               "type": "unit",
+              "id": "it_battleship_giulio_cesare",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/it_battleship_giulio_cesare.png",
+              "label": "RN Giulio Cesare",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "fr_battleship_strasbourg",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_strasbourg.png",
@@ -27009,6 +27367,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_battleship_iowa_class_iowa.png",
                 "label": "USS Iowa",
                 "row": 1,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "uk_battleship_lion_class",
+                "req": "uk_battleship_prince_of_wales",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_battleship_lion_class.png",
+                "label": "HMS Lion",
+                "row": 0,
                 "col": 1
               },
               {
@@ -27385,6 +27752,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_vtb13.png",
                 "label": "VTB-13",
                 "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_lcm_monitor",
+                "req": "fr_vtb13",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_lcm_monitor.png",
+                "label": "LCM(65)",
+                "row": 1,
                 "col": 1
               }
             ],
@@ -27782,7 +28158,7 @@
               {
                 "type": "unit",
                 "id": "fr_mtb96_vosper",
-                "req": "fr_vtb13",
+                "req": "fr_lcm_monitor",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_mtb96_vosper.png",
                 "label": "MTB-96",
                 "row": 0,
@@ -27848,6 +28224,15 @@
               "label": "PT-109",
               "row": 1,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_rboot_r310",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_rboot_r310.png",
+              "label": "R-310",
+              "row": 0,
+              "col": 0
             },
             {
               "type": "unit",
@@ -28110,6 +28495,15 @@
               },
               {
                 "type": "unit",
+                "id": "ussr_fugas_t1_strela",
+                "req": "ussr_1124_ack",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_fugas_t1_strela.png",
+                "label": "Стрела",
+                "row": 1,
+                "col": 1
+              },
+              {
+                "type": "unit",
                 "id": "uk_fairmile_c",
                 "req": "uk_flower_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/uk_fairmile_c.png",
@@ -28360,11 +28754,20 @@
             },
             {
               "type": "unit",
+              "id": "jp_type9_pt809",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/jp_type9_pt809.png",
+              "label": "PT-809",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "jp_t51a",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/jp_t51a.png",
               "label": "Type T-51a",
-              "row": 0,
+              "row": 1,
               "col": 0
             },
             {
@@ -28584,7 +28987,7 @@
               {
                 "type": "unit",
                 "id": "ussr_skr_groza_1943",
-                "req": "ussr_1124_ack",
+                "req": "ussr_fugas_t1_strela",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_skr_groza_1943.png",
                 "label": "Гроза",
                 "row": 0,
@@ -30003,7 +30406,7 @@
                 "id": "tu-2_postwar_late_hungary",
                 "req": "p_108_group",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/tu-2_postwar_late_hungary.png",
-                "label": "◔Tu-2S-59",
+                "label": "◔Tu-2S (8)",
                 "row": 0,
                 "col": 3
               }
@@ -30827,20 +31230,11 @@
               },
               {
                 "type": "unit",
-                "id": "it_m44",
-                "req": "it_m24_chaffee",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/it_m44.png",
-                "label": "▄M44",
-                "row": 1,
-                "col": 0
-              },
-              {
-                "type": "unit",
                 "id": "it_semovente_breda_501",
-                "req": "it_m44",
+                "req": "it_m24_chaffee",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/it_semovente_breda_501.png",
                 "label": "Breda 501",
-                "row": 2,
+                "row": 1,
                 "col": 0
               }
             ],
@@ -30877,11 +31271,20 @@
             ],
             [
               {
-                "type": "unit",
-                "id": "it_m55",
+                "type": "group",
+                "id": "it_m44_55_group",
+                "label": "M44/55",
+                "name": "M44/55",
+                "ids": [
+                  "it_m44",
+                  "it_m55"
+                ],
+                "icon": "https://static.encyclopedia.warthunder.com/slots/it_m44_55_group.png",
+                "memberIcons": {
+                  "it_m44": "https://static.encyclopedia.warthunder.com/slots/it_m44.png",
+                  "it_m55": "https://static.encyclopedia.warthunder.com/slots/it_m55.png"
+                },
                 "req": "it_semovente_m43_105_75_group",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/it_m55.png",
-                "label": "▄M55",
                 "row": 0,
                 "col": 3
               },
@@ -30899,7 +31302,7 @@
                   "it_semovente_m41m_90": "https://static.encyclopedia.warthunder.com/slots/it_semovente_m41m_90.png",
                   "it_stug_III_ausf_G": "https://static.encyclopedia.warthunder.com/slots/it_stug_iii_ausf_g.png"
                 },
-                "req": "it_m55",
+                "req": "it_m44_55_group",
                 "row": 1,
                 "col": 3
               },
@@ -31186,7 +31589,17 @@
                 "col": 2
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "it_pzh_2000",
+                "req": "it_palmaria",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/it_pzh_2000.png",
+                "label": "▄PzH 2000",
+                "row": 0,
+                "col": 3
+              }
+            ],
             [
               {
                 "type": "unit",
@@ -31313,7 +31726,7 @@
               {
                 "type": "unit",
                 "id": "it_m113a1_tow",
-                "req": "it_palmaria",
+                "req": "it_pzh_2000",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/it_m113a1_tow.png",
                 "label": "M113A1 (TOW)",
                 "row": 0,
@@ -32163,7 +32576,17 @@
             [],
             []
           ],
-          "right": []
+          "right": [
+            {
+              "type": "unit",
+              "id": "it_battleship_giulio_cesare",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/it_battleship_giulio_cesare.png",
+              "label": "RN Giulio Cesare",
+              "row": 0,
+              "col": 0
+            }
+          ]
         },
         "VII": {
           "leftCols": [
@@ -33269,6 +33692,15 @@
                 "label": "▄F-84G-26-RE",
                 "row": 0,
                 "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "se_203",
+                "req": "f-84g_france",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/se_203.png",
+                "label": "SE.203 Aquilon 203",
+                "row": 1,
+                "col": 2
               }
             ],
             [],
@@ -33342,7 +33774,7 @@
               {
                 "type": "unit",
                 "id": "f-84f_france",
-                "req": "f-84g_france",
+                "req": "se_203",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/f-84f_france.png",
                 "label": "▄F-84F",
                 "row": 0,
@@ -34157,6 +34589,15 @@
               "label": "Lorraine 155 Mle.50",
               "row": 0,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "fr_arl_44_mod",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/fr_arl_44_mod.png",
+              "label": "ARL-44 Bayard",
+              "row": 1,
+              "col": 0
             }
           ]
         },
@@ -34750,6 +35191,15 @@
                 "label": "Leopard 2A6NL",
                 "row": 1,
                 "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "fr_embt",
+                "req": "fr_leopard_2a6nl",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_embt.png",
+                "label": "▄EMBT",
+                "row": 2,
+                "col": 2
               }
             ],
             [
@@ -35328,11 +35778,20 @@
             [
               {
                 "type": "unit",
-                "id": "fr_battleship_bretagne_class_bretagne",
+                "id": "fr_cruiser_algerie_class",
                 "req": "fr_cruiser_la_galissoniere_class_gloire",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_cruiser_algerie_class.png",
+                "label": "Algerie",
+                "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_battleship_bretagne_class_bretagne",
+                "req": "fr_cruiser_algerie_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_bretagne_class_bretagne.png",
                 "label": "Bretagne",
-                "row": 0,
+                "row": 1,
                 "col": 1
               }
             ],
@@ -35501,6 +35960,15 @@
                 "label": "VTB-13",
                 "row": 0,
                 "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_lcm_monitor",
+                "req": "fr_vtb13",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_lcm_monitor.png",
+                "label": "LCM(65)",
+                "row": 1,
+                "col": 1
               }
             ],
             [],
@@ -35545,7 +36013,7 @@
               {
                 "type": "unit",
                 "id": "fr_mtb96_vosper",
-                "req": "fr_vtb13",
+                "req": "fr_lcm_monitor",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_mtb96_vosper.png",
                 "label": "MTB-96",
                 "row": 0,
@@ -36356,18 +36824,27 @@
           "leftCols": [
             [
               {
-                "type": "unit",
-                "id": "saab_j35d",
+                "type": "group",
+                "id": "saab_j35_group",
+                "label": "J35",
+                "name": "J35",
+                "ids": [
+                  "saab_j35d",
+                  "saab_j35j"
+                ],
+                "icon": "https://static.encyclopedia.warthunder.com/slots/saab_j35_group.png",
+                "memberIcons": {
+                  "saab_j35d": "https://static.encyclopedia.warthunder.com/slots/saab_j35d.png",
+                  "saab_j35j": "https://static.encyclopedia.warthunder.com/slots/saab_j35j.png"
+                },
                 "req": "saab_j32b",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/saab_j35d.png",
-                "label": "J35D",
                 "row": 0,
                 "col": 0
               },
               {
                 "type": "unit",
                 "id": "saab_ja37",
-                "req": "saab_j35d",
+                "req": "saab_j35_group",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/saab_ja37.png",
                 "label": "JA37C",
                 "row": 1,
@@ -36442,8 +36919,8 @@
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/f-5ag_norway.png",
               "label": "◢F-5A(G)",
-              "row": 2,
-              "col": 0
+              "row": 1,
+              "col": 1
             }
           ]
         },
@@ -38141,11 +38618,20 @@
             [
               {
                 "type": "unit",
-                "id": "us_destroyer_fletcher",
+                "id": "us_destroyer_mahan_class",
                 "req": "us_destroyer_farragut_1942",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_mahan_class.png",
+                "label": "USS Mahan",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "us_destroyer_fletcher",
+                "req": "us_destroyer_mahan_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_fletcher.png",
                 "label": "USS Fletcher",
-                "row": 0,
+                "row": 1,
                 "col": 0
               },
               {
@@ -38474,19 +38960,19 @@
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_fletcher_zerstorer4",
+              "id": "germ_destroyer_class1924_jaguar1941",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
-              "label": "Z4 Zerstörer",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
+              "label": "Jaguar",
               "row": 0,
               "col": 0
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_class1924_jaguar1941",
+              "id": "germ_destroyer_fletcher_zerstorer4",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
-              "label": "Jaguar",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
+              "label": "Z4 Zerstörer",
               "row": 1,
               "col": 0
             },
@@ -40009,11 +40495,20 @@
               },
               {
                 "type": "unit",
-                "id": "fr_battleship_bretagne_class_bretagne",
+                "id": "fr_cruiser_algerie_class",
                 "req": "fr_cruiser_la_galissoniere_class_gloire",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_cruiser_algerie_class.png",
+                "label": "Algerie",
+                "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_battleship_bretagne_class_bretagne",
+                "req": "fr_cruiser_algerie_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_bretagne_class_bretagne.png",
                 "label": "Bretagne",
-                "row": 0,
+                "row": 1,
                 "col": 1
               }
             ],
@@ -40615,6 +41110,15 @@
             },
             {
               "type": "unit",
+              "id": "it_battleship_giulio_cesare",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/it_battleship_giulio_cesare.png",
+              "label": "RN Giulio Cesare",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "fr_battleship_strasbourg",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_strasbourg.png",
@@ -40708,6 +41212,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_battleship_iowa_class_iowa.png",
                 "label": "USS Iowa",
                 "row": 1,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "uk_battleship_lion_class",
+                "req": "uk_battleship_prince_of_wales",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_battleship_lion_class.png",
+                "label": "HMS Lion",
+                "row": 0,
                 "col": 1
               },
               {
@@ -41084,6 +41597,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_vtb13.png",
                 "label": "VTB-13",
                 "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_lcm_monitor",
+                "req": "fr_vtb13",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_lcm_monitor.png",
+                "label": "LCM(65)",
+                "row": 1,
                 "col": 1
               }
             ],
@@ -41481,7 +42003,7 @@
               {
                 "type": "unit",
                 "id": "fr_mtb96_vosper",
-                "req": "fr_vtb13",
+                "req": "fr_lcm_monitor",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_mtb96_vosper.png",
                 "label": "MTB-96",
                 "row": 0,
@@ -41547,6 +42069,15 @@
               "label": "PT-109",
               "row": 1,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_rboot_r310",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_rboot_r310.png",
+              "label": "R-310",
+              "row": 0,
+              "col": 0
             },
             {
               "type": "unit",
@@ -41809,6 +42340,15 @@
               },
               {
                 "type": "unit",
+                "id": "ussr_fugas_t1_strela",
+                "req": "ussr_1124_ack",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_fugas_t1_strela.png",
+                "label": "Стрела",
+                "row": 1,
+                "col": 1
+              },
+              {
+                "type": "unit",
                 "id": "uk_fairmile_c",
                 "req": "uk_flower_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/uk_fairmile_c.png",
@@ -42059,11 +42599,20 @@
             },
             {
               "type": "unit",
+              "id": "jp_type9_pt809",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/jp_type9_pt809.png",
+              "label": "PT-809",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "jp_t51a",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/jp_t51a.png",
               "label": "Type T-51a",
-              "row": 0,
+              "row": 1,
               "col": 0
             },
             {
@@ -42283,7 +42832,7 @@
               {
                 "type": "unit",
                 "id": "ussr_skr_groza_1943",
-                "req": "ussr_1124_ack",
+                "req": "ussr_fugas_t1_strela",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_skr_groza_1943.png",
                 "label": "Гроза",
                 "row": 0,
@@ -43145,7 +43694,17 @@
                 "col": 2
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "sb2c_5_greece",
+                "req": "",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/sb2c_5_greece.png",
+                "label": "▄SB2C-5",
+                "row": 0,
+                "col": 3
+              }
+            ],
             []
           ],
           "right": [
@@ -43163,7 +43722,7 @@
               "id": "spitfire_lf_mk9c_cw_greece",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/spitfire_lf_mk9c_cw_greece.png",
-              "label": "▃Spitfire LF Mk.IXc (CW)",
+              "label": "▄Spitfire LF Mk.IXc (CW)",
               "row": 1,
               "col": 0
             }
@@ -43203,7 +43762,17 @@
               }
             ],
             [],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "f-84g_greece",
+                "req": "sb2c_5_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/f-84g_greece.png",
+                "label": "▄F-84G-16-RE",
+                "row": 0,
+                "col": 3
+              }
+            ],
             []
           ],
           "right": [
@@ -43307,7 +43876,26 @@
                 "col": 2
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "f_102a_greece",
+                "req": "f-84g_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/f_102a_greece.png",
+                "label": "▄F-102A",
+                "row": 0,
+                "col": 3
+              },
+              {
+                "type": "unit",
+                "id": "f_86em_greece",
+                "req": "f_102a_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/f_86em_greece.png",
+                "label": "▄F-86E(M)",
+                "row": 1,
+                "col": 3
+              }
+            ],
             []
           ],
           "right": [
@@ -43375,16 +43963,35 @@
                 "col": 2
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "a_7h_greece",
+                "req": "f_86em_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/a_7h_greece.png",
+                "label": "▄A-7H",
+                "row": 0,
+                "col": 3
+              },
+              {
+                "type": "unit",
+                "id": "mirage_f1cg_greece",
+                "req": "a_7h_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/mirage_f1cg_greece.png",
+                "label": "▄Mirage F1CG",
+                "row": 1,
+                "col": 3
+              }
+            ],
             []
           ],
           "right": [
             {
               "type": "unit",
-              "id": "kfir_canard",
+              "id": "a_7e_greece",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/kfir_canard.png",
-              "label": "Kfir Canard",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/a_7e_greece.png",
+              "label": "▄A-7E",
               "row": 0,
               "col": 0
             },
@@ -43394,6 +44001,15 @@
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/kfir_c2.png",
               "label": "Kfir C.2",
+              "row": 0,
+              "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "kfir_canard",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/kfir_canard.png",
+              "label": "Kfir Canard",
               "row": 1,
               "col": 0
             },
@@ -43403,8 +44019,8 @@
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/mig_21_2000_iaf.png",
               "label": "MiG-21 2000",
-              "row": 2,
-              "col": 0
+              "row": 1,
+              "col": 1
             }
           ]
         },
@@ -43488,7 +44104,26 @@
                 "col": 2
               }
             ],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "f_4e_aup_greece",
+                "req": "mirage_f1cg_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/f_4e_aup_greece.png",
+                "label": "▄F-4E AUP Phantom II",
+                "row": 0,
+                "col": 3
+              },
+              {
+                "type": "unit",
+                "id": "mirage_2000_5eg_mk2_greece",
+                "req": "f_4e_aup_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/mirage_2000_5eg_mk2_greece.png",
+                "label": "▄Mirage 2000-5EG",
+                "row": 1,
+                "col": 3
+              }
+            ],
             []
           ],
           "right": [
@@ -43517,7 +44152,17 @@
             [],
             [],
             [],
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "rafale_eg_greece",
+                "req": "mirage_2000_5eg_mk2_greece",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/rafale_eg_greece.png",
+                "label": "▄Rafale EG",
+                "row": 0,
+                "col": 3
+              }
+            ],
             []
           ],
           "right": []
@@ -43922,6 +44567,15 @@
                 "label": "Machbet",
                 "row": 0,
                 "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "il_mim_72_chaparral",
+                "req": "il_machbet",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/il_mim_72_chaparral.png",
+                "label": "Imp.Chaparral",
+                "row": 1,
+                "col": 2
               }
             ],
             [
@@ -44003,11 +44657,20 @@
             [
               {
                 "type": "unit",
-                "id": "il_mim_72_chaparral",
-                "req": "il_machbet",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/il_mim_72_chaparral.png",
-                "label": "Imp.Chaparral",
+                "id": "il_9a33bm3",
+                "req": "il_mim_72_chaparral",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/il_9a33bm3.png",
+                "label": "◐Osa-AKM",
                 "row": 0,
+                "col": 2
+              },
+              {
+                "type": "unit",
+                "id": "il_tor_m1",
+                "req": "il_9a33bm3",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/il_tor_m1.png",
+                "label": "◐Tor-M1",
+                "row": 1,
                 "col": 2
               }
             ],
@@ -44023,19 +44686,28 @@
               },
               {
                 "type": "unit",
-                "id": "il_namer_rcws_30",
+                "id": "il_eitan",
                 "req": "il_hunter_afv",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/il_namer_rcws_30.png",
-                "label": "Namer 30",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/il_eitan.png",
+                "label": "Eitan (P)",
                 "row": 1,
                 "col": 3
               },
               {
-                "type": "unit",
-                "id": "il_eitan",
-                "req": "il_namer_rcws_30",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/il_eitan.png",
-                "label": "Eitan (P)",
+                "type": "group",
+                "id": "il_namer_group",
+                "label": "Namer",
+                "name": "Namer",
+                "ids": [
+                  "il_namer_rcws_30",
+                  "il_namer_tsrikhon"
+                ],
+                "icon": "https://static.encyclopedia.warthunder.com/slots/il_namer_group.png",
+                "memberIcons": {
+                  "il_namer_rcws_30": "https://static.encyclopedia.warthunder.com/slots/il_namer_rcws_30.png",
+                  "il_namer_tsrikhon": "https://static.encyclopedia.warthunder.com/slots/il_namer_tsrikhon.png"
+                },
+                "req": "il_eitan",
                 "row": 2,
                 "col": 3
               }
@@ -44056,7 +44728,17 @@
         },
         "VIII": {
           "leftCols": [
-            [],
+            [
+              {
+                "type": "unit",
+                "id": "il_leopard_2a6_hel",
+                "req": "il_sabra_mk1",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/il_leopard_2a6_hel.png",
+                "label": "◐Leopard 2HEL",
+                "row": 0,
+                "col": 0
+              }
+            ],
             [
               {
                 "type": "group",
@@ -44090,24 +44772,14 @@
               {
                 "type": "unit",
                 "id": "il_spyder_aio",
-                "req": "il_mim_72_chaparral",
+                "req": "il_tor_m1",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/il_spyder_aio.png",
                 "label": "SPYDER",
                 "row": 0,
                 "col": 2
               }
             ],
-            [
-              {
-                "type": "unit",
-                "id": "il_namer_tsrikhon",
-                "req": "il_eitan",
-                "icon": "https://static.encyclopedia.warthunder.com/slots/il_namer_tsrikhon.png",
-                "label": "Namer Tsrikhon",
-                "row": 0,
-                "col": 3
-              }
-            ],
+            [],
             []
           ],
           "right": []
@@ -44703,11 +45375,20 @@
             [
               {
                 "type": "unit",
-                "id": "us_destroyer_fletcher",
+                "id": "us_destroyer_mahan_class",
                 "req": "us_destroyer_farragut_1942",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_mahan_class.png",
+                "label": "USS Mahan",
+                "row": 0,
+                "col": 0
+              },
+              {
+                "type": "unit",
+                "id": "us_destroyer_fletcher",
+                "req": "us_destroyer_mahan_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_destroyer_fletcher.png",
                 "label": "USS Fletcher",
-                "row": 0,
+                "row": 1,
                 "col": 0
               },
               {
@@ -45036,19 +45717,19 @@
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_fletcher_zerstorer4",
+              "id": "germ_destroyer_class1924_jaguar1941",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
-              "label": "Z4 Zerstörer",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
+              "label": "Jaguar",
               "row": 0,
               "col": 0
             },
             {
               "type": "unit",
-              "id": "germ_destroyer_class1924_jaguar1941",
+              "id": "germ_destroyer_fletcher_zerstorer4",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_class1924_jaguar1941.png",
-              "label": "Jaguar",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_destroyer_fletcher_zerstorer4.png",
+              "label": "Z4 Zerstörer",
               "row": 1,
               "col": 0
             },
@@ -46571,11 +47252,20 @@
               },
               {
                 "type": "unit",
-                "id": "fr_battleship_bretagne_class_bretagne",
+                "id": "fr_cruiser_algerie_class",
                 "req": "fr_cruiser_la_galissoniere_class_gloire",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_cruiser_algerie_class.png",
+                "label": "Algerie",
+                "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_battleship_bretagne_class_bretagne",
+                "req": "fr_cruiser_algerie_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_bretagne_class_bretagne.png",
                 "label": "Bretagne",
-                "row": 0,
+                "row": 1,
                 "col": 1
               }
             ],
@@ -47177,6 +47867,15 @@
             },
             {
               "type": "unit",
+              "id": "it_battleship_giulio_cesare",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/it_battleship_giulio_cesare.png",
+              "label": "RN Giulio Cesare",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "fr_battleship_strasbourg",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/fr_battleship_strasbourg.png",
@@ -47270,6 +47969,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/us_battleship_iowa_class_iowa.png",
                 "label": "USS Iowa",
                 "row": 1,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "uk_battleship_lion_class",
+                "req": "uk_battleship_prince_of_wales",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/uk_battleship_lion_class.png",
+                "label": "HMS Lion",
+                "row": 0,
                 "col": 1
               },
               {
@@ -47646,6 +48354,15 @@
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_vtb13.png",
                 "label": "VTB-13",
                 "row": 0,
+                "col": 1
+              },
+              {
+                "type": "unit",
+                "id": "fr_lcm_monitor",
+                "req": "fr_vtb13",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/fr_lcm_monitor.png",
+                "label": "LCM(65)",
+                "row": 1,
                 "col": 1
               }
             ],
@@ -48043,7 +48760,7 @@
               {
                 "type": "unit",
                 "id": "fr_mtb96_vosper",
-                "req": "fr_vtb13",
+                "req": "fr_lcm_monitor",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/fr_mtb96_vosper.png",
                 "label": "MTB-96",
                 "row": 0,
@@ -48109,6 +48826,15 @@
               "label": "PT-109",
               "row": 1,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_rboot_r310",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_rboot_r310.png",
+              "label": "R-310",
+              "row": 0,
+              "col": 0
             },
             {
               "type": "unit",
@@ -48371,6 +49097,15 @@
               },
               {
                 "type": "unit",
+                "id": "ussr_fugas_t1_strela",
+                "req": "ussr_1124_ack",
+                "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_fugas_t1_strela.png",
+                "label": "Стрела",
+                "row": 1,
+                "col": 1
+              },
+              {
+                "type": "unit",
                 "id": "uk_fairmile_c",
                 "req": "uk_flower_class",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/uk_fairmile_c.png",
@@ -48621,11 +49356,20 @@
             },
             {
               "type": "unit",
+              "id": "jp_type9_pt809",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/jp_type9_pt809.png",
+              "label": "PT-809",
+              "row": 0,
+              "col": 0
+            },
+            {
+              "type": "unit",
               "id": "jp_t51a",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/jp_t51a.png",
               "label": "Type T-51a",
-              "row": 0,
+              "row": 1,
               "col": 0
             },
             {
@@ -48845,7 +49589,7 @@
               {
                 "type": "unit",
                 "id": "ussr_skr_groza_1943",
-                "req": "ussr_1124_ack",
+                "req": "ussr_fugas_t1_strela",
                 "icon": "https://static.encyclopedia.warthunder.com/slots/ussr_skr_groza_1943.png",
                 "label": "Гроза",
                 "row": 0,

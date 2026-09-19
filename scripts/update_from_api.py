@@ -8053,6 +8053,174 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
 
 # --- end v3.87 layer ---
 
+# --- v3.88: Sky Odyssey 2.59 live data corrections ---
+# Applied after the older curated layers so current live data wins over historical overrides.
+# Sources: Sky Odyssey live changelog + official September 2026 shop/event announcements.
+BR_CURATED_V388 = {
+    "ah_64d_i_saraph": {"ab": 12.7, "rb": 12.7, "sb": 10.7, "ground_rb": 12.7, "ground_sb": 10.7},
+}
+RANK_CURATED_V388 = {
+    "uk_a27m_cromwell_5_rp3": "III",
+}
+AVAILABILITY_CURATED_V388 = {
+    "jp_type_74_red_star": ("available", "Returned permanently to purchase on 2026-09-03; remains available after the promotion."),
+    "us_battleship_arkansas": ("available", "Returned permanently to purchase on 2026-09-17; remains available after the promotion."),
+    "ah_64a_greece_usa": ("unavailable", "Removed from sale with the Sky Odyssey major update on 2026-09-16; owner-only."),
+    "f_16xl": ("unavailable", "Space Program 2026 event reward; owner-only/unavailable by default."),
+    "la-11": ("unavailable", "Temporary Lavochkin birthday sale only; normally owner-only/unavailable."),
+    "la-7_dolgushin": ("unavailable", "Temporary Lavochkin birthday sale only; normally owner-only/unavailable."),
+    "mi_24d": ("unavailable", "Temporary Mi-24 first-flight anniversary sale only; normally owner-only/unavailable."),
+    "spitfire_ix_plagis": ("unavailable", "Temporary Battle of Britain sale only; normally owner-only/unavailable."),
+    "spitfire_fr_mk14e": ("unavailable", "Temporary Battle of Britain sale only; normally owner-only/unavailable."),
+    "p-47m-1-re": ("unavailable", "Temporary US Air Force birthday sale only; normally owner-only/unavailable."),
+    "p-51d-10": ("unavailable", "Temporary US Air Force birthday sale only; normally owner-only/unavailable."),
+    "r2y2_v1": ("unavailable", "Removed from research in 2025; collectible/owner-only."),
+    "r2y2_v2": ("unavailable", "Removed from research in 2025; collectible/owner-only."),
+    "r2y2_kai": ("unavailable", "Removed from research in 2025; collectible/owner-only."),
+}
+STATUS_CURATED_V388 = {
+    "f_16xl": "Акционная",
+    "a_7e_greece": "Премиум",
+}
+TREE_PLACEMENT_CURATED_V388 = {
+    "f_16xl": ("right", "v3.88-curated-event"),
+    "a_7e_greece": ("right", "v3.88-sky-odyssey-premium"),
+    "r2y2_v1": ("right", "v3.88-sky-odyssey-hidden-group"),
+    "r2y2_v2": ("right", "v3.88-sky-odyssey-hidden-group"),
+    "r2y2_kai": ("right", "v3.88-sky-odyssey-hidden-group"),
+}
+
+def _apply_v388_curated_item(item: dict[str, Any]) -> bool:
+    vid = str(item.get("id") or item.get("identifier") or "")
+    changed = False
+    br = BR_CURATED_V388.get(vid)
+    if br:
+        old = dict(item.get("br") or {})
+        if old != br:
+            item["br"] = dict(br)
+            changed = True
+    rank = RANK_CURATED_V388.get(vid)
+    if rank:
+        if item.get("rank") != rank:
+            item["rank"] = rank
+            changed = True
+        if item.get("treeRank") != rank:
+            item["treeRank"] = rank
+            changed = True
+    status = STATUS_CURATED_V388.get(vid)
+    if status and item.get("status") != status:
+        item["status"] = status
+        changed = True
+    av = AVAILABILITY_CURATED_V388.get(vid)
+    if av:
+        availability, note = av
+        if item.get("availability") != availability:
+            item["availability"] = availability
+            changed = True
+        if note and item.get("availability_reason") != note:
+            item["availability_reason"] = note
+            changed = True
+    placement = TREE_PLACEMENT_CURATED_V388.get(vid)
+    if placement:
+        place, source = placement
+        if item.get("treePlacement") != place:
+            item["treePlacement"] = place
+            changed = True
+        if source and item.get("treePlacementSource") != source:
+            item["treePlacementSource"] = source
+            changed = True
+    return changed
+
+_old_write_lightweight_vehicles_v388 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.88 override
+    _old_write_lightweight_vehicles_v388(rows, image_map)
+    try:
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        changed = 0
+        for item in data:
+            if isinstance(item, dict) and _apply_v388_curated_item(item):
+                changed += 1
+        if changed:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"v3.88 Sky Odyssey live corrections applied: {changed} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.88 Sky Odyssey live corrections failed:", e)
+
+# --- end v3.88 layer ---
+
+# --- v3.89: curated special-tree placement + hidden internal cleanup ---
+# Senrai Maidens variants are real separate pack vehicles maintained by our curated v3.85 layer,
+# but they are not emitted as independent nodes by the normal Wiki tech-tree parser. Place them
+# explicitly in the right/special column so they do not fall into "Unplaced Wiki-layout".
+# a6m5_zero_china and germ_pzkpfw_35t_romania_mare are visibility=0/internal vehicles that have
+# repeatedly appeared in datamines/API but are not normal player-selectable vehicles. Keep them
+# out of the public roster instead of presenting them as real unplaced premium vehicles.
+HIDDEN_INTERNAL_IDS_V389 = {"a6m5_zero_china", "germ_pzkpfw_35t_romania_mare"}
+SENRAI_LAYOUT_V389 = [
+    ("USA|ground", "VII", "us_m1a1_hc_senrai_maidens", "M1A1 HC (Senrai Maidens)", 5, 0),
+    ("Germany|ground", "VII", "germ_leopard_2a4m_senrai_maidens", "Leopard 2A4M (Senrai Maidens)", 4, 0),
+    ("USSR|ground", "VII", "ussr_t_80ue1_senrai_maidens", "T-80U-E1 (Senrai Maidens)", 7, 0),
+    ("Britain|ground", "VII", "uk_challenger_2_oes_sm", "Challenger 2 OES (SM)", 2, 0),
+    ("Japan|ground", "VII", "jp_type_90b_sm", "Type 90 (B) (SM)", 2, 0),
+    ("China|ground", "VII", "cn_mbt2000_sm", "MBT-2000 (SM)", 4, 0),
+]
+
+_old_is_hidden_internal_v389 = _is_hidden_internal_v259
+def _is_hidden_internal_v259(row: dict[str, Any]) -> bool:  # v3.89 override
+    rid = norm_id(row_identifier(row)).replace("-", "_").lower()
+    if rid in HIDDEN_INTERNAL_IDS_V389:
+        return True
+    return _old_is_hidden_internal_v389(row)
+
+_old_write_lightweight_vehicles_v389 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.89 override
+    _old_write_lightweight_vehicles_v389(rows, image_map)
+    try:
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        cleaned = [x for x in data if str(x.get("id") or "").lower() not in HIDDEN_INTERNAL_IDS_V389]
+        if len(cleaned) != len(data):
+            p.write_text(json.dumps(cleaned, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"v3.89 hidden internal cleanup removed: {len(data)-len(cleaned)} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.89 hidden internal cleanup failed:", e)
+
+_old_build_wiki_tree_layout_v389 = build_wiki_tree_layout_v276
+def build_wiki_tree_layout_v276(rows: list[dict[str, Any]]) -> dict[str, Any]:  # v3.89 override
+    out = _old_build_wiki_tree_layout_v389(rows)
+    try:
+        p = json.loads(TECH_TREE_LAYOUT_JSON.read_text(encoding="utf-8"))
+        trees = p.get("items") or {}
+        added = 0
+        for tree_key, rank, vid, label, row, col in SENRAI_LAYOUT_V389:
+            tree = trees.get(tree_key)
+            if not isinstance(tree, dict):
+                continue
+            rank_obj = (tree.get("ranks") or {}).get(rank)
+            if not isinstance(rank_obj, dict):
+                continue
+            right = rank_obj.setdefault("right", [])
+            before = len(right)
+            right[:] = [n for n in right if str(n.get("id") or "") != vid]
+            right.append({
+                "type": "unit", "id": vid, "req": "",
+                "icon": f"assets/vehicles/slots/{vid}.png",
+                "label": label, "row": row, "col": col,
+                "source": "v3.89-curated-senrai-layout",
+            })
+            if len(right) >= before:
+                added += 1
+        p["logic_version"] = "v3.89-wiki-table-plus-curated-specials"
+        TECH_TREE_LAYOUT_JSON.write_text(json.dumps(p, ensure_ascii=False, indent=2), encoding="utf-8")
+        if added:
+            print(f"v3.89 curated Senrai tree placement applied: {added} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.89 curated Senrai tree placement failed:", e)
+    return out
+
+# --- end v3.89 layer ---
+
 if __name__ == "__main__":
     try:
         raise SystemExit(main())

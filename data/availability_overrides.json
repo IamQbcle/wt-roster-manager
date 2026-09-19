@@ -1,7 +1,7 @@
 {
   "heuristic": {
-    "en": "v3.41: event vehicles without Market are unavailable by default; legacy hidden folder variants preserve tree geometry but are fully invisible with arrows/folder tabs.",
-    "ru": "v3.41: акционная техника без биржи недоступна по умолчанию; скрытые старые варианты в папках остаются в геометрии дерева, но полностью невидимы вместе со стрелками/папками."
+    "en": "v3.88: stable availability follows normal post-promotion availability; temporary anniversary/event sales remain owner-only by default.",
+    "ru": "v3.88: постоянная доступность учитывает состояние после акции; временные юбилейные/event-продажи по умолчанию остаются только для владельцев."
   },
   "items": {
     "a6m5ko": {
@@ -436,9 +436,9 @@
       "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Japanese event/pack vehicle absent from current client tree."
     },
     "jp_type_74_red_star": {
-      "availability": "unavailable",
-      "en": "Pack removed from sale after the 2026 Summer Sale; treated as owner-only/unavailable for new players.",
-      "ru": "Набор снят с продажи после летней распродажи 2026; для новых игроков считается недоступным / только у владельцев."
+      "availability": "available",
+      "en": "Returned permanently to purchase on 2026-09-03 and remains available after the promotion.",
+      "ru": "Вернулся в постоянную продажу 03.09.2026 и остаётся доступен после акции."
     },
     "jp_type_90b_sm": {
       "availability": "available",
@@ -910,6 +910,71 @@
       "en": "Guardian of the Baltic Sea event reward; owner-only/unavailable by default.",
       "ru": "Награда события «Защитник Балтийского моря»; по умолчанию считается недоступной / только у владельцев.",
       "source": "official Guardian of the Baltic Sea event news"
+    },
+    "us_battleship_arkansas": {
+      "availability": "available",
+      "en": "Returned permanently to purchase on 2026-09-17 and remains available after the promotion.",
+      "ru": "Вернулся в постоянную продажу 17.09.2026 и остаётся доступен после акции."
+    },
+    "ah_64a_greece_usa": {
+      "availability": "unavailable",
+      "en": "Removed from sale in the Sky Odyssey major update; owner-only.",
+      "ru": "Снят с продажи в крупном обновлении «Небесная одиссея»; только для владельцев."
+    },
+    "f_16xl": {
+      "availability": "unavailable",
+      "en": "Space Program 2026 event reward; not normally obtainable after the event.",
+      "ru": "Награда события «Космическая программа» 2026; после события обычно недоступен новым игрокам."
+    },
+    "la-11": {
+      "availability": "unavailable",
+      "en": "Temporary Lavochkin birthday sale only; normally owner-only.",
+      "ru": "Только временная продажа ко дню рождения Лавочкина; обычно доступен лишь владельцам."
+    },
+    "la-7_dolgushin": {
+      "availability": "unavailable",
+      "en": "Temporary Lavochkin birthday sale only; normally owner-only.",
+      "ru": "Только временная продажа ко дню рождения Лавочкина; обычно доступен лишь владельцам."
+    },
+    "mi_24d": {
+      "availability": "unavailable",
+      "en": "Temporary Mi-24 first-flight anniversary sale only; normally owner-only.",
+      "ru": "Только временная продажа к годовщине первого полёта Ми-24; обычно доступен лишь владельцам."
+    },
+    "spitfire_ix_plagis": {
+      "availability": "unavailable",
+      "en": "Temporary Battle of Britain sale only; normally owner-only.",
+      "ru": "Только временная продажа ко Дню Битвы за Британию; обычно доступен лишь владельцам."
+    },
+    "spitfire_fr_mk14e": {
+      "availability": "unavailable",
+      "en": "Temporary Battle of Britain sale only; normally owner-only.",
+      "ru": "Только временная продажа ко Дню Битвы за Британию; обычно доступен лишь владельцам."
+    },
+    "p-47m-1-re": {
+      "availability": "unavailable",
+      "en": "Temporary US Air Force birthday sale only; normally owner-only.",
+      "ru": "Только временная продажа ко дню рождения ВВС США; обычно доступен лишь владельцам."
+    },
+    "p-51d-10": {
+      "availability": "unavailable",
+      "en": "Temporary US Air Force birthday sale only; normally owner-only.",
+      "ru": "Только временная продажа ко дню рождения ВВС США; обычно доступен лишь владельцам."
+    },
+    "r2y2_v1": {
+      "availability": "unavailable",
+      "en": "Removed from research in 2025; collectible/owner-only.",
+      "ru": "Выведен из исследования в 2025 году; коллекционная техника только для владельцев."
+    },
+    "r2y2_v2": {
+      "availability": "unavailable",
+      "en": "Removed from research in 2025; collectible/owner-only.",
+      "ru": "Выведен из исследования в 2025 году; коллекционная техника только для владельцев."
+    },
+    "r2y2_kai": {
+      "availability": "unavailable",
+      "en": "Removed from research in 2025; collectible/owner-only.",
+      "ru": "Выведен из исследования в 2025 году; коллекционная техника только для владельцев."
     }
   }
 }

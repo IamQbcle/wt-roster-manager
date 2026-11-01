@@ -88,7 +88,7 @@ if (window.location.protocol === 'file:') {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="shortcut icon" href="assets/favicon.ico">
-<title>War Thunder Roster Manager v3.89</title>
+<title>War Thunder Roster Manager v3.90</title>
 <style>
 :root{--bg:#0b0f16;--panel:#121a26;--panel2:#172132;--panel3:#0f1622;--line:#2b3546;--ink:#ecf3ff;--muted:#94a3b8;--accent:#d8a22d;--good:#36b97d;--bad:#d45b65;--warn:#e4b33b;--chip:#233149;--blue:#6da8ff}*{box-sizing:border-box}body{margin:0;background:#0b0f16;color:var(--ink);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;font-size:15px}button,input,select,textarea{font:inherit}button{border:0;border-radius:10px;min-height:32px;padding:7px 12px;font-weight:900;cursor:pointer;background:var(--accent);color:#191104}button.secondary{background:#26344c;color:var(--ink)}button.ghost{background:#0e141e;color:var(--muted);border:1px solid var(--line)}button.danger{background:#76323d;color:#fff}button.buy{background:#2d7a57;color:#eafff3}button.unset{background:#b98b22;color:#15100a}input,select,textarea{background:#0d131d;border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:8px 10px;min-height:36px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent)}label{font-size:12px;color:var(--muted)}header{position:sticky;top:0;z-index:100;background:rgba(8,12,18,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.top{display:flex;gap:12px;align-items:center;padding:10px 16px}.logo{width:38px;height:38px;border-radius:10px;border:1px solid #536881;display:grid;place-items:center;font-weight:1000;font-size:18px;background:#162131}.brand h1{font-size:20px;margin:0}.brand .ver{font-size:13px;color:var(--muted);margin-left:4px}.tabs{display:flex;gap:8px;padding:0 16px 10px}.tab{background:#1a2638;color:#e8f0fb;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:900}.tab.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px rgba(216,162,45,.25)}main{padding:14px;max-width:1900px;margin:0 auto}.view{display:none}.view.active{display:block}.card{background:rgba(17,25,37,.9);border:1px solid var(--line);border-radius:16px;padding:14px}.grid2{display:grid;grid-template-columns:440px minmax(0,1fr);gap:14px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:end}.field{display:flex;flex-direction:column;gap:4px}.filter-grid{display:grid;grid-template-columns:210px 150px 170px 150px 140px 140px 130px 130px 130px;gap:7px;align-items:end}.type-line{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:7px}.check-mini{display:flex;gap:5px;align-items:center;border:1px solid var(--line);background:#182337;border-radius:8px;min-height:26px;padding:2px 8px;color:var(--muted);font-size:12px;white-space:nowrap}.check-mini input{min-height:auto}.found{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--accent);border-radius:999px;padding:5px 14px;font-weight:1000;font-size:17px;background:#233047;min-width:136px}.reset-inline{background:#24334d;color:#fff;min-height:30px;padding:5px 12px}.notice{border:1px dashed var(--line);border-radius:14px;background:rgba(255,255,255,.025);padding:12px;color:var(--muted);line-height:1.4}.roster-sticky{position:sticky;top:54px;z-index:50;background:#0d141f;border:1px solid var(--line);border-radius:14px;padding:8px;margin-bottom:8px}.roster-actions{display:flex;gap:8px;margin:8px 0 0}.view-toggle{background:#1b2940;color:#e8f0fb;border:1px solid #3a4b67;border-radius:10px;min-height:34px;padding:7px 16px;font-weight:1000}.view-toggle.active{background:#d8a22d;color:#191104;border-color:#d8a22d}.table-wrap{border:1px solid var(--line);border-radius:14px;overflow:auto;background:#0e151f}.veh-table{width:100%;border-collapse:separate;border-spacing:0}.veh-table th,.veh-table td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:left}.veh-table th{position:sticky;top:0;background:#141d2b;color:#cbd6e6;font-size:12px;z-index:4}.veh-cell{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px;align-items:center}.thumb{width:96px;height:58px;border-radius:9px;background:#08101a;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}.thumb img{max-width:100%;max-height:100%;object-fit:contain}.thumb.small{width:82px;height:52px}.id{font-size:11px;color:var(--muted);font-family:Consolas,monospace;margin-top:3px}.pill{display:inline-flex;align-items:center;border-radius:999px;background:var(--chip);border:1px solid var(--line);padding:3px 8px;font-size:12px}.pill.good{background:rgba(54,185,125,.15);border-color:rgba(54,185,125,.55)}.pill.warn{background:rgba(228,179,59,.14);border-color:rgba(228,179,59,.55)}.role-img{display:inline-block;width:18px;height:18px;vertical-align:-4px;margin-right:7px}.role-img img{max-width:18px;max-height:18px;display:block}.role-shape{display:inline-block;width:15px;height:15px;margin-right:7px;vertical-align:-3px;background:#91a0b5;border-radius:50%}.role-shape.fighter{background:#ec9449;transform:rotate(45deg);border-radius:3px}.role-shape.bomber{width:0;height:0;background:transparent;border-left:8px solid transparent;border-right:8px solid transparent;border-top:16px solid #89a3ff}.role-shape.attacker{background:#a9dea1;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);border-radius:0}.role-shape.spaa{background:#c596ff;clip-path:polygon(20% 100%,45% 0,55% 0,80% 100%,65% 100%,50% 35%,35% 100%)}.tree-wrap{display:flex;flex-direction:column;gap:14px}.rank-block{border:1px solid var(--line);border-radius:16px;padding:12px;background:#111925}.rank-block h3{margin:0 0 12px}.tree-columns{display:grid;grid-template-columns:minmax(0,5fr) minmax(320px,2fr);gap:18px}.tree-title{font-weight:900;color:#c8d4e5;margin:0 0 8px}.tree-grid-left{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:10px}.tree-grid-right{display:grid;grid-template-columns:repeat(2,minmax(190px,1fr));gap:10px}.tree-card{display:grid;grid-template-columns:88px minmax(0,1fr) auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:13px;background:#122034;min-height:96px;padding:8px;overflow:hidden}.tree-card.special{background:rgba(92,78,29,.6);border-color:#795e1d}.tree-card.owned{border-color:#28a96d;box-shadow:inset 0 0 0 1px rgba(40,169,109,.45)}.tree-name{font-weight:1000;white-space:normal;line-height:1.16;overflow-wrap:anywhere}.tree-meta{color:#bdd0e8;font-size:13px;line-height:1.35;margin-top:2px}.tree-buttons{display:flex;gap:6px;flex-wrap:nowrap}.lineup-layout{display:grid;grid-template-columns:420px minmax(0,1fr);gap:14px}.lineup-filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}.lineup-list{display:flex;flex-direction:column;gap:9px;max-height:68vh;overflow:auto}.lineup-item{border:1px solid var(--line);background:#172133;border-radius:12px;padding:10px;cursor:pointer}.lineup-item.active{border-color:var(--accent);box-shadow:inset 0 0 0 1px rgba(216,162,45,.22)}.meta{color:var(--muted);font-size:12px}.editor-head{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:8px}.editor-filters{display:grid;grid-template-columns:170px 170px 120px 120px 110px 110px;gap:8px;margin-bottom:10px}.slots{display:grid;grid-template-columns:repeat(2,minmax(520px,1fr));gap:10px}.slot{border:1px solid var(--line);background:#101823;border-radius:14px;padding:8px}.slot-top{display:grid;grid-template-columns:180px minmax(180px,1fr) 160px 145px;gap:8px;align-items:center;margin-bottom:7px}.slot-title{font-weight:1000;display:flex;gap:8px;align-items:center}.drag-handle{width:22px;height:22px;display:inline-grid;place-items:center;cursor:grab;flex:0 0 auto}.slot.dragging,.slot.drop-target{border-color:var(--accent);box-shadow:0 0 0 2px rgba(216,162,45,.25)}.slot-result{min-height:80px;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:8px;background:rgba(255,255,255,.025)}.slot-result.good{border-color:rgba(54,185,125,.7);background:rgba(54,185,125,.08)}.slot-result.missing{border-color:rgba(228,179,59,.65);background:rgba(228,179,59,.08)}.slot-card{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:10px;align-items:center}.slot-name{font-weight:1000;font-size:18px;line-height:1.1}.slot-meta{font-size:14px;color:#c3d1e4;margin-top:2px}.chipline{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px}.suggest-wrap{position:relative}.suggest{display:none;position:absolute;z-index:80;top:39px;left:0;right:0;max-height:250px;overflow:auto;background:#0b111a;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 45px rgba(0,0,0,.45)}.suggest.open{display:block}.suggest div{padding:8px 10px;border-bottom:1px solid rgba(255,255,255,.06);cursor:pointer}.suggest div:hover{background:#182335}.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.65);padding:18px}.modal.open{display:flex}.modal-box{width:min(980px,96vw);max-height:92vh;overflow:auto;background:#121a26;border:1px solid var(--line);border-radius:18px;padding:18px}.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.big-check{display:flex;align-items:center;gap:10px;background:#172133;border:1px solid var(--line);border-radius:12px;padding:10px}.magic-warning{border:1px solid var(--bad);background:rgba(212,91,101,.16);border-radius:13px;padding:12px;margin:12px 0;font-weight:900;color:#ffe7e7}.magic-warning .nums{font-weight:700;margin-top:6px}.footer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.settings-grid{display:grid;grid-template-columns:repeat(2,minmax(280px,1fr));gap:12px}.hidden{display:none!important}@media(max-width:1200px){.filter-grid{grid-template-columns:repeat(4,1fr)}.slots{grid-template-columns:1fr}.tree-grid-left{grid-template-columns:repeat(3,1fr)}.tree-columns{grid-template-columns:1fr}.lineup-layout{grid-template-columns:1fr}.editor-filters{grid-template-columns:repeat(3,1fr)}}
 
@@ -621,7 +621,7 @@ main{padding:0 10px 10px!important;max-width:1920px!important}
 </style>
 </head>
 <body>
-<header><div class="top one-line"><nav class="tabs"><button class="tab" data-view="dashboard">Обзор</button><button class="tab" data-view="lineups">Наборы</button><button class="tab active" data-view="roster">Ростер</button><button class="tab" data-view="changes">Изменения</button><button class="tab" data-view="squad">Отряд</button><span id="topLangMount" class="top-lang-mount"></span></nav><div class="brand"><h1><span class="logo mini">WT</span> War Thunder Roster Manager <span class="ver">v3.89</span></h1></div></div></header>
+<header><div class="top one-line"><nav class="tabs"><button class="tab" data-view="dashboard">Обзор</button><button class="tab" data-view="lineups">Наборы</button><button class="tab active" data-view="roster">Ростер</button><button class="tab" data-view="changes">Изменения</button><button class="tab" data-view="squad">Отряд</button><span id="topLangMount" class="top-lang-mount"></span></nav><div class="brand"><h1><span class="logo mini">WT</span> War Thunder Roster Manager <span class="ver">v3.90</span></h1></div></div></header>
 <main>
 <section id="dashboard" class="view"><div class="card"><h2>Обзор</h2><div id="overviewStats" class="stats"></div></div></section>
 <section id="lineups" class="view"><div class="lineup-layout"><aside class="card"><div id="lineupFilters" class="lineup-filters"></div><div class="toolbar lineup-toolbar"><button id="newLineup">Новый</button><button id="copyLineup" class="secondary">Копия</button><button id="deleteLineup" class="danger">Удалить</button><button id="autopickBtn" style="width:100%;background:#7a47df;color:#fff">Автоподбор</button><button id="rouletteBtn" class="secondary" style="width:100%;background:#38506f;color:#fff">🎲🎲 Рулетка</button><button id="sortLineups" class="secondary" style="width:100%">Автосортировка</button></div><div id="lineupList" class="lineup-list"></div></aside><section class="card lineup-editor-card"><h2>Редактор набора</h2><div class="editor-head"><div class="field"><label>Название</label><input id="pName" placeholder="Название набора"></div><div class="field"><label>Комментарий</label><input id="pComment" placeholder="Комментарий к набору"></div></div><div class="editor-filters"><div class="field"><label>Нация</label><select id="pNation"></select></div><div class="field"><label>Режим</label><select id="pMode"></select></div><div class="field"><label>BR от</label><select id="pBrMin"></select></div><div class="field"><label>BR до</label><select id="pBrMax"></select></div><div class="field"><label>Ранг от</label><select id="pRankMin"></select></div><div class="field"><label>Ранг до</label><select id="pRankMax"></select></div></div><div id="slots" class="slots"></div></section></div></section>
@@ -805,6 +805,23 @@ const STATUS_RIGHT_OVERRIDES={
   // v3.88: F-16XL is the Space Program event reward. The API event field alone is intentionally
   // not trusted globally, so keep this unit explicitly curated in the UI runtime as well.
   'f_16xl':'Акционная',
+  // v3.90 acquisition-type audit.
+  'uk_frigate_river':'Маркет',
+  'buccaneer_s1':'Маркет',
+  'fr_trident_class_glaive_p671':'Маркет',
+  'p-63c-5_kingcobra_animal_version':'Маркет',
+  'ussr_kv_8':'Маркет',
+  'ussr_t_34_85_zis_53_v80':'Маркет',
+  'ussr_valentine_mk_9':'Акционная',
+  'fw-190a-8_france':'Акционная',
+  'pbm_3':'Акционная',
+  'p-63c-5_ussr':'Акционная',
+  'yak-3t':'Акционная',
+  'sw_patria_bmp_3':'Акционная',
+  'jh_7a_prototype':'Пакетная',
+  'germ_s_700_s_706':'Акционная',
+  'germ_panzerjager_panther_g2':'Акционная',
+  'fw_190a_8_mistel':'Акционная',
   // Sky Odyssey live changelog lists the Greek A-7E as Premium; current API marks it as a pack.
   'a_7e_greece':'Премиум',
   'ussr_t_80u_yt_cup_2019':'Акционная',
@@ -844,8 +861,10 @@ const WIKI_SUPPLEMENTAL_UNITS=[
   {id:'germ_leopard_2a5_yt_cup_2019',name:'Leopard 2A5 (YouTube Cup 2019)',nameRu:'Leopard 2A5 (YouTube Cup 2019)',nameEn:'Leopard 2A5 (YouTube Cup 2019)',nation:'Germany',class:'ground',className:'Наземка',role:'СТ',roleEn:'Medium tank',rank:'VIII',treeRank:'VIII',br:{ab:12.3,rb:12.3,sb:12.3},status:'Акционная',source:'Wiki unit supplement',local_image:'https://static.encyclopedia.warthunder.com/slots/germ_leopard_2a5_yt_cup_2019.png',treePlacement:'right',treePlacementSource:'wiki-unit-supplement'},
   {id:'tu_95m',name:'Ту-95М',nameRu:'Ту-95М',nameEn:'Tu-95M',nation:'USSR',class:'air',className:'Авиация',role:'Бомбер',roleEn:'Bomber',rank:'VI',treeRank:'VI',br:{ab:8.3,rb:8.3,sb:8.3},status:'Акционная',source:'Wiki unit supplement',local_image:'assets/vehicles/slots/tu_95m.png',treePlacement:'right',treePlacementSource:'wiki-unit-supplement'},
   {id:'us_m1a1_abrams_yt_cup_2019',name:'M1A1 (YouTube Cup 2019)',nameRu:'M1A1 (YouTube Cup 2019)',nameEn:'M1A1 (YouTube Cup 2019)',nation:'USA',class:'ground',className:'Наземка',role:'СТ',roleEn:'Medium tank',rank:'VII',treeRank:'VII',br:{ab:11.7,rb:11.7,sb:11.7},status:'Акционная',source:'Wiki unit supplement',local_image:'assets/vehicles/slots/us_m1a1_abrams_yt_cup_2019.png',treePlacement:'right',treePlacementSource:'wiki-unit-supplement'},
-  {id:'spitfire_mk5b_float',name:'Spitfire Mk Vb (Float)',nameRu:'Spitfire Mk Vb (Float)',nameEn:'Spitfire Mk Vb (Float)',nation:'Britain',class:'air',className:'Авиация',role:'Истреб.',roleEn:'Fighter',rank:'II',treeRank:'II',br:{ab:3.3,rb:3.3,sb:3.3},status:'Акционная',source:'Wiki unit supplement',local_image:'https://static.encyclopedia.warthunder.com/slots/spitfire_mk5b_float.png',treePlacement:'right',treePlacementSource:'wiki-event-supplement'},
-  {id:'b_52h',name:'B-52H',nameRu:'B-52H',nameEn:'B-52H',nation:'USA',class:'air',className:'Авиация',role:'Бомбер',roleEn:'Bomber',rank:'VI',treeRank:'VI',br:{ab:8.7,rb:8.7,sb:8.7},status:'Акционная',source:'Wiki unit supplement',local_image:'assets/vehicles/slots/b_52h.png',treePlacement:'right',treePlacementSource:'wiki-unit-supplement'}
+  {id:'spitfire_mk5b_float',name:'Spitfire Mk Vb (Float)',nameRu:'Spitfire Mk Vb (Float)',nameEn:'Spitfire Mk Vb (Float)',nation:'Britain',class:'air',className:'Авиация',role:'Истреб.',roleEn:'Fighter',rank:'II',treeRank:'II',br:{ab:3.3,rb:3.3,sb:3.3},status:'Акционная',source:'Wiki unit supplement',local_image:'assets/vehicles/slots/spitfire_mk5b_float.png',treePlacement:'right',treePlacementSource:'wiki-event-supplement'},
+  {id:'b_52h',name:'B-52H',nameRu:'B-52H',nameEn:'B-52H',nation:'USA',class:'air',className:'Авиация',role:'Бомбер',roleEn:'Bomber',rank:'VI',treeRank:'VI',br:{ab:8.7,rb:8.7,sb:8.7},status:'Акционная',source:'Wiki unit supplement',local_image:'assets/vehicles/slots/b_52h.png',treePlacement:'right',treePlacementSource:'wiki-unit-supplement'},
+  {id:'germ_s_700_s_706',name:'S-706',nameRu:'S-706',nameEn:'S-706',nation:'Germany',class:'coastal',className:'Малый флот',role:'Катер',roleEn:'Boat',rank:'III',treeRank:'III',br:{ab:2.7,rb:2.7,sb:2.7},status:'Акционная',availability:'unavailable',source:'Wiki BP25 supplement',local_image:'assets/vehicles/slots/germ_s_700_s_706.png',treePlacement:'right',treePlacementSource:'v3.90-curated-bp25'},
+  {id:'germ_panzerjager_panther_g2',name:'Jagdpanther G2',nameRu:'Jagdpanther G2',nameEn:'Jagdpanther G2',nation:'Germany',class:'ground',className:'Наземка',role:'ПТ-САУ',roleEn:'Tank destroyer',rank:'IV',treeRank:'IV',br:{ab:6.3,rb:6.3,sb:6.3},status:'Акционная',availability:'unavailable',source:'Wiki BP25 supplement',local_image:'assets/vehicles/slots/germ_panzerjager_panther_g2.png',treePlacement:'right',treePlacementSource:'v3.90-curated-bp25'}
 ];
 
 function rawMeta(v){return rawMetaById.get(idOf(v))||null}
@@ -858,13 +877,20 @@ function rawStatusOf(v){
   if(String(v?.source||'').includes('Curated v3.85 supplement'))return String(v?.status||'');
   const r=rawMeta(v); if(!r)return '';
   const truth=x=>x===true||x===1||x==='1'||String(x).toLowerCase()==='true';
+  const stored=String(v?.status||'');
+  // v3.90: vehicles.json is the curated acquisition layer. Do not let raw API premium economy
+  // overwrite a curated Event/Market/Pack/Squadron status at runtime.
+  if(['Маркет','Акционная','Пакетная','Полковая'].includes(stored))return stored;
   if(truth(r.squadron_vehicle)||truth(r.isSquadron)||truth(r.squadronVehicle))return 'Полковая';
   if(truth(r.is_pack)||truth(r.isPack)||truth(r.pack))return 'Пакетная';
+  // Audited ambiguity: for a row currently classified as Premium, an explicit marketplace flag
+  // means the present acquisition method is Market.
+  if(stored==='Премиум'&&(truth(r.on_marketplace)||truth(r.onMarketplace)||truth(r.is_market)||truth(r.isMarket)||truth(r.market)))return 'Маркет';
   if(truth(r.is_premium)||truth(r.isPremium)||truth(r.premium))return 'Премиум';
   // API field `event` is noisy: for some normal/tree vehicles it is merely event/update metadata.
   // Use it only when the Wiki/unit-specific override or tree placement confirms special status.
   if(r.event!==undefined&&r.event!==null&&String(r.event).trim()!==''&&TREE_RIGHT_OVERRIDES.has(id))return 'Акционная';
-  if(truth(r.on_marketplace)||truth(r.is_market)||truth(r.isMarket)||truth(r.market))return 'Маркет';
+  if(truth(r.on_marketplace)||truth(r.onMarketplace)||truth(r.is_market)||truth(r.isMarket)||truth(r.market))return 'Маркет';
   return 'Обычная';
 }
 function effectiveStatus(v){const rs=rawStatusOf(v); return rs||statusOf(v)}
@@ -941,6 +967,10 @@ function normalizeVehicle(v){
   if(/(^|_)zsu(_|\d)/.test(idOf(v).toLowerCase())){v.class='ground';v.role=v.role||'ЗСУ';v.roleEn=v.roleEn||'SPAA'}
   if(/sub_i_ii/i.test(idOf(v))){v.role='ЗСУ';v.roleEn='SPAA';v.class='ground'}
   if(/lvt_a_1_trb/i.test(idOf(v))){v.name=v.nameRu=v.nameEn='LVT(A)(1) (TheRussianBadger)';v.status='Акционная';v.treePlacement='right'}
+  // Generic API BR keys are not game modes for ships: only Naval AB/RB exist.
+  if((v.class==='coastal'||v.class==='bluewater')&&v.br&&typeof v.br==='object'){
+    v.br={ab:v.br.ab,rb:v.br.rb};
+  }
   if(/kingcobra_animal/i.test(idOf(v))){v.name=v.nameRu=v.nameEn='Kingcobra (Animal)';v.status='Акционная'}
   if(/_tutorial/i.test(idOf(v)))v._technical=true;
   v._rank=guardedRank(v);
@@ -1745,12 +1775,14 @@ function currentChangeFilters(){
   const nation=document.getElementById('chgNation')?.value||'all';
   const cls=document.getElementById('chgClass')?.value||'all';
   const type=document.getElementById('chgType')?.value||'all';
-  return {onlyMy,onlyLineup,nation,cls,type};
+  // Battle-mode review scope is patch-local (see v3.90 review workflow below).
+  return {onlyMy,onlyLineup,modeScope:'all',nation,cls,type};
 }
 function changeMatches(ch,f){
   const v=ch.vehicle||{};
   if(f.onlyMy&&!ch._mine)return false;
   if(f.onlyLineup&&!(ch._lineups||[]).length)return false;
+  if(f.modeScope!=='all'&&typeof changeMatchesModeScopeV390==='function'&&!changeMatchesModeScopeV390(ch,v,f.modeScope))return false;
   if(f.nation!=='all'&&String(v.nation||ch.nation||'')!==f.nation)return false;
   if(f.cls!=='all'&&classOf(v)!==f.cls)return false;
   if(f.type!=='all'&&String(ch.change_type||'')!==f.type)return false;
@@ -4733,7 +4765,13 @@ setTimeout(async()=>{try{if(!gamePatchStatusV376)await loadGamePatchStatusV376()
 const WT_PATCH_VERIFIED_KEY_V377='wt_rm_verified_game_version_v377';
 const WT_PATCH_LAST_CHECK_KEY_V377='wt_rm_last_game_version_check_v377';
 let lastVersionCheckV377=null;
-function normGameVersionV377(v){return String(v||'').trim();}
+function normGameVersionV377(v){
+  const s=String(v||'').trim();
+  // Dates (e.g. 30.10.2026) are NOT client versions. Accept the verified
+  // 2.x.y.z-style number even in old combined status strings with dates.
+  const match=s.match(/\b(?:2|3|4)\.\d+\.\d+(?:\.\d+)?\b/);
+  return match?match[0]:'';
+}
 function initialVerifiedVersionV377(){
   const saved=normGameVersionV377(localStorage.getItem(WT_PATCH_VERIFIED_KEY_V377));
   if(saved)return saved;
@@ -4791,9 +4829,12 @@ function renderPatchStatusBoxV376(){
   const cls=checking?'checking':(attention||missingVerified?'warn':'ok');
   const checked=(lastVersionCheckV377?.checked_at||gamePatchStatusV376?.checked_at||'—');
   const source=lastVersionCheckV377?.source_url||'https://warthunder.com/en/game/changelog/';
+  const serverDate=lastVersionCheckV377?.latest_server_update||
+    (()=>{try{return JSON.parse(localStorage.getItem(WT_PATCH_LAST_CHECK_KEY_V377)||'null')?.latest_server_update||''}catch(_){return ''}})();
   host.innerHTML=`<div class="patch-status-box ${cls}"><b>${esc(title)}</b><br>`+
     `<div class="patch-version-line"><span>${ru?'Данные менеджера считаются проверенными для':'Manager data is considered verified for'}:</span> <span class="patch-version-pill">${esc(verified||'—')}</span></div>`+
     `<div class="patch-version-line"><span>${ru?'Последняя найденная публичная версия игры':'Latest public game version found'}:</span> <span class="patch-version-pill">${esc(latest||'—')}</span></div>`+
+    (serverDate?`<div class="patch-version-line"><span>${ru?'Последнее серверное обновление (дата)':'Latest server update (date)'}:</span> <span class="patch-version-pill">${esc(serverDate)}</span></div>`:'')+
     `<div class="onboarding-small">${ru?'Источник проверки':'Check source'}: <a href="${esc(source)}" target="_blank" rel="noopener">official changelog</a> · ${ru?'последняя проверка':'last check'}: ${esc(checked)}</div>`+
     (failed?`<div class="patch-status-error">${ru?'Не удалось проверить версию':'Could not check version'}: ${esc(lastVersionCheckV377.error||'unknown error')}</div>`:'')+
     `<div class="patch-status-row">`+
@@ -4807,7 +4848,7 @@ function renderPatchStatusBoxV376(){
   const check=document.getElementById('checkWtVersionV377'); if(check)check.onclick=checkOfficialWtVersionV377;
   const ack=document.getElementById('ackPatchV376'); if(ack)ack.onclick=()=>{const v=latestCheckedVersionV377()||getVerifiedVersionV377(); if(v)setVerifiedVersionV377(v); localStorage.setItem(userAckPatchKeyV376(),'1');applyPatchAttentionV376();renderPatchStatusBoxV376();};
   const reset=document.getElementById('resetPatchAckV376'); if(reset)reset.onclick=()=>{localStorage.removeItem(WT_PATCH_VERIFIED_KEY_V377);localStorage.removeItem(WT_PATCH_LAST_CHECK_KEY_V377);localStorage.removeItem(userAckPatchKeyV376());lastVersionCheckV377=null;applyPatchAttentionV376();renderPatchStatusBoxV376();};
-  const manual=document.getElementById('setPatchVersionV377'); if(manual)manual.onclick=()=>{const cur=getVerifiedVersionV377()||latestCheckedVersionV377();const v=prompt(ru?'Версия War Thunder, для которой база проверена:':'War Thunder version this data was verified for:',cur||'');if(v&&v.trim()){setVerifiedVersionV377(v.trim());applyPatchAttentionV376();renderPatchStatusBoxV376();}};
+  const manual=document.getElementById('setPatchVersionV377'); if(manual)manual.onclick=()=>{const cur=getVerifiedVersionV377()||latestCheckedVersionV377();const v=prompt(ru?'Версия War Thunder, для которой база проверена:':'War Thunder version this data was verified for:',cur||'');if(v&&normGameVersionV377(v)){setVerifiedVersionV377(v);applyPatchAttentionV376();renderPatchStatusBoxV376();}else if(v){alert(ru?'Укажите номер версии игры (например, 2.59.0.92), а не дату.':'Enter a game version (e.g. 2.59.0.92), not a date.');}};
 }
 (function initLastVersionCheckV377(){try{lastVersionCheckV377=JSON.parse(localStorage.getItem(WT_PATCH_LAST_CHECK_KEY_V377)||'null');}catch(e){lastVersionCheckV377=null;}})();
 
@@ -5211,7 +5252,10 @@ function changeBrModeSetV384(ch,v={}){
   }
   function addKey(key){
     const k=String(key||'').toLowerCase().replace(/[\s-]+/g,'_');
-    if(k==='ground_rb'||k==='realistic_ground_br')modes.add('ground_rb');
+    if(k==='ground_rb'||k==='realistic_ground_br'){
+      modes.add('ground_rb');
+      if(cls==='air'&&!(v?.br&&v.br.naval_rb!=null))modes.add('naval_rb');
+    }
     else if(k==='ground_sb'||k==='simulator_ground_br')modes.add('ground_sb');
     else if(k==='naval_rb')modes.add('naval_rb');
     else if(k==='naval_ab')modes.add('naval_ab');
@@ -5227,7 +5271,10 @@ function changeBrModeSetV384(ch,v={}){
     if(val&&typeof val==='object'&&!Array.isArray(val)){Object.keys(val).forEach(addKey);return;}
     const s=String(val||'').toLowerCase();
     if(!s)return;
-    if(/\bground\s*rb\b/.test(s))modes.add('ground_rb');
+    if(/\bground\s*rb\b/.test(s)){
+      modes.add('ground_rb');
+      if(cls==='air'&&!(v?.br&&v.br.naval_rb!=null))modes.add('naval_rb');
+    }
     if(/\bground\s*sb\b/.test(s))modes.add('ground_sb');
     if(/\bground\s*ab\b/.test(s))modes.add('ground_ab');
     if(/\bnaval\s*rb\b/.test(s))modes.add('naval_rb');
@@ -5240,8 +5287,23 @@ function changeBrModeSetV384(ch,v={}){
     if(/\brb\b/.test(withoutCombined))addPlain('rb');
     if(/\bsb\b/.test(withoutCombined))addPlain('sb');
   }
-  scan(ch?.old); scan(ch?.new);
+  const oldSide=localText(ch?.old),newSide=localText(ch?.new);
+  if(oldSide&&newSide&&typeof oldSide==='object'&&typeof newSide==='object'&&!Array.isArray(oldSide)&&!Array.isArray(newSide)){
+    for(const key of new Set([...Object.keys(oldSide),...Object.keys(newSide)])){
+      if(String(oldSide[key]??'')!==String(newSide[key]??''))addKey(key);
+    }
+  }else{
+    scan(ch?.old); scan(ch?.new);
+  }
   return modes.size?modes:null;
+}
+function changeMatchesModeScopeV390(ch,v,scope='all'){
+  if(scope==='all')return true;
+  if(String(ch?.change_type||'').toLowerCase()!=='br')return false;
+  const modes=changeBrModeSetV384(ch,v||ch?.vehicle||{});
+  if(!modes)return false;
+  if(scope==='sb')return modes.has('air_sb')||modes.has('ground_sb');
+  return modes.has(scope);
 }
 function lineupModeMatchesChangeV384(p,ch,v){
   const modes=changeBrModeSetV384(ch,v);
@@ -5285,7 +5347,7 @@ groupChanges = function(changes){
    not leave stale records because the index is rebuilt from current state every time.
    Autopick now strongly prefers owned vehicles already seen on the same crew, and a new
    "keep all filled slots" option allows the user to lock planned lineups before autofill. */
-const WT_APP_VERSION_V386='v3.89';
+const WT_APP_VERSION_V386='v3.90';
 const WT_APP_BUILD_DATE_V386='2026-09-19';
 Object.assign(I18N.ru,{
   keepAllFilled:'не трогать все заполненные слоты',
@@ -5358,7 +5420,11 @@ function crewTrainingRecordsV386(v,p=null,crewIndex=null){
   if(!v||!isOwned(v))return {same:[],sameNation:[],all:[]};
   const idx=buildCrewTrainingIndexV386();
   const id=idOf(v);
-  const all=idx.byVehicle.get(id)||[];
+  const raw=idx.byVehicle.get(id)||[];
+  // Never let the lineup currently being edited prove its own crew training.
+  // Otherwise typing/selecting a vehicle in this lineup immediately becomes
+  // self-evidence that the same crew is already trained for it.
+  const all=p?.id?raw.filter(r=>r.lineupId!==p.id):raw;
   const nation=p?.nation||v.nation;
   const sameNation=all.filter(r=>!nation||r.nation===nation);
   const same=(crewIndex===null||crewIndex===undefined)?[]:sameNation.filter(r=>r.crewIndex===Number(crewIndex));
@@ -5557,7 +5623,10 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
   function crewTrainingRecordsFromIndexV3862(idx,v,p=null,crewIndex=null){
     if(!v||!isOwned(v))return {same:[],sameNation:[],all:[]};
     const id=idOf(v);
-    const all=idx.byVehicle.get(id)||[];
+    const raw=idx.byVehicle.get(id)||[];
+    // The current editable lineup is a consumer of crew-memory, not a source
+    // for itself. Only other saved lineups may establish probable training.
+    const all=p?.id?raw.filter(r=>r.lineupId!==p.id):raw;
     const nation=p?.nation||v.nation;
     const sameNation=all.filter(r=>!nation||r.nation===nation);
     const same=(crewIndex===null||crewIndex===undefined)?[]:sameNation.filter(r=>r.crewIndex===Number(crewIndex));
@@ -5825,6 +5894,46 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
 })();
 
 </script>
+
+<script>
+/* v3.90: remember vertical scroll position independently for each main tab.
+   UI-only session state; never stored in user profile/export. */
+(function installPerTabScrollMemoryV390(){
+  const KEY='wt_rm_tab_scroll_v390';
+  let positions={};
+  try{positions=JSON.parse(sessionStorage.getItem(KEY)||'{}')||{};}catch(_){positions={};}
+  function activeViewV390(){return document.querySelector('.tab.active[data-view]')?.dataset?.view||'';}
+  function savePosV390(view){
+    if(!view)return;
+    positions[view]=Math.max(0,Math.round(window.scrollY||document.documentElement.scrollTop||0));
+    try{sessionStorage.setItem(KEY,JSON.stringify(positions));}catch(_){}
+  }
+  function restorePosV390(view){
+    const y=Number(positions[view]);
+    if(!Number.isFinite(y))return;
+    const go=()=>window.scrollTo({top:Math.max(0,y),left:0,behavior:'auto'});
+    requestAnimationFrame(()=>requestAnimationFrame(go));
+    // Some tabs finish delayed layout work (tree connectors, patch rendering) after activation.
+    setTimeout(go,90);
+  }
+  if(typeof activate==='function'){
+    const baseActivateV390=activate;
+    activate=function(view){
+      const prev=activeViewV390();
+      if(prev)savePosV390(prev);
+      baseActivateV390(view);
+      restorePosV390(view);
+    };
+  }
+  let scrollTimerV390=0;
+  window.addEventListener('scroll',()=>{
+    clearTimeout(scrollTimerV390);
+    scrollTimerV390=setTimeout(()=>savePosV390(activeViewV390()),80);
+  },{passive:true});
+  window.addEventListener('beforeunload',()=>savePosV390(activeViewV390()));
+})();
+</script>
+
 </body></html>
 
 <!-- v3.75 lineup list range filter fix. v3.74 curated availability update: KV-8 market/event, SAV 20.12.48 owner-only, F-20A retired pack. -->
@@ -5913,7 +6022,9 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
   }
   function suggestionAllowedForTypingV3863(v,p){
     if(!v||!p)return false;
-    // Manual slot search should allow out-of-BR/rank picks, but still stay in the nation and plausible class family.
+    // Unavailable / owner-only vehicles are valid slot candidates only when the player owns them.
+    // Manual slot search may still ignore BR/rank filters, but not acquisition availability.
+    if(typeof canUseInLineup==='function'&&!canUseInLineup(v))return false;
     return v.nation===p.nation && modeAllowedClasses(p.mode).includes(classOf(v));
   }
   function suggestionScoreV3863(idx,v,p,i,q,dupIds){
@@ -5974,7 +6085,7 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
       const sameMap=idx.byCrew.get(`${p.nation}|${Number(i)}`)||new Map();
       for(const id of sameMap.keys())ids.add(id);
       // Empty-field helper is deliberately narrower: trained vehicles only, and matching the current lineup filters.
-      candidates=[...ids].map(id=>byId.get(id)).filter(v=>v&&suggestionFilterOkV3863(v,p));
+      candidates=[...ids].map(id=>byId.get(id)).filter(v=>v&&(typeof canUseInLineup!=='function'||canUseInLineup(v))&&suggestionFilterOkV3863(v,p));
     }else{
       candidates=vehicles.filter(v=>suggestionAllowedForTypingV3863(v,p));
     }
@@ -6129,7 +6240,7 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
    Only BR changes require manual review. Rank, availability, additions and other
    structural/data changes remain visible as informational history but have no
    per-row review checkbox or critical styling. Patch-level controls can review
-   all BR changes or all unowned BR changes at once. */
+   all BR changes or ownership buckets at once, scoped by the selected battle mode. */
 (function(){
   const REVIEW_TYPE_V389='br';
   const patchReviewRegistryV389={};
@@ -6137,21 +6248,27 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
   Object.assign(I18N.ru,{
     reviewAllPatch:'Отметить проверенным всё',
     reviewAllUnowned:'Отметить проверенным некупленное',
-    reviewBrOnlyNote:'Ручной проверки требуют только изменения БР. Остальные изменения показаны для информации.'
+    reviewOwnedNotInLineups:'Отметить проверенным купленное без подходящих наборов',
+    nowFitsLineup:'Теперь подходит',
+    reviewBrOnlyNote:'Ручной проверки требуют только изменения БР. Массовые отметки учитывают выбранный режим; техника, которой новый БР открыл подходящий набор, не списывается автоматически.'
   });
   Object.assign(I18N.en,{
     reviewAllPatch:'Mark all reviewed',
     reviewAllUnowned:'Mark unowned reviewed',
-    reviewBrOnlyNote:'Only BR changes require manual review. Other changes are shown for information.'
+    reviewOwnedNotInLineups:'Mark owned without a suitable lineup reviewed',
+    nowFitsLineup:'Now fits',
+    reviewBrOnlyNote:'Only BR changes require manual review. Bulk review actions respect the selected mode; vehicles that newly fit a saved lineup are not cleared automatically.'
   });
 
   const st=document.createElement('style');
   st.textContent=`
     .patch-review-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0 10px;padding:7px 9px;border:1px solid rgba(255,255,255,.07);border-radius:10px;background:rgba(255,255,255,.025)}
-    .patch-review-tools .check-mini{height:28px!important}
+    .patch-review-tools .check-mini{height:28px!important}.patch-review-tools .patch-mode-filter,.patch-review-tools .patch-change-filter{margin:0}.patch-review-tools .patch-mode-filter select,.patch-review-tools .patch-change-filter select{height:28px;min-width:82px;padding-top:2px;padding-bottom:2px}
     .patch-review-note{color:var(--muted);font-size:11px;line-height:1.25;flex:1 1 320px}
     .change-row.info-only .change-actions{min-height:20px}
     .change-row.info-only .lineup-link-list{opacity:.82}
+    .fit-suggestion{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:4px;color:#ffd98a;font-size:11px;font-weight:800}
+    .fit-suggestion .mini-link{border-color:rgba(237,177,41,.55)}
     @media(max-width:1100px){.patch-review-tools{align-items:flex-start}.patch-review-note{flex-basis:100%}}
   `;
   document.head.appendChild(st);
@@ -6164,9 +6281,126 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
   function areKeysReviewedV389(keys){return keys.length>0&&keys.every(k=>!!state.reviewedChanges?.[k])}
   function groupReviewedV389(g){return areKeysReviewedV389(reviewedKeysV389(reviewableItemsV389(g)))}
   function patchReviewIdV389(patch){return 'pr'+Math.abs(hashString([patch?.version||'',patch?.date||'',localPatchTitle(patch||{})].join('|')))}
+  function patchModeStoreV390(){
+    state.settings=state.settings||{};
+    state.settings.changePatchModeScopeV390=state.settings.changePatchModeScopeV390||{};
+    return state.settings.changePatchModeScopeV390;
+  }
+  function patchModeScopeV390(patchId){return patchModeStoreV390()[patchId]||'all'}
+  function patchModeOptionsV390(selected){
+    const rows=lang()==='en'
+      ? [['all','ALL'],['air_ab','Air AB'],['ground_rb','Ground RB'],['naval_rb','Naval RB'],['sb','SB']]
+      : [['all','ВСЕ'],['air_ab','ААБ'],['ground_rb','ТРБ'],['naval_rb','МРБ'],['sb','СБ']];
+    return rows.map(([value,label])=>opt(value,label,selected)).join('');
+  }
+  function patchFilterStoreV390(){
+    state.settings=state.settings||{};
+    state.settings.changePatchFiltersV390=state.settings.changePatchFiltersV390||{};
+    return state.settings.changePatchFiltersV390;
+  }
+  function patchFiltersV390(patchId){
+    const saved=patchFilterStoreV390()[patchId]||{};
+    return {
+      onlyMy:!!saved.onlyMy,
+      onlyLineup:!!saved.onlyLineup,
+      nation:saved.nation||'all',
+      cls:saved.cls||'all',
+      type:saved.type||'all'
+    };
+  }
+  function patchFilterToolbarV390(patch,patchId,f){
+    const types=[...new Set((patch?.vehicle_changes||[]).map(c=>String(c?.change_type||'')).filter(Boolean))].sort();
+    return `<label class="check-mini"><input type="checkbox" data-change-patch-filter="onlyMy" data-change-patch-id="${esc(patchId)}" ${f.onlyMy?'checked':''}> ${esc(t('onlyMyVehicles'))}</label>
+      <label class="check-mini"><input type="checkbox" data-change-patch-filter="onlyLineup" data-change-patch-id="${esc(patchId)}" ${f.onlyLineup?'checked':''}> ${esc(t('onlyLineupVehicles'))}</label>
+      <div class="field patch-change-filter"><select data-change-patch-filter="nation" data-change-patch-id="${esc(patchId)}">${opt('all',t('allNations'),f.nation)}${NATION_ORDER.map(n=>opt(n,nationLabel(n),f.nation)).join('')}</select></div>
+      <div class="field patch-change-filter"><select data-change-patch-filter="cls" data-change-patch-id="${esc(patchId)}">${opt('all',t('allClasses'),f.cls)}${CLASS_KEYS.map(c=>opt(c,classLabel(c),f.cls)).join('')}</select></div>
+      <div class="field patch-change-filter"><select data-change-patch-filter="type" data-change-patch-id="${esc(patchId)}">${opt('all',t('allChangeTypes'),f.type)}${types.map(tp=>opt(tp,changeTypeLabel(tp),f.type)).join('')}</select></div>`;
+  }
   function setReviewedKeysV389(keys,value){
     state.reviewedChanges=state.reviewedChanges||{};
     for(const k of keys){if(value)state.reviewedChanges[k]=true;else delete state.reviewedChanges[k]}
+  }
+  function brNumberFromChangeSideV390(value){
+    value=localText(value);
+    if(value&&typeof value==='object'&&!Array.isArray(value)){
+      for(const x of Object.values(value)){const n=brNumberFromChangeSideV390(x);if(Number.isFinite(n))return n}
+      return NaN;
+    }
+    const m=String(value??'').match(/(-?\d+(?:\.\d+)?)\s*$/);
+    return m?Number(m[1]):NaN;
+  }
+  function newlyCompatibleLineupsV390(ch,v={}){
+    if(!isReviewableChangeV389(ch))return [];
+    const oldBr=brNumberFromChangeSideV390(ch?.old),newBr=brNumberFromChangeSideV390(ch?.new);
+    const oldObj=localText(ch?.old),newObj=localText(ch?.new);
+    const objectBr=oldObj&&newObj&&typeof oldObj==='object'&&typeof newObj==='object'&&!Array.isArray(oldObj)&&!Array.isArray(newObj);
+    if(!objectBr&&(!Number.isFinite(oldBr)||!Number.isFinite(newBr)||oldBr===newBr))return [];
+    const modes=changeBrModeSetV384(ch,v);
+    if(!modes?.size)return [];
+    const cls=classOf(v)||String(ch?.class||'');
+    const nation=String(v?.nation||ch?.nation||'');
+    const id=String(ch?.unit_id||ch?.id||idOf(v)||'');
+    const names=exactChangeVehicleNamesV384(v,{...ch,unit_id:id});
+    const ri=rankIdx(guardedRank(v)||ch?.rank||'I');
+    const out=[];
+    for(const p of state.lineups||[]){
+      if(String(p?.nation||'')!==nation||!modes.has(String(p?.mode||'')))continue;
+      const allowed=MODE_INFO[p.mode]?.classes||[];
+      if(allowed.length&&!allowed.includes(cls))continue;
+      if((p.slots||[]).some(slot=>slotMatchesVehicleExactV384(slot,id,names)))continue;
+      if(ri<rankIdx(p.rankMin||'I')||ri>rankIdx(p.rankMax||'IX'))continue;
+      const lo=Number(p.brMin),hi=Number(p.brMax);
+      if(!Number.isFinite(lo)||!Number.isFinite(hi))continue;
+      const key=brKeyForVehicleV381(v,p.mode);
+      const prev=objectBr?Number(oldObj[key]):oldBr;
+      const now=objectBr?Number(newObj[key]):newBr;
+      if(!Number.isFinite(prev)||!Number.isFinite(now)||prev===now)continue;
+      const newFits=now>=lo&&now<=hi;
+      const oldFits=prev>=lo&&prev<=hi;
+      if(newFits&&!oldFits)out.push({id:p.id,name:p.name||p.id});
+    }
+    const seen=new Set();
+    return out.filter(x=>!seen.has(x.id)&&seen.add(x.id));
+  }
+  function groupNewFitLineupsV390(g,reviewItems){
+    if(!g?._owned||(g?._lineups||[]).length)return [];
+    const out=[];const seen=new Set();
+    for(const ch of reviewItems||[]){for(const ln of newlyCompatibleLineupsV390(ch,g.vehicle||ch.vehicle||{})){if(!seen.has(ln.id)){seen.add(ln.id);out.push(ln)}}}
+    return out;
+  }
+
+  // BR changes stored as old/new objects are rendered one MODE per line.
+  // Do not change original history values: review keys and patch filters depend on them.
+  const MODE_ORDER_V390=['ab','rb','sb','ground_rb','ground_sb','naval_rb'];
+  function brDisplayModeV390(key){
+    const label={ab:'AB',rb:'RB',sb:'SB',ground_rb:'Ground RB',ground_sb:'Ground SB',naval_rb:'Naval RB'};
+    return label[String(key||'').trim().toLowerCase().replace(/[\s-]+/g,'_')]||String(key||'').toUpperCase();
+  }
+  function brChangeLinesV390(ch){
+    if(String(ch?.change_type||'').toLowerCase()!=='br')return null;
+    const old=localText(ch.old),next=localText(ch.new);
+    if(old&&next&&typeof old==='object'&&typeof next==='object'&&!Array.isArray(old)&&!Array.isArray(next)){
+      const keys=[...new Set([...Object.keys(old),...Object.keys(next)])].sort((a,b)=>{
+        const ia=MODE_ORDER_V390.indexOf(a),ib=MODE_ORDER_V390.indexOf(b);
+        return (ia<0?99:ia)-(ib<0?99:ib)||a.localeCompare(b);
+      });
+      return keys.filter(k=>String(old[k]??'')!==String(next[k]??'')).map(k=>({
+        old:brDisplayModeV390(k)+' '+(old[k]??'—'),
+        next:brDisplayModeV390(k)+' '+(next[k]??'—')
+      }));
+    }
+    // Older patches store individual modes as strings rather than dictionaries.
+    const fix=s=>String(s??'').replace(/^\s*((?:ground|naval|air)[\s_-]+)?(ab|rb|sb)\b/i,(all,scope,mode)=>
+      (scope?scope.trim().charAt(0).toUpperCase()+scope.trim().slice(1).toLowerCase()+' ':'')+mode.toUpperCase());
+    return [{old:fix(old),next:fix(next)}];
+  }
+  function changeHtmlV390(ch){
+    const modeLines=brChangeLinesV390(ch);
+    if(modeLines){return modeLines.map(pair=>`<div class="oldnew-line" title="${esc(changeTypeLabel(ch.change_type)+': '+pair.old+' → '+pair.next)}"><span class="change-kind inline-kind">${esc(changeTypeLabel(ch.change_type))}</span> <b>${esc(pair.old)}</b> → ${esc(pair.next)}</div>`).join('');}
+    const oldFull=changeValue(ch.old),newFull=changeValue(ch.new);
+    const oldShort=compactChangeValueV364(ch.old),newShort=compactChangeValueV364(ch.new);
+    const isLong=(oldShort!==oldFull)||(newShort!==newFull);
+    return `<div class="oldnew-line ${isLong?'compact-long':''}" title="${esc(changeTypeLabel(ch.change_type)+': '+oldFull+' → '+newFull)}"><span class="change-kind inline-kind">${esc(changeTypeLabel(ch.change_type))}</span> <b>${esc(oldShort)}</b> → ${esc(newShort)}</div>`;
   }
 
   renderChangeGroup=function(g){
@@ -6177,11 +6411,13 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
     const reviewed=reviewable&&groupReviewedV389(g);
     const critical=reviewable&&lineups.length>0;
     const title=nameOf(v)||localText(g.items?.[0]?.name_i18n)||g.items?.[0]?.name||g.unit_id;
-    const oldnew=`<div class="oldnew-stack">${g.items.map(ch=>{const oldFull=changeValue(ch.old),newFull=changeValue(ch.new);const oldShort=compactChangeValueV364(ch.old),newShort=compactChangeValueV364(ch.new);const isLong=(oldShort!==oldFull)||(newShort!==newFull);return `<div class="oldnew-line ${isLong?'compact-long':''}" title="${esc(changeTypeLabel(ch.change_type)+': '+oldFull+' → '+newFull)}"><span class="change-kind inline-kind">${esc(changeTypeLabel(ch.change_type))}</span> <b>${esc(oldShort)}</b> → ${esc(newShort)}</div>`}).join('')}</div>`;
+    const oldnew=`<div class="oldnew-stack">${g.items.map(changeHtmlV390).join('')}</div>`;
     // v3.89 pre-release refinement: ownership and lineup context are actionable only
     // for BR changes. Rank/availability/addition/tree changes stay purely informational.
     const lineupHtml=reviewable&&lineups.length?`<div class="lineup-link-list">${critical?`<span class="critical-mark">⚠ ${t('lineupShort')}</span>`:''}${lineups.map(x=>`<button class="secondary mini-link" data-go-lineup="${esc(x.id)}">${esc(x.name)} →</button>`).join('')}</div>`:'';
     const ownedHtml=reviewable&&g._owned?`<div class="owned-ok">✅ ${t('ownedShort')}</div>`:'';
+    const fitLineups=reviewable?groupNewFitLineupsV390(g,reviewItems):[];
+    const fitHtml=fitLineups.length?`<div class="fit-suggestion"><span>➕ ${esc(t('nowFitsLineup'))}</span>${fitLineups.map(x=>`<button class="secondary mini-link" data-go-lineup="${esc(x.id)}">${esc(x.name)} →</button>`).join('')}</div>`:'';
     let actions='';
     if(reviewable){
       const reviewId='rv'+Math.abs(hashString(reviewedKeysV389(reviewItems).sort().join('||')));
@@ -6193,35 +6429,57 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
       <div class="used">${esc(nationLabel(v.nation||g.items?.[0]?.nation||''))}</div>
       <div class="used">${classLabel(classOf(v))}</div>
       <div class="oldnew">${oldnew}</div>
-      <div class="used">${ownedHtml}${lineupHtml}</div>
+      <div class="used">${ownedHtml}${lineupHtml}${fitHtml}</div>
       <div class="change-actions">${actions}</div>
     </div>`;
   };
 
   renderPatchBlock=function(patch,opts={}){
+    const patchId=patchReviewIdV389(patch);
+    const filterState=patchFiltersV390(patchId);
+    const modeScope=patchModeScopeV390(patchId);
     const allEnriched=(patch.vehicle_changes||[]).map(enrichChange);
-    const enriched=allEnriched.filter(ch=>changeMatches(ch,currentChangeFilters()));
+    const enriched=allEnriched.filter(ch=>changeMatches(ch,{...filterState,modeScope:'all'})&&changeMatchesModeScopeV390(ch,ch.vehicle||{},modeScope));
     const groups=groupChanges(enriched);
-    const indexed=groups.map((g,i)=>({g,i,reviewable:reviewableItemsV389(g).length>0,reviewed:groupReviewedV389(g)}));
+    const indexed=groups.map((g,i)=>{
+      const reviewItems=reviewableItemsV389(g);
+      return {
+        g,i,
+        reviewable:reviewItems.length>0,
+        reviewed:groupReviewedV389(g),
+        critical:reviewItems.length>0&&(g._lineups||[]).length>0,
+        newFit:reviewItems.length>0&&groupNewFitLineupsV390(g,reviewItems).length>0,
+        owned:!!g._owned
+      };
+    });
     indexed.sort((a,b)=>{
-      const ac=a.reviewable?(a.reviewed?1:0):2;
-      const bc=b.reviewable?(b.reviewed?1:0):2;
-      return ac-bc||a.i-b.i;
+      // Two large actionable blocks: unreviewed first, reviewed second.
+      // Inside BOTH blocks keep the same personal relevance hierarchy:
+      // saved lineup -> newly suitable saved lineup -> owned -> everything else.
+      // Non-BR informational history remains below all actionable BR changes.
+      const reviewTier=x=>!x.reviewable?2:(x.reviewed?1:0);
+      const relevance=x=>x.critical?0:(x.newFit?1:(x.owned?2:3));
+      return reviewTier(a)-reviewTier(b)||relevance(a)-relevance(b)||a.i-b.i;
     });
     const sortedGroups=indexed.map(x=>x.g);
 
-    const reviewableAll=allEnriched.filter(isReviewableChangeV389);
+    const reviewableAll=allEnriched.filter(ch=>isReviewableChangeV389(ch)&&changeMatches(ch,{...filterState,modeScope:'all'})&&changeMatchesModeScopeV390(ch,ch.vehicle||{},modeScope));
+    const anyReviewable=reviewableAll.length>0;
     const allKeys=reviewedKeysV389(reviewableAll);
     const unownedKeys=reviewedKeysV389(reviewableAll.filter(ch=>!ch._owned));
-    const patchId=patchReviewIdV389(patch);
-    patchReviewRegistryV389[patchId]={allKeys,unownedKeys};
+    const ownedNotInLineupsKeys=reviewedKeysV389(reviewableAll.filter(ch=>ch._owned&&!(ch._lineups||[]).length&&!newlyCompatibleLineupsV390(ch,ch.vehicle||{}).length));
+    patchReviewRegistryV389[patchId]={allKeys,unownedKeys,ownedNotInLineupsKeys,modeScope};
     const allChecked=areKeysReviewedV389(allKeys);
     const unownedChecked=areKeysReviewedV389(unownedKeys);
-    const reviewTools=allKeys.length?`<div class="patch-review-tools">
-      <label class="check-mini"><input type="checkbox" data-review-patch-all="${esc(patchId)}" ${allChecked?'checked':''}> ${esc(t('reviewAllPatch'))}</label>
+    const ownedNotInLineupsChecked=areKeysReviewedV389(ownedNotInLineupsKeys);
+    const patchFiltersHtml=patchFilterToolbarV390(patch,patchId,filterState);
+    const reviewActions=anyReviewable?`
+      <div class="field patch-mode-filter"><select data-review-patch-mode="${esc(patchId)}" title="${lang()==='en'?'Battle mode':'Режим боя'}">${patchModeOptionsV390(modeScope)}</select></div>
+      <label class="check-mini"><input type="checkbox" data-review-patch-all="${esc(patchId)}" ${allChecked?'checked':''} ${allKeys.length?'':'disabled'}> ${esc(t('reviewAllPatch'))}</label>
       <label class="check-mini"><input type="checkbox" data-review-patch-unowned="${esc(patchId)}" ${unownedChecked?'checked':''} ${unownedKeys.length?'':'disabled'}> ${esc(t('reviewAllUnowned'))}</label>
-      <span class="patch-review-note">${esc(t('reviewBrOnlyNote'))}</span>
-    </div>`:'';
+      <label class="check-mini"><input type="checkbox" data-review-patch-owned-not-lineups="${esc(patchId)}" ${ownedNotInLineupsChecked?'checked':''} ${ownedNotInLineupsKeys.length?'':'disabled'}> ${esc(t('reviewOwnedNotInLineups'))}</label>
+      <span class="patch-review-note">${esc(t('reviewBrOnlyNote'))}</span>`:'';
+    const reviewTools=`<div class="patch-review-tools">${patchFiltersHtml}${reviewActions}</div>`;
 
     const notes=localPatchNotes(patch);
     const source=patch.source_url?` · <a href="${esc(patch.source_url)}" target="_blank" rel="noopener">${t('source')}</a>`:'';
@@ -6237,10 +6495,65 @@ squadProfileMetaV352 = function(pl){if(pl.id==='me')return `<div class="squad-pr
 
   bindChangeActions=function(){
     document.querySelectorAll('[data-go-lineup]').forEach(btn=>btn.onclick=()=>{state.selectedLineup=btn.dataset.goLineup;saveState();activate('lineups')});
+    document.querySelectorAll('[data-change-patch-filter]').forEach(el=>el.onchange=()=>{
+      const patchId=el.dataset.changePatchId;
+      const key=el.dataset.changePatchFilter;
+      if(!patchId||!key)return;
+      const store=patchFilterStoreV390();
+      const cur={...(store[patchId]||{})};
+      cur[key]=el.type==='checkbox'?!!el.checked:(el.value||'all');
+      store[patchId]=cur;
+      saveState();renderChanges();
+    });
+    document.querySelectorAll('[data-review-patch-mode]').forEach(sel=>sel.onchange=()=>{patchModeStoreV390()[sel.dataset.reviewPatchMode]=sel.value||'all';saveState();renderChanges()});
     document.querySelectorAll('[data-review-id]').forEach(cb=>cb.onchange=()=>{const keys=reviewGroupKeys[cb.dataset.reviewId]||[];setReviewedKeysV389(keys,cb.checked);saveState();renderChanges()});
     document.querySelectorAll('[data-review-patch-all]').forEach(cb=>cb.onchange=()=>{const rec=patchReviewRegistryV389[cb.dataset.reviewPatchAll];setReviewedKeysV389(rec?.allKeys||[],cb.checked);saveState();renderChanges()});
     document.querySelectorAll('[data-review-patch-unowned]').forEach(cb=>cb.onchange=()=>{const rec=patchReviewRegistryV389[cb.dataset.reviewPatchUnowned];setReviewedKeysV389(rec?.unownedKeys||[],cb.checked);saveState();renderChanges()});
+    document.querySelectorAll('[data-review-patch-owned-not-lineups]').forEach(cb=>cb.onchange=()=>{const rec=patchReviewRegistryV389[cb.dataset.reviewPatchOwnedNotLineups];setReviewedKeysV389(rec?.ownedNotInLineupsKeys||[],cb.checked);saveState();renderChanges()});
   };
+
+  // v3.90: all Changes filters are patch-local. Keep the legacy global host empty.
+  renderChangesFilters=function(){const host=document.getElementById('changesFilters');if(host){host.innerHTML='';host.style.display='none';}};
+})();
+</script>
+
+
+<script>
+/* v3.90: remember vertical scroll position independently for each main tab.
+   UI-only session state; never stored in user profile/export. */
+(function installPerTabScrollMemoryV390(){
+  const KEY='wt_rm_tab_scroll_v390';
+  let positions={};
+  try{positions=JSON.parse(sessionStorage.getItem(KEY)||'{}')||{};}catch(_){positions={};}
+  function activeViewV390(){return document.querySelector('.tab.active[data-view]')?.dataset?.view||'';}
+  function savePosV390(view){
+    if(!view)return;
+    positions[view]=Math.max(0,Math.round(window.scrollY||document.documentElement.scrollTop||0));
+    try{sessionStorage.setItem(KEY,JSON.stringify(positions));}catch(_){}
+  }
+  function restorePosV390(view){
+    const y=Number(positions[view]);
+    if(!Number.isFinite(y))return;
+    const go=()=>window.scrollTo({top:Math.max(0,y),left:0,behavior:'auto'});
+    requestAnimationFrame(()=>requestAnimationFrame(go));
+    // Some tabs finish delayed layout work (tree connectors, patch rendering) after activation.
+    setTimeout(go,90);
+  }
+  if(typeof activate==='function'){
+    const baseActivateV390=activate;
+    activate=function(view){
+      const prev=activeViewV390();
+      if(prev)savePosV390(prev);
+      baseActivateV390(view);
+      restorePosV390(view);
+    };
+  }
+  let scrollTimerV390=0;
+  window.addEventListener('scroll',()=>{
+    clearTimeout(scrollTimerV390);
+    scrollTimerV390=setTimeout(()=>savePosV390(activeViewV390()),80);
+  },{passive:true});
+  window.addEventListener('beforeunload',()=>savePosV390(activeViewV390()));
 })();
 </script>
 

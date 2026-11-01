@@ -2,18 +2,18 @@
   "logic_version": "v2.45",
   "pages": {
     "aviation": {
-      "reason": "HTTP 200 lines=3240 via requests url=https://wiki.warthunder.com/aviation?v=t",
-      "lines": 3240,
+      "reason": "HTTP 200 lines=3254 via requests url=https://wiki.warthunder.com/aviation?v=t",
+      "lines": 3254,
       "blocks": 10
     },
     "ground": {
-      "reason": "HTTP 200 lines=2783 via requests url=https://wiki.warthunder.com/ground?v=t",
-      "lines": 2783,
+      "reason": "HTTP 200 lines=2791 via requests url=https://wiki.warthunder.com/ground?v=t",
+      "lines": 2791,
       "blocks": 10
     },
     "helicopters": {
-      "reason": "HTTP 200 lines=625 via requests url=https://wiki.warthunder.com/helicopters?v=t",
-      "lines": 625,
+      "reason": "HTTP 200 lines=629 via requests url=https://wiki.warthunder.com/helicopters?v=t",
+      "lines": 629,
       "blocks": 10
     },
     "ships": {
@@ -22,11 +22,11 @@
       "blocks": 7
     },
     "boats": {
-      "reason": "HTTP 200 lines=908 via requests url=https://wiki.warthunder.com/boats?v=t",
-      "lines": 908,
+      "reason": "HTTP 200 lines=913 via requests url=https://wiki.warthunder.com/boats?v=t",
+      "lines": 913,
       "blocks": 7
     }
   },
   "oldWikiSpecialCount": 0,
-  "updated_at": "2026-09-18T16:29:56+00:00"
+  "updated_at": "2026-10-30T12:03:20+00:00"
 }

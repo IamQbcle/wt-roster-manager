@@ -29300,6 +29300,55 @@
       "reason": "not found",
       "logic_version": "v2.62-status-tree-unit-supplements",
       "updated_at": "2026-09-18T16:30:08+00:00"
+    },
+    "sw_patria_bmp_3": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-28T12:05:45+00:00"
+    },
+    "ussr_bt_7_m_816": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-30T12:03:27+00:00"
+    },
+    "ju_88g_1_mistel": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-30T12:03:27+00:00"
+    },
+    "germ_s_700_s_706": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-30T12:03:27+00:00"
+    },
+    "bf-109e-3_tl": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-30T12:03:27+00:00"
+    },
+    "germ_panzerjager_panther_g2": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-30T12:03:27+00:00"
+    },
+    "fw_190a_8_mistel": {
+      "status": "missing",
+      "links": [],
+      "reason": "not found",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-10-30T12:03:27+00:00"
     }
   }
 }

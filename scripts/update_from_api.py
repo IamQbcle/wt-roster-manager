@@ -729,7 +729,7 @@ def normalize_status(row: dict[str, Any]) -> str:
         return "Полковая"
     if _truthy_status(row, ["isPack", "pack", "is_pack", "bundle"]):
         return "Пакетная"
-    if _truthy_status(row, ["isMarket", "market", "is_market", "coupon"]):
+    if _truthy_status(row, ["on_marketplace", "onMarketplace", "isMarket", "market", "is_market", "coupon"]):
         return "Маркет"
     if _truthy_status(row, ["isPremium", "premium", "is_premium"]):
         return "Премиум"
@@ -770,6 +770,10 @@ def br_values(row: dict[str, Any]) -> dict[str, float]:
         out["naval_rb"] = nrb
     if gsb is not None:
         out["ground_sb"] = gsb
+    # WT Vehicles API uses a generic schema and repeats irrelevant Ground/SB BR for ships.
+    # Only naval AB and RB exist for coastal / bluewater vehicles.
+    if normalize_vehicle_class(row) in {"coastal", "bluewater"}:
+        return {"ab": out["ab"], "rb": out["rb"]}
     return out
 
 
@@ -2247,10 +2251,9 @@ def _br_sources_v225(row: dict[str, Any]) -> tuple[dict[str, float], dict[str, A
     final = dict(api_br)
     meta = WIKI_UNIT_META_MAP.get(row_identifier(row)) or {}
     wiki_br = meta.get("br") if isinstance(meta.get("br"), dict) else {}
-    for k in ("ab", "rb", "sb"):
-        val = to_float(wiki_br.get(k))
-        if val is not None:
-            final[k] = val
+    # API BR is authoritative; Wiki's cached BR values are diagnostic only.
+    # In particular, never override up-to-date API BR with old Wiki metadata.
+    # Dedicated current-only Naval RB for aircraft is added by its own guarded layer.
     return final, {"apiBR": api_br, "wikiBR": wiki_br or {}}
 
 def _cyr_model_suffix_v225(s: str) -> str:
@@ -3740,7 +3743,7 @@ def _conflict_entry_v225(row: dict[str, Any], item: dict[str, Any], src: dict[st
 # Rationale: when Wiki fetch fails transiently, do not let local fallback names/ranks win for known unit pages.
 V243_OFFICIAL_UNIT_OVERRIDES = {
     "us_m4a5_ram_2": {"ru": "M4A5", "en": "M4A5", "rank": "II"},
-    "uk_m4a5_ram_2": {"ru": "M4A5", "en": "M4A5", "rank": "II"},
+    "uk_m4a5_ram_2": {"ru": "Ram II", "en": "Ram II", "rank": "II"},
     "us_t18_e2": {"ru": "T18E2", "en": "T18E2", "rank": "II"},
     "us_mk1_grant": {"ru": "Grant I (США)", "en": "Grant I (USA)", "rank": "II"},
     "uk_mk1_grant": {"ru": "Grant I", "en": "Grant I", "rank": "II"},
@@ -3789,9 +3792,9 @@ def build_display_name_map(rows: list[dict[str, Any]], workers: int = 12, retry_
         DISPLAY_NAMES_RU_JSON.write_text(json.dumps(DISPLAY_NAME_MAP_RU, ensure_ascii=False, indent=2), encoding='utf-8')
         DISPLAY_NAMES_EN_JSON.write_text(json.dumps(DISPLAY_NAME_MAP_EN, ensure_ascii=False, indent=2), encoding='utf-8')
         DISPLAY_NAMES_JSON.write_text(json.dumps(DISPLAY_NAME_MAP_RU, ensure_ascii=False, indent=2), encoding='utf-8')
-        print(f"v2.44 official-name overrides applied: {len(V243_OFFICIAL_UNIT_OVERRIDES)} units")
+        print(f"Current official-name guards applied: {len(V243_OFFICIAL_UNIT_OVERRIDES)} units")
     except Exception as e:
-        print("WARNING: v2.43 official-name override write failed:", e)
+        print("WARNING: official-name guard write failed:", e)
     return names
 
 _old_normalize_for_ui_v243 = normalize_for_ui
@@ -4277,7 +4280,7 @@ def build_wiki_tree_placement_v245(rows: list[dict[str, Any]]) -> dict[str, dict
         TREE_PLACEMENT_JSON.write_text(json.dumps({'logic_version':'v2.61','items':placements,'guards':changed}, ensure_ascii=False, indent=2), encoding='utf-8')
     except Exception as e:
         print('WARNING: could not rewrite v2.61 wiki_tree_placement:', e)
-    print(f"v2.61 tree placement guards: ordinary forced left {changed['ordinary_forced_left']}, status forced right {changed['status_forced_right']}.")
+    print(f"Tree placement guards (ordinary/special): ordinary forced left {changed['ordinary_forced_left']}, status forced right {changed['status_forced_right']}.")
     return placements
 
 
@@ -4386,7 +4389,7 @@ def build_wiki_tree_placement_v245(rows: list[dict[str, Any]]) -> dict[str, dict
         TREE_PLACEMENT_JSON.write_text(json.dumps({'logic_version':'v2.62','items':placements,'guards':changed}, ensure_ascii=False, indent=2), encoding='utf-8')
     except Exception as e:
         print('WARNING: could not rewrite v2.62 wiki_tree_placement:', e)
-    print(f"v2.62 tree placement guards: forced left {changed['forced_left']}, forced right {changed['forced_right']}, hidden removed {changed['hidden_removed']}.")
+    print(f"Tree placement guards (hidden/current): forced left {changed['forced_left']}, forced right {changed['forced_right']}, hidden removed {changed['hidden_removed']}.")
     return placements
 
 _old_normalize_for_ui_v262 = normalize_for_ui
@@ -4489,7 +4492,7 @@ def build_wiki_tree_placement_v245(rows: list[dict[str, Any]]) -> dict[str, dict
         TREE_PLACEMENT_JSON.write_text(json.dumps({'logic_version':'v2.63','items':placements,'guards':changed}, ensure_ascii=False, indent=2), encoding='utf-8')
     except Exception as e:
         print('WARNING: could not rewrite v2.63 wiki_tree_placement:', e)
-    print(f"v2.63 tree placement guards: forced right {changed['forced_right']}, pattern right {changed['pattern_right']}, forced left {changed['forced_left']}.")
+    print(f"Tree placement guards (patterns): forced right {changed['forced_right']}, pattern right {changed['pattern_right']}, forced left {changed['forced_left']}.")
     return placements
 
 _old_normalize_for_ui_v263 = normalize_for_ui
@@ -5369,9 +5372,9 @@ def build_display_name_map(rows: list[dict[str, Any]], workers: int = 12, retry_
                 changed += 1
         if changed:
             DISPLAY_NAMES_EN_JSON.write_text(json.dumps(DISPLAY_NAME_MAP_EN, ensure_ascii=False, indent=2), encoding='utf-8')
-            print(f"v2.87 English display-name Cyrillic guard: latinized {changed} names.")
+            print(f"English display-name Cyrillic guard: latinized {changed} names.")
     except Exception as e:
-        print('WARNING: v2.87 English name guard failed:', e)
+        print('WARNING: English Cyrillic-name guard failed:', e)
     return out
 # --- end v2.87 layer ---
 
@@ -5421,9 +5424,9 @@ def build_display_name_map(rows: list[dict[str, Any]], workers: int = 12, retry_
                 changed += 1
         if changed:
             DISPLAY_NAMES_EN_JSON.write_text(json.dumps(DISPLAY_NAME_MAP_EN, ensure_ascii=False, indent=2), encoding='utf-8')
-            print(f"v2.88 English display-name guard: fixed {changed} names.")
+            print(f"English display-name cleanup: fixed {changed} names.")
     except Exception as e:
-        print('WARNING: v2.88 English name guard failed:', e)
+        print('WARNING: English display-name cleanup failed:', e)
     return out
 # --- end v2.88 layer ---
 
@@ -5523,8 +5526,9 @@ def _detect_game_version_v300() -> str:
     env = os.environ.get("WT_GAME_VERSION") or os.environ.get("WAR_THUNDER_VERSION")
     if env:
         return env.strip()
-    # Fallback is still useful: it creates deterministic daily snapshots and keeps history functional.
-    return "unknown-" + datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    # A calendar date is NOT a War Thunder version. Without an explicit, verified
+    # game version we cannot safely attribute data changes to a new game patch.
+    return ""
 
 def _vehicle_by_id_v300(items: Any) -> dict[str, dict[str, Any]]:
     if not isinstance(items, list):
@@ -5540,7 +5544,8 @@ def _vehicle_by_id_v300(items: Any) -> dict[str, dict[str, Any]]:
 def _br_map_v300(v: dict[str, Any]) -> dict[str, Any]:
     b = v.get("br", {})
     if isinstance(b, dict):
-        return {k: b.get(k) for k in ("ab", "rb", "sb") if b.get(k) not in (None, "")}
+        keys = ("ab", "rb") if v.get("class") in {"coastal", "bluewater"} else ("ab", "rb", "sb")
+        return {k: b.get(k) for k in keys if b.get(k) not in (None, "")}
     return {"ab": b} if b not in (None, "") else {}
 
 def _layout_index_v300(layout: Any) -> dict[str, dict[str, Any]]:
@@ -5613,49 +5618,76 @@ def _latest_snapshot_dir_v300(exclude_slug: str) -> Path | None:
     candidates.sort(key=lambda p: p.stat().st_mtime, reverse=True)
     return candidates[0]
 
+_PREUPDATE_VEHICLES_V390: Any = None
+_PREUPDATE_LAYOUT_V390: Any = None
+
 def update_patch_history_v300() -> None:
     vehicles_path = DATA_DIR / "vehicles.json"
     layout_path = DATA_DIR / "tech_tree_layout.json"
     if not vehicles_path.exists():
-        print("v3.00 patch history: vehicles.json is missing, snapshot skipped.")
+        print("v3.00 patch history: vehicles.json is missing, skipped.")
         return
     version = _detect_game_version_v300()
-    slug = _safe_version_slug_v300(version)
-    SNAPSHOTS_DIR.mkdir(parents=True, exist_ok=True)
-    snap_dir = SNAPSHOTS_DIR / slug
-    old_dir = _latest_snapshot_dir_v300(slug)
+    # Prefer the pre-update files over retained snapshots: this also handles
+    # the first run after downloading a clean public release.
     vehicles_now = _json_load_v300(vehicles_path, [])
     layout_now = _json_load_v300(layout_path, {})
-    vehicle_changes: list[dict[str, Any]] = []
-    if old_dir:
-        old_vehicles = _json_load_v300(old_dir / "vehicles_snapshot.json", [])
-        old_layout = _json_load_v300(old_dir / "tech_tree_layout_snapshot.json", {})
-        vehicle_changes = _diff_snapshots_v300(old_vehicles, vehicles_now, old_layout, layout_now)
-    snap_dir.mkdir(parents=True, exist_ok=True)
-    _json_write_v300(snap_dir / "vehicles_snapshot.json", vehicles_now)
-    _json_write_v300(snap_dir / "tech_tree_layout_snapshot.json", layout_now)
+    old_vehicles = _PREUPDATE_VEHICLES_V390
+    old_layout = _PREUPDATE_LAYOUT_V390
+    if not isinstance(old_vehicles, list):
+        old_dir = _latest_snapshot_dir_v300(_safe_version_slug_v300(version))
+        if old_dir:
+            old_vehicles = _json_load_v300(old_dir / "vehicles_snapshot.json", [])
+            old_layout = _json_load_v300(old_dir / "tech_tree_layout_snapshot.json", {})
+    if not isinstance(old_vehicles, list):
+        print("v3.00 patch history: no baseline; no patch created.")
+        return
+    changes = _diff_snapshots_v300(old_vehicles, vehicles_now,
+                                  old_layout if isinstance(old_layout, dict) else {}, layout_now)
     history = _json_load_v300(PATCH_HISTORY_JSON, {"current_version": "", "patches": []})
     if not isinstance(history, dict):
         history = {"current_version": "", "patches": []}
-    patches = [p for p in history.get("patches", []) if isinstance(p, dict) and str(p.get("version")) != version]
-    note_file = DATA_DIR / "patch_notes" / (slug + ".json")
-    note = _json_load_v300(note_file, {}) if note_file.exists() else {}
-    title = note.get("title") or ("Update " + version)
-    notes = note.get("text") or note.get("notes") or ""
-    source_url = note.get("source_url") or ""
-    if old_dir or vehicle_changes or not patches:
-        patches.insert(0, {
-            "version": version,
-            "date": note.get("date") or datetime.now(timezone.utc).date().isoformat(),
-            "title": title,
-            "source_url": source_url,
-            "notes": notes,
-            "vehicle_changes": vehicle_changes,
+    known_patches = {str(p.get("version")) for p in history.get("patches", []) if isinstance(p, dict)}
+    if not changes:
+        print("v3.00 patch history: no new data changes; existing history unchanged.")
+        return
+    # No inferred 'unknown-YYYY-MM-DD' patch. Daily API/Wiki/market status
+    # differences may not represent a genuine War Thunder update. Keep the
+    # candidate report separate until a new patch version has been confirmed.
+    if not version or version in known_patches:
+        pending = DATA_DIR / "pending_patch_changes.json"
+        _json_write_v300(pending, {
+            "schema": "wt-roster-pending-patch-v390",
+            "current_verified_version": history.get("current_version", ""),
+            "candidate_version": version,
+            "reason": "unverified-version" if not version else "already-recorded-version",
+            "vehicle_changes": changes,
         })
+        print(f"v3.90 patch history: {len(changes)} candidate changes; not recorded as a game patch. See data/pending_patch_changes.json.")
+        return
+    # A real new version was supplied explicitly (WT_GAME_VERSION or
+    # data/game_version.txt). Only now can we create a new history block.
+    slug = _safe_version_slug_v300(version)
+    note = _json_load_v300(DATA_DIR / "patch_notes" / (slug + ".json"), {})
+    if not isinstance(note, dict):
+        note = {}
+    patches = [p for p in history.get("patches", []) if isinstance(p, dict)]
+    patches.insert(0, {
+        "version": version,
+        "date": note.get("date") or datetime.now(timezone.utc).date().isoformat(),
+        "title": note.get("title") or ("Update " + version),
+        "source_url": note.get("source_url") or "",
+        "notes": note.get("text") or note.get("notes") or "",
+        "vehicle_changes": changes,
+    })
     history["current_version"] = version
-    history["patches"] = patches[:3]
+    history["patches"] = patches[:12]
     _json_write_v300(PATCH_HISTORY_JSON, history)
-    print(f"v3.00 patch history: current={version}; changes={len(vehicle_changes)}; stored patches={len(history['patches'])}.")
+    snap_dir = SNAPSHOTS_DIR / slug
+    _json_write_v300(snap_dir / "vehicles_snapshot.json", vehicles_now)
+    _json_write_v300(snap_dir / "tech_tree_layout_snapshot.json", layout_now)
+    (DATA_DIR / "pending_patch_changes.json").unlink(missing_ok=True)
+    print(f"v3.90 patch history: recorded {len(changes)} changes for verified game version {version}.")
 
 
 # --- v3.00 network hardening: adaptive API page size for fragile routes ---
@@ -5977,9 +6009,9 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
             changed = changed or before != after
         if changed:
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print("v3.38 availability normalization applied to vehicles.json")
+            print("Availability normalization applied to vehicles.json")
     except Exception as e:
-        print("WARNING: v3.38 availability normalization failed:", e)
+        print("WARNING: availability normalization failed:", e)
 
 _old_diff_snapshots_v300_v336 = _diff_snapshots_v300
 def _diff_snapshots_v300(old_vehicles: Any, new_vehicles: Any, old_layout: Any, new_layout: Any) -> list[dict[str, Any]]:  # v3.38 override
@@ -6133,6 +6165,9 @@ def _diff_snapshots_v300(old_vehicles: Any, new_vehicles: Any, old_layout: Any, 
 
 _old_main_v300 = main
 def main(argv: list[str] | None = None) -> int:
+    global _PREUPDATE_VEHICLES_V390, _PREUPDATE_LAYOUT_V390
+    _PREUPDATE_VEHICLES_V390 = _json_load_v300(DATA_DIR / "vehicles.json", [])
+    _PREUPDATE_LAYOUT_V390 = _json_load_v300(DATA_DIR / "tech_tree_layout.json", {})
     rc = _old_main_v300(argv)
     if rc == 0:
         try:
@@ -6163,10 +6198,7 @@ def _add_supplemental_wiki_units_v300_network(rows: list[dict[str, Any]]) -> lis
 # Keep these corrections durable across future API refreshes.  They are intentionally
 # applied after vehicles.json is generated because the public Vehicles API and Wiki
 # can lag behind official news/changelog/store availability.
-BR_OVERRIDES_V383 = {
-    "uk_fv107_scimitar_mk2": {"ab": 8.3, "rb": 8.3, "sb": 8.3, "ground_rb": 8.3, "ground_sb": 8.3},
-    "hawk_209_indonesia": {"ab": 11.0, "rb": 10.7, "sb": 10.7, "ground_rb": 10.7, "ground_sb": 10.7},
-}
+# Historical v3.83 BR values live in patch_history only; they are never replayed over current API data.
 
 AVAILABILITY_CURATED_V383 = {
     # Permanent return-to-sale vehicles
@@ -6177,9 +6209,7 @@ AVAILABILITY_CURATED_V383 = {
     "av_8b_na": ("available", "Returned to sale for the USA 250th anniversary; remains available at full price after the sale."),
 
     # Retired packs / temporary-only sales
-    "germ_pzh_2000": ("unavailable", "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."),
     "jh_7a_prototype": ("unavailable", "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."),
-    "jp_type_74_red_star": ("unavailable", "Pack removed from sale after the 2026 Summer Sale; owner-only/unavailable for new players."),
     "us_m26e1_pershing": ("unavailable", "Temporary USA 250th anniversary sale; normally owner-only/unavailable."),
     "f-86f-35": ("unavailable", "Temporary USA 250th anniversary sale; normally owner-only/unavailable."),
     "us_xm1_chrysler": ("unavailable", "Temporary USA 250th anniversary pack; normally owner-only/unavailable."),
@@ -6191,7 +6221,6 @@ AVAILABILITY_CURATED_V383 = {
     "iar_81c_db_605": ("unavailable", "Battle Pass Season 24 vehicle; owner-only/unavailable in the stable database."),
 
     # Known temporary sale vehicles kept owner-only/unavailable by default.
-    "saab_j35a": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
     "jp_destroyer_kiyoshimo": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
     "j2m4_kai": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
     "so_4050_vautour_2n": ("unavailable", "Temporary event sale; normally hidden / owner-only."),
@@ -6207,14 +6236,8 @@ except Exception:
 def _apply_v383_curated_item(item: dict[str, Any]) -> bool:
     vid = str(item.get("id") or item.get("identifier") or "")
     changed = False
-    br = BR_OVERRIDES_V383.get(vid)
-    if br:
-        old = dict(item.get("br") or {})
-        new = dict(old)
-        new.update(br)
-        if new != old:
-            item["br"] = new
-            changed = True
+    # Historical v3.83 BR values are kept only as source/history context.
+    # Current live BRs must come from the refreshed API (plus dedicated current-only fields such as naval_rb).
     av = AVAILABILITY_CURATED_V383.get(vid)
     if av:
         availability, note = av
@@ -6241,1574 +6264,54 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
                 changed += 1
         if changed:
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"v3.83 curated data corrections applied: {changed} vehicles.")
+            print(f"Curated availability/status corrections applied: {changed} vehicles.")
     except Exception as e:
-        print("WARNING: v3.83 curated data corrections failed:", e)
+        print("WARNING: curated availability/status corrections failed:", e)
 
 # --- end v3.83 layer ---
 
 
-# --- v3.84: August 2026 BR changes + current rank moves ---
-# Generated from the official Planned BR Changes — August 2026 spreadsheet export.
-# Some spreadsheet notes explicitly say "next major update"; those are documented in patch_history/game_patch_status
-# but intentionally not applied here until the relevant major update is live.
-BR_OVERRIDES_V384 = {
-  "f_14a_iriaf": {
-    "ab": 13.0,
-    "rb": 13.7
-  },
-  "mig_29smt_9_19": {
-    "ab": 13.7
-  },
-  "su_34": {
-    "ab": 13.7
-  },
-  "f_16a_block_20_mlu": {
-    "ab": 13.7
-  },
-  "f_16a_block_15_adf": {
-    "ab": 13.7,
-    "ground_rb": 12.3
-  },
-  "f_16a_block_15_adf_italy": {
-    "ab": 13.7,
-    "ground_rb": 12.3
-  },
-  "saab_ja37di_f21": {
-    "ab": 13.3,
-    "ground_rb": 11.7
-  },
-  "saab_ja37di": {
-    "ab": 13.3,
-    "ground_rb": 11.7
-  },
-  "mirage_2000d_rmv": {
-    "ground_rb": 13.0
-  },
-  "mirage_4000": {
-    "ground_rb": 12.0
-  },
-  "cf_188a_canada": {
-    "ground_rb": 12.0
-  },
-  "fa_18c_early": {
-    "ground_rb": 12.0
-  },
-  "fa_18c_switzerland": {
-    "ground_rb": 12.0
-  },
-  "mig_29n": {
-    "ground_rb": 12.0
-  },
-  "kfir_c10_colombia": {
-    "ground_rb": 12.0
-  },
-  "f-5th_thailand": {
-    "ground_rb": 12.0
-  },
-  "j_8f": {
-    "ground_rb": 11.7
-  },
-  "su_33": {
-    "ground_rb": 11.7
-  },
-  "j_11": {
-    "ground_rb": 11.7
-  },
-  "su_27": {
-    "ground_rb": 11.7
-  },
-  "f_16a_block_15_ocu_belgium": {
-    "ground_rb": 11.7
-  },
-  "f_14b": {
-    "ab": 12.3
-  },
-  "f_14d": {
-    "ab": 12.3,
-    "ground_rb": 11.7
-  },
-  "f_15a": {
-    "ground_rb": 11.7
-  },
-  "f_15a_iaf": {
-    "ground_rb": 11.7
-  },
-  "f_15j": {
-    "ground_rb": 11.7
-  },
-  "mig_29_9_13": {
-    "ground_rb": 11.7
-  },
-  "mig_29_9_12g": {
-    "ground_rb": 11.7
-  },
-  "f-4f_late": {
-    "ab": 11.0
-  },
-  "mirage_2000c_s4": {
-    "ground_rb": 11.3
-  },
-  "mirage_2000c_s5": {
-    "ground_rb": 11.3
-  },
-  "mig_21_2000_iaf": {
-    "rb": 11.7
-  },
-  "su_25tm": {
-    "ground_rb": 11.7
-  },
-  "saab_ja37d": {
-    "ground_rb": 11.0
-  },
-  "f-4ej_kai": {
-    "ground_rb": 11.0
-  },
-  "tornado_f3": {
-    "ground_rb": 11.0
-  },
-  "tornado_adv": {
-    "ground_rb": 11.0
-  },
-  "kfir_c2": {
-    "ground_rb": 10.7
-  },
-  "hawk_200_rda": {
-    "ground_rb": 10.7
-  },
-  "a_7k": {
-    "rb": 10.7
-  },
-  "mig_25pd": {
-    "ab": 11.0
-  },
-  "f-4c": {
-    "ab": 10.3
-  },
-  "j_22m1a": {
-    "ground_rb": 11.0,
-    "naval_rb": 9.3
-  },
-  "a_6e_tram": {
-    "ground_rb": 11.0
-  },
-  "f-4jk": {
-    "ground_rb": 10.3
-  },
-  "f-4k": {
-    "ground_rb": 10.3
-  },
-  "f-4m_fgr2": {
-    "ground_rb": 10.3
-  },
-  "f-4ej_adtw": {
-    "ground_rb": 10.3
-  },
-  "f-4ej": {
-    "ground_rb": 10.3
-  },
-  "saab_j35xs": {
-    "ground_rb": 10.0
-  },
-  "saab_f35_wdns": {
-    "ground_rb": 10.3
-  },
-  "f-104s": {
-    "ground_rb": 10.0
-  },
-  "f-104s_cb": {
-    "ground_rb": 10.0
-  },
-  "j_8b": {
-    "ground_rb": 10.3
-  },
-  "av_8s_late_thailand": {
-    "ground_rb": 10.3
-  },
-  "harrier_frs1": {
-    "ground_rb": 10.3
-  },
-  "buccaneer_s2b": {
-    "ground_rb": 10.7
-  },
-  "mig-21_mf_hungary": {
-    "ground_rb": 9.7
-  },
-  "mig-21_mf": {
-    "ground_rb": 9.7
-  },
-  "mig-21_smt": {
-    "ground_rb": 9.7
-  },
-  "j_7d": {
-    "ground_rb": 9.7
-  },
-  "f-8e": {
-    "ground_rb": 9.7
-  },
-  "harrier_frs1_early": {
-    "ground_rb": 10.0
-  },
-  "saab_j35d": {
-    "ground_rb": 10.0
-  },
-  "mirage_3e": {
-    "ground_rb": 9.7
-  },
-  "mirage_3s_c70_switzerland": {
-    "ground_rb": 9.7
-  },
-  "nf_5a_netherlands": {
-    "ground_rb": 9.7
-  },
-  "f-5a_thailand": {
-    "ground_rb": 9.7
-  },
-  "f-5a_china": {
-    "ground_rb": 9.7
-  },
-  "mirage_5ba": {
-    "ground_rb": 9.7
-  },
-  "mirage_5f": {
-    "ground_rb": 9.7
-  },
-  "mirage_3c": {
-    "ground_rb": 9.7
-  },
-  "mirage_3cj": {
-    "ground_rb": 9.7
-  },
-  "f-8e_fn": {
-    "ground_rb": 9.7
-  },
-  "f8u-2": {
-    "ground_rb": 9.7
-  },
-  "nesher": {
-    "ground_rb": 9.7
-  },
-  "a_5c": {
-    "ground_rb": 9.7
-  },
-  "su_25k": {
-    "ground_rb": 9.7
-  },
-  "su_25": {
-    "ground_rb": 9.7
-  },
-  "tornado_ids_de_wtd61": {
-    "ground_rb": 9.7
-  },
-  "tornado_ids_it": {
-    "ground_rb": 9.7
-  },
-  "tornado_ids_de_mfg": {
-    "ground_rb": 9.7
-  },
-  "su_22m3": {
-    "ground_rb": 9.7
-  },
-  "su_22m3_hungary": {
-    "ground_rb": 9.7
-  },
-  "su_22um3k": {
-    "ground_rb": 9.7
-  },
-  "f_111a": {
-    "ground_rb": 9.7
-  },
-  "f-105d": {
-    "ground_rb": 9.7
-  },
-  "f-104g": {
-    "ground_rb": 9.7
-  },
-  "f-104g_italy": {
-    "ground_rb": 9.7
-  },
-  "f-104j": {
-    "ground_rb": 9.7
-  },
-  "f-104g_belgium": {
-    "ground_rb": 9.7
-  },
-  "f-104g_china": {
-    "ground_rb": 9.7
-  },
-  "f1": {
-    "ground_rb": 9.7
-  },
-  "f-5a": {
-    "ground_rb": 9.7
-  },
-  "f-5c": {
-    "ground_rb": 9.7
-  },
-  "su_17m2": {
-    "ground_rb": 9.3
-  },
-  "mig_23bn": {
-    "ground_rb": 9.3
-  },
-  "a_4n": {
-    "rb": 10.0
-  },
-  "hunter_f6": {
-    "rb": 10.0,
-    "ground_rb": 9.3
-  },
-  "f_6c_pakistan": {
-    "ground_rb": 9.3
-  },
-  "saab_j35a": {
-    "ground_rb": 9.3
-  },
-  "jaguar_gr1": {
-    "ground_rb": 9.3
-  },
-  "t2_early": {
-    "ab": 10.3,
-    "ground_rb": 9.3
-  },
-  "t2": {
-    "ab": 10.3,
-    "ground_rb": 9.3
-  },
-  "av_8s_thailand": {
-    "ground_rb": 9.3
-  },
-  "av_8a": {
-    "ab": 9.7,
-    "ground_rb": 9.3
-  },
-  "av_8c": {
-    "ground_rb": 9.3
-  },
-  "harrier_gr1": {
-    "ground_rb": 9.3
-  },
-  "harrier_gr3": {
-    "ground_rb": 9.3
-  },
-  "f-104c": {
-    "ground_rb": 9.3
-  },
-  "mig-21_s": {
-    "ab": 9.3
-  },
-  "yak_130_early": {
-    "ab": 9.3,
-    "ground_rb": 9.7,
-    "naval_rb": 9.3
-  },
-  "mig-21_f13": {
-    "ground_rb": 9.0
-  },
-  "mig-21_pfm": {
-    "ground_rb": 9.0
-  },
-  "mig-21_sps_k": {
-    "ground_rb": 9.0
-  },
-  "j_7_mk2": {
-    "ground_rb": 9.0
-  },
-  "mig-19j_6a": {
-    "ground_rb": 9.0
-  },
-  "mig-19pt": {
-    "ground_rb": 9.0
-  },
-  "mig-19s": {
-    "ground_rb": 9.0
-  },
-  "saab_j32b": {
-    "ground_rb": 9.0
-  },
-  "f_101c": {
-    "ground_rb": 9.0
-  },
-  "f_106a_1972": {
-    "ground_rb": 9.0
-  },
-  "lightning_f53": {
-    "ground_rb": 9.0
-  },
-  "lightning_f6": {
-    "ground_rb": 9.0
-  },
-  "f_100f_china": {
-    "ground_rb": 9.0
-  },
-  "f-100a_china": {
-    "ground_rb": 9.0
-  },
-  "f-100d": {
-    "ground_rb": 9.0
-  },
-  "f-100d_france": {
-    "ground_rb": 9.0
-  },
-  "yak-38": {
-    "ground_rb": 9.0
-  },
-  "yak-38m": {
-    "ground_rb": 9.0
-  },
-  "su-7b": {
-    "ground_rb": 9.0
-  },
-  "su-7bkl": {
-    "ground_rb": 9.0
-  },
-  "su-7bmk": {
-    "ground_rb": 9.0
-  },
-  "q_5a": {
-    "ground_rb": 9.0
-  },
-  "hunter_f58a_1971_switzerland": {
-    "ground_rb": 9.0
-  },
-  "buccaneer_s2": {
-    "ground_rb": 9.0
-  },
-  "f-104a": {
-    "ground_rb": 9.0
-  },
-  "f-104a_china": {
-    "ground_rb": 9.0
-  },
-  "fiat_g91_y": {
-    "rb": 9.3
-  },
-  "fj_4b_agm_12b": {
-    "ground_rb": 9.3
-  },
-  "f11f_1_late": {
-    "ground_rb": 8.7
-  },
-  "hunter_f6_holland": {
-    "ground_rb": 8.7
-  },
-  "hunter_f50_sweden": {
-    "ground_rb": 8.7
-  },
-  "hunter_f1": {
-    "ground_rb": 8.7
-  },
-  "f-86_cl_13b_mk6": {
-    "ground_rb": 8.7
-  },
-  "f-86k_late_german": {
-    "ground_rb": 8.7
-  },
-  "f-86k_late_italy": {
-    "ground_rb": 8.7
-  },
-  "f-86k_late": {
-    "ground_rb": 8.7
-  },
-  "saab_j29f": {
-    "ground_rb": 8.7
-  },
-  "ffa_p16": {
-    "ground_rb": 8.7
-  },
-  "q_5_early": {
-    "ground_rb": 8.7
-  },
-  "md_460_sambad": {
-    "ground_rb": 8.7
-  },
-  "md_460": {
-    "ground_rb": 8.7
-  },
-  "md_460_saar": {
-    "ground_rb": 8.7
-  },
-  "marut_mk1": {
-    "rb": 8.7,
-    "ground_rb": 8.7
-  },
-  "f3h-2": {
-    "ground_rb": 8.7,
-    "naval_rb": 9.3
-  },
-  "b_66b": {
-    "ground_rb": 8.3,
-    "naval_rb": 9.3
-  },
-  "b_52h": {
-    "ground_rb": 8.3
-  },
-  "buccaneer_s1": {
-    "rb": 8.3
-  },
-  "fiat_g91_r1": {
-    "ground_rb": 8.3
-  },
-  "tu_95m": {
-    "ground_rb": 8.0
-  },
-  "yak-30d": {
-    "ground_rb": 8.0
-  },
-  "me-163b-0": {
-    "ground_rb": 8.0
-  },
-  "so_4050_vautour_2n": {
-    "rb": 8.7,
-    "ground_rb": 8.0
-  },
-  "so_4050_vautour_2b": {
-    "rb": 8.7,
-    "ground_rb": 8.0
-  },
-  "so_4050_vautour_2n_iaf": {
-    "rb": 8.7,
-    "ground_rb": 8.0
-  },
-  "so_4050_vautour_2a_israel_iaf": {
-    "rb": 8.7,
-    "ground_rb": 8.0
-  },
-  "saab_j29d": {
-    "ground_rb": 8.0
-  },
-  "a_4h": {
-    "ground_rb": 8.0
-  },
-  "f-84f": {
-    "ground_rb": 8.0
-  },
-  "f-84f_germany": {
-    "ground_rb": 8.0
-  },
-  "f-84f_france": {
-    "ground_rb": 8.0
-  },
-  "f-84f_italy": {
-    "ground_rb": 8.0
-  },
-  "f-84f_israel_iaf": {
-    "ground_rb": 8.0
-  },
-  "f-84f_iaf": {
-    "ground_rb": 8.0
-  },
-  "so_4050_vautour_2a_iaf": {
-    "rb": 8.7
-  },
-  "so_4050_vautour_2a": {
-    "rb": 8.7
-  },
-  "yak-28b": {
-    "ground_rb": 7.7,
-    "naval_rb": 9.3
-  },
-  "f-86f-25": {
-    "ab": 8.0
-  },
-  "b-57": {
-    "ground_rb": 7.3,
-    "naval_rb": 9.3
-  },
-  "b-57b": {
-    "ground_rb": 7.3,
-    "naval_rb": 9.3
-  },
-  "canberra_bmk2": {
-    "ground_rb": 7.3,
-    "naval_rb": 9.3
-  },
-  "canberra_bimk6": {
-    "ground_rb": 7.3,
-    "naval_rb": 9.3
-  },
-  "f-86f-35": {
-    "ab": 7.7
-  },
-  "mb_326k": {
-    "rb": 8.0,
-    "ground_rb": 7.7
-  },
-  "l_39za_art_thailand": {
-    "ground_rb": 7.7
-  },
-  "tu_4": {
-    "ground_rb": 7.0
-  },
-  "tu_4_china": {
-    "ground_rb": 7.0
-  },
-  "il_28_german": {
-    "ground_rb": 7.0,
-    "naval_rb": 9.3
-  },
-  "il_28_hungary": {
-    "ground_rb": 7.0,
-    "naval_rb": 9.3
-  },
-  "il_28": {
-    "ground_rb": 7.0,
-    "naval_rb": 9.3
-  },
-  "il_28_china": {
-    "ground_rb": 7.0,
-    "naval_rb": 9.3
-  },
-  "tu_14t": {
-    "ground_rb": 7.0,
-    "naval_rb": 9.3
-  },
-  "f3d_1": {
-    "ground_rb": 6.7
-  },
-  "me-262a-1a_u4": {
-    "ab": 5.3,
-    "rb": 6.0,
-    "ground_rb": 6.3
-  },
-  "yak-9ut": {
-    "ground_rb": 6.7
-  },
-  "spitfire_ix": {
-    "ground_rb": 6.3
-  },
-  "spitfire_ix_usa": {
-    "ground_rb": 6.3
-  },
-  "spitfire_ix_ussr": {
-    "ground_rb": 6.3
-  },
-  "spitfire_ix_plagis": {
-    "ground_rb": 6.3
-  },
-  "spitfire_lf_mk9e_weisman": {
-    "ground_rb": 6.3
-  },
-  "ju-288c": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "spitfire_mk18e": {
-    "ground_rb": 6.0
-  },
-  "spitfire_lf_mk9c_cw_greece": {
-    "ground_rb": 6.0
-  },
-  "seafire_fr47": {
-    "ground_rb": 6.0
-  },
-  "yak-3_vk107": {
-    "ground_rb": 6.0
-  },
-  "yak-3u": {
-    "ground_rb": 6.0
-  },
-  "a7m2": {
-    "ground_rb": 6.0
-  },
-  "p-59a": {
-    "ground_rb": 6.0
-  },
-  "ki_84_otsu": {
-    "ground_rb": 6.0
-  },
-  "a6m5ko": {
-    "rb": 6.0,
-    "ground_rb": 6.0
-  },
-  "a6m5otsu": {
-    "rb": 6.0,
-    "ground_rb": 6.0
-  },
-  "ki_87": {
-    "rb": 5.3,
-    "ground_rb": 5.3
-  },
-  "so_8000_narval": {
-    "rb": 5.3,
-    "ground_rb": 5.3
-  },
-  "douglas_ad_2": {
-    "ground_rb": 5.3
-  },
-  "seafire_mk17": {
-    "ground_rb": 5.7
-  },
-  "a6m6c": {
-    "rb": 5.7,
-    "ground_rb": 5.7
-  },
-  "a6m5hei": {
-    "ground_rb": 5.7
-  },
-  "a7m1": {
-    "rb": 5.7,
-    "ground_rb": 5.7
-  },
-  "tu-1": {
-    "rb": 5.0,
-    "ground_rb": 5.0
-  },
-  "la-11_china": {
-    "rb": 5.0
-  },
-  "la-11": {
-    "rb": 5.0
-  },
-  "a-26b": {
-    "ground_rb": 5.0
-  },
-  "f-82e": {
-    "ground_rb": 5.0
-  },
-  "spitfire_mk5c_notrop": {
-    "ground_rb": 5.3
-  },
-  "a6m3_mod22ko_zero": {
-    "ground_rb": 5.3
-  },
-  "a6m5_zero": {
-    "ground_rb": 5.3
-  },
-  "seafire_mk3_france": {
-    "ground_rb": 5.3
-  },
-  "seafire_mk3": {
-    "ground_rb": 5.3
-  },
-  "yak-3t": {
-    "ground_rb": 5.3
-  },
-  "yak-3p": {
-    "ground_rb": 5.3
-  },
-  "j2m5_30mm": {
-    "ground_rb": 5.3
-  },
-  "j2m4_kai": {
-    "ground_rb": 5.3
-  },
-  "j2m2": {
-    "ground_rb": 5.3
-  },
-  "yak-9p_hungary": {
-    "ab": 5.3,
-    "ground_rb": 5.3
-  },
-  "yak-9p": {
-    "ab": 5.3,
-    "ground_rb": 5.3
-  },
-  "su-6_am42": {
-    "ab": 4.7
-  },
-  "a-26b_10": {
-    "ground_rb": 4.7
-  },
-  "wyvern_s4": {
-    "rb": 5.3
-  },
-  "spitfire_mk9c_4cannons": {
-    "ground_rb": 5.0
-  },
-  "yak-9u": {
-    "ab": 5.0,
-    "ground_rb": 5.0
-  },
-  "ki_61_1a_hei": {
-    "ground_rb": 5.0
-  },
-  "ki_61_1a_hei_ep": {
-    "ground_rb": 5.0
-  },
-  "p-38l_1_china_rocaf": {
-    "ground_rb": 4.3
-  },
-  "p-38l": {
-    "ground_rb": 4.3
-  },
-  "do_335a_0": {
-    "ground_rb": 4.3
-  },
-  "su-8": {
-    "rb": 4.3,
-    "ground_rb": 4.3
-  },
-  "pyorremyrsky": {
-    "ab": 5.0,
-    "rb": 4.7
-  },
-  "ia_58a_pucara": {
-    "ab": 4.7,
-    "rb": 4.7
-  },
-  "spitfire_mk9c_iaf": {
-    "rb": 4.7,
-    "ground_rb": 4.7
-  },
-  "spitfire_ix_early": {
-    "rb": 4.7,
-    "ground_rb": 4.7
-  },
-  "a6m3_mod22_zero": {
-    "rb": 4.7,
-    "ground_rb": 4.7
-  },
-  "yak-3_eremin": {
-    "ab": 4.7,
-    "ground_rb": 4.7
-  },
-  "xp-55": {
-    "ground_rb": 4.7
-  },
-  "bf-109g-2": {
-    "ground_rb": 4.7
-  },
-  "bf-109g-2_romania": {
-    "ground_rb": 4.7
-  },
-  "bf-109g-2_hungary": {
-    "ground_rb": 4.7
-  },
-  "bf-109g-2_finland": {
-    "ground_rb": 4.7
-  },
-  "me-410b-1_u2": {
-    "ground_rb": 4.0
-  },
-  "do_335a_1": {
-    "ground_rb": 4.0
-  },
-  "saab_t18b_2": {
-    "ground_rb": 4.0
-  },
-  "saab_t18b_1": {
-    "ab": 4.0,
-    "ground_rb": 4.0
-  },
-  "su-6_m71": {
-    "ab": 4.3,
-    "rb": 4.0,
-    "ground_rb": 4.0
-  },
-  "ju-388j": {
-    "rb": 4.0,
-    "ground_rb": 4.0
-  },
-  "he_219a_7": {
-    "rb": 4.0,
-    "ground_rb": 4.0
-  },
-  "tis_ma": {
-    "rb": 4.0
-  },
-  "a6m3_zero": {
-    "rb": 4.3,
-    "ground_rb": 4.3
-  },
-  "ki_100_early": {
-    "rb": 4.3,
-    "ground_rb": 4.3
-  },
-  "itp_m1": {
-    "ab": 5.0,
-    "rb": 4.3,
-    "ground_rb": 4.3
-  },
-  "su_6_single": {
-    "rb": 3.7,
-    "ground_rb": 3.7
-  },
-  "spitfire_mk5b_italy": {
-    "ground_rb": 4.0
-  },
-  "spitfire_mk5b": {
-    "ground_rb": 4.0
-  },
-  "b7a2_homare_23": {
-    "ab": 4.0,
-    "rb": 4.0
-  },
-  "b7a2": {
-    "ab": 4.0,
-    "rb": 4.0
-  },
-  "pe-2-110": {
-    "ground_rb": 3.3
-  },
-  "firebrand_tf4": {
-    "ground_rb": 3.3
-  },
-  "me-410a-1_u2": {
-    "ab": 3.7,
-    "ground_rb": 3.3
-  },
-  "mosquito_b_mk16": {
-    "ground_rb": 3.3
-  },
-  "mosquito_fb_mk26_china": {
-    "ab": 3.7,
-    "ground_rb": 3.3
-  },
-  "mosquito_fb_mk6_ash_norway": {
-    "ground_rb": 3.3
-  },
-  "mosquito_fb_mk6": {
-    "ground_rb": 3.3
-  },
-  "mosquito_tr_mk33": {
-    "ground_rb": 3.3
-  },
-  "tempest_mkv_vikkers": {
-    "ab": 3.0,
-    "ground_rb": 3.3
-  },
-  "sm_91": {
-    "ground_rb": 3.3
-  },
-  "xa_38": {
-    "ground_rb": 3.3
-  },
-  "bf-110g-2": {
-    "ground_rb": 3.3
-  },
-  "ki_61_1a_ko": {
-    "ground_rb": 3.7
-  },
-  "mb_157": {
-    "ab": 3.7,
-    "rb": 3.7,
-    "ground_rb": 3.7
-  },
-  "ju-87d-5": {
-    "ground_rb": 3.0
-  },
-  "il_2m_1943": {
-    "ground_rb": 3.0
-  },
-  "pe-2-83": {
-    "ground_rb": 3.0
-  },
-  "la-5_type39": {
-    "ab": 3.7
-  },
-  "s_199": {
-    "ab": 3.7
-  },
-  "fw-190a-1": {
-    "ground_rb": 3.3
-  },
-  "ki_102_otsu": {
-    "ab": 2.7
-  },
-  "sb2c_1c": {
-    "ab": 2.7,
-    "ground_rb": 2.7
-  },
-  "do_217n_1": {
-    "ab": 2.7
-  },
-  "ju-88a-4": {
-    "ab": 3.3
-  },
-  "ju-88a-4_finland": {
-    "ab": 3.3
-  },
-  "bf-110f-2": {
-    "ab": 3.3
-  },
-  "hurricanemkii_ussr": {
-    "ab": 3.3
-  },
-  "yak-9b": {
-    "ab": 3.3
-  },
-  "spitfiremkiia": {
-    "ab": 3.0,
-    "rb": 3.3,
-    "ground_rb": 3.3
-  },
-  "spitfiremkiia_ep": {
-    "ab": 3.0,
-    "rb": 3.3,
-    "ground_rb": 3.3
-  },
-  "a-35b": {
-    "ab": 2.7,
-    "ground_rb": 2.3
-  },
-  "i-153p": {
-    "ground_rb": 3.0
-  },
-  "ki_44_1": {
-    "ground_rb": 3.0
-  },
-  "ki_44_1_ep": {
-    "ground_rb": 3.0
-  },
-  "iar_81c": {
-    "ground_rb": 3.0
-  },
-  "fw_189c_0": {
-    "ab": 2.7,
-    "rb": 3.0,
-    "ground_rb": 3.0
-  },
-  "b_239_finland": {
-    "rb": 3.0,
-    "ground_rb": 3.0
-  },
-  "mig_3_series_34": {
-    "ab": 3.0,
-    "rb": 3.0
-  },
-  "saab_b18a": {
-    "ab": 2.3,
-    "ground_rb": 2.3
-  },
-  "su-2_m82": {
-    "ab": 2.3,
-    "ground_rb": 2.3
-  },
-  "a-20g": {
-    "ground_rb": 2.3
-  },
-  "p-40f-5_france_ep": {
-    "ab": 2.7
-  },
-  "p-40f_10": {
-    "ab": 2.7
-  },
-  "lagg-3-11": {
-    "ab": 2.7
-  },
-  "yak_2_kabb": {
-    "ab": 2.7
-  },
-  "i-16_type18": {
-    "ground_rb": 2.7
-  },
-  "fokker_d23": {
-    "ab": 2.7,
-    "rb": 2.7,
-    "ground_rb": 2.7
-  },
-  "wm_23": {
-    "ab": 2.7,
-    "rb": 2.7
-  },
-  "b6n2a": {
-    "ground_rb": 2.0
-  },
-  "b6n2": {
-    "ground_rb": 2.0
-  },
-  "mig_3_series_1_15": {
-    "ab": 2.0,
-    "rb": 2.0,
-    "ground_rb": 2.0
-  },
-  "f2a-1": {
-    "ground_rb": 2.3
-  },
-  "f2a-1_thach": {
-    "ground_rb": 2.3
-  },
-  "j1n1_mod11_early": {
-    "ab": 2.3,
-    "ground_rb": 2.3
-  },
-  "i-153_m62_china": {
-    "ab": 2.3
-  },
-  "i-153_m62": {
-    "ab": 2.3
-  },
-  "i-153_m62_zhukovskiy": {
-    "ab": 2.3
-  },
-  "sb_2m_103c": {
-    "ab": 2.3
-  },
-  "re_2000_heja_2": {
-    "ab": 2.3
-  },
-  "re_2000_ga": {
-    "ab": 2.3
-  },
-  "re_2000_int": {
-    "ab": 2.3
-  },
-  "hurricane_mk1b": {
-    "ab": 2.3
-  },
-  "ms_410c1": {
-    "ab": 2.3
-  },
-  "ms_406c1": {
-    "ab": 2.3
-  },
-  "ms_405c1": {
-    "ab": 2.3
-  },
-  "br_693_ab2": {
-    "ab": 2.3,
-    "rb": 2.0,
-    "ground_rb": 2.0
-  },
-  "fc_20_bis": {
-    "ab": 2.3
-  },
-  "ki_21_1ko": {
-    "ab": 2.3
-  },
-  "ki_43_3_ko": {
-    "ab": 2.3
-  },
-  "pbm_1": {
-    "ab": 2.3
-  },
-  "bf-109c_1": {
-    "ab": 2.3,
-    "rb": 2.0,
-    "ground_rb": 2.0
-  },
-  "bf-109c_1_promo": {
-    "ab": 2.3,
-    "rb": 2.0,
-    "ground_rb": 2.0
-  },
-  "he_112a_0": {
-    "ab": 2.0,
-    "rb": 2.0,
-    "ground_rb": 2.0
-  },
-  "su-2_tss1": {
-    "ab": 2.0,
-    "rb": 1.7
-  },
-  "ah_64d": {
-    "ground_rb": 11.7
-  },
-  "ah_mk1": {
-    "ground_rb": 11.7
-  },
-  "ah_64d_i_saraph": {
-    "ground_rb": 11.7
-  },
-  "ah_64a": {
-    "ground_rb": 11.3
-  },
-  "ahs": {
-    "ground_rb": 11.3
-  },
-  "ah_64a_peten_iaf": {
-    "ground_rb": 11.3
-  },
-  "ah_64a_greece_usa": {
-    "ground_rb": 11.3
-  },
-  "ah_64d_netherlands": {
-    "ground_rb": 11.3
-  },
-  "ah_64d_lightweight_japan": {
-    "ground_rb": 11.3
-  },
-  "ah_64a_peten": {
-    "ground_rb": 11.3
-  },
-  "ah_64d_japan": {
-    "ground_rb": 11.3
-  },
-  "z_19e": {
-    "ground_rb": 11.7
-  },
-  "z_19": {
-    "ground_rb": 11.7
-  },
-  "hkp9a_cb3_fc": {
-    "ground_rb": 9.3
-  },
-  "sa_342l_china": {
-    "ground_rb": 9.3
-  },
-  "ah_1g": {
-    "ground_rb": 7.7
-  },
-  "ah_1g_iaf": {
-    "ground_rb": 7.7
-  },
-  "ussr_t_72b3_arena_m": {
-    "ab": 12.0,
-    "rb": 12.0
-  },
-  "ussr_zprk_2s6": {
-    "rb": 11.0
-  },
-  "us_m1296_dragoon": {
-    "ab": 9.3,
-    "rb": 9.3
-  },
-  "ussr_9p157": {
-    "ab": 9.3,
-    "rb": 9.3
-  },
-  "us_xm1_chrysler": {
-    "ab": 9.3,
-    "rb": 9.3
-  },
-  "germ_leopard_1a5": {
-    "ab": 9.0,
-    "rb": 9.0
-  },
-  "it_leopard_1a5": {
-    "ab": 9.0,
-    "rb": 9.0
-  },
-  "sw_leopard_1a5no": {
-    "ab": 9.0,
-    "rb": 9.0
-  },
-  "fr_leopard_1a5be": {
-    "ab": 9.0,
-    "rb": 9.0
-  },
-  "us_m247": {
-    "ab": 9.3,
-    "rb": 9.3
-  },
-  "cn_pgz_09": {
-    "ab": 9.3,
-    "rb": 9.3
-  },
-  "germ_leopard_I_a1": {
-    "ab": 8.7,
-    "rb": 8.7
-  },
-  "cn_m_41d": {
-    "rb": 8.3
-  },
-  "cn_pgz_88": {
-    "ab": 8.0,
-    "rb": 8.0
-  },
-  "ussr_2s19_m2": {
-    "ab": 7.0,
-    "rb": 7.0
-  },
-  "us_t26e5": {
-    "rb": 7.0
-  },
-  "fr_amx_30_auf_1": {
-    "ab": 6.7,
-    "rb": 6.7
-  },
-  "ussr_2s19_m1": {
-    "ab": 6.7,
-    "rb": 6.7
-  },
-  "us_m18_super_hellcat": {
-    "ab": 6.7,
-    "rb": 6.7
-  },
-  "ussr_is_2_1944": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "ussr_is_2_1944_revenge": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "ussr_is_2_1944_321": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "cn_is_2_1944": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "ussr_object_248": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "germ_pzkpfw_VI_ausf_b_tiger_IIp": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "sw_kungstiger": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "uk_g6_spg": {
-    "ab": 6.3,
-    "rb": 6.3
-  },
-  "ussr_is_2_1943": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "cn_is_2_1943": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "cn_is_2_1943_no402": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "us_m109a1": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "uk_m109a1": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "uk_fv4005": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "cn_plz_83": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "ussr_2s3m": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "il_m109a1": {
-    "ab": 6.0,
-    "rb": 6.0
-  },
-  "uk_charioteer_mk_7": {
-    "rb": 6.0
-  },
-  "sw_charioteer_mk_7": {
-    "rb": 6.0
-  },
-  "ussr_btr_zd": {
-    "rb": 6.3
-  },
-  "germ_m109g": {
-    "ab": 5.7,
-    "rb": 5.7
-  },
-  "it_m109g": {
-    "ab": 5.7,
-    "rb": 5.7
-  },
-  "ussr_2s1": {
-    "ab": 5.7,
-    "rb": 5.7
-  },
-  "it_2s1": {
-    "ab": 5.7,
-    "rb": 5.7
-  },
-  "il_m109": {
-    "ab": 5.7,
-    "rb": 5.7
-  },
-  "us_t1e1": {
-    "ab": 5.3
-  },
-  "us_m6a1": {
-    "ab": 5.0
-  },
-  "uk_a_22f_mk_7_churchill_1944": {
-    "ab": 5.0,
-    "rb": 5.0
-  },
-  "uk_a_22f_mk_7_churchill_crocodile": {
-    "ab": 5.0,
-    "rb": 5.0
-  },
-  "uk_a_33_excelsior": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "germ_stug_III_ausf_G": {
-    "ab": 4.0
-  },
-  "uk_a27m_cromwell_5": {
-    "ab": 3.7,
-    "rb": 4.0
-  },
-  "uk_a27m_cromwell_5_rp3": {
-    "ab": 3.7,
-    "rb": 4.0
-  },
-  "us_m44": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "germ_m44": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "uk_m44": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "jp_m44": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "it_m44": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "fr_m44": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "us_m55": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "germ_m55": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "cn_m55": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "it_m55": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "fr_m55": {
-    "ab": 3.7,
-    "rb": 3.7
-  },
-  "ussr_su_152": {
-    "rb": 3.7
-  },
-  "germ_hummel": {
-    "ab": 3.3,
-    "rb": 3.3
-  },
-  "us_m8a1": {
-    "ab": 3.0,
-    "rb": 3.0
-  },
-  "uk_valentine_mk_11": {
-    "rb": 3.0
-  },
-  "germ_pzkpfw_38t_Marder_III_ausf_H": {
-    "ab": 2.7,
-    "rb": 2.7
-  },
-  "us_elco_80ft_pt_boat_mod02": {
-    "ab": 2.7,
-    "rb": 2.7
-  },
-  "us_elco_80ft_pt_boat_thunderbolt": {
-    "ab": 2.7,
-    "rb": 2.7
-  },
-  "us_flagstaff_pgh1": {
-    "ab": 2.7,
-    "rb": 2.7
-  },
-  "germ_vs8_hydrofoil": {
-    "ab": 2.3,
-    "rb": 2.3
-  },
-  "germ_vs10_hydrofoil": {
-    "ab": 2.7,
-    "rb": 2.7
-  },
-  "ussr_pr_123k_hydrofoils": {
-    "ab": 2.0,
-    "rb": 2.0
-  },
-  "ussr_pr_123k": {
-    "ab": 2.0,
-    "rb": 2.0
-  },
-  "ussr_pr_123bis": {
-    "ab": 2.0,
-    "rb": 2.0
-  },
-  "uk_destroyer_st_class_saumarez": {
-    "ab": 4.0,
-    "rb": 4.0
-  },
-  "uk_destroyer_tribal_mohawk": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "uk_destroyer_tribal": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "uk_destroyer_haida": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "uk_destroyer_k_class": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "uk_destroyer_n_class": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "uk_destroyer_j_class": {
-    "ab": 4.3,
-    "rb": 4.3
-  },
-  "jp_destroyer_akizuki": {
-    "ab": 4.7,
-    "rb": 4.7
-  },
-  "jp_destroyer_hatsuzuki": {
-    "ab": 4.7,
-    "rb": 4.7
-  },
-  "jp_destroyer_suzutsuki": {
-    "ab": 4.7,
-    "rb": 4.7
-  },
-  "fr_lcg_m_l9059": {
-    "ab": 2.3,
-    "rb": 2.3
-  },
-  "fr_marne_class_aisne": {
-    "ab": 3.0,
-    "rb": 3.0
-  },
-  "fr_marne_class_marne": {
-    "ab": 3.0,
-    "rb": 3.0
-  },
-  "fr_frigate_corse_class_brestois": {
-    "ab": 4.0,
-    "rb": 4.0
-  }
+# --- current rank / Naval RB guards ---
+# Historical BR tables are intentionally NOT replayed here. Current live BR comes from API.
+# Only dedicated Naval RB aircraft values (not supplied by the public API) and a few verified rank guards remain.
+NAVAL_RB_OVERRIDES_CURRENT = {
+    # Public WT Vehicles API has no dedicated Naval RB aircraft field.
+    # Keep only the current values that the app needs for Naval RB lineup planning.
+    "j_22m1a": 9.3,
+    "yak_130_early": 9.3,
+    "f3h-2": 9.3,
+    "b_66b": 9.3,
+    "yak-28b": 9.3,
+    "b-57": 9.3,
+    "b-57b": 9.3,
+    "canberra_bmk2": 9.3,
+    "canberra_bimk6": 9.3,
+    "il_28_german": 9.3,
+    "il_28_hungary": 9.3,
+    "il_28": 9.3,
+    "il_28_china": 9.3,
+    "tu_14t": 9.3,
 }
+
 RANK_OVERRIDES_V384 = {
   "fw_189c_0": "II",
   "germ_vs10_hydrofoil": "III",
   "ussr_pr_123k": "II"
 }
 
-def _apply_v384_august_br_item(item: dict[str, Any]) -> bool:
+def _apply_current_rank_naval_item(item: dict[str, Any]) -> bool:
     vid = str(item.get("id") or item.get("identifier") or "")
     changed = False
-    br = BR_OVERRIDES_V384.get(vid)
-    if br:
-        old = dict(item.get("br") or {})
-        new = dict(old)
-        new.update(br)
-        if new != old:
-            item["br"] = new
+    # Do NOT replay the August 2026 BR table over the current API.
+    # It is historical patch data now. Keep only naval_rb because the public API has no dedicated
+    # aircraft Naval RB field and the app intentionally tracks that mode separately.
+    naval_rb = NAVAL_RB_OVERRIDES_CURRENT.get(vid)
+    if naval_rb is not None:
+        old_br = dict(item.get("br") or {})
+        new_br = dict(old_br)
+        new_br["naval_rb"] = naval_rb
+        if new_br != old_br:
+            item["br"] = new_br
             changed = True
     nr = RANK_OVERRIDES_V384.get(vid)
     if nr:
@@ -7820,21 +6323,21 @@ def _apply_v384_august_br_item(item: dict[str, Any]) -> bool:
             changed = True
     return changed
 
-_old_write_lightweight_vehicles_v384 = write_lightweight_vehicles
-def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.84 override
-    _old_write_lightweight_vehicles_v384(rows, image_map)
+_old_write_lightweight_vehicles_rank_naval = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # current rank/Naval-RB guard
+    _old_write_lightweight_vehicles_rank_naval(rows, image_map)
     try:
         p = DATA_DIR / "vehicles.json"
         data = json.loads(p.read_text(encoding="utf-8"))
         changed = 0
         for item in data:
-            if isinstance(item, dict) and _apply_v384_august_br_item(item):
+            if isinstance(item, dict) and _apply_current_rank_naval_item(item):
                 changed += 1
         if changed:
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"v3.84 August 2026 BR/rank overrides applied: {changed} vehicles.")
+            print(f"Current rank/Naval-RB guards applied: {changed} vehicles.")
     except Exception as e:
-        print("WARNING: v3.84 August 2026 BR/rank overrides failed:", e)
+        print("WARNING: current rank/Naval-RB guards failed:", e)
 
 # --- end v3.84 layer ---
 
@@ -7980,9 +6483,9 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
         _ensure_curated_slot_images_v385()
         if changed:
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"v3.85 WWI/Senrai curated supplements applied: {changed} vehicles.")
+            print(f"WWI/Senrai curated supplements applied: {changed} vehicles.")
     except Exception as e:
-        print("WARNING: v3.85 WWI/Senrai curated supplements failed:", e)
+        print("WARNING: WWI/Senrai curated supplements failed:", e)
 # --- end v3.85 layer ---
 
 
@@ -8047,18 +6550,16 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
                 changed += 1
         if changed:
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"v3.87 September data hotfix applied: {changed} vehicles.")
+            print(f"Current September curated guards applied: {changed} vehicles.")
     except Exception as e:
-        print("WARNING: v3.87 September data hotfix failed:", e)
+        print("WARNING: September curated guards failed:", e)
 
 # --- end v3.87 layer ---
 
 # --- v3.88: Sky Odyssey 2.59 live data corrections ---
 # Applied after the older curated layers so current live data wins over historical overrides.
 # Sources: Sky Odyssey live changelog + official September 2026 shop/event announcements.
-BR_CURATED_V388 = {
-    "ah_64d_i_saraph": {"ab": 12.7, "rb": 12.7, "sb": 10.7, "ground_rb": 12.7, "ground_sb": 10.7},
-}
+# Historical Sky Odyssey BR corrections live in patch_history only; current BRs come from live API.
 RANK_CURATED_V388 = {
     "uk_a27m_cromwell_5_rp3": "III",
 }
@@ -8093,12 +6594,7 @@ TREE_PLACEMENT_CURATED_V388 = {
 def _apply_v388_curated_item(item: dict[str, Any]) -> bool:
     vid = str(item.get("id") or item.get("identifier") or "")
     changed = False
-    br = BR_CURATED_V388.get(vid)
-    if br:
-        old = dict(item.get("br") or {})
-        if old != br:
-            item["br"] = dict(br)
-            changed = True
+    # Historical Sky Odyssey BR corrections must not overwrite later live BR updates.
     rank = RANK_CURATED_V388.get(vid)
     if rank:
         if item.get("rank") != rank:
@@ -8143,9 +6639,9 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
                 changed += 1
         if changed:
             p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"v3.88 Sky Odyssey live corrections applied: {changed} vehicles.")
+            print(f"Current Sky Odyssey curated guards applied: {changed} vehicles.")
     except Exception as e:
-        print("WARNING: v3.88 Sky Odyssey live corrections failed:", e)
+        print("WARNING: Sky Odyssey curated guards failed:", e)
 
 # --- end v3.88 layer ---
 
@@ -8156,7 +6652,7 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
 # a6m5_zero_china and germ_pzkpfw_35t_romania_mare are visibility=0/internal vehicles that have
 # repeatedly appeared in datamines/API but are not normal player-selectable vehicles. Keep them
 # out of the public roster instead of presenting them as real unplaced premium vehicles.
-HIDDEN_INTERNAL_IDS_V389 = {"a6m5_zero_china", "germ_pzkpfw_35t_romania_mare"}
+HIDDEN_INTERNAL_IDS_V389 = {"a6m5_zero_china", "germ_pzkpfw_35t_romania_mare", "ju_88g_1_mistel", "bf-109e-3_tl", "ussr_bt_7_m_816"}
 SENRAI_LAYOUT_V389 = [
     ("USA|ground", "VII", "us_m1a1_hc_senrai_maidens", "M1A1 HC (Senrai Maidens)", 5, 0),
     ("Germany|ground", "VII", "germ_leopard_2a4m_senrai_maidens", "Leopard 2A4M (Senrai Maidens)", 4, 0),
@@ -8221,15 +6717,236 @@ def build_wiki_tree_layout_v276(rows: list[dict[str, Any]]) -> dict[str, Any]:  
 
 # --- end v3.89 layer ---
 
-if __name__ == "__main__":
+# --- v3.90: Market/event classification audit + October 2026 curated refresh ---
+# Acquisition type in WT Roster Manager describes how a new player can obtain the vehicle now.
+# API "is_premium" is an economy flag, not an acquisition method. Many old event/Battle Pass
+# vehicles retain premium economy while their current acquisition method is the Market.
+
+IMAGE_CURATED_V390 = {
+    "germ_s_700_s_706": "assets/vehicles/slots/germ_s_700_s_706.png",  # cached local icon; updater refreshes it from current sources
+}
+
+STATUS_CURATED_V390 = {
+    "uk_frigate_river": "Маркет",              # HMS Spey; API marketplace flag is incomplete
+    "ussr_valentine_mk_9": "Акционная",
+    "fw-190a-8_france": "Акционная",           # NC.900
+    "pbm_3": "Акционная",
+    "p-63c-5_ussr": "Акционная",
+    "yak-3t": "Акционная",
+    "sw_patria_bmp_3": "Акционная",            # Desert Predator 2026
+    "jh_7a_prototype": "Пакетная",             # removed pack; API dropped is_pack
+    "germ_s_700_s_706": "Акционная",           # BP25
+    "germ_panzerjager_panther_g2": "Акционная",
+    "fw_190a_8_mistel": "Акционная",           # Dreams Come True: Mistel 2 event
+    "buccaneer_s1": "Маркет",
+    "fr_trident_class_glaive_p671": "Маркет",
+    "p-63c-5_kingcobra_animal_version": "Маркет",
+    "ussr_kv_8": "Маркет",
+    "ussr_t_34_85_zis_53_v80": "Маркет",
+}
+
+AVAILABILITY_CURATED_V390 = {
+    "uk_frigate_river": ("available", "Current acquisition method: War Thunder Market."),
+    "buccaneer_s1": ("available", "Current acquisition method: War Thunder Market."),
+    "fr_trident_class_glaive_p671": ("available", "Current acquisition method: War Thunder Market."),
+    "p-63c-5_kingcobra_animal_version": ("available", "Current acquisition method: War Thunder Market."),
+    "ussr_kv_8": ("available", "Current acquisition method: War Thunder Market."),
+    "ussr_t_34_85_zis_53_v80": ("available", "Current acquisition method: War Thunder Market."),
+    "ussr_valentine_mk_9": ("unavailable", "Rare Valentine's Day event vehicle; not permanently sold."),
+    "fw-190a-8_france": ("unavailable", "Rare event reward; owner-only outside returns."),
+    "pbm_3": ("unavailable", "Rare event reward; owner-only outside returns."),
+    "p-63c-5_ussr": ("unavailable", "Rare event reward; owner-only outside returns."),
+    "yak-3t": ("unavailable", "Rare event reward; owner-only outside returns."),
+    "sw_patria_bmp_3": ("unavailable", "Desert Predator 2026 event reward; event acquisition has ended."),
+    "germ_s_700_s_706": ("unavailable", "Battle Pass Season XXV reward; not a permanent store/research vehicle."),
+    "germ_panzerjager_panther_g2": ("unavailable", "Battle Pass Season XXV reward; not a permanent store/research vehicle."),
+    "fw_190a_8_mistel": ("unavailable", "Dreams Come True: Mistel 2 event reward; not a permanent store/research vehicle."),
+    "saab_j35a": ("available", "Returned permanently after the October 2026 promotion."),
+    "mirage_milan": ("available", "Returned permanently after the May 2026 promotion."),
+    "germ_pzkpfw_II_ausf_H": ("unavailable", "Temporary German Unity Day 2026 return; promotion ended."),
+    "bf-109z": ("unavailable", "Temporary German Unity Day 2026 return; promotion ended."),
+    "us_destroyer_fletcher_cowell": ("unavailable", "Temporary US Navy birthday 2026 return; promotion ended."),
+    "p-38k": ("unavailable", "Rare vehicle temporarily returned in September 2026; not permanently sold."),
+    "intruder_mk_1": ("unavailable", "Temporary October 2026 Havoc Mk.I promotion; treat as unavailable after the promotion."),
+}
+
+TREE_PLACEMENT_CURATED_V390 = {
+    "uk_frigate_river": ("right", "v3.90-curated-market"),
+    "buccaneer_s1": ("right", "v3.90-curated-market"),
+    "fr_trident_class_glaive_p671": ("right", "v3.90-curated-market"),
+    "p-63c-5_kingcobra_animal_version": ("right", "v3.90-curated-market"),
+    "ussr_kv_8": ("right", "v3.90-curated-market"),
+    "ussr_t_34_85_zis_53_v80": ("right", "v3.90-curated-market"),
+    "ussr_valentine_mk_9": ("right", "v3.90-curated-event"),
+    "fw-190a-8_france": ("right", "v3.90-curated-event"),
+    "pbm_3": ("right", "v3.90-curated-event"),
+    "p-63c-5_ussr": ("right", "v3.90-curated-event"),
+    "yak-3t": ("right", "v3.90-curated-event"),
+    "sw_patria_bmp_3": ("right", "v3.90-curated-event"),
+    "germ_s_700_s_706": ("right", "v3.90-curated-bp25"),
+    "germ_panzerjager_panther_g2": ("right", "v3.90-curated-bp25"),
+    "fw_190a_8_mistel": ("right", "v3.90-curated-event"),
+    "jh_7a_prototype": ("right", "v3.90-curated-pack"),
+}
+
+SUPPLEMENTAL_WIKI_UNITS_V390 = [
+    {
+        "identifier": "germ_s_700_s_706", "country": "germany", "vehicle_type": "boat",
+        "vehicle_sub_types": ["coastal"], "era": 3,
+        "arcade_br": 2.7, "realistic_br": 2.7, "simulator_br": 2.7,
+        "event": "battle_pass_25_steel_fury", "is_event": 1, "is_premium": 1,
+        "is_pack": 0, "on_marketplace": 0, "squadron_vehicle": 0,
+        "visibility": "wiki_supplement",
+    },
+    {
+        "identifier": "germ_panzerjager_panther_g2", "country": "germany",
+        "vehicle_type": "tank_destroyer", "vehicle_sub_types": [], "era": 4,
+        "arcade_br": 6.3, "realistic_br": 6.3, "realistic_ground_br": 6.3,
+        "simulator_br": 6.3, "simulator_ground_br": 6.3,
+        "event": "battle_pass_25_steel_fury", "is_event": 1, "is_premium": 1,
+        "is_pack": 0, "on_marketplace": 0, "squadron_vehicle": 0,
+        "visibility": "wiki_supplement",
+    },
+]
+_seen_v390_supp = {str(x.get("identifier") or "") for x in SUPPLEMENTAL_WIKI_UNITS_V263}
+SUPPLEMENTAL_WIKI_UNITS_V263.extend(
+    dict(x) for x in SUPPLEMENTAL_WIKI_UNITS_V390
+    if str(x.get("identifier") or "") not in _seen_v390_supp
+)
+
+_old_raw_api_status_v390 = _raw_api_status_v261
+def _raw_api_status_v261(row: dict[str, Any]) -> str:  # v3.90 override
+    vid = row_identifier(row)
+    if vid in STATUS_CURATED_V390:
+        return STATUS_CURATED_V390[vid]
+    old_status = _old_raw_api_status_v390(row)
+    market_flag = (
+        _truthy_v261(row.get("on_marketplace")) or _truthy_v261(row.get("onMarketplace")) or
+        _truthy_v261(row.get("is_market")) or _truthy_v261(row.get("isMarket")) or
+        _truthy_v261(row.get("market"))
+    )
+    # Only correct the specific API ambiguity audited in v3.90: premium economy + Market.
+    # Existing event/pack/squadron classifications remain authoritative.
+    if old_status == "Премиум" and market_flag:
+        return "Маркет"
+    return old_status
+
+def _apply_v390_curated_item(item: dict[str, Any], raw_by_id: dict[str, dict[str, Any]] | None = None) -> bool:
+    vid = str(item.get("id") or "")
+    changed = False
+    raw = (raw_by_id or {}).get(vid) or {}
+    img = IMAGE_CURATED_V390.get(vid)
+    if img and item.get("local_image") != img:
+        item["local_image"] = img; changed = True
+    if vid not in STATUS_CURATED_V390 and item.get("status") == "Премиум" and _truthy_v261(raw.get("on_marketplace")):
+        if item.get("status") != "Маркет":
+            item["status"] = "Маркет"; changed = True
+        if item.get("availability") != "available":
+            item["availability"] = "available"; changed = True
+        if item.get("market_available") is not True:
+            item["market_available"] = True; changed = True
+        if item.get("treePlacement") != "right":
+            item["treePlacement"] = "right"; changed = True
+        if item.get("treePlacementSource") != "v3.90-api-market":
+            item["treePlacementSource"] = "v3.90-api-market"; changed = True
+        if item.pop("availability_reason", None) is not None:
+            changed = True
+
+    st = STATUS_CURATED_V390.get(vid)
+    if st and item.get("status") != st:
+        item["status"] = st; changed = True
+    av = AVAILABILITY_CURATED_V390.get(vid)
+    if av:
+        value, note = av
+        if item.get("availability") != value:
+            item["availability"] = value; changed = True
+        if value == "available" and st == "Маркет" and item.get("market_available") is not True:
+            item["market_available"] = True; changed = True
+        if value == "unavailable" and item.get("market_available") is True and st != "Маркет":
+            item.pop("market_available", None); changed = True
+        if note and item.get("availability_reason") != note:
+            item["availability_reason"] = note; changed = True
+    placement = TREE_PLACEMENT_CURATED_V390.get(vid)
+    if placement:
+        place, source = placement
+        if item.get("treePlacement") != place:
+            item["treePlacement"] = place; changed = True
+        if item.get("treePlacementSource") != source:
+            item["treePlacementSource"] = source; changed = True
+    return changed
+
+_old_write_lightweight_vehicles_v390 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:  # v3.90 override
+    _old_write_lightweight_vehicles_v390(rows, image_map)
     try:
-        raise SystemExit(main())
-    except KeyboardInterrupt:
-        print("Stopped by user. Restart update_from_api.bat to continue from cached images/manifest.")
-        raise SystemExit(130)
+        p = DATA_DIR / "vehicles.json"
+        data = json.loads(p.read_text(encoding="utf-8"))
+        raw_by_id = {row_identifier(r): r for r in rows if row_identifier(r)}
+        changed = 0
+        for item in data:
+            if isinstance(item, dict) and _apply_v390_curated_item(item, raw_by_id):
+                changed += 1
+        if changed:
+            p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"Current Market/event/availability guards applied: {changed} vehicles.")
+        try:
+            ip = DATA_DIR / "vehicle_images.json"
+            im = json.loads(ip.read_text(encoding="utf-8")) if ip.exists() else {}
+            image_changed = False
+            for image_id, image_url in IMAGE_CURATED_V390.items():
+                if im.get(image_id) != image_url:
+                    im[image_id] = image_url; image_changed = True
+            if image_changed:
+                ip.write_text(json.dumps(im, ensure_ascii=False, indent=2), encoding="utf-8")
+        except Exception as image_e:
+            print("WARNING: v3.90 curated image overrides failed:", image_e)
     except Exception as e:
-        print("ERROR:", e)
-        raise
+        print("WARNING: v3.90 curated vehicle corrections failed:", e)
+
+BP25_LAYOUT_V390 = [
+    ("Germany|ground", "IV", "germ_panzerjager_panther_g2", "Jagdpanther G2", 5, 0),
+    ("Germany|coastal", "III", "germ_s_700_s_706", "S-706", 2, 0),
+]
+
+_old_build_wiki_tree_layout_v390 = build_wiki_tree_layout_v276
+def build_wiki_tree_layout_v276(rows: list[dict[str, Any]]) -> dict[str, Any]:  # v3.90 override
+    out = _old_build_wiki_tree_layout_v390(rows)
+    try:
+        p = json.loads(TECH_TREE_LAYOUT_JSON.read_text(encoding="utf-8"))
+        trees = p.get("items") or {}
+        added = 0
+        for tree_key, rank, vid, label, row, col in BP25_LAYOUT_V390:
+            tree = trees.get(tree_key)
+            if not isinstance(tree, dict):
+                continue
+            rank_obj = (tree.get("ranks") or {}).get(rank)
+            if not isinstance(rank_obj, dict):
+                continue
+            right = rank_obj.setdefault("right", [])
+            right[:] = [n for n in right if str(n.get("id") or "") != vid]
+            right.append({
+                "type": "unit", "id": vid, "req": "",
+                "icon": IMAGE_CURATED_V390.get(vid) or f"https://static.encyclopedia.warthunder.com/slots/{vid}.png",
+                "label": label, "row": row, "col": col,
+                "source": "v3.90-curated-bp25-layout",
+            })
+            added += 1
+        p["logic_version"] = "v3.90-wiki-table-plus-curated-specials"
+        TECH_TREE_LAYOUT_JSON.write_text(json.dumps(p, ensure_ascii=False, indent=2), encoding="utf-8")
+        if added:
+            print(f"v3.90 curated BP25 tree placement applied: {added} vehicles.")
+    except Exception as e:
+        print("WARNING: v3.90 curated BP25 tree placement failed:", e)
+    return out
+
+# Keep the base normalization map synchronized with the latest curated truth so older
+# normalization stages do not temporarily write stale values that later stages have to undo.
+for _cur_av in (AVAILABILITY_CURATED_V387, AVAILABILITY_CURATED_V388, AVAILABILITY_CURATED_V390):
+    AVAILABILITY_OVERRIDES_V336.update(_cur_av)
+for _cur_st in (STATUS_CURATED_V387, STATUS_CURATED_V388, STATUS_CURATED_V390):
+    STATUS_OVERRIDES_V336.update(_cur_st)
+
+# --- end v3.90 layer ---
 
 # --- v3.64: curated owner-only supplements should not disappear as API removals ---
 # Some event/hidden vehicles are intentionally maintained by our curated availability layer even
@@ -8277,3 +6994,102 @@ def _diff_snapshots_v300(old_vehicles: Any, new_vehicles: Any, old_layout: Any, 
     # If an old dev snapshot lacked the v3.64 supplement, do not show a scary present→missing row
     # for a vehicle that is intentionally curated as owner-only.
     return [ch for ch in out if not (str(ch.get("unit_id") or "").lower() in curated_ids and ch.get("change_type") == "removed")]
+
+# Current class-aware BR schema: all generation stages, including late supplements,
+# must end with naval vessels carrying AB/RB only. No Ground RB/SB or ordinary SB.
+_old_write_lightweight_vehicles_naval_modes = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:
+    _old_write_lightweight_vehicles_naval_modes(rows, image_map)
+    p = DATA_DIR / "vehicles.json"
+    data = json.loads(p.read_text(encoding="utf-8"))
+    cleaned = 0
+    for item in data:
+        if not isinstance(item, dict) or item.get("class") not in {"coastal", "bluewater"}:
+            continue
+        br = item.get("br")
+        if not isinstance(br, dict):
+            continue
+        clean_br = {key: br[key] for key in ("ab", "rb") if key in br}
+        if clean_br != br:
+            item["br"] = clean_br
+            cleaned += 1
+    if cleaned:
+        p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"Naval BR schema: removed inapplicable mode fields from {cleaned} vessels.")
+
+# --- TEMPORARY: live server BR corrections of 2026-10-30 --------------------
+# DELETE THIS ENTIRE BLOCK on the NEXT updater revision after confirming that
+# WT Vehicles API has caught up. Official source:
+# https://warthunder.com/ru/game/changelog/current/3200
+# Do NOT edit raw API downloads: keep them as evidence of upstream data.
+# Each (stale_api_value, confirmed_live_value) is mode-specific. Apply only
+# while API is known stale. If upstream matches live, do nothing automatically.
+# If upstream provides a third value, trust it and warn instead of forcing
+# a historical override on a new patch.
+TEMPORARY_LIVE_BR_2026_10_30 = {
+    "f_16a_block_20_mlu": {"sb": (14.0, 13.7)},
+    "hawk_t1a_early": {"ab": (7.7, 7.3), "rb": (7.7, 7.3), "sb": (7.7, 7.3)},
+    "hawk_t1a": {"ab": (7.7, 7.3), "rb": (7.7, 7.3), "sb": (7.7, 7.3)},
+    "n1k2_j": {"ground_rb": (6.7, 6.3)},
+    "n1k2_jko": {"ground_rb": (6.7, 6.3)},
+    "spitfire_mk18e": {"ground_rb": (6.7, 6.3)},
+    "yak-3u": {"ground_rb": (6.7, 6.3)},
+}
+
+_old_write_lightweight_vehicles_live_br_2026_10_30 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:
+    _old_write_lightweight_vehicles_live_br_2026_10_30(rows, image_map)
+    raw_by_id = {row_identifier(r): r for r in rows if row_identifier(r)}
+    path = DATA_DIR / "vehicles.json"
+    vehicles = json.loads(path.read_text(encoding="utf-8"))
+    count = 0
+    up_to_date = 0
+    warnings = []
+    found = set()
+    for item in vehicles:
+        vid = item.get("id") if isinstance(item, dict) else None
+        if vid not in TEMPORARY_LIVE_BR_2026_10_30:
+            continue
+        found.add(vid)
+        raw_row = raw_by_id.get(vid)
+        if not raw_row:
+            warnings.append(f"{vid}: missing from API download; temporary BR correction skipped")
+            continue
+        api_br = br_values(raw_row)
+        display_br = item.get("br")
+        if not isinstance(display_br, dict):
+            warnings.append(f"{vid}: no BR map in final vehicle; skipped")
+            continue
+        for mode, (stale, live) in TEMPORARY_LIVE_BR_2026_10_30[vid].items():
+            api = api_br.get(mode)
+            if api is None:
+                warnings.append(f"{vid} {mode}: API field missing; skipped")
+            elif abs(float(api) - live) < 0.001:
+                # API caught up: do not override it.
+                up_to_date += 1
+            elif abs(float(api) - stale) < 0.001:
+                # Apply only the known stale -> live transition.
+                if display_br.get(mode) != live:
+                    display_br[mode] = live
+                    count += 1
+            else:
+                warnings.append(f"{vid} {mode}: API BR {api} differs from known stale {stale}; not overriding")
+    for vid in TEMPORARY_LIVE_BR_2026_10_30.keys() - found:
+        warnings.append(f"{vid}: absent from final vehicles; skipped")
+    if count:
+        path.write_text(json.dumps(vehicles, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Temporary 2026-10-30 live BR corrections: applied {count} fields; API already current for {up_to_date} fields.")
+    for warning in warnings:
+        print("WARNING: temporary BR correction:", warning)
+# --- END TEMPORARY LIVE BR BLOCK: REMOVE IN NEXT ITERATION -------------------
+
+if __name__ == "__main__":
+    try:
+        raise SystemExit(main())
+    except KeyboardInterrupt:
+        print("Stopped by user. Restart update_from_api.bat to continue from cached images/manifest.")
+        raise SystemExit(130)
+    except Exception as e:
+        print("ERROR:", e)
+        raise
+

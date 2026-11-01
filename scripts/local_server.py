@@ -93,11 +93,13 @@ class Handler(SimpleHTTPRequestHandler):
             with urllib.request.urlopen(req, timeout=12) as resp:
                 html = resp.read(1_500_000).decode('utf-8', errors='replace')
 
-            # Examples usually look like "Update 2.55.1.142". Keep the parser
-            # intentionally narrow: we only need the game client version, not news.
-            found = re.findall(r'Update\s+((?:\d+\.){2,}\d+)', html, flags=re.I)
+            # Changelog includes titles like "Server Update 30.10.2026".
+            # That is a publication DATE, not client version 30.10.2026.
+            # War Thunder game versions use the 2.xx.xx.xx format here.
+            found = re.findall(r'\bUpdate\s+(2\.\d+\.\d+(?:\.\d+)?)\b', html, flags=re.I)
             if not found:
-                found = re.findall(r'\b((?:\d+\.){2,}\d+)\b', html)
+                found = re.findall(r'\b(2\.\d+\.\d+(?:\.\d+)?)\b', html)
+            server_updates = re.findall(r'\bServer\s+Update\s+(\d{1,2}\.\d{1,2}\.\d{4})\b', html, flags=re.I)
             # Preserve page order; the first changelog version is normally latest.
             seen = []
             for v in found:
@@ -108,6 +110,7 @@ class Handler(SimpleHTTPRequestHandler):
             self._json(200, {
                 'ok': True,
                 'latest_version': seen[0],
+                'latest_server_update': server_updates[0] if server_updates else None,
                 'candidates': seen[:5],
                 'source_url': url,
                 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),

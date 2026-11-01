@@ -1708,12 +1708,12 @@
       "page": "aviation"
     },
     "f_16xl": {
-      "placement": "left",
+      "placement": "right",
       "rank": "VIII",
       "nation": "USA",
       "class": "air",
       "visibleName": "F-16XL",
-      "source": "wiki-tree-left",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "fa_18c_early": {
@@ -2319,15 +2319,6 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "il_2_1942_luftwaffe": {
-      "placement": "right",
-      "rank": "II",
-      "nation": "Germany",
-      "class": "air",
-      "visibleName": "IL-2 (1942)",
-      "source": "api/status+wiki-tree-marker+raw-api-status",
-      "page": "aviation"
-    },
     "wellington_mk1c_luftwaffe": {
       "placement": "right",
       "rank": "II",
@@ -2337,13 +2328,13 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "bf_109t_2": {
+    "il_2_1942_luftwaffe": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Bf 109 T-2",
-      "source": "api/status+raw-api-status",
+      "visibleName": "IL-2 (1942)",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
     "he_112b_2": {
@@ -2355,13 +2346,13 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "yak-1b_luftwaffe": {
+    "bf_109t_2": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Yak-1B",
-      "source": "api/status+wiki-tree-marker+raw-api-status",
+      "visibleName": "Bf 109 T-2",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "h-75a-2_finland": {
@@ -2373,13 +2364,13 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "bv-238": {
+    "yak-1b_luftwaffe": {
       "placement": "right",
       "rank": "II",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "BV 238",
-      "source": "api/status+raw-api-status",
+      "visibleName": "Yak-1B",
+      "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
     "bf-109e-7": {
@@ -2388,6 +2379,15 @@
       "nation": "Germany",
       "class": "air",
       "visibleName": "Bf 109 E-7/U2",
+      "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "bv-238": {
+      "placement": "right",
+      "rank": "II",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "BV 238",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2625,12 +2625,12 @@
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
-    "ta_154a_1": {
+    "fw_190a_8_mistel": {
       "placement": "right",
       "rank": "III",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Ta 154 A-1",
+      "visibleName": "Mistel 2",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2643,12 +2643,12 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "fw_190a_5_u14": {
+    "ta_154a_1": {
       "placement": "right",
       "rank": "III",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Fw 190 A-5/U14",
+      "visibleName": "Ta 154 A-1",
       "source": "api/status+raw-api-status",
       "page": "aviation"
     },
@@ -2661,13 +2661,13 @@
       "source": "api/status+wiki-tree-marker+raw-api-status",
       "page": "aviation"
     },
-    "bf-109g-2": {
-      "placement": "left",
+    "fw_190a_5_u14": {
+      "placement": "right",
       "rank": "III",
       "nation": "Germany",
       "class": "air",
-      "visibleName": "Bf 109 G-2",
-      "source": "wiki-tree-left",
+      "visibleName": "Fw 190 A-5/U14",
+      "source": "api/status+raw-api-status",
       "page": "aviation"
     },
     "bv-155b-1": {
@@ -2677,6 +2677,15 @@
       "class": "air",
       "visibleName": "BV 155 B-1",
       "source": "api/status+raw-api-status",
+      "page": "aviation"
+    },
+    "bf-109g-2": {
+      "placement": "left",
+      "rank": "III",
+      "nation": "Germany",
+      "class": "air",
+      "visibleName": "Bf 109 G-2",
+      "source": "wiki-tree-left",
       "page": "aviation"
     },
     "bf-109g-6": {
@@ -13953,6 +13962,15 @@
       "source": "wiki-tree-left",
       "page": "ground"
     },
+    "germ_panzerjager_panther_g2": {
+      "placement": "right",
+      "rank": "IV",
+      "nation": "Germany",
+      "class": "ground",
+      "visibleName": "Jagdpanther G2",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
     "germ_ru251": {
       "placement": "right",
       "rank": "IV",
@@ -21707,6 +21725,15 @@
       "source": "api/status+raw-api-status",
       "page": "ground"
     },
+    "sw_patria_bmp_3": {
+      "placement": "right",
+      "rank": "VI",
+      "nation": "Sweden",
+      "class": "ground",
+      "visibleName": "AMV (BMP-3)",
+      "source": "api/status+raw-api-status",
+      "page": "ground"
+    },
     "sw_strf_90c": {
       "placement": "left",
       "rank": "VII",
@@ -26154,12 +26181,12 @@
       "source": "api/status+raw-api-status",
       "page": "boats"
     },
-    "germ_s_700_s_701": {
+    "germ_s_700_s_706": {
       "placement": "right",
       "rank": "III",
       "nation": "Germany",
       "class": "coastal",
-      "visibleName": "S-701",
+      "visibleName": "S-706",
       "source": "api/status+raw-api-status",
       "page": "boats"
     },
@@ -26169,6 +26196,15 @@
       "nation": "Germany",
       "class": "coastal",
       "visibleName": "VS-8",
+      "source": "api/status+raw-api-status",
+      "page": "boats"
+    },
+    "germ_s_700_s_701": {
+      "placement": "right",
+      "rank": "III",
+      "nation": "Germany",
+      "class": "coastal",
+      "visibleName": "S-701",
       "source": "api/status+raw-api-status",
       "page": "boats"
     },
@@ -27437,15 +27473,6 @@
       "page": "fallback",
       "status": "Акционная"
     },
-    "a6m5_zero_china": {
-      "rank": "I",
-      "nation": "China",
-      "class": "air",
-      "visibleName": "A6m5-ZERO-CHINA",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
     "bf-109c_1_promo": {
       "rank": "I",
       "nation": "Germany",
@@ -27641,15 +27668,6 @@
       "nation": "Germany",
       "class": "ground",
       "visibleName": "LEOPARD-A1a1-120",
-      "page": "raw-api",
-      "placement": "right",
-      "source": "raw-api-status"
-    },
-    "germ_pzkpfw_35t_romania_mare": {
-      "rank": "I",
-      "nation": "Germany",
-      "class": "ground",
-      "visibleName": "PZKPFW-35T-ROMANIA-MARE",
       "page": "raw-api",
       "placement": "right",
       "source": "raw-api-status"
@@ -28004,6 +28022,6 @@
   "guards": {
     "forced_right": 0,
     "forced_left": 0,
-    "pattern_right": 1
+    "pattern_right": 2
   }
 }

@@ -160,8 +160,9 @@
     },
     "fw-190a-8_france": {
       "availability": "unavailable",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree."
+      "en": "Rare event reward; owner-only outside returns.",
+      "ru": "Редкая наградная техника; вне временных возвратов доступна только владельцам.",
+      "source": "v3.90 curated audit"
     },
     "fw-190d-9_ussr": {
       "availability": "unavailable",
@@ -495,9 +496,10 @@
       "ru": "Возвращена в продажу после акции к первому полёту МиГ-21; доступна по полной цене после акции."
     },
     "mirage_milan": {
-      "availability": "unavailable",
-      "en": "Owner-only / hidden from the regular client tree. Hidden/old French premium aircraft absent from current client tree.",
-      "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old French premium aircraft absent from current client tree."
+      "availability": "available",
+      "en": "Returned permanently after the May 2026 promotion.",
+      "ru": "После майской акции 2026 года оставлен в постоянной продаже.",
+      "source": "v3.90 curated audit"
     },
     "p-38g_metal": {
       "availability": "unavailable",
@@ -527,13 +529,15 @@
     },
     "p-63c-5_ussr": {
       "availability": "unavailable",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+      "en": "Rare event reward; owner-only outside returns.",
+      "ru": "Редкая наградная техника; вне временных возвратов доступна только владельцам.",
+      "source": "v3.90 curated audit"
     },
     "pbm_3": {
       "availability": "unavailable",
-      "en": "Old Sea Voyage 2019 event reward; do not use in lineups unless marked owned.",
-      "ru": "Старая акционная награда Sea Voyage 2019; не брать в наборы, если не отмечена купленной."
+      "en": "Rare event reward; owner-only outside returns.",
+      "ru": "Редкая наградная техника; вне временных возвратов доступна только владельцам.",
+      "source": "v3.90 curated audit"
     },
     "pe-2-205": {
       "availability": "unavailable",
@@ -551,9 +555,10 @@
       "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Swedish premium aircraft absent from current client tree."
     },
     "saab_j35a": {
-      "availability": "unavailable",
-      "en": "Temporary event sale; normally hidden / owner-only.",
-      "ru": "Временная акция/продажа; обычно скрыта / только у владельцев."
+      "availability": "available",
+      "en": "Returned permanently after the October 2026 promotion.",
+      "ru": "После октябрьской акции 2026 года оставлен в постоянной продаже.",
+      "source": "v3.90 curated audit"
     },
     "sb_2m_103_mv3": {
       "availability": "unavailable",
@@ -606,10 +611,10 @@
       "ru": "Только у владельцев / скрыто из обычного дерева клиента. Hidden/old Israeli pack aircraft absent from current client tree."
     },
     "spitfire_mk5b_float": {
-      "availability": "unavailable",
-      "en": "Wings Over Water 2026 event reward; the event ended on 15 June 2026. Treat as owner-only unless Market or another acquisition method is confirmed.",
-      "ru": "Награда события Wings Over Water 2026; событие завершилось 15 июня 2026. Считать доступной только владельцам, пока не подтверждён Market/повторное получение.",
-      "source": "War Thunder official event news 2026-06-12 + Wiki unit page"
+      "availability": "available",
+      "en": "Current acquisition method: War Thunder Market.",
+      "ru": "Текущий способ получения: биржа War Thunder.",
+      "source": "v3.90 curated audit"
     },
     "su-7bmk": {
       "availability": "unavailable",
@@ -885,8 +890,9 @@
     },
     "yak-3t": {
       "availability": "unavailable",
-      "en": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной.",
-      "ru": "Скрытая/старовладельческая премиумная техника СССР; не считать постоянно доступной."
+      "en": "Rare event reward; owner-only outside returns.",
+      "ru": "Редкая наградная техника; вне временных возвратов доступна только владельцам.",
+      "source": "v3.90 curated audit"
     },
     "yp-38": {
       "availability": "unavailable",
@@ -975,6 +981,66 @@
       "availability": "unavailable",
       "en": "Removed from research in 2025; collectible/owner-only.",
       "ru": "Выведен из исследования в 2025 году; коллекционная техника только для владельцев."
+    },
+    "uk_frigate_river": {
+      "availability": "available",
+      "en": "Current acquisition method: War Thunder Market.",
+      "ru": "Текущий способ получения: биржа War Thunder.",
+      "source": "v3.90 curated audit"
+    },
+    "ussr_valentine_mk_9": {
+      "availability": "unavailable",
+      "en": "Rare Valentine's Day event vehicle; not permanently sold.",
+      "ru": "Редкая акционная техника ко Дню святого Валентина; постоянно не продаётся.",
+      "source": "v3.90 curated audit"
+    },
+    "sw_patria_bmp_3": {
+      "availability": "unavailable",
+      "en": "Desert Predator 2026 event reward; event acquisition has ended.",
+      "ru": "Награда события «Пустынный хищник» 2026; получение в событии завершено.",
+      "source": "v3.90 curated audit"
+    },
+    "germ_s_700_s_706": {
+      "availability": "unavailable",
+      "en": "Battle Pass Season XXV reward; not a permanent store/research vehicle.",
+      "ru": "Награда 25 сезона Боевого пропуска; не является постоянно продаваемой/исследуемой техникой.",
+      "source": "v3.90 curated audit"
+    },
+    "germ_panzerjager_panther_g2": {
+      "availability": "unavailable",
+      "en": "Battle Pass Season XXV reward; not a permanent store/research vehicle.",
+      "ru": "Награда 25 сезона Боевого пропуска; не является постоянно продаваемой/исследуемой техникой.",
+      "source": "v3.90 curated audit"
+    },
+    "germ_pzkpfw_II_ausf_H": {
+      "availability": "unavailable",
+      "en": "Temporary German Unity Day 2026 return; promotion ended.",
+      "ru": "Временный возврат ко Дню германского единства 2026; акция завершена.",
+      "source": "v3.90 curated audit"
+    },
+    "bf-109z": {
+      "availability": "unavailable",
+      "en": "Temporary German Unity Day 2026 return; promotion ended.",
+      "ru": "Временный возврат ко Дню германского единства 2026; акция завершена.",
+      "source": "v3.90 curated audit"
+    },
+    "us_destroyer_fletcher_cowell": {
+      "availability": "unavailable",
+      "en": "Temporary US Navy birthday 2026 return; promotion ended.",
+      "ru": "Временный возврат ко дню рождения ВМС США 2026; акция завершена.",
+      "source": "v3.90 curated audit"
+    },
+    "p-38k": {
+      "availability": "unavailable",
+      "en": "Rare vehicle temporarily returned in September 2026; not permanently sold.",
+      "ru": "Редкая техника временно возвращалась в сентябре 2026; постоянно не продаётся.",
+      "source": "v3.90 curated audit"
+    },
+    "intruder_mk_1": {
+      "availability": "unavailable",
+      "en": "Temporary October 2026 Havoc Mk.I promotion; treated as unavailable after the promotion.",
+      "ru": "Временная октябрьская акция Havoc Mk.I 2026; после акции считается недоступным.",
+      "source": "v3.90 curated audit"
     }
   }
 }

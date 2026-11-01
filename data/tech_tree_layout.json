@@ -1,6 +1,6 @@
 {
-  "logic_version": "v3.89-wiki-table-plus-curated-specials",
-  "updated_at": "2026-09-18T16:31:26+00:00",
+  "logic_version": "v3.90-wiki-table-plus-curated-specials",
+  "updated_at": "2026-10-30T12:04:11+00:00",
   "items": {
     "USA|air": {
       "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/aviation?v=t&t_c=usa",
@@ -5311,15 +5311,6 @@
             },
             {
               "type": "unit",
-              "id": "il_2_1942_luftwaffe",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/il_2_1942_luftwaffe.png",
-              "label": "▀IL-2 (1942)",
-              "row": 1,
-              "col": 0
-            },
-            {
-              "type": "unit",
               "id": "wellington_mk1c_luftwaffe",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/wellington_mk1c_luftwaffe.png",
@@ -5329,10 +5320,10 @@
             },
             {
               "type": "unit",
-              "id": "bf_109t_2",
+              "id": "il_2_1942_luftwaffe",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/bf_109t_2.png",
-              "label": "Bf 109 T-2",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/il_2_1942_luftwaffe.png",
+              "label": "▀IL-2 (1942)",
               "row": 2,
               "col": 0
             },
@@ -5347,10 +5338,10 @@
             },
             {
               "type": "unit",
-              "id": "yak-1b_luftwaffe",
+              "id": "bf_109t_2",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/yak-1b_luftwaffe.png",
-              "label": "▀Yak-1B",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/bf_109t_2.png",
+              "label": "Bf 109 T-2",
               "row": 3,
               "col": 0
             },
@@ -5365,10 +5356,10 @@
             },
             {
               "type": "unit",
-              "id": "bv-238",
+              "id": "yak-1b_luftwaffe",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/bv-238.png",
-              "label": "BV 238",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/yak-1b_luftwaffe.png",
+              "label": "▀Yak-1B",
               "row": 4,
               "col": 0
             },
@@ -5380,6 +5371,15 @@
               "label": "Bf 109 E-7/U2",
               "row": 4,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "bv-238",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/bv-238.png",
+              "label": "BV 238",
+              "row": 5,
+              "col": 0
             },
             {
               "type": "unit",
@@ -5598,10 +5598,10 @@
             },
             {
               "type": "unit",
-              "id": "ta_154a_1",
+              "id": "fw_190a_8_mistel",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/ta_154a_1.png",
-              "label": "Ta 154 A-1",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/fw_190a_8_mistel.png",
+              "label": "Mistel 2",
               "row": 1,
               "col": 0
             },
@@ -5616,10 +5616,10 @@
             },
             {
               "type": "unit",
-              "id": "fw_190a_5_u14",
+              "id": "ta_154a_1",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/fw_190a_5_u14.png",
-              "label": "Fw 190 A-5/U14",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/ta_154a_1.png",
+              "label": "Ta 154 A-1",
               "row": 2,
               "col": 0
             },
@@ -5634,10 +5634,10 @@
             },
             {
               "type": "unit",
-              "id": "bf-109g-2_romania",
+              "id": "fw_190a_5_u14",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/bf-109g-2_romania.png",
-              "label": "Bf 109 G-2",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/fw_190a_5_u14.png",
+              "label": "Fw 190 A-5/U14",
               "row": 3,
               "col": 0
             },
@@ -5649,6 +5649,15 @@
               "label": "BV 155 B-1",
               "row": 3,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "bf-109g-2_romania",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/bf-109g-2_romania.png",
+              "label": "Bf 109 G-2",
+              "row": 4,
+              "col": 0
             }
           ]
         },
@@ -7556,6 +7565,16 @@
               "label": "Ru 251",
               "row": 5,
               "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_panzerjager_panther_g2",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_panzerjager_panther_g2.png",
+              "label": "Jagdpanther G2",
+              "row": 5,
+              "col": 0,
+              "source": "v3.90-curated-bp25-layout"
             }
           ]
         },
@@ -9155,21 +9174,31 @@
             },
             {
               "type": "unit",
-              "id": "germ_s_700_s_701",
-              "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
-              "label": "S-701",
-              "row": 0,
-              "col": 1
-            },
-            {
-              "type": "unit",
               "id": "germ_vs8_hydrofoil",
               "req": "",
               "icon": "https://static.encyclopedia.warthunder.com/slots/germ_vs8_hydrofoil.png",
               "label": "VS-8",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "germ_s_700_s_701",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
+              "label": "S-701",
+              "row": 1,
+              "col": 1
+            },
+            {
+              "type": "unit",
+              "id": "germ_s_700_s_706",
+              "req": "",
+              "icon": "assets/vehicles/slots/germ_s_700_s_706.png",
+              "label": "S-706",
+              "row": 2,
+              "col": 0,
+              "source": "v3.90-curated-bp25-layout"
             }
           ]
         },
@@ -24148,7 +24177,7 @@
       }
     },
     "China|heli": {
-      "source": "HTTP 200 via curl fallback after requests ChunkedEncodingError: (\"Connection broken: ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)\", ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None)) url=https://wiki.warthunder.ru/helicopters?v=t&t_c=china",
+      "source": "HTTP 200 via requests url=https://wiki.warthunder.ru/helicopters?v=t&t_c=china",
       "parser": "v2.83 Wiki table DOM parser: all nations/classes; wt-tree_rank/table/tr/td/group + canonical id lookup",
       "safe_dom_geometry": true,
       "safe_table_layout": true,
@@ -28673,10 +28702,10 @@
             },
             {
               "type": "unit",
-              "id": "germ_s_700_s_701",
+              "id": "germ_s_700_s_706",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
-              "label": "S-701",
+              "icon": "assets/vehicles/slots/germ_s_700_s_706.png",
+              "label": "S-706",
               "row": 0,
               "col": 1
             },
@@ -28688,6 +28717,15 @@
               "label": "VS-8",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "germ_s_700_s_701",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
+              "label": "S-701",
+              "row": 1,
+              "col": 1
             },
             {
               "type": "unit",
@@ -37823,6 +37861,15 @@
               "label": "CV 9035DK",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "sw_patria_bmp_3",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/sw_patria_bmp_3.png",
+              "label": "AMV (BMP-3)",
+              "row": 1,
+              "col": 1
             }
           ]
         },
@@ -42518,10 +42565,10 @@
             },
             {
               "type": "unit",
-              "id": "germ_s_700_s_701",
+              "id": "germ_s_700_s_706",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
-              "label": "S-701",
+              "icon": "assets/vehicles/slots/germ_s_700_s_706.png",
+              "label": "S-706",
               "row": 0,
               "col": 1
             },
@@ -42533,6 +42580,15 @@
               "label": "VS-8",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "germ_s_700_s_701",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
+              "label": "S-701",
+              "row": 1,
+              "col": 1
             },
             {
               "type": "unit",
@@ -49275,10 +49331,10 @@
             },
             {
               "type": "unit",
-              "id": "germ_s_700_s_701",
+              "id": "germ_s_700_s_706",
               "req": "",
-              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
-              "label": "S-701",
+              "icon": "assets/vehicles/slots/germ_s_700_s_706.png",
+              "label": "S-706",
               "row": 0,
               "col": 1
             },
@@ -49290,6 +49346,15 @@
               "label": "VS-8",
               "row": 1,
               "col": 0
+            },
+            {
+              "type": "unit",
+              "id": "germ_s_700_s_701",
+              "req": "",
+              "icon": "https://static.encyclopedia.warthunder.com/slots/germ_s_700_s_701.png",
+              "label": "S-701",
+              "row": 1,
+              "col": 1
             },
             {
               "type": "unit",

@@ -4236,6 +4236,9 @@ def build_display_name_map(rows: list[dict[str, Any]], workers: int = 12, retry_
                 fallback = _ru_name_final_v225(display_name_from_identifier_v223(vid, row), vid, nation) if lang == "ru" else normalize_latin_display_name(display_name_from_identifier_v223(vid, row), vid)
                 suspicious.append({"id": vid, "lang": lang, "rejected": name, "fallback": fallback})
                 mp[vid] = fallback
+    if not suspicious:
+        # Do not leave diagnostics from a previous run looking like current problems.
+        SUSPICIOUS_DISPLAY_NAMES_JSON.unlink(missing_ok=True)
     if suspicious:
         SUSPICIOUS_DISPLAY_NAMES_JSON.write_text(json.dumps({"logic_version": IMAGE_LOGIC_VERSION, "count": len(suspicious), "items": suspicious}, ensure_ascii=False, indent=2), encoding="utf-8")
         DISPLAY_NAMES_RU_JSON.write_text(json.dumps(DISPLAY_NAME_MAP_RU, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -5663,7 +5666,7 @@ def update_patch_history_v300() -> None:
             "reason": "unverified-version" if not version else "already-recorded-version",
             "vehicle_changes": changes,
         })
-        print(f"v3.90 patch history: {len(changes)} candidate changes; not recorded as a game patch. See data/pending_patch_changes.json.")
+        print(f"v3.91 patch history: {len(changes)} candidate changes; not recorded as a game patch. See data/pending_patch_changes.json.")
         return
     # A real new version was supplied explicitly (WT_GAME_VERSION or
     # data/game_version.txt). Only now can we create a new history block.
@@ -5687,7 +5690,7 @@ def update_patch_history_v300() -> None:
     _json_write_v300(snap_dir / "vehicles_snapshot.json", vehicles_now)
     _json_write_v300(snap_dir / "tech_tree_layout_snapshot.json", layout_now)
     (DATA_DIR / "pending_patch_changes.json").unlink(missing_ok=True)
-    print(f"v3.90 patch history: recorded {len(changes)} changes for verified game version {version}.")
+    print(f"v3.91 patch history: recorded {len(changes)} changes for verified game version {version}.")
 
 
 # --- v3.00 network hardening: adaptive API page size for fragile routes ---
@@ -6165,7 +6168,8 @@ def _diff_snapshots_v300(old_vehicles: Any, new_vehicles: Any, old_layout: Any, 
 
 _old_main_v300 = main
 def main(argv: list[str] | None = None) -> int:
-    global _PREUPDATE_VEHICLES_V390, _PREUPDATE_LAYOUT_V390
+    global _PREUPDATE_VEHICLES_V390, _PREUPDATE_LAYOUT_V390, _SKIP_CURATED_IMAGE_DOWNLOAD_V391
+    _SKIP_CURATED_IMAGE_DOWNLOAD_V391 = "--skip-images" in (argv if argv is not None else sys.argv[1:])
     _PREUPDATE_VEHICLES_V390 = _json_load_v300(DATA_DIR / "vehicles.json", [])
     _PREUPDATE_LAYOUT_V390 = _json_load_v300(DATA_DIR / "tech_tree_layout.json", {})
     rc = _old_main_v300(argv)
@@ -7082,6 +7086,259 @@ def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, 
     for warning in warnings:
         print("WARNING: temporary BR correction:", warning)
 # --- END TEMPORARY LIVE BR BLOCK: REMOVE IN NEXT ITERATION -------------------
+
+
+# --- 2.61 Eagle's Shadow supplementary units and live Wiki tree corrections ---
+# This small final normalization pass is intentionally downstream of the existing
+# v3.90 pipeline. Supplemental entries are removed from the manual layer as soon
+# as the same internal ID is supplied by the upstream API.
+EAGLES_SHADOW_CURATED_JSON = DATA_DIR / "eagles_shadow_curated.json"
+NO_NAVAL_RESEARCH_NATIONS_261 = {"China", "Sweden", "Israel"}
+# Known user-facing Wiki title. Apply before the v2.61 suspicious-title detector runs.
+V243_OFFICIAL_UNIT_OVERRIDES["us_cruiser_des_moines_class_newport_news"] = {"ru": "USS Newport News", "en": "USS Newport News"}
+NEWPORT_ID_261 = "us_cruiser_des_moines_class_newport_news"
+_SKIP_CURATED_IMAGE_DOWNLOAD_V391 = False
+
+
+def _curated_slot_local_image_v391(unit_id: str) -> tuple[str, str]:
+    """Return a validated local PNG, downloading once only if absent.
+
+    Uses a known official slot URL for manually supplemented vehicles. It does
+    not overwrite good files, and never saves an HTML/error response as .png.
+    """
+    safe = safe_file_stem(unit_id)
+    path = SLOT_DIR / f"{safe}.png"
+    relative = f"assets/vehicles/slots/{safe}.png"
+    png_magic = b"\x89PNG\r\n\x1a\n"  # adjusted below to byte escapes
+
+    def is_png(p: Path) -> bool:
+        try:
+            if not p.is_file() or p.stat().st_size <= 500:
+                return False
+            with p.open("rb") as stream:
+                head = stream.read(24)
+            return head.startswith(png_magic) and head[12:16] == b"IHDR"
+        except OSError:
+            return False
+
+    if is_png(path):
+        return relative, "cached"
+    if _SKIP_CURATED_IMAGE_DOWNLOAD_V391:
+        return "", "skipped"
+
+    url = WIKI_SLOT + quote(unit_id, safe="") + ".png"
+    try:
+        response = get_session().get(url, timeout=(4, 12))
+        if response.status_code != 200:
+            return "", "unavailable"
+        body = response.content
+        if not (500 < len(body) <= 8 * 1024 * 1024
+                and body.startswith(png_magic)
+                and body[12:16] == b"IHDR"):
+            return "", "invalid"
+        SLOT_DIR.mkdir(parents=True, exist_ok=True)
+        temp = path.with_suffix(".png.tmp")
+        temp.write_bytes(body)
+        temp.replace(path)
+        return relative, "downloaded"
+    except Exception:
+        try:
+            temp = path.with_suffix(".png.tmp")
+            if temp.exists():
+                temp.unlink()
+        except OSError:
+            pass
+        return "", "unavailable"
+
+
+def _sync_eagles_shadow_slot_images_v391(records: list[dict[str, Any]], vehicles: list[dict[str, Any]]) -> tuple[int, int, int, bool]:
+    """Cache images of curated vehicles and keep final JSON references local.
+
+    Applies to all curated IDs, including those later supplied by the API.
+    Existing local PNGs are reused, unresolved images retain their current URL
+    and are automatically retried on a later updater run.
+    """
+    ids = [str(v.get("id") or "") for v in records if v.get("id")]
+    results = {}
+    if ids:
+        with cf.ThreadPoolExecutor(max_workers=min(8, len(ids))) as pool:
+            futures = {pool.submit(_curated_slot_local_image_v391, vid): vid for vid in ids}
+            for fut in cf.as_completed(futures):
+                vid = futures[fut]
+                try:
+                    results[vid] = fut.result()
+                except Exception:
+                    results[vid] = ("", "unavailable")
+
+    cached = sum(state == "cached" for _, state in results.values())
+    downloaded = sum(state == "downloaded" for _, state in results.values())
+    pending = len(ids) - cached - downloaded
+    paths = {vid: path for vid, (path, _) in results.items() if path}
+    changed = False
+    for v in vehicles:
+        vid = str(v.get("id") or "")
+        path = paths.get(vid)
+        if path and v.get("local_image") != path:
+            v["local_image"] = path
+            changed = True
+    images_file = DATA_DIR / "vehicle_images.json"
+    if images_file.exists() and paths:
+        image_map = json.loads(images_file.read_text(encoding="utf-8"))
+        for vid, path in paths.items():
+            if image_map.get(vid) != path:
+                image_map[vid] = path
+                changed = True
+        _json_replace_261(images_file, image_map)
+    if paths:
+        manifest = load_manifest()
+        entries = manifest.setdefault("items", {})
+        updated = False
+        for vid, path in paths.items():
+            old = entries.get(vid) or {}
+            if old.get("status") != "ok" or old.get("path") != path:
+                entries[vid] = {"status": "ok", "path": path, "reason": "curated slot image",
+                                "logic_version": IMAGE_LOGIC_VERSION, "updated_at": now_iso()}
+                updated = True
+        if updated:
+            save_manifest(manifest)
+    print(f"Eagle's Shadow slot images: cached {cached}; downloaded {downloaded}; pending {pending}"
+          + (" (downloads disabled)" if _SKIP_CURATED_IMAGE_DOWNLOAD_V391 else ""))
+    return cached, downloaded, pending, changed
+
+
+def _json_replace_261(path: Path, data: Any) -> None:
+    tmp = path.with_suffix(path.suffix + '.tmp')
+    tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding='utf-8')
+    tmp.replace(path)
+
+_old_write_lightweight_vehicles_eagles_261 = write_lightweight_vehicles
+def write_lightweight_vehicles(rows: list[dict[str, Any]], image_map: dict[str, str]) -> None:
+    _old_write_lightweight_vehicles_eagles_261(rows, image_map)
+    try:
+        vehicles_path = DATA_DIR / 'vehicles.json'
+        vehicles = json.loads(vehicles_path.read_text(encoding='utf-8'))
+        ids = {str(v.get('id') or '').lower() for v in vehicles if isinstance(v, dict)}
+        source = json.loads(EAGLES_SHADOW_CURATED_JSON.read_text(encoding='utf-8'))
+        records = source.get('items') or []
+        inserted = 0
+        for manual in records:
+            vid = str(manual.get('id') or '').lower()
+            if vid and vid not in ids:
+                vehicles.append(manual.copy())
+                ids.add(vid)
+                inserted += 1
+        corrected = 0
+        for item in vehicles:
+            if item.get('id') == NEWPORT_ID_261:
+                item.update(name='USS Newport News',nameRu='USS Newport News',nameEn='USS Newport News')
+                corrected += 1
+        cached, downloaded, pending, image_changed = _sync_eagles_shadow_slot_images_v391(records, vehicles)
+        if inserted or corrected or image_changed:
+            _json_replace_261(vehicles_path, vehicles)
+        for language, key in (('ru', 'nameRu'),('en','nameEn')):
+            path=DATA_DIR / ('display_names_'+language+'.json')
+            if not path.exists(): continue
+            names = json.loads(path.read_text(encoding='utf-8'))
+            for item in vehicles:
+                vid = str(item.get('id') or '')
+                if vid and (vid == NEWPORT_ID_261 or vid in {x.get('id') for x in records}):
+                    names[vid] = item.get(key) or item.get('name') or vid
+            _json_replace_261(path, names)
+        # Include additional display-name source and image map for manual entries.
+        for path in (DATA_DIR / 'display_names.json',):
+            if not path.exists():continue
+            names=json.loads(path.read_text(encoding='utf-8'))
+            if isinstance(names,dict) and all(isinstance(x,str) for x in list(names.values())[:5]):
+                names[NEWPORT_ID_261]='USS Newport News'
+                for item in records:names[item['id']]=item.get('nameRu') or item.get('name')
+                _json_replace_261(path,names)
+        im_file=DATA_DIR/'vehicle_images.json'
+        if im_file.exists():
+            im=json.loads(im_file.read_text(encoding='utf-8'))
+            current_by_id = {v.get('id'): v for v in vehicles if isinstance(v, dict)}
+            for item in records:
+                vid = item.get('id')
+                final = current_by_id.get(vid) or item
+                url = final.get('local_image') or item.get('local_image')
+                if vid and url and (vid not in im or str(url).startswith('assets/')):
+                    im[vid] = url
+            _json_replace_261(im_file, im)
+        print(f"Eagle's Shadow curated: {inserted} API-missing vehicles supplemented; USS Newport News name corrected.")
+    except Exception as e:
+        print("WARNING: Eagle's Shadow curated supplement failed:",e)
+
+_old_parse_wiki_tree_order_eagles_261 = parse_wiki_tree_order
+def parse_wiki_tree_order(rows: list[dict[str, Any]]) -> dict[str, list[str]]:
+    order = _old_parse_wiki_tree_order_eagles_261(rows)
+    for nation in NO_NAVAL_RESEARCH_NATIONS_261:
+        for cls in ('bluewater','coastal'):
+            order.pop(f'{nation}|{cls}',None)
+    # Order only: preceding the EMBT in Germany research tree.
+    tree=order.get('Germany|ground')
+    if isinstance(tree,list):
+        for vid in ('germ_leopard_2a5_pso','germ_embt'):
+            while vid in tree:tree.remove(vid)
+        anchor='germ_leopard_2a7v'
+        pos=tree.index(anchor) if anchor in tree else len(tree)
+        tree[pos:pos]=['germ_leopard_2a5_pso','germ_embt']
+    path=DATA_DIR/'tech_tree_order.json'
+    if path.exists():
+        j=json.loads(path.read_text(encoding='utf-8'))
+        if isinstance(j.get('order'),dict):
+            j['order'].update(order)
+            for nation in NO_NAVAL_RESEARCH_NATIONS_261:
+                for cls in ('bluewater','coastal'):j['order'].pop(f'{nation}|{cls}',None)
+            _json_replace_261(path,j)
+    applicable=sum(bool(vals) for key,vals in order.items() if key.split('|')[-1] not in ('bluewater','coastal') or key.split('|')[0] not in NO_NAVAL_RESEARCH_NATIONS_261)
+    print(f'Wiki tree order: {applicable}/44 applicable trees with sequence data (6 non-existent naval trees excluded).')
+    return order
+
+_old_build_wiki_tree_layout_eagles_261 = build_wiki_tree_layout_v276
+def build_wiki_tree_layout_v276(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    out = _old_build_wiki_tree_layout_eagles_261(rows)
+    try:
+        path=TECH_TREE_LAYOUT_JSON
+        j=json.loads(path.read_text(encoding='utf-8'))
+        st=json.loads(TECH_TREE_LAYOUT_STATUS_JSON.read_text(encoding='utf-8'))
+        for nation in NO_NAVAL_RESEARCH_NATIONS_261:
+            for cls in ('bluewater','coastal'):
+                key=f'{nation}|{cls}'
+                j.get('items',{}).pop(key,None)
+                st[key]={'ok':False,'safe_dom_geometry':False,'safe_table_layout':False,'placedUnits':0,'groups':0,'reason':'Not applicable: no playable naval tech tree'}
+                if isinstance(out,dict):
+                    out.get('items',{}).pop(key,None)
+                    out.get('status',{}).pop(key,None)
+        # The PSO has moved before EMBT in the 2.61 progression notes.
+        # Keep Wiki column geometry; mark corrected row numbers in the two source nodes.
+        tree=j.get('items',{}).get('Germany|ground') or {}
+        rank=(tree.get('ranks') or {}).get('VIII') or {}
+        for col in rank.get('leftCols') or []:
+            for node in col:
+                if node.get('id')=='germ_leopard_2a5_pso':
+                    node['row']=0;node['source']='2.61-progression-2026-11-11'
+                elif node.get('id')=='germ_embt':
+                    node['row']=1;node['source']='2.61-progression-2026-11-11'
+        _json_replace_261(path,j)
+        _json_replace_261(TECH_TREE_LAYOUT_STATUS_JSON,st)
+        good=sum(1 for v in st.values() if v.get('ok'))
+        print(f'Wiki tree layout: {good}/44 applicable trees; 6 unsupported naval combinations excluded.')
+    except Exception as e:
+        print('WARNING: 2.61 Wiki tree layout corrections failed:',e)
+    return out
+# Preserve provisional tree branches only while the official Wiki layout has
+# not yet integrated each new Eagle's Shadow vehicle. Never supersede real Wiki nodes.
+_old_build_wiki_tree_layout_261_slots = build_wiki_tree_layout_v276
+def build_wiki_tree_layout_v276(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    result = _old_build_wiki_tree_layout_261_slots(rows)
+    try:
+        from eagles_shadow_layout import apply_layout
+        added, corrected = apply_layout(DATA_DIR)
+        print(f"Eagle's Shadow tree slots: {added} provisional vehicles, Germany progression corrected: {bool(corrected)}.")
+    except Exception as exc:
+        print("WARNING: Eagle's Shadow layout supplement skipped:",exc)
+    return result
+
+# --- end 2.61 stable supplementary layer ---
 
 if __name__ == "__main__":
     try:

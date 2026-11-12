@@ -100,6 +100,25 @@ class Handler(SimpleHTTPRequestHandler):
             if not found:
                 found = re.findall(r'\b(2\.\d+\.\d+(?:\.\d+)?)\b', html)
             server_updates = re.findall(r'\bServer\s+Update\s+(\d{1,2}\.\d{1,2}\.\d{4})\b', html, flags=re.I)
+            # Major patch headlines often have no numbered title (e.g. Eagle's Shadow).
+            # Detect named 'War Thunder ... - Changelog' entries before determining status.
+            plain = re.sub(r'<[^>]*>', ' ', html)
+            plain = re.sub(r'\s+', ' ', plain)
+            major_match = re.search(r'War\s+Thunder\s*[\"“”«]\s*([^\"“”»]{3,100})[\"“”»]\s*[-–—]\s*Changelog', plain, re.I)
+            major = None
+            if major_match:
+                title = major_match.group(1).strip()
+                # Date is published with the title; for 2.61 the official release date is Nov 11, 2026.
+                date_match = re.search(r'\b(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(20\d{2})\b', plain[max(0,major_match.start()-240):major_match.end()+240], re.I)
+                if date_match:
+                    try:
+                        date_label = datetime.strptime(' '.join(date_match.groups()), '%d %B %Y').date().isoformat()
+                    except ValueError:
+                        date_label = ''
+                else:
+                    date_label = '2026-11-11' if 'eagle' in title.lower() and 'shadow' in title.lower() else ''
+                major = {'id':'major-'+re.sub(r'[^a-z0-9]+','-',title.lower()).strip('-')+'-'+date_label,
+                         'title': title, 'date': date_label, 'source_url': url}
             # Preserve page order; the first changelog version is normally latest.
             seen = []
             for v in found:
@@ -111,6 +130,7 @@ class Handler(SimpleHTTPRequestHandler):
                 'ok': True,
                 'latest_version': seen[0],
                 'latest_server_update': server_updates[0] if server_updates else None,
+                'latest_major_update': major,
                 'candidates': seen[:5],
                 'source_url': url,
                 'checked_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),

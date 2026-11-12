@@ -1,13 +1,13 @@
 {
   "schema": "wt-roster-game-patch-status-v2",
-  "manager_data_patch": "v3.90 / October 2026 live BR + curated data refresh",
-  "latest_known_patch": "2.59.0.92 / 2026-10-29",
-  "latest_public_signal": "Update 2.59.0.92 is live and the October 2026 Battle Rating changes are in effect. The WT Vehicles API has refreshed accordingly.",
+  "manager_data_patch": "v3.91 / Eagle's Shadow (34 Wiki-supplemented vehicles)",
+  "latest_known_patch": "2.59.0.92",
+  "latest_public_signal": "War Thunder Eagle's Shadow, 11 November 2026",
   "checked_at": "2026-10-30",
-  "needs_review": false,
+  "needs_review": true,
   "notes": {
-    "ru": "v3.90 использует актуальные live-БР после 2.59.0.92, больше не накатывает исторические BR-override поверх свежего API, сохраняет отдельный Naval RB там, где API его не отдаёт, и включает октябрьские curated-правки Market/event/availability.",
-    "en": "v3.90 uses current live BR values after 2.59.0.92, no longer replays historical BR overrides over fresh API data, preserves dedicated Naval RB values where the API does not provide them, and includes the October Market/event/availability curated refresh."
+    "ru": "v3.91: вручную добавлены 34 машины «Тени орла» по официальной Wiki. Размещение новых машин предварительное там, где не подтверждены исследовательские связи. Зависимость БР от вооружения пока не поддерживается; API ещё не синхронизирован, требуется проверка данных.",
+    "en": "v3.91: 34 Eagle's Shadow vehicles added manually from the official Wiki. Some new research-tree positions are provisional. Weapon-dependent BR variants are not supported yet; the API has not caught up and data review is still needed."
   },
   "data_verified_game_version": "2.59.0.92",
   "version_check_mode": "official_changelog_news_wiki_api_manual_review",
@@ -25,5 +25,14 @@
       "Bostwick’s P-47M-1-RE",
       "Wetmore’s P-51D-10"
     ]
+  },
+  "major_update_id": "eagles-shadow-2026-11-11",
+  "major_update_title": "Eagle's Shadow",
+  "major_update_date": "2026-11-11",
+  "latest_major_update": {
+    "id": "major-eagle-s-shadow-2026-11-11",
+    "title": "Eagle's Shadow",
+    "date": "2026-11-11",
+    "source_url": "https://warthunder.com/en/game/changelog/current/1915"
   }
 }

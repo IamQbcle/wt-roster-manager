@@ -22988,6 +22988,230 @@
       "reason": "no image after 12 candidates",
       "logic_version": "v2.62-status-tree-unit-supplements",
       "updated_at": "2026-10-30T12:02:42+00:00"
+    },
+    "fulmar_mk2": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/fulmar_mk2.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "uk_cruiser_danae_class": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/uk_cruiser_danae_class.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "uk_battleship_duke_of_york": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/uk_battleship_duke_of_york.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "uk_olifant_optimering": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/uk_olifant_optimering.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "q_5d": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/q_5d.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "cn_zbd_04": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/cn_zbd_04.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "fr_destroyer_le_hardi_class_le_hardi": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/fr_destroyer_le_hardi_class_le_hardi.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "fr_vc1": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/fr_vc1.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "fr_l990_monitor": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/fr_l990_monitor.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "fr_prtl": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/fr_prtl.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "germ_battleship_pr_h39": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/germ_battleship_pr_h39.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "germ_leopard_2a8": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/germ_leopard_2a8.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "f_15ia": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/f_15ia.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "it_destroyer_audace": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/it_destroyer_audace.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "it_v_4_straussler": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/it_v_4_straussler.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "it_lancia_flak38": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/it_lancia_flak38.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "aw_249_pre_serie": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/aw_249_pre_serie.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "firefly_mk1_thailand": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/firefly_mk1_thailand.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "b_33_indonesia": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/b_33_indonesia.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "jp_cruiser_takao": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/jp_cruiser_takao.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "jp_bmp_3f": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/jp_bmp_3f.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "saab_jas39_pre_serie": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/saab_jas39_pre_serie.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "sw_pv_m39": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/sw_pv_m39.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "sw_leopard_2a8no": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/sw_leopard_2a8no.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "f_15ex": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/f_15ex.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "fa_18d_late": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/fa_18d_late.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "us_erie_class": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/us_erie_class.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "us_stingray_2": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/us_stingray_2.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "su_15tm": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/su_15tm.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "ussr_destroyer_vifor_class_lyogkiy": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/ussr_destroyer_vifor_class_lyogkiy.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "ussr_battleship_imperator_nikolai_pervyi": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/ussr_battleship_imperator_nikolai_pervyi.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
+    },
+    "ussr_btr_90_2004": {
+      "status": "ok",
+      "path": "assets/vehicles/slots/ussr_btr_90_2004.png",
+      "reason": "curated slot image",
+      "logic_version": "v2.62-status-tree-unit-supplements",
+      "updated_at": "2026-11-12T10:02:04+00:00"
     }
   }
 }

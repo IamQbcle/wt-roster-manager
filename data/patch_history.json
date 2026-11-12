@@ -1,6 +1,667 @@
 {
-  "current_version": "2.59.0.92",
+  "current_version": "2.61 Eagle's Shadow (curated, unverified client build)",
   "patches": [
+    {
+      "version": "2.61-eagles-shadow-2026-11-11",
+      "date": "2026-11-11",
+      "title_i18n": {
+        "ru": "2.61 «Тень орла» - новая техника",
+        "en": "2.61 Eagle’s Shadow - new vehicles"
+      },
+      "source_url": "https://warthunder.com/en/game/changelog/current/1915",
+      "notes_i18n": {
+        "ru": "34 машины по коллекции официальной Wiki 2.61. Новые модели добавлены вручную, пока Vehicles API не синхронизировался. Переменные БР вооружения ещё не поддерживаются; данные менеджера требуют проверки.",
+        "en": "34 vehicles from the official Wiki 2.61 update collection, curated until the Vehicles API catches up. Weapon-dependent BR variants are not modeled yet; the database still requires verification."
+      },
+      "vehicle_changes": [
+        {
+          "unit_id": "uk_olifant_optimering",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Пакетная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Britain",
+          "class": "ground",
+          "rank": "VI",
+          "status": "Пакетная",
+          "name": "Olifant Mk.1B Optimering (ЮАР)",
+          "name_i18n": {
+            "ru": "Olifant Mk.1B Optimering (ЮАР)",
+            "en": "Optimering"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fulmar_mk2",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Britain",
+          "class": "air",
+          "rank": "I",
+          "status": "Обычная",
+          "name": "Fulmar Mk.II",
+          "name_i18n": {
+            "ru": "Fulmar Mk.II",
+            "en": "Fulmar Mk.II"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "spad_13",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Акционная, unavailable)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Britain",
+          "class": "air",
+          "rank": "I",
+          "status": "Акционная",
+          "name": "SPAD S.XIII",
+          "name_i18n": {
+            "ru": "SPAD S.XIII",
+            "en": "SPAD S.XIII"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "uk_cruiser_danae_class",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Britain",
+          "class": "bluewater",
+          "rank": "III",
+          "status": "Обычная",
+          "name": "HMS Danae",
+          "name_i18n": {
+            "ru": "HMS Danae",
+            "en": "HMS Danae"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "uk_battleship_duke_of_york",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Пакетная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Britain",
+          "class": "bluewater",
+          "rank": "VI",
+          "status": "Пакетная",
+          "name": "HMS Duke of York",
+          "name_i18n": {
+            "ru": "HMS Duke of York",
+            "en": "HMS Duke of York"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "cn_zbd_04",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "China",
+          "class": "ground",
+          "rank": "VI",
+          "status": "Обычная",
+          "name": "ZBD04",
+          "name_i18n": {
+            "ru": "ZBD04",
+            "en": "ZBD04"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "q_5d",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Пакетная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "China",
+          "class": "air",
+          "rank": "VI",
+          "status": "Пакетная",
+          "name": "Q-5D",
+          "name_i18n": {
+            "ru": "Q-5D",
+            "en": "Q-5D"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fr_prtl",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "France",
+          "class": "ground",
+          "rank": "VI",
+          "status": "Обычная",
+          "name": "Cheetah PRTL",
+          "name_i18n": {
+            "ru": "Cheetah PRTL",
+            "en": "Cheetah PRTL"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fr_vc1",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "France",
+          "class": "coastal",
+          "rank": "II",
+          "status": "Обычная",
+          "name": "VC-1",
+          "name_i18n": {
+            "ru": "VC-1",
+            "en": "VC-1"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fr_l990_monitor",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Премиум, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "France",
+          "class": "coastal",
+          "rank": "II",
+          "status": "Премиум",
+          "name": "L-990",
+          "name_i18n": {
+            "ru": "L-990",
+            "en": "L-990"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fr_destroyer_le_hardi_class_le_hardi",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "France",
+          "class": "bluewater",
+          "rank": "III",
+          "status": "Обычная",
+          "name": "Le Hardi",
+          "name_i18n": {
+            "ru": "Le Hardi",
+            "en": "Le Hardi"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "germ_leopard_2a8",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Germany",
+          "class": "ground",
+          "rank": "VIII",
+          "status": "Обычная",
+          "name": "Leopard 2A8",
+          "name_i18n": {
+            "ru": "Leopard 2A8",
+            "en": "Leopard 2A8"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fokker_d7",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Акционная, unavailable)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Germany",
+          "class": "air",
+          "rank": "I",
+          "status": "Акционная",
+          "name": "Fokker D.VII",
+          "name_i18n": {
+            "ru": "Fokker D.VII",
+            "en": "Fokker D.VII"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "germ_battleship_pr_h39",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Germany",
+          "class": "bluewater",
+          "rank": "VII",
+          "status": "Обычная",
+          "name": "H-39",
+          "name_i18n": {
+            "ru": "H-39",
+            "en": "H-39"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "f_15ia",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Israel",
+          "class": "air",
+          "rank": "IX",
+          "status": "Обычная",
+          "name": "F-15IA Ra’am II",
+          "name_i18n": {
+            "ru": "F-15IA Ra’am II",
+            "en": "F-15IA Ra’am II"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "it_lancia_flak38",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Italy",
+          "class": "ground",
+          "rank": "II",
+          "status": "Обычная",
+          "name": "Lancia 3Ro (Flak.)",
+          "name_i18n": {
+            "ru": "Lancia 3Ro (Flak.)",
+            "en": "Lancia 3Ro (Flak.)"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "it_v_4_straussler",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Italy",
+          "class": "ground",
+          "rank": "I",
+          "status": "Обычная",
+          "name": "V-4/40",
+          "name_i18n": {
+            "ru": "V-4/40",
+            "en": "V-4/40"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "aw_249_pre_serie",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Italy",
+          "class": "heli",
+          "rank": "VII",
+          "status": "Обычная",
+          "name": "AW249 Fenice",
+          "name_i18n": {
+            "ru": "AW249 Fenice",
+            "en": "AW249 Fenice"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "it_destroyer_audace",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Italy",
+          "class": "bluewater",
+          "rank": "IV",
+          "status": "Обычная",
+          "name": "Audace",
+          "name_i18n": {
+            "ru": "Audace",
+            "en": "Audace"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "jp_bmp_3f",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "ground",
+          "rank": "VI",
+          "status": "Обычная",
+          "name": "BMP-3F",
+          "name_i18n": {
+            "ru": "BMP-3F",
+            "en": "BMP-3F"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "firefly_mk1_thailand",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "air",
+          "rank": "III",
+          "status": "Обычная",
+          "name": "Firefly F Mk I (Таиланд)",
+          "name_i18n": {
+            "ru": "Firefly F Mk I (Таиланд)",
+            "en": "Firefly F Mk I (Thailand)"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "b_33_indonesia",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "air",
+          "rank": "IV",
+          "status": "Обычная",
+          "name": "B-33 (Индонезия)",
+          "name_i18n": {
+            "ru": "B-33 (Индонезия)",
+            "en": "B-33 (Indonesia)"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "jp_cruiser_takao",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Japan",
+          "class": "bluewater",
+          "rank": "V",
+          "status": "Обычная",
+          "name": "IJN Takao",
+          "name_i18n": {
+            "ru": "IJN Takao",
+            "en": "IJN Takao"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "sw_leopard_2a8no",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Sweden",
+          "class": "ground",
+          "rank": "VIII",
+          "status": "Обычная",
+          "name": "Leopard 2A8NO",
+          "name_i18n": {
+            "ru": "Leopard 2A8NO",
+            "en": "Leopard 2A8NO"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "sw_pv_m39",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Премиум, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Sweden",
+          "class": "ground",
+          "rank": "I",
+          "status": "Премиум",
+          "name": "Pbil m/39",
+          "name_i18n": {
+            "ru": "Pbil m/39",
+            "en": "Pbil m/39"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "saab_jas39_pre_serie",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Пакетная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "Sweden",
+          "class": "air",
+          "rank": "VIII",
+          "status": "Пакетная",
+          "name": "JAS39-5",
+          "name_i18n": {
+            "ru": "JAS39-5",
+            "en": "JAS39-5"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "us_stingray_2",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Пакетная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USA",
+          "class": "ground",
+          "rank": "VI",
+          "status": "Пакетная",
+          "name": "Stingray II",
+          "name_i18n": {
+            "ru": "Stingray II",
+            "en": "Stingray II"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "f_15ex",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USA",
+          "class": "air",
+          "rank": "IX",
+          "status": "Обычная",
+          "name": "F-15EX",
+          "name_i18n": {
+            "ru": "F-15EX",
+            "en": "F-15EX"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "fa_18d_late",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Пакетная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USA",
+          "class": "air",
+          "rank": "VIII",
+          "status": "Пакетная",
+          "name": "F/A-18D",
+          "name_i18n": {
+            "ru": "F/A-18D",
+            "en": "F/A-18D"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "us_erie_class",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USA",
+          "class": "bluewater",
+          "rank": "II",
+          "status": "Обычная",
+          "name": "Erie",
+          "name_i18n": {
+            "ru": "Erie",
+            "en": "Erie"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "ussr_btr_90_2004",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USSR",
+          "class": "ground",
+          "rank": "VII",
+          "status": "Обычная",
+          "name": "БТР-90",
+          "name_i18n": {
+            "ru": "БТР-90",
+            "en": "BTR-90"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "su_15tm",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USSR",
+          "class": "air",
+          "rank": "VI",
+          "status": "Обычная",
+          "name": "Су-15ТМ",
+          "name_i18n": {
+            "ru": "Су-15ТМ",
+            "en": "Su-15TM"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "ussr_battleship_imperator_nikolai_pervyi",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Обычная, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USSR",
+          "class": "bluewater",
+          "rank": "V",
+          "status": "Обычная",
+          "name": "Николай Первый",
+          "name_i18n": {
+            "ru": "Николай Первый",
+            "en": "Nikolay Perviy"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        },
+        {
+          "unit_id": "ussr_destroyer_vifor_class_lyogkiy",
+          "change_type": "added",
+          "old": "missing",
+          "new": "present (Премиум, available)",
+          "affected_user": false,
+          "owned": false,
+          "lineups": [],
+          "nation": "USSR",
+          "class": "bluewater",
+          "rank": "I",
+          "status": "Премиум",
+          "name": "Лёгкий",
+          "name_i18n": {
+            "ru": "Лёгкий",
+            "en": "Lyogkiy"
+          },
+          "patch_version": "2.61-eagles-shadow-2026-11-11"
+        }
+      ]
+    },
     {
       "version": "server-br-hotfix-2026-10-30",
       "date": "2026-10-30",

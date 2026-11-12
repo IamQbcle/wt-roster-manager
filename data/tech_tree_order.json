@@ -193,7 +193,9 @@
       "fa_18c_early",
       "f_14a_iriaf",
       "f_14d",
-      "f_15c_golden_eagle"
+      "f_15c_golden_eagle",
+      "f_15ex",
+      "fa_18d_late"
     ],
     "Germany|air": [
       "bf-109b_2",
@@ -367,7 +369,8 @@
       "fa_18c_late_switzerland",
       "mig_29_9_12g",
       "tornado_ids_de_mfg",
-      "ef_2000_aesa"
+      "ef_2000_aesa",
+      "fokker_d7"
     ],
     "USSR|air": [
       "i-16_type5",
@@ -533,7 +536,8 @@
       "mig_29m_9_15",
       "mig_35",
       "su_30sm",
-      "su_30sm2"
+      "su_30sm2",
+      "su_15tm"
     ],
     "Britain|air": [
       "sea_fury_fb11",
@@ -695,7 +699,9 @@
       "cf_188a_canada",
       "ef_2000_fgr4",
       "fa_18f_block_2_raaf",
-      "ef_2000_typhoon_aesa"
+      "ef_2000_typhoon_aesa",
+      "fulmar_mk2",
+      "spad_13"
     ],
     "Japan|air": [
       "f1m2",
@@ -830,7 +836,9 @@
       "saab_jas39c_thailand",
       "fa_18d_late_malaysia",
       "f_2a_adtw",
-      "su_30mkm"
+      "su_30mkm",
+      "firefly_mk1_thailand",
+      "b_33_indonesia"
     ],
     "China|air": [
       "gladiator_mk1_china",
@@ -914,7 +922,8 @@
       "f_16a_block_72v_china",
       "j_10c",
       "j_16",
-      "j_15t"
+      "j_15t",
+      "q_5d"
     ],
     "Italy|air": [
       "ro_44",
@@ -1195,7 +1204,8 @@
       "fa_18c_mlu_2_finland",
       "saab_ja37di_f21",
       "saab_jas39d",
-      "saab_jas39e"
+      "saab_jas39e",
+      "saab_jas39_pre_serie"
     ],
     "Israel|air": [
       "spitfire_lf_mk9e_iaf",
@@ -1240,7 +1250,8 @@
       "mirage_2000_5eg_mk2_greece",
       "f_16a_block_10_netz_mod",
       "kfir_c10_colombia",
-      "rafale_eg_greece"
+      "rafale_eg_greece",
+      "f_15ia"
     ],
     "USA|ground": [
       "us_m2a4",
@@ -1388,7 +1399,8 @@
       "us_m1a2_sep2_abrams_trophy",
       "us_sl_amraam_fcs",
       "us_m1a2_sep3_abrams",
-      "us_nasams_fcs"
+      "us_nasams_fcs",
+      "us_stingray_2"
     ],
     "Germany|ground": [
       "germ_a7v",
@@ -1555,14 +1567,15 @@
       "germ_leopard_2a4m_can",
       "germ_leopard_2a4_pzbtl_123",
       "germ_schutzenpanzer_puma_vjtf_mod",
+      "germ_leopard_2a5_pso",
       "germ_embt",
       "germ_leopard_2a5",
       "germ_leopard_2a6",
       "germ_flarakrad",
-      "germ_leopard_2a5_pso",
       "germ_iris_slm_fcs",
       "germ_leopard_2a7v",
-      "germ_leopard_2pl"
+      "germ_leopard_2pl",
+      "germ_leopard_2a8"
     ],
     "USSR|ground": [
       "ussr_bt_5",
@@ -1716,7 +1729,8 @@
       "ussr_t_80um2",
       "ussr_t_80uk",
       "ussr_t_80bvm",
-      "ussr_t_90m_arena_m"
+      "ussr_t_90m_arena_m",
+      "ussr_btr_90_2004"
     ],
     "Britain|ground": [
       "uk_a_13_mk1",
@@ -1858,7 +1872,8 @@
       "uk_adats_m113a3",
       "uk_challenger_2_bn",
       "uk_challenger_2e",
-      "uk_sky_sabre_launcher"
+      "uk_sky_sabre_launcher",
+      "uk_olifant_optimering"
     ],
     "Japan|ground": [
       "jp_type_95_ha_go",
@@ -1940,7 +1955,8 @@
       "jp_tkx_prot",
       "jp_type_81_tansam_fcs",
       "jp_oplot_t",
-      "jp_type_03_chusam_launcher"
+      "jp_type_03_chusam_launcher",
+      "jp_bmp_3f"
     ],
     "China|ground": [
       "cn_m8_greyhound",
@@ -2030,7 +2046,8 @@
       "cn_fk_2000",
       "cn_m1a2t",
       "cn_hq_11",
-      "cn_oplot_t"
+      "cn_oplot_t",
+      "cn_zbd_04"
     ],
     "Italy|ground": [
       "it_ab_41",
@@ -2136,7 +2153,9 @@
       "it_centauro_2",
       "it_ariete_amv_pt1",
       "it_samp_t_fcs",
-      "it_leopard_2a7_hungary"
+      "it_leopard_2a7_hungary",
+      "it_lancia_flak38",
+      "it_v_4_straussler"
     ],
     "France|ground": [
       "fr_hotchkiss_h35",
@@ -2241,7 +2260,8 @@
       "fr_leopard_2a6nl",
       "fr_samp_t_fcs",
       "fr_leclerc_azur",
-      "fr_embt"
+      "fr_embt",
+      "fr_prtl"
     ],
     "Sweden|ground": [
       "sw_strv_m31",
@@ -2335,7 +2355,9 @@
       "sw_eldenhet_98",
       "sw_nomads",
       "sw_nasams_fcs",
-      "sw_t_80u"
+      "sw_t_80u",
+      "sw_leopard_2a8no",
+      "sw_pv_m39"
     ],
     "Israel|ground": [
       "il_m_51",
@@ -2491,7 +2513,8 @@
       "mi_24p_hungary",
       "a_129_a",
       "a_129_cbt",
-      "a_129_d"
+      "a_129_d",
+      "aw_249_pre_serie"
     ],
     "France|heli": [
       "sa_313b_france",
@@ -2579,15 +2602,30 @@
       "us_battleship_colorado_class_maryland",
       "us_battleship_north_carolina_class",
       "us_battleship_south_dakota",
-      "us_battleship_iowa_class_iowa"
+      "us_battleship_iowa_class_iowa",
+      "us_erie_class"
     ],
-    "Germany|bluewater": [],
-    "USSR|bluewater": [],
-    "Britain|bluewater": [],
-    "Japan|bluewater": [],
+    "Germany|bluewater": [
+      "germ_battleship_pr_h39"
+    ],
+    "USSR|bluewater": [
+      "ussr_battleship_imperator_nikolai_pervyi",
+      "ussr_destroyer_vifor_class_lyogkiy"
+    ],
+    "Britain|bluewater": [
+      "uk_cruiser_danae_class",
+      "uk_battleship_duke_of_york"
+    ],
+    "Japan|bluewater": [
+      "jp_cruiser_takao"
+    ],
     "China|bluewater": [],
-    "Italy|bluewater": [],
-    "France|bluewater": [],
+    "Italy|bluewater": [
+      "it_destroyer_audace"
+    ],
+    "France|bluewater": [
+      "fr_destroyer_le_hardi_class_le_hardi"
+    ],
     "Sweden|bluewater": [],
     "Israel|bluewater": [],
     "USA|coastal": [
@@ -2633,7 +2671,10 @@
     "Japan|coastal": [],
     "China|coastal": [],
     "Italy|coastal": [],
-    "France|coastal": [],
+    "France|coastal": [
+      "fr_vc1",
+      "fr_l990_monitor"
+    ],
     "Sweden|coastal": [],
     "Israel|coastal": []
   }
